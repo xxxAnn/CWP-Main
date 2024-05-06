@@ -341,7 +341,6 @@ wmd_deployment_events.7 = { # Host rejects ultimatum
 		default_option = yes
 		highlighted_option = yes
 		create_diplomatic_play = {
-			initiator = ROOT
 			target_country = scope:target
 			type = dp_contain_threat
 			add_target_backers = {
