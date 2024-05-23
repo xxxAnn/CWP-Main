@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:HND = {
+	c:HND ?= {
 		create_character = {
 			first_name = "Archibald"
 			last_name = "Wavell"

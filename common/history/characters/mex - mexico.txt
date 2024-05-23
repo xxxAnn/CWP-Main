@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MEX = {
+	c:MEX ?= {
 		create_character = {
 			first_name = "Manuel"
 			last_name = "Avila_Camacho"			# Ávila Camacho

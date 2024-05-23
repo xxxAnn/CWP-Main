@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:MGL = {
+	c:MGL ?= {
 		effect_starting_technology_tier_3_tech = yes
 		set_tax_level = medium
 		# Laws

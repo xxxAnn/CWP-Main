@@ -1,8 +1,8 @@
 ﻿CHARACTERS = {
-	c:SRI = {
+	c:SRI ?= {
 		create_character = {
 			first_name = "Henry"
-			last_name = "Monck-Mason_Moore" # Monck-Mason Moore
+			last_name = "Monck-Mason_Moore"			# Monck-Mason Moore
 			culture = cu:english
 			ruler = yes
 			ig_leader = yes

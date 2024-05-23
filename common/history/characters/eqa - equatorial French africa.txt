@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:EQA = {
+	c:EQA ?= {
 		create_character = {
 			first_name = "Andre"
 			last_name = "Bayardelle"

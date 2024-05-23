@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:BOL = {
+	c:BOL ?= {
 		create_character = {
 			first_name = "Gualberto"
 			last_name = "Villarroel"

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:EGY = {
+	c:EGY ?= {
 		effect_starting_technology_tier_3_tech = yes
 		effect_un_member = yes
 		effect_currency_egp = yes

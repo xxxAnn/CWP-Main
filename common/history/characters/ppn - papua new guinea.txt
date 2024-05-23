@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:PPN = {
+	c:PPN ?= {
 		create_character = {
 			first_name = "Jack_Keith"
 			last_name = "Murray"

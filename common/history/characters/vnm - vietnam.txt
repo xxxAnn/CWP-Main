@@ -1,8 +1,8 @@
 ﻿CHARACTERS = {
-	c:TSW = {
+	c:TSW ?= {
 		create_character = {
 			first_name = "Georges_Thierry"
-			last_name = "dArgenlieu" # d'Argenlieu
+			last_name = "dArgenlieu"			# d'Argenlieu
 			culture = cu:french
 			ruler = yes
 			ig_leader = yes

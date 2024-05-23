@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:ARG = {
+	c:ARG ?= {
 		effect_starting_technology_tier_2_tech = yes
 		effect_un_member = yes
 		effect_currency_ars = yes

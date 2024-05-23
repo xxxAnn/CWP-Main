@@ -1,5 +1,5 @@
 ﻿PRODUCTION_METHODS = {
-	c:USA = {
+	c:USA ?= {
 		activate_production_method = {
 			building_type = building_housing
 			production_method = pm_landlord_owned_housing

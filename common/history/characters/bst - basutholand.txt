@@ -1,6 +1,6 @@
 ﻿# Should be Resident Commissioners, not governor-general
 CHARACTERS = {
-	c:BST = {
+	c:BST ?= {
 		create_character = {
 			first_name = "Charles"
 			last_name = "Arden-Clarke"

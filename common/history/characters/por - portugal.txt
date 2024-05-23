@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:POR = {
+	c:POR ?= {
 		create_character = {
 			first_name = "Oscar"			# Óscar
 			last_name = "Carmona"

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:LEB = {
+	c:LEB ?= {
 		# Politics
 		#todo IGs and Ideologies
 		effect_un_member = yes

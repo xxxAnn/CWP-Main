@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:COS = {
+	c:COS ?= {
 		create_character = {
 			first_name = "Teodoro"
 			last_name = "Picado_Michalski"

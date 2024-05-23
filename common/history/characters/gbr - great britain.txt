@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:GBR = {
+	c:GBR ?= {
 		create_character = {
 			first_name = "Clement"
 			last_name = "Atlee"
@@ -11,7 +11,6 @@
 			interest_group = ig:ig_urbanists
 			ideology = ideology_state_interventionist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -24,7 +23,6 @@
 			interest_group = ig:ig_laborists
 			ideology = ideology_democratic_socialist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -37,7 +35,6 @@
 			interest_group = ig:ig_elites
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -50,7 +47,6 @@
 			interest_group = ig:ig_capitalists
 			ideology = ideology_market_liberal
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -63,7 +59,6 @@
 			interest_group = ig:ig_entrepreneurs
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -77,7 +72,6 @@
 			interest_group = ig:ig_securocrats
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -90,7 +84,6 @@
 			interest_group = ig:ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:JAP = {
+	c:JAP ?= {
 		#Modifiers
 		effect_forced_disarmament = yes
 		#Tax and Tech
@@ -48,7 +48,6 @@
 		ig:ig_capitalists = {
 			set_ig_suppression = yes
 		}
-
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 2

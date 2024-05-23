@@ -1,9 +1,9 @@
 ﻿# Title should be administrator
 CHARACTERS = {
-	c:NAM = {
+	c:NAM ?= {
 		create_character = {
 			first_name = "Petrus_Imker"
-			last_name = "Hoogenhout" 
+			last_name = "Hoogenhout"
 			culture = cu:boer
 			ruler = yes
 			ig_leader = yes

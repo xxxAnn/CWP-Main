@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MGL = {
+	c:MGL ?= {
 		create_character = {
 			# Gonchigiin Bumtsend
 			is_general = yes
@@ -13,7 +13,6 @@
 			interest_group = ig:ig_securocrats
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:JAP = {
+	c:JAP ?= {
 		#More ideologies pending further rework
 		create_character = {
 			first_name = "Shidehara"
@@ -13,7 +13,6 @@
 			interest_group = ig_elites
 			ideology = ideology_pacifist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -28,7 +27,6 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -43,7 +41,6 @@
 			interest_group = ig_urbanists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

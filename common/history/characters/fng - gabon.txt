@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:DJI = {
+	c:DJI ?= {
 		create_character = {
 			first_name = "Numa"
 			last_name = "Sadoul"

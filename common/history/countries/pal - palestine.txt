@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:PAL = {
+	c:PAL ?= {
 		# Politics
 		#todo IGs and Ideologies
 		# Tech and Tax

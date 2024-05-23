@@ -1,6 +1,6 @@
 ﻿CHARACTERS = {
 	# Nigeria non existant at game start
-	#	c:NGR = {
+	#	c:NGR ?= {
 	#		create_character = {
 	#			first_name = "Arthur"
 	#			last_name = "Richards"

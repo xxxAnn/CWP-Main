@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:NIC = {
+	c:NIC ?= {
 		create_character = {
 			first_name = "Anastasio"
 			last_name = "Somoza_garcia"			# Somoza García

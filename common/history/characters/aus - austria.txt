@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:AUS = {
+	c:AUS ?= {
 		create_character = {
 			first_name = "Leopold"
 			last_name = "Figl"

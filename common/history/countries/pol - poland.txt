@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:POL = {
+	c:POL ?= {
 		effect_starting_technology_tier_2_tech = yes
 		effect_un_member = yes
 		set_tax_level = medium
@@ -57,7 +57,7 @@
 		ig:ig_moralists = {
 			set_ig_suppression = yes
 		}
-		ig:ig_capitalists= {
+		ig:ig_capitalists = {
 			set_ig_suppression = yes
 		}
 		effect_bretton_woods_signatory = yes

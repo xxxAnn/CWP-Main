@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:BHU = {
+	c:BHU ?= {
 		effect_starting_technology_tier_5_tech = yes
 		effect_create_law_package = {
 			headOfGovernment = administrative

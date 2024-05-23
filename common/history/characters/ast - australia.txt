@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:AST = {
+	c:AST ?= {
 		create_character = {
 			first_name = "Ben"
 			last_name = "Chifley"

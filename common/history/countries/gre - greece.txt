@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:GRE = {
+	c:GRE ?= {
 		effect_un_member = yes
 		effect_currency_grd = yes
 		# Politics

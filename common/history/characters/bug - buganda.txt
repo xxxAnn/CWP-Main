@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:BUG = {
+	c:BUG ?= {
 		create_character = {
 			first_name = "Philip"
 			last_name = "Euen_Mitchell"

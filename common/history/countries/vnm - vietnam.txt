@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:VNM = {
+	c:VNM ?= {
 		remove_primary_culture = cu:lao
 		remove_primary_culture = cu:khmu
 		remove_primary_culture = cu:khmer

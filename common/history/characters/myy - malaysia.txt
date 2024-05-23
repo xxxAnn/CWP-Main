@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MYY = {
+	c:MYY ?= {
 		create_character = {
 			first_name = "Louis"
 			last_name = "Mountbatten"

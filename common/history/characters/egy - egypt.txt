@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:EGY = {
+	c:EGY ?= {
 		create_character = {
 			first_name = "Farouk"
 			last_name = "al-_Alawi"

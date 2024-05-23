@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:FIN = {
+	c:FIN ?= {
 		effect_currency_fim = yes
 		set_next_election_date = 1946.3.9
 		effect_starting_technology_tier_3_tech = yes

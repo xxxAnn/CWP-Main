@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:DJI = {
+	c:DJI ?= {
 		# Politics
 		#todo IGs and Ideologies
 		# Tech and Tax

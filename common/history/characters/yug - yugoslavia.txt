@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:YUG = {
+	c:YUG ?= {
 		create_character = {
 			first_name = "Josip"
 			last_name = "Broz_Tito"

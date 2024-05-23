@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:CLM = {
+	c:CLM ?= {
 		create_character = {
 			first_name = "Alfonso"
 			last_name = "Lopez_Pumarejo"			# López Pumarejo

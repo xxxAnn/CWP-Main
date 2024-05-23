@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:THA = {
+	c:THA ?= {
 		# Politics
 		#todo IGs and Ideologies
 		#todo laws

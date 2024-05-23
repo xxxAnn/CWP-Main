@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:HAI = {
+	c:HAI ?= {
 		effect_un_member = yes
 		effect_starting_technology_tier_2_tech = yes
 		set_tax_level = high

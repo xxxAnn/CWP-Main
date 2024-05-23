@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:PRC = {
+	c:PRC ?= {
 		#All of these are temporary pending china leader ideologies
 		create_character = {
 			# Mao Zedong
@@ -15,7 +15,6 @@
 			interest_group = ig_ruralists
 			ideology = ideology_hardliner
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -30,7 +29,6 @@
 			interest_group = ig_laborists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -46,7 +44,6 @@
 			interest_group = ig_bureaucrats
 			ideology = ideology_market_socialist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -61,7 +58,6 @@
 			interest_group = ig:ig_entrepreneurs
 			ideology = ideology_market_socialist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -77,7 +73,6 @@
 			interest_group = ig:ig_securocrats
 			ideology = ideology_hardliner
 			traits = {
-				
 			}
 		}
 	}

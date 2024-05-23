@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:ROC = {
+	c:ROC ?= {
 		#pending following more ideologies rework
 		create_character = {
 			# Chiang Kai-Shek
@@ -15,7 +15,6 @@
 			interest_group = ig:ig_securocrats
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -30,7 +29,6 @@
 			interest_group = ig:ig_securocrats
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -45,7 +43,6 @@
 			interest_group = ig:ig_securocrats
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -61,7 +58,6 @@
 			interest_group = ig:ig_capitalists
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -76,7 +72,6 @@
 			interest_group = ig:ig_bureaucrats
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {

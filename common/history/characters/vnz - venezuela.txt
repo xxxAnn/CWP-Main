@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:VNZ = {
+	c:VNZ ?= {
 		create_character = {
 			first_name = "Romulo"			# Rómulo
 			last_name = "Betancourt"

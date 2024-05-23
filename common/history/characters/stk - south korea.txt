@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:STK = {
+	c:STK ?= {
 		create_character = {
 			first_name = "Kim"
 			last_name = "Gu"

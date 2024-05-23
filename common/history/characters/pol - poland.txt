@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:POL = {
+	c:POL ?= {
 		create_character = {
 			# Bolesaw Bierut
 			first_name = "Boleslaw2"
@@ -12,7 +12,6 @@
 			interest_group = ig_laborists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -25,7 +24,6 @@
 			interest_group = ig_laborists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -39,7 +37,6 @@
 			interest_group = ig_elites
 			ideology = ideology_moderate
 			traits = {
-			
 			}
 		}
 		create_character = {
@@ -66,7 +63,6 @@
 			interest_group = ig_moralists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -80,7 +76,6 @@
 			interest_group = ig_capitalists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

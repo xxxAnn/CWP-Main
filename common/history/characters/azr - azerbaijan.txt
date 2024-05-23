@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:AZR = {
+	c:AZR ?= {
 		create_character = {
 			first_name = "Jafar"			# Ja'far
 			last_name = "Pishevari"

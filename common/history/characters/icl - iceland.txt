@@ -1,8 +1,8 @@
 ﻿CHARACTERS = {
-	c:ICL = {
+	c:ICL ?= {
 		create_character = {
 			first_name = "Sveinn"
-			last_name = "Bjornsson" # Björnsson
+			last_name = "Bjornsson"			# Björnsson
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1881.3.27

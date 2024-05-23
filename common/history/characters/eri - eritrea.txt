@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:ERI = {
+	c:ERI ?= {
 		create_character = {
 			first_name = "John"
 			last_name = "Benoy"

@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:FRA = {
+	c:FRA ?= {
 		# Country leader
 		create_character = {
 			# De Gaulle
@@ -16,7 +16,7 @@
 			ideology = ideology_gaullist
 			is_agitator = yes
 			traits = {
-			    charismatic
+				charismatic
 				french_resistant
 				experienced_offensive_planner
 				expert_political_operator

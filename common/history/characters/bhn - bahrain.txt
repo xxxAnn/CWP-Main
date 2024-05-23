@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:BHN = {
+	c:BHN ?= {
 		create_character = {
 			first_name = "Salman"
 			last_name = "bin_Hamad_Al_Khalifa"

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:IRQ = {
+	c:IRQ ?= {
 		effect_un_member = yes
 		# Politics
 		#todo IGs and Ideologies

@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MTB = {
+	c:MTB ?= {
 		create_character = {
 			first_name = "John"
 			last_name = "Noble_Kennedy"

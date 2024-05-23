@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:ITA = {
+	c:ITA ?= {
 		create_character = {
 			first_name = "Alcide"
 			last_name = "De_Gasperi"			# De Nicola

@@ -1,8 +1,8 @@
 ﻿GOVERNMENT = {
-	c:BOZ = {
+	c:BOZ ?= {
 		if = {
 			limit = {
-				exists = py:social_democrat_party 
+				exists = py:social_democrat_party
 			}
 			py:social_democrat_party = {
 				add_momentum = momentum_large
@@ -20,7 +20,7 @@
 			limit = {
 				exists = py:liberal_party
 			}
-			py:liberal_party= {
+			py:liberal_party = {
 				add_momentum = momentum_medium
 			}
 		}

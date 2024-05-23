@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:LUX = {
+	c:LUX ?= {
 		# Politics
 		effect_un_member = yes
 		effect_create_law_package = {

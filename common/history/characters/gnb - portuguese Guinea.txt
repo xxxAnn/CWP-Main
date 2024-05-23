@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:GNB = {
+	c:GNB ?= {
 		create_character = {
 			first_name = "Sarmento"
 			last_name = "Rodrigues"

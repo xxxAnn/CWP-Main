@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:SML = {
+	c:SML ?= {
 		create_character = {
 			first_name = "Denis"
 			last_name = "Wickham"

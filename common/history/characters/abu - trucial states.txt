@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:ABU = {
+	c:ABU ?= {
 		create_character = {
 			first_name = "Shakhbut"
 			last_name = "bin_Sultan_Al_Nahyan"

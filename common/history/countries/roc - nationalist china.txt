@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:ROC = {
+	c:ROC ?= {
 		#modifiers
 		#fixme: this modifier doesn't exist
 		#effect_kuomintang_political_dominance = yes

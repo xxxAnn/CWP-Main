@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MAO = {
+	c:MAO ?= {
 		create_character = {
 			first_name = "Gabriel"
 			last_name = "Mauricio_Teixeira"			# Maurício Teixeira

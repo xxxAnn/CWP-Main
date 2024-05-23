@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:QAT = {
+	c:QAT ?= {
 		# Politics
 		#todo IGs and Ideologies
 		#todo laws

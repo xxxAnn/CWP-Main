@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:NEJ = {
+	c:NEJ ?= {
 		create_character = {
 			first_name = "Ibn"
 			last_name = "Saud"

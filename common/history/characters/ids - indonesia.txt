@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:IDS = {
+	c:IDS ?= {
 		create_character = {
 			first_name = "Blank_Name"
 			last_name = "Sukarno"

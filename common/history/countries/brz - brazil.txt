@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:BRZ = {
+	c:BRZ ?= {
 		# Exact date?
 		set_next_election_date = 1950.10.3
 		effect_un_member = yes
@@ -11,7 +11,6 @@
 			add_ruling_interest_group = yes
 		}
 		# laws
-
 		effect_create_law_package = {
 			headOfGovernment = executive
 			distributionOfPower = representative_democracy

@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MKU = {
+	c:MKU ?= {
 		create_character = {
 			first_name = "Joao"			#João
 			last_name = "Tristao_de_Bettencourt"			# Tristão de Bettencourt

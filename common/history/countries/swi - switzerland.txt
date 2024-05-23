@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:SWI = {
+	c:SWI ?= {
 		# Politics
 		effect_un_observer = yes
 		effect_currency_chf = yes

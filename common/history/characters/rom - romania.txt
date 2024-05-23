@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:ROM = {
+	c:ROM ?= {
 		create_character = {
 			first_name = "Michael"
 			last_name = "Hohenzollern-Sigmaringen"
@@ -10,7 +10,6 @@
 			interest_group = ig:ig_elites
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -21,7 +20,6 @@
 			interest_group = ig:ig_elites
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -34,7 +32,6 @@
 			interest_group = ig:ig_securocrats
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {

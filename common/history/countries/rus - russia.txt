@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:RUS = {
+	c:RUS ?= {
 		effect_starting_technology_tier_2_tech = yes
 		effect_starting_technology_wartime_major_participant_tech = yes
 		effect_eastern_bloc_leader = yes

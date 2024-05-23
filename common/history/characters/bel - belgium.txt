@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:BEL = {
+	c:BEL ?= {
 		create_character = {
 			first_name = "Paul_Henri"
 			last_name = "Spaak"
@@ -9,7 +9,6 @@
 			ruler = yes
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

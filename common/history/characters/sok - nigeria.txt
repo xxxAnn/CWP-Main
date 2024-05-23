@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:SOK = {
+	c:SOK ?= {
 		create_character = {
 			first_name = "Arthur"
 			last_name = "Richards"

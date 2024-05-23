@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:NRK = {
+	c:NRK ?= {
 		create_character = {
 			first_name = "Andrei"
 			last_name = "Alekseevich_Romanenko"

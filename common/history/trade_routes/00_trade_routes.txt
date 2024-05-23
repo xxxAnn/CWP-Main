@@ -1,6 +1,6 @@
 ﻿TRADE_ROUTES = {
 	# USSR
-	c:RUS = {
+	c:RUS ?= {
 		create_trade_route = {
 			goods = aluminum
 			level = 2
@@ -27,7 +27,7 @@
 		}
 	}
 	# France
-	c:FRA = {
+	c:FRA ?= {
 		create_trade_route = {
 			goods = oil
 			level = 20
@@ -48,7 +48,7 @@
 		}
 	}
 	# Denmark
-	c:DEN = {
+	c:DEN ?= {
 		create_trade_route = {
 			goods = iron
 			level = 3
@@ -63,7 +63,7 @@
 		}
 	}
 	# Czechoslovakia
-	c:CZH = {
+	c:CZH ?= {
 		create_trade_route = {
 			goods = plastics
 			level = 3
@@ -72,7 +72,7 @@
 		}
 	}
 	# Poland
-	c:POL = {
+	c:POL ?= {
 		create_trade_route = {
 			goods = coal
 			level = 13
@@ -99,7 +99,7 @@
 		}
 	}
 	#USA
-	c:USA = {
+	c:USA ?= {
 		create_trade_route = {
 			goods = explosives
 			level = 15
@@ -300,7 +300,7 @@
 		}
 	}
 	#Great Britain
-	c:GBR = {
+	c:GBR ?= {
 		create_trade_route = {
 			goods = oil
 			level = 12
@@ -356,7 +356,7 @@
 			target = c:IRQ.market
 		}
 	}
-	c:CUB = {
+	c:CUB ?= {
 		create_trade_route = {
 			goods = sugar
 			level = 1
@@ -370,7 +370,7 @@
 			target = c:USA.market
 		}
 	}
-	c:SYR = {
+	c:SYR ?= {
 		create_trade_route = {
 			goods = iron
 			level = 2
@@ -390,7 +390,7 @@
 			target = c:TUR.market
 		}
 	}
-	c:SWI = {
+	c:SWI ?= {
 		create_trade_route = {
 			goods = phosphorus
 			level = 4
@@ -404,7 +404,7 @@
 			target = c:FRA.market
 		}
 	}
-	c:BEL = {
+	c:BEL ?= {
 		create_trade_route = {
 			goods = rubber
 			level = 16
@@ -424,7 +424,7 @@
 			target = c:GBR.market
 		}
 	}
-	c:GUA = {
+	c:GUA ?= {
 		create_trade_route = {
 			goods = ammunition
 			level = 1
@@ -444,7 +444,7 @@
 			target = c:MEX.market
 		}
 	}
-	c:NET = {
+	c:NET ?= {
 		create_trade_route = {
 			goods = paper
 			level = 5
@@ -458,7 +458,7 @@
 			target = c:GBR.market
 		}
 	}
-	c:MEX = {
+	c:MEX ?= {
 		create_trade_route = {
 			goods = commercial_aircraft
 			level = 5
@@ -472,7 +472,7 @@
 			target = c:GBR.market
 		}
 	}
-	c:FIN = {
+	c:FIN ?= {
 		create_trade_route = {
 			goods = coal
 			level = 12

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:POR = {
+	c:POR ?= {
 		# Politics
 		add_journal_entry = {
 			type = je_decolonization

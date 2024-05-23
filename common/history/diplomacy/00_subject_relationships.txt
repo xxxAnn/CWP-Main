@@ -1,5 +1,5 @@
 ﻿DIPLOMACY = {
-	c:GBR = {
+	c:GBR ?= {
 		create_diplomatic_pact = {
 			country = c:SRI
 			type = puppet
@@ -174,15 +174,15 @@
 			type = puppet
 		}
 	}
-	c:DEN = {
+	c:DEN ?= {
 		create_diplomatic_pact = {
 			country = c:GRN
 			type = puppet
 		}
 	}
-	c:NOR = {
+	c:NOR ?= {
 	}
-	c:FRA = {
+	c:FRA ?= {
 		create_diplomatic_pact = {
 			country = c:FOZ
 			type = military_occupation
@@ -233,7 +233,7 @@
 			type = puppet
 		}
 	}
-	c:NET = {
+	c:NET ?= {
 		create_diplomatic_pact = {
 			country = c:WPP
 			type = puppet
@@ -243,7 +243,7 @@
 			type = puppet
 		}
 	}
-	c:USA = {
+	c:USA ?= {
 		create_diplomatic_pact = {
 			country = c:AOZ
 			type = military_occupation
@@ -261,7 +261,7 @@
 			type = military_occupation
 		}
 	}
-	c:RUS = {
+	c:RUS ?= {
 		create_diplomatic_pact = {
 			country = c:ROM
 			type = military_occupation
@@ -312,7 +312,7 @@
 		#	type = dominion
 		#}
 	}
-	c:BEL = {
+	c:BEL ?= {
 		create_diplomatic_pact = {
 			country = c:CNG
 			type = puppet
@@ -322,7 +322,7 @@
 			type = puppet
 		}
 	}
-	c:POR = {
+	c:POR ?= {
 		create_diplomatic_pact = {
 			country = c:MAO
 			type = puppet
@@ -340,13 +340,13 @@
 			type = puppet
 		}
 	}
-	c:AST = {
+	c:AST ?= {
 		create_diplomatic_pact = {
 			country = c:PPN
 			type = puppet
 		}
 	}
-	# c:NZL = {
+	# c:NZL ?= {
 	#TODO these countries no longer exist in game? needs to be fixed
 	# create_diplomatic_pact = {
 	# 	country = c:NIU
@@ -365,20 +365,20 @@
 	# 	type = puppet
 	# }
 	# }
-	c:ROC = {
+	c:ROC ?= {
 		create_diplomatic_pact = {
 			country = c:TIB
 			type = puppet
 		}
 	}
 	#South Africa and Namibia
-	c:SAF = {
+	c:SAF ?= {
 		create_diplomatic_pact = {
 			country = c:NAM
 			type = puppet
 		}
 	}
-	c:HND = {
+	c:HND ?= {
 		create_diplomatic_pact = {
 			country = c:NEP
 			type = tributary

@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:SWI = {
+	c:SWI ?= {
 		create_character = {
 			first_name = "Karl"
 			last_name = "Kobelt"

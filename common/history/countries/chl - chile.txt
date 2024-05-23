@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:CHL = {
+	c:CHL ?= {
 		effect_starting_technology_tier_2_tech = yes
 		effect_un_member = yes
 		activate_law = law_type:law_executive

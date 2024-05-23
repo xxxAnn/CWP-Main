@@ -1,10 +1,9 @@
 ﻿COUNTRIES = {
-	c:AOZ = {
+	c:AOZ ?= {
 		set_next_election_date = 1946.10.20
 		set_tax_level = very_high		#ww2 tax rates were at 94% for the highest bracket.
 		effect_starting_technology_tier_1_tech = yes
 		effect_starting_technology_wartime_participant_tech = yes
-
 		effect_create_law_package = {
 			headOfGovernment = administrative
 			distributionOfPower = autocracy
@@ -35,7 +34,6 @@
 			biotech = unrestricted_human_testing
 			recreationalDrugs = alcohol_allowed
 		}
-		
 		#Igs
 		ig:ig_entrepreneurs = {
 			set_ig_suppression = yes

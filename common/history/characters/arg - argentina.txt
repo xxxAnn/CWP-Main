@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:ARG = {
+	c:ARG ?= {
 		create_character = {
 			first_name = "Edelmiro"			# Edelmiro Julián Farrell
 			last_name = "Julian_Farrell"

@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:GUA = {
+	c:GUA ?= {
 		create_character = {
 			first_name = Juan
 			last_name = Arevalo

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:LIB = {
+	c:LIB ?= {
 		effect_un_member = yes
 		# Politics
 		#todo IGs and Ideologies

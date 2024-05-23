@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:PRC = {
+	c:PRC ?= {
 		effect_starting_technology_tier_4_tech = yes
 		effect_starting_technology_wartime_participant_tech = yes
 		effect_last_stand = yes

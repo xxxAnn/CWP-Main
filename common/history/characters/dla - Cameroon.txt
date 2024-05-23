@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:DLA = {
+	c:DLA ?= {
 		create_character = {
 			first_name = "Henri_pierre"
 			last_name = "Nicolas"

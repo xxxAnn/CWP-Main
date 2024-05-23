@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:AUS = {
+	c:AUS ?= {
 		# Politics
 		#todo IGs and Ideologies
 		# Tech and Tax

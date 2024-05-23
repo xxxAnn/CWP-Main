@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:SYR = {
+	c:SYR ?= {
 		effect_un_member = yes
 		# Politics
 		#todo IGs and Ideologies

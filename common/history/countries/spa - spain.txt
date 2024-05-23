@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:SPA = {
+	c:SPA ?= {
 		# Politics
 		#todo IGs and Ideologies
 		# Tech and Tax

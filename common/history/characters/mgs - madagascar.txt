@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MGS = {
+	c:MGS ?= {
 		create_character = {
 			first_name = "Pierre"
 			last_name = "de_Saint-Mart"

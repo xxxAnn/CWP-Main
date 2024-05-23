@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:CHL = {
+	c:CHL ?= {
 		create_character = {
 			first_name = "Juan"
 			last_name = "Antonio_rios"			# Antonio Ríos

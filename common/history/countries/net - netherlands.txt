@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:NET = {
+	c:NET ?= {
 		# Politics
 		effect_un_member = yes
 		effect_corruption_low = yes

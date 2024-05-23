@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:HKN = {
+	c:HKN ?= {
 		create_character = {
 			first_name = "Cecil"
 			last_name = "Harcourt"

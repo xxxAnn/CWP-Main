@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:FIN = {
+	c:FIN ?= {
 		create_character = {
 			first_name = "Carl"
 			last_name = "Mannerheim"

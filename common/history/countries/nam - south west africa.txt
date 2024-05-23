@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:NAM = {
+	c:NAM ?= {
 		# Politics
 		#todo IGs and Ideologies
 		# Tech and Tax

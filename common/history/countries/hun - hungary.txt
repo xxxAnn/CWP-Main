@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:HUN = {
+	c:HUN ?= {
 		effect_starting_technology_tier_3_tech = yes
 		effect_corruption_medium = yes
 		set_tax_level = medium

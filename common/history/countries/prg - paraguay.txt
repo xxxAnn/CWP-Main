@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:PRG = {
+	c:PRG ?= {
 		set_tax_level = medium
 		effect_starting_technology_tier_2_tech = yes
 		effect_un_member = yes

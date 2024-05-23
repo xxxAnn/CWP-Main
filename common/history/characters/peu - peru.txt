@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:PEU = {
+	c:PEU ?= {
 		create_character = {
 			first_name = "Jose"			# José
 			last_name = "Rivero"

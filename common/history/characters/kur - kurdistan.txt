@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:KUR = {
+	c:KUR ?= {
 		create_character = {
 			first_name = "Qazi"
 			last_name = "Muhammad"

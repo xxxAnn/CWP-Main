@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:MYY = {
+	c:MYY ?= {
 		# Politics
 		#todo IGs and Ideologies
 		# Tech and Tax

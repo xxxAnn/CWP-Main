@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:IRE = {
+	c:IRE ?= {
 		# Politics
 		#todo IGs and Ideologies
 		# Tech and Tax

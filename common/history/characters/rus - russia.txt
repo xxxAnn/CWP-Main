@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:RUS = {
+	c:RUS ?= {
 		create_character = {
 			# Joseph Stalin
 			first_name = "Iosif"
@@ -14,7 +14,6 @@
 			interest_group = ig:ig_bureaucrats
 			ideology = ideology_hardliner
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -27,9 +26,8 @@
 			religion = atheist
 			birth_date = 1896.12.1
 			interest_group = ig:ig_securocrats
-			ideology = ideology_revisionist 
+			ideology = ideology_revisionist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -44,7 +42,6 @@
 			interest_group = ig:ig_intelligentsia
 			ideology = ideology_technocratic_socialist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -59,7 +56,6 @@
 			interest_group = ig:ig_laborists
 			ideology = ideology_revisionist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -74,7 +70,6 @@
 			interest_group = ig:ig_securocrats
 			ideology = ideology_market_socialist
 			traits = {
-				
 			}
 		}
 	}

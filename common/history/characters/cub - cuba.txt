@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:CUB = {
+	c:CUB ?= {
 		create_character = {
 			first_name = "Ramon"			# Ramón
 			last_name = "Grau"

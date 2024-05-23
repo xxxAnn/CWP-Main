@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:ELS = {
+	c:ELS ?= {
 		create_character = {
 			first_name = "Salvador"
 			last_name = "Castaneda_Castro"			# Castaneda Castro
@@ -11,7 +11,6 @@
 			interest_group = ig:ig_securocrats
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

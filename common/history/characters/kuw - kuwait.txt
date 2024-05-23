@@ -1,8 +1,8 @@
 ﻿CHARACTERS = {
-	c:KUW = {
+	c:KUW ?= {
 		create_character = {
 			first_name = "Ahmad"
-			last_name = "Al-Jaber_Al-Sabah" # Al-Jaber Al-Sabah
+			last_name = "Al-Jaber_Al-Sabah"			# Al-Jaber Al-Sabah
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1885.4.4

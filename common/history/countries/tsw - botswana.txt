@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:TSW = {
+	c:TSW ?= {
 		#modifiers
 		#tax and tech
 		effect_starting_technology_tier_3_tech = yes

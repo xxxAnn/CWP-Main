@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:SYR = {
+	c:SYR ?= {
 		create_character = {
 			first_name = "Shukri"
 			last_name = "al-Quwatli"

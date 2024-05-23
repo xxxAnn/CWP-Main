@@ -1,7 +1,7 @@
 ﻿CHARACTERS = {
-	c:HAI = {
+	c:HAI ?= {
 		create_character = {
-			first_name = "Elie" # Élie 
+			first_name = "Elie"			# Élie 
 			last_name = "Lescot"
 			ruler = yes
 			#ig_leader = yes #Ruler can't be IG leader under dictatorship or monarchy.

@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:TNZ = {
+	c:TNZ ?= {
 		#modifiers
 		#tax and tech
 		effect_starting_technology_tier_2_tech = yes

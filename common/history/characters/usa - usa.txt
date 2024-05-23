@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:USA = {
+	c:USA ?= {
 		#Older Adults
 		create_character = {
 			first_name = Harry

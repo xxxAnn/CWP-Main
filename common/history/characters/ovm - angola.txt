@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:OVM = {
+	c:OVM ?= {
 		create_character = {
 			first_name = "Vasco_Lopes"
 			last_name = "Alves"
