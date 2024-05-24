@@ -82,7 +82,10 @@ request_nuclear_bomb_deployment = {
 					ROOT = this
 				}
 				is_adjacent = scope:target_country
-				country_rank >= rank_value:great_power
+				OR = {
+					has_modifier = atomic_capable
+					has_modifier = thermonuclear_capable
+				}
 			}
 			ROOT = {
 				save_scope_as = initiator
