@@ -284,7 +284,7 @@ ig_petitions.13 = {
 			is_enacting_law = law_type:law_church_run_schools
 			is_enacting_law = law_type:law_private_schools
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			is_powerful = yes
 			is_in_government = no
 		}
@@ -293,7 +293,7 @@ ig_petitions.13 = {
 		}
 	}
 	immediate = {
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = trade_unions_ig
 		}
 		currently_enacting_law = {
@@ -325,7 +325,7 @@ ig_petitions.13 = {
 			#enactment bonus
 			name = no_public_schools_modifier
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_modifier = {
 				name = rejected_petition
 				months = normal_modifier_time

@@ -33,7 +33,7 @@ ddr_flavor.1 = {
 			ruler = yes
 			historical = yes
 			ideology = ideology_hardliner			#Became a Stalinist over time
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			birth_date = 1893.6.30
 			traits = {
 				career_revolutionary

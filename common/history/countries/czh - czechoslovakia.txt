@@ -44,7 +44,7 @@
 			interestRateValue = 2.5
 			loanType = 1
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}
 		ig:ig_intelligentsia = {

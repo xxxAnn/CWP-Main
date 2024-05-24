@@ -1864,7 +1864,7 @@
 								OR = {
 									is_interest_group_type = ig_entrepreneurs
 									is_interest_group_type = ig_ruralists
-									is_interest_group_type = ig_laborists
+									is_interest_group_type = ig_socialists
 								}
 							}
 						}

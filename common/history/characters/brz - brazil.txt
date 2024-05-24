@@ -96,7 +96,7 @@
 			culture = cu:brazilian
 			religion = rel:atheist
 			ig_leader = yes
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_moderate
 			traits = {
 			}

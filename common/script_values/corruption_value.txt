@@ -419,15 +419,15 @@ corruption_baseline = {
 	if = {
 		limit = {
 			this = {
-				has_ruling_interest_group = ig_laborists
-				ig:ig_laborists = {
+				has_ruling_interest_group = ig_socialists
+				ig:ig_socialists = {
 					has_variable = ig_corruption
 				}
 			}
 		}
 		add = {
 			value = {
-				value = ig:ig_laborists.var:ig_corruption
+				value = ig:ig_socialists.var:ig_corruption
 				divide = num_ruling_igs
 			}
 			desc = COR_LABORISTS

@@ -530,7 +530,7 @@ welfare_laws.8 = {
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_modifier = {
 				name = veterans_prioritized
 				months = normal_modifier_time
@@ -583,7 +583,7 @@ welfare_laws.9 = {
 		ig:ig_capitalists = {
 			save_scope_as = industrialists_ig
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = trade_unions_ig
 		}
 	}
@@ -604,7 +604,7 @@ welfare_laws.9 = {
 				multiplier = -2
 			}
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_modifier = {
 				name = embraced_union_leverage
 				months = normal_modifier_time
@@ -623,7 +623,7 @@ welfare_laws.9 = {
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_modifier = {
 				name = repudiated_union_leverage
 				months = normal_modifier_time

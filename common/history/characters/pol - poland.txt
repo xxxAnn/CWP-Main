@@ -9,7 +9,7 @@
 			ig_leader = yes
 			birth_date = 1881.9.11
 			#dna = 
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ideology = ideology_moderate
 			traits = {
 			}
@@ -21,7 +21,7 @@
 			culture = cu:polish
 			birth_date = 1905.1.6
 			#dna = 
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ideology = ideology_moderate
 			traits = {
 			}

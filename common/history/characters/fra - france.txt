@@ -48,7 +48,7 @@
 			religion = rel:atheist
 			birth_date = 1900.4.28
 			ig_leader = yes
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_moderate
 			traits = {
 				career_politician
@@ -62,7 +62,7 @@
 			culture = cu:french
 			religion = rel:atheist
 			birth_date = 1893.5.13
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_moderate
 			traits = {
 				career_trade_unionist
@@ -76,7 +76,7 @@
 			culture = cu:french
 			religion = rel:atheist
 			birth_date = 1896.10.2
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_moderate
 			traits = {
 				career_party_official
@@ -90,7 +90,7 @@
 			culture = cu:french
 			religion = rel:atheist
 			birth_date = 1897.7.3
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_moderate
 			traits = {
 				career_politician

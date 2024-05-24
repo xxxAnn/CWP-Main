@@ -82,7 +82,7 @@ recent_revolution = {
 
 legacy_of_the_resistance = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	interest_group_ig_laborists_pol_str_mult = 0.1
+	interest_group_ig_socialists_pol_str_mult = 0.1
 	interest_group_ig_urbanists_pol_str_mult = 0.1
 	interest_group_ig_moralists_pol_str_mult = 0.1
 	interest_group_ig_capitalists_pol_str_mult = -0.2
@@ -110,7 +110,7 @@ unicameral_legislature = {
 
 compromise_presidential_republic = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	interest_group_ig_laborists_pol_str_mult = 0.2
+	interest_group_ig_socialists_pol_str_mult = 0.2
 	interest_group_ig_urbanists_pol_str_mult = 0.2
 	interest_group_ig_moralists_pol_str_mult = 0.2
 }
@@ -144,12 +144,12 @@ failed_constitutional_project = {
 
 CGT_protests = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	interest_group_ig_laborists_pop_attraction_mult = 0.2
+	interest_group_ig_socialists_pop_attraction_mult = 0.2
 }
 
 split_in_the_CGT = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	interest_group_ig_laborists_pop_attraction_mult = -0.1
+	interest_group_ig_socialists_pop_attraction_mult = -0.1
 	interest_group_ig_urbanists_pop_attraction_mult = 0.1
 }
 

@@ -48,7 +48,7 @@
 			loanType = 1
 		}
 		#IG in government to match ruler
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}
 		# Tech and Tax

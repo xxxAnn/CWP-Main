@@ -51,7 +51,7 @@
 			culture = cu:khoisan
 			ig_leader = yes
 			birth_date = 1893.3.8
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_moderate
 			traits = {
 			}

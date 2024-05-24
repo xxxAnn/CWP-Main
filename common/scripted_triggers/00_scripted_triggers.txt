@@ -1702,9 +1702,9 @@ ig_type_matches_former = {
 				}
 			}
 			AND = {
-				is_interest_group_type = ig_laborists
+				is_interest_group_type = ig_socialists
 				scope:ex_ig = {
-					is_interest_group_type = ig_laborists
+					is_interest_group_type = ig_socialists
 				}
 			}
 		}
@@ -1810,7 +1810,7 @@ can_have_radical_leader = {
 	}
 	OR = {
 		# is_interest_group_type = ig_ruralists
-		# is_interest_group_type = ig_laborists
+		# is_interest_group_type = ig_socialists
 		# is_interest_group_type = ig_entrepreneurs
 		# is_interest_group_type = ig_armed_forces
 		# is_interest_group_type = ig_elites

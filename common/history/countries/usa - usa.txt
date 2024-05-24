@@ -26,7 +26,7 @@ COUNTRIES = {
 		# ig:ig_capitalists = {
 		# 	add_ruling_interest_group = yes
 		# }
-		# ig:ig_laborists = {
+		# ig:ig_socialists = {
 		# 	add_ruling_interest_group = yes
 		# }
 		every_active_party = {

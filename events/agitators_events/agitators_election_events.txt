@@ -3367,7 +3367,7 @@ agitators_election_events.28 = {
 		any_active_party = {
 			is_party_type = social_democrat_party
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			is_marginal = no
 		}
 	}
@@ -3384,7 +3384,7 @@ agitators_election_events.28 = {
 	}
 	immediate = {
 		socdem_agitator_election_scope_effect = yes
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = trade_union_ig
 		}
 	}
@@ -4204,7 +4204,7 @@ agitators_election_events.37 = {
 					is_powerful = yes
 					is_in_government = yes
 				}
-				ig:ig_laborists = {
+				ig:ig_socialists = {
 					is_powerful = yes
 					is_in_government = yes
 				}
@@ -4255,7 +4255,7 @@ agitators_election_events.37 = {
 						is_powerful = yes
 						is_in_government = yes
 					}
-					ig:ig_laborists = {
+					ig:ig_socialists = {
 						is_powerful = yes
 						is_in_government = yes
 					}

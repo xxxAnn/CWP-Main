@@ -1598,7 +1598,7 @@ engineer = {
 			limit = {
 				has_role = agitator
 				interest_group ?= {
-					is_interest_group_type = ig_laborists
+					is_interest_group_type = ig_socialists
 				}
 			}
 			multiply = 3

@@ -20,7 +20,7 @@
 			culture = cu:welsh
 			ig_leader = yes
 			birth_date = 1887.11.15
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_democratic_socialist
 			traits = {
 			}

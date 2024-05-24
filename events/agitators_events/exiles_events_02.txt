@@ -791,10 +791,10 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_laborists
+					is_interest_group_type = ig_socialists
 				}
 			}
-			ig:ig_laborists = {
+			ig:ig_socialists = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time

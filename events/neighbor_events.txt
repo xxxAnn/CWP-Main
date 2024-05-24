@@ -217,18 +217,18 @@ neighbor_events.3 = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 6
 	trigger = {
-		has_ruling_interest_group = ig_laborists
+		has_ruling_interest_group = ig_socialists
 		any_neighbouring_state = {
 			owner = {
-				has_ruling_interest_group = ig_laborists
+				has_ruling_interest_group = ig_socialists
 			}
 		}
 	}
 	immediate = {
 		save_neighbor_with_state = {
-			CRITERIA = "has_ruling_interest_group = ig_laborists"
+			CRITERIA = "has_ruling_interest_group = ig_socialists"
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = trade_unions_ig
 		}
 	}
@@ -256,7 +256,7 @@ neighbor_events.3 = {
 	option = {
 		name = neighbor_events.3.b
 		default_option = yes
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_modifier = {
 				name = rejected_proletarian_internationalism
 				months = normal_modifier_time
@@ -284,7 +284,7 @@ neighbor_events.4 = {
 			owner = {
 				relations:root >= relations_threshold:cordial
 				NOT = {
-					has_ruling_interest_group = ig_laborists
+					has_ruling_interest_group = ig_socialists
 				}
 			}
 		}
@@ -292,7 +292,7 @@ neighbor_events.4 = {
 	immediate = {
 		save_neighbor_with_state = {
 			CRITERIA = "relations:root >= relations_threshold:cordial
-			NOT = { has_ruling_interest_group = ig_laborists }"
+			NOT = { has_ruling_interest_group = ig_socialists }"
 		}
 		ig:ig_capitalists = {
 			save_scope_as = industrialists_ig
@@ -503,7 +503,7 @@ neighbor_events.7 = {
 				average_sol > root.average_sol
 			}
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			is_marginal = no
 		}
 	}
@@ -515,7 +515,7 @@ neighbor_events.7 = {
 	}
 	option = {
 		name = neighbor_events.7.a
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_modifier = {
 				name = criticized_economic_injustice
 				months = short_modifier_time

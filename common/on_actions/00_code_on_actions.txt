@@ -1355,7 +1355,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_decentralization
 							currently_enacting_law.type = law_type:law_anti_industrialization
 						}
-						ig:ig_laborists = {
+						ig:ig_socialists = {
 							nor = {
 								has_ideology = ideology:ideology_social
 								interest_group_supports_political_movement = yes
@@ -1402,7 +1402,7 @@ on_law_enactment_pass = {
 							}
 						}
 						# and the laborists don't have the vanguardist ideology, or ar in a political movement
-						ig:ig_laborists = {
+						ig:ig_socialists = {
 							nor = {
 								has_ideology = ideology:ideology_vanguardist
 								interest_group_supports_political_movement = yes
@@ -1431,7 +1431,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_military_industry_nationalization
 						}
 						# and the laborists aren't already vanguardist or in a political movement
-						ig:ig_laborists = {
+						ig:ig_socialists = {
 							nor = {
 								has_ideology = ideology:ideology_vanguardist
 								interest_group_supports_political_movement = yes

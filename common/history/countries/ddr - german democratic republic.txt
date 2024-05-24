@@ -36,7 +36,7 @@
 			recreationalDrugs = alcohol_allowed
 		}
 		set_tax_level = medium
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}
 		ig:ig_intelligentsia = {

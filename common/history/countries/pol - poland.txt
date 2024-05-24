@@ -45,7 +45,7 @@
 			loanType = 1
 		}
 		effect_currency_pln = yes
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}
 		ig:ig_intelligentsia = {

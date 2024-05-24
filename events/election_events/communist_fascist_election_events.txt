@@ -192,13 +192,13 @@ communist_elections.2 = {
 			has_variable = council_elections_var
 		}
 		#has_law = law_type:law_council_elective
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			has_party = yes
 		}
 		any_active_party = {
 			NOT = {
 				any_member = {
-					is_interest_group_type = ig_laborists
+					is_interest_group_type = ig_socialists
 				}
 			}
 		}
@@ -208,7 +208,7 @@ communist_elections.2 = {
 			name = council_elections_var
 			months = short_modifier_time
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = unions_ig
 			party = {
 				save_scope_as = unions_party

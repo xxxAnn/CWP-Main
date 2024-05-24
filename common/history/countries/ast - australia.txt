@@ -44,7 +44,7 @@
 			biotech = unrestricted_human_testing
 		}
 		#IG in government to match ruler
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}
 		# Institutions

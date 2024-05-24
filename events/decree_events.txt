@@ -437,7 +437,7 @@ decree_events.4 = {
 		default_option = yes
 		create_character = {
 			is_admiral = yes
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ig_leader = no
 			noble = no
 		}
@@ -447,7 +447,7 @@ decree_events.4 = {
 				pop_type = laborers
 			}
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_modifier = {
 				name = social_mobility_modifier
 				months = normal_modifier_time

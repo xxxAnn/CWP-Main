@@ -54,7 +54,7 @@
 			loanType = 1
 		}
 		#IG in government to match ruler
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}
 		effect_bretton_woods_signatory = yes

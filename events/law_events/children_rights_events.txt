@@ -284,7 +284,7 @@ children_rights_events.3 = {
 			}
 			save_scope_as = child_labor_state
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = trade_unions_scope
 		}
 	}

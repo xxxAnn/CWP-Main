@@ -101,7 +101,7 @@
 			religion = rel:protestant
 			ig_leader = yes
 			birth_date = 1907.10.1
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_moderate
 		}
 		#Adults
