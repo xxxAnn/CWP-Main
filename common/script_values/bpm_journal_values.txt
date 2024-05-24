@@ -1,7 +1,9 @@
 bpm_je_propaganda_of_the_deed_philosophy_value = {
 	value = 0
 	if = {
-		limit = { has_variable = bpm_je_propaganda_of_the_deed }
+		limit = {
+			has_variable = bpm_je_propaganda_of_the_deed
+		}
 		add = var:bpm_je_propaganda_of_the_deed
 	}
 }
@@ -9,7 +11,9 @@ bpm_je_propaganda_of_the_deed_philosophy_value = {
 bpm_je_propaganda_of_the_deed_months_below_value = {
 	value = 0
 	if = {
-		limit = { has_variable = bpm_je_propaganda_of_the_deed_months_below }
+		limit = {
+			has_variable = bpm_je_propaganda_of_the_deed_months_below
+		}
 		add = var:bpm_je_propaganda_of_the_deed_months_below
 	}
 }
@@ -18,7 +22,9 @@ bpm_je_propaganda_of_the_deed_decay_threshold_value = {
 	value = 50
 	add = {
 		if = {
-			limit = { has_variable = bpm_je_propaganda_of_the_deed_bombs_done }
+			limit = {
+				has_variable = bpm_je_propaganda_of_the_deed_bombs_done
+			}
 			add = var:bpm_je_propaganda_of_the_deed_bombs_done
 			multiply = 2
 		}
@@ -29,7 +35,9 @@ bpm_je_propaganda_of_the_deed_complete_threshold_value = {
 	value = 100
 	add = {
 		if = {
-			limit = { has_variable = bpm_je_propaganda_of_the_deed_bombs_done }
+			limit = {
+				has_variable = bpm_je_propaganda_of_the_deed_bombs_done
+			}
 			add = var:bpm_je_propaganda_of_the_deed_bombs_done
 			multiply = -2
 		}
@@ -38,17 +46,17 @@ bpm_je_propaganda_of_the_deed_complete_threshold_value = {
 
 bpm_je_propaganda_of_the_deed_baseline_target = {
 	value = 0
-
 	add = {
 		desc = "BPM_VALUE_BASE"
 		value = 10
 	}
-
 	# Repressive police/secret police laws
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_LOCAL_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_local_police }
+			limit = {
+				has_law = law_type:law_local_police
+			}
 			add = institution:institution_police.investment
 			multiply = 4
 		}
@@ -56,7 +64,9 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_dedicated_police }
+			limit = {
+				has_law = law_type:law_dedicated_police
+			}
 			add = institution:institution_police.investment
 			multiply = 4
 		}
@@ -64,7 +74,9 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_MILITARIZED_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_militarized_police	}
+			limit = {
+				has_law = law_type:law_militarized_police
+			}
 			add = institution:institution_police.investment
 			multiply = 5
 		}
@@ -72,7 +84,9 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_GUARD"
 		if = {
-			limit = { #has_law = law_type:law_national_guard }
+			limit = {
+				has_law = law_type:law_national_guard
+			}
 			add = institution:institution_home_affairs.investment
 			multiply = 4
 		}
@@ -80,17 +94,18 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_SECRET_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_secret_police }
+			limit = {
+				has_law = law_type:law_secret_police
+			}
 			add = institution:institution_home_affairs.investment
 			multiply = 5
 		}
 	}
-
 	# Autocratic laws or flawed electoral laws
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_NO_ELECTIONS"
 		if = {
-			limit = { 
+			limit = {
 				bpm_country_laws_no_voting = yes
 			}
 			add = 15
@@ -99,17 +114,16 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_NO_FULL_DEMOCRACY"
 		if = {
-			limit = { 
+			limit = {
 				bpm_country_laws_no_voting = no
-				NOT = { 
-					#has_law = law_type:law_universal_suffrage
-					institution:institution_suffrage.investment = 5 
+				NOT = {
+					has_law = law_type:law_universal_suffrage
+					institution:institution_suffrage.investment = 5
 				}
 			}
 			add = 10
 		}
 	}
-
 	# Low rigidity
 	add = {
 		desc = "BPM_VALUE_FROM_RIGIDITY"
@@ -118,131 +132,158 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 		multiply = 0.2
 		min = 0
 	}
-
 	# Discriminatory laws
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_STATE_RELIGION"
 		if = {
-			limit = { #has_law = law_type:law_state_religion }
+			limit = {
+				has_law = law_type:law_state_religion
+			}
 			add = 5
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_STATE_ATHEISM"
 		if = {
-			limit = { #has_law = law_type:law_state_atheism }
+			limit = {
+				has_law = law_type:law_state_atheism
+			}
 			add = 5
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_NO_MULTICULTURALISM"
 		if = {
-			limit = { NOT = { #has_law = law_type:law_multicultural } }
+			limit = {
+				NOT = {
+					has_law = law_type:law_multicultural
+				}
+			}
 			add = 10
 		}
 	}
-
 	# Anti-proletarian laws (socialist party bans, zero or weak welfare, traditionalism/LF, serfdom, no free time etc)
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_SOCIALIST_BAN"
 		if = {
-			limit = { bpm_banned_socialist_parties = yes }
+			limit = {
+				bpm_banned_socialist_parties = yes
+			}
 			add = 15
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_NO_WELFARE"
 		if = {
-			limit = { #has_law = law_type:law_no_social_security } 
+			limit = {
+				has_law = law_type:law_no_social_security
+			}
 			add = 5
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_POOR_LAWS"
 		if = {
-			limit = { #has_law = law_type:law_poor_laws } 
+			limit = {
+				has_law = law_type:law_poor_laws
+			}
 			add = 5
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_TRADITIONALISM"
 		if = {
-			limit = { #has_law = law_type:law_traditionalism } 
+			limit = {
+				has_law = law_type:law_traditionalism
+			}
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_LAISSEZ_FAIRE"
 		if = {
-			limit = { #has_law = law_type:law_laissez_faire } 
+			limit = {
+				has_law = law_type:law_laissez_faire
+			}
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_INTERVENTIONISM"
 		if = {
-			limit = { #has_law = law_type:law_interventionism } 
+			limit = {
+				has_law = law_type:law_interventionism
+			}
 			add = 5
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_SERFDOM"
 		if = {
-			limit = { #has_law = law_type:law_serfdom } 
+			limit = {
+				has_law = law_type:law_serfdom
+			}
 			add = 15
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_TENANT_FARMERS"
 		if = {
-			limit = { #has_law = law_type:law_tenant_farmers } 
+			limit = {
+				has_law = law_type:law_tenant_farmers
+			}
 			add = 5
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_COMMERCIALIZED_AGRICULTURE"
 		if = {
-			limit = { #has_law = law_type:law_commercialized_agriculture } 
+			limit = {
+				has_law = law_type:law_commercialized_agriculture
+			}
 			add = 5
 		}
 	}
 	#add = {
 	#	desc = "BPM_VALUE_FROM_LAW_HOMESTEADING"
 	#	if = {
-	#		limit = { #has_law = law_type:law_homesteading } 
+	#		limit = { has_law = law_type:law_homesteading } 
 	#		add = 5
 	#	}
 	#}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_UNREGULATED_WORK_TIME"
 		if = {
-			limit = { #has_law = law_type:law_unregulated_work_time } 
+			limit = {
+				has_law = law_type:law_unregulated_work_time
+			}
 			add = 5
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_NO_WORKERS_RIGHTS"
 		if = {
-			limit = { #has_law = law_type:law_no_workers_rights } 
+			limit = {
+				has_law = law_type:law_no_workers_rights
+			}
 			add = 5
 		}
 	}
-
 	# Foreign Policy
 	add = {
 		desc = "BPM_VALUE_FROM_WAR"
 		if = {
-			limit = { is_at_war = yes }
+			limit = {
+				is_at_war = yes
+			}
 			add = 25
 		}
 	}
-
 	# Duration of JE (lowers resting point over time by 1 per month generally)
 	# subtract = {
 	# 	desc = "BPM_VALUE_JOURNAL_DURATION"
 	# 	add = var:bpm_je_propaganda_of_the_deed_exhaustion
 	# }
-
 	# Another GP finished the JE
 	# subtract = {
 	# 	desc = "BPM_VALUE_POTD_ENDED_IN_GP"
@@ -251,7 +292,6 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 	# 		add = 25
 	# 	}
 	# }
-	
 	# Anarchist agitators
 	add = {
 		desc = "BPM_VALUE_ANARCHIST_AGITATORS"
@@ -264,7 +304,6 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 			multiply = 0.1
 		}
 	}
-
 	# Bombs done
 	#if = {
 	#	limit = { is_player = no }
@@ -295,7 +334,6 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 		desc = "BPM_VALUE_BASE"
 		value = 5
 	}
-
 	# Strong Anarchists
 	add = {
 		desc = "BPM_VALUE_POWERFUL_ANARCHISTS"
@@ -308,7 +346,6 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 			add = 5
 		}
 	}
-
 	# Bolstered Anarchists
 	add = {
 		desc = "BPM_VALUE_BOLSTERED_ANARCHISTS"
@@ -321,7 +358,6 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 			add = 5
 		}
 	}
-
 	# Anarchist Agitators
 	add = {
 		desc = "BPM_VALUE_ANARCHIST_AGITATORS"
@@ -335,7 +371,6 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 			min = 10
 		}
 	}
-
 	# PotD progress (Above 50%) (Multiplies above)
 	multiply = {
 		desc = "BPM_VALUE_FROM_POTD_CONVICTION"
@@ -346,7 +381,6 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 		add = 1
 		min = 1
 	}
-
 	# Rigidity
 	#add = {
 	#	desc = "BPM_VALUE_FROM_RIGIDITY"
@@ -354,13 +388,13 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 	#	subtract = var:bpm_political_stability
 	#	multiply = 0.05
 	#}
-
-	
 	# Cops & Secret Cops
 	subtract = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_LOCAL_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_local_police }
+			limit = {
+				has_law = law_type:law_local_police
+			}
 			add = institution:institution_police.investment
 			multiply = 0.5
 		}
@@ -368,14 +402,18 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 	subtract = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_dedicated_police }
+			limit = {
+				has_law = law_type:law_dedicated_police
+			}
 			add = institution:institution_police.investment
 		}
 	}
 	subtract = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_MILITARIZED_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_militarized_police	}
+			limit = {
+				has_law = law_type:law_militarized_police
+			}
 			add = institution:institution_police.investment
 			multiply = 2
 		}
@@ -383,14 +421,18 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 	subtract = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_GUARD"
 		if = {
-			limit = { #has_law = law_type:law_national_guard }
+			limit = {
+				has_law = law_type:law_national_guard
+			}
 			add = institution:institution_home_affairs.investment
 		}
 	}
 	subtract = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_SECRET_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_secret_police }
+			limit = {
+				has_law = law_type:law_secret_police
+			}
 			add = institution:institution_home_affairs.investment
 			multiply = 2
 		}
@@ -399,50 +441,56 @@ bpm_je_propaganda_of_the_deed_бомбометр_rate = {
 
 bpm_je_agrarian_socialism_rate = {
 	value = 0
-
 	add = {
 		desc = "BPM_VALUE_BASE"
 		value = -1
 	}
-
 	# Laws
 	if = {
-		limit = { #has_law = law_type:law_traditionalism }
+		limit = {
+			has_law = law_type:law_traditionalism
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_LAW_TRADITIONALISM"
 			value = 0.4
 		}
 	}
 	else_if = {
-		limit = { #has_law = law_type:law_agrarianism }
+		limit = {
+			has_law = law_type:law_agrarianism
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_LAW_AGRARIANISM"
 			value = 0.4
 		}
 	}
-
 	if = {
-		limit = { #has_law = law_type:law_tenant_farmers }
+		limit = {
+			has_law = law_type:law_tenant_farmers
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_LAW_TENANT_FARMERS"
 			value = 0.4
 		}
 	}
 	else_if = {
-		limit = { #has_law = law_type:law_serfdom }
+		limit = {
+			has_law = law_type:law_serfdom
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_LAW_SERFDOM"
-			value = 1.0
+			value = 1
 		}
 	}
 	else_if = {
-		limit = { #has_law = law_type:law_homesteading }
+		limit = {
+			has_law = law_type:law_homesteading
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_LAW_HOMESTEADING"
 			value = -0.5
 		}
 	}
-
 	# Agitators & Leaders
 	add = {
 		desc = "BPM_VALUE_FROM_AGRARIAN_SOCIALIST_CHARACTERS"
@@ -459,17 +507,17 @@ bpm_je_agrarian_socialism_rate = {
 		}
 		multiply = 0.005
 	}
-
 	# Peasant population yandev
 	if = {
-		limit = { has_variable = bpm_peasant_population_yandev_var }
+		limit = {
+			has_variable = bpm_peasant_population_yandev_var
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_PEASANT_POPULATION"
 			value = var:bpm_peasant_population_yandev_var
 			multiply = 0.04
 		}
 	}
-
 	# Farmer population yandev
 	# add = {
 	# 	desc = "BPM_VALUE_FROM_FARMER_POPULATION"
@@ -499,14 +547,15 @@ bpm_je_agrarian_socialism_rate = {
 	# 	}
 	# 	multiply = 0.05
 	# }
-
 	# Radicals yandev
 	if = {
-		limit = { has_variable = bpm_peasant_radicals_yandev_var }
+		limit = {
+			has_variable = bpm_peasant_radicals_yandev_var
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_PEASANT_RADICALS"
 			value = var:bpm_peasant_radicals_yandev_var
-			multiply = 0.20
+			multiply = 0.2
 		}
 	}
 	# add = {
@@ -535,10 +584,8 @@ bpm_je_agrarian_socialism_rate = {
 	# 			add = 1
 	# 		}	
 	# 	}
-
 	# 	multiply = 0.10
 	# }
-
 	# Other Journal factors
 	# add = {
 	# 	desc = "BPM_VALUE_FROM_NOT_POTD_COMPLETED"
@@ -550,7 +597,9 @@ bpm_je_agrarian_socialism_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_SYNDICALISM_DEVELOPMENT"
 		if = {
-			limit = { has_variable = bpm_je_syndicalism } 
+			limit = {
+				has_variable = bpm_je_syndicalism
+			}
 			subtract = var:bpm_je_syndicalism
 			multiply = 0.02
 		}
@@ -558,16 +607,15 @@ bpm_je_agrarian_socialism_rate = {
 }
 
 bpm_je_syndicalism_rate = {
-
 	value = 0
-
 	add = {
 		desc = "BPM_VALUE_BASE"
 		value = -0.4
 	}
-
 	if = {
-		limit = { exists = ig:ig_socialists }
+		limit = {
+			exists = ig:ig_socialists
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_SOCS_POPULARITY"
 			value = ig:ig_socialists.interest_group_population_percentage
@@ -575,7 +623,9 @@ bpm_je_syndicalism_rate = {
 		}
 	}
 	if = {
-		limit = { exists = ig:ig_revolutionist_socialists }
+		limit = {
+			exists = ig:ig_revolutionist_socialists
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_REVSOCS_POPULARITY"
 			value = ig:ig_revolutionist_socialists.interest_group_population_percentage
@@ -583,14 +633,15 @@ bpm_je_syndicalism_rate = {
 		}
 	}
 	if = {
-		limit = { exists = ig:ig_trade_unions }
+		limit = {
+			exists = ig:ig_trade_unions
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_TRADE_UNIONS_POPULARITY"
 			value = ig:ig_trade_unions.interest_group_population_percentage
 			multiply = 20
 		}
 	}
-
 	# Agitators & Leaders
 	add = {
 		desc = "BPM_VALUE_FROM_SYNDICALIST_CHARACTERS"
@@ -610,47 +661,50 @@ bpm_je_syndicalism_rate = {
 		}
 		multiply = 0.005
 	}
-
 	# Laborer population yandev
 	if = {
-		limit = { has_variable = bpm_laborer_population_yandev_var }
+		limit = {
+			has_variable = bpm_laborer_population_yandev_var
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_LABORER_POPULATION"
 			value = var:bpm_laborer_population_yandev_var
 			multiply = 0.05
 		}
 	}
-
 	# Machinist population yandev
 	if = {
-		limit = { has_variable = bpm_machinist_population_yandev_var }
+		limit = {
+			has_variable = bpm_machinist_population_yandev_var
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_MACHINIST_POPULATION"
 			value = var:bpm_machinist_population_yandev_var
 			multiply = 0.2
 		}
 	}
-
 	# Laborer radicals yandev
 	if = {
-		limit = { has_variable = bpm_laborer_radicals_yandev_var }
+		limit = {
+			has_variable = bpm_laborer_radicals_yandev_var
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_LABORER_RADICALS"
 			value = var:bpm_laborer_radicals_yandev_var
-			multiply = 0.10
+			multiply = 0.1
 		}
 	}
-	
 	# Machinist radicals yandev
 	if = {
-		limit = { has_variable = bpm_machinist_radicals_yandev_var }
+		limit = {
+			has_variable = bpm_machinist_radicals_yandev_var
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_MACHINIST_RADICALS"
 			value = var:bpm_machinist_radicals_yandev_var
-			multiply = 0.10
+			multiply = 0.1
 		}
 	}
-
 	# Other Journal factors
 	# add = {
 	# 	desc = "BPM_VALUE_FROM_POTD_COMPLETED"
@@ -662,7 +716,9 @@ bpm_je_syndicalism_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_SYNDICALISM_LEGITIMIZED"
 		if = {
-			limit = { has_global_variable = bpm_syndicalism_legitimized } 
+			limit = {
+				has_global_variable = bpm_syndicalism_legitimized
+			}
 			add = 0.8
 		}
 	}
@@ -676,7 +732,9 @@ bpm_je_syndicalism_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_AGRARIAN_SOCIALISM_DEVELOPMENT"
 		if = {
-			limit = { has_variable = bpm_je_agrarian_socialism } 
+			limit = {
+				has_variable = bpm_je_agrarian_socialism
+			}
 			subtract = var:bpm_je_agrarian_socialism
 			multiply = 0.02
 		}
@@ -687,7 +745,9 @@ bpm_je_zapadniks_and_slavophiles_rate_prog_rubberband_zapadnik = {
 	value = 2
 	subtract = {
 		if = {
-			limit = { has_variable = bpm_je_zapadniks_and_slavophiles }
+			limit = {
+				has_variable = bpm_je_zapadniks_and_slavophiles
+			}
 			add = var:bpm_je_zapadniks_and_slavophiles
 		}
 		subtract = 50
@@ -701,7 +761,9 @@ bpm_je_zapadniks_and_slavophiles_rate_prog_rubberband_slavophile = {
 	value = 1
 	add = {
 		if = {
-			limit = { has_variable = bpm_je_zapadniks_and_slavophiles }
+			limit = {
+				has_variable = bpm_je_zapadniks_and_slavophiles
+			}
 			add = var:bpm_je_zapadniks_and_slavophiles
 		}
 		divide = 50
@@ -712,20 +774,21 @@ bpm_je_zapadniks_and_slavophiles_rate_prog_rubberband_slavophile = {
 
 bpm_je_zapadniks_and_slavophiles_rate = {
 	value = 0
-
 	if = {
 		limit = {
-			var:bpm_je_zapadniks_and_slavophiles_duration < 1920 # 40~ish years (4 weeks per 12 months = 48; 48 * 40 years = 1920 weeks)
+			var:bpm_je_zapadniks_and_slavophiles_duration < 1920			# 40~ish years (4 weeks per 12 months = 48; 48 * 40 years = 1920 weeks)
 		}
 		# Tsar + Leaders & Agitators (Slavophiles)
 		subtract = {
 			desc = "BPM_VALUE_FROM_MONARCH_POPULARITY"
 			if = {
-				limit = { #has_law = law_type:law_monarchy }
+				limit = {
+					has_law = law_type:law_monarchy
+				}
 				add = {
 					value = ruler.popularity
 					multiply = 0.002
-					multiply = bpm_je_zapadniks_and_slavophiles_rate_prog_rubberband_slavophile	
+					multiply = bpm_je_zapadniks_and_slavophiles_rate_prog_rubberband_slavophile
 				}
 			}
 		}
@@ -759,7 +822,6 @@ bpm_je_zapadniks_and_slavophiles_rate = {
 			multiply = 0.002
 			multiply = bpm_je_zapadniks_and_slavophiles_rate_prog_rubberband_slavophile
 		}
-	
 		# Leaders & Agitators (Zapadnik)
 		add = {
 			desc = "BPM_VALUE_FROM_LIBERAL_LEADER_AND_AGITATORS"
@@ -812,12 +874,15 @@ bpm_je_zapadniks_and_slavophiles_rate = {
 			subtract = var:bpm_je_zapadniks_and_slavophiles_duration
 			divide = 1920
 		}
-	} else = {
+	}
+	else = {
 		# Going back to resting point
 		add = {
 			desc = "BPM_VALUE_JOURNAL_DURATION"
 			if = {
-				limit = { has_variable = bpm_je_zapadniks_and_slavophiles }
+				limit = {
+					has_variable = bpm_je_zapadniks_and_slavophiles
+				}
 				subtract = var:bpm_je_zapadniks_and_slavophiles
 			}
 			add = 50
@@ -825,13 +890,15 @@ bpm_je_zapadniks_and_slavophiles_rate = {
 			min = -1
 		}
 	}
-
 }
 
-bpm_je_general_strike_multiplier = { # 
+bpm_je_general_strike_multiplier = {
+	# 
 	value = 1
 	if = {
-		limit = { has_journal_entry = je_bpm_general_strike_ongoing }
+		limit = {
+			has_journal_entry = je_bpm_general_strike_ongoing
+		}
 		multiply = 0.05
 	}
 }
@@ -859,15 +926,15 @@ bpm_je_general_strike_quadratic_trade_union_support = {
 
 bpm_je_general_strike_power = {
 	value = 0
-
 	add = {
 		desc = "BPM_VALUE_RANDOM"
 		if = {
-			limit = { has_variable = bpm_je_general_strike_trigger_random }
+			limit = {
+				has_variable = bpm_je_general_strike_trigger_random
+			}
 		}
 		value = var:bpm_je_general_strike_trigger_random
 	}
-
 	# Population too agrarian
 	add = {
 		desc = "BPM_VALUE_FROM_PEASANT_POPULATION"
@@ -879,23 +946,31 @@ bpm_je_general_strike_power = {
 			multiply = 2
 		}
 	}
-
 	# No Labor Confederations
 	add = {
 		desc = "BPM_VALUE_FROM_NO_TECH_ANARCHISM"
 		if = {
-			limit = { NOT = { has_technology_researched = anarchism } } 
+			limit = {
+				NOT = {
+					has_technology_researched = anarchism
+				}
+			}
 			subtract = 25
 		}
 	}
-
 	if = {
-		limit = { NOT = { #has_law = law_type:law_syndicalism } }
+		limit = {
+			NOT = {
+				has_law = law_type:law_syndicalism
+			}
+		}
 		# Syndicalist agitators & Syndicalism progress
 		add = {
 			desc = "BPM_VALUE_FROM_SYNDICALISM_DEVELOPMENT"
 			if = {
-				limit = { has_variable = bpm_je_syndicalism } 
+				limit = {
+					has_variable = bpm_je_syndicalism
+				}
 				add = var:bpm_je_syndicalism
 				multiply = 0.1
 			}
@@ -927,7 +1002,6 @@ bpm_je_general_strike_power = {
 		# 	}
 		# }
 	}
-
 	# Socialist/TU IG Popularity (& anger potentially)
 	add = {
 		desc = "BPM_VALUE_FROM_SOCIALISTS_APPROVAL_POPULARITY"
@@ -943,7 +1017,7 @@ bpm_je_general_strike_power = {
 				multiply = 100
 			}
 		}
-		max = 20 # Cap at 20% of population (all socialists)
+		max = 20		# Cap at 20% of population (all socialists)
 		min = 0
 	}
 	add = {
@@ -959,7 +1033,7 @@ bpm_je_general_strike_power = {
 				# Scale by population
 				multiply = interest_group_population_percentage
 				multiply = 100
-				max = 10 # Cap at 10% of population
+				max = 10				# Cap at 10% of population
 				min = 0
 			}
 		}
@@ -977,7 +1051,7 @@ bpm_je_general_strike_power = {
 				# Scale by population
 				multiply = ig_clout
 				multiply = 100
-				max = 10 # Cap at 10% of clout
+				max = 10				# Cap at 10% of clout
 				min = 0
 			}
 		}
@@ -994,7 +1068,6 @@ bpm_je_general_strike_power = {
 			add = 20
 		}
 	}
-
 	# Radicals vs Loyalists
 	add = {
 		desc = "BPM_VALUE_FROM_RADICALS"
@@ -1006,10 +1079,11 @@ bpm_je_general_strike_power = {
 		subtract = loyalist_fraction
 		multiply = 40
 	}
-
 	# War
 	if = {
-		limit = { is_at_war = yes }
+		limit = {
+			is_at_war = yes
+		}
 		if = {
 			limit = {
 				any_scope_war = {
@@ -1023,7 +1097,8 @@ bpm_je_general_strike_power = {
 				value = 0
 				desc = "BPM_VALUE_FROM_WAR_HIGH_SUPPORT"
 			}
-		} else_if = {
+		}
+		else_if = {
 			limit = {
 				any_scope_war = {
 					has_war_support = {
@@ -1036,7 +1111,8 @@ bpm_je_general_strike_power = {
 				value = 10
 				desc = "BPM_VALUE_FROM_WAR_MEDIUM_SUPPORT"
 			}
-		} else_if = {
+		}
+		else_if = {
 			limit = {
 				any_scope_war = {
 					has_war_support = {
@@ -1049,23 +1125,32 @@ bpm_je_general_strike_power = {
 				value = 20
 				desc = "BPM_VALUE_FROM_WAR_LOW_SUPPORT"
 			}
-		} else = {
+		}
+		else = {
 			add = {
 				value = 30
 				desc = "BPM_VALUE_FROM_WAR_VERY_LOW_SUPPORT"
 			}
 		}
 	}
-
 	# Progress of progressive Revolution (Liberal or Socialist)
 	if = {
-		limit = { NOT = { #has_law = law_type:law_council_republic } }
+		limit = {
+			NOT = {
+				has_law = law_type:law_council_republic
+			}
+		}
 		add = {
 			desc = "BPM_VALUE_FROM_ONGOING_LIBERAL_REVOLUTION"
 			if = {
-				limit = { liberal_revolution_ongoing = yes socialist_revolution_ongoing = no }
+				limit = {
+					liberal_revolution_ongoing = yes
+					socialist_revolution_ongoing = no
+				}
 				every_civil_war = {
-					limit = { is_civil_war_type = revolution }
+					limit = {
+						is_civil_war_type = revolution
+					}
 					add = civil_war_progress
 					multiply = 75
 				}
@@ -1075,24 +1160,31 @@ bpm_je_general_strike_power = {
 	add = {
 		desc = "BPM_VALUE_FROM_ONGOING_SOCIALIST_REVOLUTION"
 		if = {
-			limit = { socialist_revolution_ongoing = yes }
-			every_civil_war ={
-				limit = { is_civil_war_type = revolution }
+			limit = {
+				socialist_revolution_ongoing = yes
+			}
+			every_civil_war = {
+				limit = {
+					is_civil_war_type = revolution
+				}
 				add = civil_war_progress
 				multiply = 100
 			}
 		}
 	}
-
 	# Labor laws (Doesn't affect active strike)	
 	if = {
 		limit = {
 			always = no
-			NOT = { has_journal_entry = je_bpm_general_strike_ongoing }
+			NOT = {
+				has_journal_entry = je_bpm_general_strike_ongoing
+			}
 		}
 		# Labor time laws
 		if = {
-			limit = { #has_law = law_type:law_token_time_regulations }
+			limit = {
+				has_law = law_type:law_token_time_regulations
+			}
 			subtract = {
 				desc = "[GetLawType('law_token_time_regulations').GetName] [concept_investment_level]"
 				value = institution:institution_workplace_safety.investment
@@ -1100,7 +1192,9 @@ bpm_je_general_strike_power = {
 			}
 		}
 		else_if = {
-			limit = { #has_law = law_type:law_limited_work_hours }
+			limit = {
+				has_law = law_type:law_limited_work_hours
+			}
 			subtract = {
 				desc = "[GetLawType('law_limited_work_hours').GetName] [concept_investment_level]"
 				value = institution:institution_workplace_safety.investment
@@ -1108,7 +1202,9 @@ bpm_je_general_strike_power = {
 			}
 		}
 		else_if = {
-			limit = { #has_law = law_type:law_protected_leisure }
+			limit = {
+				has_law = law_type:law_protected_leisure
+			}
 			subtract = {
 				desc = "[GetLawType('law_protected_leisure').GetName] [concept_investment_level]"
 				value = institution:institution_workplace_safety.investment
@@ -1117,7 +1213,9 @@ bpm_je_general_strike_power = {
 		}
 		# Labor laws
 		if = {
-			limit = { #has_law = law_type:law_regulatory_bodies }
+			limit = {
+				has_law = law_type:law_regulatory_bodies
+			}
 			subtract = {
 				desc = "[GetLawType('law_regulatory_bodies').GetName] [concept_investment_level]"
 				value = institution:institution_workplace_safety.investment
@@ -1125,16 +1223,19 @@ bpm_je_general_strike_power = {
 			}
 		}
 		else_if = {
-			limit = { #has_law = law_type:law_worker_protections }
+			limit = {
+				has_law = law_type:law_worker_protections
+			}
 			subtract = {
 				desc = "[GetLawType('law_worker_protections').GetName] [concept_investment_level]"
 				value = institution:institution_workplace_safety.investment
 				multiply = 2
 			}
 		}
-
 		if = {
-			limit = { #has_law = law_type:law_local_police }
+			limit = {
+				has_law = law_type:law_local_police
+			}
 			subtract = {
 				desc = "BPM_VALUE_FROM_INSTITUTION_LOCAL_POLICE"
 				value = institution:institution_police.investment
@@ -1142,7 +1243,9 @@ bpm_je_general_strike_power = {
 			}
 		}
 		else_if = {
-			limit = { #has_law = law_type:law_dedicated_police }
+			limit = {
+				has_law = law_type:law_dedicated_police
+			}
 			subtract = {
 				desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_POLICE"
 				value = institution:institution_police.investment
@@ -1150,7 +1253,9 @@ bpm_je_general_strike_power = {
 			}
 		}
 		else_if = {
-			limit = { #has_law = law_type:law_militarized_police }
+			limit = {
+				has_law = law_type:law_militarized_police
+			}
 			subtract = {
 				desc = "BPM_VALUE_FROM_INSTITUTION_MILITARIZED_POLICE"
 				value = institution:institution_police.investment
@@ -1159,7 +1264,9 @@ bpm_je_general_strike_power = {
 		}
 		# Home affairs
 		if = {
-			limit = { #has_law = law_type:law_national_guard }
+			limit = {
+				has_law = law_type:law_national_guard
+			}
 			subtract = {
 				desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_GUARD"
 				value = institution:institution_home_affairs.investment
@@ -1167,7 +1274,9 @@ bpm_je_general_strike_power = {
 			}
 		}
 		else_if = {
-			limit = { #has_law = law_type:law_secret_police }
+			limit = {
+				has_law = law_type:law_secret_police
+			}
 			subtract = {
 				desc = "BPM_VALUE_FROM_INSTITUTION_SECRET_POLICE"
 				value = institution:institution_home_affairs.investment
@@ -1176,7 +1285,9 @@ bpm_je_general_strike_power = {
 		}
 		# Union Laws
 		if = {
-			limit = { #has_law = law_type:law_state_controlled_labor_unions }
+			limit = {
+				has_law = law_type:law_state_controlled_labor_unions
+			}
 			subtract = {
 				desc = "BPM_VALUE_FROM_LAW_STATE_CONTROLLED_LABOR_UNIONS"
 				add = {
@@ -1185,7 +1296,9 @@ bpm_je_general_strike_power = {
 			}
 		}
 		else_if = {
-			limit = { #has_law = law_type:law_limited_labor_unions }
+			limit = {
+				has_law = law_type:law_limited_labor_unions
+			}
 			subtract = {
 				desc = "BPM_VALUE_FROM_LAW_LIMITED_LABOR_UNIONS"
 				add = {
@@ -1193,45 +1306,54 @@ bpm_je_general_strike_power = {
 				}
 			}
 		}
-
 	}
-
 	# Rev/RefSocs in government (in non-CRs)
 	if = {
-		limit = { ig:ig_revolutionist_socialists ?= { is_in_government = yes } }
+		limit = {
+			ig:ig_revolutionist_socialists ?= {
+				is_in_government = yes
+			}
+		}
 		subtract = {
 			desc = "BPM_VALUE_REVOLUTIONIST_SOCIALISTS_IN_GOVERNMENT"
 			value = 20
 		}
 	}
 	else_if = {
-		limit = { ig:ig_socialists ?= { is_in_government = yes } }
+		limit = {
+			ig:ig_socialists ?= {
+				is_in_government = yes
+			}
+		}
 		subtract = {
 			desc = "BPM_VALUE_SOCIALISTS_IN_GOVERNMENT"
 			value = 15
 		}
 	}
 	else_if = {
-		limit = { ig:ig_reformist_socialists ?= { is_in_government = yes } }
+		limit = {
+			ig:ig_reformist_socialists ?= {
+				is_in_government = yes
+			}
+		}
 		subtract = {
 			desc = "BPM_VALUE_REFORMIST_SOCIALISTS_IN_GOVERNMENT"
 			value = 10
 		}
 	}
-
 	# Strike Exhaustion
 	add = {
 		desc = "BPM_VALUE_STRIKE_EXHAUSTION"
 		if = {
-			limit = { has_variable = bpm_je_general_strike_exhaustion }
+			limit = {
+				has_variable = bpm_je_general_strike_exhaustion
+			}
 		}
 		subtract = var:bpm_je_general_strike_exhaustion
 	}
-
 	multiply = {
 		value = bpm_je_general_strike_multiplier
 	}
-
 	if = {
 		limit = {
 			NOR = {
@@ -1249,10 +1371,11 @@ bpm_je_general_strike_power = {
 			value = 100
 		}
 	}
-
 	if = {
 		limit = {
-			NOT = { has_journal_entry = je_bpm_general_strike_ongoing }
+			NOT = {
+				has_journal_entry = je_bpm_general_strike_ongoing
+			}
 		}
 		min = 0
 	}
@@ -1261,17 +1384,18 @@ bpm_je_general_strike_power = {
 
 bpm_je_general_strike_exhaustion_rate = {
 	value = 0
-
 	add = {
 		desc = "BPM_VALUE_BASE"
 		if = {
-			limit = { has_journal_entry = je_bpm_general_strike_trigger }
+			limit = {
+				has_journal_entry = je_bpm_general_strike_trigger
+			}
 			value = -5
-		} else = {
+		}
+		else = {
 			value = 6
 		}
 	}
-
 	if = {
 		limit = {
 			has_journal_entry = je_bpm_general_strike_ongoing
@@ -1283,7 +1407,6 @@ bpm_je_general_strike_exhaustion_rate = {
 			value = 10
 		}
 	}
-
 	# Larger and more powerful unions exhaust less
 	add = {
 		desc = "BPM_VALUE_FROM_TRADE_UNION_POPULARITY"
@@ -1302,7 +1425,9 @@ bpm_je_general_strike_exhaustion_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_SOCIALIST_IGS_POPULARITY"
 		every_interest_group = {
-			limit = { bpm_ig_is_socialist = yes }
+			limit = {
+				bpm_ig_is_socialist = yes
+			}
 			add = {
 				subtract = interest_group_population_percentage
 				multiply = 100
@@ -1320,13 +1445,12 @@ bpm_je_general_strike_exhaustion_rate = {
 			add = 3
 		}
 	}
-
 	# Police exhausts protests faster
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_LOCAL_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_local_police  
+			limit = {
+				has_law = law_type:law_local_police
 				has_journal_entry = je_bpm_general_strike_ongoing
 			}
 			add = institution:institution_police.investment
@@ -1336,8 +1460,8 @@ bpm_je_general_strike_exhaustion_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_dedicated_police 
+			limit = {
+				has_law = law_type:law_dedicated_police
 				has_journal_entry = je_bpm_general_strike_ongoing
 			}
 			add = institution:institution_police.investment
@@ -1347,8 +1471,8 @@ bpm_je_general_strike_exhaustion_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_MILITARIZED_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_militarized_police  
+			limit = {
+				has_law = law_type:law_militarized_police
 				has_journal_entry = je_bpm_general_strike_ongoing
 			}
 			add = institution:institution_police.investment
@@ -1358,8 +1482,8 @@ bpm_je_general_strike_exhaustion_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_GUARD"
 		if = {
-			limit = { 
-				#has_law = law_type:law_national_guard
+			limit = {
+				has_law = law_type:law_national_guard
 				has_journal_entry = je_bpm_general_strike_ongoing
 			}
 			add = institution:institution_home_affairs.investment
@@ -1369,21 +1493,20 @@ bpm_je_general_strike_exhaustion_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_SECRET_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_secret_police
+			limit = {
+				has_law = law_type:law_secret_police
 				has_journal_entry = je_bpm_general_strike_ongoing
 			}
 			add = institution:institution_home_affairs.investment
 			multiply = 2
 		}
 	}
-
 	# Aside from Elected Police
 	subtract = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_ELECTED_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_elected_police 
+			limit = {
+				has_law = law_type:law_elected_police
 				has_journal_entry = je_bpm_general_strike_ongoing
 			}
 			add = institution:institution_police.investment
@@ -1391,23 +1514,21 @@ bpm_je_general_strike_exhaustion_rate = {
 			multiply = bpm_je_general_strike_multiplier
 		}
 	}
-
 	if = {
-		limit = { 
+		limit = {
 			has_journal_entry = je_bpm_general_strike_ongoing
 			has_revolution = no
 		}
 		min = -1
-	} 
-
+	}
 	if = {
 		desc = "BPM_MAX_EXHAUSTION_RATE_IN_REVOLUTION"
-		limit = { 
+		limit = {
 			has_journal_entry = je_bpm_general_strike_ongoing
 			has_revolution = yes
 		}
 		max = -1
-	} 
+	}
 }
 
 bpm_je_general_strike_button_result_small = {

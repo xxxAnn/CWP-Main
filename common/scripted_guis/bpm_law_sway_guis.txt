@@ -1,7 +1,9 @@
 ﻿bpm_assert_authority_sway_gui = {
 	scope = interest_group
 	is_shown = {
-		NOT = { has_variable = bpm_assert_authority_sway_used }
+		NOT = {
+			has_variable = bpm_assert_authority_sway_used
+		}
 		bpm_law_enactment_ruler_effect_on_ig > 0
 	}
 	is_valid = {
@@ -10,7 +12,9 @@
 	effect = {
 		set_variable = bpm_assert_authority_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			add_modifier = {
 				name = bpm_law_sway_assert_authority_used
@@ -23,7 +27,9 @@
 bpm_assert_authority_neg_sway_gui = {
 	scope = interest_group
 	is_shown = {
-		NOT = { has_variable = bpm_assert_authority_neg_sway_used }
+		NOT = {
+			has_variable = bpm_assert_authority_neg_sway_used
+		}
 		bpm_law_enactment_ruler_effect_on_ig < 0
 	}
 	is_valid = {
@@ -32,7 +38,9 @@ bpm_assert_authority_neg_sway_gui = {
 	effect = {
 		set_variable = bpm_assert_authority_neg_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			add_modifier = {
 				name = bpm_law_sway_assert_authority_used
@@ -46,7 +54,9 @@ bpm_redeem_favors_sway_gui = {
 	scope = interest_group
 	is_shown = {
 		ig_approval > 0
-		NOT = { has_variable = bpm_redeem_favors_sway_used }
+		NOT = {
+			has_variable = bpm_redeem_favors_sway_used
+		}
 	}
 	is_valid = {
 		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
@@ -54,7 +64,9 @@ bpm_redeem_favors_sway_gui = {
 	effect = {
 		set_variable = bpm_redeem_favors_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		add_modifier = {
 			name = bpm_law_sway_redeem_favors_used
 			years = bpm_law_sway_approval_duration_years
@@ -65,7 +77,9 @@ bpm_redeem_favors_sway_gui = {
 bpm_blackmail_leader_sway_gui = {
 	scope = interest_group
 	is_shown = {
-		NOT = { has_variable = bpm_blackmail_leader_sway_used }
+		NOT = {
+			has_variable = bpm_blackmail_leader_sway_used
+		}
 		ig_approval > -10
 		leader = {
 			OR = {
@@ -92,7 +106,9 @@ bpm_blackmail_leader_sway_gui = {
 	effect = {
 		set_variable = bpm_blackmail_leader_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		add_modifier = {
 			name = bpm_law_sway_blackmail_leader_used
 			years = bpm_law_sway_approval_duration_years
@@ -109,7 +125,9 @@ bpm_entrench_privileges_sway_gui = {
 			var:bpm_political_stability > 50
 			var:bpm_political_stability < 100
 		}
-		NOT = { has_variable = bpm_entrench_privileges_sway_used }
+		NOT = {
+			has_variable = bpm_entrench_privileges_sway_used
+		}
 	}
 	is_valid = {
 		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
@@ -117,9 +135,14 @@ bpm_entrench_privileges_sway_gui = {
 	effect = {
 		set_variable = bpm_entrench_privileges_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
 		owner = {
-			change_variable = { name = bpm_political_stability add = 4 }
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
+		owner = {
+			change_variable = {
+				name = bpm_political_stability
+				add = 4
+			}
 		}
 	}
 }
@@ -133,7 +156,9 @@ bpm_public_debate_sway_gui = {
 			var:bpm_political_stability < 50
 			var:bpm_political_stability > 0
 		}
-		NOT = { has_variable = bpm_public_debate_sway_used }
+		NOT = {
+			has_variable = bpm_public_debate_sway_used
+		}
 	}
 	is_valid = {
 		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
@@ -141,9 +166,14 @@ bpm_public_debate_sway_gui = {
 	effect = {
 		set_variable = bpm_public_debate_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
 		owner = {
-			change_variable = { name = bpm_political_stability subtract = 2 }
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
+		owner = {
+			change_variable = {
+				name = bpm_political_stability
+				subtract = 2
+			}
 		}
 	}
 }
@@ -151,15 +181,22 @@ bpm_public_debate_sway_gui = {
 bpm_decrease_suffrage_sway_gui = {
 	scope = interest_group
 	is_shown = {
-		NOT = { has_variable = bpm_decrease_suffrage_sway_used }
+		NOT = {
+			has_variable = bpm_decrease_suffrage_sway_used
+		}
 		owner = {
-			institution_investment_level = { institution = institution_suffrage value > 1 }
+			institution_investment_level = {
+				institution = institution_suffrage
+				value > 1
+			}
 		}
 		OR = {
 			is_interest_group_type = ig_landowners
 			has_ideology = ideology:ideology_dop_authoritarian_democrat
 			bpm_ig_is_anti_democratic = yes
-			leader = { bpm_leader_is_right_wing = yes }
+			leader = {
+				bpm_leader_is_right_wing = yes
+			}
 		}
 	}
 	is_valid = {
@@ -168,10 +205,13 @@ bpm_decrease_suffrage_sway_gui = {
 	effect = {
 		set_variable = bpm_decrease_suffrage_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			change_institution_investment_level = {
-				institution = institution_suffrage investment = -1
+				institution = institution_suffrage
+				investment = -1
 			}
 		}
 	}
@@ -180,18 +220,29 @@ bpm_decrease_suffrage_sway_gui = {
 bpm_decrease_police_sway_gui = {
 	scope = interest_group
 	is_shown = {
-		NOT = { has_variable = bpm_decrease_police_sway_used }
+		NOT = {
+			has_variable = bpm_decrease_police_sway_used
+		}
 		owner = {
-			institution_investment_level = { institution = institution_police value > 1 }
+			institution_investment_level = {
+				institution = institution_police
+				value > 1
+			}
 		}
 		OR = {
 			is_interest_group_type = ig_anarchists
 			AND = {
-				NOT = { owner = { #has_law = law_type:law_council_republic } }
+				NOT = {
+					owner = {
+						has_law = law_type:law_council_republic
+					}
+				}
 				OR = {
 					bpm_ig_is_radical_left = yes
 					is_interest_group_type = ig_trade_unions
-					leader = { bpm_leader_is_radical_leftist = yes }
+					leader = {
+						bpm_leader_is_radical_leftist = yes
+					}
 				}
 			}
 		}
@@ -202,10 +253,13 @@ bpm_decrease_police_sway_gui = {
 	effect = {
 		set_variable = bpm_decrease_police_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			change_institution_investment_level = {
-				institution = institution_police investment = -1
+				institution = institution_police
+				investment = -1
 			}
 		}
 	}
@@ -214,25 +268,39 @@ bpm_decrease_police_sway_gui = {
 bpm_decrease_home_affairs_sway_gui = {
 	scope = interest_group
 	is_shown = {
-		NOT = { has_variable = bpm_decrease_home_affairs_sway_used }
+		NOT = {
+			has_variable = bpm_decrease_home_affairs_sway_used
+		}
 		owner = {
 			OR = {
-				#has_law = law_type:law_national_guard
-				#has_law = law_type:law_secret_police
+				has_law = law_type:law_national_guard
+				has_law = law_type:law_secret_police
 			}
-			institution_investment_level = { institution = institution_home_affairs value > 1 }
+			institution_investment_level = {
+				institution = institution_home_affairs
+				value > 1
+			}
 		}
 		OR = {
 			is_interest_group_type = ig_anarchists
 			trigger_if = {
-				limit = { owner = { #has_law = law_type:law_council_republic } }
+				limit = {
+					owner = {
+						has_law = law_type:law_council_republic
+					}
+				}
 				bpm_ig_is_labor = no
-				leader = { bpm_leader_is_socialist = no }
-			} trigger_else = {
+				leader = {
+					bpm_leader_is_socialist = no
+				}
+			}
+			trigger_else = {
 				OR = {
 					bpm_ig_is_radical_left = yes
 					is_interest_group_type = ig_trade_unions
-					leader = { bpm_leader_is_radical_leftist = yes }
+					leader = {
+						bpm_leader_is_radical_leftist = yes
+					}
 				}
 			}
 		}
@@ -243,10 +311,13 @@ bpm_decrease_home_affairs_sway_gui = {
 	effect = {
 		set_variable = bpm_decrease_home_affairs_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			change_institution_investment_level = {
-				institution = institution_home_affairs investment = -1
+				institution = institution_home_affairs
+				investment = -1
 			}
 		}
 	}
@@ -255,13 +326,18 @@ bpm_decrease_home_affairs_sway_gui = {
 bpm_decrease_centralization_sway_gui = {
 	scope = interest_group
 	is_shown = {
-		NOT = { has_variable = bpm_decrease_centralization_sway_used }
+		NOT = {
+			has_variable = bpm_decrease_centralization_sway_used
+		}
 		owner = {
 			NOR = {
-				#has_law = law_type:law_ad_hoc_centralization
-				#has_law = law_type:law_confederated
+				has_law = law_type:law_ad_hoc_centralization
+				has_law = law_type:law_confederated
 			}
-			institution_investment_level = { institution = institution_centralization value > 1 }
+			institution_investment_level = {
+				institution = institution_centralization
+				value > 1
+			}
 		}
 		OR = {
 			is_interest_group_type = ig_rural_folk
@@ -274,10 +350,13 @@ bpm_decrease_centralization_sway_gui = {
 	effect = {
 		set_variable = bpm_decrease_centralization_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			change_institution_investment_level = {
-				institution = institution_centralization investment = -1
+				institution = institution_centralization
+				investment = -1
 			}
 		}
 	}
@@ -290,11 +369,15 @@ bpm_tax_break_rich_sway_gui = {
 			bpm_ig_is_upper_institutional = yes
 			bpm_ig_is_market_liberal = yes
 		}
-		OR = { owner = {
-				#has_law = law_type:law_graduated_taxation
-				#has_law = law_type:law_proportional_taxation
-		} }
-		NOT = { has_variable = bpm_tax_break_rich_sway_used }
+		OR = {
+			owner = {
+				has_law = law_type:law_graduated_taxation
+				has_law = law_type:law_proportional_taxation
+			}
+		}
+		NOT = {
+			has_variable = bpm_tax_break_rich_sway_used
+		}
 	}
 	is_valid = {
 		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
@@ -302,7 +385,9 @@ bpm_tax_break_rich_sway_gui = {
 	effect = {
 		set_variable = bpm_tax_break_rich_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			add_modifier = {
 				name = bpm_law_sway_tax_break_rich_used
@@ -319,8 +404,14 @@ bpm_tax_break_middle_sway_gui = {
 			bpm_ig_is_upper_institutional = yes
 			bpm_ig_is_middle_institutional = yes
 		}
-		NOT = { owner = { #has_law = law_type:law_consumption_based_taxation } }
-		NOT = { has_variable = bpm_tax_break_middle_sway_used }
+		NOT = {
+			owner = {
+				has_law = law_type:law_consumption_based_taxation
+			}
+		}
+		NOT = {
+			has_variable = bpm_tax_break_middle_sway_used
+		}
 	}
 	is_valid = {
 		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
@@ -328,7 +419,9 @@ bpm_tax_break_middle_sway_gui = {
 	effect = {
 		set_variable = bpm_tax_break_middle_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			add_modifier = {
 				name = bpm_law_sway_tax_break_middle_used
@@ -342,8 +435,12 @@ bpm_tax_break_poor_sway_gui = {
 	scope = interest_group
 	is_shown = {
 		is_interest_group_type = ig_trade_unions
-		owner = { #has_law = law_type:law_per_capita_based_taxation }
-		NOT = { has_variable = bpm_tax_break_poor_sway_used }
+		owner = {
+			has_law = law_type:law_per_capita_based_taxation
+		}
+		NOT = {
+			has_variable = bpm_tax_break_poor_sway_used
+		}
 	}
 	is_valid = {
 		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
@@ -351,7 +448,9 @@ bpm_tax_break_poor_sway_gui = {
 	effect = {
 		set_variable = bpm_tax_break_poor_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			add_modifier = {
 				name = bpm_law_sway_tax_break_poor_used
@@ -370,11 +469,13 @@ bpm_tax_break_peasant_sway_gui = {
 		}
 		owner = {
 			OR = {
-				#has_law = law_type:law_per_capita_based_taxation
-				#has_law = law_type:law_land_based_taxation
+				has_law = law_type:law_per_capita_based_taxation
+				has_law = law_type:law_land_based_taxation
 			}
 		}
-		NOT = { has_variable = bpm_tax_break_peasant_sway_used }
+		NOT = {
+			has_variable = bpm_tax_break_peasant_sway_used
+		}
 	}
 	is_valid = {
 		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
@@ -382,7 +483,9 @@ bpm_tax_break_peasant_sway_gui = {
 	effect = {
 		set_variable = bpm_tax_break_peasant_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			add_modifier = {
 				name = bpm_law_sway_tax_break_peasant_used
@@ -399,7 +502,9 @@ bpm_construction_racket_sway_gui = {
 			bpm_ig_is_urban_institutional = yes
 			is_interest_group_type = ig_devout
 		}
-		NOT = { has_variable = bpm_construction_racket_sway_used }
+		NOT = {
+			has_variable = bpm_construction_racket_sway_used
+		}
 	}
 	is_valid = {
 		owner.var:bpm_law_sway_maneuvers >= bpm_law_enactment_sway_cost
@@ -407,7 +512,9 @@ bpm_construction_racket_sway_gui = {
 	effect = {
 		set_variable = bpm_construction_racket_sway_used
 		bpm_subtract_from_law_sways = yes
-		owner = { bpm_update_law_enactment_variables_modifiers = yes }
+		owner = {
+			bpm_update_law_enactment_variables_modifiers = yes
+		}
 		owner = {
 			add_modifier = {
 				name = bpm_law_sway_construction_racket_used

@@ -1,8 +1,13 @@
 ﻿bpm_political_stability = {
 	if = {
-		limit = { owner = { has_variable = bpm_political_stability } }
+		limit = {
+			owner = {
+				has_variable = bpm_political_stability
+			}
+		}
 		add = owner.var:bpm_political_stability
-	} else = {
+	}
+	else = {
 		add = 50
 	}
 }
@@ -33,61 +38,64 @@
 # Potential options:
 # Use a button to get a one-time boost to law passing success chance at the cost of pissing off the IGs that oppose it
 bpm_political_stability_rate = {
-
 	add = {
 		desc = "BPM_VALUE_BASE"
 		value = 0.25
 	}
-
 	# ONGOING WAR
 	add = {
 		if = {
-			limit = { is_at_war = yes }
+			limit = {
+				is_at_war = yes
+			}
 			add = bpm_political_stability_from_war_rate
 		}
 	}
-
 	# GENERAL STRIKE
 	add = {
 		desc = "BPM_VALUE_FROM_GENERAL_STRIKE"
 		if = {
-			limit = { has_journal_entry = je_bpm_general_strike_ongoing}
-			add = 2.0
+			limit = {
+				has_journal_entry = je_bpm_general_strike_ongoing
+			}
+			add = 2
 		}
 	}
-
 	# ONGOING REVOLUTION
 	add = {
 		desc = "BPM_VALUE_FROM_INSURRECTION"
 		if = {
-			limit = { has_insurrectionary_interest_groups = yes }
-			add = 2.0
+			limit = {
+				has_insurrectionary_interest_groups = yes
+			}
+			add = 2
 		}
 	}
-
 	# ONGOING REVOLUTION
 	add = {
 		desc = "BPM_VALUE_FROM_REVOLUTION"
 		if = {
-			limit = { has_revolution = yes }
-			add = 2.0
+			limit = {
+				has_revolution = yes
+			}
+			add = 2
 		}
 	}
-
 	# LOW LEGITIMACY
 	add = {
 		desc = "BPM_VALUE_FROM_VERY_LOW_LEGITIMACY"
 		if = {
-			limit = { government_legitimacy < 10 }
-			add = 1.0
+			limit = {
+				government_legitimacy < 10
+			}
+			add = 1
 		}
 	}
-
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_LOCAL_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_local_police
+			limit = {
+				has_law = law_type:law_local_police
 			}
 			add = institution:institution_police.investment
 			multiply = 0.05
@@ -96,8 +104,8 @@ bpm_political_stability_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_dedicated_police
+			limit = {
+				has_law = law_type:law_dedicated_police
 			}
 			add = institution:institution_police.investment
 			multiply = 0.1
@@ -106,8 +114,8 @@ bpm_political_stability_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_MILITARIZED_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_militarized_police
+			limit = {
+				has_law = law_type:law_militarized_police
 			}
 			add = institution:institution_police.investment
 			multiply = 0.2
@@ -116,8 +124,8 @@ bpm_political_stability_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_ELECTED_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_elected_police
+			limit = {
+				has_law = law_type:law_elected_police
 			}
 			add = institution:institution_police.investment
 			multiply = 0.1
@@ -126,7 +134,9 @@ bpm_political_stability_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_GUARD"
 		if = {
-			limit = { #has_law = law_type:law_national_guard }
+			limit = {
+				has_law = law_type:law_national_guard
+			}
 			add = institution:institution_home_affairs.investment
 			multiply = 0.1
 		}
@@ -134,7 +144,9 @@ bpm_political_stability_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_SECRET_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_secret_police }
+			limit = {
+				has_law = law_type:law_secret_police
+			}
 			add = institution:institution_home_affairs.investment
 			multiply = 0.2
 		}
@@ -142,7 +154,9 @@ bpm_political_stability_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_GUARANTEED_LIBERTIES"
 		if = {
-			limit = { #has_law = law_type:law_guaranteed_liberties }
+			limit = {
+				has_law = law_type:law_guaranteed_liberties
+			}
 			subtract = institution:institution_home_affairs.investment
 			multiply = 0.05
 		}
@@ -150,12 +164,10 @@ bpm_political_stability_rate = {
 }
 
 bpm_political_stability_baseline_target = {
-
 	add = {
 		desc = "BPM_VALUE_BASE"
 		value = 70
 	}
-
 	# IGs 
 	# add = {
 	# 	desc = "BPM_VALUE_FROM_ENTRENCHED_INTEREST_GROUPS"
@@ -164,85 +176,103 @@ bpm_political_stability_baseline_target = {
 	# 		add = var:bpm_political_stability_from_interest_groups
 	# 	}
 	# }
-
 	# LAWS (TRADITIONAL) --------------------------
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_MONARCHY"
 		if = {
-			limit = { #has_law = law_type:law_monarchy }
+			limit = {
+				has_law = law_type:law_monarchy
+			}
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_TRADITIONALISM"
 		if = {
-			limit = { #has_law = law_type:law_traditionalism }
+			limit = {
+				has_law = law_type:law_traditionalism
+			}
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_AD_HOC_CENTRALIZATION"
 		if = {
-			limit = { #has_law = law_type:law_ad_hoc_centralization }
+			limit = {
+				has_law = law_type:law_ad_hoc_centralization
+			}
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_SERFDOM"
 		if = {
-			limit = { #has_law = law_type:law_serfdom }
+			limit = {
+				has_law = law_type:law_serfdom
+			}
 			add = 20
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_TENANT_FARMERS"
 		if = {
-			limit = { #has_law = law_type:law_tenant_farmers }
+			limit = {
+				has_law = law_type:law_tenant_farmers
+			}
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_ISOLATIONISM"
 		if = {
-			limit = { #has_law = law_type:law_isolationism }
+			limit = {
+				has_law = law_type:law_isolationism
+			}
 			add = 10
 		}
 	}
-
 	# LAWS (REPRESSIVE) --------------------------
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_OUTLAWED_DISSENT"
 		if = {
-			limit = { #has_law = law_type:law_outlawed_dissent }
+			limit = {
+				has_law = law_type:law_outlawed_dissent
+			}
 			add = 25
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_CENSORSHIP"
 		if = {
-			limit = { #has_law = law_type:law_censorship }
+			limit = {
+				has_law = law_type:law_censorship
+			}
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_PROTECTED_SPEECH"
 		if = {
-			limit = { #has_law = law_type:law_protected_speech }
+			limit = {
+				has_law = law_type:law_protected_speech
+			}
 			subtract = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_ANARCHY"
 		if = {
-			limit = { #has_law = law_type:law_anarchy }
+			limit = {
+				has_law = law_type:law_anarchy
+			}
 			subtract = 5
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_LOCAL_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_local_police
+			limit = {
+				has_law = law_type:law_local_police
 			}
 			add = institution:institution_police.investment
 			multiply = 2
@@ -251,8 +281,8 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_dedicated_police
+			limit = {
+				has_law = law_type:law_dedicated_police
 			}
 			add = institution:institution_police.investment
 			multiply = 2
@@ -261,8 +291,8 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_MILITARIZED_POLICE"
 		if = {
-			limit = { 
-				#has_law = law_type:law_militarized_police
+			limit = {
+				has_law = law_type:law_militarized_police
 			}
 			add = institution:institution_police.investment
 			multiply = 3
@@ -271,7 +301,9 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_GUARD"
 		if = {
-			limit = { #has_law = law_type:law_national_guard }
+			limit = {
+				has_law = law_type:law_national_guard
+			}
 			add = institution:institution_home_affairs.investment
 			multiply = 2
 		}
@@ -279,7 +311,9 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_SECRET_POLICE"
 		if = {
-			limit = { #has_law = law_type:law_secret_police }
+			limit = {
+				has_law = law_type:law_secret_police
+			}
 			add = institution:institution_home_affairs.investment
 			multiply = 4
 		}
@@ -287,7 +321,9 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_GUARANTEED_LIBERTIES"
 		if = {
-			limit = { #has_law = law_type:law_guaranteed_liberties }
+			limit = {
+				has_law = law_type:law_guaranteed_liberties
+			}
 			subtract = institution:institution_home_affairs.investment
 			multiply = 2
 		}
@@ -295,44 +331,55 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_SUFFRAGE"
 		if = {
-			limit = { has_institution = institution_suffrage }
+			limit = {
+				has_institution = institution_suffrage
+			}
 			subtract = institution:institution_suffrage.investment
 			multiply = 5
 		}
 	}
-	
 	# REVOLUTIONS, WARS, ELECTIONS --------------------------
 	add = {
 		if = {
-			limit = { is_at_war = yes }
+			limit = {
+				is_at_war = yes
+			}
 			add = bpm_political_stability_from_war
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_REVOLUTION"
 		if = {
-			limit = { has_revolution = yes }
+			limit = {
+				has_revolution = yes
+			}
 			subtract = 30
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_INSURRECTION"
 		if = {
-			limit = { has_insurrectionary_interest_groups = yes }
+			limit = {
+				has_insurrectionary_interest_groups = yes
+			}
 			subtract = 25
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_ELECTION"
 		if = {
-			limit = { in_election_campaign = yes }
+			limit = {
+				in_election_campaign = yes
+			}
 			subtract = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_GENERAL_STRIKE"
 		if = {
-			limit = { has_journal_entry = je_bpm_general_strike_ongoing}
+			limit = {
+				has_journal_entry = je_bpm_general_strike_ongoing
+			}
 			subtract = var:bpm_je_general_strike_progress
 			multiply = 2
 		}
@@ -340,7 +387,7 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_LOW_LEGITIMACY"
 		if = {
-			limit = { 
+			limit = {
 				government_legitimacy < 30
 				government_legitimacy >= 10
 			}
@@ -350,18 +397,18 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_VERY_LOW_LEGITIMACY"
 		if = {
-			limit = { government_legitimacy < 10 }
+			limit = {
+				government_legitimacy < 10
+			}
 			subtract = 25
 		}
 	}
-
 	# RADICALS --------------------------
 	multiply = {
 		desc = "BPM_VALUE_FROM_RADICALS"
 		value = 1
 		subtract = radical_fraction
 	}
-
 	# add = {
 	# 	desc = "BPM_VALUE_FROM_RADICALS"
 	# 	if = {
@@ -378,27 +425,27 @@ bpm_political_stability_baseline_target = {
 	# 		multiply = 40
 	# 	}
 	# }
-	
 	# round = yes
 	min = 0
 	max = 100
-
 	if = {
-		limit = { is_player = no }
+		limit = {
+			is_player = no
+		}
 		min = 30
 		max = 100
-	}	
-	
+	}
 	# round = yes
 	min = 0
 	max = 100
-
 }
 
 bpm_political_stability_rate_signed = {
 	add = bpm_political_stability_rate
 	if = {
-		limit = { bpm_political_stability_baseline_target < bpm_political_stability }
+		limit = {
+			bpm_political_stability_baseline_target < bpm_political_stability
+		}
 		multiply = -1
 	}
 }
@@ -409,7 +456,7 @@ bpm_political_stability_law_success_penalty = {
 	divide = 100
 	subtract = 0.66
 	multiply = 3
-	min = 0.0
-	max = 1.0
+	min = 0
+	max = 1
 	multiply = -0.2
 }

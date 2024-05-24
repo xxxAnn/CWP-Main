@@ -16,7 +16,7 @@ law_monarchy = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_party_anti_reactionary
+			has_law = law_type:law_party_anti_reactionary
 		}
 		deactivate_law = law_type:law_party_anti_reactionary
 		bpm_deactivate_syndicalism = yes
@@ -236,7 +236,7 @@ law_theocracy = {
 	on_activate = {
 		if = {
 			limit = {
-				#has_law = law_type:law_party_anti_reactionary
+				has_law = law_type:law_party_anti_reactionary
 			}
 			deactivate_law = law_type:law_party_anti_reactionary
 		}
@@ -288,7 +288,7 @@ law_council_republic = {
 		scripted_effect_parties_emergence = yes
 		if = {
 			limit = {
-				#has_law = law_type:law_party_anti_socialist
+				has_law = law_type:law_party_anti_socialist
 			}
 			deactivate_law = law_type:law_party_anti_socialist
 		}
