@@ -53,7 +53,7 @@
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			set_ig_suppression = yes
 		}
 		effect_bretton_woods_signatory = yes

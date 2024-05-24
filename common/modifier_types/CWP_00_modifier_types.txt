@@ -69,34 +69,34 @@ interest_group_ig_bureaucrats_pop_attraction_mult = {
 	percent = yes
 }
 
-interest_group_ig_capitalists_approval_add = {
+interest_group_ig_market_liberals_approval_add = {
 	good = yes
 	percent = no
 }
 
-interest_group_ig_capitalists_pol_str_mult = {
+interest_group_ig_market_liberals_pol_str_mult = {
 	neutral = yes
 	percent = yes
 	num_decimals = 0
 }
 
-interest_group_ig_capitalists_pop_attraction_mult = {
+interest_group_ig_market_liberals_pop_attraction_mult = {
 	neutral = yes
 	percent = yes
 }
 
-interest_group_ig_elites_approval_add = {
+interest_group_ig_conservatives_approval_add = {
 	good = yes
 	percent = no
 }
 
-interest_group_ig_elites_pol_str_mult = {
+interest_group_ig_conservatives_pol_str_mult = {
 	neutral = yes
 	percent = yes
 	num_decimals = 0
 }
 
-interest_group_ig_elites_pop_attraction_mult = {
+interest_group_ig_conservatives_pop_attraction_mult = {
 	neutral = yes
 	percent = yes
 }
@@ -133,18 +133,18 @@ interest_group_ig_socialists_pop_attraction_mult = {
 	percent = yes
 }
 
-interest_group_ig_moralists_approval_add = {
+interest_group_ig_devout_approval_add = {
 	good = yes
 	percent = no
 }
 
-interest_group_ig_moralists_pol_str_mult = {
+interest_group_ig_devout_pol_str_mult = {
 	neutral = yes
 	percent = yes
 	num_decimals = 0
 }
 
-interest_group_ig_moralists_pop_attraction_mult = {
+interest_group_ig_devout_pop_attraction_mult = {
 	neutral = yes
 	percent = yes
 }

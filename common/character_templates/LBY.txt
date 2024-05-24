@@ -6,7 +6,7 @@
 	female = no
 	religion = sunni
 	ideology = ideology_monarchist
-	interest_group = ig_elites
+	interest_group = ig_conservatives
 	ruler = yes
 	birth_date = 1890.3.12
 	traits = {

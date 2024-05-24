@@ -100,7 +100,7 @@ welfare_laws.1 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 		random_scope_pop = {
@@ -122,7 +122,7 @@ welfare_laws.1 = {
 		add_enactment_modifier = {
 			name = promise_religious_workhouses
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = religious_workhouses
 				months = normal_modifier_time
@@ -376,7 +376,7 @@ welfare_laws.5 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = landowners_ig
 		}
 	}
@@ -390,7 +390,7 @@ welfare_laws.5 = {
 		add_enactment_modifier = {
 			name = anti_paternalist_argument
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = anti_paternalist_sentiment
 				months = normal_modifier_time
@@ -580,7 +580,7 @@ welfare_laws.9 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig
 		}
 		ig:ig_socialists = {
@@ -597,7 +597,7 @@ welfare_laws.9 = {
 		add_enactment_modifier = {
 			name = pro_union_argument
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = embraced_union_leverage
 				months = normal_modifier_time
@@ -617,7 +617,7 @@ welfare_laws.9 = {
 		add_enactment_modifier = {
 			name = anti_union_argument
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = repudiated_union_leverage
 				months = normal_modifier_time

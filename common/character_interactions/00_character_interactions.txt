@@ -670,7 +670,7 @@ invite_exile = {
 		# Devout exiles must have country religion
 		trigger_if = {
 			limit = {
-				is_interest_group_type = ig_moralists
+				is_interest_group_type = ig_devout
 			}
 		    custom_tooltip = {
 		        text = invite_exile_devout_tt
@@ -680,7 +680,7 @@ invite_exile = {
 		# If you have state religion, exiles must have your religion
 		trigger_if = {
 			limit = {
-				NOT = { is_interest_group_type = ig_moralists }
+				NOT = { is_interest_group_type = ig_devout }
 				scope:actor ?= {
 					OR = {
 						#has_law = law_type:law_religious_institutions

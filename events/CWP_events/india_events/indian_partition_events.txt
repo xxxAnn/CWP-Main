@@ -1148,12 +1148,12 @@ indian_partition.50 = {
 		remove_primary_culture = cu:english
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_capitalists
+			interest_group = ig:ig_market_liberals
 		}
 		create_character = {
 			ig_leader = yes
 			ruler = yes
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 		}
 		create_character = {
 			ig_leader = yes
@@ -1177,7 +1177,7 @@ indian_partition.50 = {
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_moralists
+			interest_group = ig:ig_devout
 		}
 	}
 	option = {

@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1885.11.1
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}
@@ -43,7 +43,7 @@
 			ruler = no
 			ig_leader = yes
 			birth_date = 1903.3.29
-			interest_group = ig_capitalists
+			interest_group = ig_market_liberals
 			ideology = ideology_moderate
 			traits = {
 			}

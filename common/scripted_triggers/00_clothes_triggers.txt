@@ -500,7 +500,7 @@ christian_clothes_trigger = {
 moralists_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
-		is_interest_group_type = ig_moralists
+		is_interest_group_type = ig_devout
 	}
 }
 

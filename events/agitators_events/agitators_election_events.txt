@@ -2200,7 +2200,7 @@ agitators_election_events.17 = {
 		any_active_party = {
 			is_party_type = fascist_party
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_marginal = no
 		}
 	}
@@ -2217,7 +2217,7 @@ agitators_election_events.17 = {
 	}
 	immediate = {
 		fascist_agitator_election_scope_effect = yes
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_scope
 		}
 	}
@@ -3106,7 +3106,7 @@ agitators_election_events.25 = {
 		ig:ig_ruralists = {
 			save_scope_as = rural_folk_ig
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig
 		}
 	}
@@ -4088,7 +4088,7 @@ agitators_election_events.36 = {
 			#has_law = law_type:law_religious_institutions
 			#has_law = law_type:law_religious_policies
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			is_marginal = no
 		}
 	}
@@ -4105,7 +4105,7 @@ agitators_election_events.36 = {
 	}
 	immediate = {
 		conservative_agitator_election_scope_effect = yes
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 	}
@@ -4129,7 +4129,7 @@ agitators_election_events.36 = {
 	option = {
 		name = agitators_election_events.36.c
 		trigger = {
-			ig:ig_moralists = {
+			ig:ig_devout = {
 				has_party = no
 			}
 		}
@@ -4260,10 +4260,10 @@ agitators_election_events.37 = {
 						is_in_government = yes
 					}
 					NOR = {
-						ig:ig_elites = {
+						ig:ig_conservatives = {
 							is_in_government = yes
 						}
-						ig:ig_moralists = {
+						ig:ig_devout = {
 							is_in_government = yes
 						}
 					}
@@ -4649,7 +4649,7 @@ agitators_election_events.41 = {
 		capital = {
 			save_scope_as = capital_scope
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 	}
@@ -4666,7 +4666,7 @@ agitators_election_events.41 = {
 				is_decaying = yes
 			}
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = modifier_radical_prescription_devout
 				months = short_modifier_time
@@ -4684,7 +4684,7 @@ agitators_election_events.41 = {
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = modifier_radical_prescription_denied_devout
 				months = short_modifier_time

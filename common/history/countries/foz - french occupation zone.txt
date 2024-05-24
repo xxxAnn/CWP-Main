@@ -39,10 +39,10 @@
 			institution = institution_schools
 			level = 1
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_ruling_interest_group = yes
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_ruling_interest_group = yes
 		}
 		ig:ig_entrepreneurs = {

@@ -36,7 +36,7 @@
 			recreationalDrugs = alcohol_allowed
 		}
 		#IG in government to match ruler
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_ruling_interest_group = yes
 		}
 		effect_bretton_woods_signatory = yes

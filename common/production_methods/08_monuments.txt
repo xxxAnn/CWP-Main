@@ -28,7 +28,7 @@ pm_default_building_angkor_wat = {
 	texture = "gfx/interface/icons/production_method_icons/other/wonders.dds"
 	country_modifiers = {
 		workforce_scaled = {
-			interest_group_ig_moralists_pol_str_mult = 0.25
+			interest_group_ig_devout_pol_str_mult = 0.25
 			country_prestige_add = 25
 		}
 	}
@@ -129,7 +129,7 @@ pm_clerical_building_hagia_sophia = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			interest_group_ig_moralists_pop_attraction_mult = 0.25
+			interest_group_ig_devout_pop_attraction_mult = 0.25
 			country_prestige_add = 50
 		}
 	}
@@ -153,24 +153,20 @@ pm_clerical_building_hagia_sophia = {
 
 pm_default_building_mosque_of_djenne = {
 	texture = "gfx/interface/icons/production_method_icons/other/wonders.dds"
-
 	country_modifiers = {
 		workforce_scaled = {
-			interest_group_ig_moralists_pol_str_mult = 0.1
+			interest_group_ig_devout_pol_str_mult = 0.1
 		}
 	}
-
 	state_modifiers = {
 		workforce_scaled = {
 			state_education_access_add = 0.2
 		}
 	}
-
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_tourism_add = 200
 		}
-
 		level_scaled = {
 			building_employment_clergy_add = 500
 		}
@@ -214,7 +210,7 @@ pm_clerical_building_red_square = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			interest_group_ig_moralists_pol_str_mult = 0.25
+			interest_group_ig_devout_pol_str_mult = 0.25
 			country_prestige_add = 50
 		}
 	}
@@ -291,7 +287,7 @@ pm_default_building_vatican_city = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			interest_group_ig_moralists_pol_str_mult = 0.25
+			interest_group_ig_devout_pol_str_mult = 0.25
 			country_influence_add = 100
 			country_authority_add = 100
 		}

@@ -18,7 +18,7 @@
 			culture = cu:finnish
 			ig_leader = yes
 			birth_date = 1870.11.27
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

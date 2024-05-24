@@ -81,8 +81,8 @@
 		}
 		if = {
 			limit = {
-				exists = ig:ig_elites
-				ig:ig_elites = {
+				exists = ig:ig_conservatives
+				ig:ig_conservatives = {
 					is_powerful = yes
 				}
 			}
@@ -176,8 +176,8 @@ ai_strategy_plantation_economy = {
 		}
 		if = {
 			limit = {
-				exists = ig:ig_elites
-				ig:ig_elites = {
+				exists = ig:ig_conservatives
+				ig:ig_conservatives = {
 					is_powerful = yes
 				}
 			}
@@ -267,8 +267,8 @@ ai_strategy_resource_expansion = {
 		}
 		if = {
 			limit = {
-				exists = ig:ig_capitalists
-				ig:ig_capitalists = {
+				exists = ig:ig_market_liberals
+				ig:ig_market_liberals = {
 					is_powerful = yes
 				}
 			}
@@ -381,8 +381,8 @@ ai_strategy_industrial_expansion = {
 		}
 		if = {
 			limit = {
-				exists = ig:ig_capitalists
-				ig:ig_capitalists = {
+				exists = ig:ig_market_liberals
+				ig:ig_market_liberals = {
 					is_powerful = yes
 				}
 			}

@@ -15,7 +15,7 @@ ig_petitions.1 = {
 	duration = 3
 	trigger = {
 		is_enacting_law = law_type:law_representative_democracy
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			is_powerful = yes
 			is_in_government = no
 		}
@@ -24,7 +24,7 @@ ig_petitions.1 = {
 		}
 	}
 	immediate = {
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = landowners_ig
 		}
 		currently_enacting_law = {
@@ -59,7 +59,7 @@ ig_petitions.1 = {
 		add_enactment_modifier = {
 			name = landowners_petition_rejected_modifier
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = rejected_petition
 				months = short_modifier_time
@@ -152,7 +152,7 @@ ig_petitions.4 = {
 	duration = 3
 	trigger = {
 		is_enacting_law = law_type:law_religious_institutions
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			is_powerful = yes
 			is_in_government = no
 		}
@@ -161,7 +161,7 @@ ig_petitions.4 = {
 		}
 	}
 	immediate = {
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 		currently_enacting_law = {
@@ -178,7 +178,7 @@ ig_petitions.4 = {
 		add_enactment_modifier = {
 			name = devout_state_support_modifier			#law enactment chance
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			#but they get more powerful
 			add_modifier = {
 				name = devout_state_influence_modifier				#pol str
@@ -190,7 +190,7 @@ ig_petitions.4 = {
 		#you're overstepping a bit
 		name = ig_petitions.4.b
 		default_option = yes
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = rejected_petition
 				months = normal_modifier_time
@@ -350,7 +350,7 @@ ig_petitions.16 = {
 	duration = 3
 	trigger = {
 		is_enacting_law = law_type:law_income_taxation
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_powerful = yes
 			is_in_government = no
 		}
@@ -359,7 +359,7 @@ ig_petitions.16 = {
 		}
 	}
 	immediate = {
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig
 		}
 		currently_enacting_law = {
@@ -388,7 +388,7 @@ ig_petitions.16 = {
 		add_enactment_modifier = {
 			name = industralists_tax_denied_modifier
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = rejected_petition
 				months = normal_modifier_time

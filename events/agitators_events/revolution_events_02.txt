@@ -569,7 +569,7 @@ revolution_pulse_events.5 = {
 				ig_approval <= 0
 			}
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			is_marginal = no
 			is_insurrectionary = no
 		}
@@ -585,7 +585,7 @@ revolution_pulse_events.5 = {
 		ig:ig_ruralists = {
 			save_scope_as = rural_folk_ig
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = landowners_ig
 		}
 		random_scope_state = {
@@ -1635,7 +1635,7 @@ revolution_pulse_events.14 = {
 		}
 		any_interest_group = {
 			OR = {
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_conservatives
 				is_interest_group_type = ig_entrepreneurs
 			}
 			is_marginal = no
@@ -1655,7 +1655,7 @@ revolution_pulse_events.14 = {
 		random_interest_group = {
 			limit = {
 				OR = {
-					is_interest_group_type = ig_elites
+					is_interest_group_type = ig_conservatives
 					is_interest_group_type = ig_entrepreneurs
 				}
 				is_marginal = no
@@ -1907,7 +1907,7 @@ revolution_pulse_events.16 = {
 			}
 			set_ideology = ideology:ideology_traditionalist
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = modifier_appealed_to_tradition
 				months = normal_modifier_time
@@ -2589,7 +2589,7 @@ revolution_pulse_events.21 = {
 			}
 			save_scope_as = assassination_state
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = royal_ig
 		}
 	}
@@ -3463,7 +3463,7 @@ revolution_pulse_events.26 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 	}
@@ -3549,7 +3549,7 @@ revolution_pulse_events.27 = {
 			}
 			save_scope_as = standoff_state
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 	}
@@ -3631,7 +3631,7 @@ revolution_pulse_events.28 = {
 			}
 			save_scope_as = feminine_brigades_state
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 	}
@@ -3764,7 +3764,7 @@ revolution_pulse_events.29 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 		capital = {
@@ -4049,7 +4049,7 @@ revolution_pulse_events.32 = {
 		}
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			is_insurrectionary = yes
 		}
 		NOR = {
@@ -4083,7 +4083,7 @@ revolution_pulse_events.32 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 			leader = {
 				save_scope_as = devout_ig_leader
@@ -4129,7 +4129,7 @@ revolution_pulse_events.32 = {
 			value = small_radicals
 			religion = scope:minority_religion
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = modifier_gagged_devout_rebels
 				months = short_modifier_time
@@ -4159,7 +4159,7 @@ revolution_pulse_events.32 = {
 			value = medium_radicals
 			religion = scope:minority_religion
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = modifier_addressed_devout_concerns
 				months = short_modifier_time
@@ -4187,7 +4187,7 @@ revolution_pulse_events.33 = {
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_insurrectionary = yes
 		}
 		NOR = {
@@ -4221,7 +4221,7 @@ revolution_pulse_events.33 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig
 			leader = {
 				save_scope_as = industrialists_ig_leader
@@ -4258,7 +4258,7 @@ revolution_pulse_events.33 = {
 				months = short_modifier_time
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = modifier_industrialists_negotiation_opinion
 				months = short_modifier_time
@@ -4296,9 +4296,9 @@ revolution_pulse_events.33 = {
 		every_interest_group = {
 			limit = {
 				OR = {
-					is_interest_group_type = ig_elites
+					is_interest_group_type = ig_conservatives
 					is_interest_group_type = ig_entrepreneurs
-					is_interest_group_type = ig_capitalists
+					is_interest_group_type = ig_market_liberals
 				}
 			}
 			add_modifier = {
@@ -4446,7 +4446,7 @@ revolution_pulse_events.35 = {
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			is_insurrectionary = yes
 		}
 		NOR = {
@@ -4474,7 +4474,7 @@ revolution_pulse_events.35 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = landowners_ig
 			leader = {
 				save_scope_as = landowners_ig_leader
@@ -4500,7 +4500,7 @@ revolution_pulse_events.35 = {
 				pop_type = landlords
 			}
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = modifier_arrested_landlords_for_collusion
 				months = normal_modifier_time

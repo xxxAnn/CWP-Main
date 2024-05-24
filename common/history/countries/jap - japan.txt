@@ -42,10 +42,10 @@
 			recreationalDrugs = alcohol_allowed
 		}
 		#IG Ideologies subject to change
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_ruling_interest_group = yes
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			set_ig_suppression = yes
 		}
 		set_institution_investment_level = {

@@ -115,7 +115,7 @@ setup_starting_ideologies = {
 		}
 	}
 	### MORALISTS ###
-	ig:ig_moralists = {
+	ig:ig_devout = {
 		if = {
 			limit = {
 				owner = {
@@ -437,7 +437,7 @@ setup_starting_ideologies = {
 		}
 	}
 	### Elites ###
-	ig:ig_elites = {
+	ig:ig_conservatives = {
 		if = {
 			limit = {
 				owner = {

@@ -112,7 +112,7 @@ decree_events.1 = {
 	option = {
 		#we dont want to make our roads better
 		name = decree_events.1.e
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = no_roads_sad_modifier
 				months = normal_modifier_time
@@ -384,8 +384,8 @@ decree_events.4 = {
 				interest_group = {
 					OR = {
 						is_interest_group_type = ig_entrepreneurs
-						is_interest_group_type = ig_elites
-						is_interest_group_type = ig_capitalists
+						is_interest_group_type = ig_conservatives
+						is_interest_group_type = ig_market_liberals
 						is_interest_group_type = ig_armed_forces
 						is_interest_group_type = ig_armed_forces
 					}
@@ -419,8 +419,8 @@ decree_events.4 = {
 					interest_group = {
 						OR = {
 							is_interest_group_type = ig_entrepreneurs
-							is_interest_group_type = ig_elites
-							is_interest_group_type = ig_capitalists
+							is_interest_group_type = ig_conservatives
+							is_interest_group_type = ig_market_liberals
 							is_interest_group_type = ig_armed_forces
 							is_interest_group_type = ig_armed_forces
 						}
@@ -459,7 +459,7 @@ decree_events.4 = {
 		name = decree_events.4.b
 		create_character = {
 			is_admiral = yes
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ig_leader = no
 			noble = yes
 		}
@@ -469,7 +469,7 @@ decree_events.4 = {
 				pop_type = laborers
 			}
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = social_mobility_modifier
 				months = normal_modifier_time

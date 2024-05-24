@@ -1491,7 +1491,7 @@ on_law_enactment_pass = {
 				root = {
 					and = {
 						currently_enacting_law.type = law_type:law_state_atheism
-						ig:ig_moralists = {
+						ig:ig_devout = {
 							nor = {
 								has_ideology = ideology:ideology_secular
 								interest_group_supports_political_movement = yes
@@ -1518,7 +1518,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_religious_institutions
 							currently_enacting_law.type = law_type:law_religious_nationalism
 						}
-						ig:ig_moralists = {
+						ig:ig_devout = {
 							# if they don't have an ideology other than secular or are in a political movement
 							nor = {
 								not = {
@@ -1678,7 +1678,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_theocratic
 							currently_enacting_law.type = law_type:law_administrative
 						}
-						ig:ig_elites = {
+						ig:ig_conservatives = {
 							nor = {
 								has_ideology = ideology:ideology_royalist
 								interest_group_supports_political_movement = yes
@@ -1701,7 +1701,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_parliamentary
 							currently_enacting_law.type = law_type:law_council_elective
 						}
-						ig:ig_elites = {
+						ig:ig_conservatives = {
 							nor = {
 								has_ideology = ideology:ideology_republican
 								interest_group_supports_political_movement = yes
@@ -1723,7 +1723,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_decentralization
 							currently_enacting_law.type = law_type:law_anti_industrialization
 						}
-						ig:ig_elites = {
+						ig:ig_conservatives = {
 							nor = {
 								has_ideology = ideology:ideology_traditionalist
 								interest_group_supports_political_movement = yes
@@ -1746,7 +1746,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_interventionism
 							currently_enacting_law.type = law_type:law_socialization
 						}
-						ig:ig_elites = {
+						ig:ig_conservatives = {
 							nor = {
 								has_ideology = ideology:ideology_materialistic
 								interest_group_supports_political_movement = yes

@@ -349,7 +349,7 @@ children_rights_events.4 = {
 		NOT = {
 			has_modifier = ragged_schools_no_devout
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			is_marginal = no
 		}
 		ig:ig_urbanists = {
@@ -366,7 +366,7 @@ children_rights_events.4 = {
 			}
 			save_scope_as = child_labor_state
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_scope
 		}
 		ig:ig_urbanists = {
@@ -385,7 +385,7 @@ children_rights_events.4 = {
 		add_enactment_modifier = {
 			name = ragged_schools_modifier
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = ragged_schools_devout
 				months = normal_modifier_time
@@ -398,7 +398,7 @@ children_rights_events.4 = {
 		add_enactment_modifier = {
 			name = ragged_schools_modifier
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = ragged_schools_no_devout
 				months = normal_modifier_time
@@ -421,7 +421,7 @@ children_rights_events.4 = {
 	option = {
 		#dont build them
 		name = children_rights_events.4.c
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = ragged_schools_no_devout
 				months = normal_modifier_time
@@ -542,9 +542,9 @@ children_rights_events.6 = {
 				has_ideology = ideology:ideology_reformist
 			}
 			NOR = {
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_conservatives
 				is_interest_group_type = ig_entrepreneurs
-				is_interest_group_type = ig_capitalists
+				is_interest_group_type = ig_market_liberals
 			}
 		}
 	}
@@ -560,11 +560,11 @@ children_rights_events.6 = {
 		}
 		if = {
 			limit = {
-				ig:ig_elites = {
+				ig:ig_conservatives = {
 					is_powerful = yes
 				}
 			}
-			ig:ig_elites = {
+			ig:ig_conservatives = {
 				save_scope_as = gatekeeper_ig
 			}
 		}
@@ -580,16 +580,16 @@ children_rights_events.6 = {
 		}
 		else_if = {
 			limit = {
-				ig:ig_capitalists = {
+				ig:ig_market_liberals = {
 					is_powerful = yes
 				}
 			}
-			ig:ig_capitalists = {
+			ig:ig_market_liberals = {
 				save_scope_as = gatekeeper_ig
 			}
 		}
 		else = {
-			ig:ig_elites = {
+			ig:ig_conservatives = {
 				save_scope_as = gatekeeper_ig
 			}
 		}
@@ -601,9 +601,9 @@ children_rights_events.6 = {
 					has_ideology = ideology:ideology_reformist
 				}
 				NOR = {
-					is_interest_group_type = ig_elites
+					is_interest_group_type = ig_conservatives
 					is_interest_group_type = ig_entrepreneurs
-					is_interest_group_type = ig_capitalists
+					is_interest_group_type = ig_market_liberals
 				}
 			}
 			save_scope_as = school_ig

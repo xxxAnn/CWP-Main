@@ -539,7 +539,7 @@ adopt_random_antigovernment_ideology = {
 						limit = {
 							OR = {
 								is_interest_group_type = ig_ruralists
-								is_interest_group_type = ig_moralists
+								is_interest_group_type = ig_devout
 							}
 						}
 						add = 50
@@ -548,7 +548,7 @@ adopt_random_antigovernment_ideology = {
 						limit = {
 							NOR = {
 								is_interest_group_type = ig_ruralists
-								is_interest_group_type = ig_moralists
+								is_interest_group_type = ig_devout
 							}
 						}
 						add = -50
@@ -556,7 +556,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								has_ruling_interest_group = ig_capitalists
+								has_ruling_interest_group = ig_market_liberals
 							}
 						}
 						multiply = {
@@ -655,8 +655,8 @@ adopt_random_antigovernment_ideology = {
 						limit = {
 							this.interest_group = {
 								OR = {
-									is_interest_group_type = ig_elites
-									is_interest_group_type = ig_moralists
+									is_interest_group_type = ig_conservatives
+									is_interest_group_type = ig_devout
 								}
 							}
 						}
@@ -702,7 +702,7 @@ adopt_random_antigovernment_ideology = {
 						limit = {
 							this.interest_group = {
 								OR = {
-									is_interest_group_type = ig_capitalists
+									is_interest_group_type = ig_market_liberals
 									is_interest_group_type = ig_socialists
 								}
 							}
@@ -765,7 +765,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							this.interest_group = {
-								is_interest_group_type = ig_elites
+								is_interest_group_type = ig_conservatives
 							}
 						}
 						multiply = {
@@ -1345,7 +1345,7 @@ enact_preferred_governance_principle = {
 				}
 			}
 		}
-		activate_law = law_type:law_council_elective
+		#activate_law = law_type:law_council_elective
 	}
 	else_if = {
 		limit = {
@@ -1400,7 +1400,7 @@ enact_preferred_governance_principle = {
 				}
 			}
 		}
-		activate_law = law_type:law_council_elective
+		#activate_law = law_type:law_council_elective
 	}
 	else_if = {
 		limit = {

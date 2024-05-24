@@ -131,7 +131,7 @@ law_events.5 = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	trigger = {
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			is_marginal = no
 		}
 		OR = {
@@ -177,13 +177,13 @@ law_events.5 = {
 		}
 	}
 	cancellation_trigger = {
-		NOR = { 
-			currently_enacting_law = scope:current_law_scope 
+		NOR = {
+			currently_enacting_law = scope:current_law_scope
 		}
 	}
 	option = {
 		name = law_events.5.a
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = modifier_mine_regulations_not_enforced
 				months = normal_modifier_time
@@ -199,7 +199,7 @@ law_events.5 = {
 	option = {
 		name = law_events.5.b
 		default_option = yes
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = modifier_mine_regulations_enforced
 				months = normal_modifier_time

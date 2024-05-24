@@ -142,15 +142,15 @@ france_constitution_socialist_clout = {
 
 france_constitution_moralist_clout = {
 	value = 0
-	add = ig:ig_moralists.ig_clout
-	add = ig:ig_elites.ig_clout
+	add = ig:ig_devout.ig_clout
+	add = ig:ig_conservatives.ig_clout
 	add = ig:ig_ruralists.ig_clout
 }
 
 france_constitution_gaullist_clout = {
 	value = 0
 	add = ig:ig_armed_forces.ig_clout
-	add = ig:ig_capitalists.ig_clout
+	add = ig:ig_market_liberals.ig_clout
 	add = ig:ig_entrepreneurs.ig_clout
 	add = ig:ig_armed_forces.ig_clout
 }

@@ -54,13 +54,13 @@
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			set_ig_suppression = yes
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			set_ig_suppression = yes
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			set_ig_suppression = yes
 		}
 		ig:ig_armed_forces = {

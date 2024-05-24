@@ -10,7 +10,7 @@ ger_kurt_georg_kiesinger_template = {
 	female = no
 	religion = catholic
 	ideology = ideology_punitive	#Had authoritarian tendencies, but was not undemocratic
-	interest_group = ig_elites
+	interest_group = ig_conservatives
 	ig_leader = yes
 	birth_date = 1904.4.6
 	traits = {
@@ -26,7 +26,7 @@ ger_kurt_georg_kiesinger_template = {
 		interest_group_trigger = {
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_conservatives
 				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_entrepreneurs
 			}
@@ -116,7 +116,7 @@ ger_helmut_kohl_template = {
 	female = no
 	religion = catholic
 	ideology = ideology_christian_democrat
-	interest_group = ig_capitalists
+	interest_group = ig_market_liberals
 	ig_leader = yes
 	birth_date = 1930.4.3
 	traits = {
@@ -132,8 +132,8 @@ ger_helmut_kohl_template = {
 		interest_group_trigger = {
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_capitalists
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_market_liberals
+				is_interest_group_type = ig_conservatives
 				is_interest_group_type = ig_entrepreneurs
 			}
 		}
@@ -253,7 +253,7 @@ ger_albert_schweitzer_template = {
 	female = no
 	religion = protestant
 	ideology = ideology_pacifist
-	interest_group = ig_moralists
+	interest_group = ig_devout
 	is_agitator = yes
 	birth_date = 1875.1.14
 	traits = {
@@ -267,7 +267,7 @@ ger_albert_schweitzer_template = {
 		}
 		interest_group_trigger = {
 			is_marginal = no
-			is_interest_group_type = ig_moralists
+			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1946.1.1
 		latest_usage_date = 1960.1.1

@@ -36,10 +36,10 @@
 			biotech = unrestricted_human_testing
 			recreationalDrugs = alcohol_allowed
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_ruling_interest_group = yes
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_ruling_interest_group = yes
 		}
 		ig:ig_entrepreneurs = {

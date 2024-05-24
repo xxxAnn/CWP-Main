@@ -58,7 +58,7 @@ prostitution.1 = {
 				}
 				AND = {
 					OR = {
-						is_interest_group_type = ig_moralists
+						is_interest_group_type = ig_devout
 						is_interest_group_type = ig_securocrats
 						is_interest_group_type = ig_armed_forces
 					}
@@ -99,7 +99,7 @@ prostitution.1 = {
 					}
 					AND = {
 						OR = {
-							is_interest_group_type = ig_moralists
+							is_interest_group_type = ig_devout
 							is_interest_group_type = ig_securocrats
 							is_interest_group_type = ig_armed_forces
 						}
@@ -248,7 +248,7 @@ prostitution.2 = {
 						}
 						AND = {
 							OR = {
-								is_interest_group_type = ig_moralists
+								is_interest_group_type = ig_devout
 								is_interest_group_type = ig_securocrats
 								is_interest_group_type = ig_armed_forces
 							}
@@ -269,7 +269,7 @@ prostitution.2 = {
 						}
 						AND = {
 							OR = {
-								is_interest_group_type = ig_moralists
+								is_interest_group_type = ig_devout
 								is_interest_group_type = ig_securocrats
 								is_interest_group_type = ig_armed_forces
 							}
@@ -340,9 +340,9 @@ prostitution.3 = {
 		any_interest_group = {
 			is_in_government = yes
 			OR = {
-				is_interest_group_type = ig_moralists
-				is_interest_group_type = ig_capitalists
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_market_liberals
+				is_interest_group_type = ig_conservatives
 				is_interest_group_type = ig_entrepreneurs
 			}
 			leader = {
@@ -369,9 +369,9 @@ prostitution.3 = {
 			limit = {
 				is_in_government = yes
 				OR = {
-					is_interest_group_type = ig_moralists
-					is_interest_group_type = ig_capitalists
-					is_interest_group_type = ig_elites
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_market_liberals
+					is_interest_group_type = ig_conservatives
 					is_interest_group_type = ig_entrepreneurs
 				}
 				leader = {

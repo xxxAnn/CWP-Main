@@ -2289,7 +2289,7 @@ agitators_law_events.26 = {
 		capital = {
 			save_scope_as = capital_scope
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = landowners_ig
 		}
 	}

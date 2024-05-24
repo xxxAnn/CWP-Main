@@ -80,7 +80,7 @@ DEFAULT = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				ig:ig_elites = {
+				ig:ig_conservatives = {
 					is_powerful = yes
 					is_in_government = yes
 				}
@@ -112,7 +112,7 @@ DEFAULT = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				ig:ig_capitalists = {
+				ig:ig_market_liberals = {
 					is_powerful = yes
 					is_in_government = yes
 				}
@@ -150,7 +150,7 @@ DEFAULT = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				ig:ig_moralists = {
+				ig:ig_devout = {
 					is_powerful = yes
 					is_in_government = yes
 				}
@@ -1303,9 +1303,9 @@ TUR = {
 			year >= 2022
 			scope:actor = {
 				OR = {
-					has_ruling_interest_group = ig_elites
+					has_ruling_interest_group = ig_conservatives
 					has_ruling_interest_group = ig_armed_forces
-					has_ruling_interest_group = ig_moralists
+					has_ruling_interest_group = ig_devout
 				}
 			}
 		}

@@ -86,7 +86,7 @@ election_conservative_events.1 = {
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = godless_politician_praised				# interest_group_approval_add
 				months = normal_modifier_time

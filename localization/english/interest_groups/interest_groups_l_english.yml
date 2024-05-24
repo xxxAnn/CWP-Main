@@ -1,11 +1,11 @@
 ﻿l_english:
-  ig_capitalists: "Capitalists"
-  ig_capitalists_only_icon: "@capitalists!"
-  ig_capitalists_desc: "Capitalists, the nouveau riche trailblazers of the new gilded age, have fashioned the working class into a machine stoking the furnace of corporate power. Their ambition and amassed wealth engrave their name into economic history with each business deal."
+  ig_market_liberals: "Capitalists"
+  ig_market_liberals_only_icon: "@capitalists!"
+  ig_market_liberals_desc: "Capitalists, the nouveau riche trailblazers of the new gilded age, have fashioned the working class into a machine stoking the furnace of corporate power. Their ambition and amassed wealth engrave their name into economic history with each business deal."
 
-  ig_elites: "Elites"
-  ig_elites_only_icon: "@elites!"
-  ig_elites_desc: "Elites are the grandees of fortune controlling the economy and often government. Steeped in generations of old money, their lineage traces an intricate web of power. Their dominion, built on industry, is woven through society."
+  ig_conservatives: "Elites"
+  ig_conservatives_only_icon: "@elites!"
+  ig_conservatives_desc: "Elites are the grandees of fortune controlling the economy and often government. Steeped in generations of old money, their lineage traces an intricate web of power. Their dominion, built on industry, is woven through society."
 
   ig_entrepreneurs: "Entrepreneurs"
   ig_entrepreneurs_only_icon: "@entrepreneurs!"
@@ -19,9 +19,9 @@
   ig_ruralists_only_icon: "@ruralists!"
   ig_ruralists_desc: "Ruralists are the humble denizens of the countryside, the heart and lungs of the nation. They nourish the economy with their resilience, albeit their wealth may not rival that of the elites."
 
-  ig_moralists: "Moralists"
-  ig_moralists_only_icon: "@moralists!"
-  ig_moralists_desc: "Moralists, guardians of tradition, stand against change. They defend time-honored customs and the age-old social order, casting a guiding light over the landscape of a rapidly changing world."
+  ig_devout: "Moralists"
+  ig_devout_only_icon: "@moralists!"
+  ig_devout_desc: "Moralists, guardians of tradition, stand against change. They defend time-honored customs and the age-old social order, casting a guiding light over the landscape of a rapidly changing world."
 
   ig_bureaucrats: "Bureaucrats"
   ig_bureaucrats_only_icon: "@bureaucrats!"

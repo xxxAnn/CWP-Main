@@ -35,7 +35,7 @@
 			biotech = unrestricted_human_testing
 			recreationalDrugs = alcohol_allowed
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_ruling_interest_group = yes
 		}
 		#IG in government to match ruler

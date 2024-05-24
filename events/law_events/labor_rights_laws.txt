@@ -40,7 +40,7 @@ labor_rights.1 = {
 			}
 			save_scope_as = serf_state
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = serf_mistreaters
 		}
 		currently_enacting_law = {
@@ -170,7 +170,7 @@ labor_rights.5 = {
 		ig:ig_socialists = {
 			is_marginal = no
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_marginal = no
 		}
 		NOT = {
@@ -184,7 +184,7 @@ labor_rights.5 = {
 		ig:ig_socialists = {
 			save_scope_as = unions_scope
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = capitalists_scope
 		}
 	}
@@ -249,7 +249,7 @@ labor_rights.6 = {
 		ig:ig_socialists = {
 			is_marginal = no
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_marginal = no
 		}
 		NOT = {
@@ -263,7 +263,7 @@ labor_rights.6 = {
 		ig:ig_socialists = {
 			save_scope_as = unions_scope
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = capitalists_scope
 		}
 	}

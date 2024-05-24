@@ -18,7 +18,7 @@
 			culture = cu:boer
 			ig_leader = yes
 			birth_date = 1874.5.22
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

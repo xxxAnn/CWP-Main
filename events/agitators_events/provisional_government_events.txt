@@ -5,25 +5,17 @@ provisional_government_events.1 = {
 	event_image = {
 		video = "unspecific_military_parade"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
 	title = provisional_government_events.1.t
 	desc = provisional_government_events.1.d
 	flavor = provisional_government_events.1.f
-
 	duration = 3
-
 	trigger = {
 		#Triggered by on_action
 	}
-
 	immediate = {
-
 	}
-
 	option = {
 		name = provisional_government_events.1.a
 		default_option = yes
@@ -74,13 +66,12 @@ provisional_government_events.1 = {
 		add_radicals = {
 			value = small_radicals
 		}
-		activate_law = law_type:law_council_elective
+		#activate_law = law_type:law_council_elective
 		remove_variable = revolutionary_prov_gov_var
 	}
 }
 
 namespace = government_petition_events
-
 government_petition_events.100 = {
 	type = country_event
 	hidden = yes
@@ -98,32 +89,23 @@ government_petition_events.1 = {
 	event_image = {
 		video = "europenorthamerica_capitalists_meeting"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
 	title = government_petition_events.1.t
 	desc = government_petition_events.1.d
 	flavor = government_petition_events.1.f
-
 	duration = 3
-
 	trigger = {
 		#Triggered by JE
 	}
-
 	immediate = {
-
 	}
-
 	cancellation_trigger = {
 		NOR = {
 			exists = scope:government_petition_ig
 			exists = scope:government_petition_law
 		}
 	}
-
 	option = {
 		name = government_petition_events.1.a
 		default_option = yes

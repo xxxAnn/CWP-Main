@@ -30,10 +30,10 @@
 		ig_armed_forces
 	}
 	anti_interest_groups = {
-		ig_elites
+		ig_conservatives
 		ig_entrepreneurs
-		ig_moralists
-		ig_capitalists
+		ig_devout
+		ig_market_liberals
 	}
 	institution_scores = {
 		institution_welfare = {
@@ -98,10 +98,10 @@ ai_strategy_conservative_communist = {
 		ig_armed_forces
 	}
 	anti_interest_groups = {
-		ig_elites
+		ig_conservatives
 		ig_entrepreneurs
-		ig_moralists
-		ig_capitalists
+		ig_devout
+		ig_market_liberals
 	}
 	institution_scores = {
 		institution_welfare = {
@@ -165,8 +165,8 @@ ai_strategy_reformist_communist = {
 		ig_socialists
 	}
 	anti_interest_groups = {
-		ig_elites
-		ig_capitalists
+		ig_conservatives
+		ig_market_liberals
 	}
 	institution_scores = {
 		institution_welfare = {
@@ -230,8 +230,8 @@ ai_strategy_socialist_agenda = {
 		ig_socialists
 	}
 	anti_interest_groups = {
-		ig_elites
-		ig_capitalists
+		ig_conservatives
+		ig_market_liberals
 	}
 	institution_scores = {
 		institution_welfare = {
@@ -361,7 +361,7 @@ ai_strategy_liberal_agenda = {
 	}
 	pro_interest_groups = {
 		ig_intelligentsia
-		ig_capitalists
+		ig_market_liberals
 		ig_entrepreneurs
 	}
 	anti_interest_groups = {
@@ -449,8 +449,8 @@ ai_strategy_conservative_agenda = {
 		}
 	}
 	pro_interest_groups = {
-		ig_moralists
-		ig_elites
+		ig_devout
+		ig_conservatives
 		ig_entrepreneurs
 	}
 	anti_interest_groups = {
@@ -535,8 +535,8 @@ ai_strategy_reactionary_agenda = {
 	}
 	type = political
 	pro_interest_groups = {
-		ig_moralists
-		ig_elites
+		ig_devout
+		ig_conservatives
 		ig_armed_forces
 	}
 	anti_interest_groups = {
@@ -624,12 +624,12 @@ ai_strategy_autocratic_agenda = {
 	}
 	type = political
 	pro_interest_groups = {
-		ig_elites
+		ig_conservatives
 		ig_armed_forces
 		ig_armed_forces
 	}
 	anti_interest_groups = {
-		ig_capitalists
+		ig_market_liberals
 		ig_intelligentsia
 		ig_urbanists
 	}

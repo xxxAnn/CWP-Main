@@ -478,8 +478,8 @@ expensive_tastes = {
 		if = {
 			limit = {
 				OR = {
-					is_interest_group_type = ig_elites
-					is_interest_group_type = ig_capitalists
+					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_market_liberals
 				}
 			}
 			multiply = 2

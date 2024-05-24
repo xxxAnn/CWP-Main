@@ -257,15 +257,15 @@ corruption_baseline = {
 	if = {
 		limit = {
 			this = {
-				has_ruling_interest_group = ig_elites
-				ig:ig_elites = {
+				has_ruling_interest_group = ig_conservatives
+				ig:ig_conservatives = {
 					has_variable = ig_corruption
 				}
 			}
 		}
 		add = {
 			value = {
-				value = ig:ig_elites.var:ig_corruption
+				value = ig:ig_conservatives.var:ig_corruption
 				divide = num_ruling_igs
 			}
 			desc = COR_ELITES
@@ -293,15 +293,15 @@ corruption_baseline = {
 	if = {
 		limit = {
 			this = {
-				has_ruling_interest_group = ig_capitalists
-				ig:ig_capitalists = {
+				has_ruling_interest_group = ig_market_liberals
+				ig:ig_market_liberals = {
 					has_variable = ig_corruption
 				}
 			}
 		}
 		add = {
 			value = {
-				value = ig:ig_capitalists.var:ig_corruption
+				value = ig:ig_market_liberals.var:ig_corruption
 				divide = num_ruling_igs
 			}
 			desc = COR_CAPITALISTS
@@ -365,15 +365,15 @@ corruption_baseline = {
 	if = {
 		limit = {
 			this = {
-				has_ruling_interest_group = ig_moralists
-				ig:ig_moralists = {
+				has_ruling_interest_group = ig_devout
+				ig:ig_devout = {
 					has_variable = ig_corruption
 				}
 			}
 		}
 		add = {
 			value = {
-				value = ig:ig_moralists.var:ig_corruption
+				value = ig:ig_devout.var:ig_corruption
 				divide = num_ruling_igs
 			}
 			desc = COR_MORALISTS

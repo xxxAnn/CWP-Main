@@ -51,13 +51,13 @@
 		ig:ig_intelligentsia = {
 			add_ruling_interest_group = yes
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			remove_ruling_interest_group = yes
 		}
 		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			set_ig_suppression = yes
 			remove_ruling_interest_group = yes
 		}

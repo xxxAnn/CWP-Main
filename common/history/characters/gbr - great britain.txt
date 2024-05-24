@@ -32,7 +32,7 @@
 			culture = cu:english
 			ig_leader = yes
 			birth_date = 1874.11.30
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}
@@ -44,7 +44,7 @@
 			culture = cu:english
 			ig_leader = yes
 			birth_date = 1883.8.23
-			interest_group = ig:ig_capitalists
+			interest_group = ig:ig_market_liberals
 			ideology = ideology_market_liberal
 			traits = {
 			}

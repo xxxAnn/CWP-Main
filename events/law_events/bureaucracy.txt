@@ -35,7 +35,7 @@ bureaucracy.1 = {
 			limit = {
 				#has_law = law_type:law_politicized_bureaucrats
 			}
-			ig:ig_elites = {
+			ig:ig_conservatives = {
 				save_scope_as = bureaucrat_class
 			}
 		}
@@ -162,7 +162,7 @@ bureaucracy.2 = {
 				save_scope_as = meritocracy_ig
 			}
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = bureaucrat_class
 		}
 	}

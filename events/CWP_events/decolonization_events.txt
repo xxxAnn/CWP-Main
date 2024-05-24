@@ -554,7 +554,7 @@ decolonization.501 = {
 			}
 		}
 		make_independent = yes
-		activate_law = law_type:law_council_elective
+		#activate_law = law_type:law_council_elective
 	}
 }
 
@@ -1214,7 +1214,7 @@ decolonization.508 = {
 			}
 		}
 		make_independent = yes
-		activate_law = law_type:law_council_elective
+		#activate_law = law_type:law_council_elective
 	}
 }
 

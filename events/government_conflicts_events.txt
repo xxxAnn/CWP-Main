@@ -14,7 +14,7 @@ government_conflicts.1 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	duration = 3
 	trigger = {
-		has_ruling_interest_group = ig_elites
+		has_ruling_interest_group = ig_conservatives
 		has_ruling_interest_group = ig_urbanists
 		NOR = {
 			has_modifier = government_conflict
@@ -29,7 +29,7 @@ government_conflicts.1 = {
 			name = ongoing_government_conflicts
 			months = 3
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = landowners_ig
 		}
 		ig:ig_urbanists = {
@@ -47,7 +47,7 @@ government_conflicts.1 = {
 	}
 	option = {
 		name = government_conflicts.1.b
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -78,7 +78,7 @@ government_conflicts.2 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	duration = 3
 	trigger = {
-		has_ruling_interest_group = ig_elites
+		has_ruling_interest_group = ig_conservatives
 		has_ruling_interest_group = ig_socialists
 		NOR = {
 			has_modifier = government_conflict
@@ -93,7 +93,7 @@ government_conflicts.2 = {
 			name = ongoing_government_conflicts
 			months = normal_modifier_time
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = landowners_ig
 		}
 		ig:ig_socialists = {
@@ -111,7 +111,7 @@ government_conflicts.2 = {
 	}
 	option = {
 		name = government_conflicts.2.b
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -143,8 +143,8 @@ government_conflicts.3 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	duration = 3
 	trigger = {
-		has_ruling_interest_group = ig_moralists
-		has_ruling_interest_group = ig_capitalists
+		has_ruling_interest_group = ig_devout
+		has_ruling_interest_group = ig_market_liberals
 		NOR = {
 			has_modifier = government_conflict
 			any_interest_group = {
@@ -158,16 +158,16 @@ government_conflicts.3 = {
 			name = ongoing_government_conflicts
 			months = normal_modifier_time
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig
 		}
 	}
 	option = {
 		name = government_conflicts.3.a
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -176,7 +176,7 @@ government_conflicts.3 = {
 	}
 	option = {
 		name = government_conflicts.3.b
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -207,7 +207,7 @@ government_conflicts.4 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	duration = 3
 	trigger = {
-		has_ruling_interest_group = ig_moralists
+		has_ruling_interest_group = ig_devout
 		has_ruling_interest_group = ig_urbanists
 		NOR = {
 			has_modifier = government_conflict
@@ -222,7 +222,7 @@ government_conflicts.4 = {
 			name = ongoing_government_conflicts
 			months = normal_modifier_time
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 		ig:ig_urbanists = {
@@ -231,7 +231,7 @@ government_conflicts.4 = {
 	}
 	option = {
 		name = government_conflicts.4.a
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -271,7 +271,7 @@ government_conflicts.5 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	duration = 3
 	trigger = {
-		has_ruling_interest_group = ig_moralists
+		has_ruling_interest_group = ig_devout
 		has_ruling_interest_group = ig_socialists
 		NOR = {
 			has_modifier = government_conflict
@@ -286,7 +286,7 @@ government_conflicts.5 = {
 			name = ongoing_government_conflicts
 			months = normal_modifier_time
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 		ig:ig_socialists = {
@@ -295,7 +295,7 @@ government_conflicts.5 = {
 	}
 	option = {
 		name = government_conflicts.5.a
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -464,7 +464,7 @@ government_conflicts.8 = {
 	duration = 3
 	trigger = {
 		has_ruling_interest_group = ig_ruralists
-		has_ruling_interest_group = ig_capitalists
+		has_ruling_interest_group = ig_market_liberals
 		NOR = {
 			has_modifier = government_conflict
 			any_interest_group = {
@@ -481,7 +481,7 @@ government_conflicts.8 = {
 		ig:ig_ruralists = {
 			save_scope_as = rural_folk_ig
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig
 		}
 	}
@@ -496,7 +496,7 @@ government_conflicts.8 = {
 	}
 	option = {
 		name = government_conflicts.8.b
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -656,7 +656,7 @@ government_conflicts.11 = {
 	duration = 3
 	trigger = {
 		has_ruling_interest_group = ig_socialists
-		has_ruling_interest_group = ig_capitalists
+		has_ruling_interest_group = ig_market_liberals
 		NOR = {
 			has_modifier = government_conflict
 			any_interest_group = {
@@ -673,7 +673,7 @@ government_conflicts.11 = {
 		ig:ig_socialists = {
 			save_scope_as = trade_unions_ig
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig
 		}
 	}
@@ -688,7 +688,7 @@ government_conflicts.11 = {
 	}
 	option = {
 		name = government_conflicts.11.b
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time

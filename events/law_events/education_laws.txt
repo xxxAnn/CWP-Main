@@ -572,7 +572,7 @@ education_laws.6 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 	}
@@ -586,7 +586,7 @@ education_laws.6 = {
 		add_enactment_modifier = {
 			name = church_school_organization
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = public_school_responsibility
 				months = normal_modifier_time

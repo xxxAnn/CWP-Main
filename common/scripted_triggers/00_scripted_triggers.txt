@@ -1672,21 +1672,21 @@ ig_type_matches_former = {
 				}
 			}
 			AND = {
-				is_interest_group_type = ig_moralists
+				is_interest_group_type = ig_devout
 				scope:ex_ig = {
-					is_interest_group_type = ig_moralists
+					is_interest_group_type = ig_devout
 				}
 			}
 			AND = {
-				is_interest_group_type = ig_capitalists
+				is_interest_group_type = ig_market_liberals
 				scope:ex_ig = {
-					is_interest_group_type = ig_capitalists
+					is_interest_group_type = ig_market_liberals
 				}
 			}
 			AND = {
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_conservatives
 				scope:ex_ig = {
-					is_interest_group_type = ig_elites
+					is_interest_group_type = ig_conservatives
 				}
 			}
 			AND = {
@@ -1813,7 +1813,7 @@ can_have_radical_leader = {
 		# is_interest_group_type = ig_socialists
 		# is_interest_group_type = ig_entrepreneurs
 		# is_interest_group_type = ig_armed_forces
-		# is_interest_group_type = ig_elites
+		# is_interest_group_type = ig_conservatives
 	}
 }
 

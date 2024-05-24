@@ -57,7 +57,7 @@
 			religion = rel:protestant
 			ig_leader = yes
 			birth_date = 1907.6.8
-			interest_group = ig:ig_capitalists
+			interest_group = ig:ig_market_liberals
 			ideology = ideology_moderate
 		}
 		create_character = {
@@ -68,7 +68,7 @@
 			religion = rel:protestant
 			ig_leader = yes
 			birth_date = 1918.11.7
-			interest_group = ig:ig_moralists
+			interest_group = ig:ig_devout
 			ideology = ideology_moderate
 		}
 		create_character = {
@@ -79,7 +79,7 @@
 			religion = rel:protestant
 			ig_leader = yes
 			birth_date = 1887.6.10
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_moderate
 		}
 		create_character = {

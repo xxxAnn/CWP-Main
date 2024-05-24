@@ -92,7 +92,7 @@ ig_revolutions.2 = {
 	duration = 3
 	trigger = {
 		has_insurrectionary_interest_groups = yes
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			is_revolutionary = no
 			is_in_government = no
 			is_marginal = no
@@ -112,7 +112,7 @@ ig_revolutions.2 = {
 		}
 	}
 	immediate = {
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = ig_lo_on_the_edge
 		}
 	}
@@ -122,7 +122,7 @@ ig_revolutions.2 = {
 		ai_chance = {
 			base = 30
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = ig_concessions_and_appeasement
 				months = 36
@@ -134,7 +134,7 @@ ig_revolutions.2 = {
 		ai_chance = {
 			base = 15
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			join_revolution = yes
 			add_modifier = {
 				name = ig_unappeased
@@ -154,7 +154,7 @@ ig_revolutions.2 = {
 			base = 30
 			modifier = {
 				trigger = {
-					ig:ig_elites = {
+					ig:ig_conservatives = {
 						is_powerful = yes
 					}
 				}
@@ -162,14 +162,14 @@ ig_revolutions.2 = {
 			}
 			modifier = {
 				trigger = {
-					ig:ig_elites = {
+					ig:ig_conservatives = {
 						ig_approval < -3
 					}
 				}
 				add = -10
 			}
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = ig_mass_arrests
 				months = 12
@@ -294,7 +294,7 @@ ig_revolutions.4 = {
 	duration = 3
 	trigger = {
 		has_insurrectionary_interest_groups = yes
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			is_revolutionary = no
 			is_in_government = no
 			is_marginal = no
@@ -314,7 +314,7 @@ ig_revolutions.4 = {
 		}
 	}
 	immediate = {
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = ig_dv_on_the_edge
 		}
 	}
@@ -324,7 +324,7 @@ ig_revolutions.4 = {
 		ai_chance = {
 			base = 30
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = ig_concessions_and_appeasement
 				months = 36
@@ -336,7 +336,7 @@ ig_revolutions.4 = {
 		ai_chance = {
 			base = 15
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			join_revolution = yes
 			add_modifier = {
 				name = ig_unappeased
@@ -356,7 +356,7 @@ ig_revolutions.4 = {
 			base = 30
 			modifier = {
 				trigger = {
-					ig:ig_moralists = {
+					ig:ig_devout = {
 						is_powerful = yes
 					}
 				}
@@ -364,14 +364,14 @@ ig_revolutions.4 = {
 			}
 			modifier = {
 				trigger = {
-					ig:ig_moralists = {
+					ig:ig_devout = {
 						ig_approval < -3
 					}
 				}
 				add = -10
 			}
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = ig_mass_arrests
 				months = 12
@@ -496,7 +496,7 @@ ig_revolutions.6 = {
 	duration = 3
 	trigger = {
 		has_insurrectionary_interest_groups = yes
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_revolutionary = no
 			is_in_government = no
 			is_marginal = no
@@ -516,7 +516,7 @@ ig_revolutions.6 = {
 		}
 	}
 	immediate = {
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = ig_in_on_the_edge
 		}
 	}
@@ -526,7 +526,7 @@ ig_revolutions.6 = {
 		ai_chance = {
 			base = 30
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = ig_concessions_and_appeasement
 				months = 36
@@ -538,7 +538,7 @@ ig_revolutions.6 = {
 		ai_chance = {
 			base = 15
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			join_revolution = yes
 			add_modifier = {
 				name = ig_unappeased
@@ -558,7 +558,7 @@ ig_revolutions.6 = {
 			base = 30
 			modifier = {
 				trigger = {
-					ig:ig_capitalists = {
+					ig:ig_market_liberals = {
 						is_powerful = yes
 					}
 				}
@@ -566,14 +566,14 @@ ig_revolutions.6 = {
 			}
 			modifier = {
 				trigger = {
-					ig:ig_capitalists = {
+					ig:ig_market_liberals = {
 						ig_approval < -3
 					}
 				}
 				add = -10
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = ig_mass_arrests
 				months = 12

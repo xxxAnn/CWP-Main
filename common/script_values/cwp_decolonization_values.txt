@@ -620,7 +620,7 @@ domestic_pressure_growth = {
 			OR = {
 				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_armed_forces
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_conservatives
 			}
 		}
 		add = {
@@ -652,7 +652,7 @@ imperial_policy_value_net = {
 			OR = {
 				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_armed_forces
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_conservatives
 			}
 		}
 		add = {
