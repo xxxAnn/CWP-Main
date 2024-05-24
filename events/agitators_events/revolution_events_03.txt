@@ -561,7 +561,7 @@ revolution_pulse2_events.4 = {
 				occupancy >= 0.5
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_marginal = no
 		}
 	}
@@ -610,7 +610,7 @@ revolution_pulse2_events.4 = {
 				value = medium_radicals
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = sided_with_capitalists_over_scrips
 				months = normal_modifier_time
@@ -642,7 +642,7 @@ revolution_pulse2_events.4 = {
 			pop_type = investors
 			value = small_radicals
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = sided_with_workers_over_scrips
 				months = normal_modifier_time
