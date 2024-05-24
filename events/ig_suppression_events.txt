@@ -299,7 +299,7 @@ ig_suppression_events.3 = { #make them step down
 			limit = {
 				scope:target = {
 					NOT = { is_interest_group_type = ig_securocrats
-is_interest_group_type = ig_patriots }
+is_interest_group_type = ig_armed_forces }
 				}
 			}
 			ig:ig_securocrats = {
@@ -412,7 +412,7 @@ ig_suppression_events.4 = { #send them to jail
 			limit = {
 				scope:target = {
 					NOT = { is_interest_group_type = ig_securocrats
-is_interest_group_type = ig_patriots }
+is_interest_group_type = ig_armed_forces }
 				}
 			}
 			ig:ig_securocrats = {
@@ -744,7 +744,7 @@ ig_suppression_events.1003 = { #Assassinate an Ig leader
 			limit = {
 				scope:target = {
 					NOT = { is_interest_group_type = ig_securocrats
-is_interest_group_type = ig_patriots }
+is_interest_group_type = ig_armed_forces }
 				}
 			}
 			ig:ig_securocrats = {

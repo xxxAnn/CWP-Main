@@ -35,9 +35,9 @@
   ig_urbanists_only_icon: "@urbanists!"
   ig_urbanists_desc: "Urbanists are the city dwellers living in the shadow of the industrial beast. They breathe life into the bustling streets, reaping the bounty of industry yet also bearing its excesses."
 
-  ig_patriots: "Patriots"
-  ig_patriots_only_icon: "@patriots!"
-  ig_patriots_desc: "Patriots are the nation's loyal defenders, waving the flag with pride. They stand for the nation's honor, values, and prosperity, and pass on these ideals to future generations."
+  ig_armed_forces: "Patriots"
+  ig_armed_forces_only_icon: "@patriots!"
+  ig_armed_forces_desc: "Patriots are the nation's loyal defenders, waving the flag with pride. They stand for the nation's honor, values, and prosperity, and pass on these ideals to future generations."
 
   ig_intelligentsia: "Intelligentsia"
   ig_intelligentsia_only_icon: "@intelligentsia!"

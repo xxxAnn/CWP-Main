@@ -509,7 +509,7 @@ securocrats_clothes_trigger = {
 	scope:character = {
 		or = {
 			is_interest_group_type = ig_armed_forces
-			is_interest_group_type = ig_patriots
+			is_interest_group_type = ig_armed_forces
 		}
 	}
 }

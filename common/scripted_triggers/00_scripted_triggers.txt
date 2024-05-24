@@ -1654,9 +1654,9 @@ ig_type_matches_former = {
 				}
 			}
 			AND = {
-				is_interest_group_type = ig_patriots
+				is_interest_group_type = ig_armed_forces
 				scope:ex_ig = {
-					is_interest_group_type = ig_patriots
+					is_interest_group_type = ig_armed_forces
 				}
 			}
 			AND = {

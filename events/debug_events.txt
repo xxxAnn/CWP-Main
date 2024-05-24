@@ -99,7 +99,7 @@ debug.9 = {
 			}
 			create_character = {
 				ig_leader = yes
-				interest_group = ig:ig_patriots
+				interest_group = ig:ig_armed_forces
 			}
 			create_character = {
 				ig_leader = yes

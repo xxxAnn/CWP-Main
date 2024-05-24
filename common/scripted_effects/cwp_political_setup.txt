@@ -512,7 +512,7 @@ setup_starting_ideologies = {
 		}
 	}
 	### Patriots ###
-	ig:ig_patriots = {
+	ig:ig_armed_forces = {
 		if = {
 			limit = {
 				owner = {

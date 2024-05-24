@@ -161,12 +161,12 @@ FNSEA = {
 
 petain_on_house_arrest = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
-	interest_group_ig_patriots_pop_attraction_mult = 0.2
+	interest_group_ig_armed_forces_pop_attraction_mult = 0.2
 }
 
 petain_executed = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	interest_group_ig_patriots_pop_attraction_mult = -0.2
+	interest_group_ig_armed_forces_pop_attraction_mult = -0.2
 }
 
 approves_gaddafis_unification_efforts = {

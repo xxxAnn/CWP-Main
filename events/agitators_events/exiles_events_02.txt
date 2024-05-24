@@ -700,7 +700,7 @@ exiles_more_events.4 = {
 			limit = {
 				scope:post_unification_agitator = {
 					is_interest_group_type = ig_securocrats
-					is_interest_group_type = ig_patriots
+					is_interest_group_type = ig_armed_forces
 				}
 			}
 			ig:ig_securocrats = {

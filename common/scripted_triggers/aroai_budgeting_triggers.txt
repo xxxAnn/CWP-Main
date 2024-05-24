@@ -268,7 +268,7 @@ aroai_can_cut_military_wages = {
 	or = {
 		nor = {
 			exists = ig:ig_armed_forces
-			exists = ig:ig_patriots
+			exists = ig:ig_armed_forces
 		}
 		or = {
 			and = {
@@ -295,8 +295,8 @@ aroai_can_cut_military_wages = {
 				}
 			}
 			and = {
-				exists = ig:ig_patriots
-				ig:ig_patriots = {
+				exists = ig:ig_armed_forces
+				ig:ig_armed_forces = {
 					OR = {
 						root = {
 							NOT = {

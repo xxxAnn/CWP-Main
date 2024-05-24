@@ -12,7 +12,7 @@ prostitution.1 = {
 					NOT = {
 						scope:cda_ig = {
 							is_interest_group_type = ig_securocrats
-							is_interest_group_type = ig_patriots
+							is_interest_group_type = ig_armed_forces
 						}
 					}
 				}
@@ -22,7 +22,7 @@ prostitution.1 = {
 				trigger = {
 					scope:cda_ig = {
 						is_interest_group_type = ig_securocrats
-						is_interest_group_type = ig_patriots
+						is_interest_group_type = ig_armed_forces
 					}
 				}
 			}
@@ -60,7 +60,7 @@ prostitution.1 = {
 					OR = {
 						is_interest_group_type = ig_moralists
 						is_interest_group_type = ig_securocrats
-						is_interest_group_type = ig_patriots
+						is_interest_group_type = ig_armed_forces
 					}
 					NOT = {
 						leader = {
@@ -101,7 +101,7 @@ prostitution.1 = {
 						OR = {
 							is_interest_group_type = ig_moralists
 							is_interest_group_type = ig_securocrats
-							is_interest_group_type = ig_patriots
+							is_interest_group_type = ig_armed_forces
 						}
 						NOT = {
 							leader = {
@@ -250,7 +250,7 @@ prostitution.2 = {
 							OR = {
 								is_interest_group_type = ig_moralists
 								is_interest_group_type = ig_securocrats
-								is_interest_group_type = ig_patriots
+								is_interest_group_type = ig_armed_forces
 							}
 							NOT = {
 								leader = {
@@ -271,7 +271,7 @@ prostitution.2 = {
 							OR = {
 								is_interest_group_type = ig_moralists
 								is_interest_group_type = ig_securocrats
-								is_interest_group_type = ig_patriots
+								is_interest_group_type = ig_armed_forces
 							}
 							NOT = {
 								leader = {

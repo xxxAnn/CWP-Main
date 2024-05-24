@@ -27,7 +27,7 @@ ger_kurt_georg_kiesinger_template = {
 			is_marginal = no
 			OR = {
 				is_interest_group_type = ig_elites
-				is_interest_group_type = ig_patriots
+				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_entrepreneurs
 			}
 		}
@@ -284,7 +284,7 @@ ger_albert_speer_template = {
 	female = no
 	#religion = 
 	ideology = ideology_fascist
-	interest_group = ig_patriots
+	interest_group = ig_armed_forces
 	is_agitator = yes
 	birth_date = 1905.3.19
 	traits = {
@@ -298,7 +298,7 @@ ger_albert_speer_template = {
 		}
 		interest_group_trigger = {
 			is_marginal = no
-			is_interest_group_type = ig_patriots
+			is_interest_group_type = ig_armed_forces
 		}
 		earliest_usage_date = 1966.1.1
 		latest_usage_date = 1981.1.1

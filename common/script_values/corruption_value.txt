@@ -311,15 +311,15 @@ corruption_baseline = {
 	if = {
 		limit = {
 			this = {
-				has_ruling_interest_group = ig_patriots
-				ig:ig_patriots = {
+				has_ruling_interest_group = ig_armed_forces
+				ig:ig_armed_forces = {
 					has_variable = ig_corruption
 				}
 			}
 		}
 		add = {
 			value = {
-				value = ig:ig_patriots.var:ig_corruption
+				value = ig:ig_armed_forces.var:ig_corruption
 				divide = num_ruling_igs
 			}
 			desc = COR_PATRIOTS

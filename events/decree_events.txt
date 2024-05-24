@@ -387,7 +387,7 @@ decree_events.4 = {
 						is_interest_group_type = ig_elites
 						is_interest_group_type = ig_capitalists
 						is_interest_group_type = ig_armed_forces
-						is_interest_group_type = ig_patriots
+						is_interest_group_type = ig_armed_forces
 					}
 				}
 			}
@@ -422,7 +422,7 @@ decree_events.4 = {
 							is_interest_group_type = ig_elites
 							is_interest_group_type = ig_capitalists
 							is_interest_group_type = ig_armed_forces
-							is_interest_group_type = ig_patriots
+							is_interest_group_type = ig_armed_forces
 						}
 					}
 				}

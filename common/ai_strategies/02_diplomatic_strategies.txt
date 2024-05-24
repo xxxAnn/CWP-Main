@@ -191,7 +191,7 @@ ai_strategy_territorial_expansion = {
 		if = {
 			limit = {
 				or = {
-					ig:ig_patriots = {
+					ig:ig_armed_forces = {
 						is_powerful = yes
 					}
 					ig:ig_armed_forces = {

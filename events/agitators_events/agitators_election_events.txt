@@ -2896,7 +2896,7 @@ agitators_election_events.23 = {
 			}
 			any_member = {
 				is_interest_group_type = ig_securocrats
-				is_interest_group_type = ig_patriots
+				is_interest_group_type = ig_armed_forces
 			}
 		}
 		ig:ig_ruralists = {

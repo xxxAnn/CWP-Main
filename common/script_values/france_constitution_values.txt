@@ -149,7 +149,7 @@ france_constitution_moralist_clout = {
 
 france_constitution_gaullist_clout = {
 	value = 0
-	add = ig:ig_patriots.ig_clout
+	add = ig:ig_armed_forces.ig_clout
 	add = ig:ig_capitalists.ig_clout
 	add = ig:ig_entrepreneurs.ig_clout
 	add = ig:ig_armed_forces.ig_clout

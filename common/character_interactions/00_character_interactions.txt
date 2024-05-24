@@ -65,7 +65,7 @@ grant_command_to_ruler = {
 		}
 		if = {
 			limit = {
-				is_interest_group_type = ig_patriots
+				is_interest_group_type = ig_armed_forces
 			}
 			add = 25
 		}
@@ -131,7 +131,7 @@ remove_command_from_ruler = {
 		}
 		if = {
 			limit = {
-				is_interest_group_type = ig_patriots
+				is_interest_group_type = ig_armed_forces
 			}
 			add = -50
 		}			
@@ -241,7 +241,7 @@ grant_command_to_agitator = {
 		}	
 		if = {
 			limit = {
-				is_interest_group_type = ig_patriots
+				is_interest_group_type = ig_armed_forces
 			}
 			add = 25
 		}	

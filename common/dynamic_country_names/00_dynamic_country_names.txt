@@ -129,7 +129,7 @@ DEFAULT = {
 			scope:actor = {
 				is_secessionist = no
 				or = {
-					ig:ig_patriots = {
+					ig:ig_armed_forces = {
 						is_powerful = yes
 						is_in_government = yes
 					}
@@ -1304,7 +1304,7 @@ TUR = {
 			scope:actor = {
 				OR = {
 					has_ruling_interest_group = ig_elites
-					has_ruling_interest_group = ig_patriots
+					has_ruling_interest_group = ig_armed_forces
 					has_ruling_interest_group = ig_moralists
 				}
 			}
