@@ -81,7 +81,7 @@ request_nuclear_bomb_deployment = {
 				not = {
 					ROOT = this
 				}
-				is_adjacent = scope:target_country
+				is_adjacent_to_country = scope:target_country
 				OR = {
 					has_modifier = atomic_capable
 					has_modifier = thermonuclear_capable
