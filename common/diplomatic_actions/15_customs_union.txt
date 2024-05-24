@@ -68,11 +68,6 @@
 		sway_maneuvers_cost = 10
 		relations_progress_per_day = 1		# At 100, +1 relations
 		relations_improvement_max = 50
-		NOT = {
-			has_war_with = scope:target_country
-		}
-		is_junior_in_customs_union = no
-		has_diplomatic_relevance = scope:target_country
 		requirement_to_maintain = {
 			trigger = {
 				has_diplomatic_relevance = scope:target_country
