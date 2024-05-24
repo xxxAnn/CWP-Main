@@ -12,14 +12,9 @@
 			NOT = {
 				is_country_type = decentralized
 			}
-			is_subject_of = root
 		}
 	}
 	possible = {
-		NOT = {
-			has_war_with = scope:target_country
-		}
-		has_diplomatic_relevance = scope:target_country
 		is_revolutionary = no
 		in_default = no
 	}
@@ -32,53 +27,64 @@
 		weekly_effect = {
 			custom_tooltip = {
 				text = administer_weekly_effect_tooltip
-					set_local_variable = {
-						name = colonial_administration_amount
-						value = {
-							value = scope:target_country.total_population
-							divide = 100000
-							round = yes
+				set_local_variable = {
+					name = colonial_administration_amount
+					value = {
+						value = scope:target_country.total_population
+						divide = 100000
+						round = yes
+					}
+				}
+				if = {
+					limit = {
+						has_local_variable = colonial_administration_amount
+					}
+					root = {
+						add_modifier = {
+							name = colonial_administration
+							days = 7
+							multiplier = local_var:colonial_administration_amount
 						}
 					}
-					if = {
-						limit = {
-							has_local_variable = colonial_administration_amount
-						}
-						root = {
-							add_modifier = {
-								name = colonial_administration
-								days = 7
-								multiplier = local_var:colonial_administration_amount
-							}
-						}
-						scope:target_country = {
-							add_modifier = {
-								name = colonial_administrators
-								days = 7
-								multiplier = local_var:colonial_administration_amount
-							}
+					scope:target_country = {
+						add_modifier = {
+							name = colonial_administrators
+							days = 7
+							multiplier = local_var:colonial_administration_amount
 						}
 					}
 				}
 			}
-		is_about_to_auto_break = {
 		}
-		should_auto_break = {
+		requirement_to_maintain = {
+			trigger = {
+				NOT = {
+					has_war_with = scope:target_country
+				}
+			}
 		}
-		should_invalidate = {
-			OR = {
-				has_war_with = scope:target_country
-				is_country_type = decentralized
+		requirement_to_maintain = {
+			trigger = {
+				has_diplomatic_relevance = scope:target_country
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
 				scope:target_country = {
-					OR = {
-						is_country_type = decentralized
-						NOT = {
-							is_subject_of = root
-						}
-					}
+					is_subject_of = root
 				}
-				in_default = yes
 			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				NOT = {
+					in_default = yes
+				}
+			}
+		}
+		auto_break_effect = {
+		}
+		manual_break_effect = {
 		}
 	}
 	ai = {
@@ -107,7 +113,6 @@
 						attitude = protective
 					}
 				}
-				
 			}
 		}
 	}

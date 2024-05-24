@@ -12,22 +12,15 @@
 			NOT = {
 				is_country_type = decentralized
 			}
-			is_subject_of = root
 		}
 	}
 	possible = {
-		NOT = {
-			has_war_with = scope:target_country
-		}
-		has_diplomatic_relevance = scope:target_country
 		is_revolutionary = no
-		in_default = no
 		modifier:country_construction_add > {
 			value = scope:target_country.gold_reserves_limit
 			divide = 100000
 			round = yes
 		}
-		modifier:country_construction_add >= 0
 	}
 	pact = {
 		cost = 10
@@ -70,25 +63,38 @@
 				}
 			}
 		}
-		is_about_to_auto_break = {
-		}
-		should_auto_break = {
-			modifier:country_construction_add < 0
-		}
-		should_invalidate = {
-			OR = {
-				has_war_with = scope:target_country
-				is_country_type = decentralized
-				scope:target_country = {
-					OR = {
-						is_country_type = decentralized
-						NOT = {
-							is_subject_of = root
-						}
-					}
-				}
-				in_default = yes
+		requirement_to_maintain = {
+			trigger = {
+				has_diplomatic_relevance = scope:target_country
 			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				modifier:country_construction_add >= 0
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				NOT = {
+					has_war_with = scope:target_country
+				}
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				in_default = no
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				scope:target_country = {
+					is_subject_of = root
+				}
+			}
+		}
+		manual_break_effect = {
+		}
+		auto_break_effect = {
 		}
 	}
 	ai = {
