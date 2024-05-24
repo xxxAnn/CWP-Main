@@ -6,9 +6,9 @@
 	female_ruler = "RULER_DELEGATE"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_anarchy
-		has_law = law_type:law_syndicalism
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_anarchy
+		#has_law = law_type:law_syndicalism
 	}
 
 	on_government_type_change = {
@@ -27,13 +27,13 @@ gov_syndicalism_federation = {
 	female_ruler = "RULER_DELEGATE"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		NOT = { has_law = law_type:law_anarchy }
-		has_law = law_type:law_syndicalism
+		#has_law = law_type:law_council_republic
+		NOT = { #has_law = law_type:law_anarchy }
+		#has_law = law_type:law_syndicalism
 		country_has_voting_franchise = yes
 		OR = {
-			has_law = law_type:law_confederated
-			has_law = law_type:law_federated
+			#has_law = law_type:law_confederated
+			#has_law = law_type:law_federated
 		}
 	}
 
@@ -53,13 +53,13 @@ gov_syndicalism = {
 	female_ruler = "RULER_DELEGATE"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		NOT = { has_law = law_type:law_anarchy }
-		has_law = law_type:law_syndicalism
+		#has_law = law_type:law_council_republic
+		NOT = { #has_law = law_type:law_anarchy }
+		#has_law = law_type:law_syndicalism
 		country_has_voting_franchise = yes
 		NOR = {
-			has_law = law_type:law_confederated
-			has_law = law_type:law_federated
+			#has_law = law_type:law_confederated
+			#has_law = law_type:law_federated
 		}
 	}
 
@@ -79,9 +79,9 @@ gov_syndicalism_technocracy = {
 	female_ruler = "RULER_FOREWOMAN"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_technocracy
-		has_law = law_type:law_syndicalism
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_technocracy
+		#has_law = law_type:law_syndicalism
 	}
 
 	on_government_type_change = {
@@ -100,13 +100,13 @@ gov_syndicalism_dictatorship = {
 	female_ruler = "RULER_PRESIDENT"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_syndicalism
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_syndicalism
 		OR = {
-			has_law = law_type:law_autocracy
-			has_law = law_type:law_military_junta
-			has_law = law_type:law_oligarchy
-			has_law = law_type:law_party_single
+			#has_law = law_type:law_autocracy
+			#has_law = law_type:law_military_junta
+			#has_law = law_type:law_oligarchy
+			#has_law = law_type:law_party_single
 		}
 	}
 
@@ -126,9 +126,9 @@ gov_syndicalism_party_dictatorship = {
 	female_ruler = "RULER_GENERAL_SECRETARY"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_party_single
-		has_law = law_type:law_syndicalism
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_party_single
+		#has_law = law_type:law_syndicalism
 	}
 
 	on_government_type_change = {

@@ -149,31 +149,31 @@ aroai_usage_of_construction_points_by_government_queue = {
 aroai_private_construction_allocation_mult = {
 	if = {
 		limit = {
-			has_law = law_type:law_heavy_industry_nationalization
+			#has_law = law_type:law_heavy_industry_nationalization
 		}
 		value = 0.2
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_military_industry_nationalization
+			#has_law = law_type:law_military_industry_nationalization
 		}
 		value = 0.3
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_resource_extraction_nationalization
+			#has_law = law_type:law_resource_extraction_nationalization
 		}
 		value = 0.4
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_public_utility_companies
+			#has_law = law_type:law_public_utility_companies
 		}
 		value = 0.5
 	}
 	else_if = {
 		limit = {
-			has_law = law_type:law_no_nationalization
+			#has_law = law_type:law_no_nationalization
 		}
 		value = 0.75
 	}
@@ -295,10 +295,10 @@ aroai_army_power_projection = {
 	#TODO: country_army_power_projection_add doesn't exist in buildings anymore, please replace or remove
 	#value = modifier:country_army_power_projection_add
 	value = modifier:country_army_power_projection_add
-    multiply = {
-        value = modifier:country_army_power_projection_mult
-        add = 1
-    }
+	multiply = {
+		value = modifier:country_army_power_projection_mult
+		add = 1
+	}
 }
 
 aroai_power_per_battalion = {
@@ -339,10 +339,10 @@ aroai_army_power_projection_with_conscription = {
 aroai_navy_power_projection = {
 	#value = modifier:country_navy_power_projection_add
 	value = modifier:country_navy_power_projection_add
-    multiply = {
-        value = modifier:country_navy_power_projection_mult
-        add = 1
-    }
+	multiply = {
+		value = modifier:country_navy_power_projection_mult
+		add = 1
+	}
 }
 
 aroai_power_per_flotilla = {

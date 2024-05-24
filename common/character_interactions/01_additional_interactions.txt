@@ -1,20 +1,15 @@
 ﻿#icon					Path to icon for both right click menu and character panel buttons
 #clicksound				Clicksound for both right click menu and character panel buttons
-
 #						All scopes are character scopes with the interacting country stored as the actor
 #potential				Trigger to check if the interaction should be shown
 #possible 				Trigger to check if the interaction is available
 #effect					The effects of the interaction
 #cooldown				Scriptable duration that this interaction will be unavailable for the interacting country
-
 #show_requirements		Whether to always show requirements, similar to highlighted options in events
 #show_confirmation_box	Whether to require confirmation
-
 #ai_chance				Scriptable value for the chance (0-100) that the AI will use this interaction when available, default 0
-
 arrange_accident = {
 	clicksound = "event:/SFX/DLC/1.3_ip1/UI/exile_character"
-
 	potential = {
 		is_in_exile_pool = no
 		is_in_void = no
@@ -27,18 +22,15 @@ arrange_accident = {
 			has_role = agitator
 		}
 	}
-
 	show_requirements = yes
-
 	possible = {
 		owner = {
-			has_law = law_type:law_secret_police
+			#has_law = law_type:law_secret_police
 		}
 		interest_group = {
 			is_marginal = no
 		}
 	}
-
 	effect = {
 		this.interest_group = {
 			save_scope_as = relevant_ig
@@ -102,17 +94,17 @@ arrange_accident = {
 			}
 		}
 	}
-
-	cooldown = { months = normal_modifier_time }
+	cooldown = {
+		months = normal_modifier_time
+	}
 	show_confirmation_box = yes
-
 	ai_chance = {
 		value = -50
 		if = {
 			limit = {
 				interest_group = {
 					ig_approval <= -5
-				}		
+				}
 			}
 			add = 25
 		}
@@ -120,7 +112,7 @@ arrange_accident = {
 			limit = {
 				interest_group = {
 					ig_approval <= -10
-				}		
+				}
 			}
 			add = 30
 		}
@@ -128,43 +120,43 @@ arrange_accident = {
 			limit = {
 				scope:actor ?= {
 					NOR = {
-						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
-						has_law = law_type:law_single_party_state
+						#has_law = law_type:law_autocracy
+						#has_law = law_type:law_oligarchy
+						#has_law = law_type:law_single_party_state
 					}
-				}			
+				}
 			}
 			add = -25
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_outlawed_dissent
-				}			
+					#has_law = law_type:law_outlawed_dissent
+				}
 			}
 			add = 30
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_censorship
-				}			
+					#has_law = law_type:law_censorship
+				}
 			}
 			add = 10
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_right_of_assembly
-				}			
+					#has_law = law_type:law_right_of_assembly
+				}
 			}
 			add = -10
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_protected_speech
-				}			
+					#has_law = law_type:law_protected_speech
+				}
 			}
 			add = -20
 		}
@@ -174,7 +166,7 @@ arrange_accident = {
 					any_interest_group = {
 						is_insurrectionary = yes
 					}
-				}			
+				}
 			}
 			add = 25
 		}
@@ -186,7 +178,7 @@ arrange_accident = {
 							has_trait = cruel
 						}
 					}
-				}			
+				}
 			}
 			add = 15
 		}
@@ -198,7 +190,7 @@ arrange_accident = {
 							has_trait = imperious
 						}
 					}
-				}			
+				}
 			}
 			add = 10
 		}
@@ -207,19 +199,17 @@ arrange_accident = {
 
 resign_from_office = {
 	clicksound = "event:/SFX/UI/Military/command_grant"
-
 	potential = {
 		has_dlc_feature = voice_of_the_people_content
 		owner = scope:actor
 		is_ruler = yes
 		owner = {
 			NOR = {
-				has_law = law_type:law_monarchy
-				has_law = law_type:law_theocracy
+				#has_law = law_type:law_monarchy
+				#has_law = law_type:law_theocracy
 			}
 		}
 	}
-
 	possible = {
 		OR = {
 			interest_group = {
@@ -242,7 +232,6 @@ resign_from_office = {
 			}
 		}
 	}
-
 	effect = {
 		if = {
 			limit = {
@@ -253,46 +242,52 @@ resign_from_office = {
 				}
 			}
 			owner = {
-				trigger_event = { id = resignation.2 popup = yes }
+				trigger_event = {
+					id = resignation.2
+					popup = yes
+				}
 			}
 		}
 		else = {
 			owner = {
-				trigger_event = { id = resignation.1 popup = yes }
+				trigger_event = {
+					id = resignation.1
+					popup = yes
+				}
 			}
 		}
 	}
-
-	cooldown = { months = 180 }
+	cooldown = {
+		months = 180
+	}
 	show_confirmation_box = yes
-
 	ai_chance = {
 		value = -50
 		if = {
-			limit = {	
+			limit = {
 				interest_group = {
 					ig_approval <= angry
 				}
 			}
 			add = 25
-		}	
+		}
 		if = {
 			limit = {
 				interest_group = {
 					is_marginal = yes
-				}				
+				}
 			}
 			add = 25
 		}
 		if = {
 			limit = {
-				popularity <= -50			
+				popularity <= -50
 			}
 			add = 25
 		}
 		if = {
 			limit = {
-				popularity <= -75			
+				popularity <= -75
 			}
 			add = 25
 		}
@@ -303,7 +298,7 @@ resign_from_office = {
 					has_trait = cancer
 					has_trait = senile
 					has_trait = wounded
-				}			
+				}
 			}
 			add = 25
 		}
@@ -312,7 +307,7 @@ resign_from_office = {
 				OR = {
 					has_trait = arrogant
 					has_trait = imperious
-				}			
+				}
 			}
 			add = -50
 		}

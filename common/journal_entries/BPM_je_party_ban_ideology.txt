@@ -60,7 +60,7 @@ je_bpm_ban_communists = {
 	group = bpm_je_group_party_laws
 
 	is_shown_when_inactive = {
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 	}
 
 	can_deactivate = yes
@@ -78,7 +78,7 @@ je_bpm_ban_communists = {
 			bpm_banned_antiliberal_parties = yes
 		}
 		hidden_trigger = {
-			NOT = { has_law = law_type:law_council_republic }
+			NOT = { #has_law = law_type:law_council_republic }
 		}
 	}
 
@@ -102,7 +102,7 @@ je_bpm_ban_communists = {
 				bpm_banned_socialist_parties = yes
 				bpm_banned_antiliberal_parties = yes
 			}
-			has_law = law_type:law_council_republic
+			#has_law = law_type:law_council_republic
 		}
 	}
 
@@ -117,13 +117,13 @@ je_bpm_ban_anti_communists = {
 	group = bpm_je_group_party_laws
 
 	is_shown_when_inactive = {
-		has_law = law_type:law_council_republic
+		#has_law = law_type:law_council_republic
 	}
 
 	can_deactivate = yes
 	possible = {
 		hidden_trigger = {
-			has_law = law_type:law_council_republic
+			#has_law = law_type:law_council_republic
 		}
 		OR = {
 			any_interest_group = {
@@ -131,7 +131,7 @@ je_bpm_ban_anti_communists = {
 				bpm_ig_is_socialist = no
 				is_insurrectionary = yes
 			}
-			has_law = law_type:law_party_socialist_only
+			#has_law = law_type:law_party_socialist_only
 		}
 	}
 
@@ -150,9 +150,9 @@ je_bpm_ban_anti_communists = {
 					bpm_ig_is_socialist = no
 					is_insurrectionary = yes
 				}
-				has_law = law_type:law_party_socialist_only
+				#has_law = law_type:law_party_socialist_only
 			}
-			NOT = { has_law = law_type:law_council_republic }
+			NOT = { #has_law = law_type:law_council_republic }
 		}
 	}
 

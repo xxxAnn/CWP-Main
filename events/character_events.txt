@@ -567,7 +567,7 @@ character_events.5 = {
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
 	trigger = {
-		has_law = law_type:law_hereditary
+		#has_law = law_type:law_hereditary
 		any_scope_state = {
 			is_incorporated = yes
 			has_building = building_urban_center
@@ -654,7 +654,7 @@ character_events.6 = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_hereditary
+			#has_law = law_type:law_hereditary
 		}
 		any_scope_state = {
 			has_variable = ruler_statue_var

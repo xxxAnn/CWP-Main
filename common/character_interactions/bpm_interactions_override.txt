@@ -27,7 +27,7 @@ exile_character = {
 	possible = {
 		owner = {
 			NOT = {
-				has_law = law_type:law_protected_speech
+				#has_law = law_type:law_protected_speech
 			}
 		}
 		OR = {
@@ -142,7 +142,7 @@ exile_character = {
 		# Standard radicals from having Right of Assembly
 		if = {
 			limit = {
-				owner = { has_law = law_type:law_right_of_assembly }
+				owner = { #has_law = law_type:law_right_of_assembly }
 			}
 			owner = {
 				add_radicals = {
@@ -154,7 +154,7 @@ exile_character = {
 		# Fewer radicals from Censorship
 		else_if = {
 			limit = {
-				owner = { has_law = law_type:law_censorship }
+				owner = { #has_law = law_type:law_censorship }
 			}
 			owner = {
 				add_radicals = {
@@ -223,9 +223,9 @@ exile_character = {
 			limit = {
 				scope:actor ?= {
 					NOR = {
-						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
-						has_law = law_type:law_single_party_state
+						#has_law = law_type:law_autocracy
+						#has_law = law_type:law_oligarchy
+						#has_law = law_type:law_single_party_state
 					}
 				}			
 			}
@@ -234,7 +234,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_secret_police
+					#has_law = law_type:law_secret_police
 				}			
 			}
 			add = 30
@@ -242,7 +242,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_national_guard
+					#has_law = law_type:law_national_guard
 				}			
 			}
 			add = 15
@@ -250,7 +250,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_guaranteed_liberties
+					#has_law = law_type:law_guaranteed_liberties
 				}			
 			}
 			add = -100
@@ -258,7 +258,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_outlawed_dissent
+					#has_law = law_type:law_outlawed_dissent
 				}			
 			}
 			add = 30
@@ -266,7 +266,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_censorship
+					#has_law = law_type:law_censorship
 				}			
 			}
 			add = 10
@@ -274,7 +274,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_right_of_assembly
+					#has_law = law_type:law_right_of_assembly
 				}			
 			}
 			add = -10
@@ -282,7 +282,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_protected_speech
+					#has_law = law_type:law_protected_speech
 				}			
 			}
 			add = -20

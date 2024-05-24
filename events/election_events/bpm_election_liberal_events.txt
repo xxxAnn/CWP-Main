@@ -20,7 +20,7 @@ election_liberal_events.1 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 
 	trigger = {
-		NOT = { has_law = law_type:law_single_party_state }
+		NOT = { #has_law = law_type:law_single_party_state }
 		NOT = { has_variable = election_event_cooldown }
 		in_election_campaign = yes
 		any_active_party = {

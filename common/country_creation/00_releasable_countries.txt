@@ -1770,7 +1770,7 @@ NRK = {
 	}
 	required_num_states = 2
 	possible = {
-		has_law = law_type:law_socialization
+		#has_law = law_type:law_socialization
 	}
 	ai_will_do = {
 		always = no
@@ -1787,7 +1787,7 @@ STK = {
 	}
 	required_num_states = 2
 	possible = {
-		NOT = { has_law = law_type:law_socialization }
+		NOT = { #has_law = law_type:law_socialization }
 	}
 	ai_will_do = {
 		always = no

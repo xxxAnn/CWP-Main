@@ -13,7 +13,7 @@
 	
 	possible = {
 		NOR = {
-			has_law = law_type:law_decentralization 
+			#has_law = law_type:law_decentralization 
 		}
 		pop_type_percent_country = { #added again so the tooltip is nicer
 			pop_type = informal_workers
@@ -27,7 +27,7 @@
 			percent < 0.35
 		}
 		NOT = {
-			has_law = law_type:law_decentralization
+			#has_law = law_type:law_decentralization
 		}
 		ig:ig_capitalists = {
 			is_marginal = no
@@ -64,7 +64,7 @@ je_urbanization_events_2 = {
 				level >= 5
 			}
 		}
-		NOT = { has_law = law_type:law_anti_industrialization }
+		NOT = { ##has_law = law_type:law_anti_industrialization }
 	}
 	
 	complete = {

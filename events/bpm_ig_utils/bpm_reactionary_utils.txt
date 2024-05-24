@@ -8,7 +8,7 @@ bpm_reactionary_utils.1 = {
 	trigger = {
 		owner = {
 			OR = { 
-				has_law = law_type:law_council_republic 
+				#has_law = law_type:law_council_republic 
 			}
 			any_interest_group = {
 				bpm_ig_is_traditionalist = yes
@@ -36,7 +36,7 @@ bpm_reactionary_utils.2 = {
 
 	trigger = {
 		owner = { 
-			NOT = { has_law = law_type:law_council_republic }
+			NOT = { #has_law = law_type:law_council_republic }
 			any_interest_group = {
 				bpm_ig_is_traditionalist = yes
 				has_modifier = bpm_very_stubborn_ig

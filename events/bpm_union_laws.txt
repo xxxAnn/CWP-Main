@@ -17,9 +17,9 @@ bpm_union_laws.1 = {
 	trigger = {
 		has_technology_researched = law_enforcement
 		ig:ig_trade_unions = { is_marginal = no }
-		has_law = law_type:law_all_labor_unions_allowed
+		#has_law = law_type:law_all_labor_unions_allowed
 		NOT = { has_variable = union_law_introduced_var }
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 	}
 
 	immediate = {
@@ -30,9 +30,9 @@ bpm_union_laws.1 = {
 		name = bpm_union_laws.1.a
 		trigger = {
 			NOR = { 
-				has_law = law_type:law_guaranteed_liberties
-				has_law = law_type:law_protected_speech
-				has_law = law_type:law_worker_protections
+				#has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_protected_speech
+				#has_law = law_type:law_worker_protections
 			}
 		}
 		ai_chance = {
@@ -80,8 +80,8 @@ bpm_union_laws.1 = {
 		}
 		trigger = {
 			OR = { 
-				has_law = law_type:law_guaranteed_liberties
-				has_law = law_type:law_protected_speech
+				#has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_protected_speech
 			}
 		}
 		add_radicals = {

@@ -17,7 +17,7 @@ laws_police.1 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		has_law = law_type:law_decentralized_police
+		#has_law = law_type:law_decentralized_police
 		OR = {
 			is_enacting_law = law_type:law_morality_police
 			is_enacting_law = law_type:law_professional_police
@@ -107,7 +107,7 @@ laws_police.2 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		has_law = law_type:law_decentralized_police
+		#has_law = law_type:law_decentralized_police
 		OR = {
 			is_enacting_law = law_type:law_morality_police
 			is_enacting_law = law_type:law_professional_police
@@ -149,7 +149,7 @@ laws_police.2 = {
 	option = {
 		name = laws_police.2.c
 		trigger = {
-			has_law = law_type:law_censorship
+			#has_law = law_type:law_censorship
 		}
 		random_list = {
 			3 = {
@@ -191,7 +191,7 @@ laws_police.3 = {
 				is_marginal = no
 			}
 		}
-		has_law = law_type:law_decentralized_police
+		#has_law = law_type:law_decentralized_police
 		OR = {
 			is_enacting_law = law_type:law_morality_police
 			is_enacting_law = law_type:law_professional_police
@@ -236,7 +236,7 @@ laws_police.3 = {
 	option = {
 		name = laws_police.3.b
 		trigger = {
-			has_law = law_type:law_censorship
+			#has_law = law_type:law_censorship
 		}
 		scope:rally_movement_ig = {
 			add_modifier = {

@@ -99,7 +99,7 @@
 		requirement_to_maintain = {
 			trigger = {
 				NOT = {
-					has_law = law_type:law_isolationism
+					#has_law = law_type:law_isolationism
 				}
 			}
 		}
@@ -107,7 +107,7 @@
 			trigger = {
 				NOT = {
 					scope:target_country = {
-						has_law = law_type:law_isolationism
+						#has_law = law_type:law_isolationism
 					}
 				}
 			}

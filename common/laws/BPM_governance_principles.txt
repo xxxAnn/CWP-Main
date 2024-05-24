@@ -1,52 +1,43 @@
 ﻿# group = this is the law_group a law belongs to
 # icon = graphical icon shown in-game
 # modifier = {} modifier on country for having adopted this law
-
 law_monarchy = {
 	group = lawgroup_governance_principles
-	
 	icon = "gfx/interface/icons/law_icons/monarchy.dds"
-	
 	progressiveness = 0
-
 	disallowing_laws = {
 		law_anarchy
 	}
-
 	modifier = {
 		country_legitimacy_headofstate_add = 10
 		country_aristocrats_pol_str_mult = 0.25
 		country_authority_add = 200
 		bpm_decorative_modify_rigidity = 10
 	}
-	
 	if = {
 		limit = {
-			has_law = law_type:law_party_anti_reactionary
+			#has_law = law_type:law_party_anti_reactionary
 		}
 		deactivate_law = law_type:law_party_anti_reactionary
 		bpm_deactivate_syndicalism = yes
 	}
-
 	possible_political_movements = {
 		law_presidential_republic
 		law_parliamentary_republic
 		law_council_republic
 	}
-	
 	pop_support = {
-		value = 0	
+		value = 0
 		add = {
 			desc = "POP_ARISTOCRATS"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = aristocrats
 				}
 				value = 0.33
 			}
 		}
 	}
-	
 	ai_will_do = {
 		exists = ruler
 		ruler = {
@@ -54,7 +45,6 @@ law_monarchy = {
 		}
 		bpm_country_is_in_new_world = no
 	}
-
 	on_activate = {
 		if = {
 			limit = {
@@ -71,7 +61,9 @@ law_monarchy = {
 				}
 				remove_variable = fra_divided_monarchists_freeze
 			}
-			add_journal_entry = { type = je_divided_monarchists }
+			add_journal_entry = {
+				type = je_divided_monarchists
+			}
 		}
 		# Generates French monarch upon enaction.
 		hidden_effect = {
@@ -93,15 +85,14 @@ law_monarchy = {
 			}
 		}
 	}
-
-	ai_enact_weight_modifier = { #Petitions
+	ai_enact_weight_modifier = {
+		#Petitions
 		value = 0
-		
 		if = {
-			limit = { 
+			limit = {
 				has_journal_entry = je_government_petition
 				has_variable = desired_law_var
-                scope:law = var:desired_law_var
+				scope:law = var:desired_law_var
 			}
 			add = 750
 		}
@@ -110,15 +101,11 @@ law_monarchy = {
 
 law_presidential_republic = {
 	group = lawgroup_governance_principles
-	
 	icon = "gfx/interface/icons/law_icons/presidential_republic.dds"
-	
 	progressiveness = 100
-	
 	unlocking_technologies = {
 		democracy
 	}
-
 	on_activate = {
 		if = {
 			limit = {
@@ -132,7 +119,6 @@ law_presidential_republic = {
 		scripted_effect_parties_emergence = yes
 		bpm_deactivate_syndicalism = yes
 	}
-	
 	modifier = {
 		country_bureaucrats_voting_power_add = 5
 		country_legitimacy_headofstate_add = 10
@@ -140,49 +126,47 @@ law_presidential_republic = {
 		country_authority_add = 100
 		country_legitimacy_ideological_incoherence_mult = 0.2
 	}
-	
 	pop_support = {
 		value = 0
-
 		add = {
 			desc = "POP_ANGRY_UNSTABLE"
-			
 			if = {
-				limit = { 
-					owner = { 
-						var:bpm_political_stability <= 33	
+				limit = {
+					owner = {
+						var:bpm_political_stability <= 33
 					}
-					NOT = { strata = rich }
+					NOT = {
+						strata = rich
+					}
 				}
 				add = {
 					value = pop_radical_fraction
 				}
 			}
-		}		
+		}
 	}
-	
 	possible_political_movements = {
 		law_council_republic
 	}
-	
 	ai_will_do = {
 		exists = ruler
 		ruler = {
 			OR = {
 				bpm_leader_is_republican_liberal = yes
-				interest_group = { bpm_ig_is_republican = yes }
+				interest_group = {
+					bpm_ig_is_republican = yes
+				}
 			}
 		}
 	}
-
-	ai_enact_weight_modifier = { #Petitions
+	ai_enact_weight_modifier = {
+		#Petitions
 		value = 0
-		
 		if = {
-			limit = { 
+			limit = {
 				has_journal_entry = je_government_petition
 				has_variable = desired_law_var
-                scope:law = var:desired_law_var
+				scope:law = var:desired_law_var
 			}
 			add = 750
 		}
@@ -191,15 +175,11 @@ law_presidential_republic = {
 
 law_parliamentary_republic = {
 	group = lawgroup_governance_principles
-	
 	icon = "gfx/interface/icons/law_icons/parliamentary_republic.dds"
-	
 	progressiveness = 100
-	
 	unlocking_technologies = {
 		democracy
 	}
-	
 	on_activate = {
 		if = {
 			limit = {
@@ -213,35 +193,33 @@ law_parliamentary_republic = {
 		scripted_effect_parties_emergence = yes
 		bpm_deactivate_syndicalism = yes
 	}
-
 	modifier = {
 		country_bureaucrats_voting_power_add = 5
 		country_legitimacy_govt_total_votes_add = 10
 		country_legitimacy_govt_size_add = 1
 	}
-	
 	possible_political_movements = {
 		law_council_republic
 	}
-	
 	ai_will_do = {
 		exists = ruler
 		ruler = {
 			OR = {
 				bpm_leader_is_republican_liberal = yes
-				interest_group = { bpm_ig_is_republican = yes }
+				interest_group = {
+					bpm_ig_is_republican = yes
+				}
 			}
 		}
 	}
-
-	ai_enact_weight_modifier = { #Petitions
+	ai_enact_weight_modifier = {
+		#Petitions
 		value = 0
-		
 		if = {
-			limit = { 
+			limit = {
 				has_journal_entry = je_government_petition
 				has_variable = desired_law_var
-                scope:law = var:desired_law_var
+				scope:law = var:desired_law_var
 			}
 			add = 750
 		}
@@ -250,52 +228,43 @@ law_parliamentary_republic = {
 
 law_theocracy = {
 	group = lawgroup_governance_principles
-	
 	icon = "gfx/interface/icons/law_icons/theocracy.dds"
-	
 	progressiveness = -50
-
 	disallowing_laws = {
-		law_total_separation 
+		law_total_separation
 	}
-
 	on_activate = {
 		if = {
 			limit = {
-				has_law = law_type:law_party_anti_reactionary
+				#has_law = law_type:law_party_anti_reactionary
 			}
 			deactivate_law = law_type:law_party_anti_reactionary
 		}
 		bpm_deactivate_syndicalism = yes
 	}
-
 	modifier = {
 		country_legitimacy_headofstate_add = 20
 		interest_group_ig_devout_pol_str_mult = 0.25
 		country_authority_add = 200
 	}
-	
 	possible_political_movements = {
 		law_monarchy
 		law_presidential_republic
 		law_parliamentary_republic
 		law_council_republic
 	}
-
 	pop_support = {
 		value = 0
-		
 		add = {
 			desc = "POP_CLERGYMEN"
 			if = {
-				limit = { 
+				limit = {
 					is_pop_type = clergymen
 				}
 				value = 0.33
 			}
 		}
 	}
-	
 	ai_will_do = {
 		always = no
 	}
@@ -303,20 +272,15 @@ law_theocracy = {
 
 law_council_republic = {
 	group = lawgroup_governance_principles
-	
 	icon = "gfx/interface/icons/law_icons/council_republic.dds"
-	
 	progressiveness = 200
-
 	unlocking_technologies = {
 		socialism
 	}
-
 	can_enact = {
 		has_technology_researched = socialism
 		has_global_variable = first_intl_chain_complete_var
 	}
-
 	on_activate = {
 		custom_tooltip = {
 			text = enact_law_radical_leftist_government_warning_desc
@@ -324,7 +288,7 @@ law_council_republic = {
 		scripted_effect_parties_emergence = yes
 		if = {
 			limit = {
-				has_law = law_type:law_party_anti_socialist
+				#has_law = law_type:law_party_anti_socialist
 			}
 			deactivate_law = law_type:law_party_anti_socialist
 		}
@@ -336,70 +300,67 @@ law_council_republic = {
 			bpm_reorder_ideologies = yes
 		}
 	}
-
 	modifier = {
 		country_legitimacy_govt_total_votes_add = 10
 		country_bureaucrats_voting_power_add = 10
 		country_legitimacy_govt_size_add = 1
 		state_pop_pol_str_add = 4
 		state_political_strength_from_wealth_mult = -0.75
-		
 	}
-	
 	possible_political_movements = {
 		law_presidential_republic
 		law_parliamentary_republic
 	}
-	
 	pop_support = {
 		value = 0
-
 		add = {
 			desc = "POP_ANGRY_UNSTABLE"
-			
 			if = {
-				limit = { 
-					owner = { 
-						var:bpm_political_stability <= 33	
+				limit = {
+					owner = {
+						var:bpm_political_stability <= 33
 					}
-					NOT = { strata = rich }
+					NOT = {
+						strata = rich
+					}
 				}
 				add = {
 					value = pop_radical_fraction
 				}
 			}
-		}		
+		}
 	}
-	
 	ai_will_do = {
 		exists = ruler
 		OR = {
 			ruler = {
 				OR = {
 					bpm_leader_is_radical_socialist = yes
-					scope:interest_group = { bpm_ig_is_radical_socialist = yes }
+					scope:interest_group = {
+						bpm_ig_is_radical_socialist = yes
+					}
 				}
 			}
 			any_interest_group = {
-				scope:interest_group = { bpm_ig_is_radical_socialist = yes }
+				scope:interest_group = {
+					bpm_ig_is_radical_socialist = yes
+				}
 				is_powerful = yes
 				is_in_government = yes
 			}
 		}
 	}
-
-	ai_enact_weight_modifier = { #Petitions
+	ai_enact_weight_modifier = {
+		#Petitions
 		value = 0
-		
 		if = {
-			limit = { 
+			limit = {
 				has_journal_entry = je_government_petition
 				has_variable = desired_law_var
-                scope:law = var:desired_law_var
+				scope:law = var:desired_law_var
 			}
 			add = 750
 		}
-
 		if = {
 			limit = {
 				OR = {
@@ -408,12 +369,16 @@ law_council_republic = {
 						ruler = {
 							OR = {
 								bpm_leader_is_radical_socialist = yes
-								scope:interest_group = { bpm_ig_is_radical_socialist = yes }
+								scope:interest_group = {
+									bpm_ig_is_radical_socialist = yes
+								}
 							}
 						}
 					}
 					any_interest_group = {
-						scope:interest_group = { bpm_ig_is_radical_socialist = yes }
+						scope:interest_group = {
+							bpm_ig_is_radical_socialist = yes
+						}
 						is_powerful = yes
 						is_in_government = yes
 					}

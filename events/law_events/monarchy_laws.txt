@@ -1,32 +1,26 @@
 ﻿namespace = monarchy_law_events
-
 # Popular Acclamation
-monarchy_law_events.1 = { # Republic-to-Monarchy Advancement
+monarchy_law_events.1 = {
+	# Republic-to-Monarchy Advancement
 	type = country_event
-
 	title = monarchy_law_events.1.t
 	desc = monarchy_law_events.1.d
 	flavor = monarchy_law_events.1.f
-
 	category = enactment
-
 	event_image = {
 		video = "unspecific_ruler_speaking_to_people"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-	
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
-			has_law = law_type:law_executive
-			has_law = law_type:law_parliamentary
-			has_law = law_type:law_council_elective
+			#has_law = law_type:law_executive
+			#has_law = law_type:law_parliamentary
+			#has_law = law_type:law_council_elective
 		}
 		NOT = {
 			has_modifier = monarchist_agitation
@@ -40,7 +34,6 @@ monarchy_law_events.1 = { # Republic-to-Monarchy Advancement
 			}
 		}
 	}
-	
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
@@ -59,15 +52,14 @@ monarchy_law_events.1 = { # Republic-to-Monarchy Advancement
 			}
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
 	option = {
 		name = monarchy_law_events.1.a
-        default_option = yes
-
+		default_option = yes
 		add_enactment_modifier = {
 			name = monarchist_agitation
 		}
@@ -78,10 +70,8 @@ monarchy_law_events.1 = { # Republic-to-Monarchy Advancement
 			}
 		}
 	}
-
 	option = {
 		name = monarchy_law_events.1.b
-
 		add_enactment_modifier = {
 			name = monarchist_agitation
 		}
@@ -95,29 +85,24 @@ monarchy_law_events.1 = { # Republic-to-Monarchy Advancement
 }
 
 # Worldly Whispers
-monarchy_law_events.2 = { # Theocracy-to-Monarchy Advancement
+monarchy_law_events.2 = {
+	# Theocracy-to-Monarchy Advancement
 	type = country_event
-
 	title = monarchy_law_events.2.t
 	desc = monarchy_law_events.2.d
 	flavor = monarchy_law_events.2.f
-
 	category = enactment
-
 	event_image = {
 		video = "unspecific_ruler_speaking_to_people"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-	
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
-		has_law = law_type:law_theocratic
+		#has_law = law_type:law_theocratic
 		is_enacting_law = law_type:law_hereditary
 		any_interest_group = {
 			is_marginal = no
@@ -130,7 +115,6 @@ monarchy_law_events.2 = { # Theocracy-to-Monarchy Advancement
 			has_modifier = monarchist_agitation
 		}
 	}
-	
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
@@ -152,15 +136,14 @@ monarchy_law_events.2 = { # Theocracy-to-Monarchy Advancement
 			save_scope_as = secularizing_spiritualist
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
 	option = {
 		name = monarchy_law_events.2.a
-        default_option = yes
-
+		default_option = yes
 		add_enactment_modifier = {
 			name = monarchist_agitation
 		}
@@ -171,10 +154,8 @@ monarchy_law_events.2 = { # Theocracy-to-Monarchy Advancement
 			}
 		}
 	}
-
 	option = {
 		name = monarchy_law_events.2.b
-
 		add_enactment_modifier = {
 			name = monarchist_agitation
 		}
@@ -188,27 +169,22 @@ monarchy_law_events.2 = { # Theocracy-to-Monarchy Advancement
 }
 
 # Imported Bluebloods?
-monarchy_law_events.3 = { # debate
+monarchy_law_events.3 = {
+	# debate
 	type = country_event
-
 	title = monarchy_law_events.3.t
 	desc = monarchy_law_events.3.d
 	flavor = monarchy_law_events.3.f
-
 	category = enactment
-
 	event_image = {
 		video = "southamerica_election"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-	
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		is_enacting_law = law_type:law_hereditary
 		any_interest_group = {
@@ -224,19 +200,18 @@ monarchy_law_events.3 = { # debate
 		}
 		any_neighbouring_state = {
 			owner = {
-				has_law = law_type:law_hereditary
+				#has_law = law_type:law_hereditary
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		random_neighbouring_state  = {
+		random_neighbouring_state = {
 			limit = {
 				owner = {
-					has_law = law_type:law_hereditary
+					#has_law = law_type:law_hereditary
 				}
 			}
 			owner = {
@@ -245,14 +220,14 @@ monarchy_law_events.3 = { # debate
 		}
 		set_variable = {
 			name = monarchy_law_debate_timer
-			days = 730 # two years
+			days = 730			# two years
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
 	option = {
 		name = monarchy_law_events.3.a
 		default_option = yes
@@ -277,27 +252,23 @@ monarchy_law_events.3 = { # debate
 	}
 }
 
-monarchy_law_events.4 = { # Stall event
+monarchy_law_events.4 = {
+	# Stall event
 	type = country_event
 	placement = root
 	title = monarchy_law_events.4.t
 	desc = monarchy_law_events.4.d
 	flavor = monarchy_law_events.4.f
-
 	category = enactment
-
 	duration = 3
-
 	event_image = {
 		video = "unspecific_ruler_speaking_to_people"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		is_enacting_law = law_type:law_hereditary
 		any_interest_group = {
@@ -309,15 +280,13 @@ monarchy_law_events.4 = { # Stall event
 		}
 		NOT = {
 			has_variable = monarchist_law_stall_timer
-		}	
+		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
-
-    	random_interest_group = {
+			save_scope_as = current_law_scope
+		}
+		random_interest_group = {
 			limit = {
 				is_marginal = no
 				law_stance = {
@@ -326,18 +295,17 @@ monarchy_law_events.4 = { # Stall event
 				}
 			}
 			save_scope_as = book_burning_ig
-    	}
-
+		}
 		set_variable = {
 			name = monarchist_law_stall_timer
-			days = 730 # two years
+			days = 730			# two years
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
 	option = {
 		name = monarchy_law_events.4.a
 		default_option = yes
@@ -345,7 +313,7 @@ monarchy_law_events.4 = { # Stall event
 			name = monarchist_stall
 		}
 	}
-	option = { 
+	option = {
 		name = monarchy_law_events.4.b
 		random_list = {
 			1 = {

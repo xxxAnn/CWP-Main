@@ -15,8 +15,8 @@
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_commercialized_agriculture
-					has_law = law_type:law_homesteading
+					#has_law = law_type:law_commercialized_agriculture
+					#has_law = law_type:law_homesteading
 				}
 			}
 			custom_tooltip = farmers_pb_ig_shift_effect_negative_tt
@@ -24,8 +24,8 @@
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_commercialized_agriculture
-					has_law = law_type:law_collectivized_agriculture
+					#has_law = law_type:law_commercialized_agriculture
+					#has_law = law_type:law_collectivized_agriculture
 				}
 			}
 			custom_tooltip = rural_laborers_tu_ig_shift_effect_negative_tt
@@ -97,8 +97,8 @@ law_tenant_farmers = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_commercialized_agriculture
-					has_law = law_type:law_homesteading
+					#has_law = law_type:law_commercialized_agriculture
+					#has_law = law_type:law_homesteading
 				}
 			}
 			custom_tooltip = farmers_pb_ig_shift_effect_negative_tt
@@ -106,8 +106,8 @@ law_tenant_farmers = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_commercialized_agriculture
-					has_law = law_type:law_collectivized_agriculture
+					#has_law = law_type:law_commercialized_agriculture
+					#has_law = law_type:law_collectivized_agriculture
 				}
 			}
 			custom_tooltip = rural_laborers_tu_ig_shift_effect_negative_tt
@@ -121,7 +121,7 @@ law_tenant_farmers = {
 			if = {
 				limit = {
 					owner = {
-						NOT = { has_law = law_type:law_serfdom }
+						NOT = { #has_law = law_type:law_serfdom }
 					}
 					is_pop_type = aristocrats
 				}
@@ -134,7 +134,7 @@ law_tenant_farmers = {
 				limit = { 
 					is_pop_type = peasants
 					owner = { 
-						has_law = law_type:law_serfdom
+						#has_law = law_type:law_serfdom
 					}
 				}
 				add = {
@@ -149,7 +149,7 @@ law_tenant_farmers = {
 				limit = {
 					owner = {
 						OR = { 
-							has_law = law_type:law_serfdom
+							#has_law = law_type:law_serfdom
 						}
 					}
 					is_pop_type = capitalists
@@ -172,7 +172,7 @@ law_tenant_farmers = {
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_serfdom
+				#has_law = law_type:law_serfdom
 				OR = {
 					has_strategy = ai_strategy_conservative_agenda
 					has_strategy = ai_strategy_industrial_expansion
@@ -191,7 +191,7 @@ law_tenant_farmers = {
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_serfdom
+				#has_law = law_type:law_serfdom
 				ruler = {
 					OR = {
 						has_ideology = ideology:ideology_serfdom_reformer
@@ -206,7 +206,7 @@ law_tenant_farmers = {
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_serfdom
+				#has_law = law_type:law_serfdom
 				OR = {
 					has_strategy = ai_strategy_progressive_agenda
 					has_strategy = ai_strategy_progressive_conservative_agenda

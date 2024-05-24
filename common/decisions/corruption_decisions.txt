@@ -4,7 +4,6 @@
 			has_variable = var_corruption
 		}
 	}
-
 	possible = {
 		custom_tooltip = {
 			text = anti_corruption_drive_tooltip
@@ -15,16 +14,13 @@
 		not = {
 			has_modifier = anti_corruption_drive_conducted
 		}
-
 	}
-
 	when_taken = {
 		add_modifier = {
 			name = anti_corruption_drive_conducted
 			months = 60
 		}
 	}
-
 	ai_chance = {
 		base = 0
 		# AI cheats
@@ -36,13 +32,12 @@ anti_corruption_purge = {
 		this = {
 			has_variable = var_corruption
 			or = {
-				has_law = law_type:law_arbitrary_justice
-				has_law = law_type:law_political_incarceration
-				has_law = law_type:law_labor_camps
+				#has_law = law_type:law_arbitrary_justice
+				#has_law = law_type:law_political_incarceration
+				#has_law = law_type:law_labor_camps
 			}
 		}
 	}
-
 	possible = {
 		custom_tooltip = {
 			text = anti_corruption_purge_tooltip
@@ -54,13 +49,11 @@ anti_corruption_purge = {
 			has_modifier = anti_corruption_purge_conducted
 		}
 		or = {
-			has_law = law_type:law_arbitrary_justice
-			has_law = law_type:law_political_incarceration
-			has_law = law_type:law_labor_camps
+			#has_law = law_type:law_arbitrary_justice
+			#has_law = law_type:law_political_incarceration
+			#has_law = law_type:law_labor_camps
 		}
-
 	}
-
 	when_taken = {
 		trigger_event = corruption_events.1
 		add_modifier = {
@@ -68,7 +61,6 @@ anti_corruption_purge = {
 			months = 240
 		}
 	}
-
 	ai_chance = {
 		base = 0
 		# AI cheats

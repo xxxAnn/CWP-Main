@@ -1,5 +1,4 @@
-﻿
-#
+﻿#
 # tag           : tag_aroai_collect_coastlines_of_market_capital_and_overseas_lands
 # called by     : aroai_preparation_events.1
 # Collect coastlines of market capital and outer lands
@@ -219,8 +218,6 @@ aroai_collect_states_of_same_owner_connected_by_land = {
 	}
 }
 
-
-
 #
 # tag           : tag_aroai_determine_highest_and_average_military_threat
 # called by     : aroai_preparation_events.1
@@ -418,7 +415,7 @@ aroai_determine_roleplay_building_priorities = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_anti_industrialization
+					##has_law = law_type:law_anti_industrialization
 					AND = {
 						country_rank <= 3
 						aroai_gdp_per_capita < 5
@@ -445,7 +442,7 @@ aroai_determine_roleplay_building_priorities = {
 		else_if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_anti_industrialization
+					##has_law = law_type:law_anti_industrialization
 					AND = {
 						country_rank <= 3
 						aroai_gdp_per_capita < 5
@@ -1125,7 +1122,6 @@ aroai_collect_data_for_construction_and_downsizing = {
 		}
 	}
 	remove_local_variable = aroai_potential_workforce
-
 	# Recheck if we actually should construct new buildings with all the new data.
 	# There's some good reason for this that I can't recall now.
 	if = {
@@ -1370,7 +1366,6 @@ aroai_collect_data_for_construction_and_downsizing = {
 		}
 	}
 }
-
 
 #
 # tag           : tag_aroai_collect_data_for_all_buildings_of_type
@@ -1767,7 +1762,6 @@ aroai_collect_total_and_shortage_building_levels = {
 	}
 }
 
-
 #
 # tag           : tag_aroai_calculate_percent_of_building_type_levels_without_shortage
 # called by     : aroai_weekly_check_of_building_data aroai_collect_data_for_all_buildings_of_type aroai_collect_data_except_workforce_for_all_buildings_of_type
@@ -1817,7 +1811,6 @@ aroai_calculate_percent_of_building_type_levels_without_shortage = {
 		}
 	}
 }
-
 
 #
 # tag           : tag_aroai_find_building_type_median_productivity_and_profitability
@@ -1887,7 +1880,6 @@ aroai_find_building_type_median_productivity_and_profitability = {
 		}
 	}
 }
-
 
 #
 # tag           : tag_aroai_check_if_building_is_excessive_or_abandoned
@@ -2042,5 +2034,3 @@ aroai_check_if_building_is_excessive_or_abandoned = {
 		}
 	}
 }
-
-

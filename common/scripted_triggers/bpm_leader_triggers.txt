@@ -1,5 +1,4 @@
 ﻿# SOCIALIST LEADERS
-
 bpm_leader_is_communist = {
 	OR = {
 		has_ideology = ideology:ideology_communist
@@ -38,7 +37,9 @@ bpm_leader_is_socialist = {
 
 bpm_leader_is_proletarian_socialist = {
 	bpm_leader_is_socialist = yes
-	NOT = { has_ideology = ideology:ideology_agrarian_socialist_leader }
+	NOT = {
+		has_ideology = ideology:ideology_agrarian_socialist_leader
+	}
 }
 
 bpm_leader_is_party_socialist = {
@@ -47,7 +48,6 @@ bpm_leader_is_party_socialist = {
 }
 
 # RADICAL LEADERS
-
 bpm_leader_is_radical_liberal = {
 	OR = {
 		has_ideology = ideology:ideology_social_democrat
@@ -85,8 +85,8 @@ bpm_leader_is_moderate_liberal = {
 		AND = {
 			owner = {
 				NOR = {
-					has_law = law_type:law_free_trade
-					has_law = law_type:law_laissez_faire
+					#has_law = law_type:law_free_trade
+					#has_law = law_type:law_laissez_faire
 				}
 			}
 			has_ideology = ideology:ideology_market_liberal
@@ -96,8 +96,8 @@ bpm_leader_is_moderate_liberal = {
 				OR = {
 					bpm_country_laws_no_voting = yes
 					NOR = {
-						has_law = law_type:law_landed_voting
-						has_law = law_type:law_wealth_voting
+						#has_law = law_type:law_landed_voting
+						#has_law = law_type:law_wealth_voting
 					}
 				}
 			}
@@ -105,7 +105,6 @@ bpm_leader_is_moderate_liberal = {
 		}
 		has_ideology = ideology:ideology_humanitarian_royalist
 		has_ideology = ideology:ideology_liberal_leader
-		
 		AND = {
 			has_ideology = ideology:ideology_positivist
 			owner = {
@@ -141,16 +140,15 @@ bpm_leader_is_economic = {
 }
 
 # CONSERVATIVE LEADERS
-
 bpm_leader_is_conservative = {
 	OR = {
 		AND = {
 			has_ideology = ideology:ideology_royalist
 			owner = {
 				OR = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_theocracy
-				} 
+					#has_law = law_type:law_monarchy
+					#has_law = law_type:law_theocracy
+				}
 			}
 		}
 		has_ideology = ideology:ideology_bonapartist
@@ -171,8 +169,8 @@ bpm_leader_is_conservative = {
 		AND = {
 			owner = {
 				OR = {
-					has_law = law_type:law_free_trade
-					has_law = law_type:law_laissez_faire
+					#has_law = law_type:law_free_trade
+					#has_law = law_type:law_laissez_faire
 				}
 			}
 			has_ideology = ideology:ideology_market_liberal
@@ -181,7 +179,6 @@ bpm_leader_is_conservative = {
 }
 
 # TRADITIONALIST LEADERS
-
 bpm_leader_is_reactionary = {
 	OR = {
 		has_ideology = ideology:ideology_traditionalist
@@ -189,9 +186,9 @@ bpm_leader_is_reactionary = {
 			has_ideology = ideology:ideology_royalist
 			owner = {
 				NOR = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_theocracy
-				} 
+					#has_law = law_type:law_monarchy
+					#has_law = law_type:law_theocracy
+				}
 			}
 		}
 		has_ideology = ideology:ideology_theocrat

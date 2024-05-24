@@ -15,7 +15,7 @@ election_other_parties_events.1 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -184,7 +184,7 @@ election_other_parties_events.2 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -266,7 +266,6 @@ election_other_parties_events.2 = {
 	}
 }
 
-
 # Lagom
 # Social Democrats say "hey, at least we're not THAT guy" (communists/radicals/anarchists)
 election_other_parties_events.4 = {
@@ -283,7 +282,7 @@ election_other_parties_events.4 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -391,7 +390,7 @@ election_other_parties_events.5 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -472,7 +471,7 @@ election_other_parties_events.5 = {
 					institution = institution_criminal_justice_system
 					value >= 5
 				}
-				has_law = law_type:law_outlawed_dissent
+				#has_law = law_type:law_outlawed_dissent
 			}
 		}
 		py:democratic_socialist_party = {

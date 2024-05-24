@@ -33,7 +33,7 @@ bpm_election_events.1 = {
     option = { #buisness friendly picks
 		name = bpm_election_events.1.a
 		trigger = {
-			NOT = { has_law = law_type:law_council_republic }
+			NOT = { #has_law = law_type:law_council_republic }
 			ruler = {
 				bpm_leader_is_radical_leftist = no
 			}

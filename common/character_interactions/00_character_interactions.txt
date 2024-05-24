@@ -155,7 +155,7 @@ grant_leadership_to_agitator = {
 		character_is_discriminated = no	
 		OR = {
 			is_female = no
-			scope:actor = { has_law = law_type:law_womens_suffrage }
+			scope:actor = { #has_law = law_type:law_womens_suffrage }
 		}
 	}
 
@@ -283,7 +283,7 @@ marry_ruler_or_heir = {
 			is_heir = yes
 		}
 		scope:actor ?= {
-			has_law = law_type:law_hereditary
+			#has_law = law_type:law_hereditary
 			religion = {
 				has_discrimination_trait = christian
 			}
@@ -296,7 +296,7 @@ marry_ruler_or_heir = {
 	possible = {
 		any_country = {
 			NOT = { THIS = scope:actor }
-			has_law = law_type:law_hereditary
+			#has_law = law_type:law_hereditary
 			religion = scope:actor.religion
 			ruler = {
 				age > 36
@@ -328,7 +328,7 @@ abdicate_monarch = {
 		owner = scope:actor
 		is_ruler = yes
 		owner = {
-			has_law = law_type:law_hereditary
+			#has_law = law_type:law_hereditary
 		}
 		exists = owner.heir
 	}
@@ -427,7 +427,7 @@ exile_character = {
 	possible = {
 		owner = {
 			NOT = {
-				has_law = law_type:law_protected_speech
+				#has_law = law_type:law_protected_speech
 			}
 		}
 		OR = {
@@ -505,7 +505,7 @@ exile_character = {
 		# Standard radicals from having Right of Assembly
 		if = {
 			limit = {
-				owner = { has_law = law_type:law_right_of_assembly }
+				owner = { #has_law = law_type:law_right_of_assembly }
 			}
 			owner = {
 				add_radicals = {
@@ -517,7 +517,7 @@ exile_character = {
 		# Fewer radicals from Censorship
 		else_if = {
 			limit = {
-				owner = { has_law = law_type:law_censorship }
+				owner = { #has_law = law_type:law_censorship }
 			}
 			owner = {
 				add_radicals = {
@@ -586,9 +586,9 @@ exile_character = {
 			limit = {
 				scope:actor ?= {
 					NOR = {
-						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
-						has_law = law_type:law_anocracy
+						#has_law = law_type:law_autocracy
+						#has_law = law_type:law_oligarchy
+						#has_law = law_type:law_anocracy
 					}
 				}			
 			}
@@ -597,7 +597,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_secret_police
+					#has_law = law_type:law_secret_police
 				}			
 			}
 			add = 30
@@ -605,7 +605,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_militarized_police
+					#has_law = law_type:law_militarized_police
 				}			
 			}
 			add = 15
@@ -613,7 +613,7 @@ exile_character = {
 		#if = {
 		#	limit = {
 		#		scope:actor ?= {
-		#			has_law = law_type:law_guaranteed_liberties
+		#			#has_law = law_type:law_guaranteed_liberties
 		#		}			
 		#	}
 		#	add = -100
@@ -621,7 +621,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_outlawed_dissent
+					#has_law = law_type:law_outlawed_dissent
 				}			
 			}
 			add = 30
@@ -629,7 +629,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_censorship
+					#has_law = law_type:law_censorship
 				}			
 			}
 			add = 10
@@ -637,7 +637,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_right_of_assembly
+					#has_law = law_type:law_right_of_assembly
 				}			
 			}
 			add = -10
@@ -645,7 +645,7 @@ exile_character = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					has_law = law_type:law_protected_speech
+					#has_law = law_type:law_protected_speech
 				}			
 			}
 			add = -20
@@ -683,8 +683,8 @@ invite_exile = {
 				NOT = { is_interest_group_type = ig_moralists }
 				scope:actor ?= {
 					OR = {
-						has_law = law_type:law_religious_institutions
-						has_law = law_type:law_religious_nationalism
+						#has_law = law_type:law_religious_institutions
+						#has_law = law_type:law_religious_nationalism
 					}
 				}
 			}
@@ -701,7 +701,7 @@ invite_exile = {
 		}
 		# Cannot invite exiles if you have Closed Borders
 		scope:actor = {
-			NOT = { has_law = law_type:law_closed_borders }
+			NOT = { #has_law = law_type:law_closed_borders }
 		}
 	}
 
@@ -752,19 +752,19 @@ invite_exile = {
 		}
 		if = {
 			limit = {
-				scope:actor ?= { has_law = law_type:law_closed_borders }
+				scope:actor ?= { #has_law = law_type:law_closed_borders }
 			}
 			add = -200
 		}
 		if = {
 			limit = {
-				scope:actor ?= { has_law = law_type:law_open_borders }
+				scope:actor ?= { #has_law = law_type:law_open_borders }
 			}
 			add = 15
 		}
 		if = {
 			limit = {
-				scope:actor ?= { has_law = law_type:law_multiculturalist }
+				scope:actor ?= { #has_law = law_type:law_multiculturalist }
 			}
 			add = 15
 		}

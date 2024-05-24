@@ -36,10 +36,10 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					or = {
-						has_law = law_type:law_free_market
-						has_law = law_type:law_interventionism
-						has_law = law_type:law_decentralization
-						has_law = law_type:law_anti_industrialization
+						#has_law = law_type:law_free_market
+						#has_law = law_type:law_interventionism
+						#has_law = law_type:law_decentralization
+						##has_law = law_type:law_anti_industrialization
 					}
 				}
 			}
@@ -52,14 +52,14 @@ setup_starting_ideologies = {
 				owner = {
 					and = {
 						or = {
-							has_law = law_type:law_anocracy
-							has_law = law_type:law_oligarchy
-							has_law = law_type:law_autocracy
+							#has_law = law_type:law_anocracy
+							#has_law = law_type:law_oligarchy
+							#has_law = law_type:law_autocracy
 						}
 						or = {
-							has_law = law_type:law_socialization
-							has_law = law_type:law_total_nationalization
-							has_law = law_type:law_heavy_industry_nationalization
+							#has_law = law_type:law_socialization
+							#has_law = law_type:law_total_nationalization
+							#has_law = law_type:law_heavy_industry_nationalization
 						}
 					}
 				}
@@ -72,12 +72,12 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					and = {
-						has_law = law_type:law_socialization
+						#has_law = law_type:law_socialization
 						or = {
-							has_law = law_type:law_public_utility_companies
-							has_law = law_type:law_no_nationalization
-							has_law = law_type:law_resource_extraction_nationalization
-							has_law = law_type:law_military_industry_nationalization
+							#has_law = law_type:law_public_utility_companies
+							#has_law = law_type:law_no_nationalization
+							#has_law = law_type:law_resource_extraction_nationalization
+							#has_law = law_type:law_military_industry_nationalization
 						}
 					}
 				}
@@ -93,7 +93,7 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					not = {
-						has_law = law_type:law_socialization
+						#has_law = law_type:law_socialization
 					}
 				}
 			}
@@ -104,9 +104,9 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					or = {
-						has_law = law_type:law_socialization
-						#has_law = law_type:law_heavy_industry_nationalization
-						has_law = law_type:law_total_nationalization
+						#has_law = law_type:law_socialization
+						##has_law = law_type:law_heavy_industry_nationalization
+						#has_law = law_type:law_total_nationalization
 					}
 				}
 			}
@@ -258,7 +258,7 @@ setup_starting_ideologies = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_state_atheism
+					#has_law = law_type:law_state_atheism
 				}
 			}
 			remove_ideology = ideology_orthodox_christian
@@ -367,7 +367,7 @@ setup_starting_ideologies = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_socialization
+					#has_law = law_type:law_socialization
 				}
 			}
 			add_ideology = ideology_apparatus
@@ -378,7 +378,7 @@ setup_starting_ideologies = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_politicized_bureaucrats
+					#has_law = law_type:law_politicized_bureaucrats
 				}
 			}
 			remove_ideology = ideology_appointed
@@ -390,7 +390,7 @@ setup_starting_ideologies = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_appointed_bureaucrats
+					#has_law = law_type:law_appointed_bureaucrats
 				}
 			}
 			remove_ideology = ideology_politicized
@@ -402,7 +402,7 @@ setup_starting_ideologies = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_independent_bureaucrats
+					#has_law = law_type:law_independent_bureaucrats
 				}
 			}
 			remove_ideology = ideology_politicized
@@ -414,7 +414,7 @@ setup_starting_ideologies = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_elected_bureaucrats
+					#has_law = law_type:law_elected_bureaucrats
 				}
 			}
 			remove_ideology = ideology_politicized
@@ -426,7 +426,7 @@ setup_starting_ideologies = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_technocrats
+					#has_law = law_type:law_technocrats
 				}
 			}
 			remove_ideology = ideology_politicized
@@ -442,9 +442,9 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					or = {
-						has_law = law_type:law_hereditary
-						has_law = law_type:law_theocratic
-						has_law = law_type:law_administrative
+						#has_law = law_type:law_hereditary
+						#has_law = law_type:law_theocratic
+						#has_law = law_type:law_administrative
 					}
 				}
 			}
@@ -455,10 +455,10 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					or = {
-						has_law = law_type:law_executive
-						has_law = law_type:law_parliamentary
-						has_law = law_type:law_council_elective
-						has_law = law_type:law_anocracy
+						#has_law = law_type:law_executive
+						#has_law = law_type:law_parliamentary
+						#has_law = law_type:law_council_elective
+						#has_law = law_type:law_anocracy
 					}
 				}
 			}
@@ -469,8 +469,8 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					or = {
-						has_law = law_type:law_decentralization
-						has_law = law_type:law_anti_industrialization
+						#has_law = law_type:law_decentralization
+						##has_law = law_type:law_anti_industrialization
 					}
 				}
 			}
@@ -481,9 +481,9 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					or = {
-						has_law = law_type:law_free_market
-						has_law = law_type:law_interventionism
-						has_law = law_type:law_socialization
+						#has_law = law_type:law_free_market
+						#has_law = law_type:law_interventionism
+						#has_law = law_type:law_socialization
 					}
 				}
 			}
@@ -497,9 +497,9 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					nor = {
-						has_law = law_type:law_syncretist
-						has_law = law_type:law_multiculturalist
-						has_law = law_type:law_integrationist
+						#has_law = law_type:law_syncretist
+						#has_law = law_type:law_multiculturalist
+						#has_law = law_type:law_integrationist
 					}
 				}
 			}
@@ -517,10 +517,10 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					or = {
-						has_law = law_type:law_military_industry_nationalization
-						has_law = law_type:law_resource_extraction_nationalization
-						has_law = law_type:law_public_utility_companies
-						has_law = law_type:law_no_nationalization
+						#has_law = law_type:law_military_industry_nationalization
+						#has_law = law_type:law_resource_extraction_nationalization
+						#has_law = law_type:law_public_utility_companies
+						#has_law = law_type:law_no_nationalization
 					}
 				}
 			}
@@ -531,8 +531,8 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					or = {
-						has_law = law_type:law_total_nationalization
-						#has_law = law_type:law_heavy_industry_nationalization
+						#has_law = law_type:law_total_nationalization
+						##has_law = law_type:law_heavy_industry_nationalization
 					}
 				}
 			}
@@ -546,8 +546,8 @@ setup_starting_ideologies = {
 			limit = {
 				owner = {
 					or = {
-						has_law = law_type:law_socialization
-						has_law = law_type:law_total_nationalization
+						#has_law = law_type:law_socialization
+						#has_law = law_type:law_total_nationalization
 					}
 				}
 			}

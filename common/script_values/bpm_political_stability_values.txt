@@ -87,7 +87,7 @@ bpm_political_stability_rate = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_LOCAL_POLICE"
 		if = {
 			limit = { 
-				has_law = law_type:law_local_police
+				#has_law = law_type:law_local_police
 			}
 			add = institution:institution_police.investment
 			multiply = 0.05
@@ -97,7 +97,7 @@ bpm_political_stability_rate = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_POLICE"
 		if = {
 			limit = { 
-				has_law = law_type:law_dedicated_police
+				#has_law = law_type:law_dedicated_police
 			}
 			add = institution:institution_police.investment
 			multiply = 0.1
@@ -107,7 +107,7 @@ bpm_political_stability_rate = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_MILITARIZED_POLICE"
 		if = {
 			limit = { 
-				has_law = law_type:law_militarized_police
+				#has_law = law_type:law_militarized_police
 			}
 			add = institution:institution_police.investment
 			multiply = 0.2
@@ -117,7 +117,7 @@ bpm_political_stability_rate = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_ELECTED_POLICE"
 		if = {
 			limit = { 
-				has_law = law_type:law_elected_police
+				#has_law = law_type:law_elected_police
 			}
 			add = institution:institution_police.investment
 			multiply = 0.1
@@ -126,7 +126,7 @@ bpm_political_stability_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_GUARD"
 		if = {
-			limit = { has_law = law_type:law_national_guard }
+			limit = { #has_law = law_type:law_national_guard }
 			add = institution:institution_home_affairs.investment
 			multiply = 0.1
 		}
@@ -134,7 +134,7 @@ bpm_political_stability_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_SECRET_POLICE"
 		if = {
-			limit = { has_law = law_type:law_secret_police }
+			limit = { #has_law = law_type:law_secret_police }
 			add = institution:institution_home_affairs.investment
 			multiply = 0.2
 		}
@@ -142,7 +142,7 @@ bpm_political_stability_rate = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_GUARANTEED_LIBERTIES"
 		if = {
-			limit = { has_law = law_type:law_guaranteed_liberties }
+			limit = { #has_law = law_type:law_guaranteed_liberties }
 			subtract = institution:institution_home_affairs.investment
 			multiply = 0.05
 		}
@@ -169,42 +169,42 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_MONARCHY"
 		if = {
-			limit = { has_law = law_type:law_monarchy }
+			limit = { #has_law = law_type:law_monarchy }
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_TRADITIONALISM"
 		if = {
-			limit = { has_law = law_type:law_traditionalism }
+			limit = { #has_law = law_type:law_traditionalism }
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_AD_HOC_CENTRALIZATION"
 		if = {
-			limit = { has_law = law_type:law_ad_hoc_centralization }
+			limit = { #has_law = law_type:law_ad_hoc_centralization }
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_SERFDOM"
 		if = {
-			limit = { has_law = law_type:law_serfdom }
+			limit = { #has_law = law_type:law_serfdom }
 			add = 20
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_TENANT_FARMERS"
 		if = {
-			limit = { has_law = law_type:law_tenant_farmers }
+			limit = { #has_law = law_type:law_tenant_farmers }
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_ISOLATIONISM"
 		if = {
-			limit = { has_law = law_type:law_isolationism }
+			limit = { #has_law = law_type:law_isolationism }
 			add = 10
 		}
 	}
@@ -213,28 +213,28 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_OUTLAWED_DISSENT"
 		if = {
-			limit = { has_law = law_type:law_outlawed_dissent }
+			limit = { #has_law = law_type:law_outlawed_dissent }
 			add = 25
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_CENSORSHIP"
 		if = {
-			limit = { has_law = law_type:law_censorship }
+			limit = { #has_law = law_type:law_censorship }
 			add = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_PROTECTED_SPEECH"
 		if = {
-			limit = { has_law = law_type:law_protected_speech }
+			limit = { #has_law = law_type:law_protected_speech }
 			subtract = 10
 		}
 	}
 	add = {
 		desc = "BPM_VALUE_FROM_LAW_ANARCHY"
 		if = {
-			limit = { has_law = law_type:law_anarchy }
+			limit = { #has_law = law_type:law_anarchy }
 			subtract = 5
 		}
 	}
@@ -242,7 +242,7 @@ bpm_political_stability_baseline_target = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_LOCAL_POLICE"
 		if = {
 			limit = { 
-				has_law = law_type:law_local_police
+				#has_law = law_type:law_local_police
 			}
 			add = institution:institution_police.investment
 			multiply = 2
@@ -252,7 +252,7 @@ bpm_political_stability_baseline_target = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_POLICE"
 		if = {
 			limit = { 
-				has_law = law_type:law_dedicated_police
+				#has_law = law_type:law_dedicated_police
 			}
 			add = institution:institution_police.investment
 			multiply = 2
@@ -262,7 +262,7 @@ bpm_political_stability_baseline_target = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_MILITARIZED_POLICE"
 		if = {
 			limit = { 
-				has_law = law_type:law_militarized_police
+				#has_law = law_type:law_militarized_police
 			}
 			add = institution:institution_police.investment
 			multiply = 3
@@ -271,7 +271,7 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_NATIONAL_GUARD"
 		if = {
-			limit = { has_law = law_type:law_national_guard }
+			limit = { #has_law = law_type:law_national_guard }
 			add = institution:institution_home_affairs.investment
 			multiply = 2
 		}
@@ -279,7 +279,7 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_SECRET_POLICE"
 		if = {
-			limit = { has_law = law_type:law_secret_police }
+			limit = { #has_law = law_type:law_secret_police }
 			add = institution:institution_home_affairs.investment
 			multiply = 4
 		}
@@ -287,7 +287,7 @@ bpm_political_stability_baseline_target = {
 	add = {
 		desc = "BPM_VALUE_FROM_INSTITUTION_GUARANTEED_LIBERTIES"
 		if = {
-			limit = { has_law = law_type:law_guaranteed_liberties }
+			limit = { #has_law = law_type:law_guaranteed_liberties }
 			subtract = institution:institution_home_affairs.investment
 			multiply = 2
 		}

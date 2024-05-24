@@ -321,9 +321,9 @@ internal_security_events.4 = {
 				institution = institution_criminal_justice_system
 				value >= 1
 			}
-			has_law = law_type:law_secret_police
-			has_law = law_type:law_professional_police
-			has_law = law_type:law_militarized_police
+			#has_law = law_type:law_secret_police
+			#has_law = law_type:law_professional_police
+			#has_law = law_type:law_militarized_police
 		}
 		any_political_movement = {
 			political_movement_support > 10
@@ -439,9 +439,9 @@ internal_security_events.6 = {
 				institution = institution_criminal_justice_system
 				value >= 1
 			}
-			has_law = law_type:law_secret_police
-			has_law = law_type:law_professional_police
-			has_law = law_type:law_militarized_police
+			#has_law = law_type:law_secret_police
+			#has_law = law_type:law_professional_police
+			#has_law = law_type:law_militarized_police
 		}
 	}
 	immediate = {

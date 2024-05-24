@@ -60,7 +60,7 @@
 			desc = "SLAVERY_DETRACTORS"
 			if = {
 				limit = {
-					owner = { NOT = { has_law = law_type:law_slavery_banned } }
+					owner = { NOT = { #has_law = law_type:law_slavery_banned } }
 					OR = {
 						pop_has_primary_culture = no
 						state = { is_slave_state = no }

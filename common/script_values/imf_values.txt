@@ -8,22 +8,22 @@ global_gdp_imf_div = {
 	value = global_gdp_imf
 	if = {
 		limit = {
-			global_gdp_imf < 6148914645000
+			global_gdp_imf < -1478522872
 		}
-		divide = 1000000000000
+		divide = -727379968
 	}
 	if = {
 		limit = {
-			global_gdp_imf >= 6148914645000
+			global_gdp_imf >= -1478522872
 		}
-		divide = 100000000000
+		divide = 1215752192
 	}
 }
 
 imf_contribution_value = {
 	value = var:imf_contribution
 	min = 0
-	max = 90000000000000
+	max = -1039687680
 }
 
 imf_contribution_natural_growth = {
@@ -69,7 +69,6 @@ imf_contribution_money = {
 imf_contribution_money_weekly = {
 	value = imf_contribution_money
 	divide = 4
-	
 }
 
 imf_contribution_money_to_imr = {
@@ -113,6 +112,7 @@ imf_debt_value = {
 		add = var:imf_debt
 	}
 }
+
 imf_credit_value = {
 	value = var:imf_credit
 }
@@ -199,7 +199,6 @@ imf_credit_monthly_payment_value = {
 	}
 }
 
-
 imf_debt_weekly_payment_value = {
 	value = imf_debt_monthly_payment_value
 	divide = 4
@@ -261,11 +260,11 @@ imf_credit_returns_mult = {
 		}
 		multiply = imf_contribution_share
 	}
-#	multiply = {
-#		value = global_var:global_currency.country_currency_val
-#		divide = country_currency_val
-#		min = 0.00001
-#	}
+	#	multiply = {
+	#		value = global_var:global_currency.country_currency_val
+	#		divide = country_currency_val
+	#		min = 0.00001
+	#	}
 	divide = 4
 }
 
@@ -292,7 +291,8 @@ imf_reserves = {
 }
 
 imf_reserves_growth = {
-	every_in_global_list = { # From member contribution
+	every_in_global_list = {
+		# From member contribution
 		variable = imf_members
 		add = {
 			value = imf_contribution_money_to_imr
@@ -306,9 +306,11 @@ imf_reserves_growth = {
 		}
 	}
 }
+
 imf_reserves_growth_gui = {
 	value = {
-		every_in_global_list = { # From member contribution
+		every_in_global_list = {
+			# From member contribution
 			variable = imf_members
 			add = imf_contribution_money_to_imr
 		}
@@ -316,7 +318,8 @@ imf_reserves_growth_gui = {
 		format = "IMF_APPLICATION_GDP_TOOLTIP_FORMAT"
 	}
 	add = {
-		every_in_global_list = { # From member contribution
+		every_in_global_list = {
+			# From member contribution
 			variable = imf_members
 			add = imf_contribution_natural_growth
 		}
@@ -345,12 +348,12 @@ imf_debt_monthly_change = {
 
 imf_debt_payment_percentage = {
 	value = imf_debt_value
-	multiply = imf_contribution_share # to be used in creditor country scope
+	multiply = imf_contribution_share	# to be used in creditor country scope
 }
 
 imf_debt_taken_from_reserve_country = {
 	value = imf_contribution_share
-	multiply = 2000000 # Test value
+	multiply = 2000000	# Test value
 }
 
 imf_member_gdp_share = {
@@ -403,12 +406,13 @@ imf_total_international_debt = {
 		add = anglo_american_loan_total_USD
 	}
 	add = imf_debt_value
-
 }
+
 bank_cred_to_imf_trust = {
 	value = bank_credibility_current
 	divide = 24
 }
+
 imf_trust_in_central_bank = {
 	if = {
 		limit = {
@@ -416,39 +420,42 @@ imf_trust_in_central_bank = {
 		}
 		value = {
 			value = bank_cred_to_imf_trust
-			
 		}
 	}
 	if = {
-		limit = { bank_credibility_current <= 4 }
+		limit = {
+			bank_credibility_current <= 4
+		}
 		value = {
 			value = bank_cred_to_imf_trust
 			multiply = -1
-			
 		}
 	}
 	if = {
-		limit = { bank_credibility_current = 3 }
+		limit = {
+			bank_credibility_current = 3
+		}
 		value = {
 			value = bank_cred_to_imf_trust
 			multiply = -2.7
-			
 		}
 	}
 	if = {
-		limit = { bank_credibility_current = 2 }
+		limit = {
+			bank_credibility_current = 2
+		}
 		value = {
 			value = bank_cred_to_imf_trust
 			multiply = -8
-			
 		}
 	}
 	if = {
-		limit = { bank_credibility_current = 1 }
+		limit = {
+			bank_credibility_current = 1
+		}
 		value = {
 			value = bank_cred_to_imf_trust
 			multiply = -24
-			
 		}
 	}
 	if = {
@@ -460,7 +467,6 @@ imf_trust_in_central_bank = {
 }
 
 # Loan Applications
-
 imf_application_loan_max_value = {
 	value = {
 		value = gdp
@@ -506,6 +512,7 @@ imf_application_interest_rate = {
 		value = 0
 	}
 }
+
 imf_application_loan_type_value = {
 	if = {
 		limit = {
@@ -526,11 +533,13 @@ imf_application_loan_type_value = {
 		value = 1
 	}
 }
+
 imf_application_loan_amount = {
 	value = var:imf_loan_application_amount
 	min = 0
 	max = imf_application_loan_max_value
 }
+
 imf_application_loan_amount_domestic = {
 	value = imf_application_loan_amount
 	multiply = currency_domestic_to_imf_currency
@@ -559,8 +568,9 @@ imf_application_upfront_principle_domestic = {
 
 imf_application_upfront_principle_change_val = {
 	value = imf_application_loan_increase_val
-	divide = 10	
+	divide = 10
 }
+
 imf_application_payment_due_years = {
 	value = var:imf_loan_application_payment_due_years
 	min = 1
@@ -571,6 +581,7 @@ imf_application_payment_due_months = {
 	value = var:imf_debt_years
 	multiply = 12
 }
+
 imf_loan_payment_years_left = {
 	value = 0
 	if = {
@@ -583,7 +594,6 @@ imf_loan_payment_years_left = {
 			divide = 12
 		}
 	}
-
 }
 
 imf_loan_years_left_to_months = {
@@ -597,7 +607,6 @@ imf_loan_will_pay_off_in_years = {
 			not = {
 				imf_debt_monthly_change = 0
 			}
-			
 		}
 		value = imf_debt_value
 		divide = {
@@ -626,10 +635,12 @@ imf_application_loan_annual_interest_growth = {
 		divide = 100
 	}
 }
+
 imf_application_loan_monthly_interest_growth = {
 	value = imf_application_loan_annual_interest_growth
 	divide = 12
 }
+
 imf_application_loan_annual_payment = {
 	value = imf_application_loan_amount
 	add = imf_application_loan_annual_interest_growth
@@ -669,11 +680,13 @@ imf_application_loan_total_payment_with_interest = {
 
 imf_application_loan_to_gdp = {
 	value = 0
-	if = { limit = { imf_application_loan_amount > 1 }
+	if = {
+		limit = {
+			imf_application_loan_amount > 1
+		}
 		add = imf_application_loan_amount
 		divide = gdp
 	}
-
 }
 
 imf_application_loan_weekly_payment_ability = {
@@ -795,7 +808,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_government_controlled
+			#has_law = law_type:law_government_controlled
 		}
 		subtract = {
 			value = 30
@@ -805,7 +818,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_government_interference
+			#has_law = law_type:law_government_interference
 		}
 		subtract = {
 			value = 20
@@ -815,7 +828,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_isolationism
+			#has_law = law_type:law_isolationism
 		}
 		subtract = {
 			value = 50
@@ -825,7 +838,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_protectionism
+			#has_law = law_type:law_protectionism
 		}
 		subtract = {
 			value = 20
@@ -835,7 +848,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_total_nationalization
+			#has_law = law_type:law_total_nationalization
 		}
 		subtract = {
 			value = 30
@@ -845,7 +858,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_heavy_industry_nationalization
+			#has_law = law_type:law_heavy_industry_nationalization
 		}
 		subtract = {
 			value = 20
@@ -855,7 +868,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_military_industry_nationalization
+			#has_law = law_type:law_military_industry_nationalization
 		}
 		subtract = {
 			value = 10

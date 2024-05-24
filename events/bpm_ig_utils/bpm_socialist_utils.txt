@@ -7,7 +7,7 @@ bpm_socialist_utils.1 = {
 
 	trigger = {
 		owner = {
-			NOT = { has_law = law_type:law_council_republic }
+			NOT = { #has_law = law_type:law_council_republic }
 			any_interest_group = {
 				bpm_ig_is_socialist = yes
 				bpm_ig_is_moderate_socialist = no
@@ -36,7 +36,7 @@ bpm_socialist_utils.2 = {
 
 	trigger = {
 		owner = { 
-			has_law = law_type:law_council_republic
+			#has_law = law_type:law_council_republic
 			any_interest_group = {
 				bpm_ig_is_socialist = yes
 				bpm_ig_is_moderate_socialist = no
@@ -65,7 +65,7 @@ bpm_socialist_utils.3 = {
 
 	trigger = {
 		owner = { 
-			has_law = law_type:law_council_republic
+			#has_law = law_type:law_council_republic
 			any_interest_group = {
 				bpm_ig_is_revolutionary_socialist = yes
 				is_in_government = yes
@@ -106,7 +106,7 @@ bpm_socialist_utils.4 = {
 			any_interest_group = {
 				bpm_ig_is_revolutionary_socialist = yes
 				OR = {
-					NOT = { owner = { has_law = law_type:law_council_republic }}
+					NOT = { owner = { #has_law = law_type:law_council_republic }}
 					is_in_government = no
 				}
 				bpm_ig_is_authoritarian_socialist = yes

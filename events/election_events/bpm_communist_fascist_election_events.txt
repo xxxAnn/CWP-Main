@@ -21,7 +21,7 @@ communist_elections.3 = {
 	duration = 3
 	
 	trigger = {
-		NOT = { has_law = law_type:law_single_party_state }
+		NOT = { #has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		NOT = { has_variable = international_socialism_var }
 		any_country = {
@@ -183,9 +183,9 @@ communist_elections.3 = {
 				}
 			}
 			OR = {
-				has_law = law_type:law_closed_borders
-				has_law = law_type:law_outlawed_dissent
-				has_law = law_type:law_secret_police
+				#has_law = law_type:law_closed_borders
+				#has_law = law_type:law_outlawed_dissent
+				#has_law = law_type:law_secret_police
 			}
 		}
 		scope:socialist_party = {
@@ -228,7 +228,7 @@ communist_elections.4 = {
 	duration = 3
 
 	trigger = {
-		NOT = { has_law = law_type:law_single_party_state }
+		NOT = { #has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		NOT = { has_variable = blackshirts_var }
 		any_interest_group = {
@@ -304,7 +304,7 @@ communist_elections.4 = {
 					institution = institution_police
 					value >= 3
 				}
-				has_law = law_type:law_militarized_police
+				#has_law = law_type:law_militarized_police
 			}
 		}
 		scope:fascist_party_scope = {
@@ -372,8 +372,8 @@ communist_elections.4 = {
 		highlighted_option = yes
 		trigger = {
 			OR = {
-				has_law = law_type:law_protected_speech
-				has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_protected_speech
+				#has_law = law_type:law_guaranteed_liberties
 				institution_investment_level = {
 					institution = institution_police
 					value >= 3
@@ -412,7 +412,7 @@ cable_street.1 = {
 	duration = 3
 
 	trigger = {
-		NOT = { has_law = law_type:law_single_party_state }
+		NOT = { #has_law = law_type:law_single_party_state }
 		in_election_campaign = yes
 		NOT = { has_variable = cable_street_var }
 		any_interest_group = {

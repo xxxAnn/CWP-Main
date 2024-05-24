@@ -27,7 +27,7 @@ distribution_of_power_laws.1 = {
 			is_enacting_law = law_type:law_autocracy
 			AND = {
 				is_enacting_law = law_type:law_oligarchy
-				NOT = { has_law = law_type:law_autocracy }
+				NOT = { #has_law = law_type:law_autocracy }
 			}
 		}
 		ruler.popularity >= 25
@@ -94,7 +94,7 @@ distribution_of_power_laws.2 = {
 			is_enacting_law = law_type:law_autocracy
 			AND = {
 				is_enacting_law = law_type:law_oligarchy
-				NOT = { has_law = law_type:law_autocracy }
+				NOT = { #has_law = law_type:law_autocracy }
 			}
 		}
 		any_scope_pop = {
@@ -161,7 +161,7 @@ distribution_of_power_laws.3 = {
 			is_enacting_law = law_type:law_autocracy
 			AND = {
 				is_enacting_law = law_type:law_oligarchy
-				NOT = { has_law = law_type:law_autocracy }
+				NOT = { #has_law = law_type:law_autocracy }
 			}
 		}
 		NOT = { has_modifier = crushed_pro_democracy_protests }
@@ -186,7 +186,7 @@ distribution_of_power_laws.3 = {
 		add_enactment_setback = 1
 		highlighted_option = yes
 		if = {
-			limit = { has_law = law_type:law_representative_democracy }
+			limit = { #has_law = law_type:law_representative_democracy }
 			add_radicals = {
 				value = medium_radicals
 				strata = rich
@@ -197,7 +197,7 @@ distribution_of_power_laws.3 = {
 			}
 		}
 		if = {
-			limit = { has_law = law_type:law_consensus_democracy }
+			limit = { #has_law = law_type:law_consensus_democracy }
 			add_radicals = {
 				value = medium_radicals
 				strata = rich
@@ -212,7 +212,7 @@ distribution_of_power_laws.3 = {
 			}
 		}
 		if = {
-			limit = { has_law = law_type:law_direct_democracy }
+			limit = { #has_law = law_type:law_direct_democracy }
 			add_radicals = {
 				value = large_radicals
 			}
@@ -257,9 +257,9 @@ distribution_of_power_laws.4 = {
 			is_enacting_law = law_type:law_oligarchy
 		}
 		OR = {
-			has_law = law_type:law_direct_democracy
-			has_law = law_type:law_consensus_democracy
-			has_law = law_type:law_representative_democracy
+			#has_law = law_type:law_direct_democracy
+			#has_law = law_type:law_consensus_democracy
+			#has_law = law_type:law_representative_democracy
 		}
 		any_scope_character = {
 			OR = {
@@ -362,9 +362,9 @@ distribution_of_power_laws.5 = {
 			is_enacting_law = law_type:law_oligarchy
 		}
 		OR = {
-			has_law = law_type:law_direct_democracy
-			has_law = law_type:law_consensus_democracy
-			has_law = law_type:law_representative_democracy
+			#has_law = law_type:law_direct_democracy
+			#has_law = law_type:law_consensus_democracy
+			#has_law = law_type:law_representative_democracy
 		}
 		NOT = { has_modifier = uneducated_populus }
 		NOT = { has_modifier = educated_citizens }
@@ -508,9 +508,9 @@ distribution_of_power_laws.6 = {
 			is_enacting_law = law_type:law_oligarchy
 		}
 		OR = {
-			has_law = law_type:law_direct_democracy
-			has_law = law_type:law_consensus_democracy
-			has_law = law_type:law_representative_democracy
+			#has_law = law_type:law_direct_democracy
+			#has_law = law_type:law_consensus_democracy
+			#has_law = law_type:law_representative_democracy
 		}
 		any_scope_character = {
 			has_role = politician
@@ -615,9 +615,9 @@ distribution_of_power_laws.7 = {
 			is_enacting_law = law_type:law_representative_democracy
 		}
 		NOR = {
-			has_law = law_type:law_direct_democracy
-			has_law = law_type:law_consensus_democracy
-			has_law = law_type:law_representative_democracy
+			#has_law = law_type:law_direct_democracy
+			#has_law = law_type:law_consensus_democracy
+			#has_law = law_type:law_representative_democracy
 		}
 		NOT = { has_modifier = citizen_organizers }
 		NOT = { has_modifier = local_organizers }
@@ -691,9 +691,9 @@ distribution_of_power_laws.8 = {
 			is_enacting_law = law_type:law_representative_democracy
 		}
 		NOR = {
-			has_law = law_type:law_direct_democracy
-			has_law = law_type:law_consensus_democracy
-			has_law = law_type:law_representative_democracy
+			#has_law = law_type:law_direct_democracy
+			#has_law = law_type:law_consensus_democracy
+			#has_law = law_type:law_representative_democracy
 		}
 		any_political_movement = {
 			is_political_movement_type = movement_to_preserve
@@ -783,9 +783,9 @@ distribution_of_power_laws.9 = {
 			is_enacting_law = law_type:law_representative_democracy
 		}
 		NOR = {
-			has_law = law_type:law_direct_democracy
-			has_law = law_type:law_consensus_democracy
-			has_law = law_type:law_representative_democracy
+			#has_law = law_type:law_direct_democracy
+			#has_law = law_type:law_consensus_democracy
+			#has_law = law_type:law_representative_democracy
 		}
 		NOT = { has_modifier = fresh_start }
 		NOT = { has_modifier = collaboration_with_old_leadership }
@@ -809,14 +809,14 @@ distribution_of_power_laws.9 = {
 		add_enactment_setback = 1
 		highlighted_option = yes
 		if = {
-			limit = { has_law = law_type:law_autocracy }
+			limit = { #has_law = law_type:law_autocracy }
 			add_radicals = {
 				value = medium_radicals
 				pop_type = landlords
 			}
 		}
 		if = {
-			limit = { has_law = law_type:law_oligarchy }
+			limit = { #has_law = law_type:law_oligarchy }
 			add_radicals = {
 				value = small_radicals
 				pop_type = landlords
@@ -827,7 +827,7 @@ distribution_of_power_laws.9 = {
 			}
 		}
 		if = {
-			limit = { has_law = law_type:law_representative_democracy }
+			limit = { #has_law = law_type:law_representative_democracy }
 			add_radicals = {
 				value = small_radicals
 				pop_type = landlords
@@ -846,7 +846,7 @@ distribution_of_power_laws.9 = {
 			}
 		}
 		if = {
-			limit = { has_law = law_type:law_representative_democracy }
+			limit = { #has_law = law_type:law_representative_democracy }
 			add_radicals = {
 				value = small_radicals
 				strata = rich
@@ -894,9 +894,9 @@ distribution_of_power_laws.10 = {
 			is_enacting_law = law_type:law_representative_democracy
 		}
 		OR = {
-			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_autocracy
+			#has_law = law_type:law_oligarchy
+			#has_law = law_type:law_anocracy
 		}
 		NOT = { has_modifier = admitted_abuses_of_power }
 		NOT = { has_modifier = downplayed_abuses_of_power }
@@ -967,9 +967,9 @@ distribution_of_power_laws.11 = {
 			is_enacting_law = law_type:law_consensus_democracy
 		}
 		OR = {
-			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_autocracy
+			#has_law = law_type:law_oligarchy
+			#has_law = law_type:law_anocracy
 		}
 		any_political_movement = {
 			is_political_movement_type = movement_to_preserve
@@ -1061,9 +1061,9 @@ distribution_of_power_laws.12 = {
 			is_enacting_law = law_type:law_representative_democracy
 		}
 		OR = {
-			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_autocracy
+			#has_law = law_type:law_oligarchy
+			#has_law = law_type:law_anocracy
 		}
 		NOT = { has_modifier = administrative_assistance_for_elections }
 		NOT = { has_modifier = setting_up_election_system }

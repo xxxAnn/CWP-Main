@@ -47,9 +47,9 @@ je_acquire_civilian_nuclear_capability = {
 	fail = {
 		or = {
 			not = {
-				has_law = law_type:law_civilian_applications
-				has_law = law_type:law_deterrence
-				has_law = law_type:law_first_strike
+				#has_law = law_type:law_civilian_applications
+				#has_law = law_type:law_deterrence
+				#has_law = law_type:law_first_strike
 			}
 			canceled_nuclear_program = yes
 		}
@@ -118,8 +118,8 @@ je_develop_atomic_bomb = {
 	fail = {
 		or = {
 			not = {
-				has_law = law_type:law_deterrence
-				has_law = law_type:law_first_strike
+				#has_law = law_type:law_deterrence
+				#has_law = law_type:law_first_strike
 			}
 			canceled_nuclear_program = yes
 		}
@@ -204,8 +204,8 @@ je_develop_thermonuclear_bomb = {
 	fail = {
 		or = {
 			not = {
-				has_law = law_type:law_deterrence
-				has_law = law_type:law_first_strike
+				#has_law = law_type:law_deterrence
+				#has_law = law_type:law_first_strike
 			}
 			canceled_nuclear_program = yes
 		}
@@ -280,8 +280,8 @@ je_develop_icbms = {
 	fail = {
 		or = {
 			not = {
-				has_law = law_type:law_deterrence
-				has_law = law_type:law_first_strike
+				#has_law = law_type:law_deterrence
+				#has_law = law_type:law_first_strike
 			}
 			canceled_nuclear_program = yes
 		}

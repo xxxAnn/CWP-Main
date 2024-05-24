@@ -1,5 +1,4 @@
 ﻿namespace = liberalism
-
 # Path to Liberalism: Completion
 liberalism.1 = {
 	type = country_event
@@ -7,37 +6,55 @@ liberalism.1 = {
 	title = liberalism.1.t
 	desc = liberalism.1.d
 	flavor = liberalism.1.f
-
 	duration = 3
-
 	event_image = {
 		video = "southamerica_election"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-
 	trigger = {
 		# triggered by liberalism JE 1
 	}
-
 	immediate = {
 		if = {
-			limit = { ig:ig_liberals = { is_in_government = yes } }
-			ig:ig_liberals.leader = { save_scope_as = liberal_leader }
+			limit = {
+				ig:ig_liberals = {
+					is_in_government = yes
+				}
+			}
+			ig:ig_liberals.leader = {
+				save_scope_as = liberal_leader
+			}
 		}
 		else_if = {
-			limit = { ig:ig_radicals = { is_in_government = yes } }
-			ig:ig_radicals.leader = { save_scope_as = liberal_leader }
+			limit = {
+				ig:ig_radicals = {
+					is_in_government = yes
+				}
+			}
+			ig:ig_radicals.leader = {
+				save_scope_as = liberal_leader
+			}
 		}
 		else_if = {
-			limit = { ig:ig_market_liberals = { is_in_government = yes } }
-			ig:ig_market_liberals.leader = { save_scope_as = liberal_leader }
+			limit = {
+				ig:ig_market_liberals = {
+					is_in_government = yes
+				}
+			}
+			ig:ig_market_liberals.leader = {
+				save_scope_as = liberal_leader
+			}
 		}
 		else_if = {
-			limit = { ig:ig_national_liberals = { is_in_government = yes } }
-			ig:ig_national_liberals.leader = { save_scope_as = liberal_leader }
+			limit = {
+				ig:ig_national_liberals = {
+					is_in_government = yes
+				}
+			}
+			ig:ig_national_liberals.leader = {
+				save_scope_as = liberal_leader
+			}
 		}
 		else = {
 			random_interest_group = {
@@ -45,11 +62,12 @@ liberalism.1 = {
 					is_in_government = yes
 					bpm_ig_is_liberal = yes
 				}
-				leader = { save_scope_as = liberal_leader }
+				leader = {
+					save_scope_as = liberal_leader
+				}
 			}
 		}
 	}
-
 	option = {
 		name = liberalism.1.a
 		default_option = yes
@@ -59,19 +77,18 @@ liberalism.1 = {
 				months = normal_modifier_time
 			}
 		}
-
 		add_journal_entry = {
 			type = je_liberalism_2
 		}
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_right_of_assembly
-					has_law = law_type:law_protected_speech
+					#has_law = law_type:law_right_of_assembly
+					#has_law = law_type:law_protected_speech
 				}
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					#has_law = law_type:law_freedom_of_conscience
+					#has_law = law_type:law_total_separation
 				}
 				any_scope_building = {
 					is_building_type = building_university
@@ -84,7 +101,9 @@ liberalism.1 = {
 					occupancy > 0.9
 				}
 			}
-			trigger_event = { id = liberalism.3 }
+			trigger_event = {
+				id = liberalism.3
+			}
 		}
 		else = {
 			add_journal_entry = {
@@ -112,25 +131,30 @@ liberalism.1 = {
 					is_interest_group_type = ig_industrialists
 				}
 				leader = {
-					NOT = { has_ideology = ideology:ideology_radical }
-					NOT = { this = scope:liberal_leader }
+					NOT = {
+						has_ideology = ideology:ideology_radical
+					}
+					NOT = {
+						this = scope:liberal_leader
+					}
 				}
 			}
-			leader = { set_ideology = ideology:ideology_radical }
+			leader = {
+				set_ideology = ideology:ideology_radical
+			}
 		}
-
 		add_journal_entry = {
 			type = je_liberalism_2
 		}
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_right_of_assembly
-					has_law = law_type:law_protected_speech
+					#has_law = law_type:law_right_of_assembly
+					#has_law = law_type:law_protected_speech
 				}
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					#has_law = law_type:law_freedom_of_conscience
+					#has_law = law_type:law_total_separation
 				}
 				any_scope_building = {
 					is_building_type = building_university
@@ -143,7 +167,9 @@ liberalism.1 = {
 					occupancy > 0.9
 				}
 			}
-			trigger_event = { id = liberalism.3 }
+			trigger_event = {
+				id = liberalism.3
+			}
 		}
 		else = {
 			add_journal_entry = {
@@ -156,7 +182,11 @@ liberalism.1 = {
 			bpm_reorder_ideologies = yes
 		}
 		if = {
-			limit = { ig:ig_reactionaries = { bpm_ig_is_anti_democratic = yes } }
+			limit = {
+				ig:ig_reactionaries = {
+					bpm_ig_is_anti_democratic = yes
+				}
+			}
 			ig:ig_reactionaries = {
 				bpm_remove_all_dop_ideologies = yes
 				add_ideology = ideology_dop_authoritarian_democrat
@@ -177,25 +207,30 @@ liberalism.1 = {
 					is_interest_group_type = ig_national_liberals
 				}
 				leader = {
-					NOT = { has_ideology = ideology:ideology_reformer }
-					NOT = { this = scope:liberal_leader }
+					NOT = {
+						has_ideology = ideology:ideology_reformer
+					}
+					NOT = {
+						this = scope:liberal_leader
+					}
 				}
 			}
-			leader = { set_ideology = ideology:ideology_reformer }
+			leader = {
+				set_ideology = ideology:ideology_reformer
+			}
 		}
-
 		add_journal_entry = {
 			type = je_liberalism_2
 		}
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_right_of_assembly
-					has_law = law_type:law_protected_speech
+					#has_law = law_type:law_right_of_assembly
+					#has_law = law_type:law_protected_speech
 				}
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					#has_law = law_type:law_freedom_of_conscience
+					#has_law = law_type:law_total_separation
 				}
 				any_scope_building = {
 					is_building_type = building_university
@@ -208,7 +243,9 @@ liberalism.1 = {
 					occupancy > 0.9
 				}
 			}
-			trigger_event = { id = liberalism.3 }
+			trigger_event = {
+				id = liberalism.3
+			}
 		}
 		else = {
 			add_journal_entry = {
@@ -230,21 +267,15 @@ liberalism.2 = {
 	title = liberalism.2.t
 	desc = liberalism.2.d
 	flavor = liberalism.2.f
-
 	duration = 3
-
 	event_image = {
 		video = "asia_farmers_market"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
-
 	trigger = {
 		# triggered by liberalism JE 2
 	}
-
 	option = {
 		name = liberalism.2.a
 		add_modifier = {
@@ -269,21 +300,15 @@ liberalism.3 = {
 	title = liberalism.3.t
 	desc = liberalism.3.d
 	flavor = liberalism.3.f
-
 	duration = 3
-
 	event_image = {
 		video = "unspecific_world_fair"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	trigger = {
 		# triggered by liberalism JE 3
 	}
-
 	option = {
 		name = liberalism.3.a
 		add_modifier = {
@@ -293,15 +318,17 @@ liberalism.3 = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					#has_law = law_type:law_freedom_of_conscience
+					#has_law = law_type:law_total_separation
 				}
-				has_law = law_type:law_slavery_banned
-				has_law = law_type:law_multicultural
-				has_law = law_type:law_no_migration_controls
+				#has_law = law_type:law_slavery_banned
+				#has_law = law_type:law_multicultural
+				#has_law = law_type:law_no_migration_controls
 				average_sol >= 12
 			}
-			trigger_event = { id = liberalism.4 }
+			trigger_event = {
+				id = liberalism.4
+			}
 		}
 		else = {
 			add_journal_entry = {
@@ -324,15 +351,17 @@ liberalism.3 = {
 		if = {
 			limit = {
 				OR = {
-					has_law = law_type:law_freedom_of_conscience
-					has_law = law_type:law_total_separation
+					#has_law = law_type:law_freedom_of_conscience
+					#has_law = law_type:law_total_separation
 				}
-				has_law = law_type:law_slavery_banned
-				has_law = law_type:law_multicultural
-				has_law = law_type:law_no_migration_controls
+				#has_law = law_type:law_slavery_banned
+				#has_law = law_type:law_multicultural
+				#has_law = law_type:law_no_migration_controls
 				average_sol >= 12
 			}
-			trigger_event = { id = liberalism.4 }
+			trigger_event = {
+				id = liberalism.4
+			}
 		}
 		else = {
 			add_journal_entry = {
@@ -354,21 +383,15 @@ liberalism.4 = {
 	title = liberalism.4.t
 	desc = liberalism.4.d
 	flavor = liberalism.4.f
-
 	duration = 3
-
 	event_image = {
 		video = "asia_poor_people_moving"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
 	trigger = {
 		# triggered by liberalism JE 4
 	}
-
 	option = {
 		name = liberalism.4.a
 		add_modifier = {
@@ -390,7 +413,13 @@ liberalism.4 = {
 			bpm_reorder_ideologies = yes
 		}
 		if = {
-			limit = { NOT = { ig:ig_conservatives = { has_ideology = ideology:ideology_cit_immigrant_nationalist } } }
+			limit = {
+				NOT = {
+					ig:ig_conservatives = {
+						has_ideology = ideology:ideology_cit_immigrant_nationalist
+					}
+				}
+			}
 			ig:ig_conservatives = {
 				bpm_remove_all_cit_ideologies = yes
 				add_ideology = ideology_cit_liberal_nationalist
@@ -421,7 +450,13 @@ liberalism.4 = {
 			bpm_reorder_ideologies = yes
 		}
 		if = {
-			limit = { NOT = { ig:ig_conservatives = { has_ideology = ideology:ideology_cit_immigrant_nationalist } } }
+			limit = {
+				NOT = {
+					ig:ig_conservatives = {
+						has_ideology = ideology:ideology_cit_immigrant_nationalist
+					}
+				}
+			}
 			ig:ig_conservatives = {
 				bpm_remove_all_cit_ideologies = yes
 				add_ideology = ideology_cit_liberal_nationalist

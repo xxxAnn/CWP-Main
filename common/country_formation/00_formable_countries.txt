@@ -101,7 +101,7 @@ BYZ = {
 		always = yes
 	}
 	possible = {
-		has_law = law_type:law_hereditary
+		#has_law = law_type:law_hereditary
 		has_game_rule = all_formable_nations
 	}
 }
@@ -114,8 +114,8 @@ TGC = {
 	}
 	possible = {
 		OR = {
-			has_law = law_type:law_multiculturalist
-			has_law = law_type:law_syncretist
+			#has_law = law_type:law_multiculturalist
+			#has_law = law_type:law_syncretist
 		}
 		has_game_rule = all_formable_nations
 	}
@@ -166,7 +166,6 @@ ABI = {
 #		always = yes
 #	}
 #}
-
 WIN = {
 	STATES = {
 		STATE_WEST_INDIES
@@ -638,7 +637,9 @@ MAG = {
 		always = yes
 	}
 	possible = {
-		NOT = { has_journal_entry = je_gaddafi_unification }
+		NOT = {
+			has_journal_entry = je_gaddafi_unification
+		}
 		NOT = {
 			has_game_rule = plausible_formable_nations
 		}

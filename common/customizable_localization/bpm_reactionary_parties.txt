@@ -1,13 +1,12 @@
 usa_reactionary_party_name = {
 	type = country
 	random_valid = no
-
 	text = {
 		trigger = {
-			OR = { 
+			OR = {
 				game_date > 1900.1.1
 				has_global_variable = american_civil_war
-				has_law = law_type:law_slavery_banned
+				#has_law = law_type:law_slavery_banned
 			}
 		}
 		localization_key = party_usa_redeemers
@@ -15,9 +14,9 @@ usa_reactionary_party_name = {
 	text = {
 		trigger = {
 			game_date < 1900.1.1
-			NOR = { 
+			NOR = {
 				has_global_variable = american_civil_war
-				has_law = law_type:law_slavery_banned
+				#has_law = law_type:law_slavery_banned
 			}
 		}
 		localization_key = party_usa_know_nothings
@@ -27,7 +26,6 @@ usa_reactionary_party_name = {
 fra_reactionary_party_name = {
 	type = country
 	random_valid = no
-
 	text = {
 		trigger = {
 			game_date < 1899.1.1
@@ -38,8 +36,8 @@ fra_reactionary_party_name = {
 		trigger = {
 			game_date >= 1899.1.1
 			NOR = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_theocracy
+				#has_law = law_type:law_monarchy
+				#has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_fra_action
@@ -49,10 +47,11 @@ fra_reactionary_party_name = {
 por_reactionary_party_name = {
 	type = country
 	random_valid = no
-	
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = corporatism }
+			NOT = {
+				has_technology_researched = corporatism
+			}
 		}
 		localization_key = party_por_miguelista
 	}
@@ -67,7 +66,6 @@ por_reactionary_party_name = {
 jap_reactionary_party_name = {
 	type = country
 	random_valid = no
-
 	text = {
 		trigger = {
 			game_date < 1910.1.1
@@ -79,13 +77,12 @@ jap_reactionary_party_name = {
 			game_date > 1910.1.1
 		}
 		localization_key = party_jap_kohoda
-  }
+	}
 }
 
 jap_reactionary_party_name = {
 	type = country
 	random_valid = no
-
 	text = {
 		trigger = {
 			game_date < 1910.1.1
@@ -97,23 +94,22 @@ jap_reactionary_party_name = {
 			game_date > 1910.1.1
 		}
 		localization_key = party_jap_kohoda
-  }
+	}
 }
 
 ger_reactionary_party_name = {
 	type = country
 	random_valid = no
-	
 	text = {
-		trigger = { 
-				has_law = law_type:law_monarchy 
+		trigger = {
+			#has_law = law_type:law_monarchy 
 		}
 		localization_key = party_german_social
 	}
 	text = {
 		trigger = {
-			NOT = { 
-				has_law = law_type:law_monarchy 
+			NOT = {
+				#has_law = law_type:law_monarchy 
 			}
 		}
 		localization_key = party_ger_dnvp

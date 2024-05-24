@@ -21,7 +21,7 @@ building_food_industry = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -61,7 +61,7 @@ building_distilleries = {
     possible = {
         owner = {
            NOT = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -86,7 +86,7 @@ building_textile_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -112,7 +112,7 @@ building_furniture_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -137,7 +137,7 @@ building_glassworks = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -162,7 +162,7 @@ building_tool_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -188,7 +188,7 @@ building_paper_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -213,7 +213,7 @@ building_chemical_plants = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -239,7 +239,7 @@ building_synthetics_plant = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -264,7 +264,7 @@ building_steelworks = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -289,7 +289,7 @@ building_aluminum_refinery = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -315,7 +315,7 @@ building_motor_industry = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -343,7 +343,7 @@ building_automobile_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -369,7 +369,7 @@ building_shipyards = {
 		is_sea_adjacent = yes
 		owner = { 
 			NOT = { 
-				has_law = law_type:law_anti_industrialization 
+				##has_law = law_type:law_anti_industrialization 
 			} 
 		}
 	}
@@ -396,7 +396,7 @@ building_drydocks = {
 	possible = {
 		is_sea_adjacent = yes
 		owner = { 
-			NOT = { has_law = law_type:law_anti_industrialization } 
+			NOT = { ##has_law = law_type:law_anti_industrialization } 
 		}
 	}
 }
@@ -421,7 +421,7 @@ building_advanced_military_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -447,7 +447,7 @@ building_electronics_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -473,7 +473,7 @@ building_small_arms_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -499,7 +499,7 @@ building_explosives_industry = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -525,7 +525,7 @@ building_fuel_refineries = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -550,7 +550,7 @@ building_semiconductor_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -577,7 +577,7 @@ building_aircraft_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -603,7 +603,7 @@ building_uranium_refineries = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -628,7 +628,7 @@ building_battery_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -654,7 +654,7 @@ building_pharmaceutical_industry = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -679,7 +679,7 @@ building_computer_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }
@@ -704,7 +704,7 @@ building_consumer_electronics_manufactories = {
     possible = {
         owner = {
            not = {
-               has_law = law_type:law_anti_industrialization
+               ##has_law = law_type:law_anti_industrialization
            }
        }  
     }

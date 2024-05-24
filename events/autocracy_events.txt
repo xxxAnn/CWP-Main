@@ -1,5 +1,4 @@
 ﻿namespace = autocracy
-
 # secret societies
 autocracy.2 = {
 	type = country_event
@@ -18,14 +17,14 @@ autocracy.2 = {
 			has_variable = secret_societies_timer
 		}
 		OR = {
-			has_law = law_type:law_hereditary
-			has_law = law_type:law_theocratic
+			#has_law = law_type:law_hereditary
+			#has_law = law_type:law_theocratic
 		}
-		has_law = law_type:law_religious_institutions
-		has_law = law_type:law_autocracy
+		#has_law = law_type:law_religious_institutions
+		#has_law = law_type:law_autocracy
 		OR = {
-			has_law = law_type:law_censorship
-			has_law = law_type:law_outlawed_dissent
+			#has_law = law_type:law_censorship
+			#has_law = law_type:law_outlawed_dissent
 			ig:ig_elites = {
 				is_being_suppressed = yes
 			}
@@ -121,7 +120,7 @@ autocracy.3 = {
 			is_powerful = yes
 			is_in_government = yes
 		}
-		haS_law = law_type:law_religious_institutions
+		#haS_law = law_type:law_religious_institutions
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_pop = {

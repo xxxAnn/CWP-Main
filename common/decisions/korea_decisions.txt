@@ -120,8 +120,8 @@ join_korean_conflict_ai_south = {
 	is_shown = {
 		country_rank >= rank_value:major_power
 		is_target_in_global_variable_list = { name = nato_members target = this}
-		NOT = { has_law = law_type:law_socialization }
-		NOT = { has_law = law_type:law_decentralization }
+		NOT = { #has_law = law_type:law_socialization }
+		NOT = { #has_law = law_type:law_decentralization }
 		is_player = no
 		exists = c:NRK
 		exists = c:STK

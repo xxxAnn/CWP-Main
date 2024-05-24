@@ -533,7 +533,7 @@ tax.6 = {
 	duration = 3
 	
 	trigger = {
-		NOT = { has_law = law_type:law_consumption_based_taxation }
+		NOT = { #has_law = law_type:law_consumption_based_taxation }
 		OR = {
 			is_enacting_law = law_type:law_capital_gains
 			is_enacting_law = law_type:law_income_taxation
@@ -587,7 +587,7 @@ tax.6 = {
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_per_capita_based_taxation
+				#has_law = law_type:law_per_capita_based_taxation
 			}
 			add_modifier = {
 				name = temporary_tax_cut_per_capita
@@ -596,7 +596,7 @@ tax.6 = {
 		}
 		else_if = {
 			limit = {
-				has_law = law_type:law_income_taxation
+				#has_law = law_type:law_income_taxation
 			}
 			add_modifier = {
 				name = temporary_tax_cut_graduated
@@ -605,7 +605,7 @@ tax.6 = {
 		}
 		else_if = {
 			limit = {
-				has_law = law_type:law_capital_gains
+				#has_law = law_type:law_capital_gains
 			}
 			add_modifier = {
 				name = temporary_tax_cut_proportional

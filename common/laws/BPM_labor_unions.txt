@@ -163,7 +163,7 @@ law_state_controlled_labor_unions = {
 						pop_employment_building_group = bg_manufacturing
 					}
 					owner = { 
-						NOT = { has_law = law_type:law_worker_protections }
+						NOT = { #has_law = law_type:law_worker_protections }
 					}
 				}
 				add = {

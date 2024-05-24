@@ -97,7 +97,7 @@ reactionary_party = {
 			triggered_desc = {
 				desc = party_reactionary_royal
 				trigger = {
-					has_law = law_type:law_monarchy
+					#has_law = law_type:law_monarchy
 				}
 			}
 			triggered_desc = {
@@ -223,9 +223,9 @@ reactionary_party = {
 				owner = {
 					bpm_country_is_republic = yes
 					NOR = {
-						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
-						has_law = law_type:law_landed_voting
+						#has_law = law_type:law_autocracy
+						#has_law = law_type:law_oligarchy
+						#has_law = law_type:law_landed_voting
 					}
 				}
 			}
@@ -238,8 +238,8 @@ reactionary_party = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_legacy_slavery
-						has_law = law_type:law_slave_trade
+						#has_law = law_type:law_legacy_slavery
+						#has_law = law_type:law_slave_trade
 					}
 				}
 				OR = {
@@ -255,7 +255,7 @@ reactionary_party = {
 		if = { # pro-serfdom
 			limit = {
 				owner = {
-					has_law = law_type:law_serfdom
+					#has_law = law_type:law_serfdom
 				}
 				has_ideology = ideology:ideology_eco_serf_economy
 			}
@@ -328,7 +328,7 @@ reactionary_party = {
 					value <= disapprove
 				}
 				owner = {
-					has_law = law_type:law_no_migration_controls
+					#has_law = law_type:law_no_migration_controls
 				}
 			}
 			add = {
@@ -356,9 +356,9 @@ reactionary_party = {
 					has_ideology = ideology:ideology_gov_radical_monarchist
 					owner = {
 						AND = {
-							has_law = law_type:law_monarchy
-							NOT = { has_law = law_type:law_autocracy }
-							NOT = { has_law = law_type:law_oligarchy }
+							#has_law = law_type:law_monarchy
+							NOT = { #has_law = law_type:law_autocracy }
+							NOT = { #has_law = law_type:law_oligarchy }
 						}
 					}
 				}

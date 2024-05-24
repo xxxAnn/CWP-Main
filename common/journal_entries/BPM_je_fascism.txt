@@ -4,13 +4,13 @@
 	group = je_group_internal_affairs
 
 	is_shown_when_inactive = {
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 		NOT = { has_variable = completed_fascism_1_var }
 		has_technology_researched = political_agitation
 	}
 
 	possible = {
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 		any_interest_group = {
 			OR = {
 				is_being_bolstered = yes
@@ -54,8 +54,8 @@
             value >= 4
         }
         OR = {
-            has_law = law_type:law_dedicated_police
-            has_law = law_type:law_militarized_police
+            #has_law = law_type:law_dedicated_police
+            #has_law = law_type:law_militarized_police
         }
         any_scope_character = {
             has_role = general
@@ -81,7 +81,7 @@
 	}
 
 	invalid = {
-		has_law = law_type:law_council_republic
+		#has_law = law_type:law_council_republic
 	}
 
 	weight = 10000

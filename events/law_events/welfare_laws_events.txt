@@ -291,7 +291,7 @@ welfare_laws.4 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		has_law = law_type:law_poor_laws
+		#has_law = law_type:law_poor_laws
 		OR = {
 			is_enacting_law = law_type:law_no_welfare
 			is_enacting_law = law_type:law_income_supplementation
@@ -359,7 +359,7 @@ welfare_laws.5 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		has_law = law_type:law_poor_laws
+		#has_law = law_type:law_poor_laws
 		OR = {
 			is_enacting_law = law_type:law_no_welfare
 			is_enacting_law = law_type:law_income_supplementation
@@ -424,7 +424,7 @@ welfare_laws.6 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		has_law = law_type:law_poor_laws
+		#has_law = law_type:law_poor_laws
 		OR = {
 			is_enacting_law = law_type:law_no_welfare
 			is_enacting_law = law_type:law_income_supplementation

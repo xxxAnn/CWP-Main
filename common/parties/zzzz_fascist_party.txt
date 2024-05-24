@@ -1,6 +1,9 @@
 ﻿fascist_party = {
-	color = { 128 77 0 }
-
+	color = {
+		128
+		77
+		0
+	}
 	name = {
 		first_valid = {
 			triggered_desc = {
@@ -280,20 +283,24 @@
 			}
 		}
 	}
-
 	icon = {
 		default = "/gfx/interface/icons/political_parties/fascists.dds"
 	}
 	unlocking_technologies = {
 		political_agitation
 	}
-	available_for_interest_group = { 
+	available_for_interest_group = {
 		bpm_ig_enabled = yes
-		NOT = { bpm_is_party_banned = { PARTY = fascist_party } }
+		NOT = {
+			bpm_is_party_banned = {
+				PARTY = fascist_party
+			}
+		}
 		bpm_ig_is_left_wing = no
-		leader = { bpm_leader_is_left_wing = no }
+		leader = {
+			bpm_leader_is_left_wing = no
+		}
 	}
-	
 	join_weight = {
 		value = {
 			value = -5
@@ -310,11 +317,14 @@
 				value = bpm_party_loyalty_values
 			}
 		}
-		if = { # fascists and general racists love fascism
+		if = {
+			# fascists and general racists love fascism
 			limit = {
 				OR = {
 					bpm_ig_is_fascist = yes
-					leader = { bpm_leader_is_fascist = yes }
+					leader = {
+						bpm_leader_is_fascist = yes
+					}
 				}
 			}
 			add = {
@@ -322,12 +332,15 @@
 				desc = "from_fascism"
 			}
 		}
-		if = { # strong fascists love fascism even more
+		if = {
+			# strong fascists love fascism even more
 			limit = {
 				is_powerful = yes
 				OR = {
 					bpm_ig_is_fascist = yes
-					leader = { bpm_leader_is_fascist = yes }
+					leader = {
+						bpm_leader_is_fascist = yes
+					}
 				}
 			}
 			add = {
@@ -335,7 +348,8 @@
 				desc = "from_fascism_powerful"
 			}
 		}
-		if = { # fascism is a reactionary ideology
+		if = {
+			# fascism is a reactionary ideology
 			limit = {
 				bpm_ig_is_traditionalist = yes
 			}
@@ -344,7 +358,8 @@
 				desc = "from_reactionaries"
 			}
 		}
-		if = { # conservative IG's will fall behind a stronger fascist party
+		if = {
+			# conservative IG's will fall behind a stronger fascist party
 			limit = {
 				is_powerful = no
 				OR = {
@@ -356,7 +371,9 @@
 						is_powerful = yes
 						OR = {
 							bpm_ig_is_fascist = yes
-							leader = { bpm_leader_is_fascist = yes }
+							leader = {
+								bpm_leader_is_fascist = yes
+							}
 						}
 					}
 				}
@@ -366,10 +383,11 @@
 				desc = "from_weak_conservatives_fascism"
 			}
 		}
-		if = { # various progressives dislike fascism
+		if = {
+			# various progressives dislike fascism
 			limit = {
 				leader = {
-					bpm_ig_is_liberal = yes	
+					bpm_ig_is_liberal = yes
 				}
 			}
 			add = {
@@ -377,7 +395,8 @@
 				desc = "from_progressive_fascism"
 			}
 		}
-		if = { # trade unions usually dislike fascism
+		if = {
+			# trade unions usually dislike fascism
 			limit = {
 				is_interest_group_type = ig_trade_unions
 			}
@@ -386,16 +405,20 @@
 				desc = "from_trade_unions"
 			}
 		}
-		if = { # moderates are scared of radical politics
+		if = {
+			# moderates are scared of radical politics
 			limit = {
-				leader = { has_ideology = ideology:ideology_moderate }
+				leader = {
+					has_ideology = ideology:ideology_moderate
+				}
 			}
 			add = {
 				value = -3
 				desc = "from_moderate"
 			}
 		}
-		if = { # patriots are inclined towards fascism
+		if = {
+			# patriots are inclined towards fascism
 			limit = {
 				bpm_ig_is_militaristic = yes
 			}
@@ -404,14 +427,15 @@
 				desc = "from_patriot"
 			}
 		}
-		if = { # rural folk will ally with anti-migration faction
+		if = {
+			# rural folk will ally with anti-migration faction
 			limit = {
 				law_stance = {
 					law = law_type:law_no_migration_controls
 					value < disapprove
 				}
 				owner = {
-					has_law = law_type:law_no_migration_controls
+					#has_law = law_type:law_no_migration_controls
 				}
 			}
 			add = {
@@ -419,7 +443,8 @@
 				desc = "from_isolationist"
 			}
 		}
-		if = { # conservatives like police
+		if = {
+			# conservatives like police
 			limit = {
 				law_stance = {
 					law = law_type:law_no_police
@@ -427,7 +452,7 @@
 				}
 				owner = {
 					has_technology_researched = law_enforcement
-					has_law = law_type:law_no_police
+					#has_law = law_type:law_no_police
 				}
 			}
 			add = {
@@ -435,16 +460,23 @@
 				desc = "from_no_police"
 			}
 		}
-		if = { # nobody will join if the fascists don't join
+		if = {
+			# nobody will join if the fascists don't join
 			limit = {
-				NOT = { is_interest_group_type = ig_fascists }
+				NOT = {
+					is_interest_group_type = ig_fascists
+				}
 				OR = {
-					NOT = { exists = owner.py:fascist_party }
+					NOT = {
+						exists = owner.py:fascist_party
+					}
 					AND = {
 						exists = owner.py:fascist_party
 						owner = {
 							ig:ig_fascists = {
-								NOT = { is_member_of_party = owner.py:fascist_party }
+								NOT = {
+									is_member_of_party = owner.py:fascist_party
+								}
 							}
 						}
 					}
@@ -452,7 +484,7 @@
 			}
 			add = {
 				value = -30
-				desc = "from_no_fascists_in_party" # this should probably never actually display in game because the party won't exist
+				desc = "from_no_fascists_in_party"				# this should probably never actually display in game because the party won't exist
 			}
 		}
 	}

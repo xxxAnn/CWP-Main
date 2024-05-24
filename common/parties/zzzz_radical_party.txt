@@ -411,11 +411,11 @@ radical_party = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy
+						#has_law = law_type:law_theocracy
 					}
 					NOT = {
-						has_law = law_type:law_universal_suffrage
+						#has_law = law_type:law_universal_suffrage
 					}
 				}
 			}
@@ -432,8 +432,8 @@ radical_party = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_serfdom
-						has_law = law_type:law_debt_slavery
+						#has_law = law_type:law_serfdom
+						#has_law = law_type:law_debt_slavery
 					}
 				}
 			}
@@ -469,8 +469,8 @@ radical_party = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
+						#has_law = law_type:law_autocracy
+						#has_law = law_type:law_oligarchy
 					}
 				}
 				OR = {
@@ -487,7 +487,7 @@ radical_party = {
 		if = { # from lack of democracy
 			limit = {
 				owner = {
-					NOT = { has_law = law_type:law_universal_suffrage }
+					NOT = { #has_law = law_type:law_universal_suffrage }
 				}
 				OR = {
 					has_ideology = ideology:ideology_dop_radical_democrat
@@ -523,8 +523,8 @@ radical_party = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_outlawed_dissent
-						has_law = law_type:law_censorship
+						#has_law = law_type:law_outlawed_dissent
+						#has_law = law_type:law_censorship
 					}
 				}
 			}
@@ -540,7 +540,7 @@ radical_party = {
 					bpm_ig_is_proletarian = yes
 				}
 				owner = {
-					has_law = law_type:law_outlawed_dissent
+					#has_law = law_type:law_outlawed_dissent
 				}
 			}
 			add = {
@@ -556,8 +556,8 @@ radical_party = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_national_guard
-						has_law = law_type:law_secret_police
+						#has_law = law_type:law_national_guard
+						#has_law = law_type:law_secret_police
 					}
 				}
 			}
@@ -570,8 +570,8 @@ radical_party = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_legacy_slavery
-						has_law = law_type:law_slave_trade
+						#has_law = law_type:law_legacy_slavery
+						#has_law = law_type:law_slave_trade
 					}
 				}
 				OR = {
@@ -589,7 +589,7 @@ radical_party = {
 		if = { # anti-serfdom
 			limit = {
 				owner = {
-					has_law = law_type:law_serfdom
+					#has_law = law_type:law_serfdom
 				}
 				OR = {
 					bpm_ig_is_abolitionist = yes	
@@ -607,11 +607,11 @@ radical_party = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_no_workers_rights
-						has_law = law_type:law_child_labor_allowed
-						has_law = law_type:law_no_social_security
-						has_law = law_type:law_unregulated_work_time
-						has_law = law_type:law_illegal_labor_unions
+						#has_law = law_type:law_no_workers_rights
+						#has_law = law_type:law_child_labor_allowed
+						#has_law = law_type:law_no_social_security
+						#has_law = law_type:law_unregulated_work_time
+						#has_law = law_type:law_illegal_labor_unions
 					}
 					NOR = { 
 						has_technology_researched = socialism
@@ -637,8 +637,8 @@ radical_party = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_religious_schools
-						has_law = law_type:law_no_schools
+						#has_law = law_type:law_religious_schools
+						#has_law = law_type:law_no_schools
 					}
 				}
 			}
@@ -681,8 +681,8 @@ radical_party = {
 				owner = {
 					country_has_primary_culture = cu:brazilian
 					OR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy
+						#has_law = law_type:law_theocracy
 					}
 				}
 			}
@@ -696,8 +696,8 @@ radical_party = {
 				owner = {
 					country_has_primary_culture = cu:brazilian
 					OR = { 
-						has_law = law_type:law_monarchy 
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy 
+						#has_law = law_type:law_theocracy
 					}
 				}
 				OR = {

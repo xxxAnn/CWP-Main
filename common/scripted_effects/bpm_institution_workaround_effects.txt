@@ -8,9 +8,9 @@
 bpm_suffrage_institution_workaround = {
 	if = {
 		limit = {
-			has_law = law_type:$VARIABLE$
+			#has_law = law_type:$VARIABLE$
 		}
-		add_modifier = { 
+		add_modifier = {
 			name = institution_$VARIABLE$_workaround
 			multiplier = {
 				value = root.owner.institution:institution_suffrage.investment
@@ -50,9 +50,9 @@ bpm_remove_centralization_workaround_modifiers = {
 bpm_centralization_institution_workaround = {
 	if = {
 		limit = {
-			has_law = law_type:$VARIABLE$
+			#has_law = law_type:$VARIABLE$
 		}
-		add_modifier = { 
+		add_modifier = {
 			name = institution_$VARIABLE$_workaround
 			multiplier = {
 				value = root.owner.institution:institution_centralization.investment
@@ -64,13 +64,15 @@ bpm_centralization_institution_workaround = {
 bpm_centralization_institution_colony_workaround = {
 	if = {
 		limit = {
-			has_law = law_type:$VARIABLE$
+			#has_law = law_type:$VARIABLE$
 		}
 		every_scope_state = {
 			remove_modifier = institution_$VARIABLE$_colony_workaround
 			if = {
-				limit = { is_incorporated = no }
-				add_modifier = { 
+				limit = {
+					is_incorporated = no
+				}
+				add_modifier = {
 					name = institution_$VARIABLE$_colony_workaround
 					multiplier = {
 						value = root.owner.institution:institution_centralization.investment
@@ -83,10 +85,15 @@ bpm_centralization_institution_colony_workaround = {
 
 bpm_centralization_institution_ai_balance = {
 	if = {
-		limit = { is_player = no }
+		limit = {
+			is_player = no
+		}
 		if = {
 			limit = {
-				institution_investment_level = { institution = institution_centralization value < 4 }
+				institution_investment_level = {
+					institution = institution_centralization
+					value < 4
+				}
 			}
 			add_modifier = {
 				name = institution_ai_centralization_workaround

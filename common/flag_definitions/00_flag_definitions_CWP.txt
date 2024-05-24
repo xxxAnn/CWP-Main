@@ -261,8 +261,8 @@ MTB = { # Zimbabwe
 							country_has_primary_culture = cu:boer
 						}
 						NOR = {
-							has_law = law_type:law_multiculturalist
-							has_law = law_type:law_syncretist
+							#has_law = law_type:law_multiculturalist
+							#has_law = law_type:law_syncretist
 						}
 					}
 				}
@@ -294,8 +294,8 @@ LZO = { # Zambia
 							country_has_primary_culture = cu:boer
 						}
 						NOR = {
-							has_law = law_type:law_multiculturalist
-							has_law = law_type:law_syncretist
+							#has_law = law_type:law_multiculturalist
+							#has_law = law_type:law_syncretist
 						}
 					}
 				}
@@ -2550,7 +2550,7 @@ OMA = { # Oman
 		trigger = {
 			NOT = {
 				scope:actor = {
-					has_law = law_type:law_isolationism
+					#has_law = law_type:law_isolationism
 				}
 			}
 		}

@@ -12,9 +12,9 @@
 		in_default = no
 		has_technology_researched = nuclear_research_facilities
 		or = {
-			has_law = law_type:law_civilian_applications
-			has_law = law_type:law_deterrence
-			has_law = law_type:law_first_strike
+			#has_law = law_type:law_civilian_applications
+			#has_law = law_type:law_deterrence
+			#has_law = law_type:law_first_strike
 		}
 		not = {
 			has_building = building_nuclear_research_facility
@@ -78,6 +78,7 @@ cancel_nuclear_project = {
 		base = -100
 	}
 }
+
 develop_civilian_nuclear_capability = {
 	is_shown = {
 		nor = {
@@ -92,9 +93,9 @@ develop_civilian_nuclear_capability = {
 	possible = {
 		in_default = no
 		OR = {
-			has_law = law_type:law_civilian_applications
-			has_law = law_type:law_deterrence
-			has_law = law_type:law_first_strike
+			#has_law = law_type:law_civilian_applications
+			#has_law = law_type:law_deterrence
+			#has_law = law_type:law_first_strike
 		}
 		any_scope_state = {
 			has_building = building_nuclear_research_facility
@@ -144,8 +145,8 @@ develop_atomic_bomb = {
 	possible = {
 		in_default = no
 		OR = {
-			has_law = law_type:law_deterrence
-			has_law = law_type:law_first_strike
+			#has_law = law_type:law_deterrence
+			#has_law = law_type:law_first_strike
 		}
 		any_scope_state = {
 			has_building = building_nuclear_research_facility
@@ -197,8 +198,8 @@ develop_thermonuclear_bomb = {
 		in_default = no
 		has_technology_researched = thermonuclear_bomb
 		OR = {
-			has_law = law_type:law_deterrence
-			has_law = law_type:law_first_strike
+			#has_law = law_type:law_deterrence
+			#has_law = law_type:law_first_strike
 		}
 		any_scope_state = {
 			has_building = building_nuclear_research_facility
@@ -251,8 +252,8 @@ develop_icbm = {
 		in_default = no
 		has_technology_researched = intercontinental_ballistic_missiles
 		OR = {
-			has_law = law_type:law_deterrence
-			has_law = law_type:law_first_strike
+			#has_law = law_type:law_deterrence
+			#has_law = law_type:law_first_strike
 		}
 		any_scope_state = {
 			has_building = building_nuclear_research_facility

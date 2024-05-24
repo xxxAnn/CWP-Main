@@ -1,27 +1,20 @@
 ﻿namespace = revolution_pulse_events
-
 revolution_pulse_events.1 = {
 	type = country_event
 	placement = scope:self_defense_threat_state
-
 	duration = 3
-
 	title = revolution_pulse_events.1.t
 	desc = revolution_pulse_events.1.d
 	flavor = revolution_pulse_events.1.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_barricade"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		reactionary_revolution_ongoing = yes
 		any_interest_group = {
@@ -46,11 +39,11 @@ revolution_pulse_events.1 = {
 		}
 		revolution_progress_medium = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { reactionary_revolution_ongoing = yes }
+		NOT = {
+			reactionary_revolution_ongoing = yes
+		}
 	}
-
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
@@ -84,11 +77,10 @@ revolution_pulse_events.1 = {
 				}
 				save_scope_as = self_defense_threat_culture
 			}
-		}	
+		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.1.a 
+		name = revolution_pulse_events.1.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_small
@@ -113,15 +105,14 @@ revolution_pulse_events.1 = {
 			}
 			add_modifier = {
 				name = modifier_minority_self_defense_tolerated
-				months = normal_modifier_time 
+				months = normal_modifier_time
 			}
 		}
 		add_modifier = {
 			name = modifier_subversion_of_monopoly_on_violence
-			months = normal_modifier_time 
+			months = normal_modifier_time
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.1.b
 		scope:ongoing_revolution = {
@@ -156,25 +147,19 @@ revolution_pulse_events.1 = {
 revolution_pulse_events.2 = {
 	type = country_event
 	placement = scope:blatant_fedposting_state
-
 	duration = 3
-
 	title = revolution_pulse_events.2.t
 	desc = revolution_pulse_events.2.d
 	flavor = revolution_pulse_events.2.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_vandalized_storefront"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		any_scope_state = {
@@ -192,15 +177,16 @@ revolution_pulse_events.2 = {
 		}
 		revolution_progress_low = yes
 	}
-
 	cancellation_trigger = {
 		OR = {
-			NOT = { any_revolution_ongoing = yes }
-			NOT = { exists = scope:fedposting_agitator }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
+			NOT = {
+				exists = scope:fedposting_agitator
+			}
 		}
-		
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_character = {
@@ -226,9 +212,8 @@ revolution_pulse_events.2 = {
 			save_scope_as = blatant_fedposting_state
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.2.a 
+		name = revolution_pulse_events.2.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
@@ -245,13 +230,13 @@ revolution_pulse_events.2 = {
 				months = normal_modifier_time
 			}
 		}
-		scope:blatant_fedposting_state = { #Something got blown up.
+		scope:blatant_fedposting_state = {
+			#Something got blown up.
 			state_region = {
 				add_devastation = 3
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.2.b
 		scope:ongoing_revolution = {
@@ -280,9 +265,7 @@ revolution_pulse_events.2 = {
 revolution_pulse_events.3 = {
 	type = country_event
 	placement = scope:dual_power_state
-
 	duration = 3
-
 	title = revolution_pulse_events.3.t
 	desc = {
 		first_valid = {
@@ -317,19 +300,15 @@ revolution_pulse_events.3 = {
 		}
 	}
 	flavor = revolution_pulse_events.3.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_barricade"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		socialist_revolution_ongoing = yes
 		any_interest_group = {
@@ -341,16 +320,16 @@ revolution_pulse_events.3 = {
 			NOT = {
 				is_capital = yes
 			}
-			turmoil >= 0.50
+			turmoil >= 0.5
 			is_incorporated = yes
 		}
 		revolution_progress_medium = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { socialist_revolution_ongoing = yes }
+		NOT = {
+			socialist_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		if = {
@@ -397,7 +376,7 @@ revolution_pulse_events.3 = {
 				NOT = {
 					is_capital = yes
 				}
-				turmoil > 0.50
+				turmoil > 0.5
 				is_incorporated = yes
 			}
 			save_scope_as = dual_power_state
@@ -406,9 +385,8 @@ revolution_pulse_events.3 = {
 			save_scope_as = armed_forces_ig
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.3.a 
+		name = revolution_pulse_events.3.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
@@ -423,7 +401,6 @@ revolution_pulse_events.3 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.3.b
 		scope:ongoing_revolution = {
@@ -440,7 +417,6 @@ revolution_pulse_events.3 = {
 			months = normal_modifier_time
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.3.c
 		scope:ongoing_revolution = {
@@ -475,44 +451,38 @@ revolution_pulse_events.3 = {
 revolution_pulse_events.4 = {
 	type = country_event
 	placement = scope:soldiers_council_state
-
 	duration = 3
-
 	title = revolution_pulse_events.4.t
 	desc = revolution_pulse_events.4.d
 	flavor = revolution_pulse_events.4.f
-
 	category = revolution
-
 	event_image = {
 		video = "middleeast_battlefield_trenches"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		ig:ig_securocrats = {
 			is_marginal = no
 		}
 		military_wage_level < medium
-		any_scope_state = {			
+		any_scope_state = {
 			any_scope_building = {
 				is_building_type = building_barracks
 			}
-			is_incorporated = yes	
+			is_incorporated = yes
 		}
 		revolution_progress_low = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { any_revolution_ongoing = yes }
+		NOT = {
+			any_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_securocrats = {
@@ -523,20 +493,19 @@ revolution_pulse_events.4 = {
 				any_scope_building = {
 					is_building_type = building_barracks
 				}
-				is_incorporated = yes				
+				is_incorporated = yes
 			}
 			save_scope_as = soldiers_council_state
 			random_scope_building = {
 				limit = {
-					is_building_type = building_barracks	
+					is_building_type = building_barracks
 				}
 				save_scope_as = soldiers_council_building
 			}
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.4.a 
+		name = revolution_pulse_events.4.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_small
@@ -554,7 +523,6 @@ revolution_pulse_events.4 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.4.b
 		scope:ongoing_revolution = {
@@ -572,32 +540,26 @@ revolution_pulse_events.4 = {
 					months = normal_modifier_time
 				}
 			}
-		}	
+		}
 	}
 }
 
 revolution_pulse_events.5 = {
 	type = country_event
 	placement = scope:self_organization_state
-
 	duration = 3
-
 	title = revolution_pulse_events.5.t
 	desc = revolution_pulse_events.5.d
 	flavor = revolution_pulse_events.5.f
-
 	category = revolution
-
 	event_image = {
 		video = "asia_union_leader"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		socialist_revolution_ongoing = yes
 		ig:ig_ruralists = {
@@ -613,11 +575,11 @@ revolution_pulse_events.5 = {
 		}
 		revolution_progress_high = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { socialist_revolution_ongoing = yes }
+		NOT = {
+			socialist_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_ruralists = {
@@ -636,9 +598,8 @@ revolution_pulse_events.5 = {
 			save_scope_as = self_organization_state
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.5.a 
+		name = revolution_pulse_events.5.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
@@ -656,7 +617,6 @@ revolution_pulse_events.5 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.5.b
 		scope:ongoing_revolution = {
@@ -681,25 +641,17 @@ revolution_pulse_events.5 = {
 # revolution_pulse_events.6 = {
 # 	type = country_event
 # 	placement = scope:potemkin_state
-
 # 	duration = 3
-
 # 	title = revolution_pulse_events.6.t
 # 	desc = revolution_pulse_events.6.d
 # 	flavor = revolution_pulse_events.6.f
-
 # 	category = revolution
-
 # 	event_image = {
 # 		video = "votp_garibaldi"
 # 	}
-
 # 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 # 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
 # 	cooldown = { months = long_modifier_time }
-
 # 	trigger = {
 # 		any_revolution_ongoing = yes
 # 		ig:ig_securocrats = {
@@ -724,11 +676,9 @@ revolution_pulse_events.5 = {
 # 		}
 # 		revolution_progress_high = yes
 # 	}
-
 # 	cancellation_trigger = {
 # 		NOT = { any_revolution_ongoing = yes }
 # 	}
-	
 # 	immediate = {
 # 		save_revolution_scopes = yes
 # 		random_scope_state = {
@@ -760,7 +710,6 @@ revolution_pulse_events.5 = {
 # 		} 
 # 		voyage_of_potemkin = yes
 # 	}
-	
 # 	option = {
 # 		name = revolution_pulse_events.6.a 
 # 		default_option = yes
@@ -790,7 +739,6 @@ revolution_pulse_events.5 = {
 # 			}
 # 		}
 # 	}
-
 # 	option = {
 # 		name = revolution_pulse_events.6.b
 # 		scope:ongoing_revolution = {
@@ -818,29 +766,22 @@ revolution_pulse_events.5 = {
 # 		}
 # 	}
 # }
-
 revolution_pulse_events.7 = {
 	type = country_event
 	placement = scope:petition_march_state
-
 	duration = 3
-
 	title = revolution_pulse_events.7.t
 	desc = revolution_pulse_events.7.d
 	flavor = revolution_pulse_events.7.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_cops_march"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		has_ruling_interest_group_count >= 2
@@ -851,14 +792,14 @@ revolution_pulse_events.7 = {
 				ig_approval <= 0
 			}
 		}
-		has_law = law_type:law_hereditary
+		#has_law = law_type:law_hereditary
 		revolution_progress_medium = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { any_revolution_ongoing = yes }
+		NOT = {
+			any_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
@@ -881,9 +822,8 @@ revolution_pulse_events.7 = {
 			save_scope_as = petition_march_ruler
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.7.a 
+		name = revolution_pulse_events.7.a
 		default_option = yes
 		ai_chance = {
 			base = 50
@@ -898,9 +838,8 @@ revolution_pulse_events.7 = {
 			}
 		}
 	}
-
 	option = {
-		name = revolution_pulse_events.7.b #You will regret this.
+		name = revolution_pulse_events.7.b		#You will regret this.
 		ai_chance = {
 			base = 50
 			modifier = {
@@ -934,7 +873,7 @@ revolution_pulse_events.7 = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { 
+					ROOT = {
 						liberal_revolution_ongoing = yes
 					}
 				}
@@ -942,7 +881,7 @@ revolution_pulse_events.7 = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { 
+					ROOT = {
 						reactionary_revolution_ongoing = yes
 					}
 				}
@@ -950,7 +889,7 @@ revolution_pulse_events.7 = {
 			}
 			add_trait = wounded
 		}
-		scope:petition_march_state = {			
+		scope:petition_march_state = {
 			add_radicals_in_state = {
 				value = large_radicals
 			}
@@ -962,7 +901,6 @@ revolution_pulse_events.7 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.7.c
 		trigger = {
@@ -978,7 +916,7 @@ revolution_pulse_events.7 = {
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
 		}
-		scope:petition_march_state = {			
+		scope:petition_march_state = {
 			add_loyalists_in_state = {
 				value = large_radicals
 			}
@@ -1001,25 +939,19 @@ revolution_pulse_events.7 = {
 revolution_pulse_events.8 = {
 	type = country_event
 	placement = scope:revolutionary_robbery_state
-
 	duration = 3
-
 	title = revolution_pulse_events.8.t
 	desc = revolution_pulse_events.8.d
 	flavor = revolution_pulse_events.8.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_vandalized_storefront"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			socialist_revolution_ongoing = yes
@@ -1030,14 +962,12 @@ revolution_pulse_events.8 = {
 			revolution_progress_medium = yes
 		}
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
 			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_state = {
@@ -1053,16 +983,14 @@ revolution_pulse_events.8 = {
 			save_scope_as = secret_police_law
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.8.a 
+		name = revolution_pulse_events.8.a
 		default_option = yes
 		add_modifier = {
 			name = modifier_bank_robbery_payments
 			months = short_modifier_time
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.8.b
 		scope:ongoing_revolution = {
@@ -1073,7 +1001,6 @@ revolution_pulse_events.8 = {
 			months = 13
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.8.c
 		scope:ongoing_revolution = {
@@ -1081,12 +1008,12 @@ revolution_pulse_events.8 = {
 		}
 		trigger = {
 			AND = {
-				institution_investment_level = { 
+				institution_investment_level = {
 					institution = institution_criminal_justice_system
 					value > 2
 				}
-				has_law = law_type:law_secret_police
-			}			
+				#has_law = law_type:law_secret_police
+			}
 		}
 	}
 }
@@ -1094,9 +1021,7 @@ revolution_pulse_events.8 = {
 revolution_pulse_events.9 = {
 	type = country_event
 	placement = scope:agitation_af_state
-
 	duration = 3
-
 	title = revolution_pulse_events.9.t
 	desc = {
 		first_valid = {
@@ -1127,19 +1052,15 @@ revolution_pulse_events.9 = {
 		}
 	}
 	flavor = revolution_pulse_events.9.f
-
 	category = revolution
-
 	event_image = {
 		video = "europenorthamerica_before_the_battle"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		ig:ig_securocrats = {
@@ -1148,14 +1069,14 @@ revolution_pulse_events.9 = {
 		}
 		revolution_progress_low = yes
 		any_scope_building = {
-			is_building_type = building_barracks	
+			is_building_type = building_barracks
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { any_revolution_ongoing = yes }
+		NOT = {
+			any_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_securocrats = {
@@ -1166,12 +1087,12 @@ revolution_pulse_events.9 = {
 				any_scope_building = {
 					is_building_type = building_barracks
 				}
-				is_incorporated = yes				
+				is_incorporated = yes
 			}
 			save_scope_as = agitation_af_state
 			random_scope_building = {
 				limit = {
-					is_building_type = building_barracks	
+					is_building_type = building_barracks
 				}
 				save_scope_as = agitation_af_building
 			}
@@ -1201,9 +1122,8 @@ revolution_pulse_events.9 = {
 			}
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.9.a 
+		name = revolution_pulse_events.9.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_small
@@ -1215,7 +1135,6 @@ revolution_pulse_events.9 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.9.b
 		scope:ongoing_revolution = {
@@ -1239,35 +1158,29 @@ revolution_pulse_events.9 = {
 revolution_pulse_events.10 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.10.t
 	desc = revolution_pulse_events.10.d
 	flavor = revolution_pulse_events.10.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_ruler_speaking_to_people"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			socialist_revolution_ongoing = yes
 			liberal_revolution_ongoing = yes
 		}
 		OR = {
-			has_law = law_type:law_hereditary
-			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_hereditary
+			#has_law = law_type:law_autocracy
+			#has_law = law_type:law_oligarchy
+			#has_law = law_type:law_anocracy
 		}
 		revolution_progress_high = yes
 		any_political_movement = {
@@ -1285,34 +1198,32 @@ revolution_pulse_events.10 = {
 			}
 		}
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
 			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ruler = {
 			save_scope_as = reforms_at_gunpoint_ruler
 		}
 		random_interest_group = {
-			limit = {				
+			limit = {
 				is_in_government = yes
 			}
 			save_scope_as = reforms_at_gunpoint_ig
 		}
-		scope:ongoing_revolution_movement = { #Can't trigger if they want governance reforms anyway.
+		scope:ongoing_revolution_movement = {
+			#Can't trigger if they want governance reforms anyway.
 			this.desired_law = {
 				save_scope_as = revolutionaries_law
 			}
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.10.a 
+		name = revolution_pulse_events.10.a
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_very_large
 		}
@@ -1324,7 +1235,6 @@ revolution_pulse_events.10 = {
 			value = medium_radicals
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.10.b
 		scope:ongoing_revolution = {
@@ -1343,7 +1253,6 @@ revolution_pulse_events.10 = {
 			value = small_radicals
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.10.c
 		scope:ongoing_revolution = {
@@ -1367,25 +1276,19 @@ revolution_pulse_events.10 = {
 revolution_pulse_events.11 = {
 	type = country_event
 	placement = ROOT
-
 	duration = 3
-
 	title = revolution_pulse_events.11.t
 	desc = revolution_pulse_events.11.d
 	flavor = revolution_pulse_events.11.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_military_parade"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		ig:ig_securocrats = {
@@ -1401,11 +1304,11 @@ revolution_pulse_events.11 = {
 		}
 		revolution_progress_low = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { any_revolution_ongoing = yes }
+		NOT = {
+			any_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_securocrats = {
@@ -1419,9 +1322,8 @@ revolution_pulse_events.11 = {
 			save_scope_as = most_recent_opponent_scope
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.11.a 
+		name = revolution_pulse_events.11.a
 		default_option = yes
 		scope:most_recent_opponent_scope = {
 			change_relations = {
@@ -1446,7 +1348,6 @@ revolution_pulse_events.11 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.11.b
 		scope:ongoing_revolution_movement = {
@@ -1461,31 +1362,25 @@ revolution_pulse_events.11 = {
 revolution_pulse_events.12 = {
 	type = country_event
 	placement = ROOT
-
 	duration = 3
-
 	title = revolution_pulse_events.12.t
 	desc = revolution_pulse_events.12.d
 	flavor = revolution_pulse_events.12.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_politicians_arguing"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		socialist_revolution_ongoing = yes
 		OR = {
-			has_law = law_type:law_direct_democracy
-			has_law = law_type:law_consensus_democracy
-			has_law = law_type:law_representative_democracy
+			#has_law = law_type:law_direct_democracy
+			#has_law = law_type:law_consensus_democracy
+			#has_law = law_type:law_representative_democracy
 		}
 		any_scope_character = {
 			has_role = agitator
@@ -1498,11 +1393,11 @@ revolution_pulse_events.12 = {
 		}
 		revolution_progress_low = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { socialist_revolution_ongoing = yes }
+		NOT = {
+			socialist_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_character = {
@@ -1521,9 +1416,8 @@ revolution_pulse_events.12 = {
 			}
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.12.a 
+		name = revolution_pulse_events.12.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
@@ -1552,7 +1446,6 @@ revolution_pulse_events.12 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.12.b
 		scope:ongoing_revolution = {
@@ -1564,31 +1457,25 @@ revolution_pulse_events.12 = {
 revolution_pulse_events.13 = {
 	type = country_event
 	placement = scope:attacked_state
-
 	duration = 3
-
 	title = revolution_pulse_events.13.t
 	desc = revolution_pulse_events.13.d
 	flavor = revolution_pulse_events.13.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_cops_march"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		socialist_revolution_ongoing = yes
 		OR = {
-			has_law = law_type:law_direct_democracy
-			has_law = law_type:law_consensus_democracy
-			has_law = law_type:law_representative_democracy
+			#has_law = law_type:law_direct_democracy
+			#has_law = law_type:law_consensus_democracy
+			#has_law = law_type:law_representative_democracy
 		}
 		ig:ig_securocrats = {
 			is_marginal = no
@@ -1600,21 +1487,21 @@ revolution_pulse_events.13 = {
 		any_interest_group = {
 			is_insurrectionary = yes
 			is_marginal = no
-			ig_is_socialist = yes	
+			ig_is_socialist = yes
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { socialist_revolution_ongoing = yes }
+		NOT = {
+			socialist_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
 			limit = {
 				is_insurrectionary = yes
 				is_marginal = no
-				ig_is_socialist = yes		
+				ig_is_socialist = yes
 			}
 			save_scope_as = attacked_ig
 		}
@@ -1635,12 +1522,11 @@ revolution_pulse_events.13 = {
 					has_socialist_ideology = yes
 				}
 			}
-			save_scope_as = communist_revolutionary_scope	
+			save_scope_as = communist_revolutionary_scope
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.13.a 
+		name = revolution_pulse_events.13.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
@@ -1668,9 +1554,8 @@ revolution_pulse_events.13 = {
 			}
 		}
 	}
-
 	option = {
-		name = revolution_pulse_events.13.b 
+		name = revolution_pulse_events.13.b
 		trigger = {
 			any_scope_character = {
 				has_role = agitator
@@ -1694,9 +1579,8 @@ revolution_pulse_events.13 = {
 					add_trait = wounded
 				}
 				33 = {
-
 				}
-			}		
+			}
 		}
 		scope:paramil_ig = {
 			add_modifier = {
@@ -1710,7 +1594,6 @@ revolution_pulse_events.13 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.13.c
 		scope:ongoing_revolution_movement = {
@@ -1729,29 +1612,22 @@ revolution_pulse_events.13 = {
 }
 
 ### Fascism Chain [1]
-
 revolution_pulse_events.14 = {
 	type = country_event
 	placement = ROOT
-
 	duration = 3
-
 	title = revolution_pulse_events.14.t
 	desc = revolution_pulse_events.14.d
 	flavor = revolution_pulse_events.14.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_monarch_holding_court"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			socialist_revolution_ongoing = yes
@@ -1768,14 +1644,12 @@ revolution_pulse_events.14 = {
 		revolution_progress_low = yes
 		empty_agitator_slots >= 1
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
-			liberal_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
+			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
@@ -1793,9 +1667,9 @@ revolution_pulse_events.14 = {
 			save_scope_as = nation_ruler
 		}
 	}
-	
-	option = { #Unlocks revolution_pulse_events.15
-		name = revolution_pulse_events.14.a 
+	option = {
+		#Unlocks revolution_pulse_events.15
+		name = revolution_pulse_events.14.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
@@ -1806,13 +1680,16 @@ revolution_pulse_events.14 = {
 				months = normal_modifier_time
 			}
 		}
-		set_variable = { name = embraced_reactionary_group value = 1 }
+		set_variable = {
+			name = embraced_reactionary_group
+			value = 1
+		}
 		create_character = {
 			is_agitator = yes
 			interest_group = scope:reactionary_agitator_ig
 			ideology = ideology_authoritarian
 			traits = {
-				demagogue 
+				demagogue
 			}
 			on_created = {
 				set_variable = {
@@ -1821,7 +1698,6 @@ revolution_pulse_events.14 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.14.b
 		scope:ongoing_revolution = {
@@ -1839,25 +1715,19 @@ revolution_pulse_events.14 = {
 revolution_pulse_events.15 = {
 	type = country_event
 	placement = ROOT
-
 	duration = 3
-
 	title = revolution_pulse_events.15.t
 	desc = revolution_pulse_events.15.d
 	flavor = revolution_pulse_events.15.f
-
 	category = revolution
-
 	event_image = {
 		video = "europenorthamerica_capitalists_meeting"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			socialist_revolution_ongoing = yes
@@ -1869,14 +1739,12 @@ revolution_pulse_events.15 = {
 			revolution_progress_medium = yes
 		}
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
-			liberal_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
+			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_character = {
@@ -1887,16 +1755,15 @@ revolution_pulse_events.15 = {
 		}
 		random_interest_group = {
 			limit = {
-				any_scope_character = {	
+				any_scope_character = {
 					has_variable = reactionary_agitator_var
 				}
 			}
 			save_scope_as = reactionary_agitator_ig
 		}
 	}
-	
-	option = {  
-		name = revolution_pulse_events.15.a 
+	option = {
+		name = revolution_pulse_events.15.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
@@ -1911,10 +1778,16 @@ revolution_pulse_events.15 = {
 			limit = {
 				liberal_revolution_ongoing = yes
 			}
-			set_variable = { name = embraced_reactionary_group value = 3 } #Unlocks revolution_pulse_events.17. Skips revolution_pulse_events.16.
+			set_variable = {
+				name = embraced_reactionary_group
+				value = 3
+			}			#Unlocks revolution_pulse_events.17. Skips revolution_pulse_events.16.
 		}
-		else = { 
-			set_variable = { name = embraced_reactionary_group value = 2 } #Unlocks revolution_pulse_events.16 -AND- revolution_pulse_events.17.
+		else = {
+			set_variable = {
+				name = embraced_reactionary_group
+				value = 2
+			}			#Unlocks revolution_pulse_events.16 -AND- revolution_pulse_events.17.
 		}
 		add_loyalists = {
 			strata = middle
@@ -1934,7 +1807,6 @@ revolution_pulse_events.15 = {
 			months = normal_modifier_time
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.15.b
 		scope:ongoing_revolution_movement = {
@@ -1967,62 +1839,66 @@ revolution_pulse_events.15 = {
 revolution_pulse_events.16 = {
 	type = country_event
 	placement = ROOT
-
 	duration = 3
-
 	title = revolution_pulse_events.16.t
 	desc = revolution_pulse_events.16.d
 	flavor = revolution_pulse_events.16.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_politicians_arguing"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		socialist_revolution_ongoing = yes
 		var:embraced_reactionary_group ?= 2
 		revolution_progress_medium = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { socialist_revolution_ongoing = yes }
+		NOT = {
+			socialist_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
 			limit = {
-				any_scope_character = {	
+				any_scope_character = {
 					has_variable = reactionary_agitator_var
 				}
 			}
 			save_scope_as = reactionary_agitator_ig
 		}
 	}
-	
-	option = { 
-		name = revolution_pulse_events.16.a #Fascist. Unlocks revolution_pulse_events.18 and revolution_pulse_events.17.
+	option = {
+		name = revolution_pulse_events.16.a		#Fascist. Unlocks revolution_pulse_events.18 and revolution_pulse_events.17.
 		default_option = yes
-		set_variable = { name = embraced_reactionary_group value = 3 }
-		set_variable = { name = reactionary_group_alignment value = 1 }
+		set_variable = {
+			name = embraced_reactionary_group
+			value = 3
+		}
+		set_variable = {
+			name = reactionary_group_alignment
+			value = 1
+		}
 		add_modifier = {
 			name = modifier_rising_fascism
 			months = normal_modifier_time
 		}
 	}
-
-	option = { 
-		name = revolution_pulse_events.16.b #Not fascist. Unlocks revolution_pulse_events.20.
-		set_variable = { name = embraced_reactionary_group value = 3 }
-		set_variable = { name = reactionary_group_alignment value = 2 }
+	option = {
+		name = revolution_pulse_events.16.b		#Not fascist. Unlocks revolution_pulse_events.20.
+		set_variable = {
+			name = embraced_reactionary_group
+			value = 3
+		}
+		set_variable = {
+			name = reactionary_group_alignment
+			value = 2
+		}
 		random_scope_character = {
 			limit = {
 				has_variable = reactionary_agitator_var
@@ -2041,26 +1917,20 @@ revolution_pulse_events.16 = {
 revolution_pulse_events.17 = {
 	type = country_event
 	placement = scope:pogrom_state
-
 	duration = 3
-
 	title = revolution_pulse_events.17.t
 	desc = revolution_pulse_events.17.d
 	flavor = revolution_pulse_events.17.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_agitators_sneaking"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
-
-	cooldown = { months = normal_modifier_time }
-
-	trigger = {	
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_culture = {
@@ -2074,14 +1944,12 @@ revolution_pulse_events.17 = {
 		var:embraced_reactionary_group ?= 3
 		revolution_progress_medium = yes
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
-			liberal_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
+			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_state = {
@@ -2102,7 +1970,7 @@ revolution_pulse_events.17 = {
 		}
 		random_interest_group = {
 			limit = {
-				any_scope_character = {	
+				any_scope_character = {
 					has_variable = reactionary_agitator_var
 				}
 			}
@@ -2115,9 +1983,8 @@ revolution_pulse_events.17 = {
 			save_scope_as = reactionary_agitator
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.17.a 
+		name = revolution_pulse_events.17.a
 		default_option = yes
 		ai_chance = {
 			base = 75
@@ -2163,7 +2030,6 @@ revolution_pulse_events.17 = {
 			remove_variable = pogrom_culture_var
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.17.b
 		ai_chance = {
@@ -2235,25 +2101,19 @@ revolution_pulse_events.17 = {
 revolution_pulse_events.18 = {
 	type = country_event
 	placement = ROOT
-
 	duration = 3
-
 	title = revolution_pulse_events.18.t
 	desc = revolution_pulse_events.18.d
 	flavor = revolution_pulse_events.18.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_military_parade"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		socialist_revolution_ongoing = yes
 		var:embraced_reactionary_group ?= 3
@@ -2265,11 +2125,11 @@ revolution_pulse_events.18 = {
 			ig_is_socialist = yes
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { socialist_revolution_ongoing = yes }
+		NOT = {
+			socialist_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
@@ -2295,14 +2155,17 @@ revolution_pulse_events.18 = {
 			save_scope_as = internationalist_ig
 		}
 	}
-	
-	option = { #Unlocks revolution_pulse_events.19.
+	option = {
+		#Unlocks revolution_pulse_events.19.
 		name = revolution_pulse_events.18.a
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_small
-		} 
+		}
 		default_option = yes
-		set_variable = { name = embraced_reactionary_group value = 4 }
+		set_variable = {
+			name = embraced_reactionary_group
+			value = 4
+		}
 		random_scope_character = {
 			limit = {
 				has_variable = reactionary_agitator_var
@@ -2312,20 +2175,23 @@ revolution_pulse_events.18 = {
 				name = modifier_fascist_vanguard
 			}
 		}
-		capital = {	
+		capital = {
 			add_radicals_in_state = {
 				value = small_radicals
 				strata = poor
-			}	
+			}
 		}
 	}
-
-	option = { #Unlocks revolution_pulse_events.19.
+	option = {
+		#Unlocks revolution_pulse_events.19.
 		name = revolution_pulse_events.18.b
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
 		}
-		set_variable = { name = embraced_reactionary_group value = 4 }
+		set_variable = {
+			name = embraced_reactionary_group
+			value = 4
+		}
 		random_scope_character = {
 			limit = {
 				has_variable = reactionary_agitator_var
@@ -2337,11 +2203,11 @@ revolution_pulse_events.18 = {
 			interest_group = scope:fascist_ig
 			ideology = ideology_fascist
 		}
-		capital = {	
+		capital = {
 			add_loyalists_in_state = {
 				value = small_radicals
 				strata = middle
-			}	
+			}
 		}
 	}
 }
@@ -2349,9 +2215,7 @@ revolution_pulse_events.18 = {
 revolution_pulse_events.19 = {
 	type = country_event
 	placement = ROOT
-
 	duration = 3
-
 	title = revolution_pulse_events.19.t
 	desc = {
 		first_valid = {
@@ -2362,48 +2226,44 @@ revolution_pulse_events.19 = {
 						leader = {
 							has_fascist_ideology = yes
 						}
-					} 
+					}
 				}
 			}
 			triggered_desc = {
 				desc = revolution_pulse_events.19.d2
 				trigger = {
-					NOT = { 
+					NOT = {
 						any_interest_group = {
 							leader = {
 								has_fascist_ideology = yes
 							}
-						} 
-					}	
+						}
+					}
 				}
 			}
 		}
 	}
 	flavor = revolution_pulse_events.19.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_barricade"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		socialist_revolution_ongoing = yes
 		var:embraced_reactionary_group ?= 4
 		var:reactionary_group_alignment ?= 1
 		revolution_progress_high = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { socialist_revolution_ongoing = yes }
+		NOT = {
+			socialist_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
@@ -2427,7 +2287,6 @@ revolution_pulse_events.19 = {
 			save_scope_as = capital_scope
 		}
 	}
-	
 	option = {
 		name = revolution_pulse_events.19.a
 		scope:ongoing_revolution = {
@@ -2438,12 +2297,12 @@ revolution_pulse_events.19 = {
 				leader = {
 					has_fascist_ideology = yes
 				}
-			} 
+			}
 		}
 		default_option = yes
 		ROOT = {
 			activate_law = law_type:law_autocracy
-			activate_law = law_type:law_ethnonationalist	
+			activate_law = law_type:law_ethnonationalist
 			activate_law = law_type:law_outlawed_dissent
 		}
 		every_interest_group = {
@@ -2469,25 +2328,24 @@ revolution_pulse_events.19 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.19.a2
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_very_large
 		}
 		trigger = {
-			NOT = { 
+			NOT = {
 				any_interest_group = {
 					leader = {
 						has_fascist_ideology = yes
 					}
-				} 
-			}	
+				}
+			}
 		}
 		default_option = yes
 		ROOT = {
 			activate_law = law_type:law_autocracy
-			activate_law = law_type:law_ethnonationalist	
+			activate_law = law_type:law_ethnonationalist
 			activate_law = law_type:law_outlawed_dissent
 		}
 		every_interest_group = {
@@ -2513,7 +2371,6 @@ revolution_pulse_events.19 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.19.b
 		scope:ongoing_revolution_movement = {
@@ -2568,25 +2425,19 @@ revolution_pulse_events.19 = {
 revolution_pulse_events.20 = {
 	type = country_event
 	placement = ROOT
-
 	duration = 3
-
 	title = revolution_pulse_events.20.t
 	desc = revolution_pulse_events.20.d
 	flavor = revolution_pulse_events.20.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_cops_march"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			socialist_revolution_ongoing = yes
@@ -2596,14 +2447,12 @@ revolution_pulse_events.20 = {
 		var:reactionary_group_alignment ?= 2
 		revolution_progress_high = yes
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
-			liberal_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
+			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
@@ -2621,9 +2470,8 @@ revolution_pulse_events.20 = {
 			save_scope_as = capital_scope
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.20.a 
+		name = revolution_pulse_events.20.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_very_large
@@ -2656,7 +2504,6 @@ revolution_pulse_events.20 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.20.b
 		scope:ongoing_revolution_movement = {
@@ -2689,25 +2536,19 @@ revolution_pulse_events.20 = {
 revolution_pulse_events.21 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.21.t
 	desc = revolution_pulse_events.21.d
 	flavor = revolution_pulse_events.21.f
-
 	category = revolution
-
 	event_image = {
 		video = "southamerica_public_figure_assassination"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			liberal_revolution_ongoing = yes
@@ -2721,7 +2562,7 @@ revolution_pulse_events.21 = {
 				value < neutral
 			}
 		}
-		has_law = law_type:law_hereditary
+		#has_law = law_type:law_hereditary
 		OR = {
 			revolution_progress_medium = yes
 			revolution_progress_high = yes
@@ -2731,14 +2572,12 @@ revolution_pulse_events.21 = {
 			turmoil > 0.2
 		}
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
-			liberal_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
+			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_state = {
@@ -2752,9 +2591,8 @@ revolution_pulse_events.21 = {
 			save_scope_as = royal_ig
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.21.a 
+		name = revolution_pulse_events.21.a
 		default_option = yes
 		ai_chance = {
 			base = 25
@@ -2778,10 +2616,9 @@ revolution_pulse_events.21 = {
 			add_modifier = {
 				name = modifier_ignored_assassination
 				months = short_modifier_time
-			}	
+			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.21.b
 		ai_chance = {
@@ -2806,25 +2643,19 @@ revolution_pulse_events.21 = {
 revolution_pulse_events.22 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.22.t
 	desc = revolution_pulse_events.22.d
 	flavor = revolution_pulse_events.22.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_agitators_sneaking"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			liberal_revolution_ongoing = yes
@@ -2838,20 +2669,18 @@ revolution_pulse_events.22 = {
 				value < neutral
 			}
 		}
-		has_law = law_type:law_hereditary
+		#has_law = law_type:law_hereditary
 		OR = {
 			revolution_progress_medium = yes
 			revolution_progress_high = yes
 		}
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
-			liberal_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
+			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
@@ -2864,9 +2693,8 @@ revolution_pulse_events.22 = {
 			}
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.22.a 
+		name = revolution_pulse_events.22.a
 		default_option = yes
 		ai_chance = {
 			base = 50
@@ -2898,7 +2726,6 @@ revolution_pulse_events.22 = {
 			add_civil_war_progress = revolution_advance_medium
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.22.b
 		ai_chance = {
@@ -2922,7 +2749,6 @@ revolution_pulse_events.22 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.22.c
 		ai_chance = {
@@ -2961,25 +2787,19 @@ revolution_pulse_events.22 = {
 revolution_pulse_events.23 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.23.t
 	desc = revolution_pulse_events.23.d
 	flavor = revolution_pulse_events.23.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_conspiring"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			liberal_revolution_ongoing = yes
@@ -2993,7 +2813,7 @@ revolution_pulse_events.23 = {
 				value < neutral
 			}
 		}
-		has_law = law_type:law_hereditary
+		#has_law = law_type:law_hereditary
 		OR = {
 			revolution_progress_low = yes
 			revolution_progress_medium = yes
@@ -3003,14 +2823,12 @@ revolution_pulse_events.23 = {
 			has_building = building_university
 		}
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
-			liberal_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
+			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_state = {
@@ -3027,9 +2845,8 @@ revolution_pulse_events.23 = {
 			}
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.23.a 
+		name = revolution_pulse_events.23.a
 		default_option = yes
 		scope:university_terror_state = {
 			add_modifier = {
@@ -3051,7 +2868,6 @@ revolution_pulse_events.23 = {
 			add_civil_war_progress = revolution_retreat_medium
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.23.b
 		scope:ongoing_revolution = {
@@ -3063,25 +2879,19 @@ revolution_pulse_events.23 = {
 revolution_pulse_events.24 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.24.t
 	desc = revolution_pulse_events.24.d
 	flavor = revolution_pulse_events.24.f
-
 	category = revolution
-
 	event_image = {
 		video = "southamerica_public_figure_assassination"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			liberal_revolution_ongoing = yes
@@ -3095,26 +2905,23 @@ revolution_pulse_events.24 = {
 				value < neutral
 			}
 		}
-		has_law = law_type:law_hereditary
+		#has_law = law_type:law_hereditary
 		revolution_progress_high = yes
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
-			liberal_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
+			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		capital = {
 			save_scope_as = capital_scope
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.24.a 
+		name = revolution_pulse_events.24.a
 		default_option = yes
 		ruler = {
 			add_trait = scarred
@@ -3122,7 +2929,7 @@ revolution_pulse_events.24 = {
 		if = {
 			limit = {
 				ruler.popularity > 50
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_very_large
 			}
@@ -3136,7 +2943,7 @@ revolution_pulse_events.24 = {
 		else_if = {
 			limit = {
 				ruler.popularity > 25
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_large
 			}
@@ -3150,7 +2957,7 @@ revolution_pulse_events.24 = {
 		else_if = {
 			limit = {
 				ruler.popularity > 0
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_medium
 			}
@@ -3164,7 +2971,7 @@ revolution_pulse_events.24 = {
 		else_if = {
 			limit = {
 				ruler.popularity > -25
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_small
 			}
@@ -3178,7 +2985,7 @@ revolution_pulse_events.24 = {
 		else_if = {
 			limit = {
 				ruler.popularity > -50
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_advance_small
 			}
@@ -3201,11 +3008,13 @@ revolution_pulse_events.24 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.24.b
 		trigger = {
-			institution_investment_level = { institution = institution_criminal_justice_system value >= 3 }
+			institution_investment_level = {
+				institution = institution_criminal_justice_system
+				value >= 3
+			}
 		}
 		highlighted_option = yes
 		ruler = {
@@ -3238,25 +3047,19 @@ revolution_pulse_events.24 = {
 revolution_pulse_events.25 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.25.t
 	desc = revolution_pulse_events.25.d
 	flavor = revolution_pulse_events.25.f
-
 	category = revolution
-
 	event_image = {
 		video = "southamerica_public_figure_assassination"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
 			liberal_revolution_ongoing = yes
@@ -3270,20 +3073,18 @@ revolution_pulse_events.25 = {
 				value < neutral
 			}
 		}
-		has_law = law_type:law_hereditary
+		#has_law = law_type:law_hereditary
 		revolution_progress_high = yes
 		any_scope_character = {
 			is_heir = yes
 		}
 	}
-
 	cancellation_trigger = {
-		NOR = { 
-			socialist_revolution_ongoing = yes 
-			liberal_revolution_ongoing = yes 
+		NOR = {
+			socialist_revolution_ongoing = yes
+			liberal_revolution_ongoing = yes
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_character = {
@@ -3298,18 +3099,23 @@ revolution_pulse_events.25 = {
 					is_female = yes
 				}
 			}
-			set_variable = { name = ruler_female months = 12 }
+			set_variable = {
+				name = ruler_female
+				months = 12
+			}
 		}
 		else = {
-			set_variable = { name = ruler_male months = 12 }
+			set_variable = {
+				name = ruler_male
+				months = 12
+			}
 		}
 		capital = {
 			save_scope_as = capital_scope
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.25.a 
+		name = revolution_pulse_events.25.a
 		default_option = yes
 		show_as_tooltip = {
 			ruler = {
@@ -3319,7 +3125,7 @@ revolution_pulse_events.25 = {
 		if = {
 			limit = {
 				ruler.popularity > 50
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_large
 			}
@@ -3341,7 +3147,7 @@ revolution_pulse_events.25 = {
 		else_if = {
 			limit = {
 				ruler.popularity > 25
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_medium
 			}
@@ -3363,7 +3169,7 @@ revolution_pulse_events.25 = {
 		else_if = {
 			limit = {
 				ruler.popularity > 0
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_small
 			}
@@ -3380,7 +3186,7 @@ revolution_pulse_events.25 = {
 		else_if = {
 			limit = {
 				ruler.popularity > -25
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_advance_medium
 			}
@@ -3393,7 +3199,7 @@ revolution_pulse_events.25 = {
 		else_if = {
 			limit = {
 				ruler.popularity > -50
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_advance_large
 			}
@@ -3419,8 +3225,8 @@ revolution_pulse_events.25 = {
 			}
 		}
 	}
-
-	option = { #Inigo Montoya
+	option = {
+		#Inigo Montoya
 		name = revolution_pulse_events.25.b
 		show_as_tooltip = {
 			ruler = {
@@ -3430,7 +3236,7 @@ revolution_pulse_events.25 = {
 		if = {
 			limit = {
 				ruler.popularity > 50
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_large
 			}
@@ -3452,7 +3258,7 @@ revolution_pulse_events.25 = {
 		else_if = {
 			limit = {
 				ruler.popularity > 25
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_medium
 			}
@@ -3474,7 +3280,7 @@ revolution_pulse_events.25 = {
 		else_if = {
 			limit = {
 				ruler.popularity > 0
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_retreat_small
 			}
@@ -3491,7 +3297,7 @@ revolution_pulse_events.25 = {
 		else_if = {
 			limit = {
 				ruler.popularity > -25
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_advance_medium
 			}
@@ -3504,7 +3310,7 @@ revolution_pulse_events.25 = {
 		else_if = {
 			limit = {
 				ruler.popularity > -50
-			}	
+			}
 			scope:ongoing_revolution = {
 				add_civil_war_progress = revolution_advance_large
 			}
@@ -3553,15 +3359,11 @@ revolution_pulse_events.25 = {
 revolution_pulse_events.26 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.26.t
 	desc = revolution_pulse_events.26.d
 	flavor = revolution_pulse_events.26.f
-
 	category = revolution
-
 	event_image = {
 		trigger = {
 			religion = rel:jewish
@@ -3633,13 +3435,11 @@ revolution_pulse_events.26 = {
 		}
 		video = "africa_animism"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_interest_group = {
 			is_marginal = no
@@ -3650,24 +3450,23 @@ revolution_pulse_events.26 = {
 			}
 		}
 		NOT = {
-			has_law = law_type:law_religious_institutions
+			#has_law = law_type:law_religious_institutions
 		}
 		revolution_progress_medium = yes
 	}
-
 	cancellation_trigger = {
-		NOT = { any_revolution_ongoing = yes }
+		NOT = {
+			any_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_moralists = {
 			save_scope_as = devout_ig
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.26.a 
+		name = revolution_pulse_events.26.a
 		default_option = yes
 		scope:devout_ig = {
 			add_modifier = {
@@ -3683,7 +3482,6 @@ revolution_pulse_events.26 = {
 			add_civil_war_progress = revolution_retreat_small
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.26.b
 		scope:ongoing_revolution = {
@@ -3701,25 +3499,19 @@ revolution_pulse_events.26 = {
 revolution_pulse_events.27 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.27.t
 	desc = revolution_pulse_events.27.d
 	flavor = revolution_pulse_events.27.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_barricade"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_interest_group = {
 			is_marginal = no
@@ -3738,14 +3530,14 @@ revolution_pulse_events.27 = {
 			turmoil > 0.2
 		}
 		NOT = {
-			has_law = law_type:law_religious_institutions
+			#has_law = law_type:law_religious_institutions
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { any_revolution_ongoing = yes }
+		NOT = {
+			any_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_state = {
@@ -3759,9 +3551,8 @@ revolution_pulse_events.27 = {
 			save_scope_as = devout_ig
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.27.a 
+		name = revolution_pulse_events.27.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_retreat_medium
@@ -3780,7 +3571,6 @@ revolution_pulse_events.27 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.27.b
 		scope:ongoing_revolution = {
@@ -3801,25 +3591,19 @@ revolution_pulse_events.27 = {
 revolution_pulse_events.28 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.28.t
 	desc = revolution_pulse_events.28.d
 	flavor = revolution_pulse_events.28.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_barricade"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		reactionary_revolution_ongoing = yes
 		revolution_progress_medium = yes
@@ -3828,14 +3612,14 @@ revolution_pulse_events.28 = {
 			turmoil > 0.2
 		}
 		NOT = {
-			has_law = law_type:law_religious_institutions
+			#has_law = law_type:law_religious_institutions
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { reactionary_revolution_ongoing = yes }
+		NOT = {
+			reactionary_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_state = {
@@ -3849,15 +3633,13 @@ revolution_pulse_events.28 = {
 			save_scope_as = devout_ig
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.28.a 
+		name = revolution_pulse_events.28.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_medium
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.28.b
 		scope:ongoing_revolution = {
@@ -3875,15 +3657,11 @@ revolution_pulse_events.28 = {
 revolution_pulse_events.29 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.29.t
 	desc = revolution_pulse_events.29.d
 	flavor = revolution_pulse_events.29.f
-
 	category = revolution
-
 	event_image = {
 		trigger = {
 			religion = rel:jewish
@@ -3955,13 +3733,11 @@ revolution_pulse_events.29 = {
 		}
 		video = "africa_animism"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_fire.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_interest_group = {
 			is_marginal = no
@@ -3976,14 +3752,14 @@ revolution_pulse_events.29 = {
 			revolution_progress_medium = yes
 		}
 		NOT = {
-			has_law = law_type:law_religious_institutions
+			#has_law = law_type:law_religious_institutions
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { any_revolution_ongoing = yes }
+		NOT = {
+			any_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_moralists = {
@@ -3993,9 +3769,8 @@ revolution_pulse_events.29 = {
 			save_scope_as = capital_scope
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.29.a 
+		name = revolution_pulse_events.29.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_medium
@@ -4007,7 +3782,6 @@ revolution_pulse_events.29 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.29.b
 		scope:ongoing_revolution = {
@@ -4018,7 +3792,6 @@ revolution_pulse_events.29 = {
 			interest_group = scope:devout_ig
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.29.c
 		trigger = {
@@ -4036,25 +3809,19 @@ revolution_pulse_events.29 = {
 revolution_pulse_events.30 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.30.t
 	desc = revolution_pulse_events.30.d
 	flavor = revolution_pulse_events.30.f
-
 	category = revolution
-
 	event_image = {
 		video = "europenorthamerica_springtime_of_nations"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		reactionary_revolution_ongoing = yes
 		OR = {
@@ -4074,11 +3841,11 @@ revolution_pulse_events.30 = {
 			}
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { reactionary_revolution_ongoing = yes }
+		NOT = {
+			reactionary_revolution_ongoing = yes
+		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_scope_state = {
@@ -4100,9 +3867,8 @@ revolution_pulse_events.30 = {
 			save_scope_as = workers_militia_ig
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.30.a 
+		name = revolution_pulse_events.30.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_small
@@ -4124,7 +3890,6 @@ revolution_pulse_events.30 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.30.b
 		scope:ongoing_revolution = {
@@ -4148,25 +3913,19 @@ revolution_pulse_events.30 = {
 revolution_pulse_events.31 = {
 	type = country_event
 	placement = scope:martial_laws_state
-
 	duration = 3
-
 	title = revolution_pulse_events.31.t
 	desc = revolution_pulse_events.31.d
 	flavor = revolution_pulse_events.31.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_cops_march"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/bicorne_hat.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
@@ -4174,7 +3933,7 @@ revolution_pulse_events.31 = {
 			is_insurrectionary = yes
 		}
 		NOR = {
-			has_law = law_type:law_professional_military
+			#has_law = law_type:law_professional_military
 			any_country = {
 				has_war_with = root
 			}
@@ -4184,7 +3943,6 @@ revolution_pulse_events.31 = {
 			has_building = building_barracks
 		}
 	}
-
 	cancellation_trigger = {
 		OR = {
 			scope:armed_forces_ig_leader = {
@@ -4193,10 +3951,11 @@ revolution_pulse_events.31 = {
 			NOT = {
 				exists = scope:armed_forces_ig_leader
 			}
-			NOT = { any_revolution_ongoing = yes }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_securocrats = {
@@ -4214,9 +3973,8 @@ revolution_pulse_events.31 = {
 			save_scope_as = martial_laws_state
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.31.a 
+		name = revolution_pulse_events.31.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_small
@@ -4232,12 +3990,11 @@ revolution_pulse_events.31 = {
 			months = short_modifier_time
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.31.b
 		trigger = {
 			OR = {
-				has_law = law_type:law_professional_military
+				#has_law = law_type:law_professional_military
 			}
 		}
 		scope:ongoing_revolution = {
@@ -4250,7 +4007,6 @@ revolution_pulse_events.31 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.31.c
 		scope:ongoing_revolution = {
@@ -4272,28 +4028,22 @@ revolution_pulse_events.31 = {
 revolution_pulse_events.32 = {
 	type = country_event
 	placement = scope:vox_diaboli_state
-
 	duration = 3
-
 	title = revolution_pulse_events.32.t
 	desc = revolution_pulse_events.32.d
 	flavor = revolution_pulse_events.32.f
-
 	category = revolution
-
 	event_image = {
 		video = "europenorthamerica_political_extremism"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		NOT = {
-			has_law = law_type:law_state_atheism
+			#has_law = law_type:law_state_atheism
 		}
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
@@ -4301,7 +4051,7 @@ revolution_pulse_events.32 = {
 			is_insurrectionary = yes
 		}
 		NOR = {
-			has_law = law_type:law_religious_institutions
+			#has_law = law_type:law_religious_institutions
 			any_country = {
 				has_war_with = root
 			}
@@ -4316,7 +4066,6 @@ revolution_pulse_events.32 = {
 			}
 		}
 	}
-
 	cancellation_trigger = {
 		OR = {
 			scope:devout_ig_leader = {
@@ -4325,10 +4074,11 @@ revolution_pulse_events.32 = {
 			NOT = {
 				exists = scope:devout_ig_leader
 			}
-			NOT = { any_revolution_ongoing = yes }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_moralists = {
@@ -4346,7 +4096,7 @@ revolution_pulse_events.32 = {
 				any_scope_pop = {
 					has_state_religion = yes
 				}
-			}	
+			}
 			order_by = state_population
 			random_scope_pop = {
 				limit = {
@@ -4367,9 +4117,8 @@ revolution_pulse_events.32 = {
 			save_scope_as = vox_diaboli_state
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.32.a 
+		name = revolution_pulse_events.32.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_small
@@ -4385,7 +4134,6 @@ revolution_pulse_events.32 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.32.b
 		scope:ongoing_revolution = {
@@ -4400,7 +4148,6 @@ revolution_pulse_events.32 = {
 			religion = scope:minority_religion
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.32.c
 		scope:ongoing_revolution = {
@@ -4422,33 +4169,27 @@ revolution_pulse_events.32 = {
 revolution_pulse_events.33 = {
 	type = country_event
 	placement = scope:greed_is_good_state
-
 	duration = 3
-
 	title = revolution_pulse_events.33.t
 	desc = revolution_pulse_events.33.d
 	flavor = revolution_pulse_events.33.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_factory_closed"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
-		ig:ig_capitalists= {
+		ig:ig_capitalists = {
 			is_insurrectionary = yes
 		}
 		NOR = {
-			has_law = law_type:law_socialization
+			#has_law = law_type:law_socialization
 			any_country = {
 				has_war_with = root
 			}
@@ -4457,13 +4198,12 @@ revolution_pulse_events.33 = {
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
-					is_building_group = bg_light_industry 				
+					is_building_group = bg_light_industry
 					is_building_group = bg_heavy_industry
 				}
 			}
 		}
 	}
-
 	cancellation_trigger = {
 		OR = {
 			scope:industrialists_ig_leader = {
@@ -4472,13 +4212,14 @@ revolution_pulse_events.33 = {
 			NOT = {
 				exists = scope:industrialists_ig_leader
 			}
-			NOT = { any_revolution_ongoing = yes }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_capitalists= {
+		ig:ig_capitalists = {
 			save_scope_as = industrialists_ig
 			leader = {
 				save_scope_as = industrialists_ig_leader
@@ -4489,19 +4230,17 @@ revolution_pulse_events.33 = {
 				is_incorporated = yes
 				any_scope_building = {
 					OR = {
-						is_building_group = bg_light_industry 				
+						is_building_group = bg_light_industry
 						is_building_group = bg_heavy_industry
 					}
-				}	
+				}
 			}
 			order_by = gdp
-
 			save_scope_as = greed_is_good_state
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.33.a 
+		name = revolution_pulse_events.33.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_medium
@@ -4517,14 +4256,13 @@ revolution_pulse_events.33 = {
 				months = short_modifier_time
 			}
 		}
-		ig:ig_capitalists= {
+		ig:ig_capitalists = {
 			add_modifier = {
 				name = modifier_industrialists_negotiation_opinion
 				months = short_modifier_time
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.33.b
 		scope:ongoing_revolution = {
@@ -4540,7 +4278,6 @@ revolution_pulse_events.33 = {
 			multiplier = money_amount_multiplier_medium
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.33.c
 		scope:ongoing_revolution = {
@@ -4573,25 +4310,19 @@ revolution_pulse_events.33 = {
 revolution_pulse_events.34 = {
 	type = country_event
 	placement = scope:little_dark_age_state
-
 	duration = 3
-
 	title = revolution_pulse_events.34.t
 	desc = revolution_pulse_events.34.d
 	flavor = revolution_pulse_events.34.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_vandalized_storefront"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
@@ -4599,7 +4330,7 @@ revolution_pulse_events.34 = {
 			is_insurrectionary = yes
 		}
 		NOR = {
-			has_law = law_type:law_informal_schooling
+			#has_law = law_type:law_informal_schooling
 			any_country = {
 				has_war_with = root
 			}
@@ -4609,7 +4340,6 @@ revolution_pulse_events.34 = {
 			is_incorporated = yes
 		}
 	}
-
 	cancellation_trigger = {
 		OR = {
 			scope:intelligentsia_ig_leader = {
@@ -4618,10 +4348,11 @@ revolution_pulse_events.34 = {
 			NOT = {
 				exists = scope:intelligentsia_ig_leader
 			}
-			NOT = { any_revolution_ongoing = yes }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_urbanists = {
@@ -4633,19 +4364,17 @@ revolution_pulse_events.34 = {
 		ordered_scope_state = {
 			limit = {
 				is_incorporated = yes
-				has_building = building_university	
+				has_building = building_university
 			}
 			order_by = gdp
-
 			save_scope_as = little_dark_age_state
 		}
 		random_primary_culture = {
 			save_scope_as = primary_culture_scope
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.34.a 
+		name = revolution_pulse_events.34.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_small
@@ -4660,7 +4389,6 @@ revolution_pulse_events.34 = {
 			multiplier = 2
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.34.b
 		scope:ongoing_revolution = {
@@ -4673,7 +4401,6 @@ revolution_pulse_events.34 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.34.c
 		scope:ongoing_revolution = {
@@ -4685,11 +4412,11 @@ revolution_pulse_events.34 = {
 		}
 		scope:little_dark_age_state = {
 			remove_building = building_university
-			create_building={
- 				building="building_university"
- 				level=1
- 				reserves=1
- 			}
+			create_building = {
+				building = "building_university"
+				level = 1
+				reserves = 1
+			}
 		}
 		add_modifier = {
 			name = modifier_intelligentsia_plan
@@ -4701,25 +4428,19 @@ revolution_pulse_events.34 = {
 revolution_pulse_events.35 = {
 	type = country_event
 	placement = scope:tragedy_of_commons_state
-
 	duration = 3
-
 	title = revolution_pulse_events.35.t
 	desc = revolution_pulse_events.35.d
 	flavor = revolution_pulse_events.35.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_realist_household"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
@@ -4727,7 +4448,7 @@ revolution_pulse_events.35 = {
 			is_insurrectionary = yes
 		}
 		NOR = {
-			has_law = law_type:law_council_elective
+			#has_law = law_type:law_council_elective
 			any_country = {
 				has_war_with = root
 			}
@@ -4736,7 +4457,6 @@ revolution_pulse_events.35 = {
 			is_incorporated = yes
 		}
 	}
-
 	cancellation_trigger = {
 		OR = {
 			scope:landowners_ig_leader = {
@@ -4745,10 +4465,11 @@ revolution_pulse_events.35 = {
 			NOT = {
 				exists = scope:landowners_ig_leader
 			}
-			NOT = { any_revolution_ongoing = yes }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_elites = {
@@ -4762,13 +4483,11 @@ revolution_pulse_events.35 = {
 				is_incorporated = yes
 			}
 			order_by = state_population
-
 			save_scope_as = tragedy_of_commons_state
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.35.a 
+		name = revolution_pulse_events.35.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_medium
@@ -4786,7 +4505,6 @@ revolution_pulse_events.35 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.35.b
 		scope:ongoing_revolution = {
@@ -4797,7 +4515,6 @@ revolution_pulse_events.35 = {
 			months = normal_modifier_time
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.35.c
 		scope:ongoing_revolution = {
@@ -4819,25 +4536,19 @@ revolution_pulse_events.35 = {
 revolution_pulse_events.36 = {
 	type = country_event
 	placement = scope:red_tape_state
-
 	duration = 3
-
 	title = revolution_pulse_events.36.t
 	desc = revolution_pulse_events.36.d
 	flavor = revolution_pulse_events.36.f
-
 	category = revolution
-
 	event_image = {
 		video = "middleeast_courtroom_upheaval"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
@@ -4854,7 +4565,6 @@ revolution_pulse_events.36 = {
 			has_building = building_government_administration
 		}
 	}
-
 	cancellation_trigger = {
 		OR = {
 			scope:petty_bourgeoisie_ig_leader = {
@@ -4863,10 +4573,11 @@ revolution_pulse_events.36 = {
 			NOT = {
 				exists = scope:petty_bourgeoisie_ig_leader
 			}
-			NOT = { any_revolution_ongoing = yes }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_entrepreneurs = {
@@ -4881,13 +4592,11 @@ revolution_pulse_events.36 = {
 				has_building = building_government_administration
 			}
 			order_by = gdp
-
 			save_scope_as = red_tape_state
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.36.a 
+		name = revolution_pulse_events.36.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_medium
@@ -4897,7 +4606,6 @@ revolution_pulse_events.36 = {
 			months = short_modifier_time
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.36.b
 		scope:ongoing_revolution = {
@@ -4911,7 +4619,6 @@ revolution_pulse_events.36 = {
 			months = short_modifier_time
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.36.c
 		scope:ongoing_revolution = {
@@ -4927,25 +4634,19 @@ revolution_pulse_events.36 = {
 revolution_pulse_events.37 = {
 	type = country_event
 	placement = scope:rot_on_vine_state
-
 	duration = 3
-
 	title = revolution_pulse_events.37.t
 	desc = revolution_pulse_events.37.d
 	flavor = revolution_pulse_events.37.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_realist_household"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
@@ -4961,7 +4662,6 @@ revolution_pulse_events.37 = {
 			is_incorporated = yes
 		}
 	}
-
 	cancellation_trigger = {
 		OR = {
 			scope:rural_folk_ig_leader = {
@@ -4970,10 +4670,11 @@ revolution_pulse_events.37 = {
 			NOT = {
 				exists = scope:rural_folk_ig_leader
 			}
-			NOT = { any_revolution_ongoing = yes }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_ruralists = {
@@ -5000,9 +4701,8 @@ revolution_pulse_events.37 = {
 			save_scope_as = neighbour_country
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.37.a 
+		name = revolution_pulse_events.37.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_medium
@@ -5014,14 +4714,13 @@ revolution_pulse_events.37 = {
 				multiplier = 0.5
 			}
 		}
-		ig:ig_securocrats = {	
+		ig:ig_securocrats = {
 			add_modifier = {
 				name = modifier_armed_forces_farm_seizures
 				months = short_modifier_time
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.37.b
 		scope:ongoing_revolution = {
@@ -5038,7 +4737,6 @@ revolution_pulse_events.37 = {
 			months = short_modifier_time
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.37.c
 		scope:ongoing_revolution = {
@@ -5056,25 +4754,19 @@ revolution_pulse_events.37 = {
 revolution_pulse_events.38 = {
 	type = country_event
 	placement = scope:shall_not_be_infringed_state
-
 	duration = 3
-
 	title = revolution_pulse_events.38.t
 	desc = revolution_pulse_events.38.d
 	flavor = revolution_pulse_events.38.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_barricade"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
@@ -5082,7 +4774,7 @@ revolution_pulse_events.38 = {
 			is_insurrectionary = yes
 		}
 		NOR = {
-			has_law = law_type:law_decentralized_police
+			#has_law = law_type:law_decentralized_police
 			any_country = {
 				has_war_with = root
 			}
@@ -5092,7 +4784,6 @@ revolution_pulse_events.38 = {
 			has_building = building_barracks
 		}
 	}
-
 	cancellation_trigger = {
 		OR = {
 			scope:trade_unions_ig_leader = {
@@ -5101,10 +4792,11 @@ revolution_pulse_events.38 = {
 			NOT = {
 				exists = scope:trade_unions_ig_leader
 			}
-			NOT = { any_revolution_ongoing = yes }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ig:ig_laborists = {
@@ -5125,9 +4817,8 @@ revolution_pulse_events.38 = {
 			}
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.38.a 
+		name = revolution_pulse_events.38.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_medium
@@ -5157,10 +4848,9 @@ revolution_pulse_events.38 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.38.b
-		trigger = {	
+		trigger = {
 			empty_agitator_slots >= 1
 		}
 		scope:ongoing_revolution = {
@@ -5188,7 +4878,6 @@ revolution_pulse_events.38 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.38.c
 		scope:ongoing_revolution = {
@@ -5210,42 +4899,42 @@ revolution_pulse_events.38 = {
 revolution_pulse_events.39 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.39.t
 	desc = revolution_pulse_events.39.d
 	flavor = revolution_pulse_events.39.f
-
 	category = revolution
-
 	event_image = {
 		video = "unspecific_politicians_arguing"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		any_interest_group = {
-			is_in_government = no	
+			is_in_government = no
 			is_marginal = no
-			is_insurrectionary = no	
+			is_insurrectionary = no
 		}
-		any_interest_group = { is_insurrectionary = yes }
+		any_interest_group = {
+			is_insurrectionary = yes
+		}
 	}
-
 	cancellation_trigger = {
 		OR = {
-			NOT = { any_revolution_ongoing = yes }
-			NOT = { any_interest_group = { is_insurrectionary = yes } }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
+			NOT = {
+				any_interest_group = {
+					is_insurrectionary = yes
+				}
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		random_interest_group = {
@@ -5256,16 +4945,15 @@ revolution_pulse_events.39 = {
 		}
 		random_interest_group = {
 			limit = {
-				is_in_government = no	
+				is_in_government = no
 				is_marginal = no
-				is_insurrectionary = no	
+				is_insurrectionary = no
 			}
 			save_scope_as = defecting_ig
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.39.a 
+		name = revolution_pulse_events.39.a
 		default_option = yes
 		scope:revolting_ig = {
 			add_modifier = {
@@ -5280,7 +4968,6 @@ revolution_pulse_events.39 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.39.b
 		scope:revolting_ig = {
@@ -5292,12 +4979,12 @@ revolution_pulse_events.39 = {
 		}
 		scope:defecting_ig = {
 			add_modifier = {
-				name = modifier_coaxing_defectors_back 
+				name = modifier_coaxing_defectors_back
 				months = short_modifier_time
 			}
 		}
 		add_modifier = {
-			name = modifier_coaxing_defectors 
+			name = modifier_coaxing_defectors
 			months = short_modifier_time
 		}
 	}
@@ -5306,37 +4993,30 @@ revolution_pulse_events.39 = {
 revolution_pulse_events.40 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = revolution_pulse_events.40.t
 	desc = revolution_pulse_events.40.d
 	flavor = revolution_pulse_events.40.f
-
 	category = revolution
-
 	event_image = {
 		video = "votp_hostile_court"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_revolution_ongoing = yes
 		any_interest_group = {
-			is_in_government = no	
+			is_in_government = no
 			is_marginal = no
-			is_insurrectionary = no	
+			is_insurrectionary = no
 		}
 		any_interest_group = {
-			is_insurrectionary = yes	
+			is_insurrectionary = yes
 		}
 	}
-
 	cancellation_trigger = {
 		OR = {
 			scope:governor_person = {
@@ -5345,10 +5025,11 @@ revolution_pulse_events.40 = {
 			NOT = {
 				exists = scope:governor_person
 			}
-			NOT = { any_revolution_ongoing = yes }
+			NOT = {
+				any_revolution_ongoing = yes
+			}
 		}
 	}
-	
 	immediate = {
 		save_revolution_scopes = yes
 		ruler = {
@@ -5362,16 +5043,15 @@ revolution_pulse_events.40 = {
 		}
 		random_interest_group = {
 			limit = {
-				is_in_government = no	
+				is_in_government = no
 				is_marginal = no
-				is_insurrectionary = no	
+				is_insurrectionary = no
 			}
 			save_scope_as = defecting_ig
 		}
 	}
-	
 	option = {
-		name = revolution_pulse_events.40.a 
+		name = revolution_pulse_events.40.a
 		default_option = yes
 		scope:ongoing_revolution = {
 			add_civil_war_progress = revolution_advance_small
@@ -5380,7 +5060,7 @@ revolution_pulse_events.40 = {
 			50 = {
 				scope:defecting_ig = {
 					add_modifier = {
-						name = modifier_new_bedfellows 
+						name = modifier_new_bedfellows
 						months = short_modifier_time
 					}
 				}
@@ -5401,7 +5081,6 @@ revolution_pulse_events.40 = {
 			}
 		}
 	}
-
 	option = {
 		name = revolution_pulse_events.40.b
 		scope:ongoing_revolution = {
@@ -5409,7 +5088,7 @@ revolution_pulse_events.40 = {
 		}
 		ruler = {
 			add_modifier = {
-				name = modifier_embarrassed_by_judgement_failure 
+				name = modifier_embarrassed_by_judgement_failure
 				months = short_modifier_time
 			}
 		}

@@ -335,7 +335,7 @@ prostitution.3 = {
 			value = 3
 		}
 		NOT = {
-			has_law = law_type:law_outlawed_dissent
+			#has_law = law_type:law_outlawed_dissent
 		}
 		any_interest_group = {
 			is_in_government = yes
@@ -413,7 +413,7 @@ prostitution.3 = {
 				modifier = {
 					if = {
 						limit = {
-							has_law = law_type:law_protected_speech
+							#has_law = law_type:law_protected_speech
 						}
 					}
 					add = 25
@@ -421,7 +421,7 @@ prostitution.3 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_censorship
+							#has_law = law_type:law_censorship
 						}
 					}
 					add_modifier = {
@@ -440,7 +440,7 @@ prostitution.3 = {
 				modifier = {
 					if = {
 						limit = {
-							has_law = law_type:law_censorship
+							#has_law = law_type:law_censorship
 						}
 					}
 					add = 25
@@ -484,7 +484,7 @@ prostitution.4 = {
 				institution = institution_criminal_justice_system
 				value >= 3
 			}
-			has_law = law_type:law_militarized_police
+			#has_law = law_type:law_militarized_police
 		}
 		any_scope_state = {
 			is_incorporated = yes

@@ -35,7 +35,7 @@ je_bpm_socialist_electoralism = {
 			text = "bpm_je_single_party_has_elections"
 			bpm_country_laws_no_voting = no
 		}
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 		bpm_banned_socialist_parties = no
 	}
 	on_weekly_pulse = {
@@ -100,7 +100,7 @@ je_bpm_propaganda_of_the_deed = {
 			has_technology_researched = egalitarianism
 			has_global_variable = first_intl_chain_complete_var
 		}
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 		bpm_performance_significant_country = yes
 	}
 
@@ -133,7 +133,7 @@ je_bpm_propaganda_of_the_deed = {
 			text = "bpm_first_intl_happened"
 			has_global_variable = first_intl_chain_complete_var
 		}
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 		custom_tooltip = {
 			text = "bpm_anarchists_are_present"
 			has_variable = local_anarchists_split_var
@@ -311,7 +311,7 @@ je_bpm_agrarian_socialism = {
 			has_technology_researched = egalitarianism
 			has_global_variable = first_intl_chain_complete_var
 		}
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 		bpm_performance_significant_country = yes
 	}
 
@@ -343,7 +343,7 @@ je_bpm_agrarian_socialism = {
 			text = "bpm_first_intl_happened"
 			has_global_variable = first_intl_chain_complete_var
 		}
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 		has_technology_researched = labor_movement
 		custom_tooltip = {
 			text = "bpm_peasant_population_gt_30"
@@ -353,7 +353,7 @@ je_bpm_agrarian_socialism = {
 	}
 
 	complete = {
-		has_law = law_type:law_council_republic
+		#has_law = law_type:law_council_republic
 		custom_tooltip = {
 			text = "bpm_journal_final_stage"
 			var:bpm_je_agrarian_socialism > 66
@@ -530,7 +530,7 @@ je_bpm_syndicalism = {
 	is_shown_when_inactive = {
 		has_variable = bpm_peasant_population_yandev_var
 		has_global_variable = bpm_anarchist_potd_ended_in_gp
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 		bpm_performance_significant_country = yes
 	}
 
@@ -552,12 +552,12 @@ je_bpm_syndicalism = {
 			text = BPM_VALUE_POTD_ENDED_IN_GP
 			has_global_variable = bpm_anarchist_potd_ended_in_gp
 		}
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 		bpm_country_proletarian_are_popular = yes
 	}
 
 	complete = {
-		has_law = law_type:law_council_republic
+		#has_law = law_type:law_council_republic
 		custom_tooltip = {
 			text = "bpm_journal_final_stage"
 			has_variable = bpm_je_syndicalism
@@ -625,7 +625,7 @@ je_bpm_syndicalism = {
 						limit = { 
 							bpm_ig_enabled = yes 
 							NOT = { 
-								owner = { has_law = law_type:law_state_controlled_labor_unions } 
+								owner = { #has_law = law_type:law_state_controlled_labor_unions } 
 							}
 						}
 						leader = { set_ideology = ideology:ideology_syndicalist }
@@ -653,7 +653,7 @@ je_bpm_syndicalism = {
 							NOR = {
 								has_ideology = ideology:ideology_dop_syndical_unionist
 								has_ideology = ideology:ideology_dop_syndicalist
-								owner = { has_law = law_type:law_state_controlled_labor_unions } 
+								owner = { #has_law = law_type:law_state_controlled_labor_unions } 
 							}
 						}
 						bpm_remove_all_dop_ideologies = yes

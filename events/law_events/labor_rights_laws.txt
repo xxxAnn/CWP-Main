@@ -17,7 +17,7 @@ labor_rights.1 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		has_law = law_type:law_no_workers_protections
+		#has_law = law_type:law_no_workers_protections
 		OR = {
 			is_enacting_law = law_type:law_wrongful_dismissal_protections
 			is_enacting_law = law_type:law_mandatory_parental_leave
@@ -98,7 +98,7 @@ labor_rights.4 = {
 		OR = {
 			AND = {
 				is_enacting_law = law_type:law_wrongful_dismissal_protections
-				has_law = law_type:law_no_workers_protections
+				#has_law = law_type:law_no_workers_protections
 			}
 			is_enacting_law = law_type:law_mandatory_parental_leave
 		}
@@ -163,7 +163,7 @@ labor_rights.5 = {
 		OR = {
 			AND = {
 				is_enacting_law = law_type:law_wrongful_dismissal_protections
-				has_law = law_type:law_no_workers_protections
+				#has_law = law_type:law_no_workers_protections
 			}
 			is_enacting_law = law_type:law_mandatory_parental_leave
 		}
@@ -242,7 +242,7 @@ labor_rights.6 = {
 		OR = {
 			AND = {
 				is_enacting_law = law_type:law_wrongful_dismissal_protections
-				has_law = law_type:law_no_workers_protections
+				#has_law = law_type:law_no_workers_protections
 			}
 			is_enacting_law = law_type:law_mandatory_parental_leave
 		}

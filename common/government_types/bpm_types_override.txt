@@ -5,7 +5,7 @@
 	female_ruler = "RULER_TITLE_GENERAL"
 	
 	possible = {
-		has_law = law_type:law_military_junta
+		#has_law = law_type:law_military_junta
 	}
 
 	on_government_type_change = {
@@ -23,9 +23,9 @@ gov_soviet_single_party_state = {
 	female_ruler = "RULER_GENERAL_SECRETARY"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_party_single
-		NOT = { has_law = law_type:law_syndicalism }
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_party_single
+		NOT = { #has_law = law_type:law_syndicalism }
 		OR = {
 			root.capital.region = sr:region_russia
 			root.capital.region = sr:region_dnieper
@@ -47,9 +47,9 @@ gov_council_single_party_state = {
 	female_ruler = "RULER_GENERAL_SECRETARY"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_party_single
-		NOT = { has_law = law_type:law_syndicalism }
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_party_single
+		NOT = { #has_law = law_type:law_syndicalism }
 	}
 
 	on_government_type_change = {
@@ -67,9 +67,9 @@ gov_papal_commune = {
 	female_ruler = "RULER_PONTIFEX_POPULI"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_state_religion
-		NOT = { has_law = law_type:law_syndicalism }
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_state_religion
+		NOT = { #has_law = law_type:law_syndicalism }
 		exists = c:PAP
 		c:PAP = ROOT
 	}
@@ -89,13 +89,13 @@ gov_soviet_dictatorship = {
 	female_ruler = "RULER_PREMIER"
 	
 	possible = {
-		has_law = law_type:law_council_republic
+		#has_law = law_type:law_council_republic
 		OR = {
-			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
-			has_law = law_type:law_military_junta
+			#has_law = law_type:law_autocracy
+			#has_law = law_type:law_oligarchy
+			#has_law = law_type:law_military_junta
 		}
-		NOT = { has_law = law_type:law_syndicalism }
+		NOT = { #has_law = law_type:law_syndicalism }
 		OR = {
 			root.capital.region = sr:region_russia
 			root.capital.region = sr:region_dnieper
@@ -118,11 +118,11 @@ gov_soviet_republic = {
 	female_ruler = "RULER_PREMIER"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		NOT = { has_law = law_type:law_syndicalism }
+		#has_law = law_type:law_council_republic
+		NOT = { #has_law = law_type:law_syndicalism }
 		country_has_voting_franchise = yes
 		NOT = { 
-			has_law = law_type:law_party_single
+			#has_law = law_type:law_party_single
 		}
 		OR = {
 			root.capital.region = sr:region_russia
@@ -145,12 +145,12 @@ gov_council_dictatorship = {
 	female_ruler = "RULER_CHAIRWOMAN"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		NOT = { has_law = law_type:law_syndicalism }
+		#has_law = law_type:law_council_republic
+		NOT = { #has_law = law_type:law_syndicalism }
 		OR = {
-			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
-			has_law = law_type:law_military_junta
+			#has_law = law_type:law_autocracy
+			#has_law = law_type:law_oligarchy
+			#has_law = law_type:law_military_junta
 		}
 	}
 
@@ -170,9 +170,9 @@ gov_phalanstere = {
 	
 	possible = {
 		country_has_primary_culture = cu:french
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_technocracy
-		NOT = { has_law = law_type:law_syndicalism }
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_technocracy
+		NOT = { #has_law = law_type:law_syndicalism }
 	}
 
 	on_government_type_change = {
@@ -190,9 +190,9 @@ gov_cybernetic_state = {
 	female_ruler = "RULER_FOREWOMAN"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_technocracy
-		NOT = { has_law = law_type:law_syndicalism }
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_technocracy
+		NOT = { #has_law = law_type:law_syndicalism }
 	}
 
 	on_government_type_change = {
@@ -211,11 +211,11 @@ gov_council_republic = {
 	female_ruler = "RULER_CHAIRWOMAN"
 	
 	possible = {
-		has_law = law_type:law_council_republic
+		#has_law = law_type:law_council_republic
 		country_has_voting_franchise = yes
-		NOT = { has_law = law_type:law_syndicalism }
+		NOT = { #has_law = law_type:law_syndicalism }
 		NOT = { 
-			has_law = law_type:law_party_single
+			#has_law = law_type:law_party_single
 		}
 	}
 
@@ -235,9 +235,9 @@ gov_anarchist_commune = {
 	female_ruler = "RULER_REPRESENTATIVE"
 	
 	possible = {
-		has_law = law_type:law_council_republic
-		has_law = law_type:law_anarchy
-		NOT = { has_law = law_type:law_syndicalism }
+		#has_law = law_type:law_council_republic
+		#has_law = law_type:law_anarchy
+		NOT = { #has_law = law_type:law_syndicalism }
 	}
 
 	on_government_type_change = {

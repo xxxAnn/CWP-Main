@@ -290,7 +290,7 @@ bpm_initialize_marlibs = {
 			}
 			else_if = {
 				limit = {
-					ROOT = { has_law = law_type:law_federated }
+					ROOT = { #has_law = law_type:law_federated }
 				}
 				add_ideology = ideology_dop_technocrat
 				add_ideology = ideology_sta_federated_state

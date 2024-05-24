@@ -118,10 +118,10 @@ law_party_reactionary_only = {
 	}
 
 	can_enact = {
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 	}
 	is_visible = {
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 	}
 
 	on_activate = {
@@ -180,10 +180,10 @@ law_party_anti_socialist = {
 	}
 
 	can_enact = {
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 	}
 	is_visible = {
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 	}
 
 	on_activate = {
@@ -242,10 +242,10 @@ law_party_socialist_only = {
 	}
 
 	can_enact = {
-		has_law = law_type:law_council_republic
+		#has_law = law_type:law_council_republic
 	}
 	is_visible = {
-		has_law = law_type:law_council_republic
+		#has_law = law_type:law_council_republic
 	}
 
 	on_activate = {
@@ -356,10 +356,10 @@ law_party_liberal_only = {
 	}
 
 	can_enact = {
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 	}
 	is_visible = {
-		NOT = { has_law = law_type:law_council_republic }
+		NOT = { #has_law = law_type:law_council_republic }
 	}
 
 	unlocking_laws = {
@@ -431,7 +431,7 @@ law_party_single = {
 
 
 	can_enact = {
-		has_law = law_type:law_party_single
+		#has_law = law_type:law_party_single
 	}
 
 	modifier = {

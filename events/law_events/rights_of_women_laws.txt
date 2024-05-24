@@ -1,27 +1,21 @@
 ﻿namespace = rights_of_women_laws
-
-rights_of_women_laws.1 = { #Landmark case
+rights_of_women_laws.1 = {
+	#Landmark case
 	type = country_event
 	placement = root
 	title = rights_of_women_laws.1.t
 	desc = rights_of_women_laws.1.d
 	flavor = rights_of_women_laws.1.f
-
 	category = enactment
-
 	duration = 3
-
-
 	event_image = {
 		video = "middleeast_courtroom_upheaval"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_interest_group = {
 			is_marginal = no
@@ -40,17 +34,16 @@ rights_of_women_laws.1 = { #Landmark case
 				is_enacting_law = law_type:law_women_in_the_workplace
 			}
 			OR = {
-				has_law = law_type:law_legal_guardianship
-				has_law = law_type:law_women_own_property
+				#has_law = law_type:law_legal_guardianship
+				#has_law = law_type:law_women_own_property
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
-    	random_interest_group = {
+			save_scope_as = current_law_scope
+		}
+		random_interest_group = {
 			limit = {
 				is_marginal = no
 				law_stance = {
@@ -59,20 +52,20 @@ rights_of_women_laws.1 = { #Landmark case
 				}
 			}
 			save_scope_as = anti_women_ig
-    	}	
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { #
+	option = {
+		#
 		name = rights_of_women_laws.1.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = womens_rights_divorce_advance
 		}
-
 		scope:anti_women_ig = {
 			add_modifier = {
 				name = womens_rights_divorce_ig_anger
@@ -80,7 +73,7 @@ rights_of_women_laws.1 = { #Landmark case
 			}
 		}
 	}
-	option = { 
+	option = {
 		name = rights_of_women_laws.1.b
 		add_enactment_modifier = {
 			name = womens_rights_divorce_lesser_advance
@@ -88,32 +81,27 @@ rights_of_women_laws.1 = { #Landmark case
 	}
 }
 
-rights_of_women_laws.2 = { #Female Travel Writer
+rights_of_women_laws.2 = {
+	#Female Travel Writer
 	type = country_event
 	placement = root
 	title = rights_of_women_laws.2.t
 	desc = rights_of_women_laws.2.d
 	flavor = rights_of_women_laws.2.f
-
 	category = enactment
-
 	duration = 3
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-
 	event_image = {
 		video = "middleeast_middleclass_cafe"
 	}
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_interest_group = {
-				is_marginal = no
-				law_stance = {
+			is_marginal = no
+			law_stance = {
 				law = owner.currently_enacting_law.type
 				value <= neutral
 			}
@@ -129,17 +117,16 @@ rights_of_women_laws.2 = { #Female Travel Writer
 				is_enacting_law = law_type:law_women_in_the_workplace
 			}
 			OR = {
-				has_law = law_type:law_legal_guardianship
-				has_law = law_type:law_women_own_property
+				#has_law = law_type:law_legal_guardianship
+				#has_law = law_type:law_women_own_property
 			}
 		}
 	}
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
-
-    	random_interest_group = {
+			save_scope_as = current_law_scope
+		}
+		random_interest_group = {
 			limit = {
 				is_marginal = no
 				law_stance = {
@@ -148,22 +135,22 @@ rights_of_women_laws.2 = { #Female Travel Writer
 				}
 			}
 			save_scope_as = anti_women_ig
-    	}
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-	
-	option = { #
+	option = {
+		#
 		name = rights_of_women_laws.2.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = womens_rights_travel_writing_advance
 		}
 	}
-	
-	option = { 
+	option = {
 		name = rights_of_women_laws.2.b
 		random_list = {
 			1 = {
@@ -180,27 +167,24 @@ rights_of_women_laws.2 = { #Female Travel Writer
 	}
 }
 
-rights_of_women_laws.3 = { #stall
+rights_of_women_laws.3 = {
+	#stall
 	type = country_event
 	placement = root
 	title = rights_of_women_laws.3.t
 	desc = rights_of_women_laws.3.d
 	flavor = rights_of_women_laws.3.f
-
 	category = enactment
-
 	duration = 3
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	event_image = { #Probably can find a better event image
+	event_image = {
+		#Probably can find a better event image
 		video = "unspecific_automobile"
 	}
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		NOR = {
 			has_modifier = womens_hysteria_stall
@@ -213,8 +197,8 @@ rights_of_women_laws.3 = { #stall
 				is_enacting_law = law_type:law_women_in_the_workplace
 			}
 			OR = {
-				has_law = law_type:law_legal_guardianship
-				has_law = law_type:law_women_own_property
+				#has_law = law_type:law_legal_guardianship
+				#has_law = law_type:law_women_own_property
 			}
 		}
 		any_interest_group = {
@@ -227,14 +211,14 @@ rights_of_women_laws.3 = { #stall
 	}
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
+			save_scope_as = current_law_scope
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
 	option = {
 		name = rights_of_women_laws.3.a
 		default_option = yes
@@ -242,7 +226,7 @@ rights_of_women_laws.3 = { #stall
 			name = womens_hysteria_stall
 		}
 	}
-	option = { 
+	option = {
 		name = rights_of_women_laws.3.b
 		random_list = {
 			2 = {
@@ -271,27 +255,23 @@ rights_of_women_laws.3 = { #stall
 	}
 }
 
-rights_of_women_laws.4 = { #Debate event 
+rights_of_women_laws.4 = {
+	#Debate event 
 	type = country_event
 	placement = root
 	title = rights_of_women_laws.4.t
 	desc = rights_of_women_laws.4.d
 	flavor = rights_of_women_laws.4.f
-
 	category = enactment
-
 	duration = 3
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	event_image = {
 		video = "southamerica_aristocrats"
 	}
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		NOR = {
 			has_modifier = womens_rights_newspaper_paid
@@ -303,22 +283,21 @@ rights_of_women_laws.4 = { #Debate event
 				is_enacting_law = law_type:law_women_in_the_workplace
 			}
 			OR = {
-				has_law = law_type:law_legal_guardianship
-				has_law = law_type:law_women_own_property
+				#has_law = law_type:law_legal_guardianship
+				#has_law = law_type:law_women_own_property
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
+			save_scope_as = current_law_scope
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
 	option = {
 		name = rights_of_women_laws.4.a
 		default_option = yes
@@ -326,7 +305,7 @@ rights_of_women_laws.4 = { #Debate event
 			name = womens_rights_newspaper_not_paid
 		}
 	}
-	option = { 
+	option = {
 		name = rights_of_women_laws.4.b
 		add_enactment_modifier = {
 			name = womens_rights_newspaper_paid
@@ -339,60 +318,56 @@ rights_of_women_laws.4 = { #Debate event
 	}
 }
 
-rights_of_women_laws.5 = { #Pro suffrage rally
+rights_of_women_laws.5 = {
+	#Pro suffrage rally
 	type = country_event
 	placement = root
 	title = rights_of_women_laws.5.t
 	desc = rights_of_women_laws.5.d
 	flavor = rights_of_women_laws.5.f
-
 	category = enactment
-
 	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	event_image = {
 		video = "europenorthamerica_sufferage"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
 	trigger = {
 		NOR = {
 			has_modifier = womens_rights_rally
 			has_modifier = womens_rights_violent_rally
 			has_modifier = womens_rights_peaceful_rally
 		}
-		is_enacting_law = law_type:law_gender_equality	
+		is_enacting_law = law_type:law_gender_equality
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
-    	random_political_movement = {
-        	limit = {
-          		is_political_movement_type = movement_to_preserve
-          	}
-        }
-        save_scope_as = anti_women_movement
+			save_scope_as = current_law_scope
+		}
+		random_political_movement = {
+			limit = {
+				is_political_movement_type = movement_to_preserve
+			}
+		}
+		save_scope_as = anti_women_movement
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { #
+	option = {
+		#
 		name = rights_of_women_laws.5.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = womens_rights_rally
 		}
 	}
-	option = { 
+	option = {
 		name = rights_of_women_laws.5.b
 		random_list = {
 			2 = {
@@ -415,32 +390,27 @@ rights_of_women_laws.5 = { #Pro suffrage rally
 	}
 }
 
-rights_of_women_laws.6 = { #Stall event
+rights_of_women_laws.6 = {
+	#Stall event
 	type = country_event
 	placement = root
 	title = rights_of_women_laws.6.t
 	desc = rights_of_women_laws.6.d
 	flavor = rights_of_women_laws.6.f
-
 	category = enactment
-
 	duration = 3
-
-
 	event_image = {
 		video = "africa_soldiers_breaking_protest"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_interest_group = {
-				is_marginal = no
-				law_stance = {
+			is_marginal = no
+			law_stance = {
 				law = owner.currently_enacting_law.type
 				value < neutral
 			}
@@ -451,58 +421,53 @@ rights_of_women_laws.6 = { #Stall event
 		}
 		is_enacting_law = law_type:law_gender_equality
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
+			save_scope_as = current_law_scope
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { #
+	option = {
+		#
 		name = rights_of_women_laws.6.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = womens_rights_fringe_group_violence
 		}
 	}
-	option = { 
+	option = {
 		name = rights_of_women_laws.6.b
-		
 		add_enactment_modifier = {
 			name = womens_rights_fringe_group_violence_stopped
 		}
 	}
 }
 
-rights_of_women_laws.7 = { #debate
+rights_of_women_laws.7 = {
+	#debate
 	type = country_event
 	placement = root
 	title = rights_of_women_laws.7.t
 	desc = rights_of_women_laws.7.d
 	flavor = rights_of_women_laws.7.f
-
 	category = enactment
-
 	duration = 3
-
 	event_image = {
 		video = "africa_soldiers_breaking_protest"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_interest_group = {
-				is_marginal = no
-				law_stance = {
+			is_marginal = no
+			law_stance = {
 				law = owner.currently_enacting_law.type
 				value < neutral
 			}
@@ -511,35 +476,35 @@ rights_of_women_laws.7 = { #debate
 			has_modifier = womens_rights_fringe_group_violence
 			has_modifier = womens_rights_fringe_group_violence_stopped
 		}
-		is_enacting_law = law_type:law_gender_equality	
+		is_enacting_law = law_type:law_gender_equality
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
+			save_scope_as = current_law_scope
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-	
-	option = { #
+	option = {
+		#
 		name = rights_of_women_laws.7.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = womens_rights_disrupt
 		}
 		add_radicals = {
-		  	pop_type = technicians
-		  	value = medium_radicals
+			pop_type = technicians
+			value = medium_radicals
 		}
 		add_radicals = {
-		  	pop_type = laborers
-		  	value = medium_radicals
+			pop_type = laborers
+			value = medium_radicals
 		}
 	}
-	option = { 
+	option = {
 		name = rights_of_women_laws.7.b
 		add_enactment_modifier = {
 			name = womens_rights_disrupt_small

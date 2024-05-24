@@ -717,7 +717,7 @@ ai_strategy_default = {
 			trigger = {
 				total_population >= 1000000
 				NOT = {
-					has_law = law_type:law_anti_industrialization
+					##has_law = law_type:law_anti_industrialization
 				}
 			}
 		}
@@ -1435,7 +1435,7 @@ ai_strategy_default = {
 			if = {
 				limit = {
 					country_has_primary_culture = cu:russian
-					has_law = law_type:law_supremacist
+					#has_law = law_type:law_supremacist
 					scope:target_country = {
 						any_scope_state = {
 							OR = {
@@ -2546,7 +2546,7 @@ ai_strategy_default = {
 				limit = {
 					NOT = {
 						scope:target_country = {
-							has_law = law_type:law_isolationism
+							#has_law = law_type:law_isolationism
 						}
 					}
 				}

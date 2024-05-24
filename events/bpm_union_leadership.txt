@@ -62,31 +62,31 @@ bpm_union_leadership.2 = {
 			triggered_desc = {
 				desc = bpm_union_leadership.2.t
 				trigger = {
-					has_law = law_type:law_all_labor_unions_allowed
+					#has_law = law_type:law_all_labor_unions_allowed
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.t2
 				trigger = {
-					has_law = law_type:law_illegal_labor_unions
+					#has_law = law_type:law_illegal_labor_unions
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.t3
 				trigger = {
-					has_law = law_type:law_limited_labor_unions
+					#has_law = law_type:law_limited_labor_unions
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.t4
 				trigger = {
-					has_law = law_type:law_syndicalism
+					#has_law = law_type:law_syndicalism
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.t5
 				trigger = {
-					has_law = law_type:law_socialist_labor_unions
+					#has_law = law_type:law_socialist_labor_unions
 				}
 			}
 		}
@@ -96,31 +96,31 @@ bpm_union_leadership.2 = {
 			triggered_desc = {
 				desc = bpm_union_leadership.2.desc
 				trigger = {
-					has_law = law_type:law_all_labor_unions_allowed
+					#has_law = law_type:law_all_labor_unions_allowed
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.desc2
 				trigger = {
-					has_law = law_type:law_illegal_labor_unions
+					#has_law = law_type:law_illegal_labor_unions
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.desc3
 				trigger = {
-					has_law = law_type:law_limited_labor_unions
+					#has_law = law_type:law_limited_labor_unions
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.desc4
 				trigger = {
-					has_law = law_type:law_syndicalism
+					#has_law = law_type:law_syndicalism
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.desc5
 				trigger = {
-					has_law = law_type:law_socialist_labor_unions
+					#has_law = law_type:law_socialist_labor_unions
 				}
 			}
 		}
@@ -130,31 +130,31 @@ bpm_union_leadership.2 = {
 			triggered_desc = {
 				desc = bpm_union_leadership.2.f
 				trigger = {
-					has_law = law_type:law_all_labor_unions_allowed
+					#has_law = law_type:law_all_labor_unions_allowed
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.f2
 				trigger = {
-					has_law = law_type:law_illegal_labor_unions
+					#has_law = law_type:law_illegal_labor_unions
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.f3
 				trigger = {
-					has_law = law_type:law_limited_labor_unions
+					#has_law = law_type:law_limited_labor_unions
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.f4
 				trigger = {
-					has_law = law_type:law_syndicalism
+					#has_law = law_type:law_syndicalism
 				}
 			}
 			triggered_desc = {
 				desc = bpm_union_leadership.2.f5
 				trigger = {
-					has_law = law_type:law_socialist_labor_unions
+					#has_law = law_type:law_socialist_labor_unions
 				}
 			}
 		}
@@ -174,27 +174,27 @@ bpm_union_leadership.2 = {
 	option = {
 		default_option = yes
 		name = bpm_union_leadership.2.a
-		trigger = { has_law = law_type:law_all_labor_unions_allowed }
+		trigger = { #has_law = law_type:law_all_labor_unions_allowed }
 	}
 
 	option = {
 		name = bpm_union_leadership.2.a2
-		trigger = { has_law = law_type:law_illegal_labor_unions }
+		trigger = { #has_law = law_type:law_illegal_labor_unions }
 	}
 
 	option = {
 		name = bpm_union_leadership.2.a3
-		trigger = { has_law = law_type:law_limited_labor_unions }
+		trigger = { #has_law = law_type:law_limited_labor_unions }
 	}
 
 	option = {
 		name = bpm_union_leadership.2.a4
-		trigger = { has_law = law_type:law_syndicalism }
+		trigger = { #has_law = law_type:law_syndicalism }
 	}
 
 	option = {
 		name = bpm_union_leadership.2.a5
-		trigger = { has_law = law_type:law_socialist_labor_unions }
+		trigger = { #has_law = law_type:law_socialist_labor_unions }
 	}
 
 	# Fallback option in case the law is not one of the above
@@ -202,11 +202,11 @@ bpm_union_leadership.2 = {
 		name = bpm_union_leadership.2.a
 		trigger = {
 			NOR = {
-				has_law = law_type:law_all_labor_unions_allowed
-				has_law = law_type:law_illegal_labor_unions
-				has_law = law_type:law_limited_labor_unions
-				has_law = law_type:law_syndicalism
-				has_law = law_type:law_socialist_labor_unions
+				#has_law = law_type:law_all_labor_unions_allowed
+				#has_law = law_type:law_illegal_labor_unions
+				#has_law = law_type:law_limited_labor_unions
+				#has_law = law_type:law_syndicalism
+				#has_law = law_type:law_socialist_labor_unions
 			}
 		}
 	}

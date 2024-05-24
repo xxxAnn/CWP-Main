@@ -50,7 +50,7 @@
 		}
 	}
 	possible = {
-		has_law = law_type:law_council_elective
+		#has_law = law_type:law_council_elective
 	}
 	weight = {
 		value = 0
@@ -118,7 +118,7 @@ ai_strategy_conservative_communist = {
 		}
 	}
 	possible = {
-		has_law = law_type:law_council_elective
+		#has_law = law_type:law_council_elective
 	}
 	weight = {
 		value = 0
@@ -183,7 +183,7 @@ ai_strategy_reformist_communist = {
 		}
 	}
 	possible = {
-		has_law = law_type:law_council_elective
+		#has_law = law_type:law_council_elective
 	}
 	weight = {
 		value = 0
@@ -409,9 +409,8 @@ ai_strategy_conservative_agenda = {
 	}
 	min_law_chance_to_pass = {
 		value = 30
-
 		if = {
-			limit = { 				
+			limit = {
 				OR = {
 					any_political_movement = {
 						desired_law ?= scope:law.type
@@ -419,11 +418,10 @@ ai_strategy_conservative_agenda = {
 					}
 					AND = {
 						has_journal_entry = je_government_petition
-						var:desired_law_var	?= scope:law			
+						var:desired_law_var ?= scope:law
 					}
 				}
 			}
-			
 			multiply = 0.33
 		}
 	}
@@ -436,12 +434,17 @@ ai_strategy_conservative_agenda = {
 	change_law_chance = {
 		value = 2.5
 		if = {
-			limit = { any_interest_group = { is_insurrectionary = yes } }
+			limit = {
+				any_interest_group = {
+					is_insurrectionary = yes
+				}
+			}
 			add = 7.5
 		}
-
 		if = {
-			limit = { has_journal_entry = je_government_petition  }
+			limit = {
+				has_journal_entry = je_government_petition
+			}
 			add = 25
 		}
 	}
@@ -491,9 +494,8 @@ ai_strategy_reactionary_agenda = {
 	}
 	min_law_chance_to_pass = {
 		value = 25
-		
 		if = {
-			limit = { 				
+			limit = {
 				OR = {
 					any_political_movement = {
 						desired_law ?= scope:law.type
@@ -501,11 +503,10 @@ ai_strategy_reactionary_agenda = {
 					}
 					AND = {
 						has_journal_entry = je_government_petition
-						var:desired_law_var	?= scope:law			
+						var:desired_law_var ?= scope:law
 					}
 				}
 			}
-			
 			multiply = 0.5
 		}
 	}
@@ -518,12 +519,17 @@ ai_strategy_reactionary_agenda = {
 	change_law_chance = {
 		value = 3.5
 		if = {
-			limit = { any_interest_group = { is_insurrectionary = yes } }
+			limit = {
+				any_interest_group = {
+					is_insurrectionary = yes
+				}
+			}
 			add = 1.5
 		}
-
 		if = {
-			limit = { has_journal_entry = je_government_petition  }
+			limit = {
+				has_journal_entry = je_government_petition
+			}
 			add = 10
 		}
 	}
@@ -577,9 +583,8 @@ ai_strategy_autocratic_agenda = {
 	}
 	min_law_chance_to_pass = {
 		value = 20
-
 		if = {
-			limit = { 				
+			limit = {
 				OR = {
 					any_political_movement = {
 						desired_law ?= scope:law.type
@@ -587,11 +592,10 @@ ai_strategy_autocratic_agenda = {
 					}
 					AND = {
 						has_journal_entry = je_government_petition
-						var:desired_law_var	?= scope:law			
+						var:desired_law_var ?= scope:law
 					}
 				}
 			}
-			
 			multiply = 0.5
 		}
 	}
@@ -604,12 +608,17 @@ ai_strategy_autocratic_agenda = {
 	change_law_chance = {
 		value = 3.5
 		if = {
-			limit = { any_interest_group = { is_insurrectionary = yes } }
+			limit = {
+				any_interest_group = {
+					is_insurrectionary = yes
+				}
+			}
 			add = 10
 		}
-
 		if = {
-			limit = { has_journal_entry = je_government_petition  }
+			limit = {
+				has_journal_entry = je_government_petition
+			}
 			add = 25
 		}
 	}
@@ -868,7 +877,7 @@ ai_strategy_human_rights_agenda = {
 	}
 	min_law_chance_to_pass = {
 		if = {
-			limit = { 				
+			limit = {
 				OR = {
 					any_political_movement = {
 						desired_law ?= scope:law.type
@@ -876,11 +885,10 @@ ai_strategy_human_rights_agenda = {
 					}
 					AND = {
 						has_journal_entry = je_government_petition
-						var:desired_law_var	?= scope:law			
+						var:desired_law_var ?= scope:law
 					}
 				}
 			}
-			
 			multiply = 0.5
 		}
 	}
@@ -893,12 +901,17 @@ ai_strategy_human_rights_agenda = {
 	change_law_chance = {
 		value = 2.5
 		if = {
-			limit = { any_interest_group = { is_insurrectionary = yes } }
+			limit = {
+				any_interest_group = {
+					is_insurrectionary = yes
+				}
+			}
 			add = 5
-		}	
-
+		}
 		if = {
-			limit = { has_journal_entry = je_government_petition  }
+			limit = {
+				has_journal_entry = je_government_petition
+			}
 			add = 25
 		}
 	}

@@ -365,7 +365,7 @@
 		if = { # trade unions are inclined towards socialism
 			limit = {
 				is_interest_group_type = ig_trade_unions
-				NOT = { owner = { has_law = law_type:law_illegal_labor_unions } }
+				NOT = { owner = { #has_law = law_type:law_illegal_labor_unions } }
 			}
 			add = {	
 				value = 6
@@ -375,7 +375,7 @@
 		if = { # trade unions are inclined towards socialism
 			limit = {
 				is_interest_group_type = ig_trade_unions
-				owner = { has_law = law_type:law_illegal_labor_unions }
+				owner = { #has_law = law_type:law_illegal_labor_unions }
 			}
 			add = {	
 				value = 10
@@ -473,7 +473,7 @@
 		}
 		if = { # anarchist
 			limit = {
-				owner = { has_law = law_type:law_council_republic }
+				owner = { #has_law = law_type:law_council_republic }
 				OR = {
 					bpm_ig_is_anarchist = yes
 					leader = { bpm_leader_is_anarchist = yes }
@@ -497,7 +497,7 @@
 			limit = {
 				bpm_ig_is_radical_liberal = yes
 				owner = {
-					has_law = law_type:law_outlawed_dissent
+					#has_law = law_type:law_outlawed_dissent
 					NOT = {
 						any_interest_group = {
 							is_in_government = yes
@@ -519,8 +519,8 @@
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy
+						#has_law = law_type:law_theocracy
 					}
 				}
 			}
@@ -541,8 +541,8 @@
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_religious_schools
-						has_law = law_type:law_no_schools
+						#has_law = law_type:law_religious_schools
+						#has_law = law_type:law_no_schools
 					}
 				}
 			}
@@ -554,7 +554,7 @@
 		if = { # against free trade - peasant/socialist alliance
 			limit = {
 				bpm_ig_is_agrarian = yes
-				owner = { has_law = law_type:law_free_trade }
+				owner = { #has_law = law_type:law_free_trade }
 				NOT = {
 					leader = { has_ideology = ideology:ideology_market_liberal }
 				}
@@ -567,7 +567,7 @@
 		if = { # against free trade - peasant/socialist alliance
 			limit = {
 				bpm_ig_is_agrarian = yes
-				owner = { has_law = law_type:law_laissez_faire }
+				owner = { #has_law = law_type:law_laissez_faire }
 				NOT = {
 					leader = { has_ideology = ideology:ideology_market_liberal }
 				}
@@ -581,8 +581,8 @@
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_legacy_slavery
-						has_law = law_type:law_slave_trade
+						#has_law = law_type:law_legacy_slavery
+						#has_law = law_type:law_slave_trade
 					}
 				}
 				OR = {
@@ -600,7 +600,7 @@
 		if = { # anti-serfdom
 			limit = {
 				owner = {
-					has_law = law_type:law_serfdom
+					#has_law = law_type:law_serfdom
 				}
 				OR = {
 					bpm_ig_is_abolitionist = yes	
@@ -618,9 +618,9 @@
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_no_workers_rights
-						has_law = law_type:law_child_labor_allowed
-						has_law = law_type:law_no_social_security
+						#has_law = law_type:law_no_workers_rights
+						#has_law = law_type:law_child_labor_allowed
+						#has_law = law_type:law_no_social_security
 					}
 					NOT = { has_technology_researched = socialism }
 				}
@@ -665,9 +665,9 @@
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_ethnostate
-						has_law = law_type:law_national_supremacy
-						has_law = law_type:law_racial_segregation
+						#has_law = law_type:law_ethnostate
+						#has_law = law_type:law_national_supremacy
+						#has_law = law_type:law_racial_segregation
 					}
 				}
 			}

@@ -12,15 +12,15 @@
 		custom_tooltip = {
 			text = "bpm_je_single_party_has_elections"
 			bpm_country_laws_no_voting = no
-			NOT = { has_law = law_type:law_anarchy }
+			NOT = { #has_law = law_type:law_anarchy }
 		}
 
 		OR = {
-			has_law = law_type:law_censorship
-			has_law = law_type:law_outlawed_dissent
+			#has_law = law_type:law_censorship
+			#has_law = law_type:law_outlawed_dissent
 		}
 
-		NOT = { has_law = law_type:law_party_single }
+		NOT = { #has_law = law_type:law_party_single }
 
 		has_technology_researched = socialism
 
@@ -51,26 +51,26 @@
 		AND = {
 			# Need at least one totalitarian law
 			OR = {
-				has_law = law_type:law_militarized_police
-				has_law = law_type:law_outlawed_dissent
-				has_law = law_type:law_secret_police
+				#has_law = law_type:law_militarized_police
+				#has_law = law_type:law_outlawed_dissent
+				#has_law = law_type:law_secret_police
 			}
 			
 			# Must still have elections somehow
 			custom_tooltip = {
 				text = "bpm_je_single_party_has_elections"
 				bpm_country_laws_no_voting = no
-				NOT = { has_law = law_type:law_anarchy }
+				NOT = { #has_law = law_type:law_anarchy }
 			}
 
 			# Must not have the laws that protect people's rights
 			NOR = {
-				has_law = law_type:law_no_home_affairs
-				has_law = law_type:law_guaranteed_liberties
-				has_law = law_type:law_protected_speech
-				has_law = law_type:law_right_of_assembly
-				has_law = law_type:law_elected_police
-				has_law = law_type:law_no_police
+				#has_law = law_type:law_no_home_affairs
+				#has_law = law_type:law_guaranteed_liberties
+				#has_law = law_type:law_protected_speech
+				#has_law = law_type:law_right_of_assembly
+				#has_law = law_type:law_elected_police
+				#has_law = law_type:law_no_police
 			}
 
 			# Law Enforcement must be fully geared up

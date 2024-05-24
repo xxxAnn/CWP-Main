@@ -182,8 +182,8 @@ religious_party = {
 		owner = { 
 			country_has_primary_culture = cu:brazilian
 			NOR = { 
-				has_law = law_type:law_monarchy 
-				has_law = law_type:law_theocracy
+				#has_law = law_type:law_monarchy 
+				#has_law = law_type:law_theocracy
 			}
 		}
 		NOR = { 
@@ -219,7 +219,7 @@ religious_party = {
 			limit = {
 				is_interest_group_type = ig_devout
 				owner = {
-					has_law = law_type:law_theocracy
+					#has_law = law_type:law_theocracy
 				}
 			}
 			add = {
@@ -295,7 +295,7 @@ religious_party = {
 			limit = {
 				has_ideology = ideology:ideology_patriarchal
 				owner = {
-					has_law = law_type:law_womens_suffrage
+					#has_law = law_type:law_womens_suffrage
 				}
 			}
 			add = {
@@ -355,8 +355,8 @@ religious_party = {
 					value < neutral
 				}
 				OR = {
-					owner = { has_law = law_type:law_total_separation }
-					owner = { has_law = law_type:law_state_atheism }
+					owner = { #has_law = law_type:law_total_separation }
+					owner = { #has_law = law_type:law_state_atheism }
 				}
 			}
 			add = {
@@ -370,8 +370,8 @@ religious_party = {
 				owner = {
 					country_has_primary_culture = cu:brazilian
 					NOR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy
+						#has_law = law_type:law_theocracy
 					}
 				}
 			}
@@ -386,8 +386,8 @@ religious_party = {
 				owner = {
 					country_has_primary_culture = cu:brazilian
 					NOR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy
+						#has_law = law_type:law_theocracy
 					}
 				}
 			}

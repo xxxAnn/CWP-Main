@@ -497,7 +497,7 @@ liberal_party = {
 					value < neutral
 				}
 				owner = {
-					has_law = law_type:law_hereditary_bureaucrats
+					#has_law = law_type:law_hereditary_bureaucrats
 				}
 			}
 			add = {
@@ -534,8 +534,8 @@ liberal_party = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_religious_schools
-						has_law = law_type:law_no_schools
+						#has_law = law_type:law_religious_schools
+						#has_law = law_type:law_no_schools
 					}
 				}
 			}
@@ -550,7 +550,7 @@ liberal_party = {
 					law = law_type:law_outlawed_dissent
 					value < neutral
 				}
-				owner = { has_law = law_type:law_outlawed_dissent }
+				owner = { #has_law = law_type:law_outlawed_dissent }
 			}
 			add = {
 				value = 3
@@ -577,8 +577,8 @@ liberal_party = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy
+						#has_law = law_type:law_theocracy
 					}
 				}
 			}
@@ -590,7 +590,7 @@ liberal_party = {
 		if = { # peasants opposition to debt slavery
 			limit = {
 				owner = {
-					has_law = law_type:law_debt_slavery
+					#has_law = law_type:law_debt_slavery
 				}
 				OR = {
 					has_ideology = ideology:ideology_sta_decentralized_state
@@ -607,8 +607,8 @@ liberal_party = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_legacy_slavery
-						has_law = law_type:law_slave_trade
+						#has_law = law_type:law_legacy_slavery
+						#has_law = law_type:law_slave_trade
 					}
 				}
 				OR = {
@@ -628,8 +628,8 @@ liberal_party = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_legacy_slavery
-						has_law = law_type:law_slave_trade
+						#has_law = law_type:law_legacy_slavery
+						#has_law = law_type:law_slave_trade
 					}
 					ig:ig_liberals = {
 						leader = {
@@ -655,7 +655,7 @@ liberal_party = {
 		if = { # anti-serfdom
 			limit = {
 				owner = {
-					has_law = law_type:law_serfdom
+					#has_law = law_type:law_serfdom
 				}
 				OR = {
 					bpm_ig_is_abolitionist = yes	
@@ -675,8 +675,8 @@ liberal_party = {
 				owner = {
 					country_has_primary_culture = cu:brazilian
 					OR = { 
-						has_law = law_type:law_monarchy 
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy 
+						#has_law = law_type:law_theocracy
 					}
 				}
 				OR = {
@@ -896,7 +896,7 @@ liberal_party = {
 					leader = { has_ideology = ideology:ideology_moderate }
 					leader = { bpm_leader_is_conservative = yes }
 				}
-				owner = { has_law = law_type:law_council_republic }
+				owner = { #has_law = law_type:law_council_republic }
 			}
 			add = {
 				value = 10

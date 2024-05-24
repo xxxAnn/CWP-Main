@@ -158,15 +158,15 @@ bpm_law_enactment_ruler_effect_on_ig = {
 			}
 
 			if = {
-				limit = { owner = { has_law = law_type:law_autocracy } }
+				limit = { owner = { #has_law = law_type:law_autocracy } }
 				multiply = 10
 			}
 			else_if = {
-				limit = { owner = { has_law = law_type:law_presidential_republic } }
+				limit = { owner = { #has_law = law_type:law_presidential_republic } }
 				multiply = 2
 			}
 			else_if = {
-				limit = { owner = { has_law = law_type:law_monarchy } }
+				limit = { owner = { #has_law = law_type:law_monarchy } }
 				multiply = 2
 			}
 			else = {
@@ -191,7 +191,7 @@ bpm_law_enactment_ruler_approval = {
 	else = {
 		# Vote in autocracy: 0 to 10
 		if = {
-			limit = { has_law = law_type:law_autocracy }
+			limit = { #has_law = law_type:law_autocracy }
 			add = {
 				value = var:bpm_law_enactment_yea_votes_cached
 				multiply = 10

@@ -1,7 +1,6 @@
 ﻿ideology_despotic_utopian = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_despotic_utopian.dds"
 	character_ideology = yes
-
 	lawgroup_distribution_of_power = {
 		law_anarchy = strongly_disapprove
 		law_universal_suffrage = strongly_disapprove
@@ -12,41 +11,39 @@
 		law_oligarchy = approve
 		law_autocracy = approve
 	}
-	
 	lawgroup_internal_security = {
 		law_guaranteed_liberties = strongly_disapprove
 		law_no_home_affairs = neutral
 		law_national_guard = approve
 		law_secret_police = strongly_approve
 	}
-
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
 		law_freedom_of_conscience = neutral
 		law_state_atheism = neutral
 		law_total_separation = approve
 	}
-
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_disapprove
 		law_national_supremacy = strongly_disapprove
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = neutral
-		law_multicultural = approve	
+		law_multicultural = approve
 	}
-
-	lawgroup_trade_policy = {		
+	lawgroup_trade_policy = {
 		law_isolationism = strongly_approve
 		law_mercantilism = approve
 		law_protectionism = neutral
 		law_free_trade = strongly_disapprove
 	}
-
 	possible = {
-		NOT = { has_role = agitator }
+		NOT = {
+			has_role = agitator
+		}
 		owner = {
 			OR = {
-				AND = { # You're Paraguay, and you chose to continue Francia's legacy
+				AND = {
+					# You're Paraguay, and you chose to continue Francia's legacy
 					exists = c:PRG
 					OR = {
 						c:PRG = this
@@ -57,7 +54,8 @@
 						has_variable = francocracia_paraguay_var
 					}
 				}
-				AND = { # You're the subject of a country that chose to continue Francia's legacy
+				AND = {
+					# You're the subject of a country that chose to continue Francia's legacy
 					exists = c:PRG
 					is_subject_of = c:PRG
 					c:PRG = {
@@ -69,7 +67,7 @@
 				}
 			}
 		}
-		scope:interest_group = { 
+		scope:interest_group = {
 			bpm_ig_enabled = yes
 			OR = {
 				is_interest_group_type = ig_trade_unions
@@ -86,22 +84,20 @@
 			}
 		}
 	}
-
-
 	leader_weight = {
 		value = 100
 		# less likely if issues are not relevant
 		if = {
 			limit = {
-				owner = { 
+				owner = {
 					OR = {
-						has_law = law_type:law_autocracy
-						has_law = law_type:law_oligarchy
-						has_law = law_type:law_technocracy
-						has_law = law_type:law_single_party_state
+						#has_law = law_type:law_autocracy
+						#has_law = law_type:law_oligarchy
+						#has_law = law_type:law_technocracy
+						#has_law = law_type:law_single_party_state
 					}
-					has_law = law_type:law_multicultural
-					has_law = law_type:law_isolationism
+					#has_law = law_type:law_multicultural
+					#has_law = law_type:law_isolationism
 				}
 			}
 			add = -50

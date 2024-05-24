@@ -37,10 +37,10 @@ country_has_voting_franchise = {
 
 country_has_education_system = {
 	OR = {
-		has_law = law_type:law_church_run_schools
-		has_law = law_type:law_public_schools
-		has_law = law_type:law_private_schools
-		has_law = law_type:law_mixed_funded_schools
+		#has_law = law_type:law_church_run_schools
+		#has_law = law_type:law_public_schools
+		#has_law = law_type:law_private_schools
+		#has_law = law_type:law_mixed_funded_schools
 	}
 }
 

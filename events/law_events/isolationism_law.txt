@@ -1,32 +1,25 @@
 ﻿namespace = isolation
-
 # stall event - unequal treaties
 isolation.1 = {
 	type = country_event
 	placement = ROOT
-	
 	title = isolation.1.t
 	desc = isolation.1.d
 	flavor = isolation.1.f
-
 	category = enactment
-	
 	event_image = {
 		video = "unspecific_politicians_arguing"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_default.dds"
-	
 	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-	
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		OR = {
-			has_law = law_type:law_isolationism
-			has_law = law_type:law_anti_industrialization
+			#has_law = law_type:law_isolationism
+			##has_law = law_type:law_anti_industrialization
 		}
 		OR = {
 			is_enacting_law = law_type:law_export_orientation
@@ -41,12 +34,11 @@ isolation.1 = {
 				is_country_type = colonial
 			}
 			NOR = {
-				has_law = law_type:law_isolationism
-				has_law = law_type:law_anti_industrialization
+				#has_law = law_type:law_isolationism
+				##has_law = law_type:law_anti_industrialization
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
@@ -62,18 +54,18 @@ isolation.1 = {
 					is_country_type = colonial
 				}
 				NOR = {
-					has_law = law_type:law_isolationism
-					has_law = law_type:law_anti_industrialization
+					#has_law = law_type:law_isolationism
+					##has_law = law_type:law_anti_industrialization
 				}
 			}
 			save_scope_as = fraud_country
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
 	option = {
 		name = isolation.1.a
 		default_option = yes
@@ -87,7 +79,6 @@ isolation.1 = {
 			name = unequal_treaties_isolation
 		}
 	}
-
 	option = {
 		name = isolation.1.b
 		trigger = {
@@ -100,7 +91,6 @@ isolation.1 = {
 			value = -15
 		}
 	}
-
 	option = {
 		name = isolation.1.c
 		change_relations = {
@@ -118,29 +108,23 @@ isolation.1 = {
 isolation.2 = {
 	type = country_event
 	placement = ROOT
-	
 	title = isolation.2.t
 	desc = isolation.2.d
 	flavor = isolation.2.f
-
 	category = enactment
-	
 	event_image = {
 		video = "southamerica_public_figure_assassination"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_skull.dds"
-
-	cooldown = { months = normal_modifier_time }
-	
+	cooldown = {
+		months = normal_modifier_time
+	}
 	duration = 3
-	
 	trigger = {
 		OR = {
-			has_law = law_type:law_isolationism
-			has_law = law_type:law_anti_industrialization
+			#has_law = law_type:law_isolationism
+			##has_law = law_type:law_anti_industrialization
 		}
 		OR = {
 			is_enacting_law = law_type:law_export_orientation
@@ -155,15 +139,14 @@ isolation.2 = {
 				is_country_type = colonial
 			}
 			NOR = {
-				has_law = law_type:law_isolationism
-				has_law = law_type:law_anti_industrialization
+				#has_law = law_type:law_isolationism
+				##has_law = law_type:law_anti_industrialization
 			}
 		}
 		any_political_movement = {
 			is_political_movement_type = movement_to_preserve
 		}
 	}
-
 	immediate = {
 		capital = {
 			save_scope_as = capital_scope
@@ -176,8 +159,8 @@ isolation.2 = {
 					is_country_type = colonial
 				}
 				NOR = {
-					has_law = law_type:law_isolationism
-					has_law = law_type:law_anti_industrialization
+					#has_law = law_type:law_isolationism
+					##has_law = law_type:law_anti_industrialization
 				}
 			}
 			save_scope_as = murdered_visitor_country
@@ -189,12 +172,13 @@ isolation.2 = {
 			save_scope_as = current_law_scope
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { # frame a scapegoat
+	option = {
+		# frame a scapegoat
 		name = isolation.2.a
 		default_option = yes
 		change_relations = {
@@ -205,8 +189,8 @@ isolation.2 = {
 			name = legal_scapegoat
 		}
 	}
-
-	option = { # investigate the crime
+	option = {
+		# investigate the crime
 		name = isolation.2.b
 		# investigate. law takes longer, movement loses support
 		add_enactment_modifier = {

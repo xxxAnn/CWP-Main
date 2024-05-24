@@ -253,7 +253,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 	# }
 
 	if = {
-		limit = { owner = { has_law = law_type:law_council_republic } }
+		limit = { owner = { #has_law = law_type:law_council_republic } }
 		add = {
 			desc = "POP_URBAN_PROLETARIAT_SUPPORTS_COOPERATIVES"
 			if = {
@@ -277,7 +277,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 				value = 80
 				if = {
 					limit = { 
-						owner = { has_law = law_type:law_cooperative_ownership }
+						owner = { #has_law = law_type:law_cooperative_ownership }
 					}
 					multiply = 2.0
 				}
@@ -304,7 +304,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 				value = 40
 				if = {
 					limit = { 
-						owner = { has_law = law_type:law_collectivized_agriculture }
+						owner = { #has_law = law_type:law_collectivized_agriculture }
 					}
 					multiply = 2.0
 				}
@@ -329,7 +329,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 				value = 80
 				if = {
 					limit = { 
-						owner = { has_law = law_type:law_command_economy }
+						owner = { #has_law = law_type:law_command_economy }
 					}
 					multiply = 2.0
 				}
@@ -356,7 +356,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 						is_pop_type = soldiers
 					}
 					owner = {
-						has_law = law_type:law_elected_officers
+						#has_law = law_type:law_elected_officers
 					}
 				}
 				value = 75
@@ -370,7 +370,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 				limit = { 
 					is_pop_type = officers
 					owner = {
-						has_law = law_type:law_elected_officers
+						#has_law = law_type:law_elected_officers
 					}
 				}
 				value = 50
@@ -391,7 +391,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 				if = {
 					limit = {
 						owner = {
-							has_law = law_type:law_national_militia
+							#has_law = law_type:law_national_militia
 						}
 					}
 					add = 20
@@ -399,7 +399,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 				if = {
 					limit = {
 						owner = {
-							has_law = law_type:law_elected_officers
+							#has_law = law_type:law_elected_officers
 						}
 					}
 					add = 20
@@ -407,7 +407,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 				if = {
 					limit = {
 						owner = {
-							has_law = law_type:law_elected_police
+							#has_law = law_type:law_elected_police
 						}
 					}
 					add = 20
@@ -415,7 +415,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 				if = {
 					limit = {
 						owner = {
-							has_law = law_type:law_confederated
+							#has_law = law_type:law_confederated
 						}
 					}
 					add = 20
@@ -423,7 +423,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = { # NOTE: This attraction script val
 				if = {
 					limit = {
 						owner = {
-							has_law = law_type:law_anarchy
+							#has_law = law_type:law_anarchy
 						}
 					}
 					add = 60

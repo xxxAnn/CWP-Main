@@ -1,8 +1,6 @@
 ﻿je_assassination = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	
 	group = je_group_internal_affairs
-
 	immediate = {
 		random_interest_group = {
 			limit = {
@@ -59,8 +57,8 @@
 			else_if = {
 				limit = {
 					OR = {
-						has_law = law_type:law_professional_police
-						has_law = law_type:law_secret_police
+						#has_law = law_type:law_professional_police
+						#has_law = law_type:law_secret_police
 					}
 				}
 				random_list = {

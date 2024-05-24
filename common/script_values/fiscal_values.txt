@@ -214,7 +214,7 @@ bank_credibility_val = {
 	}
 	# From Bank Independence
 	if = {
-		limit = { has_law = law_type:law_government_controlled }
+		limit = { #has_law = law_type:law_government_controlled }
 		subtract = {
 			value = bank_credibility_10
 			multiply = 2
@@ -223,7 +223,7 @@ bank_credibility_val = {
 		}
 	}
 	if = {
-		limit = { has_law = law_type:law_government_interference }
+		limit = { #has_law = law_type:law_government_interference }
 		subtract = {
 			value = bank_credibility_10
 			multiply = 1
@@ -232,7 +232,7 @@ bank_credibility_val = {
 		}
 	}
 	if = {
-		limit = { has_law = law_type:law_independent_monetary_policy}
+		limit = { #has_law = law_type:law_independent_monetary_policy}
 		add = {
 			value = bank_credibility_10
 			multiply = 1
@@ -328,19 +328,19 @@ monetary_policy_mult = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_government_controlled
+			#has_law = law_type:law_government_controlled
 		}
 		multiply = 1.5
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_government_interference
+			#has_law = law_type:law_government_interference
 		}
 		multiply = 1.2
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_independent_monetary_policy
+			#has_law = law_type:law_independent_monetary_policy
 		}
 		multiply = 0.5
 	}
@@ -435,19 +435,19 @@ interest_rate_effect = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_government_controlled
+			#has_law = law_type:law_government_controlled
 		}
 		multiply = 0.1
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_government_interference
+			#has_law = law_type:law_government_interference
 		}
 		multiply = 0.6
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_independent_monetary_policy
+			#has_law = law_type:law_independent_monetary_policy
 		}
 		multiply = 1.5
 	}
@@ -570,7 +570,7 @@ money_supply_growth = {
 	if = {
 		limit = {
 			not = {
-				has_law = law_type:law_gold_standard
+				#has_law = law_type:law_gold_standard
 				has_variable = pegged_currency
 			}
 		}
@@ -769,7 +769,7 @@ inflation_growth = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_gold_standard
+			#has_law = law_type:law_gold_standard
 		}
 		divide = {
 			value = 10

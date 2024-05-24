@@ -63,8 +63,8 @@ agrarian_party = {
 				trigger = {
 					country_has_primary_culture = cu:brazilian
 					OR = {
-						has_law = law_type:law_presidential_republic
-						has_law = law_type:law_parliamentary_republic
+						#has_law = law_type:law_presidential_republic
+						#has_law = law_type:law_parliamentary_republic
 					}
 				}
 			}
@@ -241,7 +241,7 @@ agrarian_party = {
 						any_interest_group = {
 							bpm_ig_is_anarchist = yes
 							is_marginal = no
-							owner = { has_law = law_type:law_serfdom }
+							owner = { #has_law = law_type:law_serfdom }
 						}
 					}
 				}
@@ -264,7 +264,7 @@ agrarian_party = {
 		if = { # a party for anti-serfdom anarchists
 			limit = {
 				bpm_ig_is_anarchist = yes
-				owner = { has_law = law_type:law_serfdom }
+				owner = { #has_law = law_type:law_serfdom }
 			}
 			add = {
 				value = 20
@@ -297,8 +297,8 @@ agrarian_party = {
 				is_interest_group_type = ig_rural_folk
 				owner = {
 					OR = {
-						has_law = law_type:law_serfdom
-						has_law = law_type:law_slave_trade
+						#has_law = law_type:law_serfdom
+						#has_law = law_type:law_slave_trade
 					}
 					any_interest_group = {
 						is_powerful = yes 
@@ -322,7 +322,7 @@ agrarian_party = {
 				}
 				is_powerful = no
 				owner = {
-					has_law = law_type:law_serfdom
+					#has_law = law_type:law_serfdom
 					any_interest_group = {
 						is_powerful = yes
 						OR = {
@@ -372,8 +372,8 @@ agrarian_party = {
 				}
 				owner = {
 					NOR = {
-						has_law = law_type:law_no_colonial_affairs
-						has_law = law_type:law_national_militia
+						#has_law = law_type:law_no_colonial_affairs
+						#has_law = law_type:law_national_militia
 					}
 				}
 			}
@@ -389,7 +389,7 @@ agrarian_party = {
 					value < neutral
 				}
 				owner = {
-					has_law = law_type:law_no_migration_controls
+					#has_law = law_type:law_no_migration_controls
 				}
 			}
 			add = {
@@ -405,8 +405,8 @@ agrarian_party = {
 				}
 				owner = {
 					OR = {	
-						has_law = law_type:law_dedicated_police
-						has_law = law_type:law_militarized_police
+						#has_law = law_type:law_dedicated_police
+						#has_law = law_type:law_militarized_police
 					}
 				}
 			}
@@ -422,7 +422,7 @@ agrarian_party = {
 					value < neutral
 				}
 				owner = {
-					has_law = law_type:law_land_based_taxation
+					#has_law = law_type:law_land_based_taxation
 				}
 			}
 			add = {
@@ -438,7 +438,7 @@ agrarian_party = {
 				}
 				owner = {
 					OR = {
-						has_law = law_type:law_free_trade
+						#has_law = law_type:law_free_trade
 					}
 				}
 				NOT = {
@@ -462,7 +462,7 @@ agrarian_party = {
 					value < neutral
 				}
 				owner = {
-					has_law = law_type:law_peasant_levies
+					#has_law = law_type:law_peasant_levies
 				}
 			}
 			add = {
@@ -473,7 +473,7 @@ agrarian_party = {
 		if = { # opposition to slavery
 			limit = {
 				owner = {
-					NOT = { has_law = law_type:law_slavery_banned }
+					NOT = { #has_law = law_type:law_slavery_banned }
 				}
 				law_stance = {
 					law = law_type:law_legacy_slavery

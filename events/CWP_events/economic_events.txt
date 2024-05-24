@@ -13,7 +13,7 @@ economic_events.1 = {
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
 	duration = 3
 	trigger = {
-		has_law = law_type:law_free_market
+		#has_law = law_type:law_free_market
 		ig:ig_ruralists = {
 			is_marginal = no
 		}
@@ -85,7 +85,7 @@ economic_events.2 = {
 	on_opened_soundeffect = "event:/SFX/Events/unspecific/leader_speaking_to_a_group_of_people"
 	duration = 3
 	trigger = {
-		has_law = law_type:law_free_market
+		#has_law = law_type:law_free_market
 		ig:ig_ruralists = {
 			is_marginal = no
 		}

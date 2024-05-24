@@ -4,10 +4,10 @@
 	group = je_group_internal_affairs
 	possible = {
 		this = {
-			has_law = law_type:law_pegged_currency
+			#has_law = law_type:law_pegged_currency
 			not = {
 				custom_tooltip = {
-					text = no_pegging_tt #:flushed:
+					text = no_pegging_tt					#:flushed:
 					has_variable = peg_target_set
 				}
 			}
@@ -15,7 +15,7 @@
 	}
 	invalid = {
 		custom_tooltip = {
-			text = no_pegging_tt #:flushed:
+			text = no_pegging_tt			#:flushed:
 			has_variable = peg_target_set
 		}
 	}
@@ -50,7 +50,6 @@
 			text = foreignreservesbigorequaltopeg
 			foreign_reserves_value >= foreign_reserves_needed_for_peg
 		}
-		
 	}
 	fail = {
 		scope:journal_entry = {
@@ -75,7 +74,7 @@
 			remove_variable = pegged_currency
 			remove_variable = peg_target_set
 			activate_law = law_type:law_independent_monetary_policy
-		}	
+		}
 	}
 	progressbar = yes
 	weight = 100
@@ -87,13 +86,13 @@ je_maintain_pegged_currency = {
 	should_be_pinned_by_default = yes
 	possible = {
 		this = {
-			has_law = law_type:law_pegged_currency
+			#has_law = law_type:law_pegged_currency
 			custom_tooltip = {
 				text = pegged_currency_tt
 				has_variable = pegged_currency
 			}
 			custom_tooltip = {
-				text = pegging_tt #:flushed:
+				text = pegging_tt				#:flushed:
 				has_variable = peg_target_set
 			}
 			not = {
@@ -135,7 +134,6 @@ je_maintain_pegged_currency = {
 					subtract = 1
 				}
 			}
-			
 		}
 	}
 	status_desc = {
@@ -151,7 +149,6 @@ je_maintain_pegged_currency = {
 		}
 	}
 	on_complete = {
-
 	}
 	on_fail = {
 		custom_tooltip = {
@@ -160,7 +157,7 @@ je_maintain_pegged_currency = {
 			remove_variable = pegged_currency
 			remove_variable = peg_target_set
 			activate_law = law_type:law_independent_monetary_policy
-		}		
+		}
 	}
 	progressbar = yes
 	weight = 100
@@ -192,7 +189,6 @@ je_bretton_woods_agreement = {
 			}
 		}
 	}
-
 	on_weekly_pulse = {
 		effect = {
 			clear_global_variable_list = bretton_woods_members
@@ -214,7 +210,7 @@ je_bretton_woods_agreement = {
 			if = {
 				limit = {
 					not = {
-						has_law = law_type:law_pegged_currency
+						#has_law = law_type:law_pegged_currency
 					}
 				}
 				remove_variable = maintain_pegged_currency_je_val
@@ -222,7 +218,6 @@ je_bretton_woods_agreement = {
 				remove_variable = peg_target_set
 			}
 		}
-		
 	}
 	status_desc = {
 		desc = bretton_woods_agreement_status_desc
@@ -235,15 +230,14 @@ je_bretton_woods_agreement = {
 					has_global_variable = bretton_woods_agreement
 				}
 			}
-			
 			c:USA = {
 				or = {
 					custom_tooltip = {
 						text = US_HAS_NO_GOLD_STANDARD
-						has_law = law_type:law_independent_monetary_policy
-						has_law = law_type:law_government_controlled
-						has_law = law_type:law_government_interference
-					}	
+						#has_law = law_type:law_independent_monetary_policy
+						#has_law = law_type:law_government_controlled
+						#has_law = law_type:law_government_interference
+					}
 					custom_tooltip = {
 						text = US_MONEY_SUPPLY_ABOVE_20
 						or = {
@@ -251,9 +245,7 @@ je_bretton_woods_agreement = {
 							c:USA.inflation_value < -0.5
 						}
 					}
-					
 				}
-				
 			}
 		}
 	}
@@ -265,7 +257,7 @@ je_bretton_woods_agreement = {
 			remove_variable = peg_target_set
 			remove_global_variable = bretton_woods_agreement
 			activate_law = law_type:law_independent_monetary_policy
-		}		
+		}
 	}
 	weight = 100
 }

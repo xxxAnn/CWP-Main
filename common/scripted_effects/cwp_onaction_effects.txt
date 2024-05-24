@@ -10,7 +10,7 @@
 		}
 		clamp_variable = {
 			name = nuclear_stockpile
-			max = 9999999999
+			max = 1410065407
 			min = 0
 		}
 	}
@@ -488,7 +488,7 @@ onaction_skyscraper_modifier = {
 		name = state_skyscraper_modifier
 		multiplier = {
 			value = total_urbanization
-			add = 500 #You can always build at least one level of office in state.
+			add = 500			#You can always build at least one level of office in state.
 			divide = 1000
 			round = yes
 		}
@@ -571,7 +571,7 @@ onaction_racial_tension_modifier = {
 onaction_monarchy_abolished_modifier = {
 	if = {
 		limit = {
-			has_law = law_type:law_hereditary
+			#has_law = law_type:law_hereditary
 			OR = {
 				is_enacting_law = law_type:law_executive
 				is_enacting_law = law_type:law_parliamentary

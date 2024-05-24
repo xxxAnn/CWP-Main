@@ -23,7 +23,7 @@
 					}
 					AND = {
 						scope:law.type = { is_same_law_group_as = law_type:law_serfdom }
-						has_law = law_type:law_serfdom
+						#has_law = law_type:law_serfdom
 						ruler = {
 							OR = {
 								interest_group ?= {
@@ -129,7 +129,7 @@
 	}
 
 	possible = {
-		NOT = { has_law = law_type:law_council_republic	}
+		NOT = { #has_law = law_type:law_council_republic	}
 	}
 	
 	weight = {
@@ -269,7 +269,7 @@ ai_strategy_reactionary_agenda = {
 	}
 
 	possible = {
-		NOT = { has_law = law_type:law_council_republic	}
+		NOT = { #has_law = law_type:law_council_republic	}
 		OR = {
 			ruler ?= {
 				OR = {
@@ -436,7 +436,7 @@ ai_strategy_progressive_agenda = {
 	}
 
 	possible = {
-		NOT = { has_law = law_type:law_council_republic	}
+		NOT = { #has_law = law_type:law_council_republic	}
 		any_interest_group = {
 			bpm_ig_is_left_wing = yes
 			is_marginal = no
@@ -610,7 +610,7 @@ ai_strategy_progressive_conservative_agenda = {
 	}
 
 	possible = {
-		NOT = { has_law = law_type:law_council_republic	}
+		NOT = { #has_law = law_type:law_council_republic	}
 		any_interest_group = {
 			has_ideology = ideology:ideology_wel_paternalistic_welfare
 			is_marginal = no
@@ -753,7 +753,7 @@ ai_strategy_egalitarian_agenda = {
 
 	possible = {
 		has_technology_researched = egalitarianism
-		NOT = { has_law = law_type:law_council_republic	}
+		NOT = { #has_law = law_type:law_council_republic	}
 		any_interest_group = {
 			OR = {
 				bpm_ig_is_radical_left = yes
@@ -930,7 +930,7 @@ ai_strategy_nationalist_agenda = {
 	}	
 
 	possible = {
-		NOT = { has_law = law_type:law_council_republic	}
+		NOT = { #has_law = law_type:law_council_republic	}
 		has_technology_researched = nationalism
 		any_interest_group = {
 			OR = {
@@ -1118,7 +1118,7 @@ ai_strategy_maintain_mandate_of_heaven = {
 		exists = c:CHI
 		this = c:CHI
 		is_country_type = unrecognized
-		has_law = law_type:law_monarchy
+		#has_law = law_type:law_monarchy
 	}
 	
 	weight = {

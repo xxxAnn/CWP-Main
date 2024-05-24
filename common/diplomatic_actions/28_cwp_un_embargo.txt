@@ -47,7 +47,7 @@
 			trigger = {
 				NOT = {
 					scope:target_country = {
-						has_law = law_type:law_isolationism
+						#has_law = law_type:law_isolationism
 					}
 				}
 			}

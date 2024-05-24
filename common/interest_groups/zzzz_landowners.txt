@@ -171,8 +171,8 @@
 	pop_potential = {
 		owner = {
 			NOR = {
-				has_law = law_type:law_collectivized_agriculture
-				has_law = law_type:law_commercialized_agriculture
+				#has_law = law_type:law_collectivized_agriculture
+				#has_law = law_type:law_commercialized_agriculture
 			}
 		}
 		OR = {
@@ -190,7 +190,7 @@
 			desc = "SLAVERY_DETRACTORS"
 			if = {
 				limit = {
-					owner = { NOT = { has_law = law_type:law_slavery_banned } }
+					owner = { NOT = { #has_law = law_type:law_slavery_banned } }
 					OR = {
 						pop_has_primary_culture = no
 						state = { is_slave_state = no }

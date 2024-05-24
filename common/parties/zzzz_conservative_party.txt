@@ -471,7 +471,7 @@ conservative_party = {
 		if = { # capitalists more likely to join conservatives when the poor can vote
 			limit = {
 				bpm_ig_is_upper_institutional = yes
-				owner = { has_law = law_type:law_universal_suffrage }
+				owner = { #has_law = law_type:law_universal_suffrage }
 			}
 			add = {
 				value = 5
@@ -481,7 +481,7 @@ conservative_party = {
 		if = { # capitalists and landowners more likely to join with progressive taxation
 			limit = {
 				bpm_ig_is_upper_institutional = yes
-				owner = { has_law = law_type:law_graduated_taxation }
+				owner = { #has_law = law_type:law_graduated_taxation }
 			}
 			add = {
 				value = 2
@@ -491,7 +491,7 @@ conservative_party = {
 		if = { # capitalists more likely to join conservatives with public health
 			limit = {
 				bpm_ig_is_upper_institutional = yes
-				owner = { has_law = law_type:law_public_health_insurance }
+				owner = { #has_law = law_type:law_public_health_insurance }
 			}
 			add = {
 				value = 2
@@ -501,7 +501,7 @@ conservative_party = {
 		if = { # devout, industrialists more likely to join conservatives with public schools
 			limit = {
 				OR = { bpm_ig_is_upper_institutional = yes }
-				owner = { has_law = law_type:law_public_schools }
+				owner = { #has_law = law_type:law_public_schools }
 			}
 			add = {
 				value = 2
@@ -515,8 +515,8 @@ conservative_party = {
 					value < neutral
 				}
 				OR = {
-					owner = { has_law = law_type:law_total_separation }
-					owner = { has_law = law_type:law_state_atheism }
+					owner = { #has_law = law_type:law_total_separation }
+					owner = { #has_law = law_type:law_state_atheism }
 				}
 			}
 			add = {
@@ -530,7 +530,7 @@ conservative_party = {
 					law = law_type:law_total_separation
 					value < neutral
 				}
-				owner = { has_law = law_type:law_freedom_of_conscience }
+				owner = { #has_law = law_type:law_freedom_of_conscience }
 			}
 			add = {
 				value = 2
@@ -540,7 +540,7 @@ conservative_party = {
 		if = { # patriarchs more likely to join conservatives with women's suffrage
 			limit = {
 				bpm_ig_is_sexist = yes
-				owner = { has_law = law_type:law_womens_suffrage }
+				owner = { #has_law = law_type:law_womens_suffrage }
 			}
 			add = {
 				value = 3
@@ -552,7 +552,7 @@ conservative_party = {
 				has_ideology = ideology:ideology_sta_powerful_state
 				owner = {
 					has_technology_researched = law_enforcement
-					has_law = law_type:law_no_police
+					#has_law = law_type:law_no_police
 				}
 			}
 			add = {
@@ -597,8 +597,8 @@ conservative_party = {
 				owner = {
 					country_has_primary_culture = cu:brazilian
 					OR = { 
-						has_law = law_type:law_monarchy 
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy 
+						#has_law = law_type:law_theocracy
 					}
 				}
 				OR = {
@@ -650,7 +650,7 @@ conservative_party = {
 			limit = {
 				owner = {
 					THIS = c:ARG
-					NOT = { has_law = law_type:law_confederated }
+					NOT = { #has_law = law_type:law_confederated }
 				}
 				OR = {
 					has_ideology = ideology:ideology_dop_technocrat
@@ -705,7 +705,7 @@ conservative_party = {
 			limit = {
 				owner = {
 					country_has_primary_culture = cu:french
-					has_law = law_type:law_monarchy
+					#has_law = law_type:law_monarchy
 					has_variable = bonapartist_restoration_var
 				}
 				is_interest_group_type = ig_national_liberals
@@ -774,8 +774,8 @@ conservative_party = {
 				owner = {
 					country_has_primary_culture = cu:brazilian
 					NOR = {
-						has_law = law_type:law_monarchy
-						has_law = law_type:law_theocracy
+						#has_law = law_type:law_monarchy
+						#has_law = law_type:law_theocracy
 					}
 				}
 			}

@@ -64,11 +64,11 @@ ARG = { # Argentina
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_council_republic
+					#has_law = law_type:law_presidential_republic
+					#has_law = law_type:law_parliamentary_republic
+					#has_law = law_type:law_council_republic
 				}
-				NOT = { has_law = law_type:law_confederated }
+				NOT = { #has_law = law_type:law_confederated }
 			}
 		}
 	}	
@@ -81,11 +81,11 @@ ARG = { # Argentina
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_presidential_republic
-					has_law = law_type:law_parliamentary_republic
-					has_law = law_type:law_council_republic
+					#has_law = law_type:law_presidential_republic
+					#has_law = law_type:law_parliamentary_republic
+					#has_law = law_type:law_council_republic
 				}
-				has_law = law_type:law_confederated
+				#has_law = law_type:law_confederated
 			}
 		}
 	}
@@ -96,10 +96,10 @@ ARG = { # Argentina
 		trigger = { 
 			scope:actor ?= {
 				OR = {
-					has_law = law_type:law_monarchy
-					has_law = law_type:law_theocracy
+					#has_law = law_type:law_monarchy
+					#has_law = law_type:law_theocracy
 				}
-				has_law = law_type:law_autocracy
+				#has_law = law_type:law_autocracy
 			}
 		}
 	}
@@ -168,9 +168,9 @@ SAR = { # Sardignia-Piedmont
 		priority = 10
 		trigger = { 
 			scope:actor ?= {
-				has_law = law_type:law_monarchy
-				NOT = { has_law = law_type:law_autocracy }
-				NOT = { has_law = law_type:law_oligarchy }
+				#has_law = law_type:law_monarchy
+				NOT = { #has_law = law_type:law_autocracy }
+				NOT = { #has_law = law_type:law_oligarchy }
 			}
 		}
 	}
