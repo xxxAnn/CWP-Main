@@ -13,7 +13,7 @@ ig_attraction_radical = {
 		}
 		multiply = {
 			# Multiplied by 1.5x max
-			desc = "BPM_POP_LOYALISTS_GOVT"
+			desc = "poliPOP_LOYALISTS_GOVT"
 			value = 1
 			add = {
 				value = pop_loyalist_fraction
