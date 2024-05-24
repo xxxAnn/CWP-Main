@@ -54,7 +54,7 @@
 		ig:ig_elites = {
 			remove_ruling_interest_group = yes
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forcessssss = {
 			add_ruling_interest_group = yes
 		}
 		ig:ig_moralists = {

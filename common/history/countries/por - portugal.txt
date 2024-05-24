@@ -37,7 +37,7 @@
 		activate_law = law_type:law_alcohol_allowed
 		activate_law = law_type:law_corporate_friendly_policies
 		#IG in government to match ruler
-		ig:ig_securocrats = {
+		ig:ig_armed_forcess = {
 			add_ruling_interest_group = yes
 		}
 	}

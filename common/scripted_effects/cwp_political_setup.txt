@@ -541,7 +541,7 @@ setup_starting_ideologies = {
 		}
 	}
 	### Securocrats ###
-	ig:ig_securocrats = {
+	ig:ig_armed_forces = {
 		if = {
 			limit = {
 				owner = {

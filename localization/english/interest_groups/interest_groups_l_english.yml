@@ -27,9 +27,9 @@
   ig_bureaucrats_only_icon: "@bureaucrats!"
   ig_bureaucrats_desc: "Bureaucrats, the gears in the machinery of governance, ensure the harmonious melody of government. They silently shape the nation's course with policy and regulation."
 
-  ig_securocrats: "Securocrats"
-  ig_securocrats_only_icon: "@securocrats!"
-  ig_securocrats_desc: "Securocrats are the vigilant sentinels of the state, ensuring internal stability and guarding against external threats. Shrouded in secrecy, they are the state's shield and, if need be, its sword."
+  ig_armed_forces: "Securocrats"
+  ig_armed_forces_only_icon: "@securocrats!"
+  ig_armed_forces_desc: "Securocrats are the vigilant sentinels of the state, ensuring internal stability and guarding against external threats. Shrouded in secrecy, they are the state's shield and, if need be, its sword."
 
   ig_urbanists: "Urbanists"
   ig_urbanists_only_icon: "@urbanists!"

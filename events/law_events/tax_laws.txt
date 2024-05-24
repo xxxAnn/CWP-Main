@@ -129,7 +129,7 @@ tax.2 = {
 			}
 			save_scope_as = antitax_rebels
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = patriotic_military
 		}
 		random_diplomatic_play = {

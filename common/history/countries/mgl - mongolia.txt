@@ -28,7 +28,7 @@
 			add_ruling_interest_group = yes
 		}
 		#IG in government to match ruler
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
 		}
 		ig:ig_intelligentsia = {

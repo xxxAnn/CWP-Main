@@ -70,7 +70,7 @@
 			ig_leader = yes
 			birth_date = 1907.12.5
 			#dna = 
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_hardliner
 			traits = {
 			}

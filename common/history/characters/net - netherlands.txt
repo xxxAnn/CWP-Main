@@ -55,7 +55,7 @@
 			ruler = no
 			ig_leader = yes
 			birth_date = 1902.8.1
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forcess
 			ideology = ideology_moderate
 			traits = {
 			}

@@ -69,7 +69,7 @@
 			ig_leader = yes
 			is_general = yes
 			birth_date = 1887.11.17
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 			}

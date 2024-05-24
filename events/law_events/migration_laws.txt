@@ -67,7 +67,7 @@ migration_laws.1 = {
 				}
 			}
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_modifier = {
 				name = anti_border_rhetoric
 				months = normal_modifier_time

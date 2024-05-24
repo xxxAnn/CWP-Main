@@ -564,7 +564,7 @@ decree_events.106 = {
 			}
 			save_scope_as = decree_enlistment
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig_focus
 		}
 	}

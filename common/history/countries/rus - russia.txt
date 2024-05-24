@@ -63,7 +63,7 @@
 		ig:ig_capitalists = {
 			set_ig_suppression = yes
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
 		}
 		set_institution_investment_level = {

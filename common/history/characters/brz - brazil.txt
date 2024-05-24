@@ -30,7 +30,7 @@
 			religion = rel:catholic
 			ig_leader = yes
 			birth_date = 1883.05.18
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 			}

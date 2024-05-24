@@ -1013,7 +1013,7 @@ dynamic_ideologies.24 = {
 	option = {
 		name = dynamic_ideologies.24.a
 		default_option = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_ideology = ideology_vanguardist
 		}
 		ai_chance = {
@@ -1040,7 +1040,7 @@ dynamic_ideologies.25 = {
 	option = {
 		name = dynamic_ideologies.25.a
 		default_option = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			remove_ideology = ideology_vanguardist
 		}
 		ai_chance = {

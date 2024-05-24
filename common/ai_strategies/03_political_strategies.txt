@@ -26,7 +26,7 @@
 	}
 	pro_interest_groups = {
 		ig_laborists
-		ig_securocrats
+		ig_armed_forces
 		ig_patriots
 	}
 	anti_interest_groups = {
@@ -95,7 +95,7 @@ ai_strategy_conservative_communist = {
 	pro_interest_groups = {
 		ig_laborists
 		ig_patriots
-		ig_securocrats
+		ig_armed_forces
 	}
 	anti_interest_groups = {
 		ig_elites
@@ -625,7 +625,7 @@ ai_strategy_autocratic_agenda = {
 	type = political
 	pro_interest_groups = {
 		ig_elites
-		ig_securocrats
+		ig_armed_forces
 		ig_patriots
 	}
 	anti_interest_groups = {
@@ -694,7 +694,7 @@ ai_strategy_juntaist_agenda = {
 	}
 	type = political
 	pro_interest_groups = {
-		ig_securocrats
+		ig_armed_forces
 		ig_patriots
 	}
 	anti_interest_groups = {

@@ -610,7 +610,7 @@ state_atheism.6 = {
 	duration = 3
 	trigger = {
 		is_enacting_law = law_type:law_state_atheism
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			ig_approval >= 0
 			is_marginal = no
 		}
@@ -619,7 +619,7 @@ state_atheism.6 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 		}
 		random_scope_pop = {

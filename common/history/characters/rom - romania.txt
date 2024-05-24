@@ -29,7 +29,7 @@
 			culture = cu:romanian
 			ig_leader = yes
 			birth_date = 1889.11.8
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 			}

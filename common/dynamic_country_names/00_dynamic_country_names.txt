@@ -133,7 +133,7 @@ DEFAULT = {
 						is_powerful = yes
 						is_in_government = yes
 					}
-					ig:ig_securocrats = {
+					ig:ig_armed_forces = {
 						is_powerful = yes
 						is_in_government = yes
 					}

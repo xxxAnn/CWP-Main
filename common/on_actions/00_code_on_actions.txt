@@ -1859,7 +1859,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_socialization
 							currently_enacting_law.type = law_type:law_total_nationalization
 						}
-						ig:ig_securocrats = {
+						ig:ig_armed_forces = {
 							nor = {
 								has_ideology = ideology:ideology_vanguardist
 								interest_group_supports_political_movement = yes
@@ -1875,7 +1875,7 @@ on_law_enactment_pass = {
 		if = {
 			limit = {
 				root = {
-					ig:ig_securocrats = {
+					ig:ig_armed_forces = {
 						nor = {
 							not = {
 								has_ideology = ideology:ideology_vanguardist

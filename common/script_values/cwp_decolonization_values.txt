@@ -618,7 +618,7 @@ domestic_pressure_growth = {
 			is_in_government = yes
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_securocrats
+				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_patriots
 				is_interest_group_type = ig_elites
 			}
@@ -650,7 +650,7 @@ imperial_policy_value_net = {
 			is_in_government = yes
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_securocrats
+				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_patriots
 				is_interest_group_type = ig_elites
 			}

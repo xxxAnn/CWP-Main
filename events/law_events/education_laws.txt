@@ -99,7 +99,7 @@ education_laws.2 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 		}
 		currently_enacting_law = {
@@ -116,7 +116,7 @@ education_laws.2 = {
 		add_enactment_modifier = {
 			name = curriculum_focus
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_modifier = {
 				name = undisciplined_children
 				months = normal_modifier_time

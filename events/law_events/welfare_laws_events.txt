@@ -510,7 +510,7 @@ welfare_laws.8 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 		}
 	}
@@ -524,7 +524,7 @@ welfare_laws.8 = {
 		add_enactment_modifier = {
 			name = veteran_support
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_modifier = {
 				name = veterans_prioritized
 				months = normal_modifier_time

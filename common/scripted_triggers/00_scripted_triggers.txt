@@ -1649,9 +1649,9 @@ ig_type_matches_former = {
 		text = ig_type_matches_former_tt
 		OR = {
 			AND = {
-				is_interest_group_type = ig_securocrats
+				is_interest_group_type = ig_armed_forces
 				scope:ex_ig = {
-					is_interest_group_type = ig_securocrats
+					is_interest_group_type = ig_armed_forces
 				}
 			}
 			AND = {
@@ -1813,7 +1813,7 @@ can_have_radical_leader = {
 		is_interest_group_type = ig_ruralists
 		is_interest_group_type = ig_laborists
 		is_interest_group_type = ig_entrepreneurs
-		is_interest_group_type = ig_securocrats
+		is_interest_group_type = ig_armed_forces
 		is_interest_group_type = ig_elites
 	}
 }

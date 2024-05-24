@@ -1046,7 +1046,7 @@ france_constitution_gaullist_stance_on_law_executive_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_executive_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_executive_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_executive_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_executive_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_executive_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1055,7 +1055,7 @@ france_constitution_gaullist_stance_on_law_parliamentary_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_parliamentary_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_parliamentary_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_parliamentary_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_parliamentary_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_parliamentary_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1064,7 +1064,7 @@ france_constitution_gaullist_stance_on_law_council_elective_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_council_elective_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_council_elective_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_council_elective_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_council_elective_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_council_elective_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1073,7 +1073,7 @@ france_constitution_gaullist_stance_on_law_representative_democracy_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_representative_democracy_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_representative_democracy_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_representative_democracy_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_representative_democracy_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_representative_democracy_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1082,7 +1082,7 @@ france_constitution_gaullist_stance_on_law_consensus_democracy_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_consensus_democracy_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_consensus_democracy_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_consensus_democracy_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_consensus_democracy_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_consensus_democracy_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1091,7 +1091,7 @@ france_constitution_gaullist_stance_on_law_direct_democracy_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_direct_democracy_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_direct_democracy_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_direct_democracy_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_direct_democracy_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_direct_democracy_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1100,7 +1100,7 @@ france_constitution_gaullist_stance_on_law_unitary_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_unitary_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_unitary_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_unitary_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_unitary_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_unitary_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1109,7 +1109,7 @@ france_constitution_gaullist_stance_on_law_devolved_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_devolved_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_devolved_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_devolved_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_devolved_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_devolved_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1118,7 +1118,7 @@ france_constitution_gaullist_stance_on_law_federalized_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_federalized_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_federalized_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_federalized_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_federalized_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_federalized_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1127,7 +1127,7 @@ france_constitution_gaullist_stance_on_law_free_market_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_free_market_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_free_market_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_free_market_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_free_market_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_free_market_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1136,7 +1136,7 @@ france_constitution_gaullist_stance_on_law_interventionism_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_interventionism_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_interventionism_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_interventionism_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_interventionism_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_interventionism_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1145,7 +1145,7 @@ france_constitution_gaullist_stance_on_law_socialization_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_socialization_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_socialization_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_socialization_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_socialization_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_socialization_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1154,7 +1154,7 @@ france_constitution_gaullist_stance_on_law_appointed_bureaucrats_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_appointed_bureaucrats_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_appointed_bureaucrats_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_appointed_bureaucrats_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_appointed_bureaucrats_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_appointed_bureaucrats_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1163,7 +1163,7 @@ france_constitution_gaullist_stance_on_law_independent_bureaucrats_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_independent_bureaucrats_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_independent_bureaucrats_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_independent_bureaucrats_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_independent_bureaucrats_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_independent_bureaucrats_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1172,7 +1172,7 @@ france_constitution_gaullist_stance_on_law_income_taxation_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_income_taxation_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_income_taxation_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_income_taxation_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_income_taxation_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_income_taxation_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1181,7 +1181,7 @@ france_constitution_gaullist_stance_on_law_capital_gains_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_capital_gains_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_capital_gains_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_capital_gains_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_capital_gains_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_capital_gains_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1190,7 +1190,7 @@ france_constitution_gaullist_stance_on_law_church_disestablishment_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_church_disestablishment_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_church_disestablishment_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_church_disestablishment_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_church_disestablishment_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_church_disestablishment_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1199,7 +1199,7 @@ france_constitution_gaullist_stance_on_law_religious_policies_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_religious_policies_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_religious_policies_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_religious_policies_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_religious_policies_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_religious_policies_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1208,7 +1208,7 @@ france_constitution_gaullist_stance_on_law_state_funded_schools_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_state_funded_schools_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_state_funded_schools_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_state_funded_schools_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_state_funded_schools_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_state_funded_schools_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1217,7 +1217,7 @@ france_constitution_gaullist_stance_on_law_mixed_funded_schools_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_mixed_funded_schools_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_mixed_funded_schools_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_mixed_funded_schools_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_mixed_funded_schools_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_mixed_funded_schools_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1226,7 +1226,7 @@ france_constitution_gaullist_stance_on_law_right_of_assembly_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_right_of_assembly_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_right_of_assembly_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_right_of_assembly_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_right_of_assembly_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_right_of_assembly_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1235,7 +1235,7 @@ france_constitution_gaullist_stance_on_law_protected_speech_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_protected_speech_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_protected_speech_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_protected_speech_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_protected_speech_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_protected_speech_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1244,7 +1244,7 @@ france_constitution_gaullist_stance_on_law_total_nationalization_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_total_nationalization_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_total_nationalization_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_total_nationalization_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_total_nationalization_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_total_nationalization_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1253,7 +1253,7 @@ france_constitution_gaullist_stance_on_law_heavy_industry_nationalization_value 
 	add = ig:ig_patriots.france_constitution_ig_stance_law_heavy_industry_nationalization_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_heavy_industry_nationalization_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_heavy_industry_nationalization_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_heavy_industry_nationalization_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_heavy_industry_nationalization_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1262,7 +1262,7 @@ france_constitution_gaullist_stance_on_law_compulsory_education_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_compulsory_education_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_compulsory_education_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_compulsory_education_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_compulsory_education_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_compulsory_education_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
@@ -1271,7 +1271,7 @@ france_constitution_gaullist_stance_on_law_compulsory_higher_education_value = {
 	add = ig:ig_patriots.france_constitution_ig_stance_law_compulsory_higher_education_value_weighted
 	add = ig:ig_capitalists.france_constitution_ig_stance_law_compulsory_higher_education_value_weighted
 	add = ig:ig_entrepreneurs.france_constitution_ig_stance_law_compulsory_higher_education_value_weighted
-	add = ig:ig_securocrats.france_constitution_ig_stance_law_compulsory_higher_education_value_weighted
+	add = ig:ig_armed_forces.france_constitution_ig_stance_law_compulsory_higher_education_value_weighted
 	divide = france_constitution_gaullist_clout
 }
 
