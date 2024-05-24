@@ -599,8 +599,8 @@ types country_panel_types
 
 				#GDP
 				country_stats_entry = {	
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_gdp')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_gdp')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 					
 					blockoverride "stats_tooltip" {
@@ -624,8 +624,8 @@ types country_panel_types
 				
 				#Currency
 				country_stats_entry = {	
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_gdp')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_gdp')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 					
 					blockoverride "information_icon" {
@@ -645,8 +645,8 @@ types country_panel_types
 					tooltip = "CURRENCY_TOOLTIP"
 				}
 				country_stats_entry = {	
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_gdp')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_gdp')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 					
 					blockoverride "information_icon" {
@@ -663,8 +663,8 @@ types country_panel_types
 
 				##POPULATION
 				country_stats_entry = {
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_population')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_population')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 
 					blockoverride "stats_tooltip" {
@@ -699,8 +699,8 @@ types country_panel_types
 
 				##STANDARD OF LIVING
 				country_stats_entry = {
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_standard_of_living')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_standard_of_living')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 
 					blockoverride "stats_tooltip" {
@@ -983,8 +983,8 @@ types diplomatic
 				tooltip = "[Country.GetInfamyDesc]"
 				visible = "[Not(Country.IsColonizable)]"
 				minimumsize = { 100 80 }
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_infamy')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_infamy')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
 				textbox = {

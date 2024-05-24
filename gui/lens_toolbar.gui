@@ -177,7 +177,7 @@ types lens_toolbar_types {
 
 			button = {
 				using = default_button_action
-				onclick = "[UnforceMapMode]"
+				onclick = "[UnlockMapMode]"
 				onclick = "[MapListPanelManager.CloseCurrentPanel]"
 				visible = "[IsMapModeForced]"
 				shortcut = "close_window"
@@ -378,7 +378,7 @@ types lens_toolbar_types {
 						size = { 34 34 }
 						texture = "gfx/interface/main_hud/lens_map_info.dds"
 						tooltip = "MAP_INFO_MAP_MODE_LOCKED"
-						onclick = "[UnforceMapMode]"
+						onclick = "[UnlockMapMode]"
 						using = tooltip_above
 						parentanchor = center
 

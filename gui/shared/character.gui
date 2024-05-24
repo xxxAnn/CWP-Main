@@ -10,14 +10,14 @@ types character_types {
 		block "commander_order_icon" {
 			icon = {
 				size = { 100% 100% }
-				visible = "[And(And(Character.GetOrderType.IsValid, Or(And( Character.IsAdmiral, Not( Character.IsRepairing )), Character.IsGeneral)), Not(Character.GetNextOrderType.IsValid))]"
+				visible = "[And(And(Character.GetOrderType.IsValid, Or(And( Character.IsAdmiral, Not( Character.IsDefeated )), Character.IsGeneral)), Not(Character.GetNextOrderType.IsValid))]"
 				texture = "[Character.GetOrderType.GetTexture]"
 				tooltip = "[Character.GetOrderType.GetDesc]"
 			}
 
 			icon = {
 				size = { 100% 100% }
-				visible = "[And(And(Character.GetOrderType.IsValid, Or(And( Character.IsAdmiral, Not( Character.IsRepairing )), Character.IsGeneral)), Character.GetNextOrderType.IsValid)]"
+				visible = "[And(And(Character.GetOrderType.IsValid, Or(And( Character.IsAdmiral, Not( Character.IsDefeated )), Character.IsGeneral)), Character.GetNextOrderType.IsValid)]"
 				texture = "[Character.GetNextOrderType.GetTexture]"
 				tooltip = "[Character.GetNextOrderType.GetDesc]"
 			}
@@ -26,7 +26,7 @@ types character_types {
 		# admiral repairing icon
 		icon = {
 			size = { 100% 100% }
-			visible = "[And( Character.IsAdmiral, Character.IsRepairing )]"
+			visible = "[And( Character.IsAdmiral, Character.IsDefeated )]"
 			texture = "[Character.GetRepairingTexture]"
 			tooltip = "ADMIRAL_REPAIRING_DATE_TOOLTIP"
 		}

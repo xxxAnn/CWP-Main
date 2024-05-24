@@ -759,8 +759,8 @@ types state_panel_types
 
 			state_panel_status_item = {
 				tooltip = "CURRENT_GDP_STATE"
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_gdp')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_gdp')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
 				blockoverride "texture" {
@@ -772,8 +772,8 @@ types state_panel_types
 				}
 			}
 			state_panel_status_item_small = {
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_trade')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_trade')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				visible = "[State.IsMarketCapital]"
 				tooltip = "TOOLTIP_MARKET_CAPITAL_STATE"
 				onmousehierarchyenter = "[AccessHighlightManager.HighlightMarket(State.GetMarket.Self)]"
@@ -796,8 +796,8 @@ types state_panel_types
 			}
 
 			state_panel_status_item_small = {
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_trade')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_trade')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				visible = "[Not(State.IsMarketCapital)]"
 				tooltip = "MARKET_STATES_PANEL_MARKET_ACCESS_TOOLTIP"
 				onmousehierarchyenter = "[AccessHighlightManager.HighlightMarket(State.GetMarket.Self)]"
@@ -862,8 +862,8 @@ types state_panel_types
 				flowcontainer = {
 					tooltip = "TOOLTIP_STATE_POPULATION"
 					spacing = 5
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_population')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_population')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 
 					icon = {
@@ -885,8 +885,8 @@ types state_panel_types
 
 				flowcontainer = {
 					tooltip = "NUM_SOL"
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_standard_of_living')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_standard_of_living')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 					spacing = 5
 
@@ -1207,8 +1207,8 @@ types state_panel_types
 					datacontext = "[State.GetStateRegion]"
 					tooltip = "STATE_POLLUTION"
 
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_pollution')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_pollution')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 
 
@@ -1515,8 +1515,8 @@ types state_panel_types
 				widget = {
 					size = { @panel_width 50 }
 					tooltip = "TOOLTIP_STATE_POPULATION"
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_population')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_population')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 
 					background = {
@@ -1552,8 +1552,8 @@ types state_panel_types
 				widget = {
 					tooltip = "TOOLTIP_STATE_MIGRATION"
 					size = { @panel_width 40 }
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_migration')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_migration')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 
 					background = {
@@ -1610,8 +1610,8 @@ types state_panel_types
 						container = {
 							minimumsize = { 315 -1 }
 							tooltip = "NUM_SOL"
-							onmousehierarchyenter = "[SelectMapModeByKey('mm_standard_of_living')]"
-							onmousehierarchyleave = "[UnforceMapMode]"
+							onmousehierarchyenter = "[SetTempMapModeByKey('mm_standard_of_living')]"
+							onmousehierarchyleave = "[UnlockMapMode]"
 							alwaystransparent = no
 
 							textbox = {
@@ -2523,8 +2523,8 @@ types state_panel_types
 
 				state_panel_status_item_condensed = {
 					tooltip = "NUM_SOL"
-					onmousehierarchyenter = "[SelectMapModeByKey('mm_standard_of_living')]"
-					onmousehierarchyleave = "[UnforceMapMode]"
+					onmousehierarchyenter = "[SetTempMapModeByKey('mm_standard_of_living')]"
+					onmousehierarchyleave = "[UnlockMapMode]"
 					alwaystransparent = no
 
 					textbox = {
