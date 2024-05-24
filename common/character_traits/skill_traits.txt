@@ -132,8 +132,8 @@ basic_artillery_commander = {
 	type = skill
 	texture = gfx/interface/icons/character_trait_icons/basic_artillery_commander.dds
 	command_modifier = {
-		unit_combat_unit_type_siege_artillery_offense_mult = 0.05
-		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.05
+		unit_combat_unit_type_mlrs_artillery_offense_mult = 0.05
+		unit_combat_unit_type_self_propelled_artillery_offense_mult = 0.05
 		unit_combat_unit_type_light_artillery_mult = 0.05
 		unit_combat_unit_type_mobile_artillery_mult = 0.05
 		character_battle_condition_aggressive_maneuver_mult = 1
@@ -197,7 +197,7 @@ basic_artillery_commander = {
 							this = root
 						}
 						formation_army_unit_type_fraction = {
-							target = unit_type:combat_unit_type_shrapnel_artillery
+							target = unit_type:combat_unit_type_self_propelled_artillery
 							value >= 0.2
 						}
 					}
@@ -214,7 +214,7 @@ basic_artillery_commander = {
 							this = root
 						}
 						formation_army_unit_type_fraction = {
-							target = unit_type:combat_unit_type_siege_artillery
+							target = unit_type:combat_unit_type_mlrs_artillery
 							value >= 0.2
 						}
 					}
@@ -249,8 +249,8 @@ experienced_artillery_commander = {
 	type = skill
 	texture = gfx/interface/icons/character_trait_icons/experienced_artillery_commander.dds
 	command_modifier = {
-		unit_combat_unit_type_siege_artillery_offense_mult = 0.1
-		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.1
+		unit_combat_unit_type_mlrs_artillery_offense_mult = 0.1
+		unit_combat_unit_type_self_propelled_artillery_offense_mult = 0.1
 		unit_combat_unit_type_light_artillery_mult = 0.1
 		unit_combat_unit_type_mobile_artillery_mult = 0.1
 		character_battle_condition_aggressive_maneuver_mult = 2
@@ -290,7 +290,7 @@ experienced_artillery_commander = {
 							this = root
 						}
 						formation_army_unit_type_fraction = {
-							target = unit_type:combat_unit_type_shrapnel_artillery
+							target = unit_type:combat_unit_type_self_propelled_artillery
 							value >= 0.2
 						}
 					}
@@ -307,7 +307,7 @@ experienced_artillery_commander = {
 							this = root
 						}
 						formation_army_unit_type_fraction = {
-							target = unit_type:combat_unit_type_siege_artillery
+							target = unit_type:combat_unit_type_mlrs_artillery
 							value >= 0.2
 						}
 					}
@@ -343,8 +343,8 @@ expert_artillery_commander = {
 	type = skill
 	texture = gfx/interface/icons/character_trait_icons/expert_artillery_commander.dds
 	command_modifier = {
-		unit_combat_unit_type_siege_artillery_offense_mult = 0.15
-		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.15
+		unit_combat_unit_type_mlrs_artillery_offense_mult = 0.15
+		unit_combat_unit_type_self_propelled_artillery_offense_mult = 0.15
 		unit_combat_unit_type_light_artillery_mult = 0.15
 		unit_combat_unit_type_mobile_artillery_mult = 0.15
 		character_battle_condition_aggressive_maneuver_mult = 3
@@ -367,7 +367,7 @@ expert_artillery_commander = {
 							this = root
 						}
 						formation_army_unit_type_fraction = {
-							target = unit_type:combat_unit_type_shrapnel_artillery
+							target = unit_type:combat_unit_type_self_propelled_artillery
 							value >= 0.2
 						}
 					}
@@ -384,7 +384,7 @@ expert_artillery_commander = {
 							this = root
 						}
 						formation_army_unit_type_fraction = {
-							target = unit_type:combat_unit_type_siege_artillery
+							target = unit_type:combat_unit_type_mlrs_artillery
 							value >= 0.2
 						}
 					}
@@ -701,7 +701,10 @@ convoy_raider_commander = {
 	texture = "gfx/interface/icons/character_trait_icons/convoy_raider_commander.dds"
 	command_modifier = {
 		character_convoy_raiding_mult = 0.1
-		unit_combat_unit_type_submarine_offense_mult = 0.1
+		unit_combat_unit_type_wartime_submarine_offense_mult = 0.1
+		unit_combat_unit_type_diesel_attack_submarine_offense_mult = 0.1
+		unit_combat_unit_type_nuclear_attack_submarine_offense_mult = 0.1
+		unit_combat_unit_type_cruise_missile_submarine_offense_mult = 0.1
 	}
 	possible = {
 		has_role = admiral
@@ -739,7 +742,10 @@ experienced_convoy_raider = {
 	texture = "gfx/interface/icons/character_trait_icons/experienced_convoy_raider.dds"
 	command_modifier = {
 		character_convoy_raiding_mult = 0.5
-		unit_combat_unit_type_submarine_offense_mult = 0.15
+		unit_combat_unit_type_wartime_submarine_offense_mult = 0.15
+		unit_combat_unit_type_diesel_attack_submarine_offense_mult = 0.15
+		unit_combat_unit_type_nuclear_attack_submarine_offense_mult = 0.15
+		unit_combat_unit_type_cruise_missile_submarine_offense_mult = 0.15
 	}
 	possible = {
 		has_trait = convoy_raider_commander
@@ -771,7 +777,10 @@ expert_convoy_raider = {
 	texture = "gfx/interface/icons/character_trait_icons/expert_convoy_raider.dds"
 	command_modifier = {
 		character_convoy_raiding_mult = 1.5
-		unit_combat_unit_type_submarine_offense_mult = 0.25
+		unit_combat_unit_type_wartime_submarine_offense_mult = 0.25
+		unit_combat_unit_type_diesel_attack_submarine_offense_mult = 0.25
+		unit_combat_unit_type_nuclear_attack_submarine_offense_mult = 0.25
+		unit_combat_unit_type_cruise_missile_submarine_offense_mult = 0.25
 	}
 	possible = {
 		has_trait = experienced_convoy_raider
@@ -803,7 +812,7 @@ traditionalist_commander = {
 	texture = "gfx/interface/icons/character_trait_icons/traditionalist_commander.dds"
 	command_modifier = {
 		character_command_limit_mult = 0.1
-		unit_combat_unit_type_carrier_offense_mult = -0.1
+		unit_combat_unit_type_battleship_offense_mult = 0.1
 	}
 	# Reminder: this would only come into effect if this Commander is or becomes a Ruler
 	country_modifier = {
