@@ -76,10 +76,7 @@
 	else_if = {
 		limit = {
 			NOT = {
-				country_has_primary_culture = cu:dixie
-			}
-			NOT = {
-				country_has_primary_culture = cu:yankee
+				country_has_primary_culture = cu:american
 			}
 			scope:ruling_ig = {
 				law_stance = {

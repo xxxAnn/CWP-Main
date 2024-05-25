@@ -63,8 +63,7 @@ bpm_setup_country_gov_ideologies = {
 	if = {
 		limit = {
 			OR = {
-				country_has_primary_culture = cu:yankee
-				country_has_primary_culture = cu:dixie
+				country_has_primary_culture = cu:american
 				country_has_primary_culture = cu:afro_american
 			}
 		}

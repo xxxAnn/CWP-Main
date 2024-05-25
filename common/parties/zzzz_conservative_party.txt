@@ -185,12 +185,6 @@ conservative_party = {
 				}
 			}
 			triggered_desc = {
-				desc = party_democratic_party
-				trigger = {
-					country_has_primary_culture = cu:dixie
-				}
-			}
-			triggered_desc = {
 				desc = party_hojre
 				trigger = {
 					country_has_primary_culture = cu:danish

@@ -72,10 +72,7 @@ religious_party = {
 			triggered_desc = {
 				desc = party_know_nothing_party
 				trigger = {
-					OR = {
-						country_has_primary_culture = cu:yankee
-						country_has_primary_culture = cu:dixie
-					}
+					country_has_primary_culture = cu:american
 				}
 			}
 			triggered_desc = {

@@ -155,8 +155,7 @@
 				desc = party_revsoc_usa
 				trigger = {
 					OR = {
-						country_has_primary_culture = cu:yankee
-						country_has_primary_culture = cu:dixie
+						country_has_primary_culture = cu:american
 					}
 				}
 			}
