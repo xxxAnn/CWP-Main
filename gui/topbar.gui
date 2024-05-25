@@ -241,106 +241,106 @@ types topbar_components
 				}
 			}
 
-			button = {
-				name = "tutorial_highlight_currency"
-				minimumsize = { 90 20 }
-				maximumsize = { 90 20 }
-				tooltipwidget = {
-					bank_credibility_tooltip = {}
-				}
-				onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
-				onclick = "[GetVariableSystem.Clear('international_open')]" 
-				onclick = "[GetVariableSystem.Clear('un_panel')]" 
-				onclick = "[GetVariableSystem.Clear('banks_panel')]" 
-				onclick = "[GetVariableSystem.Clear('nato_panel')]" 
-				onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
-				enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
-				using = tooltip_below
-
-				alwaystransparent = no
-
-				textbox = {
-					parentanchor = vcenter
-					raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName][GetPlayer.MakeScope.ScriptValue('currency_average_difference_to_global')|+d%]#!"
-					autoresize = yes
-					fontsize = 15
-					align = left|nobaseline
-				}
-			}
-			button = {
-				minimumsize = { 90 20 }
-				maximumsize = { 90 20 }
-				tooltipwidget = {
-					inflation_tooltip = {}
-				}
-				using = tooltip_below
-				alwaystransparent = no
-				onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
-				onclick = "[GetVariableSystem.Clear('international_open')]" 
-				onclick = "[GetVariableSystem.Clear('un_panel')]" 
-				onclick = "[GetVariableSystem.Clear('banks_panel')]" 
-				onclick = "[GetVariableSystem.Clear('nato_panel')]" 
-				onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
-				enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
-
-				widget = {
-					size = { 28 28 }
-					parentanchor = vcenter
-					position = { 0 0 }
-
-					icon = {
-						parentanchor = center
-						size = { @tertiary_icon_size @tertiary_icon_size }
-						texture = "gfx/interface/icons/generic_icons/inflation.dds"
-					}
-
-				}
-				textbox = {
-					position = { 30 0 }
-					text = "[GetPlayer.MakeScope.ScriptValue('inflation_value')|nd%]"
-					fontsize = 15
-					align = left|nobaseline
-					autoresize = yes
-					parentanchor = vcenter
-				}
-			}
-			button = {
-				minimumsize = { 90 20 }
-				maximumsize = { 90 20 }
-				using = tooltip_below
-				tooltipwidget = {
-					money_supply_tooltip = {}
-				}
-				alwaystransparent = no
-				onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
-				onclick = "[GetVariableSystem.Clear('international_open')]" 
-				onclick = "[GetVariableSystem.Clear('un_panel')]" 
-				onclick = "[GetVariableSystem.Clear('banks_panel')]" 
-				onclick = "[GetVariableSystem.Clear('nato_panel')]" 
-				onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
-				enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
-
-				widget = {
-					size = { 28 28 }
-					parentanchor = vcenter
-					position = { 0 0 }
-
-					icon = {
-						parentanchor = center
-						size = { @tertiary_icon_size @tertiary_icon_size }
-						texture = "gfx/interface/icons/generic_icons/inflation.dds" #TODO, make icon
-					}
-
-				}
-				textbox = {
-					position = { 30 0 }
-					raw_text = "#gold #bold [GetPlayer.MakeScope.ScriptValue('money_supply_percentage')|0]%#!#!"
-					fontsize = 15
-					align = left|nobaseline
-					autoresize = yes
-					parentanchor = vcenter
-				}
-			}
+			#button = {
+			#	name = "tutorial_highlight_currency"
+			#	minimumsize = { 90 20 }
+			#	maximumsize = { 90 20 }
+			#	tooltipwidget = {
+			#		bank_credibility_tooltip = {}
+			#	}
+			#	onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
+			#	onclick = "[GetVariableSystem.Clear('international_open')]" 
+			#	onclick = "[GetVariableSystem.Clear('un_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+			#	enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+			#	using = tooltip_below
+#
+			#	alwaystransparent = no
+#
+			#	textbox = {
+			#		parentanchor = vcenter
+			#		raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName][GetPlayer.MakeScope.ScriptValue('currency_average_difference_to_global')|+d%]#!"
+			#		autoresize = yes
+			#		fontsize = 15
+			#		align = left|nobaseline
+			#	}
+			#}
+			#button = {
+			#	minimumsize = { 90 20 }
+			#	maximumsize = { 90 20 }
+			#	tooltipwidget = {
+			#		inflation_tooltip = {}
+			#	}
+			#	using = tooltip_below
+			#	alwaystransparent = no
+			#	onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
+			#	onclick = "[GetVariableSystem.Clear('international_open')]" 
+			#	onclick = "[GetVariableSystem.Clear('un_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+			#	enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+#
+			#	widget = {
+			#		size = { 28 28 }
+			#		parentanchor = vcenter
+			#		position = { 0 0 }
+#
+			#		icon = {
+			#			parentanchor = center
+			#			size = { @tertiary_icon_size @tertiary_icon_size }
+			#			texture = "gfx/interface/icons/generic_icons/inflation.dds"
+			#		}
+#
+			#	}
+			#	textbox = {
+			#		position = { 30 0 }
+			#		text = "[GetPlayer.MakeScope.ScriptValue('inflation_value')|nd%]"
+			#		fontsize = 15
+			#		align = left|nobaseline
+			#		autoresize = yes
+			#		parentanchor = vcenter
+			#	}
+			#}
+			#button = {
+			#	minimumsize = { 90 20 }
+			#	maximumsize = { 90 20 }
+			#	using = tooltip_below
+			#	tooltipwidget = {
+			#		money_supply_tooltip = {}
+			#	}
+			#	alwaystransparent = no
+			#	onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
+			#	onclick = "[GetVariableSystem.Clear('international_open')]" 
+			#	onclick = "[GetVariableSystem.Clear('un_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+			#	enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+#
+			#	widget = {
+			#		size = { 28 28 }
+			#		parentanchor = vcenter
+			#		position = { 0 0 }
+#
+			#		icon = {
+			#			parentanchor = center
+			#			size = { @tertiary_icon_size @tertiary_icon_size }
+			#			texture = "gfx/interface/icons/generic_icons/inflation.dds" #TODO, make icon
+			#		}
+#
+			#	}
+			#	textbox = {
+			#		position = { 30 0 }
+			#		raw_text = "#gold #bold [GetPlayer.MakeScope.ScriptValue('money_supply_percentage')|0]%#!#!"
+			#		fontsize = 15
+			#		align = left|nobaseline
+			#		autoresize = yes
+			#		parentanchor = vcenter
+			#	}
+			#}
 
 		}
 	}
