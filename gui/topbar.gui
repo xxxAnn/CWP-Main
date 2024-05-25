@@ -727,56 +727,6 @@ types topbar_components
 									}
 								}
 							}
-							container = {
-								### CORRUPTION
-								button = {
-									name = "tutorial_highlight_corruption"
-									using = glow_button
-									size = { 150 40 }
-									tooltipwidget = {
-										corruption_tooltip = {}
-									}
-									using = tooltip_below
-									onclick = "[InformationPanelBar.OpenPanelTab('politics', 'default')]"
-									onclick = "[GetVariableSystem.Clear('international_open')]" 
-									onclick = "[GetVariableSystem.Clear('un_panel')]" 
-									onclick = "[GetVariableSystem.Clear('banks_panel')]" 
-									onclick = "[GetVariableSystem.Clear('nato_panel')]" 
-									onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
-									enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
-									visible = "[Country.IsValid]"
-
-									icon = {
-										size = { 40 40 }
-										name = authority_icon
-										texture = "gfx/interface/icons/topbar/corruption_icon.dds"
-										parentanchor = vcenter
-									}
-
-									textbox = {
-										position = { 45 -2 }
-										name = capital_value
-										raw_text = "#n [GetPlayer.MakeScope.ScriptValue('corruption_value')|d1]% #!"
-										align = left|nobaseline
-										using = fontsize_large
-										autoresize = yes
-										parentanchor = vcenter
-									}
-
-									bad_progressbar_horizontal = {
-										parentanchor = vcenter
-										name = "corruption_progressbar"
-										size = { 60 6 }
-										position = { 40 15 }
-										blockoverride "values" {
-											value = "[GetPlayer.MakeScope.ScriptValue('corruption_value')]"
-											min = 0
-											max = 100
-										}
-									}
-								}
-							}
-
 						}
 
 						#shows only on hover

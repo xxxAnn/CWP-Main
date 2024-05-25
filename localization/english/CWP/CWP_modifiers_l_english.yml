@@ -10,58 +10,6 @@
   investor_confidence: "Investor Confidence"
   interest_rates: "Interest Rates"
 
-  ####################################################
-  #################### Corruption ####################
-  ####################################################
-
-  # Value
-  modifier_corruption_value_modifier: "Corruption Value Modifier"
-  modifier_corruption_value_modifier_desc: "A bonus or penalty to the corruption value"
-
-  modifier_corruption_growth: "Monthly [concept_corruption] Growth"
-  modifier_corruption_growth_desc: "How much [concept_corruption] grows or decays per month."
-
-  modifier_corruption_baseline: "[concept_corruption_baseline]"
-  modifier_corruption_baseline_desc: "Level of [concept_corruption_baseline]"
-
-  ig_corruption_modifier: "Corruption"
-  modifier_country_corruption_add: "Corruption if in Power"
-  modifier_country_corruption_add_desc: "A bonus or penalty to the IG corruption value"
-
-  modifier_interest_group_corruption_decay: "Monthly [concept_ig_corruption] Decrease"
-  modifier_interest_group_corruption_decay_desc: "How much [concept_ig_corruption] decays per month."
-
-  modifier_country_corruption_increase_add: "Corruption Increase if in Power"
-  modifier_country_corruption_increase_add_desc: "A bonus or penalty to the IG corruption increase value"
-
-  modifier_interest_group_corruption_growth: "Monthly [concept_corruption] Growth"
-  modifier_interest_group_corruption_growth_desc: "How much [concept_corruption] grows or decays per month."
-
-  # Level/Amounts
-  low_corruption: "Low Corruption"
-  low_corruption_desc: "The country is considered to have low levels of corruption"
-
-  medium_corruption: "Medium Corruption"
-  medium_corruption_desc: "The country is considered to have medium levels of corruption"
-
-  high_corruption: "High Corruption"
-  high_corruption_desc: "The country is considered to have high levels of corruption"
-
-  very_high_corruption: "Very High Corruption"
-  very_high_corruption_desc: "The country is considered to have very high levels of corruption"
-
-  immense_corruption: "Immense Corruption"
-  immense_corruption_desc: "The country is considered to have immense levels of corruption"
-
-  #########################################################
-  #################### Interest Groups ####################
-  #########################################################
-  #Note that Intelligentsia isn't here, as its vanilla IG.
-
-  # Corruption Strength
-  modifier_interest_group_corruption_strength_mult: "Interest Group Corruption Strength Multiplier"
-  modifier_interest_group_corruption_strength_mult_desc: "A bonus or penalty to the Corruption Strength of Interest Groups"
-
   # Variants
   ig_variant_bureaucrats: "[GetInterestGroupVariant('ig_bureaucrats',GetPlayer).GetNameWithCountryVariant]"
   ig_variant_capitalists: "[GetInterestGroupVariant('ig_market_liberals',GetPlayer).GetNameWithCountryVariant]"

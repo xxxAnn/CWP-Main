@@ -1,7 +1,6 @@
 ﻿COUNTRIES = {
 	c:SWE ?= {
 		# Politics
-		effect_corruption_low = yes
 		#todo IGs and Ideologies
 		# Tech and Tax
 		set_tax_level = high

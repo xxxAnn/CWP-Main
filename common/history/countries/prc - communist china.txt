@@ -6,7 +6,6 @@
 		set_market_capital = STATE_BEIJING
 		set_government_wage_level = high
 		set_tax_level = low
-		effect_corruption_medium = yes
 		add_technology_researched = guerilla_warfare
 		effect_currency_cny = yes
 		set_state_religion = rel:atheist

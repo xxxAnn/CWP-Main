@@ -14,7 +14,6 @@
 		set_tax_level = medium
 		set_market_capital = STATE_TONKIN
 		effect_starting_technology_tier_4_tech = yes
-		effect_corruption_medium = yes
 		activate_law = law_type:law_administrative
 		activate_law = law_type:law_church_run_schools
 		activate_law = law_type:law_private_health_insurance

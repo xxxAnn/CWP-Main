@@ -13,7 +13,6 @@ COUNTRIES = {
 		effect_nuclear_capable_nation = {
 			stockpile = 2
 		}
-		effect_corruption_low = yes
 		effect_currency_usd = yes
 		# Politics
 		#todo IGs and Ideologies

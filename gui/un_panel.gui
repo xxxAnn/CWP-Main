@@ -741,23 +741,6 @@ types un_panel
 												enabled = no #"[GetScriptedGui('unclos3_varcheck').IsShown( GuiScope.End )]"											
 											}
 										}
-										flowcontainer = {## Anti Corruption Resolution
-											direction = horizontal
-											button = {
-												size = { 210 45 }
-												using = expand_button_bg_no_fade
-												text = "[concept_anti_corruption_resolution]"
-												onclick = "[GetScriptedGui('activate_un_anti_corruption_je').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-												using = fontsize_medium
-												enabled = no #"[GetScriptedGui('un_anti_corruption_varcheck').IsShown( GuiScope.End )]"
-											}
-											button_icon_check = {
-												position = { 215 10 }
-												size = { 40 40 }
-												onclick = "[GetScriptedGui('activate_un_anti_corruption_je').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
-												enabled = no #"[GetScriptedGui('un_anti_corruption_varcheck').IsShown( GuiScope.End )]"											
-											}
-										}
 									}
 								}
 							}
