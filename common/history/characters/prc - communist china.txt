@@ -12,7 +12,7 @@
 			#ig_leader = yes #Ruler can't be IG leader under dictatorship or monarchy.
 			birth_date = 1893.12.26
 			#dna = 
-			interest_group = ig_ruralists
+			interest_group = ig_rural_folk
 			ideology = ideology_hardliner
 			traits = {
 			}

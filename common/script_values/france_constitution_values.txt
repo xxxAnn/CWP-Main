@@ -144,7 +144,7 @@ france_constitution_moralist_clout = {
 	value = 0
 	add = ig:ig_devout.ig_clout
 	add = ig:ig_conservatives.ig_clout
-	add = ig:ig_ruralists.ig_clout
+	add = ig:ig_rural_folk.ig_clout
 }
 
 france_constitution_gaullist_clout = {

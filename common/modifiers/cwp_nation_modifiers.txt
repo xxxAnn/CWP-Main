@@ -156,7 +156,7 @@ split_in_the_CGT = {
 FNSEA = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	interest_group_ig_urbanists_pop_attraction_mult = -0.1
-	interest_group_ig_ruralists_pop_attraction_mult = 0.1
+	interest_group_ig_rural_folk_pop_attraction_mult = 0.1
 }
 
 petain_on_house_arrest = {

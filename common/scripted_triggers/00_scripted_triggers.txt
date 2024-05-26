@@ -1696,9 +1696,9 @@ ig_type_matches_former = {
 				}
 			}
 			AND = {
-				is_interest_group_type = ig_ruralists
+				is_interest_group_type = ig_rural_folk
 				scope:ex_ig = {
-					is_interest_group_type = ig_ruralists
+					is_interest_group_type = ig_rural_folk
 				}
 			}
 			AND = {
@@ -1809,7 +1809,7 @@ can_have_radical_leader = {
 		}
 	}
 	OR = {
-		# is_interest_group_type = ig_ruralists
+		# is_interest_group_type = ig_rural_folk
 		# is_interest_group_type = ig_socialists
 		# is_interest_group_type = ig_entrepreneurs
 		# is_interest_group_type = ig_armed_forces

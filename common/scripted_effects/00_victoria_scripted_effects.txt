@@ -196,7 +196,7 @@ adopt_random_antigovernment_ideology = {
 							this.interest_group = {
 								OR = {
 									is_interest_group_type = ig_socialists
-									is_interest_group_type = ig_ruralists
+									is_interest_group_type = ig_rural_folk
 								}
 							}
 						}
@@ -538,7 +538,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							OR = {
-								is_interest_group_type = ig_ruralists
+								is_interest_group_type = ig_rural_folk
 								is_interest_group_type = ig_devout
 							}
 						}
@@ -547,7 +547,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							NOR = {
-								is_interest_group_type = ig_ruralists
+								is_interest_group_type = ig_rural_folk
 								is_interest_group_type = ig_devout
 							}
 						}
@@ -566,7 +566,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								has_ruling_interest_group = ig_ruralists
+								has_ruling_interest_group = ig_rural_folk
 							}
 						}
 						multiply = {
@@ -1299,7 +1299,7 @@ gen_ruler_party = {
 					has_ideology = ideology:ideology_pacifist
 				}
 				ruler = {
-					is_interest_group_type = ig_ruralists
+					is_interest_group_type = ig_rural_folk
 				}
 			}
 		}

@@ -831,7 +831,7 @@ west_german_unification.3 = {
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_ruralists
+			interest_group = ig:ig_rural_folk
 		}
 		create_character = {
 			ig_leader = yes

@@ -29,7 +29,7 @@
 			culture = cu:zulu
 			ig_leader = yes
 			birth_date = 1891.1.1			#Exact DOB unkown
-			interest_group = ig:ig_ruralists
+			interest_group = ig:ig_rural_folk
 			ideology = ideology_moderate
 			traits = {
 			}

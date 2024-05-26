@@ -47,7 +47,7 @@
 			ig_leader = yes
 			birth_date = 1901.7.18
 			#dna = 
-			interest_group = ig_ruralists
+			interest_group = ig_rural_folk
 			ideology = ideology_moderate
 			traits = {
 			}

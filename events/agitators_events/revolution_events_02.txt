@@ -562,7 +562,7 @@ revolution_pulse_events.5 = {
 	}
 	trigger = {
 		socialist_revolution_ongoing = yes
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			is_marginal = no
 			OR = {
 				is_being_suppressed = yes
@@ -582,7 +582,7 @@ revolution_pulse_events.5 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			save_scope_as = rural_folk_ig
 		}
 		ig:ig_conservatives = {
@@ -4652,7 +4652,7 @@ revolution_pulse_events.37 = {
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			is_insurrectionary = yes
 		}
 		any_neighbouring_state = {
@@ -4679,7 +4679,7 @@ revolution_pulse_events.37 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			save_scope_as = rural_folk_ig
 			leader = {
 				save_scope_as = rural_folk_ig_leader

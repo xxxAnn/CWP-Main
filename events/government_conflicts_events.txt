@@ -463,7 +463,7 @@ government_conflicts.8 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	duration = 3
 	trigger = {
-		has_ruling_interest_group = ig_ruralists
+		has_ruling_interest_group = ig_rural_folk
 		has_ruling_interest_group = ig_market_liberals
 		NOR = {
 			has_modifier = government_conflict
@@ -478,7 +478,7 @@ government_conflicts.8 = {
 			name = ongoing_government_conflicts
 			months = normal_modifier_time
 		}
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			save_scope_as = rural_folk_ig
 		}
 		ig:ig_market_liberals = {
@@ -487,7 +487,7 @@ government_conflicts.8 = {
 	}
 	option = {
 		name = government_conflicts.8.a
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time

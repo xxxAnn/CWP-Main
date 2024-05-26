@@ -15,9 +15,9 @@
   ig_socialists_only_icon: "@laborists!"
   ig_socialists_desc: "Laborists are the backbone of the nation, toiling tirelessly in various sectors. Their sweat and blood enrich the soil they cultivate, making them the unsung heroes and lifeblood of the nation."
 
-  ig_ruralists: "Ruralists"
-  ig_ruralists_only_icon: "@ruralists!"
-  ig_ruralists_desc: "Ruralists are the humble denizens of the countryside, the heart and lungs of the nation. They nourish the economy with their resilience, albeit their wealth may not rival that of the elites."
+  ig_rural_folk: "Ruralists"
+  ig_rural_folk_only_icon: "@ruralists!"
+  ig_rural_folk_desc: "Ruralists are the humble denizens of the countryside, the heart and lungs of the nation. They nourish the economy with their resilience, albeit their wealth may not rival that of the elites."
 
   ig_devout: "Moralists"
   ig_devout_only_icon: "@moralists!"

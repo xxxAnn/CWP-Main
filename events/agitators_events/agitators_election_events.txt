@@ -2899,7 +2899,7 @@ agitators_election_events.23 = {
 				is_interest_group_type = ig_armed_forces
 			}
 		}
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			leader = {
 				NOT = {
 					has_ideology = ideology:ideology_jingoistic
@@ -3103,7 +3103,7 @@ agitators_election_events.25 = {
 			}
 			save_scope_as = industry_enroachment_state
 		}
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			save_scope_as = rural_folk_ig
 		}
 		ig:ig_market_liberals = {
@@ -4196,7 +4196,7 @@ agitators_election_events.37 = {
 						has_progressive_ideology = yes
 					}
 				}
-				ig:ig_ruralists = {
+				ig:ig_rural_folk = {
 					is_powerful = yes
 					is_in_government = yes
 				}
@@ -4247,7 +4247,7 @@ agitators_election_events.37 = {
 							}
 						}
 					}
-					ig:ig_ruralists = {
+					ig:ig_rural_folk = {
 						is_powerful = yes
 						is_in_government = yes
 					}
@@ -4534,7 +4534,7 @@ agitators_election_events.39 = {
 		any_active_party = {
 			is_party_type = conservative_party
 		}
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			leader = {
 				NOR = {
 					has_socialist_ideology = yes
@@ -4555,7 +4555,7 @@ agitators_election_events.39 = {
 	}
 	immediate = {
 		conservative_agitator_election_scope_effect = yes
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			save_scope_as = rf_scope
 			leader = {
 				save_scope_as = rf_leader_scope

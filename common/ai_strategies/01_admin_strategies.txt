@@ -489,8 +489,8 @@ ai_strategy_placate_population = {
 		}
 		if = {
 			limit = {
-				exists = ig:ig_ruralists
-				ig:ig_ruralists = {
+				exists = ig:ig_rural_folk
+				ig:ig_rural_folk = {
 					is_powerful = yes
 				}
 			}

@@ -30,7 +30,7 @@ conscription_laws.1 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			save_scope_as = rural_folk_conscription
 		}
 	}

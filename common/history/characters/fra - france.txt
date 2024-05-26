@@ -171,7 +171,7 @@
 			religion = rel:catholic
 			birth_date = 1882.3.20
 			ig_leader = yes
-			interest_group = ig:ig_ruralists
+			interest_group = ig:ig_rural_folk
 			ideology = ideology_moderate
 			traits = {
 				career_lawyer
@@ -185,7 +185,7 @@
 			culture = cu:french
 			religion = rel:catholic
 			birth_date = 1891.12.30
-			interest_group = ig:ig_ruralists
+			interest_group = ig:ig_rural_folk
 			ideology = ideology_moderate			#should be anti-communist ideology
 			traits = {
 				career_businessperson

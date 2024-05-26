@@ -74,7 +74,7 @@
 			culture = cu:brazilian
 			religion = rel:catholic
 			ig_leader = yes
-			interest_group = ig:ig_ruralists
+			interest_group = ig:ig_rural_folk
 			ideology = ideology_moderate
 			traits = {
 			}

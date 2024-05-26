@@ -778,10 +778,10 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_ruralists
+					is_interest_group_type = ig_rural_folk
 				}
 			}
-			ig:ig_ruralists = {
+			ig:ig_rural_folk = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time

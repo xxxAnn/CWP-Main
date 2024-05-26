@@ -40,7 +40,7 @@
 			culture = cu:romanian
 			ig_leader = yes
 			birth_date = 1882.3.3
-			interest_group = ig:ig_ruralists
+			interest_group = ig:ig_rural_folk
 			ideology = ideology_moderate
 			traits = {
 				#WIP
