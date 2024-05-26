@@ -90,6 +90,7 @@ bpm_centralization_institution_ai_balance = {
 		}
 		if = {
 			limit = {
+				exists = root
 				institution_investment_level = {
 					institution = institution_centralization
 					value < 4
