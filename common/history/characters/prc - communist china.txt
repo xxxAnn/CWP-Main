@@ -55,7 +55,7 @@
 			ig_leader = yes
 			birth_date = 1904.8.22
 			#dna = 
-			interest_group = ig:ig_entrepreneurs
+			interest_group = ig:ig_petty_bourgeoisie
 			ideology = ideology_market_socialist
 			traits = {
 			}

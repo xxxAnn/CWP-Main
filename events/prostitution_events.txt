@@ -343,7 +343,7 @@ prostitution.3 = {
 				is_interest_group_type = ig_devout
 				is_interest_group_type = ig_market_liberals
 				is_interest_group_type = ig_conservatives
-				is_interest_group_type = ig_entrepreneurs
+				is_interest_group_type = ig_petty_bourgeoisie
 			}
 			leader = {
 				NOT = {
@@ -372,7 +372,7 @@ prostitution.3 = {
 					is_interest_group_type = ig_devout
 					is_interest_group_type = ig_market_liberals
 					is_interest_group_type = ig_conservatives
-					is_interest_group_type = ig_entrepreneurs
+					is_interest_group_type = ig_petty_bourgeoisie
 				}
 				leader = {
 					NOT = {

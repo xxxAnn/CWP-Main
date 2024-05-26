@@ -1157,7 +1157,7 @@ indian_partition.50 = {
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_entrepreneurs
+			interest_group = ig:ig_petty_bourgeoisie
 		}
 		create_character = {
 			ig_leader = yes

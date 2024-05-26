@@ -28,7 +28,7 @@ ger_kurt_georg_kiesinger_template = {
 			OR = {
 				is_interest_group_type = ig_conservatives
 				is_interest_group_type = ig_armed_forces
-				is_interest_group_type = ig_entrepreneurs
+				is_interest_group_type = ig_petty_bourgeoisie
 			}
 		}
 		earliest_usage_date = 1946.1.1
@@ -134,7 +134,7 @@ ger_helmut_kohl_template = {
 			OR = {
 				is_interest_group_type = ig_market_liberals
 				is_interest_group_type = ig_conservatives
-				is_interest_group_type = ig_entrepreneurs
+				is_interest_group_type = ig_petty_bourgeoisie
 			}
 		}
 		earliest_usage_date = 1973.1.1
@@ -221,7 +221,7 @@ ger_axel_springer_template = {
 	female = no
 	religion = protestant
 	ideology = ideology_punitive
-	interest_group = ig_entrepreneurs
+	interest_group = ig_petty_bourgeoisie
 	is_agitator = yes
 	birth_date = 1912.5.2
 	traits = {
@@ -236,7 +236,7 @@ ger_axel_springer_template = {
 		}
 		interest_group_trigger = {
 			is_marginal = no
-			is_interest_group_type = ig_entrepreneurs
+			is_interest_group_type = ig_petty_bourgeoisie
 		}
 		earliest_usage_date = 1946.1.1
 		latest_usage_date = 1975.1.1

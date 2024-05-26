@@ -4908,7 +4908,7 @@ agitators_election_events.43 = {
 			}
 			save_scope_as = discriminated_culture_scope
 		}
-		ig:ig_entrepreneurs = {
+		ig:ig_petty_bourgeoisie = {
 			save_scope_as = pb_scope
 		}
 	}

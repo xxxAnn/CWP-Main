@@ -1636,7 +1636,7 @@ revolution_pulse_events.14 = {
 		any_interest_group = {
 			OR = {
 				is_interest_group_type = ig_conservatives
-				is_interest_group_type = ig_entrepreneurs
+				is_interest_group_type = ig_petty_bourgeoisie
 			}
 			is_marginal = no
 			is_in_government = yes
@@ -1656,7 +1656,7 @@ revolution_pulse_events.14 = {
 			limit = {
 				OR = {
 					is_interest_group_type = ig_conservatives
-					is_interest_group_type = ig_entrepreneurs
+					is_interest_group_type = ig_petty_bourgeoisie
 				}
 				is_marginal = no
 				is_in_government = yes
@@ -4297,7 +4297,7 @@ revolution_pulse_events.33 = {
 			limit = {
 				OR = {
 					is_interest_group_type = ig_conservatives
-					is_interest_group_type = ig_entrepreneurs
+					is_interest_group_type = ig_petty_bourgeoisie
 					is_interest_group_type = ig_market_liberals
 				}
 			}
@@ -4554,7 +4554,7 @@ revolution_pulse_events.36 = {
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
-		ig:ig_entrepreneurs = {
+		ig:ig_petty_bourgeoisie = {
 			is_insurrectionary = yes
 		}
 		NOT = {
@@ -4582,7 +4582,7 @@ revolution_pulse_events.36 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_entrepreneurs = {
+		ig:ig_petty_bourgeoisie = {
 			save_scope_as = petty_bourgeoisie_ig
 			leader = {
 				save_scope_as = petty_bourgeoisie_ig_leader

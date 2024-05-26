@@ -87,8 +87,8 @@ pushing_denazification = {
 
 denazification = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	interest_group_ig_entrepreneurs_pol_str_mult = -0.75
-	interest_group_ig_entrepreneurs_pop_attraction_mult = -0.75
+	interest_group_ig_petty_bourgeoisie_pol_str_mult = -0.75
+	interest_group_ig_petty_bourgeoisie_pop_attraction_mult = -0.75
 	interest_group_ig_armed_forces_pol_str_mult = -0.75
 	interest_group_ig_armed_forces_pop_attraction_mult = -0.75
 	interest_group_ig_armed_forces_pol_str_mult = -0.75

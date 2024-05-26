@@ -1666,9 +1666,9 @@ ig_type_matches_former = {
 				}
 			}
 			AND = {
-				is_interest_group_type = ig_entrepreneurs
+				is_interest_group_type = ig_petty_bourgeoisie
 				scope:ex_ig = {
-					is_interest_group_type = ig_entrepreneurs
+					is_interest_group_type = ig_petty_bourgeoisie
 				}
 			}
 			AND = {
@@ -1690,9 +1690,9 @@ ig_type_matches_former = {
 				}
 			}
 			AND = {
-				is_interest_group_type = ig_entrepreneurs
+				is_interest_group_type = ig_petty_bourgeoisie
 				scope:ex_ig = {
-					is_interest_group_type = ig_entrepreneurs
+					is_interest_group_type = ig_petty_bourgeoisie
 				}
 			}
 			AND = {
@@ -1811,7 +1811,7 @@ can_have_radical_leader = {
 	OR = {
 		# is_interest_group_type = ig_rural_folk
 		# is_interest_group_type = ig_socialists
-		# is_interest_group_type = ig_entrepreneurs
+		# is_interest_group_type = ig_petty_bourgeoisie
 		# is_interest_group_type = ig_armed_forces
 		# is_interest_group_type = ig_conservatives
 	}

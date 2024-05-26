@@ -85,7 +85,7 @@
 			culture = cu:brazilian
 			religion = rel:catholic
 			ig_leader = yes
-			interest_group = ig:ig_entrepreneurs
+			interest_group = ig:ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {
 			}

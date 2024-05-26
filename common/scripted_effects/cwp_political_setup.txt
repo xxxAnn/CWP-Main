@@ -492,7 +492,7 @@ setup_starting_ideologies = {
 		}
 	}
 	### Entrepreneurs ###
-	ig:ig_entrepreneurs = {
+	ig:ig_petty_bourgeoisie = {
 		if = {
 			limit = {
 				owner = {

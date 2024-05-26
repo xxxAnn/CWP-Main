@@ -60,7 +60,7 @@
 			remove_ruling_interest_group = no
 		}
 		#IG in government to match ruler
-		ig:ig_entrepreneurs = {
+		ig:ig_petty_bourgeoisie = {
 			add_ruling_interest_group = yes
 		}
 		effect_bretton_woods_signatory = yes

@@ -35,7 +35,7 @@
 			recreationalDrugs = alcohol_allowed
 		}
 		#Igs
-		ig:ig_entrepreneurs = {
+		ig:ig_petty_bourgeoisie = {
 			set_ig_suppression = yes
 		}
 		ig:ig_armed_forces = {

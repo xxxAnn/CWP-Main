@@ -413,7 +413,7 @@ ig_petitions.22 = {
 	duration = 3
 	trigger = {
 		is_enacting_law = law_type:law_supremacist
-		ig:ig_entrepreneurs = {
+		ig:ig_petty_bourgeoisie = {
 			is_powerful = yes
 			is_in_government = no
 		}
@@ -422,7 +422,7 @@ ig_petitions.22 = {
 		}
 	}
 	immediate = {
-		ig:ig_entrepreneurs = {
+		ig:ig_petty_bourgeoisie = {
 			save_scope_as = petty_bourgeoisie_ig
 		}
 		currently_enacting_law = {

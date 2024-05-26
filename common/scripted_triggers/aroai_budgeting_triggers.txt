@@ -230,11 +230,11 @@ aroai_can_cut_government_wages = {
 		}
 		OR = {
 			NOT = {
-				exists = ig:ig_entrepreneurs
+				exists = ig:ig_petty_bourgeoisie
 			}
 			AND = {
-				exists = ig:ig_entrepreneurs
-				ig:ig_entrepreneurs = {
+				exists = ig:ig_petty_bourgeoisie
+				ig:ig_petty_bourgeoisie = {
 					OR = {
 						root = {
 							NOT = {

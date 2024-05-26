@@ -20,7 +20,7 @@
 			culture = cu:american
 			religion = rel:protestant
 			birth_date = 1890.10.14
-			interest_group = ig:ig_entrepreneurs
+			interest_group = ig:ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			is_general = yes
 		}

@@ -42,7 +42,7 @@
 		ig:ig_market_liberals = {
 			add_ruling_interest_group = yes
 		}
-		ig:ig_entrepreneurs = {
+		ig:ig_petty_bourgeoisie = {
 			set_ig_suppression = yes
 		}
 		ig:ig_armed_forces = {

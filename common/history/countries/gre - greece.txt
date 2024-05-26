@@ -45,7 +45,7 @@
 			loanType = 1
 		}
 		#IG in government to match ruler
-		ig:ig_entrepreneurs = {
+		ig:ig_petty_bourgeoisie = {
 			add_ruling_interest_group = yes
 		}
 		# Tech and Tax

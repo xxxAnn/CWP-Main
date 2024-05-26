@@ -16,7 +16,7 @@ COUNTRIES = {
 		effect_currency_usd = yes
 		# Politics
 		#todo IGs and Ideologies
-		# ig:ig_entrepreneurs = {
+		# ig:ig_petty_bourgeoisie = {
 		# 	add_ruling_interest_group = yes
 		# }
 		# ig:ig_urbanists = {

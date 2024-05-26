@@ -151,6 +151,6 @@ france_constitution_gaullist_clout = {
 	value = 0
 	add = ig:ig_armed_forces.ig_clout
 	add = ig:ig_market_liberals.ig_clout
-	add = ig:ig_entrepreneurs.ig_clout
+	add = ig:ig_petty_bourgeoisie.ig_clout
 	add = ig:ig_armed_forces.ig_clout
 }

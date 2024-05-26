@@ -543,7 +543,7 @@ children_rights_events.6 = {
 			}
 			NOR = {
 				is_interest_group_type = ig_conservatives
-				is_interest_group_type = ig_entrepreneurs
+				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_market_liberals
 			}
 		}
@@ -570,11 +570,11 @@ children_rights_events.6 = {
 		}
 		else_if = {
 			limit = {
-				ig:ig_entrepreneurs = {
+				ig:ig_petty_bourgeoisie = {
 					is_powerful = yes
 				}
 			}
-			ig:ig_entrepreneurs = {
+			ig:ig_petty_bourgeoisie = {
 				save_scope_as = gatekeeper_ig
 			}
 		}
@@ -602,7 +602,7 @@ children_rights_events.6 = {
 				}
 				NOR = {
 					is_interest_group_type = ig_conservatives
-					is_interest_group_type = ig_entrepreneurs
+					is_interest_group_type = ig_petty_bourgeoisie
 					is_interest_group_type = ig_market_liberals
 				}
 			}

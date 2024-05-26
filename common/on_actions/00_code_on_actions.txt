@@ -1766,7 +1766,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_supremacist
 							currently_enacting_law.type = law_type:law_ethnonationalist
 						}
-						ig:ig_entrepreneurs = {
+						ig:ig_petty_bourgeoisie = {
 							nor = {
 								has_ideology = ideology:ideology_bigoted
 								interest_group_supports_political_movement = yes
@@ -1789,7 +1789,7 @@ on_law_enactment_pass = {
 							currently_enacting_law.type = law_type:law_multiculturalist
 							currently_enacting_law.type = law_type:law_integrationist
 						}
-						ig:ig_entrepreneurs = {
+						ig:ig_petty_bourgeoisie = {
 							nor = {
 								has_ideology = ideology:ideology_assimilative
 								interest_group_supports_political_movement = yes
