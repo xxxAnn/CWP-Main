@@ -56,8 +56,8 @@
 				limit = {
 					owner = {
 						OR = {
-							#has_law = law_type:law_laissez_faire
-							#has_law = law_type:law_free_trade
+							has_law = law_type:law_laissez_faire
+							has_law = law_type:law_free_trade
 						}
 					}
 				}

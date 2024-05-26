@@ -34,8 +34,8 @@
 	pop_potential = {
 		owner = {
 			NOR = {
-				#has_law = law_type:law_collectivized_agriculture
-				#has_law = law_type:law_commercialized_agriculture
+				has_law = law_type:law_collectivized_agriculture
+				has_law = law_type:law_commercialized_agriculture
 			}
 		}
 		OR = {

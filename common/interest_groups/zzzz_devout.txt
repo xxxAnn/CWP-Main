@@ -1,9 +1,12 @@
 ﻿ig_devout = {
-	color = hsv{ 0 0 0.5 }
+	color = {
+		0
+		0
+		0.5
+	}
 	texture = "gfx/interface/icons/ig_icons/devout.dds"
 	layer = "revolution_dynamic_devout"
 	index = 1
-	
 	ideologies = {
 		ideology_rel_radical_moralist
 		ideology_wel_religious_welfare
@@ -13,67 +16,72 @@
 		ideology_moralist
 		ideology_patriarchal
 	}
-	
 	enable = {
 		always = yes
 	}
-	
 	on_enable = {
 		ig:ig_devout = {
 			set_ig_trait = ig_trait:ig_trait_rural_systematic_corruption
 			set_ig_trait = ig_trait:ig_trait_rural_well_oiled_machine
 			set_ig_trait = ig_trait:ig_trait_rural_systematic_opposition
 		}
-
-		ig:ig_devout = { bpm_reorder_ideologies = yes }
+		ig:ig_devout = {
+			bpm_reorder_ideologies = yes
+		}
 	}
-	on_disable = {}
+	on_disable = {
+	}
 	on_character_ig_membership = {
 		change_character_religion = scope:interest_group.owner.religion
 	}
-		
-	
 	pop_potential = {
 		has_state_religion = yes
 	}
-	
 	pop_weight = {
 		value = 20
-
 		if = {
-			limit = { is_pop_type = clergymen }
+			limit = {
+				is_pop_type = clergymen
+			}
 			add = {
 				desc = "POP_CLERGYMEN"
 				value = 300
 			}
 		}
 		else_if = {
-			limit = { is_pop_type = peasants }
+			limit = {
+				is_pop_type = peasants
+			}
 			add = {
 				desc = "POP_PEASANTS"
 				value = 70
 			}
 		}
 		else_if = {
-			limit = { strata = poor }
+			limit = {
+				strata = poor
+			}
 			add = {
 				desc = "POOR"
 				value = 20
 			}
 		}
-		
 		if = {
 			limit = {
-				owner = { #has_law = law_type:law_state_religion }
+				owner = {
+					has_law = law_type:law_state_religion
+				}
 			}
 			multiply = {
 				desc = "STATE_RELIGION_LAW"
-				value = 2.0
+				value = 2
 			}
 		}
 		else_if = {
 			limit = {
-				owner = { #has_law = law_type:law_total_separation }
+				owner = {
+					has_law = law_type:law_total_separation
+				}
 			}
 			multiply = {
 				desc = "TOTAL_SEPARATION_LAW"
@@ -82,34 +90,34 @@
 		}
 		else_if = {
 			limit = {
-				owner = { #has_law = law_type:law_state_atheism }
+				owner = {
+					has_law = law_type:law_state_atheism
+				}
 			}
 			multiply = {
 				desc = "STATE_ATHEISM_LAW"
 				value = 0.1
 			}
 		}
-
 		add = {
 			desc = "RELIGIOUS_INSTITUTIONS"
 			if = {
 				limit = {
 					owner = {
 						OR = {
-							#has_law = law_type:law_religious_schools
-							#has_law = law_type:law_charitable_health_system
+							has_law = law_type:law_religious_schools
+							has_law = law_type:law_charitable_health_system
 						}
 					}
 				}
 				value = 50
 			}
 		}
-
 		add = {
 			desc = "DEVOUT_LITERACY"
 			if = {
-				limit = { 
-					NOT = { 
+				limit = {
+					NOT = {
 						is_pop_type = clergymen
 					}
 				}
@@ -119,67 +127,58 @@
 				max = 0
 			}
 		}
-
 		add = {
 			desc = "THEOCRACY"
 			if = {
 				limit = {
-					owner = { #has_law = law_type:law_theocracy }
+					owner = {
+						has_law = law_type:law_theocracy
+					}
 				}
 				value = 100
 			}
 		}
-
-		multiply = ig_attraction_to_interests_from_stability	
-		
+		multiply = ig_attraction_to_interests_from_stability
 		multiply = {
 			desc = "RELIGION_SUPPRESSED"
-			value = 1.0
+			value = 1
 			if = {
 				limit = {
 					is_pop_type = clergymen
 					owner = {
-						#has_law = law_type:law_total_separation
+						has_law = law_type:law_total_separation
 					}
 				}
 				value = 1.5
 			}
-		}		
+		}
 	}
-	
 	monarch_weight = {
-		value = 1.0
-	}	
-
+		value = 1
+	}
 	agitator_weight = {
-		value = 1.0
+		value = 1
 		multiply = bpm_base_agitator_weight
 	}
-	
 	commander_weight = {
-		value = 1.0
+		value = 1
 		multiply = bpm_commander_assignment_from_laws_factor
-	}	
-	
+	}
 	noble_chance = {
 		value = 0.5
 	}
-	
-	female_commander_chance = {	
-		value = 1.0
+	female_commander_chance = {
+		value = 1
 		multiply = bpm_female_commander_spawn_chance
 	}
-	
 	female_politician_chance = {
-		value = 1.0
+		value = 1
 		multiply = bpm_female_character_spawn_chance
-	}	
-
-	female_agitator_chance = {
-		value = 1.0
-		multiply = bpm_female_character_spawn_chance		
 	}
-	
+	female_agitator_chance = {
+		value = 1
+		multiply = bpm_female_character_spawn_chance
+	}
 	# The chance that a commander belonging to this IG takes over leadership when it changes
 	# scope:character is the most popular commander in the IG
 	commander_leader_chance = {

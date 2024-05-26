@@ -10,7 +10,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1884.5.8
-			interest_group = ig:ig_bureaucrats
+			interest_group = ig:ig_petty_bourgeoisie
 			ideology = ideology_moderate
 		}
 		create_character = {

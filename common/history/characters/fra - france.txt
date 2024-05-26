@@ -32,7 +32,7 @@
 			religion = rel:catholic
 			birth_date = 1888.11.09
 			ig_leader = yes
-			interest_group = ig:ig_bureaucrats
+			interest_group = ig:ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {
 				career_administrator
