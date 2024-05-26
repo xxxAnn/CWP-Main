@@ -43,7 +43,7 @@ prostitution.1 = {
 			has_variable = var_abolished_cda_permanently
 		}
 		institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			value = 3
 		}
 		any_scope_state = {
@@ -331,7 +331,7 @@ prostitution.3 = {
 			}
 		}
 		institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			value = 3
 		}
 		NOT = {
@@ -481,7 +481,7 @@ prostitution.4 = {
 		}
 		OR = {
 			institution_investment_level = {
-				institution = institution_criminal_justice_system
+				institution = institution_police
 				value >= 3
 			}
 			#has_law = law_type:law_militarized_police
@@ -516,7 +516,7 @@ prostitution.4 = {
 		# defund the police
 		name = prostitution.4.a
 		change_institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			investment = -1
 		}
 		every_interest_group = {

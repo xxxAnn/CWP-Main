@@ -86,8 +86,8 @@
   modifier_country_institution_welfare_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_welfare$ [concept_institution]"
   modifier_country_institution_corporate_affairs_max_investment_add: "Max $institution_corporate_affairs$ [concept_institution] Investment"
   modifier_country_institution_corporate_affairs_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_corporate_affairs$ [concept_institution]"
-  modifier_country_institution_criminal_justice_system_max_investment_add: "Max $institution_criminal_justice_system$ [concept_institution] Investment"
-  modifier_country_institution_criminal_justice_system_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_criminal_justice_system$ [concept_institution]"
+  modifier_country_institution_police_max_investment_add: "Max $institution_police$ [concept_institution] Investment"
+  modifier_country_institution_police_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_police$ [concept_institution]"
 
   #########################################################
   #################### POPs ###############################

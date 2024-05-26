@@ -52,8 +52,6 @@
 			activate_law = law_type:law_$wmds$
 			activate_law = law_type:law_$monetaryPolicy$
 		}
-		
-		
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {
@@ -74,7 +72,7 @@
 			level = 3
 		}
 		set_institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			level = 2
 		}
 		set_institution_investment_level = {

@@ -196,7 +196,7 @@ election_conservative_events.3 = {
 			turmoil > 0.2
 		}
 		institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			value < 5
 		}
 		any_interest_group = {

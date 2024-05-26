@@ -56,16 +56,12 @@ COUNTRIES = {
 			level = 4
 		}
 		set_institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			level = 4
 		}
 		set_institution_investment_level = {
 			institution = institution_welfare
 			level = 3
-		}
-		set_institution_investment_level = {
-			institution = institution_corporate_affairs
-			level = 2
 		}
 		set_institution_investment_level = {
 			institution = institution_health_system

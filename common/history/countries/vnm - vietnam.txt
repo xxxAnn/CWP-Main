@@ -15,7 +15,7 @@
 		set_market_capital = STATE_TONKIN
 		effect_starting_technology_tier_4_tech = yes
 		set_institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			level = 1
 		}
 		ig:ig_conservatives = {

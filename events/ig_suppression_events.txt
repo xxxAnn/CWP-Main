@@ -550,7 +550,7 @@ ig_suppression_events.6 = { #bribe an IG leader
 			#has_law = law_type:law_militarized_police
 			#has_law = law_type:law_secret_police
 			institution_investment_level = {
-				institution = institution_criminal_justice_system
+				institution = institution_police
 				value >= 4
 			}
 		}

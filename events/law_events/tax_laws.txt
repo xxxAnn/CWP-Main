@@ -374,7 +374,7 @@ tax.4 = {
 		highlighted_option = yes
 		trigger = {
 			institution_investment_level = {
-				institution = institution_criminal_justice_system
+				institution = institution_police
 				value >= 3
 			}
 		}

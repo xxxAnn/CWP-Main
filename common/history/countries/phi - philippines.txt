@@ -6,7 +6,7 @@
 		effect_starting_technology_tier_2_tech = yes
 		effect_currency_php = yes
 		set_institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			level = 2
 		}
 		# IMF
