@@ -358,22 +358,22 @@ arg_conservative_party_name = {
 	text = {
 		trigger = {
 			NOT = { #has_law = law_type:law_confederated }
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 		}
 		localization_key = party_national_autonomist
 	}
 	text = {
 		trigger = {
 			NOT = { #has_law = law_type:law_confederated }
-			has_technology_researched = political_agitation
-			NOT = { has_technology_researched = mass_propaganda }
+			has_technology_researched = pre_war_ideological_thought
+			NOT = { has_technology_researched = telecommunications_tech }
 		}
 		localization_key = party_arg_national_democratic
 	}
 	text = {
 		trigger = {
 			NOT = { #has_law = law_type:law_confederated }
-			has_technology_researched = mass_propaganda
+			has_technology_researched = telecommunications_tech
 		}
 		localization_key = party_arg_concordancia
 	}
@@ -395,7 +395,7 @@ mex_conservative_party_name = {
 						#has_law = law_type:law_monarchy 
 						#has_law = law_type:law_theocracy
 					}
-					NOT = {has_technology_researched = mass_propaganda}
+					NOT = {has_technology_researched = telecommunications_tech}
 				}
 			}
 		}
@@ -407,7 +407,7 @@ mex_conservative_party_name = {
 				#has_law = law_type:law_monarchy 
 				#has_law = law_type:law_theocracy
 			}
-			has_technology_researched = mass_propaganda
+			has_technology_researched = telecommunications_tech
 		}
 		localization_key = party_mex_national_action
 	}

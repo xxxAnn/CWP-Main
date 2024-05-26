@@ -4,13 +4,13 @@
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 		}
 		localization_key = party_usa_slp
 	}
 	text = {
 		trigger = {
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_usa_spa
 	}
@@ -97,13 +97,13 @@ brz_socdem_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 		}
 		localization_key = party_psoe_left
 	}
 	text = {
 		trigger = {
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_pce
 	}
@@ -115,7 +115,7 @@ prg_socdem_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 			NOT = { has_variable = local_socialists_disunited_var }
 		}
 		localization_key = party_prg_workers
@@ -123,7 +123,7 @@ prg_socdem_party_name = {
 	text = {
 		trigger = {
 			NOT = { has_variable = local_socialists_disunited_var }
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_prg_revolutionary_socialist
 	}
@@ -141,21 +141,21 @@ chl_socdem_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = political_agitation }
-			NOT = { has_technology_researched = mass_propaganda }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
+			NOT = { has_technology_researched = telecommunications_tech }
 		}
 		localization_key = party_chl_democrat
 	}
 	text = {
 		trigger = {
-			has_technology_researched = political_agitation
-			NOT = { has_technology_researched = mass_propaganda }
+			has_technology_researched = pre_war_ideological_thought
+			NOT = { has_technology_researched = telecommunications_tech }
 		}
 		localization_key = party_chl_npa
 	}
 	text = {
 		trigger = {
-			has_technology_researched = mass_propaganda
+			has_technology_researched = telecommunications_tech
 		}
 		localization_key = party_chl_socialist
 	}
@@ -167,13 +167,13 @@ clm_socdem_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 		}
 		localization_key = party_clm_liberal_socialist
 	}
 	text = {
 		trigger = {
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_clm_natleft
 	}
@@ -185,13 +185,13 @@ mex_socdem_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 		}
 		localization_key = party_mex_laborist
 	}
 	text = {
 		trigger = {
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_mex_natrev
 	}

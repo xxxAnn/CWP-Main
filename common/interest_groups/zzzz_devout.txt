@@ -1,4 +1,5 @@
-﻿ig_devout = {
+﻿# Church Interests
+ig_devout = {
 	color = {
 		0
 		0

@@ -16,7 +16,7 @@ law_outlawed_dissent = {
 		law_censorship
 	}
 	unlocking_technologies = {
-		political_agitation
+		pre_war_ideological_thought
 	}
 	pop_support = {
 		value = 0

@@ -1,4 +1,5 @@
-﻿ig_landowners = {
+﻿# Aristocratic Interests
+ig_landowners = {
 	color = {
 		0
 		0

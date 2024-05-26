@@ -13,7 +13,7 @@
 	}
 	
 	unlocking_technologies = {
-		political_agitation
+		pre_war_ideological_thought
 	}
 	
 	possible_political_movements = {
@@ -55,7 +55,7 @@ law_ideological_jingoism = {
 	}
 	
 	unlocking_technologies = {
-		political_agitation
+		pre_war_ideological_thought
 	}
 	
 	possible_political_movements = {

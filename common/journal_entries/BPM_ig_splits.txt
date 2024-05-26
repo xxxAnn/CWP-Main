@@ -418,7 +418,7 @@ je_bpm_split_fascists = {
 
 	possible = {
 		year > 1900
-		has_technology_researched = political_agitation
+		has_technology_researched = pre_war_ideological_thought
 		bpm_country_laws_no_voting = no
 	}
 

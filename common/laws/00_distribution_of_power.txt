@@ -787,7 +787,7 @@ law_single_party_state = {
 	}
 
 	unlocking_technologies = {
-		political_agitation 
+		pre_war_ideological_thought 
 	}
 	
 	modifier = {
