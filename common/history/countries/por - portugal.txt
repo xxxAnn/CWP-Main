@@ -12,7 +12,7 @@
 		# Institutions
 		#laws
 		#IG in government to match ruler
-		ig:ig_armed_forcess = {
+		ig:ig_armed_forces = {
 			add_ruling_interest_group = yes
 		}
 	}

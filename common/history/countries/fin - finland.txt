@@ -5,7 +5,7 @@
 		effect_starting_technology_tier_3_tech = yes
 		set_tax_level = medium
 		set_ruling_interest_groups = {
-			ig_armed_forcess
+			ig_armed_forces
 		}
 		set_institution_investment_level = {
 			institution = institution_schools
