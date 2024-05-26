@@ -27,7 +27,33 @@
 		effect_starting_technology_wartime_major_participant_tech = yes
 		set_tax_level = very_high		#Postwar tax rate
 		# Laws
-		##For Lizzie
+		effect_create_law_package = {
+			#Placeholder Vanilla Laws
+			governanceprinciples = law_monarchy
+			distributionOfPower = law_census_voting
+			citizenship = law_racial_segregation
+			activate_law = law_type:law_$churchandstate$
+			activate_law = law_type:law_$bureaucracy$
+			activate_law = law_type:law_$armymodel$
+			activate_law = law_type:law_$internalsecurity$
+			activate_law = law_type:law_$economicsystem$
+			activate_law = law_type:law_$tradepolicy$
+			activate_law = law_type:law_$lawgrouptaxation$
+			activate_law = law_type:law_$landreform$
+			activate_law = law_type:law_$educationsystem$
+			activate_law = law_type:law_$healthsystem$
+			activate_law = law_type:law_$freespeech$
+			activate_law = law_type:law_$childrensrights$
+			activate_law = law_type:law_$rightsofwomen$
+			activate_law = law_type:law_$welfare$
+			activate_law = law_type:law_$migration$
+			#CWP Special
+			activate_law = law_type:law_$environmentalregulations$
+			activate_law = law_type:law_$wmds$
+			activate_law = law_type:law_$monetaryPolicy$
+		}
+		
+		
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

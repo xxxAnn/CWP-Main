@@ -1,30 +1,66 @@
-﻿effect_create_law_package = {
-	activate_law = law_type:law_$headOfGovernment$
+﻿#Placeholder Vannilla Laws
+effect_create_law_package = {
+    #Placeholder Vanilla Laws
+	activate_law = law_type:law_$governanceprinciples$
 	activate_law = law_type:law_$distributionOfPower$
-	activate_law = law_type:law_$criminalJustice$
-	activate_law = law_type:law_$centralization$
-	activate_law = law_type:law_$discrimination$
-	activate_law = law_type:law_$churchAndState$
-	activate_law = law_type:law_$bureaucraticSystems$
-	activate_law = law_type:law_$policing$
-	activate_law = law_type:law_$nationalDefense$
-	activate_law = law_type:law_$economicSystem$
-	activate_law = law_type:law_$tradePolicy$
-	activate_law = law_type:law_$taxation$
-	activate_law = law_type:law_$educationSystem$
-	activate_law = law_type:law_$healthSystem$
-	activate_law = law_type:law_$environmentalRegulations$
-	activate_law = law_type:law_$corporateAffairs$
-	activate_law = law_type:law_$nationalization$
-	activate_law = law_type:law_$monetaryPolicy$
-	activate_law = law_type:law_$wmds$
-	activate_law = law_type:law_$freeSpeech$
-	activate_law = law_type:law_$laborRights$
-	activate_law = law_type:law_$childrensRights$
-	activate_law = law_type:law_$rightsOfWomen$
-	activate_law = law_type:law_$familyPlanning$
+	activate_law = law_type:law_$citizenship$
+	activate_law = law_type:law_$churchandstate$
+	activate_law = law_type:law_$bureaucracy$
+	activate_law = law_type:law_$armymodel$
+	activate_law = law_type:law_$internalsecurity$
+	activate_law = law_type:law_$economicsystem$
+	activate_law = law_type:law_$tradepolicy$
+	activate_law = law_type:law_$lawgrouptaxation$
+	activate_law = law_type:law_$landreform$
+	activate_law = law_type:law_$educationsystem$
+	activate_law = law_type:law_$healthsystem$
+	activate_law = law_type:law_$freespeech$
+	activate_law = law_type:law_$childrensrights$
+	activate_law = law_type:law_$rightsofwomen$
 	activate_law = law_type:law_$welfare$
 	activate_law = law_type:law_$migration$
-	activate_law = law_type:law_$biotech$
-	activate_law = law_type:law_$recreationalDrugs$
+    #BMP Laws
+	activate_law = law_type:law_$officers$
+	activate_law = law_type:law_$centralization$
+	activate_law = law_type:law_$partylaws$
+	activate_law = law_type:law_$worktimeregulations$
+	activate_law = law_type:law_$laborunions$
+
+    #CWP Special
+	activate_law = law_type:law_$environmentalregulations$
+	activate_law = law_type:law_$wmds$
+	activate_law = law_type:law_$monetaryPolicy$
+}
+
+# Generic Liberal Republics
+effect_liberal_republic_law_package = {
+	activate_law = law_type:law_presidential_republic
+	activate_law = law_type:law_census_voting
+	activate_law = law_type:law_cultural_exclusion
+	activate_law = law_type:law_total_separation
+	activate_law = law_type:law_appointed_bureaucrats
+	activate_law = law_type:law_professional_army
+	activate_law = law_type:law_no_home_affairs
+	activate_law = law_type:law_interventionism
+	activate_law = law_type:law_protectionism
+	activate_law = law_type:law_proportional_taxation
+	activate_law = law_type:law_tenant_farmers
+	activate_law = law_type:law_public_schools
+	activate_law = law_type:law_private_health_insurance
+	activate_law = law_type:law_right_of_assembly
+	activate_law = law_type:law_restricted_child_labor
+	activate_law = law_type:law_womens_suffrage
+	activate_law = law_type:law_wage_subsidies
+	activate_law = law_type:law_migration_controls
+    #BMP Laws
+	activate_law = law_type:law_professional_officers
+	activate_law = law_type:law_devolved
+	activate_law = law_type:law_no_party_bans
+	activate_law = law_type:law_limited_work_hours
+	activate_law = law_type:law_all_labor_unions_allowed
+
+    #CWP Special
+	activate_law = law_type:law_no_environment_regulations
+	activate_law = law_type:law_no_wmds
+	activate_law = law_type:law_government_interference
 }

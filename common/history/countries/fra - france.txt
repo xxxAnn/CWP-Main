@@ -13,6 +13,7 @@
 		effect_starting_technology_tier_1_tech = yes
 		effect_starting_technology_wartime_major_participant_tech = yes
 		# Laws
+		effect_liberal_republic_law_package = yes
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {
