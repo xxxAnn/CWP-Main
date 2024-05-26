@@ -10,7 +10,7 @@
 	can_deactivate = yes
 	possible = {
 		hidden_trigger = {
-			has_technology_researched = mass_propaganda
+			has_technology_researched = telecommunications_tech
 		}
 		OR = {
 			any_interest_group = {

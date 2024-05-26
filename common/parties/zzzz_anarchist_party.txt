@@ -36,10 +36,7 @@ anarchist_party = {
 			triggered_desc = {
 				desc = party_italian_syndicalist_union
 				trigger = {
-					OR = {
-						country_has_primary_culture = cu:north_italian
-						country_has_primary_culture = cu:south_italian
-					}
+					country_has_primary_culture = cu:italian
 				}
 			}
 			triggered_desc = {

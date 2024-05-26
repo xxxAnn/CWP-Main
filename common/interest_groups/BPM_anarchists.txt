@@ -231,10 +231,10 @@
 			}
 		}
 		multiply = {
-			desc = "POLITICAL_AGITATION"	
+			desc = "pre_war_ideological_thought"	
 			value = 1.0
 			if = {
-				limit = { owner = { has_technology_researched = political_agitation } }
+				limit = { owner = { has_technology_researched = pre_war_ideological_thought } }
 				value = 1.3
 			}		
 		}

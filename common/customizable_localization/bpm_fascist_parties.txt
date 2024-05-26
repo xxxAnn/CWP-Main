@@ -4,13 +4,13 @@ arg_fascist_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = mass_propaganda }
+			NOT = { has_technology_researched = telecommunications_tech }
 		}
 		localization_key = party_argentine_patriotic_league
 	}
 	text = {
 		trigger = {
-			has_technology_researched = mass_propaganda
+			has_technology_researched = telecommunications_tech
 		}
 		localization_key = party_arg_civic_legion
 	}
@@ -22,13 +22,13 @@ uru_fascist_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = mass_propaganda }
+			NOT = { has_technology_researched = telecommunications_tech }
 		}
 		localization_key = party_uru_revisionist
 	}
 	text = {
 		trigger = {
-			has_technology_researched = mass_propaganda
+			has_technology_researched = telecommunications_tech
 		}
 		localization_key = party_uru_marzists
 	}

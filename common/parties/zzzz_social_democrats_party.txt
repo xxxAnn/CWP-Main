@@ -182,10 +182,7 @@ social_democrat_party = {
 			triggered_desc = {
 				desc = party_socdem_ita
 				trigger = {
-					OR = {
-						country_has_primary_culture = cu:north_italian
-						country_has_primary_culture = cu:south_italian
-					}
+					country_has_primary_culture = cu:italian
 				}
 			}
 			triggered_desc = {

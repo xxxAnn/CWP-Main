@@ -1,4 +1,5 @@
-﻿ig_armed_forces = {
+﻿# Military Interests
+ig_armed_forces = {
 	color = hsv{ 0 0 0.5 }
 	texture = "gfx/interface/icons/ig_icons/armed_forces.dds"
 	layer = "revolution_dynamic_armed_forces"
@@ -123,18 +124,18 @@
 				value = 2
 			}		
 		}		
-		multiply = {
-			desc = "LEADER_POPULARITY"
-			scope:interest_group = {
-				leader = {
-					value = popularity
-					multiply = 0.01
-					add = 1
-					max = 2.0
-					min = 0.75
-				}
-			}
-		}	
+		#multiply = {
+		#	desc = "LEADER_POPULARITY"
+		#	scope:interest_group = {
+		#		leader ?= {
+		#			value = popularity
+		#			multiply = 0.01
+		#			add = 1
+		#			max = 2.0
+		#			min = 0.75
+		#		}
+		#	}
+		#}	
 	}
 	
 	monarch_weight = {

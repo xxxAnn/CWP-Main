@@ -206,10 +206,7 @@
 			triggered_desc = {
 				desc = party_national_fascist_party
 				trigger = {
-					OR = {
-						country_has_primary_culture = cu:north_italian
-						country_has_primary_culture = cu:south_italian
-					}
+					country_has_primary_culture = cu:italian
 				}
 			}
 			triggered_desc = {
@@ -217,12 +214,10 @@
 				trigger = {
 					OR = {
 						country_has_primary_culture = cu:han
-						country_has_primary_culture = cu:hakka
-						country_has_primary_culture = cu:miao
+						country_has_primary_culture = cu:manchu
+						country_has_primary_culture = cu:cantonese
 						country_has_primary_culture = cu:min
-						country_has_primary_culture = cu:zhuang
 						country_has_primary_culture = cu:yi
-						country_has_primary_culture = cu:yue
 					}
 				}
 			}
@@ -287,7 +282,7 @@
 		default = "/gfx/interface/icons/political_parties/fascists.dds"
 	}
 	unlocking_technologies = {
-		political_agitation
+		pre_war_ideological_thought
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes

@@ -6,7 +6,7 @@
 	is_shown_when_inactive = {
 		NOT = { #has_law = law_type:law_council_republic }
 		NOT = { has_variable = completed_fascism_1_var }
-		has_technology_researched = political_agitation
+		has_technology_researched = pre_war_ideological_thought
 	}
 
 	possible = {

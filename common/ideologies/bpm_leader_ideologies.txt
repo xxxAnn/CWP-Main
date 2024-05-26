@@ -880,7 +880,7 @@ ideology_feminist = {
 			if = {
 				limit = {
 					owner = {
-						has_technology_researched = mass_propaganda
+						has_technology_researched = telecommunications_tech
 					}
 					is_female = yes
 				}
@@ -2551,7 +2551,7 @@ ideology_fascist = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = mass_propaganda
+			has_technology_researched = telecommunications_tech
 		}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
@@ -3331,7 +3331,7 @@ ideology_ethno_nationalist = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 		}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {

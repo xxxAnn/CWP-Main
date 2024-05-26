@@ -401,7 +401,7 @@ je_bpm_agrarian_socialism = {
 				TECH_RATE_2 = 120
 				TECH_RATE_3 = 240
 				TECH1 = socialism
-				TECH2 = political_agitation
+				TECH2 = pre_war_ideological_thought
 			}
 			set_variable = {
 				name = bpm_agrarian_socialism_power
@@ -607,7 +607,7 @@ je_bpm_syndicalism = {
 				TECH_RATE_2 = 120
 				TECH_RATE_3 = 240
 				TECH1 = anarchism
-				TECH2 = political_agitation
+				TECH2 = pre_war_ideological_thought
 			}
 
 			# Make characters Syndicalist/Anarcho-Syndicalist at certain level

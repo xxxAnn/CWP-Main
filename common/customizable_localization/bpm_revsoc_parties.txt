@@ -86,13 +86,13 @@ spa_revsoc_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 		}
 		localization_key = party_psoe_left
 	}
 	text = {
 		trigger = {
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_pce
 	}
@@ -104,13 +104,13 @@ por_revsoc_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 		}
 		localization_key = party_por_fmp
 	}
 	text = {
 		trigger = {
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_pcp
 	}
@@ -123,14 +123,14 @@ usa_revsoc_party_name = {
 	text = {
 		trigger = {
 			NOT = { has_variable = communists_renamed_var }
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 		}
 		localization_key = party_usa_spa
 	}
 	text = {
 		trigger = {
 			NOT = { has_variable = communists_renamed_var }
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_usa_spa_left
 	}
@@ -193,14 +193,14 @@ prg_revsoc_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = political_agitation }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 			NOT = { has_variable = communists_renamed_var }	
 		}
 		localization_key = party_prg_workers_left
 	}
 	text = {
 		trigger = {
-			has_technology_researched = political_agitation
+			has_technology_researched = pre_war_ideological_thought
 			NOT = { has_variable = communists_renamed_var }	
 		}
 		localization_key = party_prg_revolutionary_socialist_left
