@@ -69,7 +69,7 @@
 			ig_leader = yes
 			birth_date = 1900.8.21
 			#dna = 
-			interest_group = ig:ig_bureaucrats
+			interest_group = ig:ig_petty_bourgeoisie
 			ideology = ideology_authoritarian
 			traits = {
 			}

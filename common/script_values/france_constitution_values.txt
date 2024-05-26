@@ -130,7 +130,7 @@ france_constitution_ig_stance_law_compulsory_higher_education_value_weighted = {
 
 france_constitution_communist_clout = {
 	value = 0
-	add = ig:ig_bureaucrats.ig_clout
+	add = ig:ig_anarchists.ig_clout
 	add = ig:ig_socialists.ig_clout
 }
 

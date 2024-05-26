@@ -24,7 +24,7 @@
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes
 		}
-		ig:ig_bureaucrats = {
+		ig:ig_agrarian_populists = {
 			add_ruling_interest_group = yes
 		}
 		ig:ig_conservatives = {

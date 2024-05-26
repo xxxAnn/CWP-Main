@@ -11,7 +11,7 @@
 			#ig_leader = yes  #Ruler can't be IG leader under dictatorship or monarchy.
 			birth_date = 1878.12.18
 			dna = dna_joseph_stalin
-			interest_group = ig:ig_bureaucrats
+			interest_group = ig:ig_agrarian_populists
 			ideology = ideology_hardliner
 			traits = {
 			}
