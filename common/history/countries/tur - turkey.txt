@@ -6,36 +6,6 @@
 			name = legacy_of_kemalism
 		}
 		effect_currency_trl = yes
-		effect_create_law_package = {
-			headOfGovernment = parliamentary
-			distributionOfPower = anocracy
-			criminalJustice = penal_correction
-			centralization = unitary
-			discrimination = integrationist
-			churchAndState = church_disestablishment
-			bureaucraticSystems = appointed_bureaucrats
-			policing = professional_police
-			nationalDefense = professional_military
-			economicSystem = interventionism
-			tradePolicy = protectionism
-			taxation = income_taxation
-			educationSystem = mixed_funded_schools
-			healthSystem = subsidized_health_insurance
-			environmentalRegulations = no_environment_regulations
-			corporateAffairs = state_corporations
-			nationalization = heavy_industry_nationalization
-			monetaryPolicy = gold_standard
-			wmds = civilian_applications
-			freeSpeech = right_of_assembly
-			laborRights = workplace_safety_standards
-			childrensRights = compulsory_education
-			rightsOfWomen = political_participation
-			familyPlanning = no_family_planning
-			welfare = welfare_state
-			migration = selective_immigration
-			biotech = unrestricted_human_testing
-			recreationalDrugs = alcohol_allowed
-		}
 		set_tax_level = high
 		set_imf_member = yes
 		set_imf_starting_values = {

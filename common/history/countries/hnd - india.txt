@@ -26,36 +26,6 @@
 		# British
 		add_primary_culture = cu:english
 		# todo IGs and Ideologies
-		effect_create_law_package = {
-			headOfGovernment = administrative
-			distributionOfPower = oligarchy
-			criminalJustice = arbitrary_justice
-			centralization = confederated
-			discrimination = segregationist
-			churchAndState = church_disestablishment
-			bureaucraticSystems = politicized_bureaucrats
-			policing = arbitrary_justice
-			nationalDefense = reserve_military
-			economicSystem = decentralization
-			tradePolicy = export_orientation
-			taxation = per_capita_based_taxation
-			educationSystem = informal_schooling
-			healthSystem = charity_health_system
-			environmentalRegulations = no_environment_regulations
-			corporateAffairs = no_legal_corporations
-			nationalization = resource_extraction_nationalization
-			monetaryPolicy = gold_standard
-			wmds = no_wmds
-			freeSpeech = censorship
-			laborRights = workplace_safety_standards
-			childrensRights = child_labor_allowed
-			rightsOfWomen = women_own_property
-			familyPlanning = no_family_planning
-			welfare = no_welfare
-			migration = open_borders
-			biotech = unrestricted_human_testing
-			recreationalDrugs = alcohol_allowed
-		}
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

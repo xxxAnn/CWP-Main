@@ -9,36 +9,6 @@
 		effect_currency_nzp = yes
 		effect_un_member = yes
 		# Laws
-		effect_create_law_package = {
-			headOfGovernment = hereditary
-			distributionOfPower = representative_democracy
-			criminalJustice = penal_correction
-			centralization = unitary
-			discrimination = segregationist
-			churchAndState = church_disestablishment
-			bureaucraticSystems = appointed_bureaucrats
-			policing = professional_police
-			nationalDefense = professional_military
-			economicSystem = interventionism
-			tradePolicy = export_orientation
-			taxation = wealth_taxation
-			educationSystem = mixed_funded_schools
-			healthSystem = universal_healthcare
-			environmentalRegulations = no_environment_regulations
-			corporateAffairs = anti_trust_regulation
-			nationalization = public_utility_companies
-			monetaryPolicy = gold_standard
-			wmds = no_wmds
-			freeSpeech = right_of_assembly
-			laborRights = no_workers_protections
-			childrensRights = compulsory_education
-			rightsOfWomen = political_participation
-			familyPlanning = no_family_planning
-			welfare = welfare_state
-			migration = selective_immigration
-			biotech = unrestricted_human_testing
-			recreationalDrugs = alcohol_allowed
-		}
 		#IG in government to match ruler
 		ig:ig_socialists = {
 			add_ruling_interest_group = yes

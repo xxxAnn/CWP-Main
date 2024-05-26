@@ -12,36 +12,6 @@
 		effect_starting_technology_tier_1_tech = yes
 		effect_starting_technology_wartime_participant_tech = yes
 		# laws
-		effect_create_law_package = {
-			headOfGovernment = hereditary
-			distributionOfPower = representative_democracy
-			criminalJustice = penal_correction
-			centralization = unitary
-			discrimination = integrationist
-			churchAndState = church_disestablishment
-			bureaucraticSystems = independent_bureaucrats
-			policing = professional_police
-			nationalDefense = professional_military
-			economicSystem = free_market
-			tradePolicy = free_trade
-			taxation = income_taxation
-			educationSystem = mixed_funded_schools
-			healthSystem = private_health_insurance
-			environmentalRegulations = no_environment_regulations
-			corporateAffairs = corporate_friendly_policies
-			nationalization = public_utility_companies
-			monetaryPolicy = gold_standard
-			wmds = civilian_applications
-			freeSpeech = protected_speech
-			laborRights = workplace_safety_standards
-			childrensRights = compulsory_education
-			rightsOfWomen = political_participation
-			familyPlanning = no_family_planning
-			welfare = income_supplementation
-			migration = selective_immigration
-			biotech = unrestricted_human_testing
-			recreationalDrugs = alcohol_allowed
-		}
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

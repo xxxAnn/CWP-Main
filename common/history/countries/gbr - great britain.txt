@@ -28,36 +28,6 @@
 		set_tax_level = very_high		#Postwar tax rate
 		# Laws
 		##For Lizzie
-		effect_create_law_package = {
-			headOfGovernment = hereditary
-			distributionOfPower = representative_democracy
-			criminalJustice = penal_correction
-			centralization = devolved
-			discrimination = segregationist
-			churchAndState = religious_policies
-			bureaucraticSystems = independent_bureaucrats
-			policing = professional_police
-			nationalDefense = professional_military
-			economicSystem = interventionism
-			tradePolicy = protectionism
-			taxation = income_taxation
-			educationSystem = mixed_funded_schools
-			healthSystem = subsidized_health_insurance
-			environmentalRegulations = no_environment_regulations
-			corporateAffairs = anti_trust_regulation
-			nationalization = public_utility_companies
-			monetaryPolicy = gold_standard
-			wmds = deterrence
-			freeSpeech = right_of_assembly
-			laborRights = standard_workweeks
-			childrensRights = compulsory_education
-			rightsOfWomen = political_participation
-			familyPlanning = no_family_planning
-			welfare = income_supplementation
-			migration = selective_immigration
-			biotech = unrestricted_human_testing
-			recreationalDrugs = alcohol_allowed
-		}
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

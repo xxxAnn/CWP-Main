@@ -5,36 +5,6 @@
 		effect_starting_technology_wartime_participant_tech = yes
 		set_tax_level = medium
 		# Laws
-		effect_create_law_package = {
-			headOfGovernment = administrative
-			distributionOfPower = oligarchy
-			criminalJustice = arbitrary_justice
-			centralization = federalized
-			discrimination = integrationist
-			churchAndState = religious_policies
-			bureaucraticSystems = appointed_bureaucrats
-			policing = decentralized_police
-			nationalDefense = disarmed_nation
-			economicSystem = interventionism
-			tradePolicy = export_orientation
-			taxation = wealth_taxation
-			educationSystem = mixed_funded_schools
-			healthSystem = universal_healthcare
-			environmentalRegulations = no_environment_regulations
-			corporateAffairs = no_legal_corporations
-			nationalization = heavy_industry_nationalization
-			monetaryPolicy = gold_standard
-			wmds = no_wmds
-			freeSpeech = censorship
-			laborRights = standard_workweeks
-			childrensRights = compulsory_education
-			rightsOfWomen = political_participation
-			familyPlanning = no_family_planning
-			welfare = income_supplementation
-			migration = selective_immigration
-			biotech = unrestricted_human_testing
-			recreationalDrugs = alcohol_allowed
-		}
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 1
