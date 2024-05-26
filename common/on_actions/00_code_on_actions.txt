@@ -723,10 +723,6 @@ on_country_released_as_independent = {
 	effect = {
 		onaction_palestine = yes
 		onaction_currency_calculation_annex = yes
-		scope:target = {
-			setup_parties = yes
-			setup_starting_ideologies = yes
-		}
 	}
 }
 
@@ -736,10 +732,6 @@ on_country_released_as_own_subject = {
 	effect = {
 		onaction_palestine = yes
 		onaction_currency_calculation_annex = yes
-		scope:target = {
-			setup_parties = yes
-			setup_starting_ideologies = yes
-		}
 	}
 }
 
@@ -749,10 +741,6 @@ on_country_released_as_overlord_subject = {
 	effect = {
 		onaction_palestine = yes
 		onaction_currency_calculation_annex = yes
-		scope:target = {
-			setup_parties = yes
-			setup_starting_ideologies = yes
-		}
 	}
 }
 
