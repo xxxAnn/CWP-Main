@@ -1,5 +1,7 @@
 ﻿l_english:
   ##### Industry PMGs
+  pm_government_run_general_industry: "Government Run"
+  pm_privately_owned_general_industry: "Privately Owned"
   pmg_fish_packing: "Fish Packing"
   pmg_meat_packing: "Meat Packing"
   pmg_fruit_packing: "Fruit Packing"
