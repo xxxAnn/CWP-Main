@@ -281,21 +281,21 @@ law_industry_banned = {
 				}
 				if = {
 					limit = {
-						has_building = building_synthetics_plants
+						has_building = building_synthetics_plant
 					}
-					remove_building = building_synthetics_plants
+					remove_building = building_synthetics_plant
 				}
 				if = {
 					limit = {
-						has_building = building_steel_mills
+						has_building = building_steelworks
 					}
-					remove_building = building_steel_mills
+					remove_building = building_steelworks
 				}
 				if = {
 					limit = {
-						has_building = building_power_plant
+						has_building = building_aluminum_refinery
 					}
-					remove_building = building_power_plant
+					remove_building = building_aluminum_refinery
 				}
 				if = {
 					limit = {
@@ -305,21 +305,81 @@ law_industry_banned = {
 				}
 				if = {
 					limit = {
-						has_building = building_war_machine_industry
+						has_building = building_automobile_manufactories
 					}
-					remove_building = building_war_machine_industry
+					remove_building = building_automobile_manufactories
 				}
 				if = {
 					limit = {
-						has_building = building_electrics_industry
+						has_building = building_drydocks
 					}
-					remove_building = building_electrics_industry
+					remove_building = building_drydocks
 				}
 				if = {
 					limit = {
-						has_building = building_munition_plants
+						has_building = building_advanced_military_manufactories
 					}
-					remove_building = building_munition_plants
+					remove_building = building_advanced_military_manufactories
+				}
+				if = {
+					limit = {
+						has_building = building_electronics_manufactories
+					}
+					remove_building = building_electronics_manufactories
+				}
+				if = {
+					limit = {
+						has_building = building_semiconductor_manufactories
+					}
+					remove_building = building_semiconductor_manufactories
+				}
+				if = {
+					limit = {
+						has_building = building_aircraft_manufactories
+					}
+					remove_building = building_aircraft_manufactories
+				}
+				if = {
+					limit = {
+						has_building = building_uranium_refineries
+					}
+					remove_building = building_uranium_refineries
+				}
+				if = {
+					limit = {
+						has_building = building_battery_manufactories
+					}
+					remove_building = building_battery_manufactories
+				}
+				if = {
+					limit = {
+						has_building = building_pharmaceutical_industry
+					}
+					remove_building = building_pharmaceutical_industry
+				}
+				if = {
+					limit = {
+						has_building = building_computer_manufactories
+					}
+					remove_building = building_computer_manufactories
+				}
+				if = {
+					limit = {
+						has_building = building_consumer_electronics_manufactories
+					}
+					remove_building = building_consumer_electronics_manufactories
+				}
+				if = {
+					limit = {
+						has_building = building_combustion_plant
+					}
+					remove_building = building_combustion_plant
+				}
+				if = {
+					limit = {
+						has_building = building_nuclear_power_plant
+					}
+					remove_building = building_nuclear_power_plant
 				}
 			}
 		}
