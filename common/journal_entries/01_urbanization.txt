@@ -1,8 +1,6 @@
 ﻿je_urbanization_events_1 = {
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
-	
 	group = je_group_internal_affairs
-
 	is_shown_when_inactive = {
 		is_player = yes
 		pop_type_percent_country = {
@@ -10,17 +8,16 @@
 			percent > 0.6
 		}
 	}
-	
 	possible = {
 		NOR = {
 			#has_law = law_type:law_decentralization 
 		}
-		pop_type_percent_country = { #added again so the tooltip is nicer
+		pop_type_percent_country = {
+			#added again so the tooltip is nicer
 			pop_type = informal_workers
 			percent > 0.6
 		}
 	}
-	
 	complete = {
 		pop_type_percent_country = {
 			pop_type = informal_workers
@@ -33,11 +30,11 @@
 			is_marginal = no
 		}
 	}
-	
 	on_complete = {
-		trigger_event = { id = urbanization_events.1 }
+		trigger_event = {
+			id = urbanization_events.1
+		}
 	}
-	
 	weight = 10
 	transferable = no
 	should_be_pinned_by_default = yes
@@ -45,9 +42,7 @@
 
 je_urbanization_events_2 = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-	
 	group = je_group_internal_affairs
-
 	is_shown_when_inactive = {
 		is_player = yes
 		any_scope_state = {
@@ -55,7 +50,6 @@ je_urbanization_events_2 = {
 			has_building = building_urban_center
 		}
 	}
-	
 	possible = {
 		any_scope_state = {
 			is_incorporated = yes
@@ -64,9 +58,10 @@ je_urbanization_events_2 = {
 				level >= 5
 			}
 		}
-		NOT = { ##has_law = law_type:law_anti_industrialization }
+		NOT = {
+			##has_law = law_type:law_anti_industrialization
+		}
 	}
-	
 	complete = {
 		any_scope_state = {
 			filter = {
@@ -79,7 +74,6 @@ je_urbanization_events_2 = {
 			}
 		}
 	}
-	
 	on_monthly_pulse = {
 		random_events = {
 			70 = 0
@@ -88,11 +82,11 @@ je_urbanization_events_2 = {
 			20 = urbanization_events.6
 		}
 	}
-	
 	on_complete = {
-		trigger_event = { id = urbanization_events.5 }
+		trigger_event = {
+			id = urbanization_events.5
+		}
 	}
-	
 	weight = 10
 	transferable = no
 }

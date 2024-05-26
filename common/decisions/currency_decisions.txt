@@ -9,7 +9,7 @@
 	}
 	possible = {
 		not = {
-			#has_law = law_type:law_pegged_currency
+			has_law = law_type:law_pegged_currency
 		}
 	}
 	when_taken = {

@@ -1,21 +1,22 @@
 ﻿namespace = bpm_socialist_utils
-
 bpm_socialist_utils.1 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	trigger = {
 		owner = {
-			NOT = { #has_law = law_type:law_council_republic }
+			NOT = {
+				has_law = law_type:law_council_republic
+			}
 			any_interest_group = {
 				bpm_ig_is_socialist = yes
 				bpm_ig_is_moderate_socialist = no
-				NOT = { has_modifier = bpm_stubborn_ig }
+				NOT = {
+					has_modifier = bpm_stubborn_ig
+				}
 			}
 		}
 	}
-
 	immediate = {
 		owner = {
 			every_interest_group = {
@@ -23,7 +24,9 @@ bpm_socialist_utils.1 = {
 					bpm_ig_is_socialist = yes
 					bpm_ig_is_moderate_socialist = no
 				}
-				add_modifier = { name = bpm_stubborn_ig }
+				add_modifier = {
+					name = bpm_stubborn_ig
+				}
 			}
 		}
 	}
@@ -33,10 +36,9 @@ bpm_socialist_utils.2 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	trigger = {
-		owner = { 
-			#has_law = law_type:law_council_republic
+		owner = {
+			has_law = law_type:law_council_republic
 			any_interest_group = {
 				bpm_ig_is_socialist = yes
 				bpm_ig_is_moderate_socialist = no
@@ -44,7 +46,6 @@ bpm_socialist_utils.2 = {
 			}
 		}
 	}
-
 	immediate = {
 		owner = {
 			every_interest_group = {
@@ -62,10 +63,9 @@ bpm_socialist_utils.3 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	trigger = {
-		owner = { 
-			#has_law = law_type:law_council_republic
+		owner = {
+			has_law = law_type:law_council_republic
 			any_interest_group = {
 				bpm_ig_is_revolutionary_socialist = yes
 				is_in_government = yes
@@ -73,7 +73,6 @@ bpm_socialist_utils.3 = {
 			}
 		}
 	}
-
 	immediate = {
 		owner = {
 			every_interest_group = {
@@ -100,20 +99,22 @@ bpm_socialist_utils.4 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	trigger = {
-		owner = { 
+		owner = {
 			any_interest_group = {
 				bpm_ig_is_revolutionary_socialist = yes
 				OR = {
-					NOT = { owner = { #has_law = law_type:law_council_republic }}
+					NOT = {
+						owner = {
+							has_law = law_type:law_council_republic
+						}
+					}
 					is_in_government = no
 				}
 				bpm_ig_is_authoritarian_socialist = yes
 			}
 		}
 	}
-
 	immediate = {
 		owner = {
 			every_interest_group = {
@@ -137,7 +138,6 @@ bpm_socialist_utils.5 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	immediate = {
 		owner = {
 			set_variable = {
@@ -146,7 +146,7 @@ bpm_socialist_utils.5 = {
 			}
 			change_variable = {
 				name = bpm_je_socialist_electoralism
-				add = 15 # A bit of initial optimism
+				add = 15				# A bit of initial optimism
 			}
 		}
 	}
@@ -157,7 +157,6 @@ bpm_socialist_utils.6 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	immediate = {
 		owner = {
 			if = {
@@ -178,16 +177,14 @@ bpm_socialist_utils.7 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	trigger = {
-		owner = { 
+		owner = {
 			has_variable = disable_socialists_var
 			ig:ig_socialists = {
 				ig_clout <= 0.001
 			}
 		}
 	}
-
 	immediate = {
 		owner = {
 			ig:ig_socialists = {

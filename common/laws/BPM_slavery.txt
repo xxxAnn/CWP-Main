@@ -80,7 +80,7 @@ law_slavery_banned = {
 					owner = {
 						# special logic for ACW to try and force a historical split of states
 						OR = {
-							#has_law = law_type:law_legacy_slavery
+							has_law = law_type:law_legacy_slavery
 							has_variable = slavery_recently_abolished
 						}
 						any_scope_state = {
@@ -184,7 +184,7 @@ law_debt_slavery = {
 						# special logic for ACW to try and force a historical split of states 					
 						has_journal_entry = je_acw_countdown
 						OR = {
-							#has_law = law_type:law_legacy_slavery
+							has_law = law_type:law_legacy_slavery
 							has_variable = slavery_recently_abolished
 						}
 						any_scope_state = {
@@ -292,7 +292,7 @@ law_slave_trade = {
 						# special logic for ACW to try and force a historical split of states					
 						has_journal_entry = je_acw_countdown
 						OR = {
-							#has_law = law_type:law_legacy_slavery
+							has_law = law_type:law_legacy_slavery
 							has_variable = slavery_recently_abolished
 						}
 						any_scope_state = {
@@ -418,7 +418,7 @@ law_legacy_slavery = {
 						# special logic for ACW to try and force a historical split of states					
 						has_journal_entry = je_acw_countdown
 						OR = {
-							#has_law = law_type:law_legacy_slavery
+							has_law = law_type:law_legacy_slavery
 							has_variable = slavery_recently_abolished
 						}
 						any_scope_state = {

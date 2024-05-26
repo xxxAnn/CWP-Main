@@ -93,7 +93,7 @@ calculate_populism_progress = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_no_police
+			has_law = law_type:law_no_police
 		}
 		change_variable = {
 			name = temp_policing_var_contribution
@@ -102,7 +102,7 @@ calculate_populism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_local_police
+			has_law = law_type:law_local_police
 		}
 		change_variable = {
 			name = temp_policing_var_contribution
@@ -111,7 +111,7 @@ calculate_populism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_dedicated_police
+			has_law = law_type:law_dedicated_police
 		}
 		change_variable = {
 			name = temp_policing_var_contribution
@@ -120,7 +120,7 @@ calculate_populism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_militarized_police
+			has_law = law_type:law_militarized_police
 		}
 		change_variable = {
 			name = temp_policing_var_contribution
@@ -134,7 +134,7 @@ calculate_populism_progress = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_no_home_affairs
+			has_law = law_type:law_no_home_affairs
 		}
 		change_variable = {
 			name = temp_ha_var_contribution
@@ -143,7 +143,7 @@ calculate_populism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_guaranteed_liberties
+			has_law = law_type:law_guaranteed_liberties
 		}
 		change_variable = {
 			name = temp_ha_var_contribution
@@ -152,7 +152,7 @@ calculate_populism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_national_guard
+			has_law = law_type:law_national_guard
 		}
 		change_variable = {
 			name = temp_ha_var_contribution
@@ -161,7 +161,7 @@ calculate_populism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_secret_police
+			has_law = law_type:law_secret_police
 		}
 		change_variable = {
 			name = temp_ha_var_contribution
@@ -520,7 +520,7 @@ calculate_brazil_slavery_progress = {
 		if = {
 			limit = {
 				NOT = {
-					#has_law = law_type:law_slave_trade
+					has_law = law_type:law_slave_trade
 				}
 			}
 			change_variable = {
@@ -581,10 +581,10 @@ calculate_caudillo_progress = {
 	if = {
 		limit = {
 			OR = {
-				#has_law = law_type:law_autocracy
-				#has_law = law_type:law_technocracy
-				#has_law = law_type:law_oligarchy
-				#has_law = law_type:law_military_junta
+				has_law = law_type:law_autocracy
+				has_law = law_type:law_technocracy
+				has_law = law_type:law_oligarchy
+				has_law = law_type:law_military_junta
 			}
 		}
 		change_variable = {
@@ -686,8 +686,8 @@ calculate_caudillo_progress = {
 	if = {
 		limit = {
 			OR = {
-				#has_law = law_type:law_census_voting
-				#has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_census_voting
+				has_law = law_type:law_universal_suffrage
 			}
 		}
 		change_variable = {
@@ -904,7 +904,7 @@ calculate_communism_progress = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_no_police
+			has_law = law_type:law_no_police
 		}
 		change_variable = {
 			name = temp_policing_var_contribution
@@ -913,7 +913,7 @@ calculate_communism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_local_police
+			has_law = law_type:law_local_police
 		}
 		change_variable = {
 			name = temp_policing_var_contribution
@@ -922,7 +922,7 @@ calculate_communism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_dedicated_police
+			has_law = law_type:law_dedicated_police
 		}
 		change_variable = {
 			name = temp_policing_var_contribution
@@ -931,7 +931,7 @@ calculate_communism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_militarized_police
+			has_law = law_type:law_militarized_police
 		}
 		change_variable = {
 			name = temp_policing_var_contribution
@@ -945,7 +945,7 @@ calculate_communism_progress = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_no_home_affairs
+			has_law = law_type:law_no_home_affairs
 		}
 		change_variable = {
 			name = temp_ha_var_contribution
@@ -954,7 +954,7 @@ calculate_communism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_guaranteed_liberties
+			has_law = law_type:law_guaranteed_liberties
 		}
 		change_variable = {
 			name = temp_ha_var_contribution
@@ -963,7 +963,7 @@ calculate_communism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_national_guard
+			has_law = law_type:law_national_guard
 		}
 		change_variable = {
 			name = temp_ha_var_contribution
@@ -972,7 +972,7 @@ calculate_communism_progress = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_secret_police
+			has_law = law_type:law_secret_police
 		}
 		change_variable = {
 			name = temp_ha_var_contribution

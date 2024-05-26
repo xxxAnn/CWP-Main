@@ -430,7 +430,7 @@
 					value < disapprove
 				}
 				owner = {
-					#has_law = law_type:law_no_migration_controls
+					has_law = law_type:law_no_migration_controls
 				}
 			}
 			add = {
@@ -447,7 +447,7 @@
 				}
 				owner = {
 					has_technology_researched = law_enforcement
-					#has_law = law_type:law_no_police
+					has_law = law_type:law_no_police
 				}
 			}
 			add = {

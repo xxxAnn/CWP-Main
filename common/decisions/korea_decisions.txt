@@ -91,17 +91,39 @@
 			trigger = {
 				c:PRC ?= this
 				OR = {
-					p:x4C743B = { controller = c:STK }
-					p:x00227F = { controller = c:STK }
-					p:x8FC58D = { controller = c:STK }
-					p:x8B0207 = { controller = c:STK }
-					p:xBD9C6F = { controller = c:STK }
-					p:x47D537 = { controller = c:STK }
-					p:x605101 = { controller = c:STK }
-					p:x880F26 = { controller = c:STK }
-					p:xA2DB51 = { controller = c:STK }
-					p:xB8F465 = { controller = c:STK }
-					p:xC5EF9A = { controller = c:STK }
+					p:x4C743B = {
+						controller = c:STK
+					}
+					p:x00227F = {
+						controller = c:STK
+					}
+					p:x8FC58D = {
+						controller = c:STK
+					}
+					p:x8B0207 = {
+						controller = c:STK
+					}
+					p:xBD9C6F = {
+						controller = c:STK
+					}
+					p:x47D537 = {
+						controller = c:STK
+					}
+					p:x605101 = {
+						controller = c:STK
+					}
+					p:x880F26 = {
+						controller = c:STK
+					}
+					p:xA2DB51 = {
+						controller = c:STK
+					}
+					p:xB8F465 = {
+						controller = c:STK
+					}
+					p:xC5EF9A = {
+						controller = c:STK
+					}
 				}
 			}
 			add = 100
@@ -109,7 +131,9 @@
 		modifier = {
 			trigger = {
 				c:RUS ?= this
-				p:xDD6252 = { controller = c:STK }
+				p:xDD6252 = {
+					controller = c:STK
+				}
 			}
 			add = 100
 		}
@@ -119,9 +143,13 @@
 join_korean_conflict_ai_south = {
 	is_shown = {
 		country_rank >= rank_value:major_power
-		is_target_in_global_variable_list = { name = nato_members target = this}
-		NOT = { #has_law = law_type:law_socialization }
-		NOT = { #has_law = law_type:law_decentralization }
+		is_target_in_global_variable_list = {
+			name = nato_members
+			target = this
+		}
+		NOT = {
+			has_law = law_type:law_council_republic
+		}
 		is_player = no
 		exists = c:NRK
 		exists = c:STK
@@ -193,17 +221,22 @@ join_korean_conflict_ai_south = {
 			trigger = {
 				is_at_war = no
 				OR = {
-					p:xF91D98 = { controller = c:NRK }
-					p:x31D000 = { controller = c:NRK }
+					p:xF91D98 = {
+						controller = c:NRK
+					}
+					p:x31D000 = {
+						controller = c:NRK
+					}
 				}
-				
 			}
 			add = 30
 		}
 		modifier = {
 			trigger = {
 				c:USA ?= this
-				p:xA0E2EE = { controller = c:NRK }
+				p:xA0E2EE = {
+					controller = c:NRK
+				}
 			}
 			add = 100
 		}
@@ -213,7 +246,9 @@ join_korean_conflict_ai_south = {
 				c:STK = {
 					has_variable = asked_for_un_intervention
 				}
-				p:xA0E2EE = { controller = c:NRK }
+				p:xA0E2EE = {
+					controller = c:NRK
+				}
 			}
 			add = 10
 		}

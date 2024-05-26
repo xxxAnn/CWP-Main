@@ -25,7 +25,7 @@ arrange_accident = {
 	show_requirements = yes
 	possible = {
 		owner = {
-			#has_law = law_type:law_secret_police
+			has_law = law_type:law_secret_police
 		}
 		interest_group = {
 			is_marginal = no
@@ -120,9 +120,9 @@ arrange_accident = {
 			limit = {
 				scope:actor ?= {
 					NOR = {
-						#has_law = law_type:law_autocracy
-						#has_law = law_type:law_oligarchy
-						#has_law = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_single_party_state
 					}
 				}
 			}
@@ -131,7 +131,7 @@ arrange_accident = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_outlawed_dissent
+					has_law = law_type:law_outlawed_dissent
 				}
 			}
 			add = 30
@@ -139,7 +139,7 @@ arrange_accident = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_censorship
+					has_law = law_type:law_censorship
 				}
 			}
 			add = 10
@@ -147,7 +147,7 @@ arrange_accident = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_right_of_assembly
+					has_law = law_type:law_right_of_assembly
 				}
 			}
 			add = -10
@@ -155,7 +155,7 @@ arrange_accident = {
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_protected_speech
+					has_law = law_type:law_protected_speech
 				}
 			}
 			add = -20
@@ -205,8 +205,8 @@ resign_from_office = {
 		is_ruler = yes
 		owner = {
 			NOR = {
-				#has_law = law_type:law_monarchy
-				#has_law = law_type:law_theocracy
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 	}

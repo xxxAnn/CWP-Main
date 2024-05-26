@@ -19,26 +19,6 @@
 					}
 					AND = {
 						scope:law.type = {
-							is_same_law_group_as = law_type:law_serfdom
-						}
-						#has_law = law_type:law_serfdom
-						ruler = {
-							OR = {
-								interest_group ?= {
-									NOT = {
-										is_interest_group_type = ig_landowners
-									}
-									NOT = {
-										is_interest_group_type = ig_reactionaries
-									}
-								}
-								has_ideology = ideology:ideology_serfdom_reformer
-								has_ideology = ideology:ideology_land_reformer
-							}
-						}
-					}
-					AND = {
-						scope:law.type = {
 							is_same_law_group_as = law_type:law_slavery_banned
 						}
 						bpm_country_has_unfree_labor = yes
@@ -1072,7 +1052,7 @@ ai_strategy_maintain_mandate_of_heaven = {
 		exists = c:CHI
 		this = c:CHI
 		is_country_type = unrecognized
-		#has_law = law_type:law_monarchy
+		has_law = law_type:law_monarchy
 	}
 	weight = {
 		value = 100

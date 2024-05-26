@@ -1,39 +1,32 @@
 ﻿namespace = bpm_election_events
-
 bpm_election_events.1 = {
-    type = country_event
+	type = country_event
 	placement = root
 	title = bpm_election_events.1.t
 	desc = bpm_election_events.1.d
 	flavor = bpm_election_events.1.f
-
 	dlc = dlc_bpm
-
-    gui_window = event_window_1char_tabloid
-
+	gui_window = event_window_1char_tabloid
 	left_icon = scope:bpm_new_ruler_scope
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-    duration = 4
-
-    trigger = {
+	duration = 4
+	trigger = {
 		# triggered by new ruler election
 	}
-
 	immediate = {
 		ruler = {
 			save_scope_as = bpm_new_ruler_scope
 		}
 	}
-
-    option = { #buisness friendly picks
+	option = {
+		#buisness friendly picks
 		name = bpm_election_events.1.a
 		trigger = {
-			NOT = { #has_law = law_type:law_council_republic }
+			NOT = {
+				has_law = law_type:law_council_republic
+			}
 			ruler = {
 				bpm_leader_is_radical_leftist = no
 			}
@@ -57,8 +50,8 @@ bpm_election_events.1 = {
 			}
 		}
 	}
-
-	option = { #rural picks
+	option = {
+		#rural picks
 		name = bpm_election_events.1.b
 		every_interest_group = {
 			limit = {
@@ -70,8 +63,8 @@ bpm_election_events.1 = {
 			}
 		}
 	}
-
-	option = { #labor picks
+	option = {
+		#labor picks
 		name = bpm_election_events.1.c
 		trigger = {
 			ruler = {
@@ -88,8 +81,8 @@ bpm_election_events.1 = {
 			}
 		}
 	}
-
-	option = { #establishment picks
+	option = {
+		#establishment picks
 		name = bpm_election_events.1.e
 		every_interest_group = {
 			limit = {
@@ -101,5 +94,4 @@ bpm_election_events.1 = {
 			}
 		}
 	}
-
 }

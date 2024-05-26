@@ -4,7 +4,7 @@
 	group = je_group_internal_affairs
 	possible = {
 		this = {
-			#has_law = law_type:law_pegged_currency
+			has_law = law_type:law_pegged_currency
 			not = {
 				custom_tooltip = {
 					text = no_pegging_tt					#:flushed:
@@ -86,7 +86,7 @@ je_maintain_pegged_currency = {
 	should_be_pinned_by_default = yes
 	possible = {
 		this = {
-			#has_law = law_type:law_pegged_currency
+			has_law = law_type:law_pegged_currency
 			custom_tooltip = {
 				text = pegged_currency_tt
 				has_variable = pegged_currency
@@ -210,7 +210,7 @@ je_bretton_woods_agreement = {
 			if = {
 				limit = {
 					not = {
-						#has_law = law_type:law_pegged_currency
+						has_law = law_type:law_pegged_currency
 					}
 				}
 				remove_variable = maintain_pegged_currency_je_val
@@ -234,9 +234,9 @@ je_bretton_woods_agreement = {
 				or = {
 					custom_tooltip = {
 						text = US_HAS_NO_GOLD_STANDARD
-						#has_law = law_type:law_independent_monetary_policy
-						#has_law = law_type:law_government_controlled
-						#has_law = law_type:law_government_interference
+						has_law = law_type:law_independent_monetary_policy
+						has_law = law_type:law_government_controlled
+						has_law = law_type:law_government_interference
 					}
 					custom_tooltip = {
 						text = US_MONEY_SUPPLY_ABOVE_20

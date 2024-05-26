@@ -1,7 +1,5 @@
-﻿
-exile_character = {
+﻿exile_character = {
 	clicksound = "event:/SFX/DLC/1.3_ip1/UI/exile_character"
-
 	potential = {
 		is_in_exile_pool = no
 		is_in_void = no
@@ -12,22 +10,27 @@ exile_character = {
 			has_role = politician
 			has_role = agitator
 		}
-		hidden_trigger = { # BPM addition: Making AI incapable of exiling non-institutional politicians unless they are a great power
+		hidden_trigger = {
+			# BPM addition: Making AI incapable of exiling non-institutional politicians unless they are a great power
 			OR = {
-				owner = { is_ai = no }
-				owner = { country_rank = rank_value:great_power }
+				owner = {
+					is_ai = no
+				}
+				owner = {
+					country_rank = rank_value:great_power
+				}
 				has_role = agitator
-				interest_group = { bpm_ig_is_institutional = yes }
+				interest_group = {
+					bpm_ig_is_institutional = yes
+				}
 			}
 		}
 	}
-
 	show_requirements = yes
-
 	possible = {
 		owner = {
 			NOT = {
-				#has_law = law_type:law_protected_speech
+				has_law = law_type:law_protected_speech
 			}
 		}
 		OR = {
@@ -39,7 +42,6 @@ exile_character = {
 			has_role = agitator
 		}
 	}
-
 	effect = {
 		this.interest_group = {
 			save_scope_as = relevant_ig
@@ -52,7 +54,9 @@ exile_character = {
 		}
 		if = {
 			limit = {
-				owner = { has_journal_entry = je_caudillo }
+				owner = {
+					has_journal_entry = je_caudillo
+				}
 				interest_group = {
 					is_interest_group_type = ig_armed_forces
 				}
@@ -91,16 +95,22 @@ exile_character = {
 			limit = {
 				owner = {
 					is_player = yes
-					NOT = { has_variable = achievement_agitate_elsewhere_var }
+					NOT = {
+						has_variable = achievement_agitate_elsewhere_var
+					}
 				}
 				popularity >= 100
 			}
-			owner = { set_variable = achievement_agitate_elsewhere_var }
+			owner = {
+				set_variable = achievement_agitate_elsewhere_var
+			}
 		}
 		hidden_effect = {
 			if = {
 				limit = {
-					NOT = { has_role = agitator }
+					NOT = {
+						has_role = agitator
+					}
 				}
 				add_character_role = agitator
 			}
@@ -142,7 +152,9 @@ exile_character = {
 		# Standard radicals from having Right of Assembly
 		if = {
 			limit = {
-				owner = { #has_law = law_type:law_right_of_assembly }
+				owner = {
+					has_law = law_type:law_right_of_assembly
+				}
 			}
 			owner = {
 				add_radicals = {
@@ -154,7 +166,9 @@ exile_character = {
 		# Fewer radicals from Censorship
 		else_if = {
 			limit = {
-				owner = { #has_law = law_type:law_censorship }
+				owner = {
+					has_law = law_type:law_censorship
+				}
 			}
 			owner = {
 				add_radicals = {
@@ -197,17 +211,17 @@ exile_character = {
 			exile_character_with_martyrdom = yes
 		}
 	}
-
-	cooldown = { months = normal_modifier_time }
+	cooldown = {
+		months = normal_modifier_time
+	}
 	show_confirmation_box = yes
-
 	ai_chance = {
 		value = -50
 		if = {
 			limit = {
 				interest_group = {
 					ig_approval <= -5
-				}		
+				}
 			}
 			add = 25
 		}
@@ -215,7 +229,7 @@ exile_character = {
 			limit = {
 				interest_group = {
 					ig_approval <= -10
-				}		
+				}
 			}
 			add = 30
 		}
@@ -223,67 +237,67 @@ exile_character = {
 			limit = {
 				scope:actor ?= {
 					NOR = {
-						#has_law = law_type:law_autocracy
-						#has_law = law_type:law_oligarchy
-						#has_law = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_single_party_state
 					}
-				}			
+				}
 			}
 			add = -25
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_secret_police
-				}			
+					has_law = law_type:law_secret_police
+				}
 			}
 			add = 30
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_national_guard
-				}			
+					has_law = law_type:law_national_guard
+				}
 			}
 			add = 15
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_guaranteed_liberties
-				}			
+					has_law = law_type:law_guaranteed_liberties
+				}
 			}
 			add = -100
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_outlawed_dissent
-				}			
+					has_law = law_type:law_outlawed_dissent
+				}
 			}
 			add = 30
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_censorship
-				}			
+					has_law = law_type:law_censorship
+				}
 			}
 			add = 10
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_right_of_assembly
-				}			
+					has_law = law_type:law_right_of_assembly
+				}
 			}
 			add = -10
 		}
 		if = {
 			limit = {
 				scope:actor ?= {
-					#has_law = law_type:law_protected_speech
-				}			
+					has_law = law_type:law_protected_speech
+				}
 			}
 			add = -20
 		}

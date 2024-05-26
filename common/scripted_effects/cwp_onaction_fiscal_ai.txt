@@ -7,8 +7,8 @@
 				AND = {
 					has_game_rule = cwp_dynamic_control
 					OR = {
-						#has_law = law_type:law_independent_monetary_policy
-						#has_law = law_type:law_government_interference
+						has_law = law_type:law_independent_monetary_policy
+						has_law = law_type:law_government_interference
 					}
 				}
 			}
@@ -28,7 +28,7 @@ onaction_ai_monetary_policy_calculation = {
 				has_variable = pegged_currency
 				AND = {
 					has_game_rule = cwp_dynamic_control
-					#has_law = law_type:law_government_interference
+					has_law = law_type:law_government_interference
 				}
 			}
 		}
@@ -69,7 +69,7 @@ onaction_ai_interest_rate_calculation = {
 		limit = {
 			nor = {
 				var:interest_rate = ai_ideal_interest_rate
-				#has_law = law_type:law_gold_standard
+				has_law = law_type:law_gold_standard
 				has_variable = pegged_currency
 			}
 		}
@@ -269,14 +269,15 @@ onaction_ai_devalue_revalue_calculation = {
 			nor = {
 				has_variable = pegged_currency
 				has_variable = altered_currency
-				#has_law = law_type:law_gold_standard
-				#has_law = law_type:law_independent_monetary_policy
+				has_law = law_type:law_gold_standard
+				has_law = law_type:law_independent_monetary_policy
 			}
 			is_leading_central_bank = yes
 		}
 		random_list = {
 			50 = {
-			}			# Do Nothing
+			}
+			# Do Nothing
 			1 = {
 				# Devalue
 				modifier = {

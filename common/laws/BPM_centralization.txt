@@ -19,7 +19,7 @@ law_ad_hoc_centralization = {
 		law_federated
 	}
 	is_visible = {
-		#has_law = law_type:law_ad_hoc_centralization
+		has_law = law_type:law_ad_hoc_centralization
 	}
 	pop_support = {
 		value = 0

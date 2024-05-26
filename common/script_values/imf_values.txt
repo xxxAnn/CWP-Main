@@ -808,7 +808,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_government_controlled
+			has_law = law_type:law_government_controlled
 		}
 		subtract = {
 			value = 30
@@ -818,7 +818,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_government_interference
+			has_law = law_type:law_government_interference
 		}
 		subtract = {
 			value = 20
@@ -828,7 +828,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_isolationism
+			has_law = law_type:law_isolationism
 		}
 		subtract = {
 			value = 50
@@ -838,7 +838,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_protectionism
+			has_law = law_type:law_protectionism
 		}
 		subtract = {
 			value = 20
@@ -848,7 +848,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_total_nationalization
+			has_law = law_type:law_total_nationalization
 		}
 		subtract = {
 			value = 30
@@ -858,7 +858,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_heavy_industry_nationalization
+			has_law = law_type:law_heavy_industry_nationalization
 		}
 		subtract = {
 			value = 20
@@ -868,7 +868,7 @@ imf_requirements_meeting = {
 	}
 	if = {
 		limit = {
-			#has_law = law_type:law_military_industry_nationalization
+			has_law = law_type:law_military_industry_nationalization
 		}
 		subtract = {
 			value = 10

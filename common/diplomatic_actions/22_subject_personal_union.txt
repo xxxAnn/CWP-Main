@@ -24,13 +24,13 @@
 		}
 		requirement_to_maintain = {
 			trigger = {
-				#has_law = law_type:law_monarchy
+				has_law = law_type:law_monarchy
 			}
 		}
 		requirement_to_maintain = {
 			trigger = {
 				scope:target_country = {
-					#has_law = law_type:law_monarchy
+					has_law = law_type:law_monarchy
 				}
 			}
 		}

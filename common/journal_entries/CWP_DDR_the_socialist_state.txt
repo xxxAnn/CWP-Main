@@ -1,9 +1,7 @@
 ﻿je_ddr_the_socialist_state = {
 	icon = "gfx/interface/icons/lens_toolbar_icons/nuclear_weapons.dds"
 	should_be_pinned_by_default = yes
-
 	group = je_group_historical_content
-
 	possible = {
 		AND = {
 			exists = c:DDR
@@ -17,7 +15,7 @@
 		}
 	}
 	fail = {
-		NOT = {	
+		NOT = {
 			c:RUS = {
 				has_diplomatic_pact = {
 					who = c:DDR
@@ -29,13 +27,15 @@
 	immediate = {
 	}
 	complete = {
-		##has_law = law_type:law_council_elective #Is enacted per event
-		#has_law = law_type:law_anocracy
-		#has_law = law_type:law_state_atheism
-		#has_law = law_type:law_socialization
-		NOT = { #has_law = law_type:law_disarmed_nation }
+		#has_law = law_type:law_council_elective #Is enacted per event
+		has_law = law_type:law_anocracy
+		has_law = law_type:law_state_atheism
+		has_law = law_type:law_socialization
+		NOT = {
+			has_law = law_type:law_disarmed_nation
+		}
 	}
-	timeout = 2727 # 17.June.1953
+	timeout = 2727	# 17.June.1953
 	on_timeout = {
 	}
 	on_complete = {

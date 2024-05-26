@@ -1,10 +1,12 @@
 ﻿# Fallback party for Armed Forces
-
 military_party = {
-	color = { 132 100 53 }
+	color = {
+		132
+		100
+		53
+	}
 	name = {
 		first_valid = {
-
 			triggered_desc = {
 				desc = party_true_peoples_party
 				trigger = {
@@ -31,7 +33,7 @@ military_party = {
 				trigger = {
 					exists = c:CHI
 					THIS = c:CHI
-					#has_law = law_type:law_monarchy
+					has_law = law_type:law_monarchy
 				}
 			}
 			triggered_desc = {
@@ -39,7 +41,7 @@ military_party = {
 				trigger = {
 					exists = c:RUS
 					THIS = c:RUS
-					#has_law = law_type:law_monarchy
+					has_law = law_type:law_monarchy
 				}
 			}
 			triggered_desc = {
@@ -47,7 +49,9 @@ military_party = {
 				trigger = {
 					exists = c:RUS
 					THIS = c:RUS
-					NOT = { #has_law = law_type:law_monarchy }
+					NOT = {
+						has_law = law_type:law_monarchy
+					}
 				}
 			}
 			triggered_desc = {
@@ -55,7 +59,7 @@ military_party = {
 				trigger = {
 					exists = c:JAP
 					THIS = c:JAP
-					#has_law = law_type:law_monarchy
+					has_law = law_type:law_monarchy
 				}
 			}
 			triggered_desc = {
@@ -103,16 +107,23 @@ military_party = {
 			value = -5
 			desc = "base_value"
 		}
-		if = { # nobody will join if the armed forces don't join
+		if = {
+			# nobody will join if the armed forces don't join
 			limit = {
-				NOT = { is_interest_group_type = ig_armed_forces }
+				NOT = {
+					is_interest_group_type = ig_armed_forces
+				}
 				OR = {
-					NOT = { exists = owner.py:military_party }
+					NOT = {
+						exists = owner.py:military_party
+					}
 					AND = {
 						exists = owner.py:military_party
 						owner = {
 							ig:ig_armed_forces = {
-								NOT = { is_member_of_party = owner.py:military_party }
+								NOT = {
+									is_member_of_party = owner.py:military_party
+								}
 							}
 						}
 					}
@@ -120,10 +131,11 @@ military_party = {
 			}
 			add = {
 				value = -20
-				desc = "from_no_army_in_party" # this should probably never actually display in game because the party won't exist
+				desc = "from_no_army_in_party"				# this should probably never actually display in game because the party won't exist
 			}
 		}
-		if = { # a party for powerful servicemembers
+		if = {
+			# a party for powerful servicemembers
 			limit = {
 				is_interest_group_type = ig_armed_forces
 				is_powerful = yes
@@ -133,16 +145,20 @@ military_party = {
 				desc = "from_strong_military"
 			}
 		}
-		if = { # jingoists like the military party
+		if = {
+			# jingoists like the military party
 			limit = {
-				leader = { has_ideology = ideology:ideology_jingoist_leader }
+				leader = {
+					has_ideology = ideology:ideology_jingoist_leader
+				}
 			}
 			add = {
 				value = 10
 				desc = "from_jingoist"
 			}
 		}
-		if = { # conservatives like police
+		if = {
+			# conservatives like police
 			limit = {
 				OR = {
 					has_paternalist_ideology = yes
@@ -150,7 +166,7 @@ military_party = {
 				}
 				owner = {
 					has_technology_researched = law_enforcement
-					#has_law = law_type:law_no_police
+					has_law = law_type:law_no_police
 				}
 			}
 			add = {
@@ -158,7 +174,8 @@ military_party = {
 				desc = "from_no_police"
 			}
 		}
-		if = { # opposition to peasant levies
+		if = {
+			# opposition to peasant levies
 			limit = {
 				OR = {
 					has_ideology = ideology:ideology_jingoist
@@ -174,7 +191,7 @@ military_party = {
 					}
 				}
 				owner = {
-					#has_law = law_type:law_peasant_levies
+					has_law = law_type:law_peasant_levies
 				}
 			}
 			add = {
@@ -182,7 +199,8 @@ military_party = {
 				desc = "from_peasant_levies"
 			}
 		}
-		if = { # loyalist-proletarian alliance for tax reform
+		if = {
+			# loyalist-proletarian alliance for tax reform
 			limit = {
 				OR = {
 					has_ideology = ideology:ideology_proletarian
@@ -193,9 +211,9 @@ military_party = {
 				}
 				owner = {
 					NOR = {
-						#has_law = law_type:law_proportional_taxation
-						#has_law = law_type:law_per_capita_based_taxation
-						#has_law = law_type:law_graduated_taxation
+						has_law = law_type:law_proportional_taxation
+						has_law = law_type:law_per_capita_based_taxation
+						has_law = law_type:law_graduated_taxation
 					}
 				}
 			}
@@ -204,21 +222,24 @@ military_party = {
 				desc = "from_no_graduated_taxation"
 			}
 		}
-		if = { # loyalist-meritocratic alliance for tax reform
+		if = {
+			# loyalist-meritocratic alliance for tax reform
 			limit = {
 				OR = {
 					has_ideology = ideology:ideology_meritocratic
 					AND = {
 						has_ideology = ideology:ideology_loyalist
 						owner = {
-							NOT = { #has_law = law_type:law_graduated_taxation }
+							NOT = {
+								has_law = law_type:law_graduated_taxation
+							}
 						}
 					}
 				}
 				owner = {
 					NOR = {
-						#has_law = law_type:law_proportional_taxation
-						#has_law = law_type:law_per_capita_based_taxation
+						has_law = law_type:law_proportional_taxation
+						has_law = law_type:law_per_capita_based_taxation
 					}
 				}
 			}
@@ -227,7 +248,8 @@ military_party = {
 				desc = "from_no_proportional_or_per_capita_tax"
 			}
 		}
-		if = { # Anti-electoralism
+		if = {
+			# Anti-electoralism
 			limit = {
 				bpm_ig_is_anti_electoralist_socialist = yes
 			}
@@ -236,7 +258,8 @@ military_party = {
 				desc = "bpm_anti_electoralist"
 			}
 		}
-		if = { # Strong anti-electoralism
+		if = {
+			# Strong anti-electoralism
 			limit = {
 				bpm_ig_is_strongly_anti_electoralist_socialist = yes
 			}

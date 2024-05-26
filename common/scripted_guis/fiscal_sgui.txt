@@ -296,8 +296,8 @@ can_alter_currency = {
 			nor = {
 				has_variable = pegged_currency
 				has_variable = altered_currency
-				#has_law = law_type:law_gold_standard
-				#has_law = law_type:law_independent_monetary_policy
+				has_law = law_type:law_gold_standard
+				has_law = law_type:law_independent_monetary_policy
 			}
 			is_target_in_global_variable_list = {
 				name = central_bank_list
@@ -314,7 +314,7 @@ can_redenominate_currency = {
 			nor = {
 				has_variable = pegged_currency
 				has_variable = altered_currency
-				#has_law = law_type:law_independent_monetary_policy
+				has_law = law_type:law_independent_monetary_policy
 			}
 			is_target_in_global_variable_list = {
 				name = central_bank_list
@@ -355,7 +355,7 @@ can_set_contractionary = {
 				has_game_rule = cwp_ai_control
 				AND = {
 					has_game_rule = cwp_dynamic_control
-					#has_law = law_type:law_independent_monetary_policy
+					has_law = law_type:law_independent_monetary_policy
 				}
 			}
 		}
@@ -371,7 +371,7 @@ can_set_stable = {
 				has_game_rule = cwp_ai_control
 				AND = {
 					has_game_rule = cwp_dynamic_control
-					#has_law = law_type:law_independent_monetary_policy
+					has_law = law_type:law_independent_monetary_policy
 				}
 			}
 		}
@@ -387,7 +387,7 @@ can_set_expansionary = {
 				has_game_rule = cwp_ai_control
 				AND = {
 					has_game_rule = cwp_dynamic_control
-					#has_law = law_type:law_independent_monetary_policy
+					has_law = law_type:law_independent_monetary_policy
 				}
 			}
 		}
@@ -399,15 +399,15 @@ can_set_interest_rates = {
 	is_shown = {
 		THIS = {
 			nor = {
-				#has_law = law_type:law_gold_standard
-				#has_law = law_type:law_pegged_currency
+				has_law = law_type:law_gold_standard
+				has_law = law_type:law_pegged_currency
 				has_variable = changed_interest_rates
 				has_game_rule = cwp_ai_control
 				AND = {
 					has_game_rule = cwp_dynamic_control
 					OR = {
-						#has_law = law_type:law_independent_monetary_policy
-						#has_law = law_type:law_government_interference
+						has_law = law_type:law_independent_monetary_policy
+						has_law = law_type:law_government_interference
 					}
 				}
 			}
@@ -419,8 +419,8 @@ can_set_interest_rates_law = {
 	is_shown = {
 		THIS = {
 			or = {
-				#has_law = law_type:law_pegged_currency
-				#has_law = law_type:law_gold_standard
+				has_law = law_type:law_pegged_currency
+				has_law = law_type:law_gold_standard
 			}
 		}
 	}
@@ -496,7 +496,7 @@ can_buy_currency = {
 		}
 		scope:currency_exchange_country = {
 			not = {
-				#has_law = law_type:law_isolationism
+				has_law = law_type:law_isolationism
 				and = {
 					has_variable = pegged_currency
 					not = {
@@ -531,7 +531,7 @@ can_buy_currency_target_bought_currency = {
 can_buy_currency_target_isolationist = {
 	is_shown = {
 		scope:currency_exchange_country = {
-			#has_law = law_type:law_isolationism
+			has_law = law_type:law_isolationism
 		}
 	}
 }
@@ -576,7 +576,7 @@ can_buy_currency_over_reserve_max = {
 can_peg_currency_shown = {
 	is_shown = {
 		THIS = {
-			#has_law = law_type:law_pegged_currency
+			has_law = law_type:law_pegged_currency
 			nor = {
 				scope:currency_exchange_country = ROOT
 				has_variable = peg_target_set

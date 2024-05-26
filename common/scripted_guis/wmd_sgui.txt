@@ -87,12 +87,12 @@ wmd_nuclear_can_fire_warheads = {
 		}
 		or = {
 			and = {
-				#has_law = law_type:law_deterrence
+				has_law = law_type:law_deterrence
 				any_scope_state = {
 					has_modifier = nuclear_strike
 				}
 			}
-			#has_law = law_type:law_first_strike
+			has_law = law_type:law_first_strike
 		}
 		nuclear_stockpile_sv > 0
 		nuclear_stockpile_sv >= wmd_target_list_size

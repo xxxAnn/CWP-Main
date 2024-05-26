@@ -96,9 +96,9 @@ law_agrarianism = {
 				limit = {
 					owner = {
 						OR = {
-							#has_law = law_type:law_interventionism 
-							#has_law = law_type:law_laissez_faire 
-							#has_law = law_type:law_traditionalism
+							has_law = law_type:law_interventionism
+							has_law = law_type:law_laissez_faire
+							has_law = law_type:law_traditionalism
 						}
 					}
 					is_pop_type = farmers
@@ -112,8 +112,8 @@ law_agrarianism = {
 				limit = {
 					owner = {
 						OR = {
-							#has_law = law_type:law_interventionism 
-							#has_law = law_type:law_laissez_faire 
+							has_law = law_type:law_interventionism
+							has_law = law_type:law_laissez_faire
 						}
 					}
 					is_pop_type = landlords
@@ -124,7 +124,7 @@ law_agrarianism = {
 	}
 	ai_will_do = {
 		OR = {
-			#has_law = law_type:law_traditionalism
+			has_law = law_type:law_traditionalism
 			literacy_rate < 0.4
 		}
 	}
@@ -192,9 +192,9 @@ law_laissez_faire = {
 				limit = {
 					owner = {
 						OR = {
-							#has_law = law_type:law_agrarianism 
-							#has_law = law_type:law_traditionalism 
-							#has_law = law_type:law_industry_banned 
+							has_law = law_type:law_agrarianism
+							has_law = law_type:law_traditionalism
+							has_law = law_type:law_industry_banned
 						}
 					}
 					is_pop_type = investors
@@ -258,8 +258,8 @@ law_cooperative_ownership = {
 				limit = {
 					owner = {
 						OR = {
-							#has_law = law_type:law_agrarianism 
-							#has_law = law_type:law_traditionalism 
+							has_law = law_type:law_agrarianism
+							has_law = law_type:law_traditionalism
 						}
 					}
 					is_pop_type = investors
@@ -281,7 +281,7 @@ law_cooperative_ownership = {
 		}
 		if = {
 			limit = {
-				#has_law = law_type:law_council_republic
+				has_law = law_type:law_council_republic
 			}
 			add = 250
 		}
@@ -333,9 +333,9 @@ law_command_economy = {
 	}
 	ai_will_do = {
 		OR = {
-			#has_law = law_type:law_technocracy
+			has_law = law_type:law_technocracy
 			AND = {
-				#has_law = law_type:law_council_republic
+				has_law = law_type:law_council_republic
 				ruler ?= {
 					has_ideology = ideology:ideology_vanguardist
 					has_ideology = ideology:ideology_communist
@@ -356,13 +356,13 @@ law_command_economy = {
 		}
 		if = {
 			limit = {
-				#has_law = law_type:law_council_republic
+				has_law = law_type:law_council_republic
 			}
 			add = 250
 		}
 		if = {
 			limit = {
-				#has_law = law_type:law_technocracy
+				has_law = law_type:law_technocracy
 			}
 			add = 100
 		}

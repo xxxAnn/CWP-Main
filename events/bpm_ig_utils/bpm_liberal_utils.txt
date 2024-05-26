@@ -1,29 +1,30 @@
 ﻿namespace = bpm_liberal_utils
-
 bpm_liberal_utils.1 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	trigger = {
 		owner = {
-			OR = { 
-				#has_law = law_type:law_council_republic 
+			OR = {
+				has_law = law_type:law_council_republic
 			}
 			any_interest_group = {
 				bpm_ig_is_moderate_liberal = yes
-				NOT = { has_modifier = bpm_stubborn_ig }
+				NOT = {
+					has_modifier = bpm_stubborn_ig
+				}
 			}
 		}
 	}
-
 	immediate = {
 		owner = {
 			every_interest_group = {
 				limit = {
 					bpm_ig_is_moderate_liberal = yes
 				}
-				add_modifier = { name = bpm_stubborn_ig }
+				add_modifier = {
+					name = bpm_stubborn_ig
+				}
 			}
 		}
 	}
@@ -33,17 +34,17 @@ bpm_liberal_utils.2 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	trigger = {
-		owner = { 
-			NOT = { #has_law = law_type:law_council_republic }
+		owner = {
+			NOT = {
+				has_law = law_type:law_council_republic
+			}
 			any_interest_group = {
 				bpm_ig_is_moderate_liberal = yes
 				has_modifier = bpm_stubborn_ig
 			}
 		}
 	}
-
 	immediate = {
 		owner = {
 			every_interest_group = {

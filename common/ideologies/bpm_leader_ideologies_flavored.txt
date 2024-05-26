@@ -91,13 +91,13 @@
 			limit = {
 				owner = {
 					OR = {
-						#has_law = law_type:law_autocracy
-						#has_law = law_type:law_oligarchy
-						#has_law = law_type:law_technocracy
-						#has_law = law_type:law_single_party_state
+						has_law = law_type:law_autocracy
+						has_law = law_type:law_oligarchy
+						has_law = law_type:law_technocracy
+						has_law = law_type:law_single_party_state
 					}
-					#has_law = law_type:law_multicultural
-					#has_law = law_type:law_isolationism
+					has_law = law_type:law_multicultural
+					has_law = law_type:law_isolationism
 				}
 			}
 			add = -50

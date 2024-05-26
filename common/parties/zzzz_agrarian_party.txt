@@ -1,12 +1,14 @@
 ﻿# Fallback party for Rural Folk
 # Occasionally used for an anti-serfdom alliance
 # More popular in Nordic countries
-
 agrarian_party = {
-	color = hsv{ 0.32 0.67 0.75 }
+	color = {
+		0.32
+		0.67
+		0.75
+	}
 	name = {
 		first_valid = {
-
 			triggered_desc = {
 				desc = party_irish_national_land_league
 				trigger = {
@@ -60,8 +62,8 @@ agrarian_party = {
 				trigger = {
 					country_has_primary_culture = cu:brazilian
 					OR = {
-						#has_law = law_type:law_presidential_republic
-						#has_law = law_type:law_parliamentary_republic
+						has_law = law_type:law_presidential_republic
+						has_law = law_type:law_parliamentary_republic
 					}
 				}
 			}
@@ -187,7 +189,6 @@ agrarian_party = {
 	icon = {
 		default = "/gfx/interface/icons/political_parties/agrarians.dds"
 	}
-
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {
 		always = yes
@@ -197,7 +198,11 @@ agrarian_party = {
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
-		NOT = { bpm_is_party_banned = { PARTY = agrarian_party } }
+		NOT = {
+			bpm_is_party_banned = {
+				PARTY = agrarian_party
+			}
+		}
 	}
 	join_weight = {
 		value = {
@@ -215,30 +220,24 @@ agrarian_party = {
 				value = bpm_party_loyalty_values
 			}
 		}
-		if = { # can form farmer's coalition
+		if = {
+			# can form farmer's coalition
 			limit = {
 				is_interest_group_type = ig_agrarian_populists
 				owner = {
-					OR = {
-						any_interest_group = {
-							bpm_ig_is_rural_institutional = yes
-							leader = { 
-								OR = {
-									bpm_leader_is_progressive_liberal = yes
-									bpm_leader_is_socialist = yes
-									AND = {
-										has_ideology = ideology:ideology_reformer
-										prev = {
-											ig_approval <= -4
-										}
+					any_interest_group = {
+						bpm_ig_is_rural_institutional = yes
+						leader = {
+							OR = {
+								bpm_leader_is_progressive_liberal = yes
+								bpm_leader_is_socialist = yes
+								AND = {
+									has_ideology = ideology:ideology_reformer
+									prev = {
+										ig_approval <= -4
 									}
 								}
 							}
-						}
-						any_interest_group = {
-							bpm_ig_is_anarchist = yes
-							is_marginal = no
-							owner = { #has_law = law_type:law_serfdom }
 						}
 					}
 				}
@@ -248,7 +247,8 @@ agrarian_party = {
 				desc = "bpm_from_agrarian_coalition"
 			}
 		}
-		if = { # a party for powerful farmers
+		if = {
+			# a party for powerful farmers
 			limit = {
 				is_interest_group_type = ig_agrarian_populists
 				is_powerful = yes
@@ -258,20 +258,11 @@ agrarian_party = {
 				desc = "bpm_from_powerful_agrarians"
 			}
 		}
-		if = { # a party for anti-serfdom anarchists
-			limit = {
-				bpm_ig_is_anarchist = yes
-				owner = { #has_law = law_type:law_serfdom }
-			}
-			add = {
-				value = 20
-				desc = "bpm_from_anti_serfdom_anarchists"
-			}
-		}
-		if = { # radical rural folk will join the party
+		if = {
+			# radical rural folk will join the party
 			limit = {
 				bpm_ig_is_rural_institutional = yes
-				leader = { 
+				leader = {
 					OR = {
 						bpm_leader_is_progressive_liberal = yes
 						bpm_leader_is_socialist = yes
@@ -289,29 +280,8 @@ agrarian_party = {
 				desc = "bpm_from_radical_peasants"
 			}
 		}
-		if = { # anti-serfdom types might fall in line behind strong farmers
-			limit = {
-				is_interest_group_type = ig_rural_folk
-				owner = {
-					OR = {
-						#has_law = law_type:law_serfdom
-						#has_law = law_type:law_slave_trade
-					}
-					any_interest_group = {
-						is_powerful = yes 
-						OR = {
-							is_interest_group_type = ig_agrarian_populists
-							bpm_ig_is_anarchist = yes
-						}
-					}
-				}
-			}
-			add = {
-				value = 15
-				desc = "bpm_from_powerful_agrarians"
-			}
-		}
-		if = { # weak urban progressives might fall in line behind strong farmers
+		if = {
+			# weak urban progressives might fall in line behind strong farmers
 			limit = {
 				OR = {
 					bpm_ig_is_socialist = yes
@@ -319,7 +289,6 @@ agrarian_party = {
 				}
 				is_powerful = no
 				owner = {
-					#has_law = law_type:law_serfdom
 					any_interest_group = {
 						is_powerful = yes
 						OR = {
@@ -345,7 +314,8 @@ agrarian_party = {
 				desc = "bpm_from_anti_industrialization"
 			}
 		}
-		if = { # scandinavians are more likely to have agrarian parties
+		if = {
+			# scandinavians are more likely to have agrarian parties
 			limit = {
 				owner = {
 					any_primary_culture = {
@@ -362,15 +332,15 @@ agrarian_party = {
 				desc = "from_scandinavian"
 			}
 		}
-		if = { # pacifist anti-colonial alliance
+		if = {
+			# pacifist anti-colonial alliance
 			limit = {
 				leader = {
 					has_ideology = ideology:ideology_mil_antimilitarist
 				}
 				owner = {
 					NOR = {
-						#has_law = law_type:law_no_colonial_affairs
-						#has_law = law_type:law_national_militia
+						has_law = law_type:law_national_militia
 					}
 				}
 			}
@@ -379,14 +349,15 @@ agrarian_party = {
 				desc = "from_pacifism"
 			}
 		}
-		if = { # anti-immigration alliance
+		if = {
+			# anti-immigration alliance
 			limit = {
 				law_stance = {
 					law = law_type:law_no_migration_controls
 					value < neutral
 				}
 				owner = {
-					#has_law = law_type:law_no_migration_controls
+					has_law = law_type:law_no_migration_controls
 				}
 			}
 			add = {
@@ -394,16 +365,17 @@ agrarian_party = {
 				desc = "from_migration_law"
 			}
 		}
-		if = { # against arbitrary or militarized policing
+		if = {
+			# against arbitrary or militarized policing
 			limit = {
 				law_stance = {
 					law = law_type:law_dedicated_police
 					value < neutral
 				}
 				owner = {
-					OR = {	
-						#has_law = law_type:law_dedicated_police
-						#has_law = law_type:law_militarized_police
+					OR = {
+						has_law = law_type:law_dedicated_police
+						has_law = law_type:law_militarized_police
 					}
 				}
 			}
@@ -412,14 +384,15 @@ agrarian_party = {
 				desc = "from_bad_police"
 			}
 		}
-		if = { # against land-based taxation
+		if = {
+			# against land-based taxation
 			limit = {
 				law_stance = {
 					law = law_type:law_land_based_taxation
 					value < neutral
 				}
 				owner = {
-					#has_law = law_type:law_land_based_taxation
+					has_law = law_type:law_land_based_taxation
 				}
 			}
 			add = {
@@ -427,7 +400,8 @@ agrarian_party = {
 				desc = "from_land_tax"
 			}
 		}
-		if = { # against free trade - peasant/socialist alliance
+		if = {
+			# against free trade - peasant/socialist alliance
 			limit = {
 				law_stance = {
 					law = law_type:law_free_trade
@@ -435,7 +409,7 @@ agrarian_party = {
 				}
 				owner = {
 					OR = {
-						#has_law = law_type:law_free_trade
+						has_law = law_type:law_free_trade
 					}
 				}
 				NOT = {
@@ -452,14 +426,15 @@ agrarian_party = {
 				desc = "from_anti_free_trade"
 			}
 		}
-		if = { # opposition to peasant levies
+		if = {
+			# opposition to peasant levies
 			limit = {
 				law_stance = {
 					law = law_type:law_peasant_levies
 					value < neutral
 				}
 				owner = {
-					#has_law = law_type:law_peasant_levies
+					has_law = law_type:law_peasant_levies
 				}
 			}
 			add = {
@@ -467,26 +442,16 @@ agrarian_party = {
 				desc = "from_peasant_levies"
 			}
 		}
-		if = { # opposition to slavery
+		if = {
+			# nobody will join if the agrarian populists don't join
 			limit = {
-				owner = {
-					NOT = { #has_law = law_type:law_slavery_banned }
+				NOT = {
+					is_interest_group_type = ig_agrarian_populists
 				}
-				law_stance = {
-					law = law_type:law_legacy_slavery
-					value < neutral
-				}
-			}
-			add = {
-				value = 6
-				desc = "bpm_from_slavery"
-			}
-		}
-		if = { # nobody will join if the agrarian populists don't join
-			limit = {
-				NOT = { is_interest_group_type = ig_agrarian_populists }
 				OR = {
-					NOT = { exists = owner.py:agrarian_party }
+					NOT = {
+						exists = owner.py:agrarian_party
+					}
 					AND = {
 						exists = owner.py:agrarian_party
 						owner = {
@@ -496,7 +461,7 @@ agrarian_party = {
 										is_interest_group_type = ig_agrarian_populists
 										AND = {
 											bpm_ig_is_rural_institutional = yes
-											leader = { 
+											leader = {
 												OR = {
 													bpm_leader_is_progressive_liberal = yes
 													bpm_leader_is_socialist = yes
@@ -519,10 +484,11 @@ agrarian_party = {
 			}
 			add = {
 				value = -30
-				desc = "from_no_progressive_agrarians_in_party" # this should probably never actually display in game because the party won't exist
+				desc = "from_no_progressive_agrarians_in_party"				# this should probably never actually display in game because the party won't exist
 			}
 		}
-		if = { # Anti-electoralism
+		if = {
+			# Anti-electoralism
 			limit = {
 				bpm_ig_is_anti_electoralist_socialist = yes
 			}
@@ -531,7 +497,8 @@ agrarian_party = {
 				desc = "bpm_anti_electoralist"
 			}
 		}
-		if = { # Strong anti-electoralism
+		if = {
+			# Strong anti-electoralism
 			limit = {
 				bpm_ig_is_strongly_anti_electoralist_socialist = yes
 			}

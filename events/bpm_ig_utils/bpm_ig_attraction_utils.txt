@@ -1,21 +1,21 @@
 ﻿namespace = bpm_ig_attraction_utils
-
 # Monthly
 bpm_ig_attraction_utils.1 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	immediate = {
 		remove_variable = bpm_country_has_powerful_unions_var
 		remove_variable = bpm_country_has_powerful_fascists_var
 		# Set if the country has powerful TUs currently.
 		if = {
-			limit = { 
+			limit = {
 				owner = {
 					OR = {
-						ig:ig_trade_unions ?= { is_powerful = yes }
-						#has_law = law_type:law_council_republic
+						ig:ig_trade_unions ?= {
+							is_powerful = yes
+						}
+						has_law = law_type:law_council_republic
 					}
 				}
 			}
@@ -24,8 +24,14 @@ bpm_ig_attraction_utils.1 = {
 		# Set if the couuntry has powerful fascists currently
 		if = {
 			limit = {
-				owner = { NOT = { #has_law = law_type:law_council_republic } }
-				ig:ig_fascists ?= { is_powerful = yes }
+				owner = {
+					NOT = {
+						has_law = law_type:law_council_republic
+					}
+				}
+				ig:ig_fascists ?= {
+					is_powerful = yes
+				}
 			}
 			set_variable = bpm_country_has_powerful_fascists_var
 		}
@@ -37,9 +43,8 @@ bpm_ig_attraction_utils.1 = {
 		# 	name = bpm_ig_attraction_to_revolutionists_from_stability_var
 		# 	value = ig_attraction_to_revolutionists_from_stability
 		# }
-
 		# Significant countries only
-		if ={
+		if = {
 			limit = {
 				owner = {
 					bpm_performance_significant_country = yes
@@ -55,187 +60,438 @@ bpm_ig_attraction_utils.1 = {
 				value = 0
 			}
 			if = {
-				limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.6 } }
+				limit = {
+					pop_type_percent_country = {
+						pop_type = informal_workers
+						percent > 0.6
+					}
+				}
 				if = {
-					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.8 } }
-					set_variable = { name = bpm_peasant_population_yandev_var value = 8 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = informal_workers
+							percent > 0.8
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_population_yandev_var
+						value = 8
+					}
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.7 } }
-					set_variable = { name = bpm_peasant_population_yandev_var value = 7 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = informal_workers
+							percent > 0.7
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_population_yandev_var
+						value = 7
+					}
 				}
 				else = {
-					set_variable = { name = bpm_peasant_population_yandev_var value = 6 }
+					set_variable = {
+						name = bpm_peasant_population_yandev_var
+						value = 6
+					}
 				}
 			}
 			else_if = {
-				limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.3 } }
+				limit = {
+					pop_type_percent_country = {
+						pop_type = informal_workers
+						percent > 0.3
+					}
+				}
 				if = {
-					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.5 } }
-					set_variable = { name = bpm_peasant_population_yandev_var value = 5 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = informal_workers
+							percent > 0.5
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_population_yandev_var
+						value = 5
+					}
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.4 } }
-					set_variable = { name = bpm_peasant_population_yandev_var value = 4 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = informal_workers
+							percent > 0.4
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_population_yandev_var
+						value = 4
+					}
 				}
 				else = {
-					set_variable = { name = bpm_peasant_population_yandev_var value = 3 }
+					set_variable = {
+						name = bpm_peasant_population_yandev_var
+						value = 3
+					}
 				}
 			}
 			else = {
 				if = {
-					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.2 } }
-					set_variable = { name = bpm_peasant_population_yandev_var value = 2 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = informal_workers
+							percent > 0.2
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_population_yandev_var
+						value = 2
+					}
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.1 } }
-					set_variable = { name = bpm_peasant_population_yandev_var value = 1 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = informal_workers
+							percent > 0.1
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_population_yandev_var
+						value = 1
+					}
 				}
 			}
-
 			# Peasant radicals yandev
 			set_variable = {
 				name = bpm_peasant_radicals_yandev_var
 				value = 0
 			}
 			if = {
-				limit = { radical_fraction = { pop_type = informal_workers value > 0.4 } }
+				limit = {
+					radical_fraction = {
+						pop_type = informal_workers
+						value > 0.4
+					}
+				}
 				if = {
-					limit = { radical_fraction = { pop_type = informal_workers value > 0.8 } }
-					set_variable = { name = bpm_peasant_radicals_yandev_var value = 8 }
+					limit = {
+						radical_fraction = {
+							pop_type = informal_workers
+							value > 0.8
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_radicals_yandev_var
+						value = 8
+					}
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = informal_workers value > 0.6 } }
-					set_variable = { name = bpm_peasant_radicals_yandev_var value = 6 }
+					limit = {
+						radical_fraction = {
+							pop_type = informal_workers
+							value > 0.6
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_radicals_yandev_var
+						value = 6
+					}
 				}
 				else = {
-					set_variable = { name = bpm_peasant_radicals_yandev_var value = 4 }
+					set_variable = {
+						name = bpm_peasant_radicals_yandev_var
+						value = 4
+					}
 				}
 			}
 			else = {
 				if = {
-					limit = { radical_fraction = { pop_type = informal_workers value > 0.2 } }
-					set_variable = { name = bpm_peasant_radicals_yandev_var value = 2 }
+					limit = {
+						radical_fraction = {
+							pop_type = informal_workers
+							value > 0.2
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_radicals_yandev_var
+						value = 2
+					}
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = informal_workers value > 0.1 } }
-					set_variable = { name = bpm_peasant_radicals_yandev_var value = 1 }
+					limit = {
+						radical_fraction = {
+							pop_type = informal_workers
+							value > 0.1
+						}
+					}
+					set_variable = {
+						name = bpm_peasant_radicals_yandev_var
+						value = 1
+					}
 				}
 			}
-
 			# Laborer population yandev
 			set_variable = {
 				name = bpm_laborer_population_yandev_var
 				value = 0
 			}
 			if = {
-				limit = { pop_type_percent_country = { pop_type = laborers percent > 0.3 } }
+				limit = {
+					pop_type_percent_country = {
+						pop_type = laborers
+						percent > 0.3
+					}
+				}
 				if = {
-					limit = { pop_type_percent_country = { pop_type = laborers percent > 0.5 } }
-					set_variable = { name = bpm_laborer_population_yandev_var value = 5 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = laborers
+							percent > 0.5
+						}
+					}
+					set_variable = {
+						name = bpm_laborer_population_yandev_var
+						value = 5
+					}
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = laborers percent > 0.4 } }
-					set_variable = { name = bpm_laborer_population_yandev_var value = 4 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = laborers
+							percent > 0.4
+						}
+					}
+					set_variable = {
+						name = bpm_laborer_population_yandev_var
+						value = 4
+					}
 				}
 				else = {
-					set_variable = { name = bpm_laborer_population_yandev_var value = 3 }
+					set_variable = {
+						name = bpm_laborer_population_yandev_var
+						value = 3
+					}
 				}
 			}
 			else = {
 				if = {
-					limit = { pop_type_percent_country = { pop_type = laborers percent > 0.2 } }
-					set_variable = { name = bpm_laborer_population_yandev_var value = 2 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = laborers
+							percent > 0.2
+						}
+					}
+					set_variable = {
+						name = bpm_laborer_population_yandev_var
+						value = 2
+					}
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = laborers percent > 0.1 } }
-					set_variable = { name = bpm_laborer_population_yandev_var value = 1 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = laborers
+							percent > 0.1
+						}
+					}
+					set_variable = {
+						name = bpm_laborer_population_yandev_var
+						value = 1
+					}
 				}
 			}
-
 			# Machinist population yandev
 			set_variable = {
 				name = bpm_machinist_population_yandev_var
 				value = 0
 			}
 			if = {
-				limit = { pop_type_percent_country = { pop_type = technicians percent > 0.2 } }
+				limit = {
+					pop_type_percent_country = {
+						pop_type = technicians
+						percent > 0.2
+					}
+				}
 				if = {
-					limit = { pop_type_percent_country = { pop_type = technicians percent > 0.3 } }
-					set_variable = { name = bpm_machinist_population_yandev_var value = 3 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = technicians
+							percent > 0.3
+						}
+					}
+					set_variable = {
+						name = bpm_machinist_population_yandev_var
+						value = 3
+					}
 				}
 				else = {
-					set_variable = { name = bpm_machinist_population_yandev_var value = 2 }
+					set_variable = {
+						name = bpm_machinist_population_yandev_var
+						value = 2
+					}
 				}
 			}
 			else = {
 				if = {
-					limit = { pop_type_percent_country = { pop_type = technicians percent > 0.1 } }
-					set_variable = { name = bpm_machinist_population_yandev_var value = 1 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = technicians
+							percent > 0.1
+						}
+					}
+					set_variable = {
+						name = bpm_machinist_population_yandev_var
+						value = 1
+					}
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = technicians percent > 0.05 } }
-					set_variable = { name = bpm_machinist_population_yandev_var value = 0.5 }
+					limit = {
+						pop_type_percent_country = {
+							pop_type = technicians
+							percent > 0.05
+						}
+					}
+					set_variable = {
+						name = bpm_machinist_population_yandev_var
+						value = 0.5
+					}
 				}
 			}
-
 			# Laborer radicals yandev
 			set_variable = {
 				name = bpm_laborer_radicals_yandev_var
 				value = 0
 			}
 			if = {
-				limit = { radical_fraction = { pop_type = laborers value > 0.4 } }
+				limit = {
+					radical_fraction = {
+						pop_type = laborers
+						value > 0.4
+					}
+				}
 				if = {
-					limit = { radical_fraction = { pop_type = laborers value > 0.8 } }
-					set_variable = { name = bpm_laborer_radicals_yandev_var value = 8 }
+					limit = {
+						radical_fraction = {
+							pop_type = laborers
+							value > 0.8
+						}
+					}
+					set_variable = {
+						name = bpm_laborer_radicals_yandev_var
+						value = 8
+					}
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = laborers value > 0.6 } }
-					set_variable = { name = bpm_laborer_radicals_yandev_var value = 6 }
+					limit = {
+						radical_fraction = {
+							pop_type = laborers
+							value > 0.6
+						}
+					}
+					set_variable = {
+						name = bpm_laborer_radicals_yandev_var
+						value = 6
+					}
 				}
 				else = {
-					set_variable = { name = bpm_laborer_radicals_yandev_var value = 4 }
+					set_variable = {
+						name = bpm_laborer_radicals_yandev_var
+						value = 4
+					}
 				}
 			}
 			else = {
 				if = {
-					limit = { radical_fraction = { pop_type = laborers value > 0.15 } }
-					set_variable = { name = bpm_laborer_radicals_yandev_var value = 2 }
+					limit = {
+						radical_fraction = {
+							pop_type = laborers
+							value > 0.15
+						}
+					}
+					set_variable = {
+						name = bpm_laborer_radicals_yandev_var
+						value = 2
+					}
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = laborers value > 0.05 } }
-					set_variable = { name = bpm_laborer_radicals_yandev_var value = 1 }
+					limit = {
+						radical_fraction = {
+							pop_type = laborers
+							value > 0.05
+						}
+					}
+					set_variable = {
+						name = bpm_laborer_radicals_yandev_var
+						value = 1
+					}
 				}
 			}
-
 			# Machinist radicals yandev
 			set_variable = {
 				name = bpm_machinist_radicals_yandev_var
 				value = 0
 			}
 			if = {
-				limit = { radical_fraction = { pop_type = technicians value > 0.4 } }
+				limit = {
+					radical_fraction = {
+						pop_type = technicians
+						value > 0.4
+					}
+				}
 				if = {
-					limit = { radical_fraction = { pop_type = technicians value > 0.8 } }
-					set_variable = { name = bpm_machinist_radicals_yandev_var value = 8 }
+					limit = {
+						radical_fraction = {
+							pop_type = technicians
+							value > 0.8
+						}
+					}
+					set_variable = {
+						name = bpm_machinist_radicals_yandev_var
+						value = 8
+					}
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = technicians value > 0.6 } }
-					set_variable = { name = bpm_machinist_radicals_yandev_var value = 6 }
+					limit = {
+						radical_fraction = {
+							pop_type = technicians
+							value > 0.6
+						}
+					}
+					set_variable = {
+						name = bpm_machinist_radicals_yandev_var
+						value = 6
+					}
 				}
 				else = {
-					set_variable = { name = bpm_machinist_radicals_yandev_var value = 4 }
+					set_variable = {
+						name = bpm_machinist_radicals_yandev_var
+						value = 4
+					}
 				}
 			}
 			else = {
 				if = {
-					limit = { radical_fraction = { pop_type = technicians value > 0.15 } }
-					set_variable = { name = bpm_machinist_radicals_yandev_var value = 2 }
+					limit = {
+						radical_fraction = {
+							pop_type = technicians
+							value > 0.15
+						}
+					}
+					set_variable = {
+						name = bpm_machinist_radicals_yandev_var
+						value = 2
+					}
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = technicians value > 0.05 } }
-					set_variable = { name = bpm_machinist_radicals_yandev_var value = 1 }
+					limit = {
+						radical_fraction = {
+							pop_type = technicians
+							value > 0.05
+						}
+					}
+					set_variable = {
+						name = bpm_machinist_radicals_yandev_var
+						value = 1
+					}
 				}
 			}
 		}
@@ -247,7 +503,6 @@ bpm_ig_attraction_utils.2 = {
 	type = country_event
 	placement = root
 	hidden = yes
-
 	immediate = {
 		remove_variable = bpm_ig_laborers_angry_var
 		remove_variable = bpm_ig_farmers_angry_var
@@ -259,33 +514,39 @@ bpm_ig_attraction_utils.2 = {
 			remove_variable = bpm_ig_radical_opposition_var
 			remove_variable = bpm_ig_is_socialist_var
 			if = {
-				limit = { bpm_ig_is_very_radical_opposition = yes }
+				limit = {
+					bpm_ig_is_very_radical_opposition = yes
+				}
 				set_variable = bpm_ig_very_radical_opposition_var
 			}
 			else_if = {
-				limit = { bpm_ig_is_radical_opposition = yes }
+				limit = {
+					bpm_ig_is_radical_opposition = yes
+				}
 				set_variable = bpm_ig_radical_opposition_var
 			}
-
 			if = {
 				limit = {
 					OR = {
 						bpm_ig_is_socialist = yes
-						leader = { bpm_leader_is_socialist = yes }
+						leader = {
+							bpm_leader_is_socialist = yes
+						}
 					}
 				}
 				set_variable = bpm_ig_is_socialist_var
 			}
-
 			set_variable = {
 				name = bpm_ig_agitator_popularity_var
 				value = {
-					add = 1.0
+					add = 1
 					every_scope_character = {
-						limit = { has_role = agitator }
+						limit = {
+							has_role = agitator
+						}
 						multiply = bpm_ig_agitator_popularity
 					}
-					max = 2.0
+					max = 2
 				}
 			}
 		}
@@ -323,10 +584,10 @@ bpm_ig_attraction_utils.2 = {
 		if = {
 			limit = {
 				owner = {
-					OR = { 
+					OR = {
 						country_has_voting_franchise = no
-						#has_law = law_type:law_outlawed_dissent
-						#has_law = law_type:law_secret_police
+						has_law = law_type:law_outlawed_dissent
+						has_law = law_type:law_secret_police
 					}
 				}
 			}
@@ -337,9 +598,11 @@ bpm_ig_attraction_utils.2 = {
 			limit = {
 				owner = {
 					OR = {
-						NOT = { #has_law = law_type:law_universal_suffrage }
-						#has_law = law_type:law_censorship
-						#has_law = law_type:law_national_guard
+						NOT = {
+							has_law = law_type:law_universal_suffrage
+						}
+						has_law = law_type:law_censorship
+						has_law = law_type:law_national_guard
 					}
 				}
 			}
@@ -347,7 +610,7 @@ bpm_ig_attraction_utils.2 = {
 		}
 		# Set if the country has ever had non-marginal TUs in history. Do NOT remove the variable!
 		if = {
-			limit = { 
+			limit = {
 				owner = {
 					ig:ig_trade_unions = {
 						is_marginal = no
@@ -358,14 +621,24 @@ bpm_ig_attraction_utils.2 = {
 		}
 		# Set if the country has ever had significant TUs in history. Do NOT remove the variable!
 		if = {
-			limit = { 
+			limit = {
 				owner = {
 					OR = {
-						ig:ig_trade_unions ?= { ig_clout >= 0.04 }
-						ig:ig_socialists ?= { is_marginal = no }
-						ig:ig_anarchists ?= { is_marginal = no }
-						ig:ig_revolutionist_socialists ?= { is_marginal = no }
-						ig:ig_reformist_socialists ?= { is_marginal = no }
+						ig:ig_trade_unions ?= {
+							ig_clout >= 0.04
+						}
+						ig:ig_socialists ?= {
+							is_marginal = no
+						}
+						ig:ig_anarchists ?= {
+							is_marginal = no
+						}
+						ig:ig_revolutionist_socialists ?= {
+							is_marginal = no
+						}
+						ig:ig_reformist_socialists ?= {
+							is_marginal = no
+						}
 					}
 				}
 			}
@@ -373,4 +646,3 @@ bpm_ig_attraction_utils.2 = {
 		}
 	}
 }
-

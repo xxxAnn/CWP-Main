@@ -75,8 +75,8 @@ law_local_police = {
 	# Don't return to local police if we have something more advanced
 	ai_will_do = {
 		NOR = {
-			#has_law = law_type:law_dedicated_police
-			#has_law = law_type:law_militarized_police
+			has_law = law_type:law_dedicated_police
+			has_law = law_type:law_militarized_police
 		}
 	}
 	ai_enact_weight_modifier = {
@@ -124,7 +124,7 @@ law_dedicated_police = {
 				limit = {
 					NOT = {
 						owner = {
-							#has_law = law_type:law_militarized_police
+							has_law = law_type:law_militarized_police
 						}
 					}
 					is_pop_type = investors
@@ -138,7 +138,7 @@ law_dedicated_police = {
 				limit = {
 					NOT = {
 						owner = {
-							#has_law = law_type:law_militarized_police
+							has_law = law_type:law_militarized_police
 						}
 					}
 					is_pop_type = officers

@@ -71,7 +71,7 @@ decree_violent_suppression = {
 	valid = {
 		owner = {
 			NOT = {
-				#has_law = law_type:law_protected_speech
+				has_law = law_type:law_protected_speech
 			}
 		}
 		turmoil >= 0.25

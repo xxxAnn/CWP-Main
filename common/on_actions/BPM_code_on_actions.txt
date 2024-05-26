@@ -73,13 +73,13 @@ on_diplo_play_war_start = {
 	}
 }
 
-on_investment_increased ={ 
+on_investment_increased = {
 	on_actions = {
 		on_bpm_investment_increased
 	}
 }
 
-on_investment_decreased ={ 
+on_investment_decreased = {
 	on_actions = {
 		on_bpm_investment_decreased
 	}
@@ -131,7 +131,7 @@ on_party_created = {
 	}
 }
 
-on_new_ruler = { 
+on_new_ruler = {
 	on_actions = {
 		on_bpm_new_ruler
 	}
@@ -140,7 +140,9 @@ on_new_ruler = {
 on_bpm_five_year_pulse_country == {
 	effect = {
 		every_interest_group = {
-			limit = { bpm_ig_enabled = yes }
+			limit = {
+				bpm_ig_enabled = yes
+			}
 			bpm_reorder_ideologies = yes
 		}
 	}
@@ -153,11 +155,12 @@ on_bpm_yearly_pulse_country = {
 		#bpm_2nd_intl.7
 		marx_events.1
 	}
-
 	effect = {
 		bpm_rename_igs = yes
 		if = {
-			limit = { global_country_ranking = 1 }
+			limit = {
+				global_country_ranking = 1
+			}
 			every_character_in_exile_pool = {
 				limit = {
 					is_historical = no
@@ -171,8 +174,10 @@ on_bpm_yearly_pulse_country = {
 			}
 		}
 		if = {
-			limit = { 
-				NOT = { has_global_variable = bpm_je_march_to_radicalism_progress }
+			limit = {
+				NOT = {
+					has_global_variable = bpm_je_march_to_radicalism_progress
+				}
 			}
 			set_global_variable = {
 				name = bpm_je_march_to_radicalism_progress
@@ -180,12 +185,13 @@ on_bpm_yearly_pulse_country = {
 			}
 		}
 		bpm_je_march_to_radicalism_progress_update = yes
-
 		# Adding support for the First International for every socialist agitator (an agitator from a socialist IG, or who has a socialist ideology)
 		if = {
-			limit = { 
+			limit = {
 				has_global_variable = bpm_je_first_intl_progress
-				NOT = { has_global_variable = first_intl_started_var }
+				NOT = {
+					has_global_variable = first_intl_started_var
+				}
 				country_rank = rank_value:great_power
 			}
 			every_scope_character = {
@@ -219,7 +225,7 @@ on_bpm_half_yearly_pulse_country = {
 		bpm_union_laws.1
 	}
 	effect = {
-		owner = { 
+		owner = {
 			update_party_support = yes
 			bpm_setup_country_stubbornness = yes
 			bpm_half_yearly_decrement_party_loyalty = yes
@@ -256,19 +262,22 @@ on_bpm_monthly_pulse_country = {
 		5 = 0
 		1 = coup.6
 	}
-
 	effect = {
-		owner = { 
+		owner = {
 			bpm_update_political_stability = yes
 			bpm_update_igs_current_party = yes
 			bpm_institution_workaround_effect = yes
 			bpm_auto_research = yes
 			if = {
-				limit = { is_player = yes }
+				limit = {
+					is_player = yes
+				}
 				bpm_rename_igs = yes
 				bpm_ig_update_ig_ban_support = yes
 				every_interest_group = {
-					limit = { bpm_ig_enabled = yes }
+					limit = {
+						bpm_ig_enabled = yes
+					}
 					bpm_reorder_ideologies = yes
 				}
 			}
@@ -290,24 +299,32 @@ on_bpm_monthly_pulse_country = {
 			limit = {
 				game_date > 1844.1.1
 				game_date < 1845.1.1
-				NOT = { has_variable = bpm_1848_famine_activated }
+				NOT = {
+					has_variable = bpm_1848_famine_activated
+				}
 				bpm_country_is_in_western_europe = yes
 			}
 			set_variable = bpm_1848_famine_activated
 		}
 		if = {
-			limit = { 
-				has_global_variable = first_intl_chain_complete_var 
-				owner = { global_country_ranking = 1 } # Making trigger happer once per month because paradox apparently has no on_action for global events??? what? how??
+			limit = {
+				has_global_variable = first_intl_chain_complete_var
+				owner = {
+					global_country_ranking = 1
+				}				# Making trigger happer once per month because paradox apparently has no on_action for global events??? what? how??
 			}
 			if = {
-				limit = { NOT = { has_global_variable = bpm_je_second_intl_progress } }
+				limit = {
+					NOT = {
+						has_global_variable = bpm_je_second_intl_progress
+					}
+				}
 				set_global_variable = {
 					name = bpm_je_second_intl_progress
 					value = 0
 				}
 			}
-			bpm_je_second_intl_progress_rate_update = yes 
+			bpm_je_second_intl_progress_rate_update = yes
 			bpm_handle_steady_global_var_growth = {
 				VARIABLE = bpm_je_second_intl_progress
 			}
@@ -320,7 +337,9 @@ on_bpm_law_activated = {
 		bpm_on_actions_stubbornness
 	}
 	effect = {
-		owner = { bpm_institution_workaround_effect = yes }
+		owner = {
+			bpm_institution_workaround_effect = yes
+		}
 	}
 	# events = {
 	# 	peoples_springtime.101
@@ -333,9 +352,11 @@ on_bpm_seccession_start = {
 			set_variable = bpm_can_new_constitution
 		}
 		# Add 1st intl progress
-		if = { 
-			limit = { 
-				NOT = { has_global_variable = first_intl_started_var } 
+		if = {
+			limit = {
+				NOT = {
+					has_global_variable = first_intl_started_var
+				}
 				has_global_variable = bpm_je_first_intl_progress
 				country_rank = rank_value:great_power
 			}
@@ -348,27 +369,35 @@ on_bpm_seccession_start = {
 		# Add 1848 progress
 		else_if = {
 			limit = {
-				NOT = { has_global_variable = march_to_radicalism_complete_var } 
+				NOT = {
+					has_global_variable = march_to_radicalism_complete_var
+				}
 				has_global_variable = bpm_je_march_to_radicalism_progress
 				country_rank >= rank_value:minor_power
 				bpm_country_is_in_europe = yes
 			}
 			if = {
-				limit = { country_rank >= rank_value:great_power }
+				limit = {
+					country_rank >= rank_value:great_power
+				}
 				change_global_variable = {
 					name = bpm_je_march_to_radicalism_progress
 					add = 20
 				}
 			}
 			else_if = {
-				limit = { country_rank >= rank_value:major_power }
+				limit = {
+					country_rank >= rank_value:major_power
+				}
 				change_global_variable = {
 					name = bpm_je_march_to_radicalism_progress
 					add = 10
 				}
 			}
 			else_if = {
-				limit = { country_rank >= rank_value:minor_power }
+				limit = {
+					country_rank >= rank_value:minor_power
+				}
 				change_global_variable = {
 					name = bpm_je_march_to_radicalism_progress
 					add = 5
@@ -393,10 +422,15 @@ on_bpm_new_ruler = {
 			if = {
 				limit = {
 					is_player = yes
-					#has_law = law_type:law_presidential_republic
-					NOT = { #has_law = law_type:law_autocracy }
+					has_law = law_type:law_presidential_republic
+					NOT = {
+						has_law = law_type:law_autocracy
+					}
 				}
-				trigger_event = { id = bpm_election_events.1 days = 30 }
+				trigger_event = {
+					id = bpm_election_events.1
+					days = 30
+				}
 			}
 		}
 	}
@@ -430,11 +464,10 @@ on_bpm_diplo_play_war_start = {
 
 on_bpm_revolution_start = {
 	effect = {
-		bpm_add_political_stability_big = yes # Crackdowns, most disloyal people left for revolution
+		bpm_add_political_stability_big = yes		# Crackdowns, most disloyal people left for revolution
 		scope:target = {
 			set_variable = bpm_can_new_constitution
 		}
-
 		# Set target as a potential legitimator of syndicalism if they win
 		if = {
 			limit = {
@@ -442,11 +475,10 @@ on_bpm_revolution_start = {
 				has_journal_entry = je_bpm_syndicalism
 				var:bpm_je_syndicalism >= 0.66
 			}
-			scope:target = { 
+			scope:target = {
 				set_variable = bpm_can_legitimize_syndicalism
 			}
 		}
-
 		# Enact Council Republic if revoluition is obviously communist
 		#if = {
 		#	limit = {
@@ -460,7 +492,6 @@ on_bpm_revolution_start = {
 		#		}
 		#	}
 		#	scope:target = { activate_law = law_type:law_council_republic }
-
 		#	# Also activate syndicalism if this is a syndicalist revolution
 		#	if = {
 		#		limit = {
@@ -470,13 +501,11 @@ on_bpm_revolution_start = {
 		#		scope:target = { activate_law = law_type:law_syndicalism }
 		#	}
 		#}
-
 		# Pass along agrarian socialism progress to rebels
 		if = {
 			limit = {
 				has_variable = bpm_agrarian_socialism_power
 			}
-
 			scope:target = {
 				set_variable = {
 					name = bpm_agrarian_socialism_power
@@ -484,31 +513,38 @@ on_bpm_revolution_start = {
 				}
 			}
 		}
-
 		# Add 1848 progress
 		if = {
 			limit = {
-				NOT = { has_global_variable = march_to_radicalism_complete_var } 
+				NOT = {
+					has_global_variable = march_to_radicalism_complete_var
+				}
 				has_global_variable = bpm_je_march_to_radicalism_progress
 				country_rank >= rank_value:minor_power
 				bpm_country_is_in_europe = yes
 			}
 			if = {
-				limit = { country_rank >= rank_value:great_power }
+				limit = {
+					country_rank >= rank_value:great_power
+				}
 				change_global_variable = {
 					name = bpm_je_march_to_radicalism_progress
 					add = 20
 				}
 			}
 			else_if = {
-				limit = { country_rank >= rank_value:major_power }
+				limit = {
+					country_rank >= rank_value:major_power
+				}
 				change_global_variable = {
 					name = bpm_je_march_to_radicalism_progress
 					add = 10
 				}
 			}
 			else_if = {
-				limit = { country_rank >= rank_value:minor_power }
+				limit = {
+					country_rank >= rank_value:minor_power
+				}
 				change_global_variable = {
 					name = bpm_je_march_to_radicalism_progress
 					add = 5
@@ -521,18 +557,20 @@ on_bpm_revolution_start = {
 on_bpm_acquired_technology = {
 	effect = {
 		bpm_setup_basic_igs = yes
-
 		# First intl stuff
 		if = {
 			limit = {
-				NOT = { has_global_variable = first_intl_started_var } 
+				NOT = {
+					has_global_variable = first_intl_started_var
+				}
 				country_rank = rank_value:great_power
 			}
-
 			if = {
 				limit = {
 					has_technology_researched = socialism
-					NOT = { has_variable = bpm_intl_socialism_researched }
+					NOT = {
+						has_variable = bpm_intl_socialism_researched
+					}
 				}
 				set_variable = bpm_intl_socialism_researched
 				change_global_variable = {
@@ -540,11 +578,12 @@ on_bpm_acquired_technology = {
 					add = 10
 				}
 			}
-
 			if = {
 				limit = {
 					has_technology_researched = anarchism
-					NOT = { has_variable = bpm_intl_anarchism_researched }
+					NOT = {
+						has_variable = bpm_intl_anarchism_researched
+					}
 				}
 				set_variable = bpm_intl_anarchism_researched
 				change_global_variable = {
@@ -552,11 +591,12 @@ on_bpm_acquired_technology = {
 					add = 10
 				}
 			}
-
 			if = {
 				limit = {
 					has_technology_researched = labor_movement
-					NOT = { has_variable = bpm_intl_labor_movement_researched }
+					NOT = {
+						has_variable = bpm_intl_labor_movement_researched
+					}
 				}
 				set_variable = bpm_intl_labor_movement_researched
 				change_global_variable = {
@@ -572,15 +612,18 @@ on_bpm_acquired_technology_peoples_spring = {
 	effect = {
 		if = {
 			limit = {
-				NOT = { has_global_variable = march_to_radicalism_complete_var } 
+				NOT = {
+					has_global_variable = march_to_radicalism_complete_var
+				}
 				has_global_variable = bpm_je_march_to_radicalism_progress
 				bpm_country_is_in_europe = yes
 			}
-
 			if = {
 				limit = {
 					has_technology_researched = egalitarianism
-					NOT = { has_variable = bpm_intl_egalitarianism_researched }
+					NOT = {
+						has_variable = bpm_intl_egalitarianism_researched
+					}
 				}
 				set_variable = bpm_intl_egalitarianism_researched
 				change_global_variable = {
@@ -588,11 +631,12 @@ on_bpm_acquired_technology_peoples_spring = {
 					add = 0.33
 				}
 			}
-
 			if = {
 				limit = {
 					has_technology_researched = dialectics
-					NOT = { has_variable = bpm_intl_dialectics_researched }
+					NOT = {
+						has_variable = bpm_intl_dialectics_researched
+					}
 				}
 				set_variable = bpm_intl_dialectics_researched
 				change_global_variable = {
@@ -600,11 +644,12 @@ on_bpm_acquired_technology_peoples_spring = {
 					add = 0.2
 				}
 			}
-
 			if = {
 				limit = {
 					has_technology_researched = pre_war_ideological_thought
-					NOT = { has_variable = bpm_intl_nationalism_researched }
+					NOT = {
+						has_variable = bpm_intl_nationalism_researched
+					}
 				}
 				set_variable = bpm_intl_nationalism_researched
 				change_global_variable = {
@@ -622,30 +667,46 @@ on_bpm_civil_war_won = {
 			limit = {
 				has_variable = bpm_can_new_constitution
 			}
-			trigger_event = { id = bpm_provisional_government_events.1 days = 7 popup = yes }
+			trigger_event = {
+				id = bpm_provisional_government_events.1
+				days = 7
+				popup = yes
+			}
 		}
-
 		if = {
-			limit = { has_variable = bpm_can_legitimize_syndicalism }
-			trigger_event = { id = bpm_syndicalism.1 days = 2 popup = yes }
+			limit = {
+				has_variable = bpm_can_legitimize_syndicalism
+			}
+			trigger_event = {
+				id = bpm_syndicalism.1
+				days = 2
+				popup = yes
+			}
 		}
-
 		if = {
 			limit = {
 				has_global_variable = peoples_springtime_happening
-				NOT = { has_variable = completed_peoples_springtime_je }
+				NOT = {
+					has_variable = completed_peoples_springtime_je
+				}
 				OR = {
 					any_interest_group = {
 						bpm_ig_is_strongest_ig_in_government = yes
 						OR = {
 							bpm_ig_is_radical_left = yes
-							leader = { bpm_leader_is_radical_leftist = yes }
+							leader = {
+								bpm_leader_is_radical_leftist = yes
+							}
 						}
 					}
 					bpm_country_is_republic = yes
 				}
 			}
-			trigger_event = { id = peoples_springtime.101 days = 60 popup = yes }
+			trigger_event = {
+				id = peoples_springtime.101
+				days = 60
+				popup = yes
+			}
 		}
 	}
 }
@@ -655,17 +716,27 @@ on_bpm_government_reformed = {
 		bpm_update_single_party_ideology_support = yes
 		if = {
 			limit = {
-				#has_law = law_type:law_political_officers
+				has_law = law_type:law_political_officers
 			}
 			every_scope_admiral = {
-				limit = { interest_group = { is_in_government = no bpm_ig_is_state_institutional = no } }
+				limit = {
+					interest_group = {
+						is_in_government = no
+						bpm_ig_is_state_institutional = no
+					}
+				}
 				kill_character = {
 					hidden = yes
 					value = yes
 				}
 			}
 			every_scope_general = {
-				limit = { interest_group = { is_in_government = no bpm_ig_is_state_institutional = no } }
+				limit = {
+					interest_group = {
+						is_in_government = no
+						bpm_ig_is_state_institutional = no
+					}
+				}
 				kill_character = {
 					hidden = yes
 					value = yes
@@ -681,7 +752,6 @@ on_bpm_election_campaign_start = {
 			limit = {
 				is_party_type = one_party_independents
 			}
-
 			add_momentum = -200
 		}
 		bpm_remove_political_stability_small = yes
@@ -701,7 +771,11 @@ on_bpm_country_formed = {
 	effect = {
 		bpm_setup_country = yes
 		if = {
-			limit = { NOT = { #has_law = law_type:law_confederated }}
+			limit = {
+				NOT = {
+					has_law = law_type:law_confederated
+				}
+			}
 			activate_law = law_type:law_federated
 		}
 	}
@@ -714,14 +788,18 @@ bpm_on_actions_stubbornness = {
 }
 
 on_bpm_investment_increased = {
-	effect ={ 
-		owner = { bpm_institution_workaround_effect = yes }
+	effect = {
+		owner = {
+			bpm_institution_workaround_effect = yes
+		}
 	}
 }
 
-on_bpm_investment_decreased = { 
-	effect = { 
-		owner = { bpm_institution_workaround_effect = yes }
+on_bpm_investment_decreased = {
+	effect = {
+		owner = {
+			bpm_institution_workaround_effect = yes
+		}
 	}
 }
 

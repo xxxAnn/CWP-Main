@@ -25,8 +25,8 @@ bpm_give_labor_concession = {
 	if = {
 		limit = {
 			OR = {
-				#has_law = law_type:law_illegal_labor_unions
-				#has_law = law_type:law_state_controlled_labor_unions
+				has_law = law_type:law_illegal_labor_unions
+				has_law = law_type:law_state_controlled_labor_unions
 			}
 			NOT = {
 				scope:revolutionaries_law ?= {
@@ -38,7 +38,7 @@ bpm_give_labor_concession = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_no_workers_rights
+			has_law = law_type:law_no_workers_rights
 			NOT = {
 				scope:revolutionaries_law ?= {
 					this = law_type:law_regulatory_bodies
@@ -49,7 +49,7 @@ bpm_give_labor_concession = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_unregulated_work_time
+			has_law = law_type:law_unregulated_work_time
 			NOT = {
 				scope:revolutionaries_law ?= {
 					this = law_type:law_token_time_regulations
@@ -61,8 +61,8 @@ bpm_give_labor_concession = {
 	else_if = {
 		limit = {
 			OR = {
-				#has_law = law_type:law_no_womens_rights
-				#has_law = law_type:law_women_own_property
+				has_law = law_type:law_no_womens_rights
+				has_law = law_type:law_women_own_property
 			}
 			NOT = {
 				scope:revolutionaries_law ?= {
@@ -74,7 +74,7 @@ bpm_give_labor_concession = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_limited_labor_unions
+			has_law = law_type:law_limited_labor_unions
 			NOT = {
 				scope:revolutionaries_law ?= {
 					this = law_type:law_all_labor_unions_allowed
@@ -85,7 +85,7 @@ bpm_give_labor_concession = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_token_time_regulations
+			has_law = law_type:law_token_time_regulations
 			NOT = {
 				scope:revolutionaries_law ?= {
 					this = law_type:law_limited_work_hours
@@ -97,7 +97,7 @@ bpm_give_labor_concession = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_regulatory_bodies
+			has_law = law_type:law_regulatory_bodies
 			NOT = {
 				scope:revolutionaries_law ?= {
 					this = law_type:law_worker_protections
@@ -109,7 +109,7 @@ bpm_give_labor_concession = {
 	}
 	else_if = {
 		limit = {
-			#has_law = law_type:law_limited_work_hours
+			has_law = law_type:law_limited_work_hours
 			NOT = {
 				scope:revolutionaries_law ?= {
 					this = law_type:law_protected_leisure

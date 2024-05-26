@@ -1,8 +1,11 @@
 ﻿# Bastion of the Landowners
 # Can also appeal to the Devout, PB, and Industrialists
-
 conservative_party = {
-	color = hsv{ 0.57 1 1 }
+	color = {
+		0.57
+		1
+		1
+	}
 	name = {
 		first_valid = {
 			triggered_desc = {
@@ -108,7 +111,7 @@ conservative_party = {
 				trigger = {
 					country_has_primary_culture = cu:brazilian
 				}
-      		}
+			}
 			triggered_desc = {
 				desc = party_conservative_rus
 				trigger = {
@@ -218,12 +221,16 @@ conservative_party = {
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
-		NOT = { bpm_is_party_banned = { PARTY = conservative_party } }
+		NOT = {
+			bpm_is_party_banned = {
+				PARTY = conservative_party
+			}
+		}
 		owner = {
 			country_has_voting_franchise = yes
 		}
 		# leftists will not join conservatives
-		NOR = { 
+		NOR = {
 			bpm_ig_is_radical_left = yes
 		}
 		leader = {
@@ -240,7 +247,9 @@ conservative_party = {
 		}
 		if = {
 			limit = {
-				leader = { has_variable = conservative_party_leader }
+				leader = {
+					has_variable = conservative_party_leader
+				}
 			}
 			add = {
 				value = 100
@@ -249,7 +258,9 @@ conservative_party = {
 		}
 		if = {
 			limit = {
-				leader = { has_variable = anti_conservative_party_leader }
+				leader = {
+					has_variable = anti_conservative_party_leader
+				}
 			}
 			add = {
 				value = -100
@@ -269,7 +280,9 @@ conservative_party = {
 		}
 		if = {
 			limit = {
-				owner = { bpm_country_has_two_party_system = yes }
+				owner = {
+					bpm_country_has_two_party_system = yes
+				}
 			}
 			add = {
 				value = 2
@@ -278,7 +291,9 @@ conservative_party = {
 		}
 		if = {
 			limit = {
-				leader = { has_ideology = ideology:ideology_moderate }
+				leader = {
+					has_ideology = ideology:ideology_moderate
+				}
 			}
 			add = {
 				leader = {
@@ -295,24 +310,28 @@ conservative_party = {
 		}
 		if = {
 			limit = {
-				owner = { bpm_country_has_historical_two_party_system = yes }
+				owner = {
+					bpm_country_has_historical_two_party_system = yes
+				}
 			}
 			add = {
 				leader = {
 					value = popularity
 					if = {
-						limit = { popularity < 0 }
+						limit = {
+							popularity < 0
+						}
 						multiply = -1
 					}
 					add = 1
 					modulo = 2
 					multiply = 5
-
 				}
 				desc = "bpm_from_coalition"
 			}
 		}
-		if = { # conservatives love conservativism
+		if = {
+			# conservatives love conservativism
 			limit = {
 				bpm_ig_is_liberal_conservative = yes
 			}
@@ -321,7 +340,8 @@ conservative_party = {
 				desc = "bpm_from_liberal_conservative_ig"
 			}
 		}
-		if = { # conservatives love conservativism
+		if = {
+			# conservatives love conservativism
 			limit = {
 				bpm_ig_is_moderate_conservative = yes
 				bpm_ig_is_liberal_conservative = no
@@ -340,7 +360,8 @@ conservative_party = {
 		#		desc = "bpm_from_main_conservative_ig"
 		#	}
 		#}
-		if = { # reactionaries like conservativism
+		if = {
+			# reactionaries like conservativism
 			limit = {
 				bpm_ig_is_moderate_conservative = no
 				bpm_ig_is_traditionalist = yes
@@ -350,32 +371,45 @@ conservative_party = {
 				desc = "bpm_from_reactionary_ig"
 			}
 		}
-		if = { # conservatives love conservativism
+		if = {
+			# conservatives love conservativism
 			limit = {
-				leader = { bpm_leader_is_traditional_right = yes }
+				leader = {
+					bpm_leader_is_traditional_right = yes
+				}
 			}
 			add = {
 				value = 6
 				desc = "from_conservative_leader"
 			}
 		}
-		if = { # protectionists like conservatism
+		if = {
+			# protectionists like conservatism
 			limit = {
 				OR = {
-					leader = { has_ideology = ideology:ideology_protectionist }
+					leader = {
+						has_ideology = ideology:ideology_protectionist
+					}
 					has_ideology = ideology:ideology_eco_interventionist
 					bpm_ig_is_agrarian = yes
 				}
-				owner = { NOT = { this = c:USA }}
+				owner = {
+					NOT = {
+						this = c:USA
+					}
+				}
 			}
 			add = {
 				value = 3
 				desc = "bpm_from_protectionist"
 			}
 		}
-		if = { # reactionaries will join weaker conservatives
+		if = {
+			# reactionaries will join weaker conservatives
 			limit = {
-				OR = { bpm_ig_is_traditionalist = yes }
+				OR = {
+					bpm_ig_is_traditionalist = yes
+				}
 				is_powerful = no
 				owner = {
 					any_interest_group = {
@@ -384,12 +418,13 @@ conservative_party = {
 					}
 				}
 			}
-			add = {	
+			add = {
 				value = 5
 				desc = "bpm_from_weak_conservative_ig"
 			}
 		}
-		if = { # armed forces will join if a more powerful member has jingoist leader
+		if = {
+			# armed forces will join if a more powerful member has jingoist leader
 			limit = {
 				is_interest_group_type = ig_armed_forces
 				exists = owner.py:conservative_party
@@ -397,7 +432,9 @@ conservative_party = {
 					any_interest_group = {
 						is_member_of_party = owner.py:conservative_party
 						is_powerful = yes
-						leader = { has_ideology = ideology:ideology_jingoist_leader }
+						leader = {
+							has_ideology = ideology:ideology_jingoist_leader
+						}
 					}
 				}
 			}
@@ -406,7 +443,8 @@ conservative_party = {
 				desc = "from_jingoist_party_leader"
 			}
 		}
-		if = { # rural IGs prefer conservatives
+		if = {
+			# rural IGs prefer conservatives
 			limit = {
 				bpm_ig_is_rural_institutional = yes
 			}
@@ -415,7 +453,8 @@ conservative_party = {
 				desc = "bpm_from_rural"
 			}
 		}
-		if = { # proletarians lean away from conservatives
+		if = {
+			# proletarians lean away from conservatives
 			limit = {
 				bpm_ig_is_proletarian = yes
 			}
@@ -424,7 +463,8 @@ conservative_party = {
 				desc = "bpm_from_proletarian"
 			}
 		}
-		if = { # landowners will join
+		if = {
+			# landowners will join
 			limit = {
 				is_interest_group_type = ig_landowners
 			}
@@ -433,7 +473,8 @@ conservative_party = {
 				desc = "bpm_from_landowners"
 			}
 		}
-		if = { # landowners will join
+		if = {
+			# landowners will join
 			limit = {
 				is_interest_group_type = ig_armed_forces
 			}
@@ -442,7 +483,8 @@ conservative_party = {
 				desc = "bpm_from_military"
 			}
 		}
-		if = { # liberals like laissez faire
+		if = {
+			# liberals like laissez faire
 			limit = {
 				OR = {
 					has_ideology = ideology:ideology_eco_laissez_faire
@@ -450,62 +492,83 @@ conservative_party = {
 						has_ideology = ideology:ideology_market_liberal
 					}
 				}
-				owner = { this = c:USA }
+				owner = {
+					this = c:USA
+				}
 			}
 			add = {
 				value = 3
 				desc = "bpm_from_laissez_faire"
 			}
 		}
-		if = { # investors more likely to join conservatives when the poor can vote
+		if = {
+			# investors more likely to join conservatives when the poor can vote
 			limit = {
 				bpm_ig_is_upper_institutional = yes
-				owner = { #has_law = law_type:law_universal_suffrage }
+				owner = {
+					has_law = law_type:law_universal_suffrage
+				}
 			}
 			add = {
 				value = 5
 				desc = "from_capitalists_suffrage"
 			}
 		}
-		if = { # investors and landowners more likely to join with progressive taxation
+		if = {
+			# investors and landowners more likely to join with progressive taxation
 			limit = {
 				bpm_ig_is_upper_institutional = yes
-				owner = { #has_law = law_type:law_graduated_taxation }
+				owner = {
+					has_law = law_type:law_graduated_taxation
+				}
 			}
 			add = {
 				value = 2
 				desc = "from_capitalists_tax"
 			}
 		}
-		if = { # investors more likely to join conservatives with public health
+		if = {
+			# investors more likely to join conservatives with public health
 			limit = {
 				bpm_ig_is_upper_institutional = yes
-				owner = { #has_law = law_type:law_public_health_insurance }
+				owner = {
+					has_law = law_type:law_public_health_insurance
+				}
 			}
 			add = {
 				value = 2
 				desc = "from_capitalists_health"
 			}
 		}
-		if = { # devout, industrialists more likely to join conservatives with public schools
+		if = {
+			# devout, industrialists more likely to join conservatives with public schools
 			limit = {
-				OR = { bpm_ig_is_upper_institutional = yes }
-				owner = { #has_law = law_type:law_public_schools }
+				OR = {
+					bpm_ig_is_upper_institutional = yes
+				}
+				owner = {
+					has_law = law_type:law_public_schools
+				}
 			}
 			add = {
 				value = 2
 				desc = "from_capitalists_schools"
 			}
 		}
-		if = { # devout more likely to join conservatives with total separation
+		if = {
+			# devout more likely to join conservatives with total separation
 			limit = {
 				law_stance = {
 					law = law_type:law_total_separation
 					value < neutral
 				}
 				OR = {
-					owner = { #has_law = law_type:law_total_separation }
-					owner = { #has_law = law_type:law_state_atheism }
+					owner = {
+						has_law = law_type:law_total_separation
+					}
+					owner = {
+						has_law = law_type:law_state_atheism
+					}
 				}
 			}
 			add = {
@@ -513,35 +576,42 @@ conservative_party = {
 				desc = "from_devout_separation"
 			}
 		}
-		if = { # devout more likely to join conservatives with freedom of conscience
+		if = {
+			# devout more likely to join conservatives with freedom of conscience
 			limit = {
 				law_stance = {
 					law = law_type:law_total_separation
 					value < neutral
 				}
-				owner = { #has_law = law_type:law_freedom_of_conscience }
+				owner = {
+					has_law = law_type:law_freedom_of_conscience
+				}
 			}
 			add = {
 				value = 2
 				desc = "from_devout_conscience"
 			}
 		}
-		if = { # patriarchs more likely to join conservatives with women's suffrage
+		if = {
+			# patriarchs more likely to join conservatives with women's suffrage
 			limit = {
 				bpm_ig_is_sexist = yes
-				owner = { #has_law = law_type:law_womens_suffrage }
+				owner = {
+					has_law = law_type:law_womens_suffrage
+				}
 			}
 			add = {
 				value = 3
 				desc = "from_patriarchy"
 			}
 		}
-		if = { # conservatives like police
+		if = {
+			# conservatives like police
 			limit = {
 				has_ideology = ideology:ideology_sta_powerful_state
 				owner = {
 					has_technology_researched = law_enforcement
-					#has_law = law_type:law_no_police
+					has_law = law_type:law_no_police
 				}
 			}
 			add = {
@@ -549,16 +619,21 @@ conservative_party = {
 				desc = "from_no_police"
 			}
 		}
-		if = { # legitimists dislike bonapartists
+		if = {
+			# legitimists dislike bonapartists
 			limit = {
 				is_interest_group_type = ig_reactionaries
 				owner = {
 					any_interest_group = {
 						OR = {
-							leader = { has_ideology = ideology:ideology_bonapartist }
+							leader = {
+								has_ideology = ideology:ideology_bonapartist
+							}
 						}
 						has_party = yes
-						party = { is_party_type = conservative_party }
+						party = {
+							is_party_type = conservative_party
+						}
 					}
 				}
 			}
@@ -567,7 +642,8 @@ conservative_party = {
 				desc = "from_legitimist"
 			}
 		}
-		if = { # arbitrary weight for Andrew Jackson to be in the right party
+		if = {
+			# arbitrary weight for Andrew Jackson to be in the right party
 			limit = {
 				leader = {
 					OR = {
@@ -581,13 +657,14 @@ conservative_party = {
 				desc = "bpm_from_jackson"
 			}
 		}
-		if = { # imperial brazilian conservatives like centralism
+		if = {
+			# imperial brazilian conservatives like centralism
 			limit = {
 				owner = {
 					country_has_primary_culture = cu:brazilian
-					OR = { 
-						#has_law = law_type:law_monarchy 
-						#has_law = law_type:law_theocracy
+					OR = {
+						has_law = law_type:law_monarchy
+						has_law = law_type:law_theocracy
 					}
 				}
 				OR = {
@@ -600,7 +677,8 @@ conservative_party = {
 				desc = "from_centralism"
 			}
 		}
-		if = { # north andean and mexican conservatives like centralism
+		if = {
+			# north andean and mexican conservatives like centralism
 			limit = {
 				owner = {
 					OR = {
@@ -618,11 +696,14 @@ conservative_party = {
 				desc = "from_centralism"
 			}
 		}
-		if = { # platinean conservatives like descentralism
+		if = {
+			# platinean conservatives like descentralism
 			limit = {
 				owner = {
 					country_has_primary_culture = cu:platinean
-					NOT = { THIS = c:PRG }
+					NOT = {
+						THIS = c:PRG
+					}
 				}
 				OR = {
 					has_ideology = ideology:ideology_sta_minimal_state
@@ -635,11 +716,14 @@ conservative_party = {
 				desc = "from_descentralism"
 			}
 		}
-		if = { # argentine positivists
+		if = {
+			# argentine positivists
 			limit = {
 				owner = {
 					THIS = c:ARG
-					NOT = { #has_law = law_type:law_confederated }
+					NOT = {
+						has_law = law_type:law_confederated
+					}
 				}
 				OR = {
 					has_ideology = ideology:ideology_dop_technocrat
@@ -653,7 +737,8 @@ conservative_party = {
 				desc = "from_positivism"
 			}
 		}
-		if = { # arbitrary weight for American devouts to be in the right party
+		if = {
+			# arbitrary weight for American devouts to be in the right party
 			limit = {
 				owner = {
 					bpm_country_has_unfree_labor = yes
@@ -666,7 +751,8 @@ conservative_party = {
 				desc = "bpm_from_american_devout"
 			}
 		}
-		if = { # arbitrary weight for American reactionaries to stay with the dems (for now)
+		if = {
+			# arbitrary weight for American reactionaries to stay with the dems (for now)
 			limit = {
 				owner = {
 					THIS = c:USA
@@ -678,7 +764,8 @@ conservative_party = {
 				desc = "bpm_from_american_reactionaries"
 			}
 		}
-		if = { # arbitrary weight for Bonapartists to be in the right party
+		if = {
+			# arbitrary weight for Bonapartists to be in the right party
 			limit = {
 				owner = {
 					country_has_primary_culture = cu:french
@@ -690,11 +777,12 @@ conservative_party = {
 				desc = "bpm_from_bonapartism"
 			}
 		}
-		if = { # arbitrary weight for Bonapartists to be in the right party
+		if = {
+			# arbitrary weight for Bonapartists to be in the right party
 			limit = {
 				owner = {
 					country_has_primary_culture = cu:french
-					#has_law = law_type:law_monarchy
+					has_law = law_type:law_monarchy
 					has_variable = bonapartist_restoration_var
 				}
 				is_interest_group_type = ig_national_liberals
@@ -711,7 +799,9 @@ conservative_party = {
 					any_interest_group = {
 						has_ideology = ideology:ideology_wel_paternalistic_welfare
 						has_party = yes
-						party = { is_party_type = conservative_party }
+						party = {
+							is_party_type = conservative_party
+						}
 					}
 				}
 			}
@@ -733,7 +823,9 @@ conservative_party = {
 							bpm_ig_is_non_paternal_conservative = yes
 						}
 						has_party = yes
-						party = { is_party_type = conservative_party }
+						party = {
+							is_party_type = conservative_party
+						}
 					}
 				}
 			}
@@ -742,11 +834,14 @@ conservative_party = {
 				desc = "bpm_from_dislike_traditionalists"
 			}
 		}
-		if = { # anarchist
+		if = {
+			# anarchist
 			limit = {
 				OR = {
 					bpm_ig_is_anarchist = yes
-					leader = { bpm_leader_is_anarchist = yes }
+					leader = {
+						bpm_leader_is_anarchist = yes
+					}
 				}
 			}
 			add = {
@@ -754,17 +849,20 @@ conservative_party = {
 				desc = "bpm_anarchist_anti_party"
 			}
 		}
-		if = { # brazilian monarchism in republic
+		if = {
+			# brazilian monarchism in republic
 			limit = {
 				OR = {
 					bpm_ig_is_monarchist = yes
-					leader = { bpm_leader_is_reactionary = yes }
+					leader = {
+						bpm_leader_is_reactionary = yes
+					}
 				}
 				owner = {
 					country_has_primary_culture = cu:brazilian
 					NOR = {
-						#has_law = law_type:law_monarchy
-						#has_law = law_type:law_theocracy
+						has_law = law_type:law_monarchy
+						has_law = law_type:law_theocracy
 					}
 				}
 			}
@@ -773,13 +871,18 @@ conservative_party = {
 				desc = "from_monarchist"
 			}
 		}
-		if = { # reactionaries take over if conservatives are in Liberal Party
+		if = {
+			# reactionaries take over if conservatives are in Liberal Party
 			limit = {
 				is_interest_group_type = ig_reactionaries
 				owner = {
 					ig:ig_conservatives = {
 						has_party = yes
-						party = { NOT = { is_party_type = conservative_party } }
+						party = {
+							NOT = {
+								is_party_type = conservative_party
+							}
+						}
 					}
 				}
 			}

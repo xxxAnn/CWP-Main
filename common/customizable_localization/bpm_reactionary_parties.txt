@@ -5,21 +5,9 @@ usa_reactionary_party_name = {
 		trigger = {
 			OR = {
 				game_date > 1900.1.1
-				has_global_variable = american_civil_war
-				#has_law = law_type:law_slavery_banned
 			}
 		}
 		localization_key = party_usa_redeemers
-	}
-	text = {
-		trigger = {
-			game_date < 1900.1.1
-			NOR = {
-				has_global_variable = american_civil_war
-				#has_law = law_type:law_slavery_banned
-			}
-		}
-		localization_key = party_usa_know_nothings
 	}
 }
 
@@ -36,8 +24,8 @@ fra_reactionary_party_name = {
 		trigger = {
 			game_date >= 1899.1.1
 			NOR = {
-				#has_law = law_type:law_monarchy
-				#has_law = law_type:law_theocracy
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_fra_action
@@ -102,14 +90,14 @@ ger_reactionary_party_name = {
 	random_valid = no
 	text = {
 		trigger = {
-			#has_law = law_type:law_monarchy 
+			has_law = law_type:law_monarchy
 		}
 		localization_key = party_german_social
 	}
 	text = {
 		trigger = {
 			NOT = {
-				#has_law = law_type:law_monarchy 
+				has_law = law_type:law_monarchy
 			}
 		}
 		localization_key = party_ger_dnvp

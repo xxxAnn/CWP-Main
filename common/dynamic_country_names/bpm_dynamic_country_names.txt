@@ -3,19 +3,19 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_communist
 		adjective = bpm_generic_revolt_communist_adj
-		
 		is_revolutionary = yes
 		priority = 10
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				#has_law = law_type:law_council_republic
+				has_law = law_type:law_council_republic
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes
 					OR = {
-						leader = { bpm_leader_is_radical_socialist = yes }
+						leader = {
+							bpm_leader_is_radical_socialist = yes
+						}
 						bpm_ig_is_radical_socialist = yes
 					}
 				}
@@ -26,15 +26,13 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_council
 		adjective = bpm_generic_revolt_council_adj
-		
 		is_revolutionary = yes
 		priority = 6
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				#has_law = law_type:law_council_republic
+				has_law = law_type:law_council_republic
 			}
 		}
 	}
@@ -42,20 +40,22 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_fascist
 		adjective = bpm_generic_revolt_fascist_adj
-		
 		is_revolutionary = yes
 		priority = 10
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				NOT = { #has_law = law_type:law_council_republic }
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes
 					OR = {
 						bpm_ig_is_fascist = yes
-						leader = { bpm_leader_is_fascist = yes }
+						leader = {
+							bpm_leader_is_fascist = yes
+						}
 					}
 				}
 			}
@@ -65,10 +65,8 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_radical_republic
 		adjective = bpm_generic_revolt_radical_republic_adj
-		
 		is_revolutionary = yes
 		priority = 1
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -79,9 +77,13 @@
 					OR = {
 						bpm_ig_is_left_wing = yes
 						bpm_ig_is_urban_institutional = yes
-						leader = { bpm_leader_is_left_wing = yes }
+						leader = {
+							bpm_leader_is_left_wing = yes
+						}
 					}
-					leader = { bpm_leader_is_right_wing = no }
+					leader = {
+						bpm_leader_is_right_wing = no
+					}
 				}
 			}
 		}
@@ -90,10 +92,8 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_radical_monarchy
 		adjective = bpm_generic_revolt_radical_monarchy_adj
-		
 		is_revolutionary = yes
 		priority = 1
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -104,7 +104,9 @@
 					OR = {
 						bpm_ig_is_left_wing = yes
 						is_interest_group_type = ig_trade_unions
-						leader = { bpm_leader_is_left_wing = yes }
+						leader = {
+							bpm_leader_is_left_wing = yes
+						}
 					}
 				}
 			}
@@ -114,10 +116,8 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_early_agrarian_republic
 		adjective = bpm_generic_revolt_early_agrarian_republic_adj
-		
 		is_revolutionary = yes
 		priority = 5
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -125,8 +125,12 @@
 				bpm_country_is_republic = yes
 				bpm_country_has_modern_agriculture = no
 				OR = {
-					ig:ig_rural_folk = { bpm_is_strongest_ig_in_government = yes }
-					ig:ig_agrarian_populists = { bpm_is_strongest_ig_in_government = yes }
+					ig:ig_rural_folk = {
+						bpm_is_strongest_ig_in_government = yes
+					}
+					ig:ig_agrarian_populists = {
+						bpm_is_strongest_ig_in_government = yes
+					}
 				}
 			}
 		}
@@ -135,10 +139,8 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_agrarian_republic
 		adjective = bpm_generic_revolt_agrarian_republic_adj
-		
 		is_revolutionary = yes
 		priority = 5
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -146,32 +148,11 @@
 				bpm_country_is_republic = yes
 				bpm_country_has_modern_agriculture = yes
 				OR = {
-					ig:ig_rural_folk = { bpm_is_strongest_ig_in_government = yes }
-					ig:ig_agrarian_populists = { bpm_is_strongest_ig_in_government = yes }
-				}
-			}
-		}
-	}
-	# Muslim Left
-	dynamic_country_name = {
-		name = bpm_generic_revolt_early_muslim_left
-		adjective = bpm_generic_revolt_early_muslim_left_adj
-		
-		is_revolutionary = yes
-		priority = 6
-		
-		trigger = {
-			exists = scope:actor
-			scope:actor = {
-				is_secessionist = no
-				root.religion = { has_discrimination_trait = muslim }
-				any_interest_group = {
-					bpm_is_strongest_ig_in_government = yes
-					OR = {
-						bpm_ig_is_lower_institutional = yes
-						bpm_ig_is_left_wing = yes
-						is_interest_group_type = ig_agrarian_populists
-						leader = { bpm_leader_is_left_wing = yes }
+					ig:ig_rural_folk = {
+						bpm_is_strongest_ig_in_government = yes
+					}
+					ig:ig_agrarian_populists = {
+						bpm_is_strongest_ig_in_government = yes
 					}
 				}
 			}
@@ -181,22 +162,51 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_early_muslim_left
 		adjective = bpm_generic_revolt_early_muslim_left_adj
-		
 		is_revolutionary = yes
 		priority = 6
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				root.religion = { has_discrimination_trait = muslim }
+				root.religion = {
+					has_discrimination_trait = muslim
+				}
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes
 					OR = {
 						bpm_ig_is_lower_institutional = yes
 						bpm_ig_is_left_wing = yes
 						is_interest_group_type = ig_agrarian_populists
-						leader = { bpm_leader_is_left_wing = yes }
+						leader = {
+							bpm_leader_is_left_wing = yes
+						}
+					}
+				}
+			}
+		}
+	}
+	# Muslim Left
+	dynamic_country_name = {
+		name = bpm_generic_revolt_early_muslim_left
+		adjective = bpm_generic_revolt_early_muslim_left_adj
+		is_revolutionary = yes
+		priority = 6
+		trigger = {
+			exists = scope:actor
+			scope:actor = {
+				is_secessionist = no
+				root.religion = {
+					has_discrimination_trait = muslim
+				}
+				any_interest_group = {
+					bpm_is_strongest_ig_in_government = yes
+					OR = {
+						bpm_ig_is_lower_institutional = yes
+						bpm_ig_is_left_wing = yes
+						is_interest_group_type = ig_agrarian_populists
+						leader = {
+							bpm_leader_is_left_wing = yes
+						}
 					}
 				}
 			}
@@ -206,15 +216,13 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_bonapartist
 		adjective = bpm_generic_revolt_bonapartist_adj
-		
 		is_revolutionary = yes
 		priority = 1
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				#has_law = law_type:law_monarchy
+				has_law = law_type:law_monarchy
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes
 					leader = {
@@ -228,15 +236,13 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_legitimist
 		adjective = bpm_generic_revolt_legitimist_adj
-		
 		is_revolutionary = yes
 		priority = 1
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				#has_law = law_type:law_monarchy
+				has_law = law_type:law_monarchy
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes
 					leader = {
@@ -250,15 +256,13 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_orleanist
 		adjective = bpm_generic_revolt_orleanist_adj
-		
 		is_revolutionary = yes
 		priority = 1
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				#has_law = law_type:law_monarchy
+				has_law = law_type:law_monarchy
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes
 					leader = {
@@ -272,15 +276,15 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_peasant
 		adjective = bpm_generic_revolt_peasant_adj
-		
 		is_revolutionary = yes
 		priority = 1
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				ig:ig_rural_folk = { bpm_is_strongest_ig_in_government = yes }
+				ig:ig_rural_folk = {
+					bpm_is_strongest_ig_in_government = yes
+				}
 				bpm_country_has_modern_agriculture = no
 			}
 		}
@@ -289,20 +293,22 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_farmer
 		adjective = bpm_generic_revolt_farmer_adj
-		
 		is_revolutionary = yes
 		priority = 2
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
 				OR = {
 					AND = {
-						ig:ig_rural_folk = { bpm_is_strongest_ig_in_government = yes }
+						ig:ig_rural_folk = {
+							bpm_is_strongest_ig_in_government = yes
+						}
 						bpm_country_has_modern_agriculture = yes
 					}
-					ig:ig_agrarian_populists = { bpm_is_strongest_ig_in_government = yes }
+					ig:ig_agrarian_populists = {
+						bpm_is_strongest_ig_in_government = yes
+					}
 				}
 			}
 		}
@@ -311,10 +317,8 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_military
 		adjective = bpm_generic_revolt_military_adj
-		
 		is_revolutionary = yes
 		priority = 5
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -329,23 +333,22 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_reactionary_monarchy
 		adjective = bpm_generic_revolt_reactionary_monarchy_adj
-		
 		is_revolutionary = yes
 		priority = 1
-		
 		trigger = {
-
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				#has_law = law_type:law_monarchy
+				has_law = law_type:law_monarchy
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes
 					OR = {
 						is_interest_group_type = ig_landowners
 						is_interest_group_type = ig_devout
 						bpm_ig_is_right_wing = yes
-						leader = { bpm_leader_is_right_wing = yes }
+						leader = {
+							bpm_leader_is_right_wing = yes
+						}
 					}
 					bpm_ig_is_liberal = no
 				}
@@ -368,12 +371,9 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_reactionary_republic
 		adjective = bpm_generic_revolt_reactionary_republic_adj
-		
 		is_revolutionary = yes
 		priority = 1
-		
 		trigger = {
-
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
@@ -385,7 +385,9 @@
 						is_interest_group_type = ig_devout
 						is_interest_group_type = ig_industrialists
 						bpm_ig_is_right_wing = yes
-						leader = { bpm_leader_is_right_wing = yes }
+						leader = {
+							bpm_leader_is_right_wing = yes
+						}
 					}
 					# bpm_ig_is_liberal = no
 				}
@@ -408,37 +410,34 @@
 	dynamic_country_name = {
 		name = bpm_generic_revolt_reactionary_theocracy
 		adjective = bpm_generic_revolt_reactionary_theocracy_adj
-		
 		is_revolutionary = yes
 		priority = 1
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				#has_law = law_type:law_theocracy
+				has_law = law_type:law_theocracy
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes
 					OR = {
 						is_interest_group_type = ig_landowners
 						is_interest_group_type = ig_devout
 						bpm_ig_is_right_wing = yes
-						leader = { bpm_leader_is_traditional_right = yes }
+						leader = {
+							bpm_leader_is_traditional_right = yes
+						}
 					}
 					bpm_ig_is_liberal = no
 				}
 			}
 		}
 	}
-
 	# ACW revolters
 	dynamic_country_name = {
 		name = csa_revolt_name
 		adjective = csa_revolt_name_adj
-		
 		is_revolutionary = yes
 		priority = 100
-		
 		trigger = {
 			exists = c:CSA
 			exists = c:USA
@@ -447,17 +446,15 @@
 				this = c:CSA
 			}
 			c:USA = {
-				has_journal_entry = je_acw_war			
+				has_journal_entry = je_acw_war
 			}
 		}
 	}
 	dynamic_country_name = {
 		name = fsa_revolt_name
 		adjective = fsa_revolt_name_adj
-		
 		is_revolutionary = yes
 		priority = 100
-		
 		trigger = {
 			exists = c:FSA
 			exists = scope:actor
@@ -465,18 +462,16 @@
 				this = c:FSA
 			}
 			c:USA = {
-				has_journal_entry = je_acw_war			
-			}			
+				has_journal_entry = je_acw_war
+			}
 		}
 	}
 	# Generic fallbacks
 	dynamic_country_name = {
 		name = generic_revolt_1
 		adjective = generic_revolt_1_adj
-		
 		is_revolutionary = yes
 		priority = 0
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -487,10 +482,8 @@
 	dynamic_country_name = {
 		name = generic_revolt_2
 		adjective = generic_revolt_2_adj
-		
 		is_revolutionary = yes
 		priority = 0
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -501,10 +494,8 @@
 	dynamic_country_name = {
 		name = generic_revolt_3
 		adjective = generic_revolt_3_adj
-		
 		is_revolutionary = yes
 		priority = 0
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -516,10 +507,8 @@
 	dynamic_country_name = {
 		name = rsm_revolt_name
 		adjective = rsm_revolt_name_adj
-		
 		is_revolutionary = yes
 		priority = 100
-		
 		trigger = {
 			scope:actor = {
 				c:RSM ?= this
@@ -530,9 +519,7 @@
 		name = colonial_admin_zanj
 		adjective = colonial_admin_zanj_adj
 		use_overlord_prefix = yes
-		
 		priority = 100
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -544,9 +531,7 @@
 		name = colonial_admin_ethiopia
 		adjective = colonial_admin_ethiopia_adj
 		use_overlord_prefix = yes
-		
 		priority = 100
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -558,9 +543,7 @@
 		name = colonial_admin_southern_africa
 		adjective = colonial_admin_southern_africa_adj
 		use_overlord_prefix = yes
-		
 		priority = 100
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -578,9 +561,7 @@
 		name = colonial_admin_congo
 		adjective = colonial_admin_congo_adj
 		use_overlord_prefix = yes
-		
 		priority = 100
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -592,9 +573,7 @@
 		name = colonial_admin_niger
 		adjective = colonial_admin_niger_adj
 		use_overlord_prefix = yes
-		
 		priority = 100
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
@@ -606,9 +585,7 @@
 		name = colonial_admin_senegal
 		adjective = colonial_admin_senegal_adj
 		use_overlord_prefix = yes
-		
 		priority = 100
-		
 		trigger = {
 			exists = scope:actor
 			scope:actor = {

@@ -1,7 +1,10 @@
 ﻿# Niche party for anarchists in specific circumstances
-
 anarchist_party = {
-	color = { 0 0 0 }
+	color = {
+		0
+		0
+		0
+	}
 	name = {
 		first_valid = {
 			triggered_desc = {
@@ -135,8 +138,12 @@ anarchist_party = {
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes
-		NOT = { bpm_is_party_banned = { PARTY = anarchist_party} }
-		NOR = { 
+		NOT = {
+			bpm_is_party_banned = {
+				PARTY = anarchist_party
+			}
+		}
+		NOR = {
 			is_interest_group_type = ig_reactionaries
 			is_interest_group_type = ig_conservatives
 			is_interest_group_type = ig_liberals
@@ -158,12 +165,15 @@ anarchist_party = {
 				value = bpm_party_loyalty_values
 			}
 		}
-		if = { # strong anarchists like anarchism
+		if = {
+			# strong anarchists like anarchism
 			limit = {
 				is_powerful = yes
 				OR = {
 					is_interest_group_type = ig_anarchists
-					leader = { has_ideology = ideology:ideology_anarchist }
+					leader = {
+						has_ideology = ideology:ideology_anarchist
+					}
 				}
 			}
 			add = {
@@ -171,12 +181,17 @@ anarchist_party = {
 				desc = "powerful_anarchists"
 			}
 		}
-		if = { # Council republic anarchists would want a party
+		if = {
+			# Council republic anarchists would want a party
 			limit = {
-				owner = { #has_law = law_type:law_council_republic }
+				owner = {
+					has_law = law_type:law_council_republic
+				}
 				OR = {
 					is_interest_group_type = ig_anarchists
-					leader = { has_ideology = ideology:ideology_anarchist }
+					leader = {
+						has_ideology = ideology:ideology_anarchist
+					}
 				}
 			}
 			add = {
@@ -184,10 +199,17 @@ anarchist_party = {
 				desc = "bpm_anarchists_in_council_republic"
 			}
 		}
-		if = { # weak agrarian socialists and trade unionists will fall behind anarchists
+		if = {
+			# weak agrarian socialists and trade unionists will fall behind anarchists
 			limit = {
-				owner = { exists = ig:ig_anarchists }
-				owner = {ig:ig_anarchists = { is_powerful = yes }}
+				owner = {
+					exists = ig:ig_anarchists
+				}
+				owner = {
+					ig:ig_anarchists = {
+						is_powerful = yes
+					}
+				}
 				is_powerful = no
 				OR = {
 					is_interest_group_type = ig_agrarian_populists
@@ -199,14 +221,17 @@ anarchist_party = {
 				desc = "powerful_anarchists"
 			}
 		}
-		if = { # anarchists don't like the revolution being hijacked
+		if = {
+			# anarchists don't like the revolution being hijacked
 			limit = {
 				OR = {
 					is_interest_group_type = ig_anarchists
-					leader = { has_ideology = ideology:ideology_anarchist }
+					leader = {
+						has_ideology = ideology:ideology_anarchist
+					}
 				}
 				owner = {
-					#has_law = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 					ruler = {
 						has_ideology = ideology:ideology_vanguardist
 					}
@@ -217,11 +242,14 @@ anarchist_party = {
 				desc = "from_vanguard_anarchy"
 			}
 		}
-		if = { # anarchists will make their own party if there is no communist party to join
+		if = {
+			# anarchists will make their own party if there is no communist party to join
 			limit = {
 				OR = {
 					is_interest_group_type = ig_anarchists
-					leader = { has_ideology = ideology:ideology_anarchist }
+					leader = {
+						has_ideology = ideology:ideology_anarchist
+					}
 				}
 				owner = {
 					NOT = {
@@ -239,7 +267,8 @@ anarchist_party = {
 				desc = "from_no_communists"
 			}
 		}
-		if = { # Anti-electoralism
+		if = {
+			# Anti-electoralism
 			limit = {
 				bpm_ig_is_anti_electoralist_socialist = yes
 			}
@@ -248,7 +277,8 @@ anarchist_party = {
 				desc = "bpm_anti_electoralist"
 			}
 		}
-		if = { # Strong anti-electoralism
+		if = {
+			# Strong anti-electoralism
 			limit = {
 				bpm_ig_is_strongly_anti_electoralist_socialist = yes
 			}

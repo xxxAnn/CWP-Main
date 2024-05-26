@@ -125,7 +125,7 @@
 		if = {
 			limit = {
 				civil_war_origin_country = {
-					#has_law = law_type:law_monarchy
+					has_law = law_type:law_monarchy
 				}
 			}
 			set_variable = prov_gov_monarchy
@@ -133,7 +133,7 @@
 		else_if = {
 			limit = {
 				civil_war_origin_country = {
-					#has_law = law_type:law_theocracy
+					has_law = law_type:law_theocracy
 				}
 			}
 			set_variable = prov_gov_theocracy
@@ -141,7 +141,7 @@
 		else_if = {
 			limit = {
 				civil_war_origin_country = {
-					#has_law = law_type:law_council_republic
+					has_law = law_type:law_council_republic
 				}
 			}
 			set_variable = prov_gov_council_republic

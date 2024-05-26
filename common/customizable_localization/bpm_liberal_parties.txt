@@ -1,37 +1,26 @@
 ﻿usa_liberal_party_name = {
 	type = country
 	random_valid = no
-
 	text = {
 		trigger = {
-			OR = { 
+			OR = {
 				game_date > 1900.1.1
 				has_global_variable = american_civil_war
-				#has_law = law_type:law_slavery_banned
 				any_interest_group = {
 					is_interest_group_type = ig_liberals
-					leader = { has_ideology = ideology:ideology_abolitionist }
+					leader = {
+						has_ideology = ideology:ideology_abolitionist
+					}
 				}
 			}
 		}
 		localization_key = party_usa_republicans
-	}
-	text = {
-		trigger = {
-			game_date < 1900.1.1
-			NOR = { 
-				has_global_variable = american_civil_war
-				#has_law = law_type:law_slavery_banned
-			}
-		}
-		localization_key = party_usa_whigs
 	}
 }
 
 gbr_liberal_party_name = {
 	type = country
 	random_valid = no
-
 	text = {
 		trigger = {
 			game_date < 1859.1.1
@@ -49,12 +38,11 @@ gbr_liberal_party_name = {
 brz_liberal_party_name = {
 	type = country
 	random_valid = no
-
 	text = {
 		trigger = {
-			OR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			OR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 			game_date < 1837.1.1
 		}
@@ -62,9 +50,9 @@ brz_liberal_party_name = {
 	}
 	text = {
 		trigger = {
-			OR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			OR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 			game_date >= 1837.1.1
 			game_date < 1841.1.1
@@ -73,9 +61,9 @@ brz_liberal_party_name = {
 	}
 	text = {
 		trigger = {
-			OR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			OR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 			game_date >= 1841.1.1
 		}
@@ -83,9 +71,9 @@ brz_liberal_party_name = {
 	}
 	text = {
 		trigger = {
-			NOR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			NOR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 			any_active_party = {
 				is_party_type = liberal_party
@@ -98,9 +86,9 @@ brz_liberal_party_name = {
 	}
 	text = {
 		trigger = {
-			NOR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			NOR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 			NOT = {
 				any_active_party = {
@@ -118,23 +106,28 @@ brz_liberal_party_name = {
 arg_liberal_party_name = {
 	type = country
 	random_valid = no
-
 	text = {
 		trigger = {
-			#has_law = law_type:law_confederated
+			has_law = law_type:law_confederated
 		}
 		localization_key = party_arg_unitarian
 	}
 	text = {
 		trigger = {
-			NOT = { #has_law = law_type:law_confederated }
-			NOT = { has_technology_researched = pre_war_ideological_thought }
+			NOT = {
+				has_law = law_type:law_confederated
+			}
+			NOT = {
+				has_technology_researched = pre_war_ideological_thought
+			}
 		}
 		localization_key = party_national_civic_union
 	}
 	text = {
 		trigger = {
-			NOT = { #has_law = law_type:law_confederated }
+			NOT = {
+				has_law = law_type:law_confederated
+			}
 			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_arg_democratic_progressive
@@ -144,20 +137,21 @@ arg_liberal_party_name = {
 mex_liberal_party_name = {
 	type = country
 	random_valid = no
-
 	text = {
 		trigger = {
 			OR = {
-				OR = { 
-					#has_law = law_type:law_monarchy 
-					#has_law = law_type:law_theocracy
+				OR = {
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_theocracy
 				}
 				AND = {
-					NOR = { 
-						#has_law = law_type:law_monarchy 
-						#has_law = law_type:law_theocracy
+					NOR = {
+						has_law = law_type:law_monarchy
+						has_law = law_type:law_theocracy
 					}
-					NOT = {has_technology_researched = human_rights}
+					NOT = {
+						has_technology_researched = human_rights
+					}
 				}
 			}
 		}
@@ -165,30 +159,30 @@ mex_liberal_party_name = {
 	}
 	text = {
 		trigger = {
-			NOR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			NOR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 			has_technology_researched = human_rights
 			NOR = {
-				#has_law = law_type:law_universal_suffrage
-				#has_law = law_type:law_census_voting
-				#has_law = law_type:law_wealth_voting
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_census_voting
+				has_law = law_type:law_wealth_voting
 			}
 		}
 		localization_key = party_mex_progressive_constitutionalist
 	}
 	text = {
 		trigger = {
-			NOR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
-			}	
+			NOR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
+			}
 			has_technology_researched = human_rights
 			OR = {
-				#has_law = law_type:law_universal_suffrage
-				#has_law = law_type:law_census_voting
-				#has_law = law_type:law_wealth_voting
+				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_census_voting
+				has_law = law_type:law_wealth_voting
 			}
 		}
 		localization_key = party_mex_constitutionalist_liberal
@@ -198,12 +192,11 @@ mex_liberal_party_name = {
 fra_liberal_party_name = {
 	type = country
 	random_valid = no
-	
 	text = {
 		trigger = {
-			OR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			OR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_fra_movement
@@ -211,9 +204,9 @@ fra_liberal_party_name = {
 	text = {
 		trigger = {
 			game_date < 1901.1.1
-			NOR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			NOR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_fra_republican
@@ -221,9 +214,9 @@ fra_liberal_party_name = {
 	text = {
 		trigger = {
 			game_date > 1901.1.1
-			NOR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			NOR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_fra_democratic_alliance
@@ -233,7 +226,6 @@ fra_liberal_party_name = {
 hun_liberal_party_name = {
 	type = country
 	random_valid = no
-	
 	text = {
 		trigger = {
 			game_date < 1880.1.1
@@ -258,13 +250,12 @@ hun_liberal_party_name = {
 spa_liberal_party_name = {
 	type = country
 	random_valid = no
-	
 	text = {
 		trigger = {
 			game_date < 1880.1.1
-			OR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			OR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_spa_progressive
@@ -272,35 +263,33 @@ spa_liberal_party_name = {
 	text = {
 		trigger = {
 			game_date > 1880.1.1
-			OR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			OR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_spa_liberal_fusion
 	}
 	text = {
 		trigger = {
-			NOR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			NOR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_spa_constitutional
 	}
-	
 }
 
 por_liberal_party_name = {
 	type = country
 	random_valid = no
-	
 	text = {
 		trigger = {
 			game_date < 1851.1.1
-			OR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			OR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_por_september
@@ -308,10 +297,12 @@ por_liberal_party_name = {
 	text = {
 		trigger = {
 			game_date >= 1851.1.1
-			NOT = { has_technology_researched = human_rights }
-			OR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			NOT = {
+				has_technology_researched = human_rights
+			}
+			OR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_por_historic
@@ -319,29 +310,27 @@ por_liberal_party_name = {
 	text = {
 		trigger = {
 			has_technology_researched = human_rights
-			OR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			OR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_por_progressive
 	}
 	text = {
 		trigger = {
-			NOR = { 
-				#has_law = law_type:law_monarchy 
-				#has_law = law_type:law_theocracy
+			NOR = {
+				has_law = law_type:law_monarchy
+				has_law = law_type:law_theocracy
 			}
 		}
 		localization_key = party_por_democratic
 	}
-	
 }
 
 ita_liberal_party_name = {
 	type = country
 	random_valid = no
-	
 	text = {
 		trigger = {
 			game_date < 1910.1.1
@@ -359,39 +348,36 @@ ita_liberal_party_name = {
 tur_liberal_party_name = {
 	type = country
 	random_valid = no
-	
 	text = {
 		trigger = {
-				#has_law = law_type:law_monarchy 
+			has_law = law_type:law_monarchy
 		}
 		localization_key = party_tur_freedom_and_accord
 	}
 	text = {
 		trigger = {
-			NOT = { 
-				#has_law = law_type:law_monarchy 
+			NOT = {
+				has_law = law_type:law_monarchy
 			}
 		}
 		localization_key = party_tur_progressive_republican
 	}
-
 }
 
 chi_liberal_party_name = {
 	type = country
 	random_valid = no
-	
 	text = {
 		trigger = {
-				#has_law = law_type:law_monarchy 
+			has_law = law_type:law_monarchy
 		}
 		localization_key = party_chi_empire_reform_association
 	}
 	text = {
 		trigger = {
 			game_date < 1913.1.1
-			NOT = { 
-				#has_law = law_type:law_monarchy 
+			NOT = {
+				has_law = law_type:law_monarchy
 			}
 		}
 		localization_key = party_chi_republican
@@ -399,11 +385,10 @@ chi_liberal_party_name = {
 	text = {
 		trigger = {
 			game_date > 1913.1.1
-			NOT = { 
-				#has_law = law_type:law_monarchy 
+			NOT = {
+				has_law = law_type:law_monarchy
 			}
 		}
 		localization_key = party_chi_center_kuomintang
 	}
 }
-

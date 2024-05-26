@@ -1,9 +1,9 @@
 ﻿bpm_je_general_strike_crackdown = {
 	name = "bpm_je_general_strike_crackdown_button"
 	desc = "bpm_je_general_strike_crackdown_button_desc"
-
-	visible = { always = yes }
-
+	visible = {
+		always = yes
+	}
 	possible = {
 		custom_tooltip = {
 			text = bpm_je_button_cooldown_month
@@ -15,9 +15,10 @@
 			has_institution = institution_home_affairs
 			has_institution = institution_police
 		}
-		NOT = { #has_law = law_type:law_elected_police }
+		NOT = {
+			has_law = law_type:law_elected_police
+		}
 	}
-
 	effect = {
 		hidden_effect = {
 			set_variable = {
@@ -43,8 +44,10 @@
 		}
 		if = {
 			limit = {
-				#has_law = law_type:law_all_labor_unions_allowed
-				NOT = { #has_law = law_type:law_council_republic }
+				has_law = law_type:law_all_labor_unions_allowed
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
 			}
 			activate_law = law_type:law_limited_labor_unions
 		}
@@ -68,9 +71,9 @@
 bpm_je_general_strike_white_terror = {
 	name = "bpm_je_general_strike_white_terror_button"
 	desc = "bpm_je_general_strike_white_terror_button_desc"
-
-	visible = { always = yes }
-
+	visible = {
+		always = yes
+	}
 	possible = {
 		custom_tooltip = {
 			text = bpm_je_button_cooldown_month
@@ -92,7 +95,6 @@ bpm_je_general_strike_white_terror = {
 			}
 		}
 	}
-
 	effect = {
 		hidden_effect = {
 			set_variable = {
@@ -101,32 +103,50 @@ bpm_je_general_strike_white_terror = {
 			}
 		}
 		if = {
-			limit = { NOT = { #has_law = law_type:law_censorship } }
+			limit = {
+				NOT = {
+					has_law = law_type:law_censorship
+				}
+			}
 			activate_law = law_type:law_censorship
 		}
 		if = {
 			limit = {
-				#has_law = law_type:law_all_labor_unions_allowed
-				NOT = { #has_law = law_type:law_council_republic }
+				has_law = law_type:law_all_labor_unions_allowed
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
 			}
 			activate_law = law_type:law_limited_labor_unions
 		}
 		if = {
 			limit = {
-				NOT = { #has_law = law_type:law_party_anti_socialist }
-				NOT = { #has_law = law_type:law_council_republic }
+				NOT = {
+					has_law = law_type:law_party_anti_socialist
+				}
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
 			}
 			activate_law = law_type:law_party_anti_socialist
 		}
 		else_if = {
 			limit = {
-				NOT = { #has_law = law_type:law_illegal_labor_unions }
-				NOT = { #has_law = law_type:law_council_republic }
+				NOT = {
+					has_law = law_type:law_illegal_labor_unions
+				}
+				NOT = {
+					has_law = law_type:law_council_republic
+				}
 			}
 			activate_law = law_type:law_illegal_labor_unions
 		}
 		else_if = {
-			limit = { NOT = { #has_law = law_type:law_militarized_police } }
+			limit = {
+				NOT = {
+					has_law = law_type:law_militarized_police
+				}
+			}
 			activate_law = law_type:law_militarized_police
 		}
 		kill_population = {
@@ -169,9 +189,9 @@ bpm_je_general_strike_white_terror = {
 bpm_je_general_strike_minor_concessions = {
 	name = "bpm_je_general_strike_minor_concessions_button"
 	desc = "bpm_je_general_strike_minor_concessions_button_desc"
-
-	visible = { always = yes }
-
+	visible = {
+		always = yes
+	}
 	possible = {
 		custom_tooltip = {
 			text = bpm_je_button_cooldown_month
@@ -179,9 +199,10 @@ bpm_je_general_strike_minor_concessions = {
 				has_variable = bpm_je_strike_button_cooldown_month
 			}
 		}
-		NOT = { #has_law = law_type:law_elected_police }
+		NOT = {
+			has_law = law_type:law_elected_police
+		}
 	}
-
 	effect = {
 		hidden_effect = {
 			set_variable = {
@@ -202,9 +223,9 @@ bpm_je_general_strike_minor_concessions = {
 bpm_je_general_strike_concessions = {
 	name = "bpm_je_general_strike_concessions_button"
 	desc = "bpm_je_general_strike_concessions_button_desc"
-
-	visible = { always = yes }
-
+	visible = {
+		always = yes
+	}
 	possible = {
 		custom_tooltip = {
 			text = bpm_je_button_cooldown_month
@@ -213,7 +234,6 @@ bpm_je_general_strike_concessions = {
 			}
 		}
 	}
-
 	effect = {
 		hidden_effect = {
 			set_variable = {

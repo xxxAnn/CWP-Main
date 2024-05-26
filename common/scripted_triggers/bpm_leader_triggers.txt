@@ -85,8 +85,8 @@ bpm_leader_is_moderate_liberal = {
 		AND = {
 			owner = {
 				NOR = {
-					#has_law = law_type:law_free_trade
-					#has_law = law_type:law_laissez_faire
+					has_law = law_type:law_free_trade
+					has_law = law_type:law_laissez_faire
 				}
 			}
 			has_ideology = ideology:ideology_market_liberal
@@ -96,8 +96,8 @@ bpm_leader_is_moderate_liberal = {
 				OR = {
 					bpm_country_laws_no_voting = yes
 					NOR = {
-						#has_law = law_type:law_landed_voting
-						#has_law = law_type:law_wealth_voting
+						has_law = law_type:law_landed_voting
+						has_law = law_type:law_wealth_voting
 					}
 				}
 			}
@@ -146,8 +146,8 @@ bpm_leader_is_conservative = {
 			has_ideology = ideology:ideology_royalist
 			owner = {
 				OR = {
-					#has_law = law_type:law_monarchy
-					#has_law = law_type:law_theocracy
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_theocracy
 				}
 			}
 		}
@@ -169,8 +169,8 @@ bpm_leader_is_conservative = {
 		AND = {
 			owner = {
 				OR = {
-					#has_law = law_type:law_free_trade
-					#has_law = law_type:law_laissez_faire
+					has_law = law_type:law_free_trade
+					has_law = law_type:law_laissez_faire
 				}
 			}
 			has_ideology = ideology:ideology_market_liberal
@@ -186,8 +186,8 @@ bpm_leader_is_reactionary = {
 			has_ideology = ideology:ideology_royalist
 			owner = {
 				NOR = {
-					#has_law = law_type:law_monarchy
-					#has_law = law_type:law_theocracy
+					has_law = law_type:law_monarchy
+					has_law = law_type:law_theocracy
 				}
 			}
 		}
