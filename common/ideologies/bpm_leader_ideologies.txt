@@ -3950,7 +3950,7 @@ ideology_protectionist = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = international_trade
+			has_technology_researched = keynesian_macroeconomics
 			# capitalism must be relevant
 			exists = ig:ig_industrialists
 			ig:ig_industrialists = {

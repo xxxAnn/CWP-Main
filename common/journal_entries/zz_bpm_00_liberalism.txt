@@ -7,7 +7,7 @@ je_liberalism_1 = {
 			has_variable = liberalism_1_done
 		}
 		has_technology_researched = democracy
-		has_technology_researched = international_trade
+		has_technology_researched = keynesian_macroeconomics
 	}
 	complete = {
 		bpm_country_laws_ok_voting = yes

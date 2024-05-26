@@ -900,7 +900,7 @@ ai_strategy_nationalist_agenda = {
 		NOT = {
 			has_law = law_type:law_council_republic
 		}
-		has_technology_researched = nationalism
+		has_technology_researched = pre_war_ideological_thought
 		any_interest_group = {
 			OR = {
 				bpm_ig_is_patriotic = yes

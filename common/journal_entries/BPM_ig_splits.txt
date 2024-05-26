@@ -34,7 +34,7 @@ je_bpm_split_natlibs = {
 		OR = {
 			AND = {
 				year > 1850
-				has_technology_researched = nationalism
+				has_technology_researched = pre_war_ideological_thought
 				hidden_trigger = { NOT = { has_variable = local_natlib_split_var } }
 				bpm_country_laws_no_voting = no
 			}
@@ -120,7 +120,7 @@ je_bpm_split_marlibs = {
 	}
 
 	possible = {
-		has_technology_researched = international_trade
+		has_technology_researched = keynesian_macroeconomics
 		hidden_trigger = { NOT = { has_variable = local_marlib_split_var } }
 		any_interest_group = {
 			OR = {
