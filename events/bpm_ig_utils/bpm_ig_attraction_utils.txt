@@ -55,13 +55,13 @@ bpm_ig_attraction_utils.1 = {
 				value = 0
 			}
 			if = {
-				limit = { pop_type_percent_country = { pop_type = peasants percent > 0.6 } }
+				limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.6 } }
 				if = {
-					limit = { pop_type_percent_country = { pop_type = peasants percent > 0.8 } }
+					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.8 } }
 					set_variable = { name = bpm_peasant_population_yandev_var value = 8 }
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = peasants percent > 0.7 } }
+					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.7 } }
 					set_variable = { name = bpm_peasant_population_yandev_var value = 7 }
 				}
 				else = {
@@ -69,13 +69,13 @@ bpm_ig_attraction_utils.1 = {
 				}
 			}
 			else_if = {
-				limit = { pop_type_percent_country = { pop_type = peasants percent > 0.3 } }
+				limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.3 } }
 				if = {
-					limit = { pop_type_percent_country = { pop_type = peasants percent > 0.5 } }
+					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.5 } }
 					set_variable = { name = bpm_peasant_population_yandev_var value = 5 }
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = peasants percent > 0.4 } }
+					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.4 } }
 					set_variable = { name = bpm_peasant_population_yandev_var value = 4 }
 				}
 				else = {
@@ -84,11 +84,11 @@ bpm_ig_attraction_utils.1 = {
 			}
 			else = {
 				if = {
-					limit = { pop_type_percent_country = { pop_type = peasants percent > 0.2 } }
+					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.2 } }
 					set_variable = { name = bpm_peasant_population_yandev_var value = 2 }
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = peasants percent > 0.1 } }
+					limit = { pop_type_percent_country = { pop_type = informal_workers percent > 0.1 } }
 					set_variable = { name = bpm_peasant_population_yandev_var value = 1 }
 				}
 			}
@@ -99,13 +99,13 @@ bpm_ig_attraction_utils.1 = {
 				value = 0
 			}
 			if = {
-				limit = { radical_fraction = { pop_type = peasants value > 0.4 } }
+				limit = { radical_fraction = { pop_type = informal_workers value > 0.4 } }
 				if = {
-					limit = { radical_fraction = { pop_type = peasants value > 0.8 } }
+					limit = { radical_fraction = { pop_type = informal_workers value > 0.8 } }
 					set_variable = { name = bpm_peasant_radicals_yandev_var value = 8 }
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = peasants value > 0.6 } }
+					limit = { radical_fraction = { pop_type = informal_workers value > 0.6 } }
 					set_variable = { name = bpm_peasant_radicals_yandev_var value = 6 }
 				}
 				else = {
@@ -114,11 +114,11 @@ bpm_ig_attraction_utils.1 = {
 			}
 			else = {
 				if = {
-					limit = { radical_fraction = { pop_type = peasants value > 0.2 } }
+					limit = { radical_fraction = { pop_type = informal_workers value > 0.2 } }
 					set_variable = { name = bpm_peasant_radicals_yandev_var value = 2 }
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = peasants value > 0.1 } }
+					limit = { radical_fraction = { pop_type = informal_workers value > 0.1 } }
 					set_variable = { name = bpm_peasant_radicals_yandev_var value = 1 }
 				}
 			}
@@ -159,9 +159,9 @@ bpm_ig_attraction_utils.1 = {
 				value = 0
 			}
 			if = {
-				limit = { pop_type_percent_country = { pop_type = machinists percent > 0.2 } }
+				limit = { pop_type_percent_country = { pop_type = technicians percent > 0.2 } }
 				if = {
-					limit = { pop_type_percent_country = { pop_type = machinists percent > 0.3 } }
+					limit = { pop_type_percent_country = { pop_type = technicians percent > 0.3 } }
 					set_variable = { name = bpm_machinist_population_yandev_var value = 3 }
 				}
 				else = {
@@ -170,11 +170,11 @@ bpm_ig_attraction_utils.1 = {
 			}
 			else = {
 				if = {
-					limit = { pop_type_percent_country = { pop_type = machinists percent > 0.1 } }
+					limit = { pop_type_percent_country = { pop_type = technicians percent > 0.1 } }
 					set_variable = { name = bpm_machinist_population_yandev_var value = 1 }
 				}
 				else_if = {
-					limit = { pop_type_percent_country = { pop_type = machinists percent > 0.05 } }
+					limit = { pop_type_percent_country = { pop_type = technicians percent > 0.05 } }
 					set_variable = { name = bpm_machinist_population_yandev_var value = 0.5 }
 				}
 			}
@@ -215,13 +215,13 @@ bpm_ig_attraction_utils.1 = {
 				value = 0
 			}
 			if = {
-				limit = { radical_fraction = { pop_type = machinists value > 0.4 } }
+				limit = { radical_fraction = { pop_type = technicians value > 0.4 } }
 				if = {
-					limit = { radical_fraction = { pop_type = machinists value > 0.8 } }
+					limit = { radical_fraction = { pop_type = technicians value > 0.8 } }
 					set_variable = { name = bpm_machinist_radicals_yandev_var value = 8 }
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = machinists value > 0.6 } }
+					limit = { radical_fraction = { pop_type = technicians value > 0.6 } }
 					set_variable = { name = bpm_machinist_radicals_yandev_var value = 6 }
 				}
 				else = {
@@ -230,11 +230,11 @@ bpm_ig_attraction_utils.1 = {
 			}
 			else = {
 				if = {
-					limit = { radical_fraction = { pop_type = machinists value > 0.15 } }
+					limit = { radical_fraction = { pop_type = technicians value > 0.15 } }
 					set_variable = { name = bpm_machinist_radicals_yandev_var value = 2 }
 				}
 				else_if = {
-					limit = { radical_fraction = { pop_type = machinists value > 0.05 } }
+					limit = { radical_fraction = { pop_type = technicians value > 0.05 } }
 					set_variable = { name = bpm_machinist_radicals_yandev_var value = 1 }
 				}
 			}
@@ -309,7 +309,7 @@ bpm_ig_attraction_utils.2 = {
 					}
 					radical_fraction = {
 						value >= 0.2
-						pop_type = peasants
+						pop_type = informal_workers
 					}
 					radical_fraction = {
 						value >= 0.2

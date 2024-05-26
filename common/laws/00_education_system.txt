@@ -67,7 +67,7 @@ law_religious_schools = {
 			desc = "POP_CLERGYMEN"			
 			if = {
 				limit = {
-					is_pop_type = clergymen
+					is_pop_type = clergy
 				}
 				value = 0.33
 			}

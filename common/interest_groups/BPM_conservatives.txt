@@ -49,7 +49,7 @@
 		value = 30
 		if = {
 			limit = {
-				is_pop_type = capitalists
+				is_pop_type = investors
 			}
 			add = {
 				desc = "POP_CAPITALISTS"

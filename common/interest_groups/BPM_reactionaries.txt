@@ -49,7 +49,7 @@
 		value = 10
 		if = {
 			limit = {
-				is_pop_type = aristocrats
+				is_pop_type = landlords
 			}
 			add = {
 				desc = "POP_ARISTOCRATS"
@@ -58,7 +58,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = capitalists
+				is_pop_type = investors
 			}
 			add = {
 				desc = "POP_CAPITALISTS"
@@ -96,7 +96,7 @@
 			}
 			if = {
 				limit = {
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 				add = {
 					desc = "PATCON_CAPITALISTS"

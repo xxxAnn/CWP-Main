@@ -37,16 +37,16 @@
 			}
 		}
 		OR = {
-			is_pop_type = capitalists
+			is_pop_type = investors
 			is_pop_type = engineers
-			is_pop_type = shopkeepers
+			is_pop_type = professionals
 		}
 	}
 	pop_weight = {
 		value = 0
 		if = {
 			limit = {
-				is_pop_type = capitalists
+				is_pop_type = investors
 			}
 			add = {
 				desc = "POP_CAPITALISTS"
@@ -78,7 +78,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = shopkeepers
+				is_pop_type = professionals
 			}
 			add = {
 				desc = "POP_SHOPKEEPERS"

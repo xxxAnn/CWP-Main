@@ -1,6 +1,6 @@
 ﻿l_english:
   ig_market_liberals: "Capitalists"
-  ig_market_liberals_only_icon: "@capitalists!"
+  ig_market_liberals_only_icon: "@investors!"
   ig_market_liberals_desc: "Capitalists, the nouveau riche trailblazers of the new gilded age, have fashioned the working class into a machine stoking the furnace of corporate power. Their ambition and amassed wealth engrave their name into economic history with each business deal."
 
   ig_conservatives: "Elites"
@@ -24,7 +24,7 @@
   ig_devout_desc: "Moralists, guardians of tradition, stand against change. They defend time-honored customs and the age-old social order, casting a guiding light over the landscape of a rapidly changing world."
 
   ig_bureaucrats: "Bureaucrats"
-  ig_bureaucrats_only_icon: "@bureaucrats!"
+  ig_bureaucrats_only_icon: "@administrators!"
   ig_bureaucrats_desc: "Bureaucrats, the gears in the machinery of governance, ensure the harmonious melody of government. They silently shape the nation's course with policy and regulation."
 
   ig_armed_forces: "Securocrats"

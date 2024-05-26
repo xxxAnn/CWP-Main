@@ -807,7 +807,7 @@ bpm_je_split_marlibs_progress_rate_update = {
 		limit = {
 			radical_fraction = {
 				value > 0.1
-				pop_type = capitalists
+				pop_type = investors
 			}
 		}
 		change_variable = {
@@ -819,7 +819,7 @@ bpm_je_split_marlibs_progress_rate_update = {
 		limit = {
 			radical_fraction = {
 				value > 0.3
-				pop_type = capitalists
+				pop_type = investors
 			}
 		}
 		change_variable = {

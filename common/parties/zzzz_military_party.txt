@@ -123,7 +123,7 @@ military_party = {
 				desc = "from_no_army_in_party" # this should probably never actually display in game because the party won't exist
 			}
 		}
-		if = { # a party for powerful soldiers
+		if = { # a party for powerful servicemembers
 			limit = {
 				is_interest_group_type = ig_armed_forces
 				is_powerful = yes

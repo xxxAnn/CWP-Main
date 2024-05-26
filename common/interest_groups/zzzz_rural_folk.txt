@@ -35,8 +35,8 @@
 	}
 	pop_potential = {
 		NOR = {
-			is_pop_type = aristocrats
-			is_pop_type = capitalists
+			is_pop_type = landlords
+			is_pop_type = investors
 		}
 		OR = {
 			pop_employment_building_group = bg_agriculture
@@ -62,7 +62,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = peasants
+				is_pop_type = informal_workers
 			}
 			add = {
 				desc = "POP_PEASANTS"
@@ -71,7 +71,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = clergymen
+				is_pop_type = clergy
 			}
 			add = {
 				desc = "POP_CLERGYMEN"

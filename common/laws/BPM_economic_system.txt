@@ -116,7 +116,7 @@ law_agrarianism = {
 							#has_law = law_type:law_laissez_faire 
 						}
 					}
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.33
 			}
@@ -197,7 +197,7 @@ law_laissez_faire = {
 							#has_law = law_type:law_industry_banned 
 						}
 					}
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 				value = 0.75
 			}
@@ -262,7 +262,7 @@ law_cooperative_ownership = {
 							#has_law = law_type:law_traditionalism 
 						}
 					}
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 				value = 0.5
 			}
@@ -325,7 +325,7 @@ law_command_economy = {
 			desc = "POP_BUREAUCRATS"
 			if = {
 				limit = {
-					is_pop_type = bureaucrats
+					is_pop_type = administrators
 				}
 				value = 0.2
 			}

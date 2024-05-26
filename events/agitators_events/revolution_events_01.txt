@@ -193,7 +193,7 @@ revolution_pulse1_events.2 = {
 		}
 	}
 
-	option = { # We cannot afford to detain any soldiers.
+	option = { # We cannot afford to detain any servicemembers.
 		name = revolution_pulse1_events.2.b
 
 		# Get exhaustion no matter what

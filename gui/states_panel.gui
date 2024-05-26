@@ -2513,7 +2513,7 @@ types state_panel_types
 					tooltip = "STATE_AVAILABLE_LABOR_TOOLTIP"
 
 					blockoverride "texture" {
-						texture = "gfx/interface/icons/pops_icons/peasants.dds"
+						texture = "gfx/interface/icons/pops_icons/informal_workers.dds"
 					}
 
 					blockoverride "name" {

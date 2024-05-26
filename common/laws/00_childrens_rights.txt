@@ -29,7 +29,7 @@ law_child_labor_allowed = {
 			desc = "POP_CAPITALISTS"
 			if = {
 				limit = {
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 			}
 			value = 0.25
@@ -90,7 +90,7 @@ law_restricted_child_labor = {
 			if = {
 				limit = {
 					owner = { has_law = law_type:law_compulsory_primary_school }
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 			}
 			value = 0.33

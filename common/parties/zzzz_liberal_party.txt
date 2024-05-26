@@ -577,7 +577,7 @@ liberal_party = {
 				desc = "from_republican"
 			}
 		}
-		if = { # peasants opposition to debt slavery
+		if = { # informal_workers opposition to debt slavery
 			limit = {
 				owner = {
 					#has_law = law_type:law_debt_slavery

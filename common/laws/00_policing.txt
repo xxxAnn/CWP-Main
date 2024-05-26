@@ -62,7 +62,7 @@ law_local_police = {
 			desc = "POP_ARISTOCRATS"
 			if = {
 				limit = { 
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.25
 			}
@@ -126,7 +126,7 @@ law_dedicated_police = {
 							has_law = law_type:law_militarized_police
 						}
 					}
-					is_pop_type = soldiers
+					is_pop_type = servicemembers
 				}
 				value = 0.33
 			}
@@ -194,7 +194,7 @@ law_militarized_police = {
 			desc = "POP_SOLDIERS"
 			if = {
 				limit = {
-					is_pop_type = soldiers
+					is_pop_type = servicemembers
 				}
 				value = 0.25
 			}

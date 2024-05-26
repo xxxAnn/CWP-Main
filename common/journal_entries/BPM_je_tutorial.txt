@@ -27,7 +27,7 @@
 		set_variable = bpm_tutorial_1_done
         add_loyalists = {
 				value = 0.1
-				pop_type = bureaucrats
+				pop_type = administrators
 		}
 		trigger_event = { id = bpm_tutorial.1 }
 	}

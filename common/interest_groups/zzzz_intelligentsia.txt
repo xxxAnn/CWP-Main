@@ -41,7 +41,7 @@
 		value = 0
 		if = {
 			limit = {
-				is_pop_type = shopkeepers
+				is_pop_type = professionals
 			}
 			add = {
 				desc = "POP_SHOPKEEPERS"
@@ -70,7 +70,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = clerks
+				is_pop_type = service_workers
 			}
 			add = {
 				desc = "POP_CLERKS"
@@ -79,7 +79,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = bureaucrats
+				is_pop_type = administrators
 			}
 			add = {
 				desc = "POP_BUREAUCRATS"

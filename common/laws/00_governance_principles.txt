@@ -70,7 +70,7 @@ law_monarchy = {
 			desc = "POP_ARISTOCRATS"
 			if = {
 				limit = { 
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.33
 			}
@@ -343,7 +343,7 @@ law_theocracy = {
 			desc = "POP_CLERGYMEN"
 			if = {
 				limit = { 
-					is_pop_type = clergymen
+					is_pop_type = clergy
 				}
 				value = 0.33
 			}

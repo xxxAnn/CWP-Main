@@ -96,7 +96,7 @@ land_ownership_law_events.3 = {
 			name = concise_collectivization_program
 		}
 		add_radicals = {
-			pop_type = peasants
+			pop_type = informal_workers
 			value = medium_radicals
 		}
 		scope:anti_kulak_leaders_scope = {
@@ -129,7 +129,7 @@ land_ownership_law_events.3 = {
 			}
 		}
 		add_radicals = {
-			pop_type = peasants
+			pop_type = informal_workers
 			value = small_radicals
 		}
 		scope:anti_kulak_leaders_scope = {

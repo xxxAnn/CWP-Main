@@ -158,12 +158,12 @@ bpm_anarchist_potd.2 = {
 			}
 			kill_population_in_state = {
 				value = root.var:temp_deaths
-				pop_type = clerks
+				pop_type = service_workers
 			}
 			remove_variable = temp_deaths
 			kill_population_in_state = {
 				value = 1
-				pop_type = bureaucrats
+				pop_type = administrators
 			}
 		}
 		custom_tooltip = {

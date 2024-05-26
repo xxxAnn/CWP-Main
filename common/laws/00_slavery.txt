@@ -61,7 +61,7 @@ law_slavery_banned = {
 			desc = "POP_CLERGYMEN"
 			if = {
 				limit = {
-					is_pop_type = clergymen
+					is_pop_type = clergy
 				}
 				value = 0.05
 			}
@@ -189,7 +189,7 @@ law_debt_slavery = {
 			desc = "POP_CLERGYMEN"
 			if = {
 				limit = {
-					is_pop_type = clergymen
+					is_pop_type = clergy
 				}
 				value = 0.05
 			}
@@ -305,7 +305,7 @@ law_slave_trade = {
 			desc = "POP_ARISTOCRATS"
 			if = {
 				limit = { 
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.1
 			}
@@ -426,7 +426,7 @@ law_legacy_slavery = {
 			desc = "POP_CLERGYMEN"
 			if = {
 				limit = {
-					is_pop_type = clergymen
+					is_pop_type = clergy
 				}
 				value = 0.05
 			}

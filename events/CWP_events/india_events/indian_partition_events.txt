@@ -2117,7 +2117,7 @@ indian_partition.201 = {
 }
 
 indian_partition.202 = {
-	# Issues recruiting local bureaucrats
+	# Issues recruiting local administrators
 	type = country_event
 	title = indian_partition.202.t
 	desc = indian_partition.202.d

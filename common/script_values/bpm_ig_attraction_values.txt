@@ -304,7 +304,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = {
 					}
 					OR = {
 						is_pop_type = laborers
-						is_pop_type = machinists
+						is_pop_type = technicians
 					}
 					scope:interest_group = {
 						law_stance = {
@@ -359,8 +359,8 @@ ig_attraction_tmp_bpm_non_rural_socialist = {
 			if = {
 				limit = {
 					OR = {
-						is_pop_type = clerks
-						is_pop_type = bureaucrats
+						is_pop_type = service_workers
+						is_pop_type = administrators
 					}
 					scope:interest_group = {
 						law_stance = {
@@ -385,7 +385,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = {
 			if = {
 				limit = {
 					OR = {
-						is_pop_type = soldiers
+						is_pop_type = servicemembers
 						is_pop_type = officers
 					}
 				}
@@ -398,7 +398,7 @@ ig_attraction_tmp_bpm_non_rural_socialist = {
 			if = {
 				limit = {
 					OR = {
-						is_pop_type = soldiers
+						is_pop_type = servicemembers
 					}
 					owner = {
 						has_law = law_type:law_elected_officers

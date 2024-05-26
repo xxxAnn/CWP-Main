@@ -46,7 +46,7 @@
 			desc = "POP_ARISTOCRATS"			
 			if = {
 				limit = { 
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.33
 			}
@@ -123,12 +123,12 @@ law_professional_army = {
 				value = 0.5
 			}
 		}
-		# soldiers are broadly in favor of this also
+		# servicemembers are broadly in favor of this also
 		add = {
 			desc = "POP_SOLDIERS"		
 			if = {
 				limit = { 
-					is_pop_type = soldiers
+					is_pop_type = servicemembers
 				}
 				value = 0.25
 			}

@@ -102,7 +102,7 @@ conscription_laws.2 = {
 		}
 	}
 	option = {
-		#upset soldiers but faster enactment
+		#upset servicemembers but faster enactment
 		name = conscription_laws.2.a
 		default_option = yes
 		scope:armed_forces_conscription = {
@@ -127,7 +127,7 @@ conscription_laws.2 = {
 		}
 	}
 	option = {
-		#upset armed forces but get loyalist soldiers
+		#upset armed forces but get loyalist servicemembers
 		name = conscription_laws.2.b
 		add_modifier = {
 			name = listen_to_the_troops

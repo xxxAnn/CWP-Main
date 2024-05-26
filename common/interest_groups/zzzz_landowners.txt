@@ -39,8 +39,8 @@
 			}
 		}
 		OR = {
-			is_pop_type = aristocrats
-			is_pop_type = clergymen
+			is_pop_type = landlords
+			is_pop_type = clergy
 			is_pop_type = officers
 			is_pop_type = farmers
 		}
@@ -63,7 +63,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = clergymen
+				is_pop_type = clergy
 			}
 			add = {
 				desc = "POP_CLERGYMEN"

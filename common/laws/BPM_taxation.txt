@@ -43,7 +43,7 @@ law_land_based_taxation = {
 			desc = "POP_ARISTOCRATS"
 			if = {
 				limit = {
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.33
 			}

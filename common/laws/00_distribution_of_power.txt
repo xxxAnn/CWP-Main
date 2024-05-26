@@ -69,7 +69,7 @@ law_autocracy = {
 					owner = {
 						NOT = { has_law = law_type:law_oligarchy }
 					}
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.25
 			}
@@ -164,7 +164,7 @@ law_technocracy = {
 					owner = {
 						NOT = { has_law = law_type:law_wealth_voting }
 					}
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 				value = 0.25
 			}
@@ -248,7 +248,7 @@ law_oligarchy = {
 					owner = {
 						NOT = { has_law = law_type:law_autocracy }
 					}
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.25
 			}
@@ -260,7 +260,7 @@ law_oligarchy = {
 					owner = {
 						NOT = { has_law = law_type:law_wealth_voting }
 					}
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 				value = 0.25
 			}
@@ -876,7 +876,7 @@ law_single_party_state = {
 					owner = {
 						NOT = { has_law = law_type:law_autocracy }
 					}
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.25
 			}
@@ -888,7 +888,7 @@ law_single_party_state = {
 					owner = {
 						NOT = { has_law = law_type:law_wealth_voting }
 					}
-					is_pop_type = capitalists
+					is_pop_type = investors
 				}
 				value = 0.25
 			}
@@ -897,7 +897,7 @@ law_single_party_state = {
 			desc = "POP_BUREAUCRATS"			
 			if = {
 				limit = {
-					is_pop_type = bureaucrats
+					is_pop_type = administrators
 				}
 				value = 0.25
 			}

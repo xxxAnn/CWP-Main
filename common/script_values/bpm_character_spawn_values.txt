@@ -123,7 +123,7 @@ bpm_commander_assignment_from_laws_factor = {
 		multiply = 0.02
 	}
 	# Politicized officers 
-	# Only IGs in power or armed forces/bureaucrats can be officers
+	# Only IGs in power or armed forces/administrators can be officers
 	if = {
 		limit = {
 			owner = {

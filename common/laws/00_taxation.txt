@@ -48,7 +48,7 @@ law_consumption_based_taxation = {
 					owner = {
 						has_law = law_type:law_land_based_taxation
 					}
-					is_pop_type = peasants
+					is_pop_type = informal_workers
 				}
 				value = 0.75
 			}
@@ -123,7 +123,7 @@ law_land_based_taxation = {
 			desc = "POP_ARISTOCRATS"
 			if = {
 				limit = { 
-					is_pop_type = aristocrats
+					is_pop_type = landlords
 				}
 				value = 0.33
 			}
@@ -213,7 +213,7 @@ law_per_capita_based_taxation = {
 					owner = {
 						has_law = law_type:law_land_based_taxation
 					}
-					is_pop_type = peasants
+					is_pop_type = informal_workers
 				}
 				value = 0.75
 			}
@@ -293,7 +293,7 @@ law_proportional_taxation = {
 					owner = {
 						has_law = law_type:law_land_based_taxation
 					}
-					is_pop_type = peasants
+					is_pop_type = informal_workers
 				}
 				value = 0.75
 			}
@@ -372,7 +372,7 @@ law_graduated_taxation = {
 					owner = {
 						has_law = law_type:law_land_based_taxation
 					}
-					is_pop_type = peasants
+					is_pop_type = informal_workers
 				}
 				value = 0.75
 			}

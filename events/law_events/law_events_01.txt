@@ -412,7 +412,7 @@ generic_laws.5 = {
 		}
 	}
 	option = {
-		name = generic_laws.5.b		# Cut through some red tape, decreasing maluses, but angering bureaucrats
+		name = generic_laws.5.b		# Cut through some red tape, decreasing maluses, but angering administrators
 		add_enactment_modifier = {
 			name = mired_in_bureaucracy_minor
 		}

@@ -1,6 +1,6 @@
 ﻿namespace = election_other_parties_events
 # Man Over Machine
-# The Agrarian Party complains about factories and blames the capitalists/industrialists for making them lose momentum
+# The Agrarian Party complains about factories and blames the investors/industrialists for making them lose momentum
 election_other_parties_events.1 = {
 	type = country_event
 	placement = ROOT

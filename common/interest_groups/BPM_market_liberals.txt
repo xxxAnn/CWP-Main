@@ -41,7 +41,7 @@
 		value = 40
 		if = {
 			limit = {
-				is_pop_type = peasants
+				is_pop_type = informal_workers
 			}
 			add = {
 				desc = "POP_EXCLUSIONS"
@@ -50,7 +50,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = aristocrats
+				is_pop_type = landlords
 			}
 			add = {
 				desc = "POP_ARISTOCRATS"
@@ -59,7 +59,7 @@
 		}
 		else_if = {
 			limit = {
-				is_pop_type = capitalists
+				is_pop_type = investors
 			}
 			add = {
 				desc = "POP_CAPITALISTS"
@@ -70,7 +70,7 @@
 			limit = {
 				strata = middle
 				NOT = {
-					is_pop_type = clergymen
+					is_pop_type = clergy
 				}
 			}
 			add = {
@@ -95,7 +95,7 @@
 				limit = {
 					strata = middle
 					NOT = {
-						is_pop_type = clergymen
+						is_pop_type = clergy
 					}
 				}
 				add = {

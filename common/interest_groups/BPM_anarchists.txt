@@ -24,8 +24,8 @@
 	
 	pop_potential = {
 		NOR = {
-			is_pop_type = aristocrats
-			is_pop_type = capitalists
+			is_pop_type = landlords
+			is_pop_type = investors
 		}
 		owner = {
 			NOT = { is_country_type = decentralized }
@@ -62,9 +62,9 @@
 		if = {
 			limit = { 
 				OR = {
-					is_pop_type = clerks
+					is_pop_type = service_workers
 					is_pop_type = laborers
-					is_pop_type = machinists
+					is_pop_type = technicians
 				}
 			}
 			add = {
@@ -83,7 +83,7 @@
 			if = {
 				limit = { 
 					OR = {
-						is_pop_type = peasants
+						is_pop_type = informal_workers
 						is_pop_type = farmers
 					}
 				}
@@ -109,7 +109,7 @@
 			desc = "POP_SOLDIERS"
 			if = {
 				limit = { 
-					is_pop_type = soldiers
+					is_pop_type = servicemembers
 					owner = { has_variable = bpm_ig_laborers_angry_var }
 				}
 				value = 120

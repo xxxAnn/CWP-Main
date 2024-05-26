@@ -30,8 +30,8 @@
 			ig:ig_reformist_socialists = { NOT = { has_ideology = ideology:ideology_nonexistent } }
 		}
 		NOR = {
-			is_pop_type = aristocrats
-			is_pop_type = capitalists
+			is_pop_type = landlords
+			is_pop_type = investors
 		}
 	}
 	
@@ -49,8 +49,8 @@
 		if = {
 			limit = {
 				OR = {
-					is_pop_type = capitalists
-					is_pop_type = peasants
+					is_pop_type = investors
+					is_pop_type = informal_workers
 				}
 			}
 			add = {
@@ -61,9 +61,9 @@
 		else_if = {
 			limit = { 
 				OR = {
-					is_pop_type = clerks
+					is_pop_type = service_workers
 					is_pop_type = laborers
-					is_pop_type = machinists
+					is_pop_type = technicians
 				}
 			}
 			add = {
@@ -123,7 +123,7 @@
 			if = {
 				limit = { 
 					OR = {
-						is_pop_type = soldiers
+						is_pop_type = servicemembers
 						is_pop_type = farmers
 						is_pop_type = academics
 					}

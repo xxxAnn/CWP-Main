@@ -2587,7 +2587,7 @@ coup_pulse_events.11 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = soldiers
+					pop_type = servicemembers
 					value = medium_radicals
 				}
 				add_radicals_in_state = {
@@ -2706,7 +2706,7 @@ coup_pulse_events.12 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = clergymen
+					pop_type = clergy
 					value = large_radicals
 				}
 			}
@@ -2820,7 +2820,7 @@ coup_pulse_events.13 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = capitalists
+					pop_type = investors
 					value = large_radicals
 				}
 			}
@@ -2935,7 +2935,7 @@ coup_pulse_events.14 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = aristocrats
+					pop_type = landlords
 					value = large_radicals
 				}
 			}
@@ -3050,11 +3050,11 @@ coup_pulse_events.15 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = clerks
+					pop_type = service_workers
 					value = medium_radicals
 				}
 				add_radicals_in_state = {
-					pop_type = shopkeepers
+					pop_type = professionals
 					value = small_radicals
 				}
 			}
@@ -3291,7 +3291,7 @@ coup_pulse_events.17 = {
 					value = medium_radicals
 				}
 				add_radicals_in_state = {
-					pop_type = machinists
+					pop_type = technicians
 					value = small_radicals
 				}
 			}
@@ -3408,7 +3408,7 @@ coup_pulse_events.18 = {
 					}
 				}
 				add_radicals_in_state = {
-					pop_type = peasants
+					pop_type = informal_workers
 					value = medium_radicals
 				}
 				add_radicals_in_state = {
