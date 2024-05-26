@@ -24,12 +24,7 @@
 			#}
 			bpm_reorder_ideologies = yes
 		}
-		if = {
-			limit = {
-				has_technology_researched = romanticism
-			}
-			bpm_initialize_agpops = yes
-		}
+		bpm_initialize_agpops = yes
 	}
 	on_disable = {
 	}

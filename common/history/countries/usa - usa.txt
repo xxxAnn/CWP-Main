@@ -15,6 +15,7 @@ COUNTRIES = {
 		}
 		effect_currency_usd = yes
 		# Politics
+		effect_liberal_republic_law_package = yes
 		#todo IGs and Ideologies
 		# ig:ig_petty_bourgeoisie = {
 		# 	add_ruling_interest_group = yes

@@ -34,18 +34,7 @@
 				bpm_setup_country_mil_cit_ideologies = yes
 			}
 		}
-		if = {
-			limit = {
-				OR = {
-					has_technology_researched = mass_communication
-					AND = {
-						has_technology_researched = democracy
-						bpm_country_starts_with_liberalism = yes
-					}
-				}
-			}
-			bpm_initialize_trade_unions = yes
-		}
+		bpm_initialize_trade_unions = yes
 	}
 	on_disable = {
 	}
@@ -239,34 +228,6 @@
 		# 		value = 1.2
 		# 	}
 		# }
-		multiply = {
-			desc = "NO_LABOR_MOVEMENT"
-			value = 1
-			if = {
-				limit = {
-					owner = {
-						NOT = {
-							has_technology_researched = labor_movement
-						}
-					}
-				}
-				value = 0.8
-			}
-		}
-		multiply = {
-			desc = "NO_EGALITARIANISM"
-			value = 1
-			if = {
-				limit = {
-					owner = {
-						NOT = {
-							has_technology_researched = egalitarianism
-						}
-					}
-				}
-				value = 0.25
-			}
-		}
 		multiply = ig_attraction_from_radicals_and_loyalists
 	}
 	monarch_weight = {
