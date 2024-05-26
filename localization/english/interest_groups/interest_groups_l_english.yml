@@ -31,9 +31,6 @@
   ig_armed_forces_only_icon: "@securocrats!"
   ig_armed_forces_desc: "Securocrats are the vigilant sentinels of the state, ensuring internal stability and guarding against external threats. Shrouded in secrecy, they are the state's shield and, if need be, its sword."
 
-  ig_urbanists: "Urbanists"
-  ig_urbanists_only_icon: "@urbanists!"
-  ig_urbanists_desc: "Urbanists are the city dwellers living in the shadow of the industrial beast. They breathe life into the bustling streets, reaping the bounty of industry yet also bearing its excesses."
 
   ig_armed_forces: "Patriots"
   ig_armed_forces_only_icon: "@patriots!"

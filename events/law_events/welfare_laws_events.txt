@@ -243,7 +243,7 @@ welfare_laws.3 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = intelligentsia_ig
 		}
 	}
@@ -257,7 +257,7 @@ welfare_laws.3 = {
 		add_enactment_modifier = {
 			name = workhouses_prison_comparison
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = criminalization_of_poverty
 				months = normal_modifier_time

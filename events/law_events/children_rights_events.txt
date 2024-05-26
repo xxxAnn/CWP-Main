@@ -352,7 +352,7 @@ children_rights_events.4 = {
 		ig:ig_devout = {
 			is_marginal = no
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			is_marginal = no
 		}
 	}
@@ -369,7 +369,7 @@ children_rights_events.4 = {
 		ig:ig_devout = {
 			save_scope_as = devout_scope
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = intelligentsia_scope
 		}
 	}
@@ -404,7 +404,7 @@ children_rights_events.4 = {
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = ragged_schools_no_devout
 				months = normal_modifier_time
@@ -427,7 +427,7 @@ children_rights_events.4 = {
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = ragged_schools_no_devout
 				months = normal_modifier_time
@@ -642,7 +642,7 @@ children_rights_events.6 = {
 			OR = {
 				#has_law = law_type:law_secret_police
 				scope:school_ig = {
-					is_interest_group_type = ig_urbanists
+					is_interest_group_type = ig_intelligentsia
 					is_powerful = yes
 				}
 			}

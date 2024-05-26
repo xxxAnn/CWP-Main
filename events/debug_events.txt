@@ -79,60 +79,6 @@ debug.8 = {
 	}
 }
 
-debug.9 = {
-	type = country_event
-	hidden = yes
-	orphan = yes
-	immediate = {
-		every_country = {
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_conservatives
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_bureaucrats
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_market_liberals
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_armed_forces
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_securocrats
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_intelligentsia
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_devout
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_petty_bourgeoisie
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_rural_folk
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_socialists
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_urbanists
-			}
-		}
-	}
-}
-
 debug.11 = {
 	hidden = yes
 	orphan = yes

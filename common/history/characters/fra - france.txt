@@ -108,7 +108,7 @@
 			religion = rel:catholic
 			birth_date = 1884.8.27
 			ig_leader = yes
-			interest_group = ig:ig_urbanists
+			interest_group = ig:ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
 				career_politician
@@ -123,7 +123,7 @@
 			culture = cu:french
 			religion = rel:catholic
 			birth_date = 1916.10.26
-			interest_group = ig:ig_urbanists
+			interest_group = ig:ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
 				career_politician

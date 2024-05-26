@@ -632,7 +632,6 @@ domestic_pressure_growth = {
 			is_in_government = yes
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_urbanists
 				is_interest_group_type = ig_socialists
 				is_interest_group_type = ig_intelligentsia
 			}
@@ -664,7 +663,6 @@ imperial_policy_value_net = {
 			is_in_government = yes
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_urbanists
 				is_interest_group_type = ig_socialists
 				is_interest_group_type = ig_intelligentsia
 			}

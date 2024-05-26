@@ -827,7 +827,7 @@ west_german_unification.3 = {
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_urbanists
+			interest_group = ig:ig_intelligentsia
 		}
 		create_character = {
 			ig_leader = yes
@@ -839,7 +839,7 @@ west_german_unification.3 = {
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_urbanists
+			interest_group = ig:ig_intelligentsia
 		}
 		create_character = {
 			ig_leader = yes

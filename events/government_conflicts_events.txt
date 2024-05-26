@@ -15,7 +15,7 @@ government_conflicts.1 = {
 	duration = 3
 	trigger = {
 		has_ruling_interest_group = ig_conservatives
-		has_ruling_interest_group = ig_urbanists
+		has_ruling_interest_group = ig_intelligentsia
 		NOR = {
 			has_modifier = government_conflict
 			any_interest_group = {
@@ -32,13 +32,13 @@ government_conflicts.1 = {
 		ig:ig_conservatives = {
 			save_scope_as = landowners_ig
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = intelligentsia_ig
 		}
 	}
 	option = {
 		name = government_conflicts.1.a
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -208,7 +208,7 @@ government_conflicts.4 = {
 	duration = 3
 	trigger = {
 		has_ruling_interest_group = ig_devout
-		has_ruling_interest_group = ig_urbanists
+		has_ruling_interest_group = ig_intelligentsia
 		NOR = {
 			has_modifier = government_conflict
 			any_interest_group = {
@@ -225,7 +225,7 @@ government_conflicts.4 = {
 		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = intelligentsia_ig
 		}
 	}
@@ -240,7 +240,7 @@ government_conflicts.4 = {
 	}
 	option = {
 		name = government_conflicts.4.b
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -336,7 +336,7 @@ government_conflicts.6 = {
 	duration = 3
 	trigger = {
 		has_ruling_interest_group = ig_petty_bourgeoisie
-		has_ruling_interest_group = ig_urbanists
+		has_ruling_interest_group = ig_intelligentsia
 		NOR = {
 			has_modifier = government_conflict
 			any_interest_group = {
@@ -353,7 +353,7 @@ government_conflicts.6 = {
 		ig:ig_petty_bourgeoisie = {
 			save_scope_as = petty_bourgeoisie_ig
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = intelligentsia_ig
 		}
 	}
@@ -368,7 +368,7 @@ government_conflicts.6 = {
 	}
 	option = {
 		name = government_conflicts.6.b
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time
@@ -591,7 +591,7 @@ government_conflicts.10 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	duration = 3
 	trigger = {
-		has_ruling_interest_group = ig_urbanists
+		has_ruling_interest_group = ig_intelligentsia
 		has_ruling_interest_group = ig_securocrats
 		NOR = {
 			has_modifier = government_conflict
@@ -606,7 +606,7 @@ government_conflicts.10 = {
 			name = ongoing_government_conflicts
 			months = normal_modifier_time
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = intelligentsia_ig
 		}
 		ig:ig_securocrats = {
@@ -615,7 +615,7 @@ government_conflicts.10 = {
 	}
 	option = {
 		name = government_conflicts.10.a
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = disfavored_in_government
 				months = normal_modifier_time

@@ -20,7 +20,6 @@
   ig_variant_patriots: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
   ig_variant_ruralists: "[GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant]"
   ig_variant_securocrats: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_urbanists: "[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]"
 
   # Approval
   modifier_interest_group_ig_bureaucrats_approval_add: "$ig_variant_bureaucrats$ [concept_approval]"
@@ -32,7 +31,6 @@
   modifier_interest_group_ig_armed_forces_approval_add: "$ig_variant_patriots$ [concept_approval]"
   modifier_interest_group_ig_rural_folk_approval_add: "$ig_variant_ruralists$ [concept_approval]"
   modifier_interest_group_ig_armed_forces_approval_add: "$ig_variant_securocrats$ [concept_approval]"
-  modifier_interest_group_ig_urbanists_approval_add: "$ig_variant_urbanists$ [concept_approval]"
   modifier_interest_group_ig_bureaucrats_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_bureaucrats$ [concept_interest_group]"
   modifier_interest_group_ig_market_liberals_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_capitalists$ [concept_interest_group]"
   modifier_interest_group_ig_conservatives_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_elites$ [concept_interest_group]"
@@ -42,7 +40,6 @@
   modifier_interest_group_ig_armed_forces_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_patriots$ [concept_interest_group]"
   modifier_interest_group_ig_rural_folk_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_ruralists$ [concept_interest_group]"
   modifier_interest_group_ig_armed_forces_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_securocrats$ [concept_interest_group]"
-  modifier_interest_group_ig_urbanists_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_urbanists$ [concept_interest_group]"
 
   # Political Strength
   modifier_interest_group_ig_bureaucrats_pol_str_mult: "$ig_variant_bureaucrats$ [concept_political_strength]"
@@ -54,7 +51,6 @@
   modifier_interest_group_ig_armed_forces_pol_str_mult: "$ig_variant_patriots$ [concept_political_strength]"
   modifier_interest_group_ig_rural_folk_pol_str_mult: "$ig_variant_ruralists$ [concept_political_strength]"
   modifier_interest_group_ig_armed_forces_pol_str_mult: "$ig_variant_securocrats$ [concept_political_strength]"
-  modifier_interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
   modifier_interest_group_ig_bureaucrats_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_bureaucrats$ [concept_interest_group]"
   modifier_interest_group_ig_market_liberals_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_capitalists$ [concept_interest_group]"
   modifier_interest_group_ig_conservatives_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_elites$ [concept_interest_group]"
@@ -64,7 +60,6 @@
   modifier_interest_group_ig_armed_forces_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_patriots$ [concept_interest_group]"
   modifier_interest_group_ig_rural_folk_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_ruralists$ [concept_interest_group]"
   modifier_interest_group_ig_armed_forces_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_securocrats$ [concept_interest_group]"
-  modifier_interest_group_ig_urbanists_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_urbanists$ [concept_interest_group]"
 
   # Population Attraction
   modifier_interest_group_ig_bureaucrats_pop_attraction_mult: "$ig_variant_bureaucrats$ Pop Attraction"
@@ -76,7 +71,6 @@
   modifier_interest_group_ig_armed_forces_pop_attraction_mult: "$ig_variant_patriots$ Pop Attraction"
   modifier_interest_group_ig_rural_folk_pop_attraction_mult: "$ig_variant_ruralists$ Pop Attraction"
   modifier_interest_group_ig_armed_forces_pop_attraction_mult: "$ig_variant_securocrats$ Pop Attraction"
-  modifier_interest_group_ig_urbanists_pop_attraction_mult: "$ig_variant_urbanists$ Pop Attraction"
   modifier_interest_group_ig_bureaucrats_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_bureaucrats$ [concept_interest_group]"
   modifier_interest_group_ig_market_liberals_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_capitalists$ [concept_interest_group]"
   modifier_interest_group_ig_conservatives_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_elites$ [concept_interest_group]"
@@ -86,7 +80,6 @@
   modifier_interest_group_ig_armed_forces_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_patriots$ [concept_interest_group]"
   modifier_interest_group_ig_rural_folk_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_ruralists$ [concept_interest_group]"
   modifier_interest_group_ig_armed_forces_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_securocrats$ [concept_interest_group]"
-  modifier_interest_group_ig_urbanists_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_urbanists$ [concept_interest_group]"
 
   #Institutions
   modifier_country_institution_welfare_max_investment_add: "Max $institution_welfare$ [concept_institution] Investment"

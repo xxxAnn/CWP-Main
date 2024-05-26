@@ -186,7 +186,7 @@ state_atheism.2 = {
 				save_scope_as = godless_pop
 			}
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = godless_ig
 			leader = {
 				save_scope_as = godless_leader
@@ -223,7 +223,7 @@ state_atheism.2 = {
 		# new atheist intelligentsia leader
 		name = state_atheism.2.c
 		trigger = {
-			ig:ig_urbanists = {
+			ig:ig_intelligentsia = {
 				is_marginal = no
 				leader = {
 					NOT = {
@@ -239,7 +239,7 @@ state_atheism.2 = {
 			text = godless_ig_leader
 			create_character = {
 				ig_leader = yes
-				interest_group = ig_urbanists
+				interest_group = ig_intelligentsia
 				religion = rel:atheist
 				ideology = ideology_atheist
 			}
@@ -462,7 +462,7 @@ state_atheism.5 = {
 	duration = 3
 	trigger = {
 		is_enacting_law = law_type:law_state_atheism
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			is_marginal = no
 			leader = {
 				OR = {
@@ -475,7 +475,7 @@ state_atheism.5 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = intelligentsia_ig
 		}
 		ig:ig_devout = {

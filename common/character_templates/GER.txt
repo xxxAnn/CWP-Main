@@ -63,7 +63,7 @@ ger_willy_brandt_template = {
 			is_marginal = no
 			OR = {
 				is_interest_group_type = ig_socialists
-				is_interest_group_type = ig_urbanists
+				is_interest_group_type = ig_intelligentsia
 			}
 		}
 		earliest_usage_date = 1960.1.1
@@ -81,7 +81,7 @@ ger_helmut_schmidt_template = {
 	female = no
 	religion = protestant
 	ideology = ideology_moderate
-	interest_group = ig_urbanists
+	interest_group = ig_intelligentsia
 	ig_leader = yes
 	birth_date = 1918.12.23
 	traits = {
@@ -98,7 +98,7 @@ ger_helmut_schmidt_template = {
 			is_marginal = no
 			OR = {
 				is_interest_group_type = ig_socialists
-				is_interest_group_type = ig_urbanists
+				is_interest_group_type = ig_intelligentsia
 			}
 		}
 		earliest_usage_date = 1960.1.1
@@ -170,7 +170,7 @@ ger_petra_kelly_template = {
 			is_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_urbanists
+				is_interest_group_type = ig_intelligentsia
 			}
 		}
 		earliest_usage_date = 1980.1.1

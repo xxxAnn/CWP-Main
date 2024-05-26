@@ -459,7 +459,7 @@ character_events.3 = {
 				}
 			}
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = happy_duels_banned
 				months = normal_modifier_time

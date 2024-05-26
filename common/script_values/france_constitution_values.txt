@@ -136,7 +136,6 @@ france_constitution_communist_clout = {
 
 france_constitution_socialist_clout = {
 	value = 0
-	add = ig:ig_urbanists.ig_clout
 	add = ig:ig_intelligentsia.ig_clout
 }
 

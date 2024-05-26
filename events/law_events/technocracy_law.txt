@@ -22,7 +22,7 @@ technocracy.1 = {
 			is_marginal = no
 			OR = {
 				is_interest_group_type = ig_market_liberals
-				is_interest_group_type = ig_urbanists
+				is_interest_group_type = ig_intelligentsia
 			}
 			any_scope_pop = {
 				is_pop_type = investors
@@ -42,7 +42,7 @@ technocracy.1 = {
 				is_marginal = no
 				OR = {
 					is_interest_group_type = ig_market_liberals
-					is_interest_group_type = ig_urbanists
+					is_interest_group_type = ig_intelligentsia
 				}
 				any_scope_pop = {
 					is_pop_type = investors

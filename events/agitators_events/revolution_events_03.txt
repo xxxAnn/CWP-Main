@@ -370,7 +370,7 @@ revolution_pulse2_events.3 = {
 						is_in_government = yes
 						OR = {
 							is_interest_group_type = ig_socialists
-							is_interest_group_type = ig_urbanists
+							is_interest_group_type = ig_intelligentsia
 						}
 					}
 				}
@@ -410,7 +410,7 @@ revolution_pulse2_events.3 = {
 							is_in_government = yes
 							OR = {
 								is_interest_group_type = ig_socialists
-								is_interest_group_type = ig_urbanists
+								is_interest_group_type = ig_intelligentsia
 							}
 						}
 					}

@@ -8,7 +8,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1883.01.03
-			interest_group = ig:ig_urbanists
+			interest_group = ig:ig_intelligentsia
 			ideology = ideology_state_interventionist
 			traits = {
 			}

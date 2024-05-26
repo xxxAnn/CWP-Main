@@ -19,7 +19,7 @@ COUNTRIES = {
 		# ig:ig_petty_bourgeoisie = {
 		# 	add_ruling_interest_group = yes
 		# }
-		# ig:ig_urbanists = {
+		# ig:ig_intelligentsia = {
 		# 	add_ruling_interest_group = yes
 		# }
 		# ig:ig_market_liberals = {
