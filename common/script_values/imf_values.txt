@@ -277,7 +277,12 @@ imf_global_debt = {
 
 imf_contribution_share = {
 	value = imf_contribution_value
-	divide = imf_reserves
+	if = {
+		limit = {
+			imf_reserves > 0
+		}
+		divide = imf_reserves
+	}
 }
 
 imf_reserves = {
