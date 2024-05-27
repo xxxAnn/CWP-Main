@@ -359,3 +359,5 @@
   LITERACY_70_80: "Education Index between #variable 70%#! and #variable 80%#!"
   LITERACY_80_90: "Education Index between #variable 80%#! and #variable 90%#!"
   LITERACY_90_100: "Education Index above #variable 90%#!" 
+  
+  ENACT_LAW: "#tooltippable #tooltip:[Law.GetTooltipTag],CHECKPOINT_SUCCESS_CHANCE_BREAKDOWN [Law.GetCheckpointSuccessChance|v0%]#!#! Success (#PB [GetPlayer.MakeScope.ScriptValue('bpm_political_stability_law_success_penalty')|.0%]#! from [Concept('concept_bpm_political_stability','Rigidity')])"
