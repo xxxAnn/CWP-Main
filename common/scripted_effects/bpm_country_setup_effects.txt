@@ -364,18 +364,18 @@ bpm_setup_country_stubbornness = {
 bpm_setup_basic_igs = {
 	if = {
 		limit = {
-			ig:ig_radicals = {
+			ig:ig_progressives = {
 				has_ideology = ideology:ideology_nonexistent
 			}
 			OR = {
-				has_technology_researched = mass_communication
+				has_technology_researched = pre_war_ideological_thought
 				AND = {
-					has_technology_researched = democracy
+					has_technology_researched = pre_war_ideological_thought
 					bpm_country_starts_with_liberalism = yes
 				}
 			}
 		}
-		bpm_initialize_radlibs = yes
+		bpm_initialize_progressives = yes
 	}
 	if = {
 		limit = {

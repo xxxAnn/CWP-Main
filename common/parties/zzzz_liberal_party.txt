@@ -442,7 +442,7 @@ liberal_party = {
 			# radical liberal leaders like liberalism
 			limit = {
 				NOT = {
-					is_interest_group_type = ig_radicals
+					is_interest_group_type = ig_progressives
 				}
 				leader = {
 					bpm_leader_is_radical_liberal = yes
@@ -509,7 +509,7 @@ liberal_party = {
 		if = {
 			# radicals will cooperate with weaker liberals
 			limit = {
-				is_interest_group_type = ig_radicals
+				is_interest_group_type = ig_progressives
 				is_powerful = no
 				owner = {
 					any_interest_group = {
@@ -741,7 +741,7 @@ liberal_party = {
 			# radicals don't love conservatives
 			limit = {
 				OR = {
-					is_interest_group_type = ig_radicals
+					is_interest_group_type = ig_progressives
 					leader = {
 						bpm_leader_is_radical_liberal = yes
 					}

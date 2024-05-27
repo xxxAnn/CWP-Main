@@ -69,9 +69,9 @@
  ig_social_democrats_desc:0 "Once revolutionary, social democrats are now mostly committed to reformism. On the left are those who believe that socialism can be attained by reforms alone, such as Eduard Bernstein's faction in the SPD. On the right wing are those who want to strike a compromise betwen capitalism and socialism, eventually becoming what we know as social democracy today."
 
 # Radlibs
- ig_radicals:0 "Radical Liberals"
- ig_radicals_only_icon:0 "@ig_radicals!"
- ig_radicals_desc:0 "Radical liberals take the ideals of their moderate cousins to their logical end. They agitate for full democracy and social egalitarianism, resorting to revolutionary means where official politics is impossible. As such, they may overlap with socialists early on, though they would grow more moderate over time. Examples include the French Radicals, the 1848 revolutionaries, American Radical Republicans, and Sun Yat-sen's KMT."
+ ig_progressives:0 "Progressives"
+ ig_progressives_only_icon:0 "@ig_progressives!"
+ ig_progressives_desc:0 "Progressives PLACEHOLDER."
 
  ig_progressive_liberals:0 "Progressive Liberals"
  ig_progressive_liberals_desc:0 "Progressive liberals are the moderated descendants of radical liberals, who still retain their preference for expanded sufferage and social egalitarianism, but no longer engage in revolutionary activity. If their home country becomes too reactionary, however, the progressives may recover their radical character! Examples include the Radical-Socialists of the French Third Republic and Teddy Roosevelt's Bull-Moose Party."

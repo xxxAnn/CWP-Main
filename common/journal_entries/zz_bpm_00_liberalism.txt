@@ -16,7 +16,7 @@ je_liberalism_1 = {
 			ig:ig_liberals ?= {
 				is_in_government = yes
 			}
-			ig:ig_radicals ?= {
+			ig:ig_progressives ?= {
 				is_in_government = yes
 			}
 			ig:ig_national_liberals ?= {

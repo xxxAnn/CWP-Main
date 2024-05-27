@@ -77,7 +77,7 @@
  BPM_VALUE_FROM_CONSERVATIVE_LEADER_AND_AGITATORS:0 "$BPM_VALUE_FROM_N_LEADER_AND_AGITATORS$ [GetInterestGroupVariant('ig_conservatives',GetPlayer).GetName]"
  BPM_VALUE_FROM_REACTIONARY_LEADER_AND_AGITATORS:0 "$BPM_VALUE_FROM_N_LEADER_AND_AGITATORS$ [GetInterestGroupVariant('ig_reactionaries',GetPlayer).GetName]"
  BPM_VALUE_FROM_LIBERAL_LEADER_AND_AGITATORS:0 "$BPM_VALUE_FROM_N_LEADER_AND_AGITATORS$ [GetInterestGroupVariant('ig_liberals',GetPlayer).GetName]"
- BPM_VALUE_FROM_RADICAL_LEADER_AND_AGITATORS:0 "$BPM_VALUE_FROM_N_LEADER_AND_AGITATORS$ [GetInterestGroupVariant('ig_radicals',GetPlayer).GetName]"
+ BPM_VALUE_FROM_RADICAL_LEADER_AND_AGITATORS:0 "$BPM_VALUE_FROM_N_LEADER_AND_AGITATORS$ [GetInterestGroupVariant('ig_progressives',GetPlayer).GetName]"
  BPM_VALUE_FROM_SOCIALIST_LEADER_AND_AGITATORS:0 "$BPM_VALUE_FROM_N_LEADER_AND_AGITATORS$ [GetInterestGroupVariant('ig_socialists',GetPlayer).GetName]"
  BPM_VALUE_FROM_AGRARIAN_SOCIALIST_CHARACTERS:0 "From [GetIdeology('ideology_eco_agrarian_socialist').GetName] Characters"
  BPM_VALUE_FROM_SYNDICALIST_CHARACTERS:0 "From [GetIdeology('ideology_dop_syndicalist').GetName] Characters"

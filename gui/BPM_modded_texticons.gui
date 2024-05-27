@@ -1,5 +1,5 @@
 ﻿texticon = {
-  icon = ig_radicals
+  icon = ig_progressives
   iconsize = {
     offset = { 0 6 }
     texture = "gfx/interface/icons/ig_icons/radicals_30.dds"

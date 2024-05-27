@@ -28,11 +28,11 @@ liberalism.1 = {
 		}
 		else_if = {
 			limit = {
-				ig:ig_radicals = {
+				ig:ig_progressives = {
 					is_in_government = yes
 				}
 			}
-			ig:ig_radicals.leader = {
+			ig:ig_progressives.leader = {
 				save_scope_as = liberal_leader
 			}
 		}
@@ -400,7 +400,7 @@ liberalism.4 = {
 			add_ideology = ideology_cit_immigrant_nationalist
 			bpm_reorder_ideologies = yes
 		}
-		ig:ig_radicals = {
+		ig:ig_progressives = {
 			bpm_remove_all_cit_ideologies = yes
 			add_ideology = ideology_cit_immigrant_nationalist
 			bpm_reorder_ideologies = yes
@@ -437,7 +437,7 @@ liberalism.4 = {
 			add_ideology = ideology_cit_immigrant_nationalist
 			bpm_reorder_ideologies = yes
 		}
-		ig:ig_radicals = {
+		ig:ig_progressives = {
 			bpm_remove_all_cit_ideologies = yes
 			add_ideology = ideology_cit_immigrant_nationalist
 			bpm_reorder_ideologies = yes

@@ -50,7 +50,7 @@ interest_group_ig_national_liberals_pol_str_mult = {
 	num_decimals = 0
 }
 
-interest_group_ig_radicals_pol_str_mult = {
+interest_group_ig_progressives_pol_str_mult = {
 	neutral = yes
 	percent = yes
 	num_decimals = 0
@@ -127,7 +127,7 @@ interest_group_ig_national_liberals_approval_add = {
 	num_decimals = 0
 }
 
-interest_group_ig_radicals_approval_add = {
+interest_group_ig_progressives_approval_add = {
 	good = yes
 	percent = no
 	num_decimals = 0
@@ -199,7 +199,7 @@ interest_group_ig_national_liberals_pop_attraction_mult = {
 	num_decimals = 0
 }
 
-interest_group_ig_radicals_pop_attraction_mult = {
+interest_group_ig_progressives_pop_attraction_mult = {
 	neutral = yes
 	percent = yes
 	num_decimals = 0

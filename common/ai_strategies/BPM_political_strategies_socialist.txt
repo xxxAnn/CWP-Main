@@ -163,7 +163,7 @@ ai_strategy_socialist_retreat_agenda = {
 		}
 	}
 	pro_interest_groups = {
-		ig_radicals
+		ig_progressives
 		ig_trade_unions
 		ig_agrarian_populists
 		ig_socialists

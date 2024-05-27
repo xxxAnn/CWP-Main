@@ -59,14 +59,14 @@ bpm_initialize_trade_unions = {
 	}
 }
 
-bpm_initialize_radlibs = {
+bpm_initialize_progressives = {
 	if = {
 		limit = {
-			ig:ig_radicals = {
+			ig:ig_progressives = {
 				has_ideology = ideology:ideology_nonexistent
 			}
 		}
-		ig:ig_radicals = {
+		ig:ig_progressives = {
 			remove_ideology = ideology_nonexistent
 			add_ideology = ideology_gov_radical_republican
 			add_ideology = ideology_dop_radical_democrat
@@ -94,6 +94,7 @@ bpm_initialize_radlibs = {
 		bpm_rename_igs = yes
 	}
 }
+
 
 bpm_initialize_socialists = {
 	if = {

@@ -23,11 +23,11 @@ bpm_radlib_utils.1 = {
 			if = {
 				limit = {
 					has_law = law_type:law_monarchy
-					ig:ig_radicals = {
+					ig:ig_progressives = {
 						has_ideology = ideology:ideology_gov_radical_republican
 					}
 				}
-				ig:ig_radicals = {
+				ig:ig_progressives = {
 					bpm_remove_all_gov_ideologies = yes
 					bpm_reorder_ideologies = yes
 				}
