@@ -7,7 +7,7 @@
 		law_proportional_voting = strongly_disapprove
 		law_majoritarian_voting = disapprove
 		law_hybrid_voting = disapprove
-		law_technocracy = approve
+		law_managerial_state = approve
 		law_oligarchy = approve
 		law_autocracy = approve
 	}
@@ -93,7 +93,7 @@
 					OR = {
 						has_law = law_type:law_autocracy
 						has_law = law_type:law_oligarchy
-						has_law = law_type:law_technocracy
+						has_law = law_type:law_managerial_state
 						has_law = law_type:law_single_party_state
 					}
 					has_law = law_type:law_multicultural

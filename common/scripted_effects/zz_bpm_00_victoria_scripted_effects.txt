@@ -420,7 +420,7 @@ calculate_caudillo_progress = {
 		limit = {
 			OR = {
 				has_law = law_type:law_autocracy
-				has_law = law_type:law_technocracy
+				has_law = law_type:law_managerial_state
 				has_law = law_type:law_oligarchy
 				has_law = law_type:law_military_junta
 			}
@@ -483,7 +483,7 @@ calculate_caudillo_progress = {
 							value <= neutral
 						}
 						law_stance = {
-							law = law_type:law_technocracy
+							law = law_type:law_managerial_state
 							value >= neutral
 						}
 						law_stance = {

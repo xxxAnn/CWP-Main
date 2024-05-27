@@ -301,7 +301,7 @@ law_command_economy = {
 	}
 	unlocking_laws = {
 		law_socialist_republic
-		law_technocracy
+		law_managerial_state
 	}
 	on_activate = {
 		seize_investment_pool = yes
@@ -333,7 +333,7 @@ law_command_economy = {
 	}
 	ai_will_do = {
 		OR = {
-			has_law = law_type:law_technocracy
+			has_law = law_type:law_managerial_state
 			AND = {
 				has_law = law_type:law_socialist_republic
 				ruler ?= {
@@ -362,7 +362,7 @@ law_command_economy = {
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_technocracy
+				has_law = law_type:law_managerial_state
 			}
 			add = 100
 		}

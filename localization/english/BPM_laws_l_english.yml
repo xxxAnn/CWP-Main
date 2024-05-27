@@ -21,6 +21,8 @@ law_socialist_republic_desc:0 "Placeholder"
  law_majoritarian_voting_desc:0 "Majoritarian Voting"
  law_proportional_voting:0 "Proportional Voting"
  law_proportional_voting_desc:0 "Placeholder"
+ law_managerial_state:0 "Managerial State"
+ law_managerial_state_desc:0 "Placeholder"
 
 # Police
  law_no_police:0 "No Formal Police"

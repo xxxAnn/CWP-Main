@@ -73,7 +73,7 @@ gov_syndicalism_technocracy = {
 	female_ruler = "RULER_FOREWOMAN"
 	possible = {
 		has_law = law_type:law_socialist_republic
-		has_law = law_type:law_technocracy
+		has_law = law_type:law_managerial_state
 		has_law = law_type:law_syndicalism
 	}
 	on_government_type_change = {

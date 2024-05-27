@@ -1097,7 +1097,7 @@ Tag: state_creatives_investment_pool_contribution_add, Categories: state
 Tag: state_creatives_investment_pool_efficiency_mult, Categories: state
 Tag: building_creatives_shares_add, Categories: building
 Tag: building_creatives_shares_mult, Categories: building
-Tag: country_engineers_pol_str_mult, Categories: country
+Tag: country_administrators_pol_str_mult, Categories: country
 Tag: country_engineers_voting_power_add, Categories: country
 Tag: state_engineers_mortality_mult, Categories: state
 Tag: state_engineers_dependent_wage_mult, Categories: state

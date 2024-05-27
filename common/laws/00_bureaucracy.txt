@@ -144,7 +144,7 @@ law_elected_bureaucrats = {
 	disallowing_laws = {
 		law_autocracy 
 		law_oligarchy
-		law_technocracy
+		law_managerial_state
 		law_elder_council
 	}
 
