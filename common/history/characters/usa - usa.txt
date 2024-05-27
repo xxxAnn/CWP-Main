@@ -134,6 +134,16 @@
 			ideology = ideology_moderate
 		}
 		create_character = {
+			first_name = Philip
+			last_name = Murray
+			culture = cu:scottish
+			religion = rel:catholic
+			ig_leader = yes
+			birth_date = 1886.5.25
+			interest_group = ig:ig_trade_unions
+			ideology = ideology_moderate
+		}
+		create_character = {
 			first_name = Lyndon
 			last_name = Johnson
 		}
