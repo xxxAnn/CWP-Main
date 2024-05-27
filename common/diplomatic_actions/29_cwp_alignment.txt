@@ -61,12 +61,12 @@
 		requirement_to_maintain = {
 			trigger = {
 				custom_tooltip = {
-					text = DIPLO_ACTION_RELATIONS_HOSTILE_OR_LESS
-					scope:target_country.relations:root < relations_threshold:hostile
+					text = DIPLO_ACTION_RELATIONS_COLD_OR_LESS_NOT
+					scope:target_country.relations:root > relations_threshold:cold
 				}
 			}
 			show_about_to_break_warning = {
-				scope:target_country.relations:root < -37				# this is: hostile + 3
+				scope:target_country.relations:root < -47				# this is: cold + 3
 				scope:target_country.relations_change_rate:root < 0
 			}
 		}
