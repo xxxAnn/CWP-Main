@@ -32,9 +32,6 @@
  ideology_eco_trad_isolationist:0 "Isolationist Serf Economy"
  ideology_eco_trad_isolationist_desc:0 "#lore This group seeks to preserve the traditional structure of peasant serfs bound to large agrarian estates, and the complete exclusion of foreigners. #!"
 
- ideology_eco_slave_economy:0 "Slave Economy"
- ideology_eco_slave_economy_desc:0 "#lore This group seeks to preserve slavery. #!"
-
  ideology_eco_modernizer:0 "Economic Modernizer"
  ideology_eco_modernizer_desc:0 "#lore This group seeks to modernize the economy."
 

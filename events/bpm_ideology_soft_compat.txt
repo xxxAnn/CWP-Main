@@ -1,29 +1,5 @@
 ﻿namespace = bpm_ideology_soft_compat_events
 
-# Make all Pro Slavery IGs compatible
-bpm_ideology_soft_compat_events.1 = {
-	type = country_event
-	placement = root
-	hidden = yes
-
-	trigger = {
-		any_interest_group = {
-			has_ideology = ideology:ideology_pro_slavery
-		}
-	}
-
-	immediate = {
-		every_interest_group = {
-			limit = {
-				has_ideology = ideology:ideology_pro_slavery
-			}
-			bpm_remove_all_eco_ideologies = yes
-			add_ideology = ideology_eco_slave_economy
-			bpm_reorder_ideologies = yes
-		}
-	}
-}
-
 # Make all Paternalistic IGs compatible
 bpm_ideology_soft_compat_events.2 = {
 	type = country_event

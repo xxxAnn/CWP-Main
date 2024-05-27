@@ -15,7 +15,6 @@ ig_intelligentsia = {
 		# Vanilla
 		ideology_anti_clerical
 		ideology_meritocratic
-		ideology_anti_slavery
 	}
 	enable = {
 		always = yes

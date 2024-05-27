@@ -642,27 +642,6 @@
 			}
 		}
 		if = {
-			# general anti-slavery
-			limit = {
-				owner = {
-					OR = {
-						has_law = law_type:law_legacy_slavery
-						has_law = law_type:law_slave_trade
-					}
-				}
-				OR = {
-					bpm_ig_is_abolitionist = yes
-					leader = {
-						has_ideology = ideology:ideology_abolitionist
-					}
-				}
-			}
-			add = {
-				value = 3
-				desc = "from_slavery"
-			}
-		}
-		if = {
 			# anti-serfdom
 			limit = {
 				owner = {

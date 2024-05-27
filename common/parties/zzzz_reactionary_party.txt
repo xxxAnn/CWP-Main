@@ -252,27 +252,6 @@ reactionary_party = {
 			}
 		}
 		if = {
-			# general pro-slavery
-			limit = {
-				owner = {
-					OR = {
-						has_law = law_type:law_legacy_slavery
-						has_law = law_type:law_slave_trade
-					}
-				}
-				OR = {
-					has_ideology = ideology:ideology_eco_slave_economy
-					leader = {
-						has_ideology = ideology:ideology_slaver
-					}
-				}
-			}
-			add = {
-				value = 3
-				desc = "from_slavery"
-			}
-		}
-		if = {
 			# pro-serfdom
 			limit = {
 				owner = {

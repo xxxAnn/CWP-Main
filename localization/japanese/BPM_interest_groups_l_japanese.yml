@@ -198,8 +198,6 @@
  ig_landowners:0 "Aristocratic Interests"
  ig_landowners_only_icon:0 "@landowners_bpm!"
  ig_landowners_desc:0 "A non-ideological power bloc representing the interests of traditionally powerful families. Generally committed to preserving their power, they are plagued by squabbles over ancient grudges."
- ig_slaver_interests:0 "Slaver Interests"
- ig_slaver_interests_desc:0 "A non-ideological power bloc representing the interests of slaveholders. Generally committed to defending the right to their 'property', they are otherwise divided over most other issues."
 
  ig_intelligentsia:0 "Professional Interests"
  ig_intelligentsia_only_icon:0 "@intelligentsia_bpm!"

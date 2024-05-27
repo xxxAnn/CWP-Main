@@ -167,9 +167,6 @@
  ig_carlists:0 "Carlists"
  ig_carlists_desc:0 "$ig_reactionaries_desc$"
 
- ig_southern_democrats:0 "Southern Democrats"
- ig_southern_democrats_desc:0 "The Southern Democrats are the most fervently pro-slavery, anti-federal faction active in American politics. Unlike most other conservatives, who see slavery as a necessary evil, the Southern Democrats see it as a positive good, and are willing to go to great lengths to protect it. They are also the most likely to support secession, and will support the Confederacy in the event of a Civil War."
-
  ig_monarchists:0 "Monarchists"
  ig_monarchists_desc:0 "$ig_reactionaries_desc$"
 
@@ -198,8 +195,6 @@
  ig_landowners:0 "Aristocratic Interests"
  ig_landowners_only_icon:0 "@landowners_bpm!"
  ig_landowners_desc:0 "A non-ideological power bloc representing the interests of traditionally powerful families. Generally committed to preserving their power, they are plagued by squabbles over ancient grudges."
- ig_slaver_interests:0 "Slaver Interests"
- ig_slaver_interests_desc:0 "A non-ideological power bloc representing the interests of slaveholders. Generally committed to defending the right to their 'property', they are otherwise divided over most other issues."
 
  ig_intelligentsia:0 "Professional Interests"
  ig_intelligentsia_only_icon:0 "@intelligentsia_bpm!"

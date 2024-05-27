@@ -616,11 +616,6 @@ forced_market_opening = {
 	country_prestige_mult = -0.25
 }
 
-forced_slavery_ban = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
-	country_prestige_mult = -0.25
-}
-
 modifier_tangena_ordeal = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_mortality_mult = 0.1

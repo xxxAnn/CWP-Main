@@ -442,25 +442,6 @@ radical_party = {
 		}
 		if = {
 			limit = {
-				# particularists will join in when their issues are relevant
-				OR = {
-					has_ideology = ideology:ideology_eco_modern_agrarian
-					has_ideology = ideology:ideology_eco_agrarian_socialist
-				}
-				owner = {
-					OR = {
-						has_law = law_type:law_serfdom
-						has_law = law_type:law_debt_slavery
-					}
-				}
-			}
-			add = {
-				value = 3
-				desc = "from_particularism_cares_about_laws"
-			}
-		}
-		if = {
-			limit = {
 				leader = {
 					has_ideology = ideology:ideology_luddite
 				}
@@ -598,27 +579,6 @@ radical_party = {
 			add = {
 				value = 3
 				desc = from_bad_home_affairs
-			}
-		}
-		if = {
-			# general anti-slavery
-			limit = {
-				owner = {
-					OR = {
-						has_law = law_type:law_legacy_slavery
-						has_law = law_type:law_slave_trade
-					}
-				}
-				OR = {
-					bpm_ig_is_abolitionist = yes
-					leader = {
-						has_ideology = ideology:ideology_abolitionist
-					}
-				}
-			}
-			add = {
-				value = 3
-				desc = "from_slavery"
 			}
 		}
 		if = {
