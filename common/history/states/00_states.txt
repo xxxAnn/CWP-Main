@@ -8669,14 +8669,15 @@
 				x30B001
 				x519343
 				xB48FF1
+				xE70FA4
+				xFE4123
 			}
 		}
 		create_state = {
 			country = c:USA			#Guantanamo
 			owned_provinces = {
-				xE70FA4
+				x46B9A5
 			}
-			state_type = treaty_port
 		}
 		add_homeland = cu:caribeno
 	}

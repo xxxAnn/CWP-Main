@@ -412,7 +412,7 @@ types map_list_panel_types {
 				dropDown = {
 					visible = "[StringIsEmpty(MapListPanel.GetTitle)]"
 					datamodel = "[GetMapModeIndices]"
-					onselectionchanged = "[SelectMapMode]"
+					onselectionchanged = "[SetLockedMapMode]"
 					selectedindex = "[GetSelectedMapMode]"
 					size = { @panel_width 35 }
 					focuspolicy = all
@@ -1014,6 +1014,8 @@ types map_list_panel_types {
 			}
 		}
 	}
+
+	### BUILD BUILDINGS IS IN A SEPARATE FILE FOR 1.6 TO AVOID MERGE CONFLICTS (map_list_panel_one_point_six.gui)
 
 	### COLONIES
 	type colony_map_list_panel = map_list_panel {
@@ -1664,7 +1666,7 @@ types map_list_panel_types {
 				margin = { 5 0 }
 				size = { 100 25 }
 				align = right|nobaseline
-				raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [Market.GetMarketGDPValue|Dv]"
+				raw_text = "@money![Market.GetMarketGDPValue|Dv]"
 				parentanchor = vcenter
 				elide = right
 			}
@@ -1788,7 +1790,7 @@ types map_list_panel_types {
 				margin = { 5 0 }
 				size = { 95 25 }
 				align = right|nobaseline
-				raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [MapListOption.GetStrategicRegionData.GetStrategicRegion.GetTotalGDP|Dv]"
+				raw_text = "@money![MapListOption.GetStrategicRegionData.GetStrategicRegion.GetTotalGDP|Dv]"
 				parentanchor = vcenter
 				elide = right
 			}
@@ -1912,6 +1914,24 @@ types map_list_panel_types {
 		blockoverride "shown_on_map_value" {
 			raw_text = "[Country.GetInfamyLabel] ([Country.GetInfamy|-1])"
 			tooltip = "[Country.GetInfamyDesc]"
+		}
+	}
+
+	type country_mass_migration_pull_list_panel = country_map_list_one_value {
+		name = "country_mass_migration_pull_list_panel"
+
+		blockoverride "itemvisibility" {
+			visible = "[Not(Country.IsColonizable)]"
+		}
+
+		blockoverride "shown_on_map_header" {
+			text = "concept_mass_migration_pull"
+			onclick = "[MapListPanel.Sort('country_migration_pull')]"
+		}
+
+		blockoverride "shown_on_map_value" {
+			raw_text = "#v [Country.GetLimitedMassMigrationCountryAttraction|1]#!"
+			tooltip = "[Country.GetMassMigrationAttractionDesc]"
 		}
 	}
 
@@ -2144,7 +2164,7 @@ types map_list_panel_types {
 							margin = { 10 0 }
 							size = { 110 25 }
 							align = center|nobaseline
-							raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [MapListOption.GetTradeRouteData.GetProductivity|D+]"
+							raw_text = "@money![MapListOption.GetTradeRouteData.GetProductivity|D+]"
 							tooltip = "[MapListOption.GetTooltip]"
 							parentanchor = vcenter
 							elide = right
@@ -2229,7 +2249,7 @@ types map_list_panel_types {
 				align = right|nobaseline
 				parentanchor = vcenter
 				elide = right
-				raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [State.GetGDPContribution|Dv]"
+				raw_text = "@money![State.GetGDPContribution|Dv]"
 			}
 		}
 
@@ -2293,7 +2313,7 @@ types map_list_panel_types {
 			onclick = "[MapListPanel.Sort('gdp_contribution')]"
 		}
 		blockoverride "shown_on_map_value" {
-			raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [State.GetGDPContribution|Dv]"
+			raw_text = "@money![State.GetGDPContribution|Dv]"
 			tooltip = "CURRENT_GDP_STATE"
 		}
 	}
@@ -2307,7 +2327,7 @@ types map_list_panel_types {
 			onclick = "[MapListPanel.Sort('gdp_contribution')]"
 		}
 		blockoverride "shown_on_map_value" {
-			raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [State.GetGDPContribution|Dv]"
+			raw_text = "@money![State.GetGDPContribution|Dv]"
 			tooltip = "CURRENT_GDP_STATE"
 		}
 	}
@@ -2325,7 +2345,7 @@ types map_list_panel_types {
 			onclick = "[MapListPanel.Sort('gdp_contribution')]"
 		}
 		blockoverride "shown_on_map_value" {
-			raw_text = "[GetPlayer.MakeScope.Var('cwp_currency').GetFlagName] [State.GetGDPContribution|Dv]"
+			raw_text = "@money![State.GetGDPContribution|Dv]"
 			tooltip = "CURRENT_GDP_STATE"
 		}
 	}
@@ -2392,6 +2412,10 @@ types map_list_panel_types {
 	type state_migration_pull_list_panel = state_map_list_one_value {
 		name = "state_migration_pull_list_panel"
 
+		blockoverride "itemvisibility" {
+			visible = "[ObjectsEqual(MapListOption.GetStateData.GetState.GetOwner, GetPlayer.Self)]"
+		}
+
 		blockoverride "shown_on_map_header" {
 			text = "concept_migration_pull"
 			onclick = "[MapListPanel.Sort('migration_pull')]"
@@ -2399,6 +2423,37 @@ types map_list_panel_types {
 		blockoverride "shown_on_map_value" {
 			raw_text = "#v [State.GetMigrationLabel]#!"
 			tooltip = "MIGRATION_PULL_DESC"
+		}
+	}
+
+	type state_mass_migration_pull_list_panel = state_map_list_one_value {
+		name = "state_mass_migration_pull_list_panel"
+
+		blockoverride "itemvisibility" {
+			visible = "[State.IsEligibleForMassMigration]"
+		}
+
+		blockoverride "shown_on_map_header" {
+			text = "concept_migration_pull"
+			onclick = "[MapListPanel.Sort('migration_pull')]"
+		}
+		blockoverride "shown_on_map_value" {
+			raw_text = "#v [State.GetMigrationLabel]#!"
+			tooltip = "MIGRATION_PULL_DESC"
+		}
+	}
+
+	# STATE MIGRATION
+	type state_migration_list_panel = state_map_list_one_value {
+		name = "state_migration_list_panel"
+
+		blockoverride "shown_on_map_header" {
+			text = "concept_weekly_migration"
+			onclick = "[MapListPanel.Sort('migration')]"
+		}
+		blockoverride "shown_on_map_value" {
+			raw_text = "#v [State.GetWeeklyPopNetMigration|D=+]#!"
+			tooltip = "TOOLTIP_STATE_MIGRATION"
 		}
 	}
 
@@ -2536,6 +2591,12 @@ types map_list_panel_types {
 
 						onmousehierarchyenter = "[AccessHighlightManager.HighlightState(State.Self)]"
 						onmousehierarchyleave = "[AccessHighlightManager.RemoveHighlight]"
+						onclick = "[InformationPanelBar.OpenStatePanel(State.AccessSelf)]"
+						onrightclick = "[RightClickMenuManager.ShowForState(State.AccessSelf)]"
+
+						tooltipwidget = {
+							FancyTooltip_State = {}
+						}
 
 						textbox = {
 							visible = "[Not(And(State.IsUnincorporated, Not(State.IsIncorporating)))]"
