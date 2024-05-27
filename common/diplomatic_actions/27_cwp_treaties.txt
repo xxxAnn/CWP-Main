@@ -16,13 +16,13 @@
 		}
 		requirement_to_maintain = {
 			trigger = {
-				aggressive_diplomatic_plays_permitted = no
+				aggressive_diplomatic_plays_permitted = yes
 			}
 		}
 		requirement_to_maintain = {
 			trigger = {
 				scope:target_country = {
-					aggressive_diplomatic_plays_permitted = no
+					aggressive_diplomatic_plays_permitted = yes
 				}
 			}
 		}
