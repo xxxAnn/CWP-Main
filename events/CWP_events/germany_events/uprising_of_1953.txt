@@ -162,9 +162,9 @@ uprising_of_1953.4 = {
 		c:RUS = {
 			create_diplomatic_play = {
 				target_country = c:DDR
-				type = dp_make_puppet
-				add_war_goal = {
-					holder = c:RUS
+				type = dp_reassert_dominion
+				add_war_goal = { 
+					holder = c:RUS 
 					type = regime_change
 					target_country = c:DDR
 				}
