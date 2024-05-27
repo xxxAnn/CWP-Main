@@ -117,13 +117,6 @@ lawgroup_health_system = {
 	regressive_movement_chance = 0.25
 }
 
-lawgroup_environmental_regulations = {
-	law_group_category = economy
-	progressive_movement_chance = 0.25
-	regressive_movement_chance = 0.2
-	affected_by_regime_change = yes
-}
-
 lawgroup_wmds = {
 	law_group_category = economy
 	progressive_movement_chance = 0.25
@@ -159,6 +152,13 @@ lawgroup_welfare = {
 	law_group_category = human_rights
 	progressive_movement_chance = 2.5
 	regressive_movement_chance = 0.25
+}
+
+lawgroup_environmental_regulations = {
+	law_group_category = human_rights
+	progressive_movement_chance = 0.25
+	regressive_movement_chance = 0.2
+	affected_by_regime_change = yes
 }
 
 lawgroup_migration = {
