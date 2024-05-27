@@ -30,7 +30,7 @@
 		effect_create_law_package = {
 			#Placeholder Vanilla Laws
 			governanceprinciples = law_monarchy
-			distributionOfPower = law_census_voting
+			distributionOfPower = law_proportional_voting
 			citizenship = law_racial_segregation
 			activate_law = law_type:law_$churchandstate$
 			activate_law = law_type:law_$bureaucracy$

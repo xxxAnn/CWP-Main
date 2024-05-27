@@ -10,12 +10,12 @@
 		limit = {
 			scope:ruling_ig = {
 				law_stance = {
-					law = law_type:law_council_republic
+					law = law_type:law_socialist_republic
 					value = strongly_approve
 				}
 			}
 		}
-		activate_law = law_type:law_council_republic
+		activate_law = law_type:law_socialist_republic
 	}
 	else_if = {
 		limit = {
@@ -66,12 +66,12 @@
 		limit = {
 			scope:ruling_ig = {
 				law_stance = {
-					law = law_type:law_council_republic
+					law = law_type:law_socialist_republic
 					value = approve
 				}
 			}
 		}
-		activate_law = law_type:law_council_republic
+		activate_law = law_type:law_socialist_republic
 	}
 	else_if = {
 		limit = {
@@ -141,7 +141,7 @@
 		else_if = {
 			limit = {
 				civil_war_origin_country = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			set_variable = prov_gov_council_republic

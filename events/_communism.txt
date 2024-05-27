@@ -18,7 +18,7 @@ communism.1 = {
 		random_interest_group = {
 			limit = {
 				law_stance = {
-					law = law_type:law_council_republic
+					law = law_type:law_socialist_republic
 					value > neutral
 				}
 			}
@@ -141,7 +141,7 @@ communism.8 = {
 	}
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	trigger = {
-		has_law = law_type:law_council_republic
+		has_law = law_type:law_socialist_republic
 		NOT = {
 			has_variable = red_army_var
 		}

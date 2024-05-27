@@ -114,7 +114,7 @@
 	}
 	possible = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	weight = {
@@ -246,7 +246,7 @@ ai_strategy_reactionary_agenda = {
 	}
 	possible = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		OR = {
 			ruler ?= {
@@ -411,7 +411,7 @@ ai_strategy_progressive_agenda = {
 	}
 	possible = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		any_interest_group = {
 			bpm_ig_is_left_wing = yes
@@ -576,7 +576,7 @@ ai_strategy_progressive_conservative_agenda = {
 	}
 	possible = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		any_interest_group = {
 			has_ideology = ideology:ideology_wel_paternalistic_welfare
@@ -710,7 +710,7 @@ ai_strategy_egalitarian_agenda = {
 	possible = {
 		has_technology_researched = egalitarianism
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		any_interest_group = {
 			OR = {
@@ -878,7 +878,7 @@ ai_strategy_nationalist_agenda = {
 	}
 	possible = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		has_technology_researched = pre_war_ideological_thought
 		any_interest_group = {

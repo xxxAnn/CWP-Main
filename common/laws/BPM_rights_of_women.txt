@@ -224,10 +224,10 @@ law_womens_suffrage = {
 		first_wave_feminism
 	}
 	unlocking_laws = {
-		law_census_voting
-		law_landed_voting
-		law_wealth_voting
-		law_universal_suffrage
+		law_proportional_voting
+		law_hybrid_voting
+		law_majoritarian_voting
+		law_direct_democracy
 		law_single_party_state
 		law_anarchy
 	}

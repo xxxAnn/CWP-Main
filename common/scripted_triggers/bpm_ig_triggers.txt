@@ -629,7 +629,7 @@ bpm_ig_is_strongly_anti_electoralist_socialist = {
 		NOR = {
 			bpm_ig_is_socialist = no
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}
 		}
 		OR = {
@@ -666,7 +666,7 @@ bpm_ig_is_anti_electoralist_socialist = {
 		NOR = {
 			bpm_ig_is_socialist = no			# Can't be anti-electoralist socialist if you aren't a socialist
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}			# No anti-electoralism in a socialist state by socialists
 			bpm_ig_is_strongly_anti_electoralist_socialist = yes			# We are strongly anti-electoralist instead
 		}
@@ -740,7 +740,7 @@ bpm_ig_is_radical_opposition = {
 		AND = {
 			owner = {
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			bpm_ig_is_socialist = yes
@@ -750,7 +750,7 @@ bpm_ig_is_radical_opposition = {
 		# Council Republic: Non-Socialist, Non-institutional IGs are Radical Opposition
 		AND = {
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}
 			bpm_ig_is_socialist = no
 			bpm_ig_is_institutional = no
@@ -790,7 +790,7 @@ bpm_ig_is_very_radical_opposition = {
 		AND = {
 			owner = {
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			OR = {
@@ -808,7 +808,7 @@ bpm_ig_is_very_radical_opposition = {
 		# Council Republic: Market Liberal IGs are Very Radical Opposition in Council Republics
 		AND = {
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}
 			bpm_ig_is_market_liberal = yes
 		}

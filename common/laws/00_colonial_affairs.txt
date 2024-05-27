@@ -10,7 +10,7 @@
 	}
 	
 	ai_will_do = {
-		has_law = law_type:law_council_republic
+		has_law = law_type:law_socialist_republic
 	}	
 
 	ai_enact_weight_modifier = { #Petitions
@@ -27,7 +27,7 @@
 
 		if = {
 			limit = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}
 			add = 100
 		}

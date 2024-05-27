@@ -18,9 +18,9 @@
 	every_country = {
 		limit = {
 			OR = {
-				has_law = law_type:law_universal_suffrage
-				has_law = law_type:law_census_voting
-				has_law = law_type:law_wealth_voting
+				has_law = law_type:law_direct_democracy
+				has_law = law_type:law_proportional_voting
+				has_law = law_type:law_majoritarian_voting
 			}
 		}
 		set_institution_investment_level = {

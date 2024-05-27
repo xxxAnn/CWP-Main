@@ -85,7 +85,7 @@ bpm_country_is_bourgeois_republic = {
 bpm_country_is_republic = {
 	OR = {
 		bpm_country_is_bourgeois_republic = yes
-		has_law = law_type:law_council_republic
+		has_law = law_type:law_socialist_republic
 	}
 }
 
@@ -116,7 +116,7 @@ bpm_country_laws_are_moralist = {
 }
 
 bpm_country_laws_are_liberal_democratic = {
-	has_law = law_type:law_universal_suffrage
+	has_law = law_type:law_direct_democracy
 	has_law = law_type:law_protected_speech
 	has_law = law_type:law_elected_bureaucrats
 	OR = {
@@ -136,8 +136,8 @@ bpm_country_laws_no_voting = {
 
 bpm_country_laws_unfair_voting = {
 	OR = {
-		has_law = law_type:law_landed_voting
-		has_law = law_type:law_wealth_voting
+		has_law = law_type:law_hybrid_voting
+		has_law = law_type:law_majoritarian_voting
 		has_law = law_type:law_party_single
 		has_law = law_type:law_party_reactionary_only
 		has_law = law_type:law_party_socialist_only
@@ -147,8 +147,8 @@ bpm_country_laws_unfair_voting = {
 bpm_country_laws_ok_voting = {
 	AND = {
 		OR = {
-			has_law = law_type:law_census_voting
-			has_law = law_type:law_universal_suffrage
+			has_law = law_type:law_proportional_voting
+			has_law = law_type:law_direct_democracy
 		}
 		NOR = {
 			has_law = law_type:law_party_single
@@ -264,10 +264,10 @@ bpm_country_is_pre_constitutional = {
 bpm_country_is_constitutional_monarchy = {
 	has_law = law_type:law_monarchy
 	OR = {
-		has_law = law_type:law_wealth_voting
-		has_law = law_type:law_census_voting
-		has_law = law_type:law_universal_suffrage
-		has_law = law_type:law_landed_voting
+		has_law = law_type:law_majoritarian_voting
+		has_law = law_type:law_proportional_voting
+		has_law = law_type:law_direct_democracy
+		has_law = law_type:law_hybrid_voting
 	}
 }
 

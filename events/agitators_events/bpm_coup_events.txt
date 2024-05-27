@@ -38,12 +38,12 @@ coup.1 = {
 				}
 			}
 			AND = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
 					law_stance = {
-						law = law_type:law_council_republic
+						law = law_type:law_socialist_republic
 						value < neutral
 					}
 					ig_approval < -10
@@ -134,12 +134,12 @@ coup.1 = {
 		### Anti-Communist Coup
 		else_if = {
 			limit = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 				any_interest_group = {
 					is_powerful = yes
 					is_in_government = yes
 					law_stance = {
-						law = law_type:law_council_republic
+						law = law_type:law_socialist_republic
 						value < approve
 					}
 					ig_approval < -10
@@ -150,7 +150,7 @@ coup.1 = {
 					is_powerful = yes
 					is_in_government = yes
 					law_stance = {
-						law = law_type:law_council_republic
+						law = law_type:law_socialist_republic
 						value < approve
 					}
 					ig_approval < -10
@@ -297,7 +297,7 @@ coup.1 = {
 				limit = {
 					scope:coup_ig = {
 						law_stance = {
-							law = law_type:law_council_republic
+							law = law_type:law_socialist_republic
 							value >= approve
 						}
 					}
@@ -308,7 +308,7 @@ coup.1 = {
 				}
 				random_law = {
 					limit = {
-						type = law_type:law_council_republic
+						type = law_type:law_socialist_republic
 					}
 					save_scope_as = coup_desired_law
 				}
@@ -381,7 +381,7 @@ coup.1 = {
 				limit = {
 					scope:coup_ig = {
 						law_stance = {
-							law = law_type:law_council_republic
+							law = law_type:law_socialist_republic
 							value >= approve
 						}
 					}
@@ -392,7 +392,7 @@ coup.1 = {
 				}
 				random_law = {
 					limit = {
-						type = law_type:law_council_republic
+						type = law_type:law_socialist_republic
 					}
 					save_scope_as = coup_desired_law
 				}
@@ -641,7 +641,7 @@ coup.2 = {
 								type = law_type:law_presidential_republic
 								type = law_type:law_parliamentary_republic
 								type = law_type:law_theocracy
-								type = law_type:law_council_republic
+								type = law_type:law_socialist_republic
 							}
 						}
 					}
@@ -679,7 +679,7 @@ coup.2 = {
 				desc = coup.2.d4
 				trigger = {
 					scope:coup_desired_law = {
-						type = law_type:law_council_republic
+						type = law_type:law_socialist_republic
 					}
 				}
 			}
@@ -868,7 +868,7 @@ coup.2 = {
 						type = law_type:law_presidential_republic
 						type = law_type:law_parliamentary_republic
 						type = law_type:law_theocracy
-						type = law_type:law_council_republic
+						type = law_type:law_socialist_republic
 					}
 				}
 			}
@@ -952,7 +952,7 @@ coup.2 = {
 						type = law_type:law_presidential_republic
 						type = law_type:law_parliamentary_republic
 						type = law_type:law_theocracy
-						type = law_type:law_council_republic
+						type = law_type:law_socialist_republic
 					}
 				}
 			}
@@ -1232,7 +1232,7 @@ coup.2 = {
 		name = coup.2.g
 		trigger = {
 			scope:coup_desired_law = {
-				type = law_type:law_council_republic
+				type = law_type:law_socialist_republic
 			}
 		}
 		default_option = yes

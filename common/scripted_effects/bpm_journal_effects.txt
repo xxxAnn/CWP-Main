@@ -1004,7 +1004,7 @@ bpm_je_split_patcons_progress_rate_update = {
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		change_variable = {
 			name = bpm_je_split_patcons_progress_from_communist_victory_coping
@@ -1130,12 +1130,12 @@ bpm_je_second_intl_progress_rate_update = {
 				has_role = agitator
 				OR = {
 					law_stance = {
-						law = law_type:law_council_republic
+						law = law_type:law_socialist_republic
 						value > neutral
 					}
 					interest_group = {
 						law_stance = {
-							law = law_type:law_council_republic
+							law = law_type:law_socialist_republic
 							value > neutral
 						}
 					}

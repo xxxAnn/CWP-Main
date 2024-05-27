@@ -3,7 +3,7 @@
 	group = je_group_internal_affairs
 	is_shown_when_inactive = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		NOT = {
 			has_variable = completed_fascism_1_var
@@ -12,7 +12,7 @@
 	}
 	possible = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		any_interest_group = {
 			OR = {
@@ -81,7 +81,7 @@
 		}
 	}
 	invalid = {
-		has_law = law_type:law_council_republic
+		has_law = law_type:law_socialist_republic
 	}
 	weight = 10000
 	can_deactivate = no

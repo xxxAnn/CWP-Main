@@ -1,8 +1,8 @@
 ﻿l_japanese:
- institution_law_landed_voting_workaround:0 "Suffrage Institution due to $law_landed_voting$"
- institution_law_wealth_voting_workaround:0 "Suffrage Institution due to $law_wealth_voting$"
- institution_law_census_voting_workaround:0 "Suffrage Institution due to $law_census_voting$"
- institution_law_universal_suffrage_workaround:0 "Suffrage Institution due to $law_universal_suffrage$"
+ institution_law_hybrid_voting_workaround:0 "Suffrage Institution due to $law_hybrid_voting$"
+ institution_law_majoritarian_voting_workaround:0 "Suffrage Institution due to $law_majoritarian_voting$"
+ institution_law_proportional_voting_workaround:0 "Suffrage Institution due to $law_proportional_voting$"
+ institution_law_direct_democracy_workaround:0 "Suffrage Institution due to $law_direct_democracy$"
  institution_law_confederated_workaround:0 "Regional Administration due to $law_confederated$ Law"
  institution_law_federated_workaround:0 "Regional Administration due to $law_federated$ Law"
  institution_law_confederated_colony_workaround:0 "Regional Administration due to $law_confederated$ Law (Unincorporated State)"

@@ -234,7 +234,7 @@ bpm_decrease_police_sway_gui = {
 			AND = {
 				NOT = {
 					owner = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 				OR = {
@@ -286,7 +286,7 @@ bpm_decrease_home_affairs_sway_gui = {
 			trigger_if = {
 				limit = {
 					owner = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 				bpm_ig_is_labor = no

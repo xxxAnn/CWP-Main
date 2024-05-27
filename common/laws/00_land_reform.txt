@@ -422,7 +422,7 @@ law_collectivized_agriculture = {
 		
 		if = {
 			limit = { 
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}
 			add = 250
 		}

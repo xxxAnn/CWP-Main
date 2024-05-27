@@ -22,7 +22,7 @@
  BPM_VALUE_FROM_LAW_NO_WELFARE:0 "[Concept('concept_law', 'Law')] [GetLawType('law_no_social_security').GetName]"
  BPM_VALUE_FROM_LAW_POOR_LAWS:0 "[Concept('concept_law', 'Law')] [GetLawType('law_poor_laws').GetName]"
  BPM_VALUE_FROM_LAW_NO_ELECTIONS:0 "[Concept('concept_law', 'Law')] No [Concept('concept_election', 'Elections')]"
- BPM_VALUE_FROM_LAW_NO_FULL_DEMOCRACY:0 "[Concept('concept_law', 'Law')] No [GetLawType('law_universal_suffrage').GetName] with full Suffrage investment"
+ BPM_VALUE_FROM_LAW_NO_FULL_DEMOCRACY:0 "[Concept('concept_law', 'Law')] No [GetLawType('law_direct_democracy').GetName] with full Suffrage investment"
  BPM_VALUE_FROM_LAW_OUTLAWED_DISSENT:0 "[Concept('concept_law', 'Law')] [GetLawType('law_outlawed_dissent').GetName]"
  BPM_VALUE_FROM_LAW_SOCIALIST_BAN:0 "[Concept('concept_law', 'Law')] [GetLawType('law_party_anti_socialist').GetName]"
  BPM_VALUE_FROM_LAW_CENSORSHIP:0 "[Concept('concept_law', 'Law')] [GetLawType('law_censorship').GetName]"

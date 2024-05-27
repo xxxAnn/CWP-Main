@@ -203,13 +203,13 @@ je_bpm_general_strike_ongoing = {
 				has_journal_entry = je_bpm_syndicalism
 				var:bpm_je_syndicalism >= 66
 			}
-			activate_law = law_type:law_council_republic
+			activate_law = law_type:law_socialist_republic
 			activate_law = law_type:law_syndicalism
 			if = {
 				limit = {
 					bpm_country_laws_no_voting = yes
 				}
-				activate_law = law_type:law_universal_suffrage
+				activate_law = law_type:law_direct_democracy
 			}
 			if = {
 				limit = {

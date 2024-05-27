@@ -3,10 +3,10 @@
 	character_ideology = yes
 	lawgroup_distribution_of_power = {
 		law_anarchy = strongly_disapprove
-		law_universal_suffrage = strongly_disapprove
-		law_census_voting = strongly_disapprove
-		law_wealth_voting = disapprove
-		law_landed_voting = disapprove
+		law_direct_democracy = strongly_disapprove
+		law_proportional_voting = strongly_disapprove
+		law_majoritarian_voting = disapprove
+		law_hybrid_voting = disapprove
 		law_technocracy = approve
 		law_oligarchy = approve
 		law_autocracy = approve
