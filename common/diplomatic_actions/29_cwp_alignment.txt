@@ -71,8 +71,34 @@
 			}
 		}
 		requirement_to_maintain = {
-			trigger = {
-				is_subject = no
+			trigger_if = {
+				limit = {
+					is_subject = yes
+				}
+				OR = {
+					AND = {
+						root.overlord = {
+							OR = {
+								has_variable = western_bloc_leader
+								has_variable = western_bloc_member
+							}
+						}
+						scope:target_country = {
+							has_variable = western_bloc_leader
+						}
+					}
+					AND = {
+						root.overlord = {
+							OR = {
+								has_variable = eastern_bloc_leader
+								has_variable = eastern_bloc_member
+							}
+						}
+						scope:target_country = {
+							has_variable = eastern_bloc_leader
+						}
+					}
+				}
 			}
 		}
 		manual_break_effect = {
