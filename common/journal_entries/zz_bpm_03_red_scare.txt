@@ -9,18 +9,18 @@
 			text = red_scare_unlock_tt
 			any_country = {
 				country_rank >= rank_value:major_power
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 				has_diplomatic_relevance = root
 			}
 		}
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	immediate = {
 		ordered_country = {
 			limit = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 				has_diplomatic_relevance = root
 			}
 			order_by = country_rank
@@ -40,19 +40,19 @@
 						}
 						scope:red_scare_target_nation ?= {
 							NOT = {
-								has_law = law_type:law_council_republic
+								has_law = law_type:law_socialist_republic
 							}
 						}
 					}
 					any_country = {
 						has_diplomatic_relevance = root
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 				ordered_country = {
 					limit = {
 						has_diplomatic_relevance = root
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 					order_by = country_rank
 					save_scope_as = red_scare_target_nation
@@ -80,12 +80,12 @@
 	}
 	fail = {
 		OR = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 			any_civil_war = {
 				this.political_movement ?= {
 					any_supporting_interest_group = {
 						law_stance = {
-							law = law_type:law_council_republic
+							law = law_type:law_socialist_republic
 							value > neutral
 						}
 					}
@@ -99,7 +99,7 @@
 		NOT = {
 			any_country = {
 				has_diplomatic_relevance = root
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}
 		}
 	}

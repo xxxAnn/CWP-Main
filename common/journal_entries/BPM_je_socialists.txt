@@ -38,7 +38,7 @@ je_bpm_socialist_electoralism = {
 			bpm_country_laws_no_voting = no
 		}
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		bpm_banned_socialist_parties = no
 	}
@@ -103,7 +103,7 @@ je_bpm_propaganda_of_the_deed = {
 			has_global_variable = first_intl_chain_complete_var
 		}
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		bpm_performance_significant_country = yes
 	}
@@ -142,7 +142,7 @@ je_bpm_propaganda_of_the_deed = {
 			has_global_variable = first_intl_chain_complete_var
 		}
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		custom_tooltip = {
 			text = "bpm_anarchists_are_present"
@@ -322,7 +322,7 @@ je_bpm_agrarian_socialism = {
 			has_global_variable = first_intl_chain_complete_var
 		}
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		bpm_performance_significant_country = yes
 	}
@@ -360,7 +360,7 @@ je_bpm_agrarian_socialism = {
 			has_global_variable = first_intl_chain_complete_var
 		}
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		has_technology_researched = labor_movement
 		custom_tooltip = {
@@ -370,7 +370,7 @@ je_bpm_agrarian_socialism = {
 		}
 	}
 	complete = {
-		has_law = law_type:law_council_republic
+		has_law = law_type:law_socialist_republic
 		custom_tooltip = {
 			text = "bpm_journal_final_stage"
 			var:bpm_je_agrarian_socialism > 66
@@ -547,7 +547,7 @@ je_bpm_syndicalism = {
 		has_variable = bpm_peasant_population_yandev_var
 		has_global_variable = bpm_anarchist_potd_ended_in_gp
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		bpm_performance_significant_country = yes
 	}
@@ -569,12 +569,12 @@ je_bpm_syndicalism = {
 			has_global_variable = bpm_anarchist_potd_ended_in_gp
 		}
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		bpm_country_proletarian_are_popular = yes
 	}
 	complete = {
-		has_law = law_type:law_council_republic
+		has_law = law_type:law_socialist_republic
 		custom_tooltip = {
 			text = "bpm_journal_final_stage"
 			has_variable = bpm_je_syndicalism

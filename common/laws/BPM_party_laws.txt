@@ -43,10 +43,10 @@ law_party_anti_reactionary = {
 		law_protected_speech
 	}
 	unlocking_laws = {
-		law_census_voting
-		law_landed_voting
-		law_wealth_voting
-		law_universal_suffrage
+		law_proportional_voting
+		law_hybrid_voting
+		law_majoritarian_voting
+		law_direct_democracy
 	}
 	on_activate = {
 		bpm_disable_single_party = yes
@@ -88,19 +88,19 @@ law_party_reactionary_only = {
 		law_protected_speech
 	}
 	unlocking_laws = {
-		law_census_voting
-		law_landed_voting
-		law_wealth_voting
-		law_universal_suffrage
+		law_proportional_voting
+		law_hybrid_voting
+		law_majoritarian_voting
+		law_direct_democracy
 	}
 	can_enact = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	is_visible = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	on_activate = {
@@ -143,19 +143,19 @@ law_party_anti_socialist = {
 		law_protected_speech
 	}
 	unlocking_laws = {
-		law_census_voting
-		law_landed_voting
-		law_wealth_voting
-		law_universal_suffrage
+		law_proportional_voting
+		law_hybrid_voting
+		law_majoritarian_voting
+		law_direct_democracy
 	}
 	can_enact = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	is_visible = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	on_activate = {
@@ -198,16 +198,16 @@ law_party_socialist_only = {
 		law_protected_speech
 	}
 	unlocking_laws = {
-		law_census_voting
-		law_landed_voting
-		law_wealth_voting
-		law_universal_suffrage
+		law_proportional_voting
+		law_hybrid_voting
+		law_majoritarian_voting
+		law_direct_democracy
 	}
 	can_enact = {
-		has_law = law_type:law_council_republic
+		has_law = law_type:law_socialist_republic
 	}
 	is_visible = {
-		has_law = law_type:law_council_republic
+		has_law = law_type:law_socialist_republic
 	}
 	on_activate = {
 		bpm_disable_single_party = yes
@@ -252,10 +252,10 @@ law_party_anti_liberal = {
 		always = no		# Red-browns are way too wacky
 	}
 	unlocking_laws = {
-		law_census_voting
-		law_landed_voting
-		law_wealth_voting
-		law_universal_suffrage
+		law_proportional_voting
+		law_hybrid_voting
+		law_majoritarian_voting
+		law_direct_democracy
 	}
 	on_activate = {
 		bpm_disable_single_party = yes
@@ -298,19 +298,19 @@ law_party_liberal_only = {
 	}
 	can_enact = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	is_visible = {
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	unlocking_laws = {
-		law_census_voting
-		law_landed_voting
-		law_wealth_voting
-		law_universal_suffrage
+		law_proportional_voting
+		law_hybrid_voting
+		law_majoritarian_voting
+		law_direct_democracy
 	}
 	on_activate = {
 		bpm_disable_single_party = yes
@@ -354,10 +354,10 @@ law_party_single = {
 		law_protected_speech
 	}
 	unlocking_laws = {
-		law_census_voting
-		law_landed_voting
-		law_wealth_voting
-		law_universal_suffrage
+		law_proportional_voting
+		law_hybrid_voting
+		law_majoritarian_voting
+		law_direct_democracy
 	}
 	on_activate = {
 	}

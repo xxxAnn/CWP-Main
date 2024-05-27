@@ -21,7 +21,7 @@
 	}
 	text = {
 		trigger = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		localization_key = bpm_legislature_name_council
 	}
@@ -57,7 +57,7 @@ bpm_legislature_adj = {
 	}
 	text = {
 		trigger = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		localization_key = bpm_legislature_adj_council
 	}

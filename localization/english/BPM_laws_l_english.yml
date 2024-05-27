@@ -6,9 +6,21 @@
  law_no_womens_rights:0 "Traditional Family"
  law_no_womens_rights_desc:0 "Whether by convention or by law, the sexes are expected to follow a division of labor according to the traditional familial structure of their culture."
 
+# Governance Principles
+law_constitutional_monarchy:0 "Figurehead Monarchy"
+law_constitutional_monarchy_desc:0 "Placeholder"
+law_socialist_republic:0 "Socialist Republic"
+law_socialist_republic_desc:0 "Placeholder"
+
 # Distribution of Power
  law_military_junta:0 "Military Junta"
  law_military_junta_desc:0 "Officers of this country's army replaced the functions of a civilian government. The civilian government is either suspended, or completely and permanently disbanded."
+ law_hybrid_voting:0 "Hybrid Voting"
+ law_hybrid_voting_desc:0 "Placeholder"
+ law_majoritarian_voting:0 "Majoritarian Voting"
+ law_majoritarian_voting_desc:0 "Majoritarian Voting"
+ law_proportional_voting:0 "Proportional Voting"
+ law_proportional_voting_desc:0 "Placeholder"
 
 # Police
  law_no_police:0 "No Formal Police"

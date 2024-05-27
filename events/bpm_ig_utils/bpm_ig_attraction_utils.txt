@@ -15,7 +15,7 @@ bpm_ig_attraction_utils.1 = {
 						ig:ig_trade_unions ?= {
 							is_powerful = yes
 						}
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 			}
@@ -26,7 +26,7 @@ bpm_ig_attraction_utils.1 = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 				ig:ig_fascists ?= {
@@ -599,7 +599,7 @@ bpm_ig_attraction_utils.2 = {
 				owner = {
 					OR = {
 						NOT = {
-							has_law = law_type:law_universal_suffrage
+							has_law = law_type:law_direct_democracy
 						}
 						has_law = law_type:law_censorship
 						has_law = law_type:law_national_guard

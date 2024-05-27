@@ -16,7 +16,7 @@
  concept_bpm_bannable_antiliberals_desc:0 "Always bans the Communist, Anarchist and Fascist parties (and the Social Democratic Party before the Second International). Censorship (or harsher) also bans the Reactionary party (and the Social Democratic Party after the Second International). Outlawed Dissent also bans the Radical and Religous parties."
 
  concept_bpm_socialist_agitator:0 "Socialist Agitator"
- concept_bpm_socialist_agitator_desc:0 "An agitator whose [Concept('concept_ideology', 'Ideology')] or [Concept('concept_interest_group', 'Interest Group')] supports the enactment of the [GetLawType('law_council_republic').GetName] [Concept('concept_law', 'Law')]."
+ concept_bpm_socialist_agitator_desc:0 "An agitator whose [Concept('concept_ideology', 'Ideology')] or [Concept('concept_interest_group', 'Interest Group')] supports the enactment of the [GetLawType('law_socialist_republic').GetName] [Concept('concept_law', 'Law')]."
 
  concept_bpm_global_je:0 "Global Journal Entry"
  concept_bpm_global_je_desc:0 "A journal entry active in all countries at once. The progress is shared among these countries and the factors that influence the progress are usually international."

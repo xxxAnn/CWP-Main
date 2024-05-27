@@ -75,7 +75,7 @@ provisional_government_events.1 = {
 		add_radicals = {
 			value = small_radicals
 		}
-		activate_law = law_type:law_council_republic
+		activate_law = law_type:law_socialist_republic
 		activate_law = law_type:law_all_labor_unions_allowed
 		remove_variable = revolutionary_prov_gov_var
 	}

@@ -76,7 +76,7 @@ law_illegal_labor_unions = {
 		law_enforcement
 	}
 	disallowing_laws = {
-		law_council_republic
+		law_socialist_republic
 	}
 	modifier = {
 		state_political_strength_from_wealth_mult = 0.1
@@ -255,7 +255,7 @@ law_syndicalism = {
 		anarchism
 	}
 	unlocking_laws = {
-		law_council_republic
+		law_socialist_republic
 	}
 	modifier = {
 		interest_group_ig_trade_unions_pol_str_mult = 0.5
@@ -322,7 +322,7 @@ law_socialist_labor_unions = {
 		corporatism
 	}
 	unlocking_laws = {
-		law_council_republic
+		law_socialist_republic
 	}
 	modifier = {
 		interest_group_ig_trade_unions_pol_str_mult = 0.25

@@ -9,7 +9,7 @@
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes
 					OR = {
@@ -32,7 +32,7 @@
 			exists = scope:actor
 			scope:actor = {
 				is_secessionist = no
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}
 		}
 	}
@@ -47,7 +47,7 @@
 			scope:actor = {
 				is_secessionist = no
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 				any_interest_group = {
 					bpm_is_strongest_ig_in_government = yes

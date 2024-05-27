@@ -183,7 +183,7 @@ ideology_atheist = {
 		law_monarchy = disapprove
 		law_presidential_republic = neutral
 		law_parliamentary_republic = neutral
-		law_council_republic = neutral
+		law_socialist_republic = neutral
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
@@ -332,15 +332,15 @@ ideology_republican_leader = {
 	lawgroup_governance_principles = {
 		law_presidential_republic = approve
 		law_parliamentary_republic = approve
-		law_council_republic = disapprove
+		law_socialist_republic = disapprove
 		law_monarchy = disapprove
 		law_theocracy = disapprove
 	}
 	lawgroup_distribution_of_power = {
-		law_universal_suffrage = strongly_approve
-		law_census_voting = approve
-		law_wealth_voting = approve
-		law_landed_voting = neutral
+		law_direct_democracy = strongly_approve
+		law_proportional_voting = approve
+		law_majoritarian_voting = approve
+		law_hybrid_voting = neutral
 		law_oligarchy = disapprove
 		law_autocracy = disapprove
 		law_anarchy = strongly_disapprove
@@ -360,7 +360,7 @@ ideology_republican_leader = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_direct_democracy
 				has_law = law_type:elected_bureaucrats
 				bpm_country_is_bourgeois_republic = yes
 			}
@@ -494,15 +494,15 @@ ideology_radical = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
 		law_theocracy = strongly_disapprove
-		law_council_republic = disapprove
+		law_socialist_republic = disapprove
 		law_presidential_republic = approve
 		law_parliamentary_republic = approve
 	}
 	lawgroup_distribution_of_power = {
-		law_universal_suffrage = strongly_approve
-		law_census_voting = approve
-		law_wealth_voting = neutral
-		law_landed_voting = disapprove
+		law_direct_democracy = strongly_approve
+		law_proportional_voting = approve
+		law_majoritarian_voting = neutral
+		law_hybrid_voting = disapprove
 		law_anarchy = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
@@ -1119,7 +1119,7 @@ ideology_jingoist_leader = {
 		OR = {
 			bpm_ig_is_radical_socialist = no
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}
 		}
 	}
@@ -1194,7 +1194,7 @@ ideology_royalist = {
 		law_presidential_republic = disapprove
 		law_parliamentary_republic = disapprove
 		law_theocracy = disapprove
-		law_council_republic = strongly_disapprove
+		law_socialist_republic = strongly_disapprove
 	}
 	possible = {
 		scope:interest_group = {
@@ -1324,14 +1324,14 @@ ideology_socialist_leader = {
 		law_presidential_republic = approve
 		law_parliamentary_republic = approve
 		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_approve
+		law_socialist_republic = strongly_approve
 	}
 	lawgroup_distribution_of_power = {
 		law_anarchy = neutral
-		law_universal_suffrage = strongly_approve
-		law_census_voting = disapprove
-		law_wealth_voting = strongly_disapprove
-		law_landed_voting = strongly_disapprove
+		law_direct_democracy = strongly_approve
+		law_proportional_voting = disapprove
+		law_majoritarian_voting = strongly_disapprove
+		law_hybrid_voting = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
 		law_military_junta = strongly_disapprove
@@ -1375,9 +1375,9 @@ ideology_socialist_leader = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 				has_law = law_type:law_worker_protections
-				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_direct_democracy
 				has_law = law_type:law_all_labor_unions_allowed
 			}
 		}
@@ -1464,7 +1464,7 @@ ideology_socialist_leader = {
 				}
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 			}
@@ -1506,10 +1506,10 @@ ideology_syndicalist = {
 	}
 	lawgroup_distribution_of_power = {
 		law_anarchy = neutral
-		law_universal_suffrage = strongly_approve
-		law_census_voting = disapprove
-		law_wealth_voting = strongly_disapprove
-		law_landed_voting = strongly_disapprove
+		law_direct_democracy = strongly_approve
+		law_proportional_voting = disapprove
+		law_majoritarian_voting = strongly_disapprove
+		law_hybrid_voting = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
 		law_military_junta = strongly_disapprove
@@ -1526,7 +1526,7 @@ ideology_syndicalist = {
 		law_presidential_republic = approve
 		law_parliamentary_republic = approve
 		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_approve
+		law_socialist_republic = strongly_approve
 	}
 	lawgroup_labor_unions = {
 		law_illegal_labor_unions = strongly_disapprove
@@ -1544,9 +1544,9 @@ ideology_syndicalist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 				has_law = law_type:law_worker_protections
-				has_law = law_type:law_universal_suffrage
+				has_law = law_type:law_direct_democracy
 				has_law = law_type:law_syndicalism
 			}
 		}
@@ -1634,7 +1634,7 @@ ideology_syndicalist = {
 				}
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 			}
@@ -1795,7 +1795,7 @@ ideology_social_democrat = {
 					ig_approval >= 0
 				}
 				owner = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			add = 75
@@ -1809,7 +1809,7 @@ ideology_social_democrat = {
 				}
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 			}
@@ -1847,7 +1847,7 @@ ideology_communist = {
 		law_presidential_republic = disapprove
 		law_parliamentary_republic = disapprove
 		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_approve
+		law_socialist_republic = strongly_approve
 	}
 	lawgroup_church_and_state = {
 		law_state_religion = strongly_disapprove
@@ -1880,7 +1880,7 @@ ideology_communist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 				has_law = law_type:law_worker_protections
 				has_law = law_type:law_state_atheism
 				bpm_country_laws_has_socialist_economics = yes
@@ -1890,7 +1890,7 @@ ideology_communist = {
 		NAND = {
 			owner = {
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			OR = {
@@ -1964,7 +1964,7 @@ ideology_communist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 				scope:interest_group = {
@@ -1981,7 +1981,7 @@ ideology_communist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 					average_sol <= 10
 				}
@@ -2034,7 +2034,7 @@ ideology_vanguardist = {
 		law_presidential_republic = disapprove
 		law_parliamentary_republic = disapprove
 		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_approve
+		law_socialist_republic = strongly_approve
 	}
 	lawgroup_land_reform = {
 		law_serfdom = strongly_disapprove
@@ -2101,7 +2101,7 @@ ideology_vanguardist = {
 		NAND = {
 			has_role = agitator
 			owner = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 				AND = {
 					bpm_country_laws_has_socialist_economics = yes
 					NOT = {
@@ -2116,7 +2116,7 @@ ideology_vanguardist = {
 		NAND = {
 			owner = {
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			OR = {
@@ -2169,7 +2169,7 @@ ideology_vanguardist = {
 				}
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 					average_sol <= 10
 				}
@@ -2208,7 +2208,7 @@ ideology_vanguardist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 				scope:interest_group = {
@@ -2222,7 +2222,7 @@ ideology_vanguardist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 				scope:interest_group = {
@@ -2235,7 +2235,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 				scope:interest_group = {
 					OR = {
@@ -2251,7 +2251,7 @@ ideology_vanguardist = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 					bpm_country_laws_are_moderately_undemocratic = yes
 				}
 				scope:interest_group = {
@@ -2302,10 +2302,10 @@ ideology_fascist = {
 		law_autocracy = approve
 		law_oligarchy = neutral
 		law_anarchy = strongly_disapprove
-		law_universal_suffrage = strongly_disapprove
-		law_census_voting = strongly_disapprove
-		law_wealth_voting = strongly_disapprove
-		law_landed_voting = strongly_disapprove
+		law_direct_democracy = strongly_disapprove
+		law_proportional_voting = strongly_disapprove
+		law_majoritarian_voting = strongly_disapprove
+		law_hybrid_voting = strongly_disapprove
 		law_technocracy = approve
 		law_military_junta = approve
 	}
@@ -2430,7 +2430,7 @@ ideology_fascist = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			add = -75
@@ -2544,10 +2544,10 @@ ideology_anarchist = {
 	}
 	lawgroup_distribution_of_power = {
 		law_anarchy = strongly_approve
-		law_universal_suffrage = neutral
-		law_census_voting = disapprove
-		law_wealth_voting = strongly_disapprove
-		law_landed_voting = strongly_disapprove
+		law_direct_democracy = neutral
+		law_proportional_voting = disapprove
+		law_majoritarian_voting = strongly_disapprove
+		law_hybrid_voting = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
 		law_technocracy = strongly_disapprove
@@ -2586,7 +2586,7 @@ ideology_anarchist = {
 		law_presidential_republic = disapprove
 		law_parliamentary_republic = disapprove
 		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_approve
+		law_socialist_republic = strongly_approve
 	}
 	lawgroup_land_reform = {
 		law_serfdom = strongly_disapprove
@@ -2671,7 +2671,7 @@ ideology_anarchist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 					has_variable = local_anarchists_split_var
 				}
@@ -2752,10 +2752,10 @@ ideology_anarchist_syndicalist = {
 	}
 	lawgroup_distribution_of_power = {
 		law_anarchy = strongly_approve
-		law_universal_suffrage = neutral
-		law_census_voting = disapprove
-		law_wealth_voting = strongly_disapprove
-		law_landed_voting = strongly_disapprove
+		law_direct_democracy = neutral
+		law_proportional_voting = disapprove
+		law_majoritarian_voting = strongly_disapprove
+		law_hybrid_voting = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
 		law_technocracy = strongly_disapprove
@@ -2794,7 +2794,7 @@ ideology_anarchist_syndicalist = {
 		law_presidential_republic = disapprove
 		law_parliamentary_republic = disapprove
 		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_approve
+		law_socialist_republic = strongly_approve
 	}
 	lawgroup_land_reform = {
 		law_serfdom = strongly_disapprove
@@ -2880,7 +2880,7 @@ ideology_anarchist_syndicalist = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 					has_variable = local_anarchists_split_var
 				}
@@ -2949,10 +2949,10 @@ ideology_agrarian_socialist_leader = {
 	character_ideology = yes
 	lawgroup_distribution_of_power = {
 		law_anarchy = approve
-		law_universal_suffrage = strongly_approve
-		law_census_voting = disapprove
-		law_wealth_voting = strongly_disapprove
-		law_landed_voting = strongly_disapprove
+		law_direct_democracy = strongly_approve
+		law_proportional_voting = disapprove
+		law_majoritarian_voting = strongly_disapprove
+		law_hybrid_voting = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
 		law_technocracy = disapprove
@@ -3009,7 +3009,7 @@ ideology_agrarian_socialist_leader = {
 				}
 				OR = {
 					has_law = law_type:law_anarchy
-					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_direct_democracy
 				}
 			}
 		}
@@ -3084,7 +3084,7 @@ ideology_agrarian_socialist_leader = {
 				owner = {
 					OR = {
 						has_law = law_type:law_anarchy
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 				scope:interest_group = {
@@ -3213,7 +3213,7 @@ ideology_ethno_nationalist = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			add = -75
@@ -3258,7 +3258,7 @@ ideology_theocrat = {
 		law_monarchy = neutral
 		law_presidential_republic = disapprove
 		law_parliamentary_republic = disapprove
-		law_council_republic = disapprove
+		law_socialist_republic = disapprove
 	}
 	possible = {
 		scope:interest_group = {
@@ -3624,10 +3624,10 @@ ideology_authoritarian = {
 	character_ideology = yes
 	lawgroup_distribution_of_power = {
 		law_anarchy = strongly_disapprove
-		law_universal_suffrage = strongly_disapprove
-		law_census_voting = disapprove
-		law_wealth_voting = neutral
-		law_landed_voting = neutral
+		law_direct_democracy = strongly_disapprove
+		law_proportional_voting = disapprove
+		law_majoritarian_voting = neutral
+		law_hybrid_voting = neutral
 		law_technocracy = neutral
 		law_oligarchy = approve
 		law_autocracy = approve
@@ -4049,15 +4049,15 @@ ideology_jacksonian_democrat = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_disapprove
 		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_disapprove
+		law_socialist_republic = strongly_disapprove
 		law_parliamentary_republic = neutral
 		law_presidential_republic = approve
 	}
 	lawgroup_distribution_of_power = {
-		law_universal_suffrage = strongly_approve
-		law_census_voting = approve
-		law_wealth_voting = neutral
-		law_landed_voting = disapprove
+		law_direct_democracy = strongly_approve
+		law_proportional_voting = approve
+		law_majoritarian_voting = neutral
+		law_hybrid_voting = disapprove
 		law_anarchy = strongly_disapprove
 		law_oligarchy = strongly_disapprove
 		law_autocracy = strongly_disapprove
@@ -4107,7 +4107,7 @@ ideology_positivist = {
 	character_ideology = yes
 	lawgroup_governance_principles = {
 		law_theocracy = strongly_disapprove
-		law_council_republic = strongly_disapprove
+		law_socialist_republic = strongly_disapprove
 		law_monarchy = strongly_disapprove
 		law_parliamentary_republic = neutral
 		law_presidential_republic = approve
@@ -4121,12 +4121,12 @@ ideology_positivist = {
 	lawgroup_distribution_of_power = {
 		law_technocracy = strongly_approve
 		law_military_junta = neutral
-		law_wealth_voting = approve
+		law_majoritarian_voting = approve
 		law_autocracy = neutral
 		law_oligarchy = neutral
-		law_census_voting = disapprove
-		law_landed_voting = disapprove
-		law_universal_suffrage = strongly_disapprove
+		law_proportional_voting = disapprove
+		law_hybrid_voting = disapprove
+		law_direct_democracy = strongly_disapprove
 		law_anarchy = strongly_disapprove
 	}
 	lawgroup_bureaucracy = {
@@ -4207,10 +4207,10 @@ ideology_positivist = {
 				owner = {
 					has_law = law_type:law_monarchy
 					OR = {
-						has_law = law_type:law_wealth_voting
-						has_law = law_type:law_census_voting
-						has_law = law_type:law_universal_suffrage
-						has_law = law_type:law_landed_voting
+						has_law = law_type:law_majoritarian_voting
+						has_law = law_type:law_proportional_voting
+						has_law = law_type:law_direct_democracy
+						has_law = law_type:law_hybrid_voting
 					}
 				}
 			}
@@ -4451,11 +4451,11 @@ ideology_integralist = {
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_approve
 		law_oligarchy = approve
-		law_landed_voting = neutral
-		law_wealth_voting = disapprove
+		law_hybrid_voting = neutral
+		law_majoritarian_voting = disapprove
 		law_technocracy = strongly_disapprove
-		law_census_voting = strongly_disapprove
-		law_universal_suffrage = strongly_disapprove
+		law_proportional_voting = strongly_disapprove
+		law_direct_democracy = strongly_disapprove
 		law_anarchy = strongly_disapprove
 		law_military_junta = approve
 	}
@@ -4541,7 +4541,7 @@ ideology_integralist = {
 		if = {
 			limit = {
 				owner = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			add = -75
@@ -4631,10 +4631,10 @@ ideology_liberal_leader = {
 	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_liberal.dds"
 	character_ideology = yes
 	lawgroup_distribution_of_power = {
-		law_universal_suffrage = strongly_approve
-		law_census_voting = strongly_approve
-		law_wealth_voting = approve
-		law_landed_voting = approve
+		law_direct_democracy = strongly_approve
+		law_proportional_voting = strongly_approve
+		law_majoritarian_voting = approve
+		law_hybrid_voting = approve
 		law_technocracy = disapprove
 		law_oligarchy = disapprove
 		law_autocracy = strongly_disapprove
@@ -4679,10 +4679,10 @@ ideology_liberal_leader = {
 			limit = {
 				owner = {
 					OR = {
-						has_law = law_type:law_universal_suffrage
-						has_law = law_type:law_census_voting
-						has_law = law_type:law_wealth_voting
-						has_law = law_type:law_landed_voting
+						has_law = law_type:law_direct_democracy
+						has_law = law_type:law_proportional_voting
+						has_law = law_type:law_majoritarian_voting
+						has_law = law_type:law_hybrid_voting
 					}
 					has_law = law_type:law_elected_bureaucrats
 				}
@@ -4746,10 +4746,10 @@ ideology_corporatist_leader = {
 		law_autocracy = disapprove
 		law_technocracy = neutral
 		law_oligarchy = disapprove
-		law_landed_voting = neutral
-		law_wealth_voting = neutral
-		law_census_voting = approve
-		law_universal_suffrage = disapprove
+		law_hybrid_voting = neutral
+		law_majoritarian_voting = neutral
+		law_proportional_voting = approve
+		law_direct_democracy = disapprove
 		law_anarchy = strongly_disapprove
 		law_military_junta = neutral
 	}
@@ -4807,7 +4807,7 @@ ideology_corporatist_leader = {
 			has_role = agitator
 			owner = {
 				NOT = {
-					has_law = law_type:law_council_republic
+					has_law = law_type:law_socialist_republic
 				}
 				has_law = law_type:law_public_schools
 				has_law = law_type:law_regulatory_bodies
@@ -4850,7 +4850,7 @@ ideology_corporatist_leader = {
 			limit = {
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 					has_law = law_type:law_public_schools
 					has_law = law_type:law_regulatory_bodies
@@ -4878,7 +4878,7 @@ ideology_corporatist_leader = {
 				}
 				owner = {
 					NOT = {
-						has_law = law_type:law_council_republic
+						has_law = law_type:law_socialist_republic
 					}
 				}
 			}
@@ -4904,7 +4904,7 @@ ideology_humanitarian_royalist = {
 		law_presidential_republic = disapprove
 		law_parliamentary_republic = disapprove
 		law_theocracy = disapprove
-		law_council_republic = strongly_disapprove
+		law_socialist_republic = strongly_disapprove
 	}
 	lawgroup_citizenship = {
 		law_ethnostate = strongly_disapprove
@@ -5106,15 +5106,15 @@ ideology_orleanist = {
 		law_presidential_republic = neutral
 		law_parliamentary_republic = disapprove
 		law_theocracy = disapprove
-		law_council_republic = strongly_disapprove
+		law_socialist_republic = strongly_disapprove
 	}
 	lawgroup_distribution_of_power = {
 		law_autocracy = disapprove
 		law_oligarchy = neutral
-		law_landed_voting = approve
-		law_wealth_voting = approve
-		law_census_voting = neutral
-		law_universal_suffrage = disapprove
+		law_hybrid_voting = approve
+		law_majoritarian_voting = approve
+		law_proportional_voting = neutral
+		law_direct_democracy = disapprove
 		law_anarchy = strongly_disapprove
 		law_technocracy = strongly_disapprove
 		law_military_junta = disapprove
@@ -5280,16 +5280,16 @@ ideology_legitimist = {
 		law_presidential_republic = disapprove
 		law_parliamentary_republic = disapprove
 		law_theocracy = disapprove
-		law_council_republic = strongly_disapprove
+		law_socialist_republic = strongly_disapprove
 	}
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_approve
 		law_oligarchy = neutral
 		law_military_junta = disapprove
-		law_landed_voting = strongly_disapprove
-		law_wealth_voting = strongly_disapprove
-		law_census_voting = strongly_disapprove
-		law_universal_suffrage = strongly_disapprove
+		law_hybrid_voting = strongly_disapprove
+		law_majoritarian_voting = strongly_disapprove
+		law_proportional_voting = strongly_disapprove
+		law_direct_democracy = strongly_disapprove
 		law_anarchy = strongly_disapprove
 		law_technocracy = strongly_disapprove
 	}
@@ -5420,16 +5420,16 @@ ideology_bonapartist = {
 		law_presidential_republic = neutral
 		law_parliamentary_republic = disapprove
 		law_theocracy = disapprove
-		law_council_republic = strongly_disapprove
+		law_socialist_republic = strongly_disapprove
 	}
 	lawgroup_distribution_of_power = {
 		law_autocracy = strongly_approve
 		law_oligarchy = approve
-		law_landed_voting = neutral
-		law_wealth_voting = neutral
+		law_hybrid_voting = neutral
+		law_majoritarian_voting = neutral
 		law_military_junta = approve
-		law_census_voting = disapprove
-		law_universal_suffrage = disapprove
+		law_proportional_voting = disapprove
+		law_direct_democracy = disapprove
 		law_anarchy = strongly_disapprove
 		law_technocracy = strongly_disapprove
 	}

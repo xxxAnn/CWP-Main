@@ -35,7 +35,7 @@ effect_create_law_package = {
 # Generic Liberal Republics
 effect_liberal_republic_law_package = {
 	activate_law = law_type:law_presidential_republic
-	activate_law = law_type:law_census_voting
+	activate_law = law_type:law_proportional_voting
 	activate_law = law_type:law_cultural_exclusion
 	activate_law = law_type:law_total_separation
 	activate_law = law_type:law_appointed_bureaucrats

@@ -148,7 +148,7 @@ join_korean_conflict_ai_south = {
 			target = this
 		}
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 		is_player = no
 		exists = c:NRK

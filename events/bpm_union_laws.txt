@@ -21,7 +21,7 @@ bpm_union_laws.1 = {
 			has_variable = union_law_introduced_var
 		}
 		NOT = {
-			has_law = law_type:law_council_republic
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	immediate = {

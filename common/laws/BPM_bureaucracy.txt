@@ -7,7 +7,7 @@
 		interest_group_ig_landowners_pol_str_mult = 0.25
 	}
 	disallowing_laws = {
-		law_council_republic
+		law_socialist_republic
 	}
 	possible_political_movements = {
 		law_appointed_bureaucrats

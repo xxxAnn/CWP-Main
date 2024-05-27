@@ -242,7 +242,7 @@ free_trade_party = {
 				owner = {
 					NOR = {
 						has_law = law_type:law_oligarchy
-						has_law = law_type:law_wealth_voting
+						has_law = law_type:law_majoritarian_voting
 					}
 				}
 				has_ideology = ideology:ideology_plutocratic
@@ -269,7 +269,7 @@ free_trade_party = {
 			# capitalist-reactionary anti-democracy alliance
 			limit = {
 				owner = {
-					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_direct_democracy
 				}
 				OR = {
 					has_ideology = ideology:ideology_paternalistic

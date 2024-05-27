@@ -117,7 +117,7 @@ bpm_je_propaganda_of_the_deed_baseline_target = {
 			limit = {
 				bpm_country_laws_no_voting = no
 				NOT = {
-					has_law = law_type:law_universal_suffrage
+					has_law = law_type:law_direct_democracy
 					institution:institution_suffrage.investment = 5
 				}
 			}
@@ -1137,7 +1137,7 @@ bpm_je_general_strike_power = {
 	if = {
 		limit = {
 			NOT = {
-				has_law = law_type:law_council_republic
+				has_law = law_type:law_socialist_republic
 			}
 		}
 		add = {
