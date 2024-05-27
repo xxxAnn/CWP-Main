@@ -183,7 +183,23 @@ CANCELED_NUCLEAR_PROGRAM: "[GetPlayer.GetName] has #n canceled#! its [concept_nu
 # concepts
 
 concept_nuclear_program: "Nuclear Program"
+concept_nuclear_program_desc: "#TODO: Add Description"
 concept_nuclear_test: "Nuclear Test"
+concept_nuclear_test_desc: "#TODO: Add Description"
+concept_nuclear_reactor: "Nuclear Reactor"
+concept_nuclear_reactor_desc: "#TODO: Add Description"
+concept_atomic_bomb: "Atomic Bomb"
+concept_atomic_bomb_desc: "#TODO: Add Description"
+concept_thermonuclear_bomb: "Thermonuclear Bomb"
+concept_thermonuclear_bomb_desc: "#TODO: Add Description"
+concept_detonation_focus: "Detonation Focus"
+concept_detonation_focus_desc: "#TODO: Add Description"
+concept_deployment_percentage: "Deployment Percentage"
+concept_deployment_percentage_desc: "#TODO: Add Description"
+concept_nuclear_strike_effectiveness: "Nuclear Strike Effectiveness:
+concept_nuclear_strike_effectiveness_desc: "#TODO: Add Description"
+concept_nuclear_delivery_effectiveness: "Nuclear Delivery Effectiveness"
+concept_nuclear_delivery_effectiveness_desc: "#TODO: Add Description"
 
 add_to_target_list_country_action_name: "Add All States to WMD Target List"
 add_to_target_list_country: "Add Country to [concept_wmd_target_list]"
