@@ -195,18 +195,18 @@
 				}
 			}
 		}
-		#multiply = {
-		#	desc = "LEADER_POPULARITY"
-		#	scope:interest_group = {
-		#		leader ?= {
-		#			value = popularity
-		#			multiply = 0.005
-		#			add = 1
-		#			max = 1.5
-		#			min = 0.67
-		#		}
-		#	}
-		#}
+		multiply = {
+			desc = "LEADER_POPULARITY"
+			scope:interest_group = {
+				leader = {
+					value = popularity
+					multiply = 0.005
+					add = 1
+					max = 1.5
+					min = 0.67
+				}
+			}
+		}
 		# multiply = {
 		# 	desc = "LOW_WELFARE"
 		# 	value = 1.0

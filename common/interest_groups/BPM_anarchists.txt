@@ -153,18 +153,18 @@
 				}
 			}
 			add = ig_attraction_tmp_bpm_non_rural_socialist
-			#multiply = {
-			#	desc = "LEADER_POPULARITY"
-			#	scope:interest_group = {
-			#		leader ?= {
-			#			value = popularity
-			#			multiply = 0.01
-			#			add = 1
-			#			max = 2
-			#			min = 0.5
-			#		}
-			#	}
-			#}
+			multiply = {
+				desc = "LEADER_POPULARITY"
+				scope:interest_group = {
+					leader = {
+						value = popularity
+						multiply = 0.01
+						add = 1
+						max = 2
+						min = 0.5
+					}
+				}
+			}
 			multiply = bpm_ig_agitators_popularity
 			multiply = bpm_ig_ruler_popularity
 			multiply = ig_attraction_from_radicals_and_loyalists
