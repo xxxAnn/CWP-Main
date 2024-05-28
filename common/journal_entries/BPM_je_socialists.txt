@@ -32,7 +32,7 @@ je_bpm_socialist_electoralism = {
 	}
 	can_deactivate = yes
 	possible = {
-		has_technology_researched = labor_movement
+		has_technology_researched = pre_war_ideological_thought
 		custom_tooltip = {
 			text = "bpm_je_single_party_has_elections"
 			bpm_country_laws_no_voting = no
@@ -362,7 +362,7 @@ je_bpm_agrarian_socialism = {
 		NOT = {
 			has_law = law_type:law_socialist_republic
 		}
-		has_technology_researched = labor_movement
+		has_technology_researched = pre_war_ideological_thought
 		custom_tooltip = {
 			text = "bpm_peasant_population_gt_30"
 			has_variable = bpm_peasant_population_yandev_var

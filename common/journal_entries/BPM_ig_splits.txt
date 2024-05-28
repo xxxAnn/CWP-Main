@@ -209,7 +209,7 @@ je_bpm_split_patcons = {
 		}
 		bpm_country_laws_no_voting = no
 		OR = {
-			has_technology_researched = labor_movement
+			has_technology_researched = pre_war_ideological_thought
 			ig:ig_socialists ?= { is_marginal = no }
 			ig:ig_anarchists ?= { is_marginal = no }
 			ig:ig_reformist_socialists ?= { is_marginal = no }

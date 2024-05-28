@@ -18,7 +18,7 @@ je_bpm_general_strike_trigger = {
 		hidden_trigger = {
 			bpm_performance_significant_country = yes
 		}
-		has_technology_researched = labor_movement
+		has_technology_researched = pre_war_ideological_thought
 		OR = {
 			is_at_war = yes
 			any_interest_group = {

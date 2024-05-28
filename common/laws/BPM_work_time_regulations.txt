@@ -42,7 +42,7 @@ law_token_time_regulations = {
 	progressiveness = 25
 
 	unlocking_technologies = {
-		labor_movement
+		pre_war_ideological_thought
 	}
 
 	disallowing_laws = {
@@ -93,7 +93,7 @@ law_limited_work_hours = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		labor_movement
+		pre_war_ideological_thought
 	}
 
 	disallowing_laws = {

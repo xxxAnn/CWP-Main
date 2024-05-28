@@ -593,7 +593,7 @@ on_bpm_acquired_technology = {
 			}
 			if = {
 				limit = {
-					has_technology_researched = labor_movement
+					has_technology_researched = pre_war_ideological_thought
 					NOT = {
 						has_variable = bpm_intl_labor_movement_researched
 					}

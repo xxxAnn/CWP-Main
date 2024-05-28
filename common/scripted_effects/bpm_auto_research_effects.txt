@@ -29,7 +29,7 @@
 			}
 		}
 		bpm_add_tech_progress = {
-			TECH = labor_movement
+			TECH = pre_war_ideological_thought
 			AMT = 150
 		}
 	}

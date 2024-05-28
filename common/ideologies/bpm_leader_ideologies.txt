@@ -1720,7 +1720,7 @@ ideology_social_democrat = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = labor_movement
+			has_technology_researched = pre_war_ideological_thought
 		}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {

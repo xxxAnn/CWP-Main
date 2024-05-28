@@ -268,7 +268,7 @@ social_democrat_party = {
 		default = "/gfx/interface/icons/political_parties/social_democrats.dds"
 	}
 	unlocking_technologies = {
-		labor_movement
+		pre_war_ideological_thought
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {
@@ -276,7 +276,7 @@ social_democrat_party = {
 	}
 	available_for_interest_group = {
 		owner = {
-			has_technology_researched = labor_movement
+			has_technology_researched = pre_war_ideological_thought
 		}
 		bpm_ig_enabled = yes
 		NOT = {
