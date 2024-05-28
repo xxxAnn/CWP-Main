@@ -160,7 +160,7 @@ NCharacters = {
 }
 
 NPolitics = {
-	MAX_INSTITUTION_INVESTMENT = 10						# Highest Investment Level for active Institutions (modifier is clamped to this)
+	MAX_INSTITUTION_INVESTMENT = 5						# Highest Investment Level for active Institutions (modifier is clamped to this)
 
 	POWERFUL_IG_THRESHOLD = 0.20		# Interest groups with more Clout than this are considered to be influential
 	POWERFUL_IG_CUTOFF = 0.18			# Powerful interest groups with less Clout than this will stop being influential
