@@ -1,20 +1,4 @@
-﻿bpm_colonial_affairs_institution_name = {
-	type = country
-	random_valid = no
-
-	text = {
-		trigger = { this = c:USA }
-		localization_key = institution_colonial_affairs_usa
-	}
-
-	text = {
-		trigger = { always = no }
-		fallback = yes
-		localization_key = institution_colonial_affairs_base
-	}
-}
-
-bpm_schools_institution_name = {
+﻿bpm_schools_institution_name = {
 	type = country
 	random_valid = no
 

@@ -68,8 +68,6 @@ law_frontier_colonization = {
 		state_migration_pull_unincorporated_mult = 0.5
 	}
 	
-	institution = institution_colonial_affairs
-
 	pop_support = {
 		value = 0
 		# Farmers like frontiers
@@ -107,8 +105,6 @@ law_colonial_resettlement = {
 		state_migration_pull_unincorporated_mult = 0.5
 	}
 	
-	institution = institution_colonial_affairs
-
 	pop_support = {
 		value = 0
 		# Officers like colonialism
@@ -169,8 +165,6 @@ law_colonial_exploitation = {
 		country_tension_decay_mult = -0.25
 	}
 	
-	institution = institution_colonial_affairs 
-
 	pop_support = {
 		value = 0
 		# Officers like colonialism

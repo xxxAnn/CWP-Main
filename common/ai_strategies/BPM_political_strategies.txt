@@ -83,9 +83,6 @@
 		ig_agrarian_populists
 	}
 	institution_scores = {
-		institution_colonial_affairs = {
-			value = 150
-		}
 		institution_social_security = {
 			value = 50
 		}
@@ -215,9 +212,6 @@ ai_strategy_reactionary_agenda = {
 		ig_agrarian_populists
 	}
 	institution_scores = {
-		institution_colonial_affairs = {
-			value = 200
-		}
 		institution_social_security = {
 			value = 50
 		}
@@ -380,9 +374,6 @@ ai_strategy_progressive_agenda = {
 		ig_petty_bourgeoisie
 	}
 	institution_scores = {
-		institution_colonial_affairs = {
-			value = 75
-		}
 		institution_social_security = {
 			value = 100
 		}
@@ -545,9 +536,6 @@ ai_strategy_progressive_conservative_agenda = {
 		ig_anarchists
 	}
 	institution_scores = {
-		institution_colonial_affairs = {
-			value = 100
-		}
 		institution_social_security = {
 			value = 100
 		}
@@ -678,9 +666,6 @@ ai_strategy_egalitarian_agenda = {
 		ig_market_liberals
 	}
 	institution_scores = {
-		institution_colonial_affairs = {
-			value = 50
-		}
 		institution_social_security = {
 			value = 150
 		}
@@ -847,9 +832,6 @@ ai_strategy_nationalist_agenda = {
 		ig_anarchists
 	}
 	institution_scores = {
-		institution_colonial_affairs = {
-			value = 150
-		}
 		institution_social_security = {
 			value = 75
 		}
@@ -1019,9 +1001,6 @@ ai_strategy_maintain_mandate_of_heaven = {
 		ig_anarchists
 	}
 	institution_scores = {
-		institution_colonial_affairs = {
-			value = 50
-		}
 		institution_social_security = {
 			value = 50
 		}

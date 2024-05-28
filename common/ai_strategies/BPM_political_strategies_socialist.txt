@@ -61,9 +61,6 @@
 		ig_national_liberals
 	}
 	institution_scores = {
-		institution_colonial_affairs = {
-			value = 50
-		}
 		institution_social_security = {
 			value = 150
 		}
@@ -181,9 +178,6 @@ ai_strategy_socialist_retreat_agenda = {
 		ig_national_liberals
 	}
 	institution_scores = {
-		institution_colonial_affairs = {
-			value = 50
-		}
 		institution_social_security = {
 			value = 100
 		}
