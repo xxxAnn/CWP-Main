@@ -209,7 +209,7 @@ law_elected_officers = {
 	}
 
 	unlocking_technologies = {
-		anarchism
+		pre_war_ideological_thought
 	}
 
 	disallowing_laws = {

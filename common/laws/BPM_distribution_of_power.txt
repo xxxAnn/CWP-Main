@@ -672,7 +672,7 @@ law_anarchy = {
 	progressiveness = 200
 
 	unlocking_technologies = {
-		anarchism 
+		pre_war_ideological_thought 
 	}
 	
 	unlocking_laws = {

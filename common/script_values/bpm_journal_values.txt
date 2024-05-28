@@ -952,7 +952,7 @@ bpm_je_general_strike_power = {
 		if = {
 			limit = {
 				NOT = {
-					has_technology_researched = anarchism
+					has_technology_researched = pre_war_ideological_thought
 				}
 			}
 			subtract = 25

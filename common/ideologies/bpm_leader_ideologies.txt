@@ -650,7 +650,7 @@ ideology_radical = {
 						}
 					}
 					owner = {
-						has_technology_researched = socialism
+						has_technology_researched = pre_war_ideological_thought
 					}
 				}
 				add = -225
@@ -1924,7 +1924,7 @@ ideology_communist = {
 			}
 		}
 		owner = {
-			has_technology_researched = socialism
+			has_technology_researched = pre_war_ideological_thought
 		}
 	}
 	leader_weight = {
@@ -2147,7 +2147,7 @@ ideology_vanguardist = {
 			}
 		}
 		owner = {
-			has_technology_researched = socialism
+			has_technology_researched = pre_war_ideological_thought
 		}
 	}
 	leader_weight = {
@@ -2608,7 +2608,7 @@ ideology_anarchist = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = anarchism
+			has_technology_researched = pre_war_ideological_thought
 		}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
@@ -2816,7 +2816,7 @@ ideology_anarchist_syndicalist = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = anarchism
+			has_technology_researched = pre_war_ideological_thought
 		}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
@@ -2992,7 +2992,7 @@ ideology_agrarian_socialist_leader = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = socialism
+			has_technology_researched = pre_war_ideological_thought
 		}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
@@ -5068,7 +5068,7 @@ ideology_humanitarian_royalist = {
 		if = {
 			limit = {
 				owner = {
-					has_technology_researched = socialism
+					has_technology_researched = pre_war_ideological_thought
 				}
 				scope:interest_group = {
 					is_interest_group_type = ig_trade_unions

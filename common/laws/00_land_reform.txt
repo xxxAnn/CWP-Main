@@ -387,7 +387,7 @@ law_collectivized_agriculture = {
 		law_commercialized_agriculture
 	}
 
-	unlocking_technologies = { socialism }
+	unlocking_technologies = { pre_war_ideological_thought }
 
 	pop_support = {
 		value = 0

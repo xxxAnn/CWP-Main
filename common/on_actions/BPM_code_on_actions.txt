@@ -567,7 +567,7 @@ on_bpm_acquired_technology = {
 			}
 			if = {
 				limit = {
-					has_technology_researched = socialism
+					has_technology_researched = pre_war_ideological_thought
 					NOT = {
 						has_variable = bpm_intl_socialism_researched
 					}
@@ -580,7 +580,7 @@ on_bpm_acquired_technology = {
 			}
 			if = {
 				limit = {
-					has_technology_researched = anarchism
+					has_technology_researched = pre_war_ideological_thought
 					NOT = {
 						has_variable = bpm_intl_anarchism_researched
 					}

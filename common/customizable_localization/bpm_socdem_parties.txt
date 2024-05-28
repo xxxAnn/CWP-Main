@@ -22,13 +22,13 @@ gbr_socdem_party_name = {
 
 	text = {
 		trigger = {
-			NOT = { has_technology_researched = socialism }
+			NOT = { has_technology_researched = pre_war_ideological_thought }
 		}
 		localization_key = party_gbr_just
 	}
 	text = {
 		trigger = {
-			has_technology_researched = socialism
+			has_technology_researched = pre_war_ideological_thought
 			NOT = { has_global_variable = first_intl_chain_complete_var }
 			NOT = { has_variable = local_socialists_disunited_var }
 		}
@@ -36,7 +36,7 @@ gbr_socdem_party_name = {
 	}
 	text = {
 		trigger = {
-			has_technology_researched = socialism
+			has_technology_researched = pre_war_ideological_thought
 			has_global_variable = first_intl_chain_complete_var
 			NOR = {
 				has_global_variable = global_socialist_heroic_period
@@ -69,7 +69,7 @@ ita_socdem_party_name = {
 	}
 	text = {
 		trigger = {
-			has_technology_researched = socialism
+			has_technology_researched = pre_war_ideological_thought
 			has_global_variable = first_intl_chain_complete_var
 			NOR = {
 				has_global_variable = global_socialist_heroic_period

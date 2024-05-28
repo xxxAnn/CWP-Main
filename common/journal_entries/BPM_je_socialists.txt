@@ -153,7 +153,7 @@ je_bpm_propaganda_of_the_deed = {
 		#	strata = poor 
 		# }
 		bpm_performance_significant_country = yes
-		# has_technology_researched = anarchism
+		# has_technology_researched = pre_war_ideological_thought
 		#OR = {
 		#	ig:ig_anarchists = {
 		#		is_marginal = no
@@ -413,7 +413,7 @@ je_bpm_agrarian_socialism = {
 				TECH_RATE_1 = 60
 				TECH_RATE_2 = 120
 				TECH_RATE_3 = 240
-				TECH1 = socialism
+				TECH1 = pre_war_ideological_thought
 				TECH2 = pre_war_ideological_thought
 			}
 			set_variable = {
@@ -628,7 +628,7 @@ je_bpm_syndicalism = {
 				TECH_RATE_1 = 60
 				TECH_RATE_2 = 120
 				TECH_RATE_3 = 240
-				TECH1 = anarchism
+				TECH1 = pre_war_ideological_thought
 				TECH2 = pre_war_ideological_thought
 			}
 			# Make characters Syndicalist/Anarcho-Syndicalist at certain level

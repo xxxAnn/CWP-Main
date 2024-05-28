@@ -611,7 +611,7 @@ radical_party = {
 						has_law = law_type:law_illegal_labor_unions
 					}
 					NOR = {
-						has_technology_researched = socialism
+						has_technology_researched = pre_war_ideological_thought
 						has_global_variable = first_intl_chain_complete_var
 					}
 				}
