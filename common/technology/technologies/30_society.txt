@@ -83,7 +83,6 @@ anesthetics = {
 	texture = "gfx/interface/icons/invention_icons/society/anesthetics.dds"
 	category = society
 	modifier = {
-		country_institution_health_system_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		pre_war_healthcare
@@ -99,7 +98,6 @@ observatories = {
 	category = society
 	modifier = {
 		state_expected_sol_from_literacy = 1
-		country_institution_schools_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		scientific_method
@@ -248,7 +246,6 @@ vaccination_programs = {
 	texture = "gfx/interface/icons/invention_icons/society/vaccination_programs.dds"
 	category = society
 	modifier = {
-		country_institution_health_system_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		inactivated_vaccines
@@ -374,7 +371,6 @@ trauma_centers = {
 	category = society
 	modifier = {
 		state_mortality_turmoil_mult = -0.01
-		country_institution_health_system_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		penicillin
@@ -609,7 +605,6 @@ automobile_speed_measurement_devices = {
 	texture = "gfx/interface/icons/invention_icons/society/automobile_speed_measurement_devices.dds"
 	category = society
 	modifier = {
-		country_institution_police_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		rapid_transit
@@ -645,7 +640,6 @@ norethisterone = {
 	category = society
 	modifier = {
 		state_birth_rate_mult = -0.05
-		country_institution_health_system_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		all_glass_syringes
@@ -903,7 +897,6 @@ anti_crime_initiatives = {
 	texture = "gfx/interface/icons/invention_icons/society/anti_crime_initiatives.dds"
 	category = society
 	modifier = {
-		country_institution_police_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		automobile_speed_measurement_devices
@@ -998,7 +991,6 @@ measles_vaccine = {
 	category = society
 	modifier = {
 		building_group_bg_healthcare_throughput_add = 0.05
-		country_institution_health_system_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		blood_typing
@@ -1198,7 +1190,6 @@ home_security_system = {
 	texture = "gfx/interface/icons/invention_icons/society/home_security_system.dds"
 	category = society
 	modifier = {
-		country_institution_police_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		anti_crime_initiatives
@@ -1707,7 +1698,6 @@ compstat = {
 	texture = "gfx/interface/icons/invention_icons/society/compstat.dds"
 	category = society
 	modifier = {
-		country_institution_police_max_investment_add = 1
 	}
 	unlocking_technologies = {
 		dna_forensics
