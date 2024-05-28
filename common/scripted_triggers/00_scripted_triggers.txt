@@ -1735,7 +1735,6 @@ has_progressive_ideology = {
 		# has_ideology = ideology:ideology_anarchist
 		# has_ideology = ideology:ideology_environmentalist
 		# has_ideology = ideology:ideology_pacifist
-		# has_ideology = ideology:ideology_abolitionist
 		# has_ideology = ideology:ideology_developmentalist
 		# has_ideology = ideology:ideology_technocrat
 		# has_ideology = ideology:ideology_liberation_theologist
@@ -1751,7 +1750,6 @@ has_socialist_ideology = {
 		# has_ideology = ideology:ideology_liberation_theologist
 		# has_ideology = ideology:ideology_atheist
 		# has_ideology = ideology:ideology_anarchist
-		# has_ideology = ideology:ideology_abolitionist
 		# has_ideology = ideology:ideology_vanguardist
 	}
 }
@@ -1771,7 +1769,6 @@ has_reactionary_ideology = {
 		# has_ideology = ideology:ideology_racist
 		# has_ideology = ideology:ideology_demagogue
 		# has_ideology = ideology:ideology_punitive
-		# has_ideology = ideology:ideology_slaver
 	}
 }
 
@@ -1786,7 +1783,6 @@ has_conservative_ideology = {
 	OR = {
 		# has_ideology = ideology:ideology_dixiecrat
 		# has_ideology = ideology:ideology_punitive
-		# has_ideology = ideology:ideology_slaver
 		# has_ideology = ideology:ideology_aristocrat
 	}
 }

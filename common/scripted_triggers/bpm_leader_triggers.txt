@@ -67,7 +67,6 @@ bpm_leader_is_progressive_liberal = {
 		bpm_leader_is_radical_liberal = yes
 		has_ideology = ideology:ideology_atheist
 		has_ideology = ideology:ideology_feminist
-		has_ideology = ideology:ideology_abolitionist
 		has_ideology = ideology:ideology_humanitarian
 		has_ideology = ideology:ideology_land_reformer
 	}
@@ -193,7 +192,6 @@ bpm_leader_is_reactionary = {
 		}
 		has_ideology = ideology:ideology_theocrat
 		has_ideology = ideology:ideology_luddite
-		has_ideology = ideology:ideology_slaver
 		has_ideology = ideology:ideology_legitimist
 	}
 }
