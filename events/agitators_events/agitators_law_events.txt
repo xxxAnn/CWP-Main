@@ -1777,7 +1777,7 @@ agitators_law_events.21 = {
 	}
 	trigger = {
 		agitator_supports_enaction = yes
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		OR = {
 			is_enacting_law = law_type:law_executive
 			is_enacting_law = law_type:law_parliamentary
@@ -1857,7 +1857,7 @@ agitators_law_events.22 = {
 	}
 	trigger = {
 		agitator_supports_enaction = yes
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		OR = {
 			is_enacting_law = law_type:law_executive
 			is_enacting_law = law_type:law_parliamentary
@@ -1960,7 +1960,7 @@ agitators_law_events.23 = {
 	}
 	trigger = {
 		agitator_supports_enaction = yes
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		OR = {
 			is_enacting_law = law_type:law_executive
 			is_enacting_law = law_type:law_parliamentary
@@ -2034,7 +2034,7 @@ agitators_law_events.23 = {
 	option = {
 		name = agitators_law_events.23.c
 		trigger = {
-			#has_law = law_type:law_autocracy
+			has_law = law_type:law_autocracy
 		}
 		add_radicals = {
 			value = small_radicals
@@ -2066,7 +2066,7 @@ agitators_law_events.24 = {
 	}
 	trigger = {
 		agitator_supports_enaction = yes
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		OR = {
 			is_enacting_law = law_type:law_executive
 			is_enacting_law = law_type:law_parliamentary
@@ -2186,7 +2186,7 @@ agitators_law_events.25 = {
 	}
 	trigger = {
 		OR = {
-			#has_law = law_type:law_autocracy
+			has_law = law_type:law_autocracy
 			#has_law = law_type:law_oligarchy
 			#has_law = law_type:law_anocracy
 		}
@@ -2257,7 +2257,7 @@ agitators_law_events.26 = {
 	}
 	trigger = {
 		OR = {
-			#has_law = law_type:law_autocracy
+			has_law = law_type:law_autocracy
 			#has_law = law_type:law_oligarchy
 			#has_law = law_type:law_anocracy
 		}
@@ -2362,7 +2362,7 @@ agitators_law_events.27 = {
 	}
 	trigger = {
 		OR = {
-			#has_law = law_type:law_autocracy
+			has_law = law_type:law_autocracy
 			#has_law = law_type:law_oligarchy
 			#has_law = law_type:law_anocracy
 		}

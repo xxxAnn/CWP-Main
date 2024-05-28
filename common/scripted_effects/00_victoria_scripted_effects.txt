@@ -54,7 +54,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_council_elective
+								has_law = law_type:law_socialist_republic
 							}
 						}
 						add = 50
@@ -71,7 +71,7 @@ adopt_random_antigovernment_ideology = {
 							}
 						}
 						NOT = {
-							#has_law = law_type:law_council_elective
+							has_law = law_type:law_socialist_republic
 						}
 					}
 				}
@@ -79,7 +79,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_hereditary
+								has_law = law_type:law_monarchy
 							}
 						}
 						add = 25
@@ -87,7 +87,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_autocracy
+								has_law = law_type:law_autocracy
 							}
 						}
 						add = 25
@@ -122,7 +122,7 @@ adopt_random_antigovernment_ideology = {
 							}
 						}
 						NOT = {
-							#has_law = law_type:law_council_elective
+							has_law = law_type:law_socialist_republic
 						}
 					}
 				}
@@ -130,7 +130,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_hereditary
+								has_law = law_type:law_monarchy
 							}
 						}
 						add = 25
@@ -138,7 +138,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_autocracy
+								has_law = law_type:law_autocracy
 							}
 						}
 						add = 25
@@ -178,7 +178,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_hereditary
+								has_law = law_type:law_monarchy
 							}
 						}
 						add = 25
@@ -186,7 +186,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_autocracy
+								has_law = law_type:law_autocracy
 							}
 						}
 						add = 50
@@ -272,7 +272,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_multiculturalist
+								has_law = law_type:law_multicultural
 							}
 						}
 						multiply = {
@@ -292,7 +292,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_council_elective
+								has_law = law_type:law_socialist_republic
 							}
 						}
 						multiply = {
@@ -305,7 +305,7 @@ adopt_random_antigovernment_ideology = {
 			50 = {
 				trigger = {
 					owner = {
-						#has_law = law_type:law_religious_institutions
+						has_law = law_type:law_state_religion
 						NOT = {
 							ruler = {
 								has_ideology = ideology:ideology_atheist
@@ -317,7 +317,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_hereditary
+								has_law = law_type:law_monarchy
 							}
 						}
 						add = 50
@@ -325,7 +325,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_religious_institutions
+								has_law = law_type:law_state_religion
 							}
 						}
 						add = 100
@@ -333,7 +333,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_theocratic
+								has_law = law_type:law_theocracy
 							}
 						}
 						add = 200
@@ -355,7 +355,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_hereditary
+								has_law = law_type:law_monarchy
 							}
 						}
 						add = 100
@@ -363,7 +363,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_autocracy
+								has_law = law_type:law_autocracy
 							}
 						}
 						add = 100
@@ -371,7 +371,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_oligarchy
+								has_law = law_type:law_oligarchy
 							}
 						}
 						add = 50
@@ -436,7 +436,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_council_elective
+								has_law = law_type:law_socialist_republic
 							}
 						}
 						multiply = {
@@ -460,7 +460,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_socialization
+								has_law = law_type:law_command_economy
 							}
 						}
 						add = 50
@@ -498,7 +498,7 @@ adopt_random_antigovernment_ideology = {
 				trigger = {
 					owner = {
 						OR = {
-							#has_law = law_type:law_socialization
+							has_law = law_type:law_command_economy
 							#has_law = law_type:law_free_market
 							#has_law = law_type:law_interventionism
 						}
@@ -590,7 +590,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_hereditary
+								has_law = law_type:law_monarchy
 							}
 						}
 						add = 25
@@ -612,7 +612,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_hereditary
+								has_law = law_type:law_monarchy
 							}
 						}
 						add = 25
@@ -634,7 +634,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_hereditary
+								has_law = law_type:law_monarchy
 							}
 						}
 						add = 25
@@ -722,14 +722,14 @@ adopt_random_antigovernment_ideology = {
 						}
 					}
 					owner = {
-						#has_law = law_type:law_hereditary
+						has_law = law_type:law_monarchy
 					}
 				}
 				modifier = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_hereditary
+								has_law = law_type:law_monarchy
 							}
 						}
 						multiply = {
@@ -739,7 +739,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_autocracy
+								has_law = law_type:law_autocracy
 							}
 						}
 						multiply = {
@@ -749,7 +749,7 @@ adopt_random_antigovernment_ideology = {
 					if = {
 						limit = {
 							owner = {
-								#has_law = law_type:law_oligarchy
+								has_law = law_type:law_oligarchy
 							}
 						}
 						add = 25
@@ -1451,7 +1451,7 @@ enact_preferred_governance_principle = {
 		if = {
 			limit = {
 				civil_war_origin_country = {
-					#has_law = law_type:law_hereditary
+					has_law = law_type:law_monarchy
 				}
 			}
 			set_variable = prov_gov_monarchy
@@ -1459,7 +1459,7 @@ enact_preferred_governance_principle = {
 		else_if = {
 			limit = {
 				civil_war_origin_country = {
-					#has_law = law_type:law_theocratic
+					has_law = law_type:law_theocracy
 				}
 			}
 			set_variable = prov_gov_theocracy
@@ -1467,7 +1467,7 @@ enact_preferred_governance_principle = {
 		else_if = {
 			limit = {
 				civil_war_origin_country = {
-					#has_law = law_type:law_council_elective
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			set_variable = prov_gov_council_republic

@@ -792,7 +792,7 @@ revolution_pulse_events.7 = {
 				ig_approval <= 0
 			}
 		}
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		revolution_progress_medium = yes
 	}
 	cancellation_trigger = {
@@ -1177,9 +1177,9 @@ revolution_pulse_events.10 = {
 			liberal_revolution_ongoing = yes
 		}
 		OR = {
-			#has_law = law_type:law_hereditary
-			#has_law = law_type:law_autocracy
-			#has_law = law_type:law_oligarchy
+			has_law = law_type:law_monarchy
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
 			#has_law = law_type:law_anocracy
 		}
 		revolution_progress_high = yes
@@ -1378,7 +1378,7 @@ revolution_pulse_events.12 = {
 	trigger = {
 		socialist_revolution_ongoing = yes
 		OR = {
-			#has_law = law_type:law_direct_democracy
+			has_law = law_type:law_direct_democracy
 			#has_law = law_type:law_consensus_democracy
 			#has_law = law_type:law_representative_democracy
 		}
@@ -1473,7 +1473,7 @@ revolution_pulse_events.13 = {
 	trigger = {
 		socialist_revolution_ongoing = yes
 		OR = {
-			#has_law = law_type:law_direct_democracy
+			has_law = law_type:law_direct_democracy
 			#has_law = law_type:law_consensus_democracy
 			#has_law = law_type:law_representative_democracy
 		}
@@ -2564,7 +2564,7 @@ revolution_pulse_events.21 = {
 				value < neutral
 			}
 		}
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		OR = {
 			revolution_progress_medium = yes
 			revolution_progress_high = yes
@@ -2671,7 +2671,7 @@ revolution_pulse_events.22 = {
 				value < neutral
 			}
 		}
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		OR = {
 			revolution_progress_medium = yes
 			revolution_progress_high = yes
@@ -2815,7 +2815,7 @@ revolution_pulse_events.23 = {
 				value < neutral
 			}
 		}
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		OR = {
 			revolution_progress_low = yes
 			revolution_progress_medium = yes
@@ -2907,7 +2907,7 @@ revolution_pulse_events.24 = {
 				value < neutral
 			}
 		}
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		revolution_progress_high = yes
 	}
 	cancellation_trigger = {
@@ -3075,7 +3075,7 @@ revolution_pulse_events.25 = {
 				value < neutral
 			}
 		}
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		revolution_progress_high = yes
 		any_scope_character = {
 			is_heir = yes
@@ -4191,7 +4191,7 @@ revolution_pulse_events.33 = {
 			is_insurrectionary = yes
 		}
 		NOR = {
-			#has_law = law_type:law_socialization
+			has_law = law_type:law_command_economy
 			any_country = {
 				has_war_with = root
 			}
@@ -4450,7 +4450,7 @@ revolution_pulse_events.35 = {
 			is_insurrectionary = yes
 		}
 		NOR = {
-			#has_law = law_type:law_council_elective
+			has_law = law_type:law_socialist_republic
 			any_country = {
 				has_war_with = root
 			}

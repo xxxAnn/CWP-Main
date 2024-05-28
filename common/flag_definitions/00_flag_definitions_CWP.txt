@@ -261,7 +261,7 @@ MTB = { # Zimbabwe
 							country_has_primary_culture = cu:boer
 						}
 						NOR = {
-							#has_law = law_type:law_multiculturalist
+							has_law = law_type:law_multicultural
 							#has_law = law_type:law_syncretist
 						}
 					}
@@ -294,7 +294,7 @@ LZO = { # Zambia
 							country_has_primary_culture = cu:boer
 						}
 						NOR = {
-							#has_law = law_type:law_multiculturalist
+							has_law = law_type:law_multicultural
 							#has_law = law_type:law_syncretist
 						}
 					}

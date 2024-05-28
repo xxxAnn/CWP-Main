@@ -6,7 +6,7 @@
 	female_heir = "RULER_TITLE_HEIR_APPARENT"
 	possible = {
 		is_country_type = unrecognized
-		#has_law = law_type:law_parliamentary
+		has_law = law_type:law_parliamentary_republic
 		has_voting_rights = no
 		exists = c:CIR
 		c:CIR = ROOT
@@ -24,18 +24,8 @@ gov_parliamentary_dictatorship = {
 	male_ruler = "RULER_TITLE_LORD_PROTECTOR"
 	female_ruler = "RULER_TITLE_LADY_PROTECTOR"
 	possible = {
-		#has_law = law_type:law_parliamentary
-		#has_law = law_type:law_autocracy
-		NOT = {
-			AND = {
-				#has_law = law_type:law_privatized_police
-				#has_law = law_type:law_criminal_restitution
-				#has_law = law_type:law_private_military
-				#has_law = law_type:law_private_health_insurance
-				#has_law = law_type:law_private_schools
-				#has_law = law_type:law_private_schools
-			}
-		}
+		has_law = law_type:law_parliamentary_republic
+		has_law = law_type:law_autocracy
 	}
 	on_government_type_change = {
 		change_to_dictatorial = yes
@@ -50,18 +40,8 @@ gov_parliamentary_oligarchy = {
 	male_ruler = "RULER_TITLE_CHANCELLOR"
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 	possible = {
-		#has_law = law_type:law_parliamentary
+		has_law = law_type:law_parliamentary_republic
 		has_voting_rights = no
-		NOT = {
-			AND = {
-				#has_law = law_type:law_privatized_police
-				#has_law = law_type:law_criminal_restitution
-				#has_law = law_type:law_private_military
-				#has_law = law_type:law_private_health_insurance
-				#has_law = law_type:law_private_schools
-				#has_law = law_type:law_private_schools
-			}
-		}
 	}
 	on_government_type_change = {
 		change_to_dictatorial = yes
@@ -77,7 +57,7 @@ gov_parliamentary_single_party_state = {
 	male_ruler = "RULER_TITLE_CHANCELLOR"
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 	possible = {
-		#has_law = law_type:law_parliamentary
+		has_law = law_type:law_parliamentary_republic
 		#has_law = law_type:law_anocracy
 	}
 	on_government_type_change = {
@@ -94,18 +74,8 @@ gov_parliamentary_democracy = {
 	male_ruler = "RULER_TITLE_CHANCELLOR"
 	female_ruler = "RULER_TITLE_CHANCELLOR"
 	possible = {
-		#has_law = law_type:law_parliamentary
+		has_law = law_type:law_parliamentary_republic
 		has_voting_rights = yes
-		NOT = {
-			AND = {
-				#has_law = law_type:law_privatized_police
-				#has_law = law_type:law_criminal_restitution
-				#has_law = law_type:law_private_military
-				#has_law = law_type:law_private_health_insurance
-				#has_law = law_type:law_private_schools
-				#has_law = law_type:law_private_schools
-			}
-		}
 	}
 	on_government_type_change = {
 		change_to_parliamentary_elective = yes

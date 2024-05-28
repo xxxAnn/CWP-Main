@@ -9,15 +9,15 @@
 	text = {
 		localization_key = enactment_phase_0_courep
 		trigger = {
-			#has_law = law_type:law_council_elective
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	text = {
 		localization_key = enactment_phase_0_autocracy
 		trigger = {
-			#has_law = law_type:law_autocracy
+			has_law = law_type:law_autocracy
 			NOT = {
-				#has_law = law_type:law_council_elective
+				has_law = law_type:law_socialist_republic
 			}
 		}
 	}
@@ -25,8 +25,8 @@
 		localization_key = enactment_phase_0_demrep
 		trigger = {
 			OR = {
-				#has_law = law_type:law_parliamentary
-				#has_law = law_type:law_executive
+				has_law = law_type:law_parliamentary_republic
+				has_law = law_type:law_presidential_republic
 			}
 			OR = {
 				#has_law = law_type:law_direct_democracy
@@ -38,7 +38,7 @@
 	text = {
 		localization_key = enactment_phase_0_conmon
 		trigger = {
-			#has_law = law_type:law_hereditary
+			has_law = law_type:law_monarchy
 			OR = {
 				#has_law = law_type:law_direct_democracy
 				#has_law = law_type:law_representative_democracy
@@ -49,10 +49,10 @@
 	text = {
 		localization_key = enactment_phase_0_mon
 		trigger = {
-			#has_law = law_type:law_hereditary
+			has_law = law_type:law_monarchy
 			OR = {
 				#has_law = law_type:law_representative_democracy
-				#has_law = law_type:law_oligarchy
+				has_law = law_type:law_oligarchy
 				#has_law = law_type:law_anocracy
 			}
 		}
@@ -76,15 +76,15 @@ enactment_phase_1 = {
 	text = {
 		localization_key = enactment_phase_1_courep
 		trigger = {
-			#has_law = law_type:law_council_elective
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	text = {
 		localization_key = enactment_phase_1_autocracy
 		trigger = {
-			#has_law = law_type:law_autocracy
+			has_law = law_type:law_autocracy
 			NOT = {
-				#has_law = law_type:law_council_elective
+				has_law = law_type:law_socialist_republic
 			}
 		}
 	}
@@ -92,8 +92,8 @@ enactment_phase_1 = {
 		localization_key = enactment_phase_1_demrep
 		trigger = {
 			OR = {
-				#has_law = law_type:law_parliamentary
-				#has_law = law_type:law_executive
+				has_law = law_type:law_parliamentary_republic
+				has_law = law_type:law_presidential_republic
 			}
 			OR = {
 				#has_law = law_type:law_representative_democracy
@@ -105,7 +105,7 @@ enactment_phase_1 = {
 	text = {
 		localization_key = enactment_phase_1_conmon
 		trigger = {
-			#has_law = law_type:law_hereditary
+			has_law = law_type:law_monarchy
 			OR = {
 				#has_law = law_type:law_representative_democracy
 				#has_law = law_type:law_consensus_democracy
@@ -116,10 +116,10 @@ enactment_phase_1 = {
 	text = {
 		localization_key = enactment_phase_1_mon
 		trigger = {
-			#has_law = law_type:law_hereditary
+			has_law = law_type:law_monarchy
 			OR = {
 				#has_law = law_type:law_representative_democracy
-				#has_law = law_type:law_oligarchy
+				has_law = law_type:law_oligarchy
 				#has_law = law_type:law_anocracy
 			}
 		}
@@ -143,15 +143,15 @@ enactment_phase_2 = {
 	text = {
 		localization_key = enactment_phase_2_courep
 		trigger = {
-			#has_law = law_type:law_council_elective
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	text = {
 		localization_key = enactment_phase_2_autocracy
 		trigger = {
-			#has_law = law_type:law_autocracy
+			has_law = law_type:law_autocracy
 			NOT = {
-				#has_law = law_type:law_council_elective
+				has_law = law_type:law_socialist_republic
 			}
 		}
 	}
@@ -159,8 +159,8 @@ enactment_phase_2 = {
 		localization_key = enactment_phase_2_demrep
 		trigger = {
 			OR = {
-				#has_law = law_type:law_parliamentary
-				#has_law = law_type:law_executive
+				has_law = law_type:law_parliamentary_republic
+				has_law = law_type:law_presidential_republic
 			}
 			OR = {
 				#has_law = law_type:law_representative_democracy
@@ -172,7 +172,7 @@ enactment_phase_2 = {
 	text = {
 		localization_key = enactment_phase_2_conmon
 		trigger = {
-			#has_law = law_type:law_hereditary
+			has_law = law_type:law_monarchy
 			OR = {
 				#has_law = law_type:law_representative_democracy
 				#has_law = law_type:law_consensus_democracy
@@ -183,10 +183,10 @@ enactment_phase_2 = {
 	text = {
 		localization_key = enactment_phase_2_mon
 		trigger = {
-			#has_law = law_type:law_hereditary
+			has_law = law_type:law_monarchy
 			OR = {
 				#has_law = law_type:law_representative_democracy
-				#has_law = law_type:law_oligarchy
+				has_law = law_type:law_oligarchy
 				#has_law = law_type:law_anocracy
 			}
 		}

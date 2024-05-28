@@ -18,9 +18,9 @@ monarchy_law_events.1 = {
 	}
 	trigger = {
 		OR = {
-			#has_law = law_type:law_executive
-			#has_law = law_type:law_parliamentary
-			#has_law = law_type:law_council_elective
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
+			has_law = law_type:law_socialist_republic
 		}
 		NOT = {
 			has_modifier = monarchist_agitation
@@ -200,7 +200,7 @@ monarchy_law_events.3 = {
 		}
 		any_neighbouring_state = {
 			owner = {
-				#has_law = law_type:law_hereditary
+				has_law = law_type:law_monarchy
 			}
 		}
 	}
@@ -211,7 +211,7 @@ monarchy_law_events.3 = {
 		random_neighbouring_state = {
 			limit = {
 				owner = {
-					#has_law = law_type:law_hereditary
+					has_law = law_type:law_monarchy
 				}
 			}
 			owner = {

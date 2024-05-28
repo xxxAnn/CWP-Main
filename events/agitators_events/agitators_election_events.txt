@@ -2448,7 +2448,7 @@ agitators_election_events.19 = {
 			is_party_type = fascist_party
 		}
 		any_country = {
-			#has_law = law_type:law_council_elective
+			has_law = law_type:law_socialist_republic
 		}
 	}
 	cancellation_trigger = {
@@ -2466,7 +2466,7 @@ agitators_election_events.19 = {
 		fascist_agitator_election_scope_effect = yes
 		ordered_country = {
 			limit = {
-				#has_law = law_type:law_council_elective
+				has_law = law_type:law_socialist_republic
 			}
 			order_by = country_rank
 			save_scope_as = scary_communist_country
@@ -4085,7 +4085,7 @@ agitators_election_events.36 = {
 			is_party_type = conservative_party
 		}
 		OR = {
-			#has_law = law_type:law_religious_institutions
+			has_law = law_type:law_state_religion
 			#has_law = law_type:law_religious_policies
 		}
 		ig:ig_devout = {
@@ -4748,7 +4748,7 @@ agitators_election_events.42 = {
 			is_party_type = social_democrat_party
 		}
 		ruler.popularity <= 0
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 	}
 	cancellation_trigger = {
 		OR = {
@@ -4875,7 +4875,7 @@ agitators_election_events.43 = {
 			is_party_type = social_democrat_party
 		}
 		NOT = {
-			#has_law = law_type:law_multiculturalist
+			has_law = law_type:law_multicultural
 		}
 		NOT = {
 			#has_law = law_type:law_representative_democracy
@@ -5160,7 +5160,7 @@ agitators_election_events.45 = {
 		any_active_party = {
 			is_party_type = social_democrat_party
 		}
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 	}
 	cancellation_trigger = {
 		OR = {

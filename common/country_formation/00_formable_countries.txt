@@ -101,7 +101,7 @@ BYZ = {
 		always = yes
 	}
 	possible = {
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		has_game_rule = all_formable_nations
 	}
 }
@@ -114,7 +114,7 @@ TGC = {
 	}
 	possible = {
 		OR = {
-			#has_law = law_type:law_multiculturalist
+			has_law = law_type:law_multicultural
 			#has_law = law_type:law_syncretist
 		}
 		has_game_rule = all_formable_nations

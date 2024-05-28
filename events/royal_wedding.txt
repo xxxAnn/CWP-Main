@@ -101,7 +101,7 @@ wedding.2 = {
 				NOT = {
 					THIS = ROOT
 				}
-				#has_law = law_type:law_hereditary
+				has_law = law_type:law_monarchy
 				religion = scope:actor.religion
 				ruler = {
 					age > 36
@@ -125,7 +125,7 @@ wedding.2 = {
 					NOT = {
 						THIS = scope:marriage_country_1
 					}
-					#has_law = law_type:law_hereditary
+					has_law = law_type:law_monarchy
 					religion = scope:actor.religion
 					ruler = {
 						age > 36
@@ -143,7 +143,7 @@ wedding.2 = {
 					NOT = {
 						THIS = scope:marriage_country_1
 					}
-					#has_law = law_type:law_hereditary
+					has_law = law_type:law_monarchy
 					religion = scope:actor.religion
 					ruler = {
 						age > 36
@@ -171,7 +171,7 @@ wedding.2 = {
 						NOT = {
 							THIS = scope:marriage_country_2
 						}
-						#has_law = law_type:law_hereditary
+						has_law = law_type:law_monarchy
 						religion = scope:actor.religion
 						ruler = {
 							age > 36
@@ -193,7 +193,7 @@ wedding.2 = {
 							THIS = scope:marriage_country_2
 						}
 						relations:root >= 0
-						#has_law = law_type:law_hereditary
+						has_law = law_type:law_monarchy
 						religion = scope:actor.religion
 						ruler = {
 							age > 36

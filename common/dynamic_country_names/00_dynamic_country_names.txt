@@ -345,7 +345,7 @@ IRE = {
 				owns_entire_state_region = STATE_ULSTER
 				OR = {
 					#has_law = law_type:law_federalized
-					#has_law = law_type:law_confederated
+					has_law = law_type:law_confederated
 				}
 			}
 		}
@@ -419,7 +419,7 @@ SCA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				#has_law = law_type:law_hereditary
+				has_law = law_type:law_monarchy
 				ruler = {
 					has_culture = cu:danish
 				}
@@ -434,7 +434,7 @@ SCA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				#has_law = law_type:law_hereditary
+				has_law = law_type:law_monarchy
 				ruler = {
 					has_culture = cu:finnish
 				}
@@ -830,7 +830,7 @@ ITA = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				#has_law = law_type:law_theocratic
+				has_law = law_type:law_theocracy
 			}
 			NOT = {
 				exists = c:PAP
@@ -1180,8 +1180,8 @@ UKR = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				#has_law = law_type:law_council_elective
-				#has_law = law_type:law_direct_democracy
+				has_law = law_type:law_socialist_republic
+				has_law = law_type:law_direct_democracy
 			}
 		}
 	}
@@ -1759,7 +1759,7 @@ PAN = {
 			exists = scope:actor
 			coa_def_monarchy_flag_trigger = yes
 			scope:actor = {
-				#has_law = law_type:law_religious_institutions
+				has_law = law_type:law_state_religion
 			}
 		}
 	}
@@ -1800,7 +1800,7 @@ MYM = {
 			exists = scope:actor
 			scope:actor = {
 				#has_law = law_type:law_integrationist
-				#has_law = law_type:law_multiculturalist
+				has_law = law_type:law_multicultural
 				#has_law = law_type:law_syncretist
 			}
 		}
@@ -1881,7 +1881,7 @@ PRC = {
 			scope:actor = {
 				OR = {
 					#has_law = law_type:law_federalized
-					#has_law = law_type:law_confederated
+					has_law = law_type:law_confederated
 				}
 			}
 			coa_def_communist_flag_trigger = no
@@ -1931,7 +1931,7 @@ CHI = {
 				NOT = {
 					country_has_primary_culture = cu:manchu
 				}
-				#has_law = law_type:law_hereditary
+				has_law = law_type:law_monarchy
 			}
 		}
 	}
@@ -1994,8 +1994,8 @@ STK = {
 			exists = scope:actor
 			scope:actor = {
 				or = {
-					#has_law = law_type:law_executive
-					#has_law = law_type:law_parliamentary
+					has_law = law_type:law_presidential_republic
+					has_law = law_type:law_parliamentary_republic
 				}
 				is_subject = no
 			}
@@ -2042,7 +2042,7 @@ NRK = {
 			OR = {
 				AND = {
 					scope:actor = {
-						#has_law = law_type:law_council_elective
+						has_law = law_type:law_socialist_republic
 						is_subject = no
 					}
 				}
@@ -2095,7 +2095,7 @@ KOR = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				#has_law = law_type:law_hereditary
+				has_law = law_type:law_monarchy
 			}
 		}
 	}
@@ -2110,7 +2110,7 @@ JAP = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				#has_law = law_type:law_hereditary
+				has_law = law_type:law_monarchy
 			}
 		}
 	}
@@ -3002,7 +3002,7 @@ SDN = {
 		priority = 0
 		trigger = {
 			scope:actor = {
-				#has_law = law_type:law_theocratic
+				has_law = law_type:law_theocracy
 			}
 		}
 	}
@@ -3015,7 +3015,7 @@ SDN = {
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				#has_law = law_type:law_hereditary
+				has_law = law_type:law_monarchy
 			}
 		}
 	}
@@ -3656,7 +3656,7 @@ MTB = {
 						country_has_primary_culture = cu:boer
 					}
 					NOR = {
-						#has_law = law_type:law_multiculturalist
+						has_law = law_type:law_multicultural
 						#has_law = law_type:law_syncretist
 					}
 				}
@@ -3686,7 +3686,7 @@ LZO = {
 							country_has_primary_culture = cu:boer
 						}
 						NOR = {
-							#has_law = law_type:law_multiculturalist
+							has_law = law_type:law_multicultural
 							#has_law = law_type:law_syncretist
 						}
 					}

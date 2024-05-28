@@ -15,9 +15,9 @@
 ### scope is COUNTRY ###
 coa_monarchy_trigger = {
 	OR = {
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		overlord = {
-			#has_law = law_type:law_hereditary
+			has_law = law_type:law_monarchy
 		}
 	}
 }
@@ -30,16 +30,16 @@ coa_absolute_monarchy_trigger = {
 coa_undemocratic_monarchy_trigger = {
 	coa_monarchy_trigger = yes
 	OR = {
-		#has_law = law_type:law_autocracy
-		#has_law = law_type:law_oligarchy
+		has_law = law_type:law_autocracy
+		has_law = law_type:law_oligarchy
 		#has_law = law_type:law_anocracy
 	}
 }
 
 coa_republic_trigger = {
 	OR = {
-		#has_law = law_type:law_executive
-		#has_law = law_type:law_parliamentary
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_parliamentary_republic
 	}
 }
 
@@ -50,40 +50,39 @@ coa_dictatorship_trigger = {
 
 coa_oligarchy_trigger = {
 	coa_republic_trigger = yes
-	#has_law = law_type:law_oligarchy
+	has_law = law_type:law_oligarchy
 }
 
 coa_theocracy_trigger = {
-	#has_law = law_type:law_theocratic
+	has_law = law_type:law_theocracy
 }
 
 coa_multicultural_trigger = {
-	#has_law = law_type:law_multiculturalist
-	#has_law = law_type:law_syncretist
+	has_law = law_type:law_multicultural
 }
 
 coa_autocracy_trigger = {
-	#has_law = law_type:law_autocracy
+	has_law = law_type:law_autocracy
 }
 
 coa_parties_banned_trigger = {
 	OR = {
-		#has_law = law_type:law_autocracy
-		#has_law = law_type:law_oligarchy
+		has_law = law_type:law_autocracy
+		has_law = law_type:law_oligarchy
 		#has_law = law_type:law_anocracy
 	}
 }
 
 coa_direct_democracy_trigger = {
-	#has_law = law_type:law_direct_democracy
+	has_law = law_type:law_direct_democracy
 }
 
 coa_executive_flag_trigger = {
-	#has_law = law_type:law_executive
+	has_law = law_type:law_presidential_republic
 }
 
 coa_communist_trigger = {
-	#has_law = law_type:law_socialization
+	has_law = law_type:law_command_economy
 }
 
 coa_military_trigger = {
@@ -101,14 +100,14 @@ coa_corporatist_trigger = {
 }
 
 coa_confederacy_trigger = {
-	#has_law = law_type:law_confederated
+	has_law = law_type:law_confederated
 }
 
 coa_anarchy_trigger = {
 	AND = {
-		#has_law = law_type:law_council_elective
-		#has_law = law_type:law_direct_democracy
-		#has_law = law_type:law_confederated
+		has_law = law_type:law_socialist_republic
+		has_law = law_type:law_direct_democracy
+		has_law = law_type:law_confederated
 	}
 }
 
@@ -298,15 +297,14 @@ coa_def_oligarchy_flag_trigger = {
 coa_def_state_religion_flag_trigger = {
 	exists = scope:actor
 	scope:actor = {
-		#has_law = law_type:law_religious_institutions
+		has_law = law_type:law_state_religion
 	}
 }
 
 coa_def_egalitarian_flag_trigger = {
 	exists = scope:actor
 	scope:actor = {
-		#has_law = law_type:law_multiculturalist
-		#has_law = law_type:law_syncretistt
+		has_law = law_type:law_multicultural
 	}
 }
 
@@ -759,7 +757,7 @@ coa_def_catholic_trigger = {
 coa_def_kalmar_flag_trigger = {
 	exists = scope:actor
 	scope:actor = {
-		#has_law = law_type:law_hereditary
+		has_law = law_type:law_monarchy
 		was_formed_from = DEN
 	}
 }
