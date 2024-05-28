@@ -240,7 +240,7 @@ GLOBAL = {
 		}
 		set_variable = {
 			name = inflation_rate
-			value = 0
+			value = 5
 		}
 	}
 	every_country = {
