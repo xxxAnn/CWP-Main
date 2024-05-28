@@ -2099,63 +2099,6 @@ types TooltipTypes
         }
 	}
 
-	type corruption_tooltip = TooltipWidgetType {
-		dynamicgridbox = {
-			minimumsize = { 450 450 }
-			flowcontainer = {
-				direction = vertical
-				spacing = 20
-				margin = { 20 20 }
-				parentanchor = top|left
-				flowcontainer = {
-					direction = vertical
-					parentanchor = top
-					spacing = 30
-					textbox = {
-						text = "CORRUPTION_TOOLTIP_TITLE"
-						fontsize = 15
-					}
-					textbox = {
-						text = "CORRUPTION_BALANCE"
-						using = fontsize_medium
-					}
-				}
-				flowcontainer = {
-					margin_top = 80
-					direction = vertical
-					spacing = 0
-					flowcontainer = {
-						margin_bottom = 100
-						parentanchor = top
-						direction = vertical
-						textbox = {
-							text = "CORRUPTION_EFFECTS_TOOL"
-							using = fontsize_medium
-						}
-					}
-					flowcontainer = {
-						parentanchor = top
-						direction = vertical
-						spacing = 80
-						flowcontainer = {
-							textbox = {
-								text = "CORRUPTION_TOOLTIP_SUM2"
-								using = fontsize_medium
-							}
-						}
-						flowcontainer = {
-							textbox = {
-								text = "[GetPlayer.MakeScope.GetScriptValueDesc('corruption_baseline')]"
-								#multiline = yes
-								using = fontsize_medium
-							}
-						}
-					}
-				}
-			}
-	  	}
-	}
-
 	type pollution_tooltip = TooltipWidgetType {
 		dynamicgridbox = {
 			minimumsize = { 450 450}
