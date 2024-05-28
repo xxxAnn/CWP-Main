@@ -111,7 +111,7 @@ reactionary_party = {
 		default = "/gfx/interface/icons/political_parties/reactionary.dds"
 	}
 	unlocking_technologies = {
-		egalitarianism
+		pre_war_ideological_thought
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {

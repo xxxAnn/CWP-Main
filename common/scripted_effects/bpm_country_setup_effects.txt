@@ -407,7 +407,7 @@ bpm_setup_basic_igs = {
 				has_ideology = ideology:ideology_nonexistent
 			}
 			OR = {
-				has_technology_researched = egalitarianism
+				has_technology_researched = pre_war_ideological_thought
 				AND = {
 					bpm_country_is_in_europe = yes
 					has_global_variable = march_to_radicalism_complete_var

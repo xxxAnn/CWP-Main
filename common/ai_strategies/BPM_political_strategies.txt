@@ -707,7 +707,7 @@ ai_strategy_egalitarian_agenda = {
 		}
 	}
 	possible = {
-		has_technology_researched = egalitarianism
+		has_technology_researched = pre_war_ideological_thought
 		NOT = {
 			has_law = law_type:law_socialist_republic
 		}

@@ -49,7 +49,7 @@ bpm_ig_attraction_utils.1 = {
 				owner = {
 					bpm_performance_significant_country = yes
 					OR = {
-						has_technology_researched = egalitarianism
+						has_technology_researched = pre_war_ideological_thought
 						has_global_variable = first_intl_chain_complete_var
 					}
 				}

@@ -620,12 +620,12 @@ on_bpm_acquired_technology_peoples_spring = {
 			}
 			if = {
 				limit = {
-					has_technology_researched = egalitarianism
+					has_technology_researched = pre_war_ideological_thought
 					NOT = {
-						has_variable = bpm_intl_egalitarianism_researched
+						has_variable = bpm_intl_pre_war_ideological_thought_researched
 					}
 				}
-				set_variable = bpm_intl_egalitarianism_researched
+				set_variable = bpm_intl_pre_war_ideological_thought_researched
 				change_global_variable = {
 					name = bpm_je_march_to_radicalism_progress
 					add = 0.33

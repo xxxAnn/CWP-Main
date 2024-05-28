@@ -592,7 +592,7 @@ law_direct_democracy = {
 	progressiveness = 100
 
 	unlocking_technologies = {
-		egalitarianism
+		pre_war_ideological_thought
 	}
 
 	disallowing_laws = {

@@ -194,7 +194,7 @@ agrarian_party = {
 		always = yes
 	}
 	unlocking_technologies = {
-		egalitarianism
+		pre_war_ideological_thought
 	}
 	available_for_interest_group = {
 		bpm_ig_enabled = yes

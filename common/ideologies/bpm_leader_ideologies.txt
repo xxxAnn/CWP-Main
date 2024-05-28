@@ -526,7 +526,7 @@ ideology_radical = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = egalitarianism
+			has_technology_researched = pre_war_ideological_thought
 		}
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
@@ -738,7 +738,7 @@ ideology_reformer = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = egalitarianism
+			has_technology_researched = pre_war_ideological_thought
 			NOT = {
 				has_technology_researched = human_rights
 			}

@@ -6,13 +6,13 @@
 		if = {
 			limit = { bpm_country_is_in_europe = yes }
 			bpm_add_tech_progress = {
-				TECH = egalitarianism
+				TECH = pre_war_ideological_thought
 				AMT = 400
 			}
 		}
 		else = {
 			bpm_add_tech_progress = {
-				TECH = egalitarianism
+				TECH = pre_war_ideological_thought
 				AMT = 80
 			}
 		}

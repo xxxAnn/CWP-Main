@@ -246,7 +246,7 @@ law_proportional_taxation = {
 	}	
 	
 	unlocking_technologies = {
-		egalitarianism
+		pre_war_ideological_thought
 	}
 
 	tax_modifier_very_low = {
