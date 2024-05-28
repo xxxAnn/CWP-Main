@@ -1,4 +1,4 @@
-namespace = communist_elections
+﻿namespace = communist_elections
 namespace = cable_street
 # The Red Scare
 communist_elections.1 = {

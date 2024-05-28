@@ -1,4 +1,4 @@
-COUNTRIES = {
+﻿COUNTRIES = {
 	c:USA ?= {
 		add_journal_entry = {
 			type = west_german_unification

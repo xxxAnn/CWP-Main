@@ -1,4 +1,4 @@
-namespace = anti_state_religion
+﻿namespace = anti_state_religion
 # Religious corruption exposed
 anti_state_religion.1 = {
 	# Advance

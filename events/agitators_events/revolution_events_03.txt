@@ -1,4 +1,4 @@
-namespace = revolution_pulse2_events
+﻿namespace = revolution_pulse2_events
 revolution_pulse2_events.1 = {
 	type = country_event
 	placement = root

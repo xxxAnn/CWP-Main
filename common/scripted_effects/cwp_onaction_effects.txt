@@ -1,4 +1,4 @@
-onaction_nuclear_calculation = {
+﻿onaction_nuclear_calculation = {
 	# Nuclear Calculations
 	if = {
 		limit = {

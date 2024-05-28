@@ -1,4 +1,4 @@
-namespace = distribution_of_power_laws
+﻿namespace = distribution_of_power_laws
 
 # Autocracy/Oligarchy: Advancement
 distribution_of_power_laws.1 = {

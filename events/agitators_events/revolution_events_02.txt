@@ -1,4 +1,4 @@
-namespace = revolution_pulse_events
+﻿namespace = revolution_pulse_events
 revolution_pulse_events.1 = {
 	type = country_event
 	placement = scope:self_defense_threat_state

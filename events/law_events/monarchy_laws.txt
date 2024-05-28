@@ -1,4 +1,4 @@
-namespace = monarchy_law_events
+﻿namespace = monarchy_law_events
 # Popular Acclamation
 monarchy_law_events.1 = {
 	# Republic-to-Monarchy Advancement

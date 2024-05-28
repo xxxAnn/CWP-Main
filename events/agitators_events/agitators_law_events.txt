@@ -1,4 +1,4 @@
-namespace = agitators_law_events
+﻿namespace = agitators_law_events
 #Debate Event
 agitators_law_events.1 = {
 	type = country_event

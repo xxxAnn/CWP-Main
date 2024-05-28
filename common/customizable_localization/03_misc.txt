@@ -1,4 +1,4 @@
-enactment_phase_0 = {
+﻿enactment_phase_0 = {
 	type = country
 	text = {
 		localization_key = enactment_phase_0_tec

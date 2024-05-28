@@ -1,4 +1,4 @@
-namespace = citizenship_laws
+﻿namespace = citizenship_laws
 # More Discrimination: Advancement
 citizenship_laws.1 = {
 	type = country_event

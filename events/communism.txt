@@ -1,4 +1,4 @@
-namespace = communism
+﻿namespace = communism
 # Rising socialist leader
 communism.7 = {
 	type = country_event
