@@ -2887,7 +2887,7 @@ agitators_election_events.23 = {
 		any_active_party = {
 			is_party_type = agrarian_party
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			has_party = yes
 		}
 		any_active_party = {
@@ -2895,7 +2895,7 @@ agitators_election_events.23 = {
 				is_party_type = agrarian_party
 			}
 			any_member = {
-				is_interest_group_type = ig_securocrats
+				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_armed_forces
 			}
 		}
@@ -2920,7 +2920,7 @@ agitators_election_events.23 = {
 	}
 	immediate = {
 		agrarian_agitator_election_scope_effect = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_scope
 			leader = {
 				save_scope_as = armed_forces_leader

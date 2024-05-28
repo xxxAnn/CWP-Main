@@ -298,11 +298,12 @@ ig_suppression_events.3 = { #make them step down
 		if = {
 			limit = {
 				scope:target = {
-					NOT = { is_interest_group_type = ig_securocrats
-is_interest_group_type = ig_armed_forces }
+					NOT = {
+						is_interest_group_type = ig_armed_forces
+					}
 				}
 			}
-			ig:ig_securocrats = {
+			ig:ig_armed_forces = {
 				add_modifier = {
 					name = plot_backing_down_bad_modifier
 					months = normal_modifier_time
@@ -411,11 +412,12 @@ ig_suppression_events.4 = { #send them to jail
 		if = {
 			limit = {
 				scope:target = {
-					NOT = { is_interest_group_type = ig_securocrats
-is_interest_group_type = ig_armed_forces }
+					NOT = {
+						is_interest_group_type = ig_armed_forces
+					}
 				}
 			}
-			ig:ig_securocrats = {
+			ig:ig_armed_forces = {
 				add_modifier = {
 					name = plot_backing_down_bad_modifier
 					months = normal_modifier_time
@@ -458,7 +460,7 @@ ig_suppression_events.5 = { #break into an IG's meeting
 		OR = {
 			#has_law = law_type:law_militarized_police
 			#has_law = law_type:law_secret_police
-			NOT = { #has_law = law_type:law_right_of_assembly }
+			NOT = { has_law = law_type:law_right_of_assembly }
 		}
 	}
 
@@ -505,7 +507,7 @@ ig_suppression_events.5 = { #break into an IG's meeting
 	option = { #they have no right to be doing this!
 		name = ig_suppression_events.5.c
 		trigger = {
-			NOT = { #has_law = law_type:law_right_of_assembly }
+			NOT = { has_law = law_type:law_right_of_assembly }
 		}
 		scope:target = {
 			add_modifier = {
@@ -743,11 +745,12 @@ ig_suppression_events.1003 = { #Assassinate an Ig leader
 		if = {
 			limit = {
 				scope:target = {
-					NOT = { is_interest_group_type = ig_securocrats
-is_interest_group_type = ig_armed_forces }
+					NOT = {
+						is_interest_group_type = ig_armed_forces
+					}
 				}
 			}
-			ig:ig_securocrats = {
+			ig:ig_armed_forces = {
 				add_modifier = {
 					name = plot_backing_down_bad_modifier
 					months = normal_modifier_time

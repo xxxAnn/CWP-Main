@@ -699,11 +699,11 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_securocrats
+					is_interest_group_type = ig_armed_forces
 					is_interest_group_type = ig_armed_forces
 				}
 			}
-			ig:ig_securocrats = {
+			ig:ig_armed_forces = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time

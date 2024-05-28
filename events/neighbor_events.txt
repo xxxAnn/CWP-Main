@@ -151,7 +151,7 @@ neighbor_events.2 = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 6
 	trigger = {
-		has_ruling_interest_group = ig_securocrats
+		has_ruling_interest_group = ig_armed_forces
 		any_neighbouring_state = {
 			owner = {
 				relations:root <= relations_threshold:cold
@@ -162,7 +162,7 @@ neighbor_events.2 = {
 		save_neighbor_with_state = {
 			CRITERIA = "relations:root <= relations_threshold:cold"
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 		}
 	}

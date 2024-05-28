@@ -381,7 +381,7 @@ revolution_pulse_events.3 = {
 			}
 			save_scope_as = dual_power_state
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 		}
 	}
@@ -466,7 +466,7 @@ revolution_pulse_events.4 = {
 	}
 	trigger = {
 		any_revolution_ongoing = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			is_marginal = no
 		}
 		military_wage_level < medium
@@ -485,7 +485,7 @@ revolution_pulse_events.4 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 		}
 		random_scope_state = {
@@ -654,7 +654,7 @@ revolution_pulse_events.5 = {
 # 	cooldown = { months = long_modifier_time }
 # 	trigger = {
 # 		any_revolution_ongoing = yes
-# 		ig:ig_securocrats = {
+# 		ig:ig_armed_forces = {
 # 			is_marginal = no
 # 		}
 # 		military_wage_level < medium
@@ -1063,7 +1063,7 @@ revolution_pulse_events.9 = {
 	}
 	trigger = {
 		any_revolution_ongoing = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			is_insurrectionary = no
 			is_marginal = no
 		}
@@ -1079,7 +1079,7 @@ revolution_pulse_events.9 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 		}
 		random_scope_state = {
@@ -1291,7 +1291,7 @@ revolution_pulse_events.11 = {
 	}
 	trigger = {
 		any_revolution_ongoing = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			is_marginal = no
 			OR = {
 				is_being_suppressed = yes
@@ -1311,7 +1311,7 @@ revolution_pulse_events.11 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 		}
 		ordered_country = {
@@ -1331,7 +1331,7 @@ revolution_pulse_events.11 = {
 				value = -10
 			}
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_modifier = {
 				name = modifier_spirit_of_trenches
 				months = normal_modifier_time
@@ -1477,7 +1477,7 @@ revolution_pulse_events.13 = {
 			#has_law = law_type:law_consensus_democracy
 			#has_law = law_type:law_representative_democracy
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			is_marginal = no
 		}
 		any_scope_state = {
@@ -1512,7 +1512,7 @@ revolution_pulse_events.13 = {
 			}
 			save_scope_as = attacked_state
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = paramil_ig
 		}
 		random_scope_character = {
@@ -3931,7 +3931,7 @@ revolution_pulse_events.31 = {
 	trigger = {
 		any_revolution_ongoing = yes
 		revolution_progress_high = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			is_insurrectionary = yes
 		}
 		NOR = {
@@ -3960,7 +3960,7 @@ revolution_pulse_events.31 = {
 	}
 	immediate = {
 		save_revolution_scopes = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 			leader = {
 				save_scope_as = armed_forces_ig_leader
@@ -4716,7 +4716,7 @@ revolution_pulse_events.37 = {
 				multiplier = 0.5
 			}
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_modifier = {
 				name = modifier_armed_forces_farm_seizures
 				months = short_modifier_time
@@ -4836,7 +4836,7 @@ revolution_pulse_events.38 = {
 				}
 			}
 		}
-		ig:ig_securocrats.leader = {
+		ig:ig_armed_forces.leader = {
 			random_list = {
 				33 = {
 					add_trait = cautious

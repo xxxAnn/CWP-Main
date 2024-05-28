@@ -1673,7 +1673,7 @@ agitators_law_events.19 = {
 		#IG leader's son rolls "worst political opinion ever", asked to attend military school.
 		name = agitators_law_events.19.c
 		trigger = {
-			ig:ig_securocrats = {
+			ig:ig_armed_forces = {
 				is_in_government = yes
 			}
 		}
