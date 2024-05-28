@@ -82,8 +82,8 @@
   modifier_interest_group_ig_armed_forces_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_securocrats$ [concept_interest_group]"
 
   #Institutions
-  modifier_country_institution_welfare_max_investment_add: "Max $institution_welfare$ [concept_institution] Investment"
-  modifier_country_institution_welfare_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_welfare$ [concept_institution]"
+  modifier_country_institution_social_security_max_investment_add: "Max $institution_social_security$ [concept_institution] Investment"
+  modifier_country_institution_social_security_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_social_security$ [concept_institution]"
   modifier_country_institution_corporate_affairs_max_investment_add: "Max $institution_corporate_affairs$ [concept_institution] Investment"
   modifier_country_institution_corporate_affairs_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_corporate_affairs$ [concept_institution]"
   modifier_country_institution_police_max_investment_add: "Max $institution_police$ [concept_institution] Investment"

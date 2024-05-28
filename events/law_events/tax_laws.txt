@@ -417,7 +417,7 @@ tax.4 = {
 		trigger = {
 			OR = {
 				institution_investment_level = {
-					institution = institution_welfare
+					institution = institution_social_security
 					value >= 3
 				}
 				scope:bandit_state = {

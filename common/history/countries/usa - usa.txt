@@ -61,7 +61,7 @@ COUNTRIES = {
 			level = 4
 		}
 		set_institution_investment_level = {
-			institution = institution_welfare
+			institution = institution_social_security
 			level = 3
 		}
 		set_institution_investment_level = {

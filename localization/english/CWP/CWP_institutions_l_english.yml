@@ -3,5 +3,5 @@
  institution_corporate_affairs_desc: "Relations between state and corporations"
  institution_police: "Justice System"
  institution_police_desc: "Agency tasked with security of state and society"
- institution_welfare: "Welfare"
- institution_welfare_desc: "Monetary benefits for poor"
+ institution_social_security: "Welfare"
+ institution_social_security_desc: "Monetary benefits for poor"
