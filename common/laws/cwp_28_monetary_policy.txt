@@ -1,4 +1,4 @@
-﻿# group = this is the law_group a law belongs to
+# group = this is the law_group a law belongs to
 # icon = graphical icon shown in-game
 # modifier = {} modifier on country for having adopted this law
 law_gold_standard = {
@@ -181,7 +181,7 @@ law_independent_monetary_policy = {
 						OR = {
 							##has_law = law_type:law_anti_industrialization
 							#has_law = law_type:law_decentralization
-							#has_law = law_type:law_socialization
+							has_law = law_type:law_command_economy
 						}
 					}
 					is_pop_type = investors
@@ -233,7 +233,7 @@ law_pegged_currency = {
 						OR = {
 							##has_law = law_type:law_anti_industrialization
 							#has_law = law_type:law_decentralization
-							#has_law = law_type:law_socialization
+							has_law = law_type:law_command_economy
 						}
 					}
 					is_pop_type = investors

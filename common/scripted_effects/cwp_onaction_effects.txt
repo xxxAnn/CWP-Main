@@ -1,4 +1,4 @@
-﻿onaction_nuclear_calculation = {
+onaction_nuclear_calculation = {
 	# Nuclear Calculations
 	if = {
 		limit = {
@@ -444,7 +444,7 @@ onaction_racial_tension_modifier = {
 onaction_monarchy_abolished_modifier = {
 	if = {
 		limit = {
-			#has_law = law_type:law_hereditary
+			has_law = law_type:law_monarchy
 			OR = {
 				is_enacting_law = law_type:law_executive
 				is_enacting_law = law_type:law_parliamentary

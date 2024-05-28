@@ -1,4 +1,4 @@
-﻿namespace = communist_elections
+namespace = communist_elections
 namespace = cable_street
 # The Red Scare
 communist_elections.1 = {
@@ -19,7 +19,7 @@ communist_elections.1 = {
 		}
 		in_election_campaign = yes
 		NOT = {
-			#has_law = law_type:law_council_elective
+			has_law = law_type:law_socialist_republic
 		}
 		NOT = {
 			has_variable = red_scare_var
@@ -191,7 +191,7 @@ communist_elections.2 = {
 		NOT = {
 			has_variable = council_elections_var
 		}
-		#has_law = law_type:law_council_elective
+		has_law = law_type:law_socialist_republic
 		ig:ig_socialists = {
 			has_party = yes
 		}

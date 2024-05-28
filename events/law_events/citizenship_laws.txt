@@ -1,4 +1,4 @@
-﻿namespace = citizenship_laws
+namespace = citizenship_laws
 # More Discrimination: Advancement
 citizenship_laws.1 = {
 	type = country_event
@@ -25,19 +25,19 @@ citizenship_laws.1 = {
 				OR = {
 					#has_law = law_type:law_segregationist
 					#has_law = law_type:law_integrationist
-					#has_law = law_type:law_multiculturalist
+					has_law = law_type:law_multicultural
 				}
 			}
 			AND = {
 				is_enacting_law = law_type:law_segregationist
 				OR = {
 					#has_law = law_type:law_integrationist
-					#has_law = law_type:law_multiculturalist
+					has_law = law_type:law_multicultural
 				}
 			}
 			AND = {
 				is_enacting_law = law_type:law_integrationist
-				#has_law = law_type:law_multiculturalist
+				has_law = law_type:law_multicultural
 			}
 		}
 		any_scope_state = {
@@ -116,19 +116,19 @@ citizenship_laws.2 = {
 				OR = {
 					#has_law = law_type:law_segregationist
 					#has_law = law_type:law_integrationist
-					#has_law = law_type:law_multiculturalist
+					has_law = law_type:law_multicultural
 				}
 			}
 			AND = {
 				is_enacting_law = law_type:law_segregationist
 				OR = {
 					#has_law = law_type:law_integrationist
-					#has_law = law_type:law_multiculturalist
+					has_law = law_type:law_multicultural
 				}
 			}
 			AND = {
 				is_enacting_law = law_type:law_integrationist
-				#has_law = law_type:law_multiculturalist
+				has_law = law_type:law_multicultural
 			}
 		}
 		any_scope_state = {
@@ -224,19 +224,19 @@ citizenship_laws.3 = {
 				OR = {
 					#has_law = law_type:law_segregationist
 					#has_law = law_type:law_integrationist
-					#has_law = law_type:law_multiculturalist
+					has_law = law_type:law_multicultural
 				}
 			}
 			AND = {
 				is_enacting_law = law_type:law_segregationist
 				OR = {
 					#has_law = law_type:law_integrationist
-					#has_law = law_type:law_multiculturalist
+					has_law = law_type:law_multicultural
 				}
 			}
 			AND = {
 				is_enacting_law = law_type:law_integrationist
-				#has_law = law_type:law_multiculturalist
+				has_law = law_type:law_multicultural
 			}
 		}
 		any_scope_pop = {

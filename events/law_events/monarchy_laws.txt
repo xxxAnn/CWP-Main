@@ -1,4 +1,4 @@
-﻿namespace = monarchy_law_events
+namespace = monarchy_law_events
 # Popular Acclamation
 monarchy_law_events.1 = {
 	# Republic-to-Monarchy Advancement
@@ -102,7 +102,7 @@ monarchy_law_events.2 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		#has_law = law_type:law_theocratic
+		has_law = law_type:law_theocracy
 		is_enacting_law = law_type:law_hereditary
 		any_interest_group = {
 			is_marginal = no

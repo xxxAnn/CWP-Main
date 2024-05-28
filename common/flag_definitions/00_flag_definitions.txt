@@ -1,4 +1,4 @@
-﻿# FLAG_DEFINITION_LIST = {		# countries search for a list with the same name as their tag, the DEFAULT list is always included, if no flag definition is applicable for a country then its tag is used a COA_KEY
+# FLAG_DEFINITION_LIST = {		# countries search for a list with the same name as their tag, the DEFAULT list is always included, if no flag definition is applicable for a country then its tag is used a COA_KEY
 # 	includes = ANOTHER_LIST		# includes another list in this list, can be repeated
 #
 # 	flag_definition = {			# the flag definitions that make up this list, can be repeated
@@ -5717,7 +5717,7 @@ UKR = { # Ukraine
 			exists = scope:actor
 			scope:actor = {
 				has_law = law_type:law_socialist_republic
-				#has_law = law_type:law_direct_democracy
+				has_law = law_type:law_direct_democracy
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-﻿namespace = revolution_pulse_events
+namespace = revolution_pulse_events
 revolution_pulse_events.1 = {
 	type = country_event
 	placement = scope:self_defense_threat_state
@@ -3452,7 +3452,7 @@ revolution_pulse_events.26 = {
 			}
 		}
 		NOT = {
-			#has_law = law_type:law_religious_institutions
+			has_law = law_type:law_state_religion
 		}
 		revolution_progress_medium = yes
 	}
@@ -3532,7 +3532,7 @@ revolution_pulse_events.27 = {
 			turmoil > 0.2
 		}
 		NOT = {
-			#has_law = law_type:law_religious_institutions
+			has_law = law_type:law_state_religion
 		}
 	}
 	cancellation_trigger = {
@@ -3614,7 +3614,7 @@ revolution_pulse_events.28 = {
 			turmoil > 0.2
 		}
 		NOT = {
-			#has_law = law_type:law_religious_institutions
+			has_law = law_type:law_state_religion
 		}
 	}
 	cancellation_trigger = {
@@ -3754,7 +3754,7 @@ revolution_pulse_events.29 = {
 			revolution_progress_medium = yes
 		}
 		NOT = {
-			#has_law = law_type:law_religious_institutions
+			has_law = law_type:law_state_religion
 		}
 	}
 	cancellation_trigger = {
@@ -4053,7 +4053,7 @@ revolution_pulse_events.32 = {
 			is_insurrectionary = yes
 		}
 		NOR = {
-			#has_law = law_type:law_religious_institutions
+			has_law = law_type:law_state_religion
 			any_country = {
 				has_war_with = root
 			}
