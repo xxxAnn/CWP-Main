@@ -353,18 +353,6 @@
 					bpm_ig_is_liberal = no
 				}
 			}
-			NOT = {
-				AND = {
-					exists = c:CSA
-					exists = c:USA
-					scope:actor = {
-						this = c:CSA
-					}
-					c:USA = {
-						has_journal_entry = je_acw_war
-					}
-				}
-			}
 		}
 	}
 	# Reactionary Republicans
@@ -392,18 +380,6 @@
 					# bpm_ig_is_liberal = no
 				}
 			}
-			NOT = {
-				AND = {
-					exists = c:CSA
-					exists = c:USA
-					scope:actor = {
-						this = c:CSA
-					}
-					c:USA = {
-						has_journal_entry = je_acw_war
-					}
-				}
-			}
 		}
 	}
 	# Theocrats
@@ -429,40 +405,6 @@
 					}
 					bpm_ig_is_liberal = no
 				}
-			}
-		}
-	}
-	# ACW revolters
-	dynamic_country_name = {
-		name = csa_revolt_name
-		adjective = csa_revolt_name_adj
-		is_revolutionary = yes
-		priority = 100
-		trigger = {
-			exists = c:CSA
-			exists = c:USA
-			exists = scope:actor
-			scope:actor = {
-				this = c:CSA
-			}
-			c:USA = {
-				has_journal_entry = je_acw_war
-			}
-		}
-	}
-	dynamic_country_name = {
-		name = fsa_revolt_name
-		adjective = fsa_revolt_name_adj
-		is_revolutionary = yes
-		priority = 100
-		trigger = {
-			exists = c:FSA
-			exists = scope:actor
-			scope:actor = {
-				this = c:FSA
-			}
-			c:USA = {
-				has_journal_entry = je_acw_war
 			}
 		}
 	}
