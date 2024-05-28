@@ -535,7 +535,7 @@ pm_religious_research_agenda = {
 pm_corporate_sponsored_research = {
 	texture = "gfx/interface/icons/production_method_icons/unused/base4.dds"
 	unlocking_laws = {
-		law_free_market
+		law_laissez_faire
 		law_interventionism
 	}
 	building_modifiers = {
@@ -573,7 +573,7 @@ pm_military_sponsored_research = {
 pm_secular_faculty = {
 	texture = "gfx/interface/icons/production_method_icons/government/ownership_academics.dds"
 	disallowing_laws = {
-		law_religious_nationalism
+		law_state_religion
 		law_church_run_schools
 	}
 	building_modifiers = {

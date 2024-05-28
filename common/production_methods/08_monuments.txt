@@ -125,7 +125,7 @@ pm_clerical_building_hagia_sophia = {
 	texture = "gfx/interface/icons/production_method_icons/other/wonders.dds"
 	unlocking_laws = {
 		law_religious_policies
-		law_religious_institutions
+		#law_religious_institutions
 	}
 	country_modifiers = {
 		workforce_scaled = {
@@ -206,7 +206,7 @@ pm_clerical_building_red_square = {
 	texture = "gfx/interface/icons/production_method_icons/other/wonders.dds"
 	unlocking_laws = {
 		law_religious_policies
-		law_religious_institutions
+		#law_religious_institutions
 	}
 	country_modifiers = {
 		workforce_scaled = {

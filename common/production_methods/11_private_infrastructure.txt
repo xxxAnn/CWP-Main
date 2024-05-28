@@ -280,16 +280,16 @@ pm_passenger_prioritization = {
 pm_privately_owned_building_railway = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/privately_owned.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
-		law_public_utility_companies
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_free_market
-		law_decentralization
-		law_anti_industrialization
+		law_laissez_faire
+		law_traditionalism
+		#law_anti_industrialization
 		law_interventionism
 	}
 	building_modifiers = {
@@ -308,14 +308,14 @@ pm_publicly_traded_building_railway = {
 		central_bank_independence
 	}
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
-		law_public_utility_companies
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_free_market
+		law_laissez_faire
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -334,10 +334,10 @@ pm_publicly_traded_building_railway = {
 pm_government_run_building_railway = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/government_run.dds"
 	disallowing_laws = {
-		law_no_nationalization
+		#law_no_nationalization
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 		law_interventionism
 	}
 	building_modifiers = {
@@ -353,14 +353,14 @@ pm_government_run_building_railway = {
 pm_worker_cooperatives_building_railway = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/worker_cooperative.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
-		law_public_utility_companies
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		level_scaled = {
@@ -540,16 +540,16 @@ pm_space_elevator = {
 pm_privately_owned_spaceport = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/privately_owned.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
-		law_public_utility_companies
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_free_market
-		law_decentralization
-		law_anti_industrialization
+		law_laissez_faire
+		law_traditionalism
+		#law_anti_industrialization
 		law_interventionism
 	}
 	building_modifiers = {
@@ -568,14 +568,14 @@ pm_publicly_traded_spaceport = {
 		central_bank_independence
 	}
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
-		law_public_utility_companies
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_free_market
+		law_laissez_faire
 	}
 	building_modifiers = {
 		level_scaled = {
@@ -590,10 +590,10 @@ pm_publicly_traded_spaceport = {
 pm_government_run_spaceport = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/government_run.dds"
 	disallowing_laws = {
-		law_no_nationalization
+		#law_no_nationalization
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 		law_interventionism
 	}
 	building_modifiers = {
@@ -609,14 +609,14 @@ pm_government_run_spaceport = {
 pm_worker_cooperatives_spaceport = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/worker_cooperative.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
-		law_public_utility_companies
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		level_scaled = {
@@ -1222,16 +1222,16 @@ pm_international_hub = {
 pm_privately_owned_airport = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/privately_owned.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
-		law_public_utility_companies
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_free_market
-		law_decentralization
-		law_anti_industrialization
+		law_laissez_faire
+		law_traditionalism
+		#law_anti_industrialization
 		law_interventionism
 	}
 	building_modifiers = {
@@ -1250,14 +1250,14 @@ pm_publicly_traded_airport = {
 		central_bank_independence
 	}
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
-		law_public_utility_companies
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_free_market
+		law_laissez_faire
 	}
 	building_modifiers = {
 		level_scaled = {
@@ -1272,10 +1272,10 @@ pm_publicly_traded_airport = {
 pm_government_run_airport = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/government_run.dds"
 	disallowing_laws = {
-		law_no_nationalization
+		#law_no_nationalization
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 		law_interventionism
 	}
 	building_modifiers = {
@@ -1291,14 +1291,14 @@ pm_government_run_airport = {
 pm_worker_cooperatives_airport = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/worker_cooperative.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
-		law_public_utility_companies
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		level_scaled = {
