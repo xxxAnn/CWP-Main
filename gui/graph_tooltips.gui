@@ -70,13 +70,13 @@ template loyalists_tooltip_with_graph
 	}
 }
 
-template ig_progressives_tooltip_with_graph 
+template ig_radicals_tooltip_with_graph 
 {
-	tooltip = "ig_progressives_TOOLTIP"
+	tooltip = "IG_RADICALS_TOOLTIP"
 	tooltipwidget = {
 		TooltipWidgetType = {
 			blockoverride "tooltip_content_after" {
-				v3_plotline_ig_progressives_loyalists = {}
+				v3_plotline_ig_radicals_loyalists = {}
 			}
 		}
 	}
@@ -88,7 +88,7 @@ template ig_loyalists_tooltip_with_graph
 	tooltipwidget = {
 		TooltipWidgetType = {
 			blockoverride "tooltip_content_after" {
-				v3_plotline_ig_progressives_loyalists = {}
+				v3_plotline_ig_radicals_loyalists = {}
 			}
 		}
 	}
