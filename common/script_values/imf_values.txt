@@ -851,36 +851,36 @@ imf_requirements_meeting = {
 			format = "IMF_CURRENT_ECONOMT_LAW_POLICIES_TOOLTIP_FORMAT"
 		}
 	}
-	if = {
-		limit = {
-			has_law = law_type:law_total_nationalization
-		}
-		subtract = {
-			value = 30
-			desc = law_total_nationalization
-			format = "IMF_CURRENT_ECONOMT_LAW_POLICIES_TOOLTIP_FORMAT"
-		}
-	}
-	if = {
-		limit = {
-			has_law = law_type:law_heavy_industry_nationalization
-		}
-		subtract = {
-			value = 20
-			desc = law_heavy_industry_nationalization
-			format = "IMF_CURRENT_ECONOMT_LAW_POLICIES_TOOLTIP_FORMAT"
-		}
-	}
-	if = {
-		limit = {
-			has_law = law_type:law_military_industry_nationalization
-		}
-		subtract = {
-			value = 10
-			desc = law_military_industry_nationalization
-			format = "IMF_CURRENT_ECONOMT_LAW_POLICIES_TOOLTIP_FORMAT"
-		}
-	}
+	#if = {
+	#	limit = {
+	#		has_law = law_type:law_total_nationalization
+	#	}
+	#	subtract = {
+	#		value = 30
+	#		desc = law_total_nationalization
+	#		format = "IMF_CURRENT_ECONOMT_LAW_POLICIES_TOOLTIP_FORMAT"
+	#	}
+	#}
+	#if = {
+	#	limit = {
+	#		has_law = law_type:law_heavy_industry_nationalization
+	#	}
+	#	subtract = {
+	#		value = 20
+	#		desc = law_heavy_industry_nationalization
+	#		format = "IMF_CURRENT_ECONOMT_LAW_POLICIES_TOOLTIP_FORMAT"
+	#	}
+	#}
+	#if = {
+	#	limit = {
+	#		has_law = law_type:law_military_industry_nationalization
+	#	}
+	#	subtract = {
+	#		value = 10
+	#		desc = law_military_industry_nationalization
+	#		format = "IMF_CURRENT_ECONOMT_LAW_POLICIES_TOOLTIP_FORMAT"
+	#	}
+	#}
 }
 
 imf_loan_to_contribution = {

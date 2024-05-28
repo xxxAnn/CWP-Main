@@ -145,7 +145,7 @@ law_presidential_republic = {
 	progressiveness = 100
 	
 	unlocking_technologies = {
-		democracy
+		#democracy
 	}
 	
 	modifier = {
@@ -238,7 +238,7 @@ law_parliamentary_republic = {
 	}
 	
 	unlocking_technologies = {
-		democracy
+		#democracy
 	}
 	
 	modifier = {
@@ -379,7 +379,7 @@ law_socialist_republic = {
 	progressiveness = 200
 
 	unlocking_technologies = {
-		socialism
+		#socialism
 	}
 	
 	on_activate = {		

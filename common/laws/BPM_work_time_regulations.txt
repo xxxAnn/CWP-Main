@@ -147,7 +147,7 @@ law_protected_leisure = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		human_rights
+		#human_rights
 	}
 
 	disallowing_laws = {

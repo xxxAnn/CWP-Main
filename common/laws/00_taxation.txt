@@ -161,7 +161,7 @@ law_per_capita_based_taxation = {
 	}
 	
 	unlocking_technologies = {
-		currency_standards
+		#currency_standards
 	}
 	
 	tax_modifier_very_low = {
@@ -326,7 +326,7 @@ law_graduated_taxation = {
 	}	
 	
 	unlocking_technologies = {
-		socialism
+		#socialism
 	}
 	
 	tax_modifier_very_low = {

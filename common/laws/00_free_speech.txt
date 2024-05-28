@@ -60,7 +60,7 @@ law_censorship = {
 	}
 
 	unlocking_technologies = {
-		law_enforcement
+		#law_enforcement
 	}
 
 	pop_support = {
@@ -151,7 +151,7 @@ law_protected_speech = {
 	progressiveness = 100
 
 	unlocking_technologies = {
-		human_rights
+		#human_rights
 	}
 	
 	modifier = {

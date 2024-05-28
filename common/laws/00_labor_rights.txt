@@ -93,7 +93,7 @@ law_worker_protections = {
 	progressiveness = 100
 
 	unlocking_technologies = {
-		human_rights
+		#human_rights
 	}
 	
 	institution = institution_workplace_safety

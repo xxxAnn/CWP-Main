@@ -176,7 +176,7 @@ law_commercialized_agriculture = {
 	}
 
 	unlocking_technologies = {
-		mutual_funds
+		#mutual_funds
 	}
 	
 	on_enact = {

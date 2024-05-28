@@ -37,7 +37,7 @@ country_has_voting_franchise = {
 
 country_has_education_system = {
 	OR = {
-		#has_law = law_type:law_church_run_schools
+		#has_law = law_type:law_religious_schools
 		#has_law = law_type:law_public_schools
 		#has_law = law_type:law_private_schools
 		#has_law = law_type:law_mixed_funded_schools
@@ -1114,7 +1114,7 @@ law_can_hurt_minorities = {
 		is_enacting_law = law_type:law_export_orientation
 		is_enacting_law = law_type:law_free_trade
 		is_enacting_law = law_type:law_isolationism
-		is_enacting_law = law_type:law_church_run_schools
+		is_enacting_law = law_type:law_religious_schools
 		is_enacting_law = law_type:law_private_schools
 		is_enacting_law = law_type:law_outlawed_dissent
 		is_enacting_law = law_type:law_censorship

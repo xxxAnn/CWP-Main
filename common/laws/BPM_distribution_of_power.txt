@@ -330,7 +330,7 @@ law_hybrid_voting = {
 	progressiveness = -25
 
 	unlocking_technologies = {
-		democracy
+		#democracy
 	}
 
 	disallowing_laws = {
@@ -421,7 +421,7 @@ law_majoritarian_voting = {
 	progressiveness = 0
 
 	unlocking_technologies = {
-		democracy
+		#democracy
 	}
 
 	disallowing_laws = {
@@ -507,7 +507,7 @@ law_proportional_voting = {
 	progressiveness = 50
 
 	unlocking_technologies = {
-		democracy
+		#democracy
 	}
 
 	disallowing_laws = {

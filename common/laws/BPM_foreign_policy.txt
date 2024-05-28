@@ -98,7 +98,7 @@ law_jingoism = {
 	}
 	
 	unlocking_technologies = {
-		nationalism
+		#nationalism
 	}
 	
 	possible_political_movements = {
@@ -275,7 +275,7 @@ law_disarmed_nation = {
 	}
 	
 	unlocking_technologies = {
-		human_rights
+		#human_rights
 	}
 	
 	possible_political_movements = {

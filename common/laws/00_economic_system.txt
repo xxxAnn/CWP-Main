@@ -88,7 +88,7 @@ law_interventionism = {
 	}
 	
 	unlocking_technologies = {
-		manufacturies
+		#manufacturies
 	}
 	
 	modifier = {
@@ -164,7 +164,7 @@ law_agrarianism = {
 	}	
 	
 	unlocking_technologies = {
-		romanticism
+		#romanticism
 	}
 	
 	on_activate = {
@@ -265,7 +265,7 @@ law_industry_banned = {
 	progressiveness = 0
 	
 	unlocking_technologies = {
-		romanticism
+		#romanticism
 	}
 
 	on_activate = {
@@ -467,7 +467,7 @@ law_laissez_faire = {
 	}
 	
 	unlocking_technologies = {
-		international_trade
+		#international_trade
 	}
 	
 	on_activate = {
@@ -639,7 +639,7 @@ law_command_economy = {
 	}
 	
 	unlocking_technologies = {
-		central_planning
+		#central_planning
 	}
 	
 	unlocking_laws = {

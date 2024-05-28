@@ -19,7 +19,7 @@ law_ethnostate = {
 	}
 
 	unlocking_technologies = {
-		nationalism
+		#nationalism
 	}
 	
 	modifier = {
@@ -239,7 +239,7 @@ law_multicultural = {
 	progressiveness = 75
 
 	unlocking_technologies = {
-		human_rights
+		#human_rights
 	}
 	
 	on_enact = {

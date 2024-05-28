@@ -18,21 +18,21 @@ law_events.1 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		is_enacting_law = law_type:law_professional_military
+		is_enacting_law = law_type:law_professional_army
 		NOT = {
 			has_variable = conscientious_objection
 		}
 		any_interest_group = {
 			is_marginal = no
 			law_stance = {
-				law = law_type:law_professional_military
+				law = law_type:law_professional_army
 				value > neutral
 			}
 		}
 		any_interest_group = {
 			is_marginal = no
 			law_stance = {
-				law = law_type:law_professional_military
+				law = law_type:law_professional_army
 				value < neutral
 			}
 		}
@@ -49,7 +49,7 @@ law_events.1 = {
 			limit = {
 				is_marginal = no
 				law_stance = {
-					law = law_type:law_professional_military
+					law = law_type:law_professional_army
 					value > neutral
 				}
 			}
@@ -59,7 +59,7 @@ law_events.1 = {
 			limit = {
 				is_marginal = no
 				law_stance = {
-					law = law_type:law_professional_military
+					law = law_type:law_professional_army
 					value < neutral
 				}
 			}
@@ -135,8 +135,8 @@ law_events.5 = {
 			is_marginal = no
 		}
 		OR = {
-			is_enacting_law = law_type:law_wrongful_dismissal_protections
-			is_enacting_law = law_type:law_mandatory_parental_leave
+			is_enacting_law = law_type:law_regulatory_bodies
+			is_enacting_law = law_type:law_worker_protections
 		}
 		NOT = {
 			has_variable = mineowners_request
@@ -229,7 +229,7 @@ law_events.6 = {
 		NOT = {
 			has_variable = intelligentsia_disapprove_religious_schools
 		}
-		is_enacting_law = law_type:law_church_run_schools
+		is_enacting_law = law_type:law_religious_schools
 	}
 	immediate = {
 		ig:ig_intelligentsia = {

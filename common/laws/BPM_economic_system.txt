@@ -54,7 +54,7 @@ law_agrarianism = {
 		law_anarchy
 	}
 	unlocking_technologies = {
-		romanticism
+		#romanticism
 	}
 	on_activate = {
 	}
@@ -152,7 +152,7 @@ law_laissez_faire = {
 		law_anarchy
 	}
 	unlocking_technologies = {
-		international_trade
+		#international_trade
 	}
 	on_activate = {
 	}
@@ -297,7 +297,7 @@ law_command_economy = {
 		law_anarchy
 	}
 	unlocking_technologies = {
-		central_planning
+		#central_planning
 	}
 	unlocking_laws = {
 		law_socialist_republic
