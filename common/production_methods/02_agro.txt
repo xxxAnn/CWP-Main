@@ -325,6 +325,88 @@ pm_seeds_rice_farm = {
 	}
 }
 
+# Secondary Building PMG
+pm_no_secondary = {
+	texture = "gfx/interface/icons/production_method_icons/agriculture/no_orchards.dds"
+}
+
+pm_apple_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/agriculture/orchards.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -20
+			goods_output_fruit_add = 15
+		}
+	}
+}
+
+pm_citrus_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/agriculture/orchards.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -20
+			goods_output_fruit_add = 15
+		}
+	}
+}
+
+pm_fig_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/agriculture/orchards.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -15
+			goods_output_fruit_add = 15
+		}
+	}
+}
+
+# Honey Production PMG
+pm_no_honey_production = {
+	texture = "gfx/interface/icons/production_method_icons/unused/no_artificial_fertilizers.dds"
+}
+
+pm_honey_production = {
+	texture = "gfx/interface/icons/production_method_icons/unused/artificial_fertilizers.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_sugar_add = 5
+		}
+		level_scaled = {
+			building_employment_laborers_add = 1000
+		}
+	}
+}
+
+# Corn Syrup Production PMG
+pm_no_corn_syrup = {
+	texture = "gfx/interface/icons/production_method_icons/unused/no_artificial_fertilizers.dds"
+}
+
+pm_corn_syrup = {
+	texture = "gfx/interface/icons/production_method_icons/unused/artificial_fertilizers.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -10
+			goods_output_sugar_add = 10
+		}
+	}
+}
+
+# Sugar Beet Production PMG
+pm_no_sugar_beets = {
+	texture = "gfx/interface/icons/production_method_icons/unused/no_artificial_fertilizers.dds"
+}
+
+pm_sugar_beets = {
+	texture = "gfx/interface/icons/production_method_icons/unused/artificial_fertilizers.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -10
+			goods_output_sugar_add = 10
+		}
+	}
+}
+
 ## Ownership PMG
 pm_privately_owned_farm = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/privately_owned.dds"
@@ -409,7 +491,8 @@ pm_worker_cooperatives_farm = {
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_service_workers_add = 300
+			building_employment_laborers_add = 200
+			building_employment_farmers_add = 100
 		}
 		unscaled = {
 			building_workforce_shares_add = 1
@@ -434,11 +517,7 @@ pm_butchering_tools = {
 
 pm_slaughterhouses = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/slaughterhouses.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
+	pollution_generation = 10
 	unlocking_technologies = {
 	}
 	building_modifiers = {
@@ -456,11 +535,7 @@ pm_slaughterhouses = {
 
 pm_mechanized_slaughtering = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/mechanized_slaughtering.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 20
-		}
-	}
+	pollution_generation = 20
 	unlocking_technologies = {
 	}
 	building_modifiers = {
@@ -483,11 +558,7 @@ pm_simple_ranch_no = {
 
 pm_simple_ranch = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/simple_ranching.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 15
-		}
-	}
+	pollution_generation = 15
 	building_modifiers = {
 		workforce_scaled = {
 			goods_output_fabric_add = 30
@@ -497,11 +568,7 @@ pm_simple_ranch = {
 
 pm_intensive_grazing_ranch = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/intensive_grazing.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 30
-		}
-	}
+	pollution_generation = 30
 	unlocking_technologies = {
 	}
 	building_modifiers = {
@@ -515,11 +582,7 @@ pm_intensive_grazing_ranch = {
 
 pm_open_air_stockyards = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/open_air_stockyards.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 45
-		}
-	}
+	pollution_generation = 45
 	building_modifiers = {
 		workforce_scaled = {
 			goods_input_grain_add = 20
@@ -552,11 +615,7 @@ pm_mechanized_harvesting = {
 
 pm_advanced_agricultural_machinery = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/advanced_agricultural_machinery_farming_auto.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
+	pollution_generation = 10
 	unlocking_technologies = {
 		advanced_agricultural_machinery
 	}
@@ -574,11 +633,7 @@ pm_advanced_agricultural_machinery = {
 
 pm_iot_sensors = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/iot_sensors_farming_auto.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 15
-		}
-	}
+	pollution_generation = 15
 	unlocking_technologies = {
 		iot_sensors
 	}
@@ -597,11 +652,7 @@ pm_iot_sensors = {
 
 pm_ai_analyzed_harvesting = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/ai_analyzed_harvesting_farming_auto.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 20
-		}
-	}
+	pollution_generation = 20
 	unlocking_technologies = {
 		ai_analytics
 	}
@@ -657,11 +708,7 @@ pm_unrefrigerated = {
 
 pm_refrigerated_storage_building_livestock_ranch = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/refrigerated_storage.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 5
-		}
-	}
+	pollution_generation = 5
 	unlocking_technologies = {
 	}
 	building_modifiers = {
@@ -676,11 +723,7 @@ pm_refrigerated_storage_building_livestock_ranch = {
 
 pm_refrigerated_rail_cars_building_livestock_ranch = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/refrigerated_rail_cars.dds"
-	state_modifiers = {
-		workforce_scaled = {
-			state_pollution_generation_add = 10
-		}
-	}
+	pollution_generation = 10
 	unlocking_technologies = {
 	}
 	building_modifiers = {
