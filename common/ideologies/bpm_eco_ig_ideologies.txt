@@ -36,12 +36,12 @@ ideology_eco_laissez_faire = {
 		law_graduated_taxation = strongly_disapprove
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = neutral
-		law_slave_trade = strongly_disapprove
-		law_legacy_slavery = disapprove
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = neutral
+	#	law_slave_trade = strongly_disapprove
+	#	law_legacy_slavery = disapprove
+	#}
 
 }
 
@@ -81,12 +81,12 @@ ideology_eco_interventionist = {
 		law_graduated_taxation = strongly_disapprove
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = neutral
-		law_slave_trade = strongly_disapprove
-		law_legacy_slavery = disapprove
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = neutral
+	#	law_slave_trade = strongly_disapprove
+	#	law_legacy_slavery = disapprove
+	#}
 
 }
 
@@ -126,12 +126,12 @@ ideology_eco_traditional_agrarian = {
 		law_graduated_taxation = strongly_disapprove
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = neutral
-		law_slave_trade = disapprove
-		law_legacy_slavery = neutral
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = neutral
+	#	law_slave_trade = disapprove
+	#	law_legacy_slavery = neutral
+	#}
 
 }
 
@@ -171,12 +171,12 @@ ideology_eco_modern_agrarian = {
 		law_graduated_taxation = approve
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = disapprove
-		law_slave_trade = strongly_disapprove
-		law_legacy_slavery = disapprove
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = disapprove
+	#	law_slave_trade = strongly_disapprove
+	#	law_legacy_slavery = disapprove
+	#}
 
 }
 
@@ -216,12 +216,12 @@ ideology_eco_agrarian_socialist = {
 		law_graduated_taxation = strongly_approve
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = strongly_disapprove
-		law_slave_trade = strongly_disapprove
-		law_legacy_slavery = strongly_disapprove
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = strongly_disapprove
+	#	law_slave_trade = strongly_disapprove
+	#	law_legacy_slavery = strongly_disapprove
+	#}
 
 }
 
@@ -261,12 +261,12 @@ ideology_eco_autarky = {
 		law_graduated_taxation = neutral
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = approve
-		law_slave_trade = disapprove
-		law_legacy_slavery = neutral
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = approve
+	#	law_slave_trade = disapprove
+	#	law_legacy_slavery = neutral
+	#}
 
 }
 
@@ -306,12 +306,12 @@ ideology_eco_socialist_autarky = {
 		law_graduated_taxation = approve
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = strongly_disapprove
-		law_slave_trade = strongly_disapprove
-		law_legacy_slavery = strongly_disapprove
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = strongly_disapprove
+	#	law_slave_trade = strongly_disapprove
+	#	law_legacy_slavery = strongly_disapprove
+	#}
 
 }
 
@@ -351,12 +351,12 @@ ideology_eco_socialist_mixed_economy = {
 		law_graduated_taxation = strongly_approve
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = strongly_disapprove
-		law_slave_trade = strongly_disapprove
-		law_legacy_slavery = strongly_disapprove
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = strongly_disapprove
+	#	law_slave_trade = strongly_disapprove
+	#	law_legacy_slavery = strongly_disapprove
+	#}
 
 }
 
@@ -396,12 +396,12 @@ ideology_eco_proletarian_economy = {
 		law_graduated_taxation = approve
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = approve
-		law_debt_slavery = strongly_disapprove
-		law_slave_trade = strongly_disapprove
-		law_legacy_slavery = strongly_disapprove
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = approve
+	#	law_debt_slavery = strongly_disapprove
+	#	law_slave_trade = strongly_disapprove
+	#	law_legacy_slavery = strongly_disapprove
+	#}
 
 }
 
@@ -441,12 +441,12 @@ ideology_eco_serf_economy = {
 		law_graduated_taxation = strongly_disapprove
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = neutral
-		law_slave_trade = neutral
-		law_legacy_slavery = neutral
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = neutral
+	#	law_slave_trade = neutral
+	#	law_legacy_slavery = neutral
+	#}
 
 }
 
@@ -486,12 +486,12 @@ ideology_eco_trad_isolationist = {
 		law_graduated_taxation = strongly_disapprove
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = neutral
-		law_slave_trade = neutral
-		law_legacy_slavery = neutral
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = neutral
+	#	law_slave_trade = neutral
+	#	law_legacy_slavery = neutral
+	#}
 
 }
 
@@ -531,12 +531,12 @@ ideology_eco_slave_economy = {
 		law_graduated_taxation = strongly_disapprove
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = strongly_disapprove
-		law_debt_slavery = neutral
-		law_slave_trade = strongly_approve
-		law_legacy_slavery = neutral
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = strongly_disapprove
+	#	law_debt_slavery = neutral
+	#	law_slave_trade = strongly_approve
+	#	law_legacy_slavery = neutral
+	#}
 
 }
 
@@ -576,12 +576,12 @@ ideology_eco_modernizer = {
 		law_graduated_taxation = disapprove
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = disapprove
-		law_slave_trade = strongly_disapprove
-		law_legacy_slavery = disapprove
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = disapprove
+	#	law_slave_trade = strongly_disapprove
+	#	law_legacy_slavery = disapprove
+	#}
 
 }
 
@@ -621,11 +621,11 @@ ideology_eco_conservative_agrarian = {
 		law_graduated_taxation = strongly_disapprove
 	}
 
-    lawgroup_slavery = {
-		law_slavery_banned = neutral
-		law_debt_slavery = neutral
-		law_slave_trade = disapprove
-		law_legacy_slavery = neutral
-	}
+    #lawgroup_slavery = {
+	#	law_slavery_banned = neutral
+	#	law_debt_slavery = neutral
+	#	law_slave_trade = disapprove
+	#	law_legacy_slavery = neutral
+	#}
 
 }

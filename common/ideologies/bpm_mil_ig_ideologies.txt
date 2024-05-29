@@ -10,12 +10,12 @@ ideology_jingoist = {
 		law_professional_army = approve
 	}
 
-    lawgroup_colonization = {
-		law_no_colonial_affairs = disapprove
-		law_frontier_colonization = neutral
-		law_colonial_resettlement = neutral
-		law_colonial_exploitation = approve
-	}
+    #lawgroup_colonization = {
+	#	law_no_colonial_affairs = disapprove
+	#	law_frontier_colonization = neutral
+	#	law_colonial_resettlement = neutral
+	#	law_colonial_exploitation = approve
+	#}
 
 	lawgroup_officers = {
 		law_noble_officers = strongly_disapprove
@@ -37,12 +37,12 @@ ideology_mil_emergency = {
 		law_professional_army = neutral
 	}
 
-    lawgroup_colonization = {
-		law_no_colonial_affairs = neutral
-		law_frontier_colonization = neutral
-		law_colonial_resettlement = neutral
-		law_colonial_exploitation = disapprove
-	}
+    #lawgroup_colonization = {
+	#	law_no_colonial_affairs = neutral
+	#	law_frontier_colonization = neutral
+	#	law_colonial_resettlement = neutral
+	#	law_colonial_exploitation = disapprove
+	#}
 
 	lawgroup_officers = {
 		law_noble_officers = strongly_disapprove
@@ -64,12 +64,12 @@ ideology_mil_patriotic = {
 		law_professional_army = strongly_approve
 	}
 
-    lawgroup_colonization = {
-		law_no_colonial_affairs = disapprove
-		law_frontier_colonization = approve
-		law_colonial_resettlement = neutral
-		law_colonial_exploitation = approve
-	}
+    #lawgroup_colonization = {
+	#	law_no_colonial_affairs = disapprove
+	#	law_frontier_colonization = approve
+	#	law_colonial_resettlement = neutral
+	#	law_colonial_exploitation = approve
+	#}
 
 	lawgroup_officers = {
 		law_noble_officers = strongly_disapprove
@@ -91,12 +91,12 @@ ideology_mil_frontier_expansion = {
 		law_professional_army = neutral
 	}
 
-    lawgroup_colonization = {
-		law_no_colonial_affairs = neutral
-		law_frontier_colonization = strongly_approve
-		law_colonial_resettlement = neutral
-		law_colonial_exploitation = neutral
-	}
+    #lawgroup_colonization = {
+	#	law_no_colonial_affairs = neutral
+	#	law_frontier_colonization = strongly_approve
+	#	law_colonial_resettlement = neutral
+	#	law_colonial_exploitation = neutral
+	#}
 
 }
 
@@ -110,12 +110,12 @@ ideology_mil_antimilitarist = {
 		law_professional_army = disapprove
 	}
 
-    lawgroup_colonization = {
-		law_no_colonial_affairs = strongly_approve
-		law_frontier_colonization = disapprove
-		law_colonial_resettlement = disapprove
-		law_colonial_exploitation = disapprove
-	}
+    #lawgroup_colonization = {
+	#	law_no_colonial_affairs = strongly_approve
+	#	law_frontier_colonization = disapprove
+	#	law_colonial_resettlement = disapprove
+	#	law_colonial_exploitation = disapprove
+	#}
 
 	lawgroup_officers = {
 		law_noble_officers = strongly_disapprove
@@ -137,12 +137,12 @@ ideology_mil_aristocratic_militarist = {
 		law_professional_army = strongly_disapprove
 	}
 
-    lawgroup_colonization = {
-		law_no_colonial_affairs = neutral
-		law_frontier_colonization = neutral
-		law_colonial_resettlement = disapprove
-		law_colonial_exploitation = disapprove
-	}
+    #lawgroup_colonization = {
+	#	law_no_colonial_affairs = neutral
+	#	law_frontier_colonization = neutral
+	#	law_colonial_resettlement = disapprove
+	#	law_colonial_exploitation = disapprove
+	#}
 
 	lawgroup_officers = {
 		law_noble_officers = strongly_approve
@@ -164,12 +164,12 @@ ideology_mil_mass_army = {
 		law_professional_army = strongly_disapprove
 	}
 
-    lawgroup_colonization = {
-		law_no_colonial_affairs = disapprove
-		law_frontier_colonization = neutral
-		law_colonial_resettlement = disapprove
-		law_colonial_exploitation = neutral
-	}
+    #lawgroup_colonization = {
+	#	law_no_colonial_affairs = disapprove
+	#	law_frontier_colonization = neutral
+	#	law_colonial_resettlement = disapprove
+	#	law_colonial_exploitation = neutral
+	#}
 
 	lawgroup_officers = {
 		law_noble_officers = strongly_disapprove

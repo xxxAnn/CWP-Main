@@ -251,7 +251,7 @@
 		default = "/gfx/interface/icons/political_parties/communists.dds"
 	}
 	unlocking_technologies = {
-		socialism
+		#socialism
 	}
 	# THIS IS RUN ONLY ONCE AT GAME START
 	valid_for_country = {

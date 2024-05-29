@@ -20,7 +20,7 @@ gaddafi_puppet_EGY = {
 		}
 		modifier = {
 			trigger =  {
-				c:EGY.army_reserves < c:LBY.army_reserves
+				c:EGY.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -67,7 +67,7 @@ gaddafi_puppet_SDN = {
 		}
 		modifier = {
 			trigger =  {
-				c:SDN.army_reserves < c:LBY.army_reserves
+				c:SDN.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -114,7 +114,7 @@ gaddafi_puppet_PAL = {
 		}
 		modifier = {
 			trigger =  {
-				c:PAL.army_reserves < c:LBY.army_reserves
+				c:PAL.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -161,7 +161,7 @@ gaddafi_puppet_SYR = {
 		}
 		modifier = {
 			trigger =  {
-				c:SYR.army_reserves < c:LBY.army_reserves
+				c:SYR.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -208,7 +208,7 @@ gaddafi_puppet_LEB = {
 		}
 		modifier = {
 			trigger =  {
-				c:LEB.army_reserves < c:LBY.army_reserves
+				c:LEB.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -255,7 +255,7 @@ gaddafi_puppet_EOT = {
 		}
 		modifier = {
 			trigger =  {
-				c:EOT.army_reserves < c:LBY.army_reserves
+				c:EOT.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -302,7 +302,7 @@ gaddafi_puppet_TUN = {
 		}
 		modifier = {
 			trigger =  {
-				c:TUN.army_reserves < c:LBY.army_reserves
+				c:TUN.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -349,7 +349,7 @@ gaddafi_puppet_ALD = {
 		}
 		modifier = {
 			trigger =  {
-				c:ALD.army_reserves < c:LBY.army_reserves
+				c:ALD.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -396,7 +396,7 @@ gaddafi_puppet_MOR = {
 		}
 		modifier = {
 			trigger =  {
-				c:MOR.army_reserves < c:LBY.army_reserves
+				c:MOR.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -443,7 +443,7 @@ gaddafi_puppet_ALR = {
 		}
 		modifier = {
 			trigger =  {
-				c:ALR.army_reserves < c:LBY.army_reserves
+				c:ALR.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -490,7 +490,7 @@ gaddafi_puppet_WSH = {
 		}
 		modifier = {
 			trigger =  {
-				c:WSH.army_reserves < c:LBY.army_reserves
+				c:WSH.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -537,7 +537,7 @@ gaddafi_puppet_MLT = {
 		}
 		modifier = {
 			trigger =  {
-				c:MLT.army_reserves < c:LBY.army_reserves
+				c:MLT.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -584,7 +584,7 @@ gaddafi_puppet_MAU = {
 		}
 		modifier = {
 			trigger =  {
-				c:MAU.army_reserves < c:LBY.army_reserves
+				c:MAU.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -631,7 +631,7 @@ gaddafi_puppet_MAL = {
 		}
 		modifier = {
 			trigger =  {
-				c:MAL.army_reserves < c:LBY.army_reserves
+				c:MAL.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -678,7 +678,7 @@ gaddafi_puppet_BKF = {
 		}
 		modifier = {
 			trigger =  {
-				c:BKF.army_reserves < c:LBY.army_reserves
+				c:BKF.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -725,7 +725,7 @@ gaddafi_puppet_NGR = {
 		}
 		modifier = {
 			trigger =  {
-				c:NGR.army_reserves < c:LBY.army_reserves
+				c:NGR.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}
@@ -773,7 +773,7 @@ gaddafi_puppet_CHD = {
 		}
 		modifier = {
 			trigger =  {
-				c:CHD.army_reserves < c:LBY.army_reserves
+				c:CHD.army_size < c:LBY.army_size
 			}
 			add = 0.5
 		}

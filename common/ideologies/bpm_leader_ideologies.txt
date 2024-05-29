@@ -993,12 +993,12 @@ ideology_pacifist = {
 		law_peasant_levies = disapprove
 		law_mass_conscription = disapprove
 	}
-	lawgroup_colonization = {
-		law_no_colonial_affairs = approve
-		law_frontier_colonization = strongly_disapprove
-		law_colonial_resettlement = strongly_disapprove
-		law_colonial_exploitation = strongly_disapprove
-	}
+	#lawgroup_colonization = {
+	#	law_no_colonial_affairs = approve
+	#	law_frontier_colonization = strongly_disapprove
+	#	law_colonial_resettlement = strongly_disapprove
+	#	law_colonial_exploitation = strongly_disapprove
+	#}
 	possible = {
 		scope:interest_group = {
 			bpm_ig_enabled = yes
@@ -1096,12 +1096,12 @@ ideology_jingoist_leader = {
 		law_national_militia = neutral
 		law_peasant_levies = disapprove
 	}
-	lawgroup_colonization = {
-		law_no_colonial_affairs = neutral
-		law_frontier_colonization = approve
-		law_colonial_resettlement = approve
-		law_colonial_exploitation = strongly_approve
-	}
+	#lawgroup_colonization = {
+	#	law_no_colonial_affairs = neutral
+	#	law_frontier_colonization = approve
+	#	law_colonial_resettlement = approve
+	#	law_colonial_exploitation = strongly_approve
+	#}
 	possible = {
 		scope:interest_group = {
 			bpm_ig_enabled = yes
