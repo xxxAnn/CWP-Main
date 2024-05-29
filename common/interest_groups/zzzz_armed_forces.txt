@@ -73,8 +73,11 @@ ig_armed_forces = {
 			if = {
 				limit = { 
 					OR = {
-						pop_employment_building = building_arms_industry
-						pop_employment_building = building_munition_plants	
+						pop_employment_building = building_small_arms_manufactories
+						pop_employment_building = building_explosives_industry
+						pop_employment_building = building_advanced_military_manufactories
+						pop_employment_building = building_drydocks
+						pop_employment_building = building_aircraft_manufactories
 					}
 				}
 				value = 100

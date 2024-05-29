@@ -12,7 +12,7 @@ bpm_union_laws.1 = {
 	flavor = bpm_union_laws.1.f
 	duration = 3
 	trigger = {
-		has_technology_researched = law_enforcement
+		#has_technology_researched = law_enforcement
 		ig:ig_trade_unions = {
 			is_marginal = no
 		}

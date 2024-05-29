@@ -397,7 +397,7 @@ bpm_setup_basic_igs = {
 			ig:ig_agrarian_populists = {
 				has_ideology = ideology:ideology_nonexistent
 			}
-			has_technology_researched = romanticism
+			#has_technology_researched = romanticism
 		}
 		bpm_initialize_agpops = yes
 	}

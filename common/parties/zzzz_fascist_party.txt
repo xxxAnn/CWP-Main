@@ -446,7 +446,7 @@
 					value < neutral
 				}
 				owner = {
-					has_technology_researched = law_enforcement
+					#has_technology_researched = law_enforcement
 					has_law = law_type:law_no_police
 				}
 			}

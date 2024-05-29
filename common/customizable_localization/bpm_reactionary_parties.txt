@@ -38,14 +38,14 @@ por_reactionary_party_name = {
 	text = {
 		trigger = {
 			NOT = {
-				has_technology_researched = corporatism
+				has_technology_researched = pre_war_ideological_thought
 			}
 		}
 		localization_key = party_por_miguelista
 	}
 	text = {
 		trigger = {
-			has_technology_researched = corporatism
+			has_technology_researched = pre_war_ideological_thought
 		}
 		localization_key = party_por_lusitania
 	}

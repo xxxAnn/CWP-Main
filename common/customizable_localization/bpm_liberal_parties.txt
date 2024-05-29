@@ -147,7 +147,7 @@ mex_liberal_party_name = {
 						has_law = law_type:law_theocracy
 					}
 					NOT = {
-						has_technology_researched = human_rights
+						has_technology_researched = pre_war_ideological_thought
 					}
 				}
 			}
@@ -160,7 +160,7 @@ mex_liberal_party_name = {
 				has_law = law_type:law_monarchy
 				has_law = law_type:law_theocracy
 			}
-			has_technology_researched = human_rights
+			has_technology_researched = pre_war_ideological_thought
 			NOR = {
 				has_law = law_type:law_direct_democracy
 				has_law = law_type:law_proportional_voting
@@ -175,7 +175,7 @@ mex_liberal_party_name = {
 				has_law = law_type:law_monarchy
 				has_law = law_type:law_theocracy
 			}
-			has_technology_researched = human_rights
+			has_technology_researched = pre_war_ideological_thought
 			OR = {
 				has_law = law_type:law_direct_democracy
 				has_law = law_type:law_proportional_voting
@@ -295,7 +295,7 @@ por_liberal_party_name = {
 		trigger = {
 			game_date >= 1851.1.1
 			NOT = {
-				has_technology_researched = human_rights
+				has_technology_researched = pre_war_ideological_thought
 			}
 			OR = {
 				has_law = law_type:law_monarchy
@@ -306,7 +306,7 @@ por_liberal_party_name = {
 	}
 	text = {
 		trigger = {
-			has_technology_researched = human_rights
+			has_technology_researched = pre_war_ideological_thought
 			OR = {
 				has_law = law_type:law_monarchy
 				has_law = law_type:law_theocracy

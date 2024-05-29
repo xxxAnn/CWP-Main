@@ -610,7 +610,7 @@ conservative_party = {
 			limit = {
 				has_ideology = ideology:ideology_sta_powerful_state
 				owner = {
-					has_technology_researched = law_enforcement
+					#has_technology_researched = law_enforcement
 					has_law = law_type:law_no_police
 				}
 			}

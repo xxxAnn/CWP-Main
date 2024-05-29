@@ -4,100 +4,100 @@
 
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = anglophone }
+			any_primary_culture = { has_discrimination_trait = anglo_saxon_culture_group }
 		}
 		localization_key = bpm_council_english
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = east_slavic }
+			any_primary_culture = { has_discrimination_trait = balkoslavic_culture_group }
 		}
 		localization_key = bpm_council_east_slavic
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = west_slavic }
+			any_primary_culture = { has_discrimination_trait = western_slavic_culture_group }
 		}
 		localization_key = bpm_council_west_slavic
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = francophone }
+			any_primary_culture = { has_discrimination_trait = french_culture_group }
 		}
 		localization_key = bpm_council_french
 	}
 	text = {
 		trigger = {
-			country_has_primary_culture = cu:dutch
+			any_primary_culture = { has_discrimination_trait = low_franconian }
 		}
 		localization_key = bpm_council_dutch
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = german_speaking }
+			any_primary_culture = { has_discrimination_trait = germanic_culture_group }
 		}
 		localization_key = bpm_council_german
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = italophone }
+			any_primary_culture = { has_discrimination_trait = italian_culture_group }
 		}
 		localization_key = bpm_council_italian
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = lusophone }
+			any_primary_culture = { has_discrimination_trait = iberian_culture_group }
 		}
 		localization_key = bpm_council_portuguese
 	}
 	text = {
 		trigger = {
 			OR = {
-				country_has_primary_culture = cu:argentine
-				country_has_primary_culture = cu:chilean
+				any_primary_culture = { has_discrimination_trait = indigenous_south_american_culture_group }
+				any_primary_culture = { has_discrimination_trait = latin_american_culture_group }
 			}
 		}
 		localization_key = bpm_council_chilean
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = hispanophone }
+			any_primary_culture = { has_discrimination_trait = iberian_culture_group }
 		}
 		localization_key = bpm_council_spanish
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = yamato }
+			any_primary_culture = { has_discrimination_trait = japanese_culture_group }
 		}
 		localization_key = bpm_council_japanese
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = han_chinese }
+			any_primary_culture = { has_discrimination_trait = sinitic_culture_group }
 		}
 		localization_key = bpm_council_chinese
 	}
 	text = {
 		trigger = {
-			country_has_primary_culture = cu:korean
+			any_primary_culture = { has_discrimination_trait = korean_culture_group }
 		}
 		localization_key = bpm_council_korean
 	}
 	text = {
 		trigger = {
-			country_has_primary_culture = cu:persian
+			any_primary_culture = { has_discrimination_trait = iranian_culture_group }
 		}
 		localization_key = bpm_council_persian
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = arab_speaking }
+			any_primary_culture = { has_discrimination_trait = arabic_culture_group }
 		}
 		localization_key = bpm_council_arabic
 	}
 	text = {
 		trigger = {
-			any_primary_culture = { has_discrimination_trait = jewish_group }
+			any_primary_culture = { has_discrimination_trait = semitic_culture_group }
 		}
 		localization_key = bpm_council_israeli
 	}

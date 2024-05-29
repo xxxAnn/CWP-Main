@@ -217,7 +217,7 @@ ideology_atheist = {
 			}
 		}
 		owner = {
-			has_technology_researched = empiricism
+			#has_technology_researched = empiricism
 		}
 		scope:interest_group = {
 			NOT = {
@@ -739,9 +739,9 @@ ideology_reformer = {
 		}
 		owner = {
 			has_technology_researched = pre_war_ideological_thought
-			NOT = {
-				has_technology_researched = human_rights
-			}
+			#NOT = {
+			#	has_technology_researched = human_rights
+			#}
 		}
 		# Agitators should have an ideology at odds with current laws
 		NAND = {
@@ -843,7 +843,7 @@ ideology_feminist = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = feminism
+			has_technology_researched = first_wave_feminism
 			NOT = {
 				has_law = law_type:law_womens_suffrage
 			}
@@ -3405,7 +3405,7 @@ ideology_market_liberal = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = stock_exchange
+			#has_technology_researched = stock_exchange
 			# capitalism must be relevant
 			exists = ig:ig_industrialists
 			ig:ig_industrialists = {
@@ -3551,7 +3551,7 @@ ideology_luddite = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = romanticism
+			#has_technology_researched = romanticism
 			OR = {
 				has_law = law_type:law_command_economy
 				has_law = law_type:law_laissez_faire
@@ -3707,7 +3707,7 @@ ideology_authoritarian = {
 				owner = {
 					exists = c:FRA
 					this = c:FRA
-					has_journal_entry = je_divided_monarchists
+					#has_journal_entry = je_divided_monarchists
 				}
 				scope:interest_group = {
 					OR = {
@@ -3858,7 +3858,7 @@ ideology_protectionist = {
 				owner = {
 					exists = c:FRA
 					this = c:FRA
-					has_journal_entry = je_divided_monarchists
+					#has_journal_entry = je_divided_monarchists
 				}
 				scope:interest_group = {
 					OR = {
@@ -3910,7 +3910,7 @@ ideology_humanitarian = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = feminism
+			has_technology_researched = first_wave_feminism
 		}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
@@ -4160,7 +4160,7 @@ ideology_positivist = {
 		}
 		has_global_variable = positivism_invented
 		owner = {
-			has_technology_researched = empiricism
+			#has_technology_researched = empiricism
 		}
 		scope:interest_group = {
 			NOR = {
@@ -4258,14 +4258,14 @@ ideology_positivist = {
 		}
 		multiply = {
 			value = 0.5
-			if = {
-				limit = {
-					owner = {
-						has_technology_researched = shift_work
-					}
-				}
-				value = 1
-			}
+			#if = {
+			#	limit = {
+			#		owner = {
+			#			has_technology_researched = shift_work
+			#		}
+			#	}
+			#	value = 1
+			#}
 		}
 	}
 }
@@ -4299,7 +4299,7 @@ ideology_land_reformer = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = enclosure
+			#has_technology_researched = enclosure
 		}
 		# Agitator ideologies should disapprove of a current law
 		NAND = {
@@ -4471,14 +4471,11 @@ ideology_integralist = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = corporatism
+			#has_technology_researched = corporatism
 		}
 		owner = {
 			any_primary_culture = {
-				OR = {
-					has_discrimination_trait = lusophone
-					has_discrimination_trait = hispanophone
-				}
+				has_discrimination_trait = iberian_culture_group
 			}
 		}
 		# Agitator ideologies should disapprove of a current law
@@ -4607,14 +4604,14 @@ ideology_integralist = {
 			add = 10
 		}
 		# Vargas fosters fascism
-		if = {
-			limit = {
-				owner = {
-					has_journal_entry = je_new_republic
-				}
-			}
-			add = 50
-		}
+		#if = {
+		#	limit = {
+		#		owner = {
+		#			has_journal_entry = je_new_republic
+		#		}
+		#	}
+		#	add = 50
+		#}
 		# red scare can make you more fascist
 		if = {
 			limit = {
@@ -4800,7 +4797,7 @@ ideology_corporatist_leader = {
 			bpm_ig_enabled = yes
 		}
 		owner = {
-			has_technology_researched = corporatism
+			#has_technology_researched = corporatism
 		}
 		# Agitators should have an ideology at odds with current laws
 		NAND = {

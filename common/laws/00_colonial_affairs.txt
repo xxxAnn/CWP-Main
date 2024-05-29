@@ -33,7 +33,7 @@
 		}
 		if = {
 			limit = {
-				has_strategy = ai_strategy_anti_imperialism
+				#has_strategy = ai_strategy_anti_imperialism
 			}
 			multiply = 2
 		}

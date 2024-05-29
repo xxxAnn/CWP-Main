@@ -287,7 +287,7 @@ free_trade_party = {
 			# capitalist-meritocratic taxation alliance
 			limit = {
 				owner = {
-					has_technology_researched = currency_standards
+					#has_technology_researched = currency_standards
 					NOT = {
 						has_law = law_type:law_per_capita_based_taxation
 					}
@@ -348,7 +348,7 @@ free_trade_party = {
 			limit = {
 				owner = {
 					has_law = law_type:law_command_economy
-					has_technology_researched = central_planning
+					#has_technology_researched = central_planning
 				}
 				OR = {
 					has_ideology = ideology:ideology_paternalistic
@@ -368,7 +368,7 @@ free_trade_party = {
 			# pro-private schools
 			limit = {
 				owner = {
-					has_technology_researched = academia
+					#has_technology_researched = academia
 					OR = {
 						has_law = law_type:law_no_schools
 						has_law = law_type:law_religious_schools
