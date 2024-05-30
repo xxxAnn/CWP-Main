@@ -26,13 +26,16 @@
 	on_character_ig_membership = {
 	}
 	pop_potential = {
-		owner = {
-			NOT = {
-				is_country_type = decentralized
-			}
-			ig:ig_progressives ?= {
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
 				NOT = {
-					has_ideology = ideology:ideology_nonexistent
+					is_country_type = decentralized
+				}
+				ig:ig_progressives ?= {
+					NOT = {
+						has_ideology = ideology:ideology_nonexistent
+					}
 				}
 			}
 		}

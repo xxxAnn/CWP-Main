@@ -25,15 +25,17 @@
 	on_character_ig_membership = {
 	}
 	pop_potential = {
-		owner = {
-			NOT = {
-				is_country_type = decentralized
-			}
-			exists = ig:ig_revolutionist_socialists
-			has_variable = bpm_country_has_non_marginal_unions_history_var
-			ig:ig_revolutionist_socialists = {
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
 				NOT = {
-					has_ideology = ideology:ideology_nonexistent
+					is_country_type = decentralized
+				}
+				has_variable = bpm_country_has_non_marginal_unions_history_var
+				ig:ig_revolutionist_socialists ?= {
+					NOT = {
+						has_ideology = ideology:ideology_nonexistent
+					}
 				}
 			}
 		}

@@ -31,9 +31,12 @@ ig_intelligentsia = {
 	on_character_ig_membership = {
 	}
 	pop_potential = {
-		owner = {
-			NOT = {
-				is_country_type = decentralized
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
+				NOT = {
+					is_country_type = decentralized
+				}
 			}
 		}
 	}

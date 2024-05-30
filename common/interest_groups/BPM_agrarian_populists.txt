@@ -36,13 +36,16 @@
 			is_pop_type = investors
 			is_pop_type = administrators
 		}
-		owner = {
-			NOT = {
-				is_country_type = decentralized
-			}
-			ig:ig_agrarian_populists ?= {
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
 				NOT = {
-					has_ideology = ideology:ideology_nonexistent
+					is_country_type = decentralized
+				}
+				ig:ig_agrarian_populists ?= {
+					NOT = {
+						has_ideology = ideology:ideology_nonexistent
+					}
 				}
 			}
 		}

@@ -78,14 +78,17 @@
 			is_pop_type = servicemembers
 			is_pop_type = officers
 		}
-		owner = {
-			ig:ig_trade_unions ?= {
+		custom_tooltip = {
+			text = BPM_VALID_POP_FOR_IG
+			owner = {
 				NOT = {
-					has_ideology = ideology:ideology_nonexistent
+					is_country_type = decentralized
 				}
-			}
-			NOT = {
-				is_country_type = decentralized
+				ig:ig_trade_unions ?= {
+					NOT = {
+						has_ideology = ideology:ideology_nonexistent
+					}
+				}
 			}
 		}
 	}
