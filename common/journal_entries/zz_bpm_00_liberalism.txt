@@ -6,7 +6,7 @@ je_liberalism_1 = {
 		NOT = {
 			has_variable = liberalism_1_done
 		}
-		has_technology_researched = democracy
+		#has_technology_researched = democracy
 		has_technology_researched = keynesian_macroeconomics
 	}
 	complete = {

@@ -91,7 +91,7 @@ bpm_give_labor_concession = {
 					this = law_type:law_limited_work_hours
 				}
 			}
-			has_technology_researched = human_rights
+			#has_technology_researched = human_rights
 		}
 		activate_law = law_type:law_limited_work_hours
 	}
@@ -103,7 +103,7 @@ bpm_give_labor_concession = {
 					this = law_type:law_worker_protections
 				}
 			}
-			has_technology_researched = human_rights
+			#has_technology_researched = human_rights
 		}
 		activate_law = law_type:law_worker_protections
 	}
@@ -115,7 +115,7 @@ bpm_give_labor_concession = {
 					this = law_type:law_protected_leisure
 				}
 			}
-			has_technology_researched = human_rights
+			#has_technology_researched = human_rights
 		}
 		activate_law = law_type:law_protected_leisure
 	}
