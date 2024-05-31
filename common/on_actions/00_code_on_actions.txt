@@ -3,7 +3,6 @@
 on_yearly_pulse_country = {
 	effect = {
 		onaction_ig_petition = yes
-		onaction_update_party_morale = yes
 	}
 	random_events = {
 		150 = 0
@@ -301,7 +300,6 @@ on_half_yearly_pulse_country = {
 		economic_events.1		# Farming Subsidies
 	}
 	effect = {
-		onaction_calc_party_cohesion = yes
 	}
 	events = {
 		cwp_bank_reevaluation.1
@@ -1320,8 +1318,6 @@ on_law_checkpoint_stall = {
 # will work as expected, even though the enactment is _just_ about to end
 on_law_enactment_pass = {
 	effect = {
-		onaction_racial_tension_modifier = yes
-		onaction_monarchy_abolished_modifier = yes
 	}
 }
 
@@ -1843,7 +1839,6 @@ on_party_disbanded = {
 on_election_campaign_start = {
 	effect = {
 		# debug_log = "Election Campaign Started"
-		onaction_calc_party_cohesion = yes
 	}
 }
 
@@ -1859,7 +1854,6 @@ on_government_reformed = {
 	effect = {
 		# Government Petition
 		set_variable = gov_petition_coin_toss
-		onaction_update_party_morale = yes
 	}
 }
 
