@@ -2026,9 +2026,6 @@ on_monthly_pulse_state = {
 	effect = {
 		onaction_skyscraper_modifier = yes
 		onaction_slums_modifier = yes
-		# Habitability Calculations 
-		onaction_calc_monthly_habitability = yes
-		onaction_set_habitability_effects = yes
 	}
 }
 

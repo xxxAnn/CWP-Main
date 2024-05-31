@@ -2099,41 +2099,41 @@ types TooltipTypes
         }
 	}
 
-	type pollution_tooltip = TooltipWidgetType {
-		dynamicgridbox = {
-			minimumsize = { 450 450}
-			flowcontainer = {
-				direction = vertical
-				spacing = 20
-				margin = { 20 20 }
-				parentanchor = top|left
-				flowcontainer = {
-					direction = vertical
-					parentanchor = top
-					spacing = 40
-					textbox = {
-						text = "POLLUTION_TOOLTIP_TITLE"
-						fontsize = 15
-					}
-					textbox = {
-						text = "GLOBAL_POLLUTION"
-					}
-					textbox = {
-						raw_text = "#D #l DEBUG #!#!"
-					}
-					textbox = {
-						raw_text = "#D Raw Pollution Value: #! [GetPlayer.MakeScope.ScriptValue('global_pollution_generation')]"
-					}
-					textbox = {
-						raw_text = "#D Pollution Max: #! [FixedPointToFloat(GetPlayer.MakeScope.ScriptValue('global_pollution_max'))]"
-					}
-					textbox = {
-						raw_text = "#D Global Temp. Target: #! [GetPlayer.MakeScope.ScriptValue('global_temp_target_celsius')]"
-					}
-				}
-			}
-		}
-	}
+	#type pollution_tooltip = TooltipWidgetType {
+	#	dynamicgridbox = {
+	#		minimumsize = { 450 450}
+	#		flowcontainer = {
+	#			direction = vertical
+	#			spacing = 20
+	#			margin = { 20 20 }
+	#			parentanchor = top|left
+	#			flowcontainer = {
+	#				direction = vertical
+	#				parentanchor = top
+	#				spacing = 40
+	#				textbox = {
+	#					text = "POLLUTION_TOOLTIP_TITLE"
+	#					fontsize = 15
+	#				}
+	#				textbox = {
+	#					text = "GLOBAL_POLLUTION"
+	#				}
+	#				textbox = {
+	#					raw_text = "#D #l DEBUG #!#!"
+	#				}
+	#				textbox = {
+	#					raw_text = "#D Raw Pollution Value: #! [GetPlayer.MakeScope.ScriptValue('global_pollution_generation')]"
+	#				}
+	#				textbox = {
+	#					raw_text = "#D Pollution Max: #! [FixedPointToFloat(GetPlayer.MakeScope.ScriptValue('global_pollution_max'))]"
+	#				}
+	#				textbox = {
+	#					raw_text = "#D Global Temp. Target: #! [GetPlayer.MakeScope.ScriptValue('global_temp_target_celsius')]"
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
 	type inflation_tooltip = FancyTooltipWidgetType {
 		blockoverride "name" {
 			raw_text = "#b [concept_inflation_rate]#!"

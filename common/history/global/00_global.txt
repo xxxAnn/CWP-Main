@@ -416,15 +416,6 @@ GLOBAL = {
 			value = 3
 		}
 	}
-	## Habitability Setup
-	# Range (%):
-	# -1 < 0 < 1
-	every_country = {
-		every_scope_state = {
-			onaction_calc_starting_habitability = yes
-			onaction_set_habitability_effects = yes
-		}
-	}
 	## Dynamic Peace deal State Setup
 	effect_china_states_scopes_setup = yes
 	# Urbanization Setup
