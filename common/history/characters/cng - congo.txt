@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:CNG = {
+	c:CNG ?= {
 		create_character = {
 			first_name = "Pierre"
 			last_name = "Ryckmans"

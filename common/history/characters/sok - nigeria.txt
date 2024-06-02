@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:SOK = {
+	c:SOK ?= {
 		create_character = {
 			first_name = "Arthur"
 			last_name = "Richards"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1885.2.21
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

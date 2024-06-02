@@ -618,9 +618,9 @@ domestic_pressure_growth = {
 			is_in_government = yes
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_securocrats
-				is_interest_group_type = ig_patriots
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_conservatives
 			}
 		}
 		add = {
@@ -632,8 +632,7 @@ domestic_pressure_growth = {
 			is_in_government = yes
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_urbanists
-				is_interest_group_type = ig_laborists
+				is_interest_group_type = ig_socialists
 				is_interest_group_type = ig_intelligentsia
 			}
 		}
@@ -650,9 +649,9 @@ imperial_policy_value_net = {
 			is_in_government = yes
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_securocrats
-				is_interest_group_type = ig_patriots
-				is_interest_group_type = ig_elites
+				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_conservatives
 			}
 		}
 		add = {
@@ -664,8 +663,7 @@ imperial_policy_value_net = {
 			is_in_government = yes
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_urbanists
-				is_interest_group_type = ig_laborists
+				is_interest_group_type = ig_socialists
 				is_interest_group_type = ig_intelligentsia
 			}
 		}

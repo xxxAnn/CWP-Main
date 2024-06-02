@@ -11,8 +11,8 @@ prostitution.1 = {
 				trigger = {
 					NOT = {
 						scope:cda_ig = {
-							is_interest_group_type = ig_securocrats
-							is_interest_group_type = ig_patriots
+							is_interest_group_type = ig_armed_forces
+							is_interest_group_type = ig_armed_forces
 						}
 					}
 				}
@@ -21,8 +21,8 @@ prostitution.1 = {
 				desc = prostitution.1.d2
 				trigger = {
 					scope:cda_ig = {
-						is_interest_group_type = ig_securocrats
-						is_interest_group_type = ig_patriots
+						is_interest_group_type = ig_armed_forces
+						is_interest_group_type = ig_armed_forces
 					}
 				}
 			}
@@ -43,7 +43,7 @@ prostitution.1 = {
 			has_variable = var_abolished_cda_permanently
 		}
 		institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			value = 3
 		}
 		any_scope_state = {
@@ -58,9 +58,9 @@ prostitution.1 = {
 				}
 				AND = {
 					OR = {
-						is_interest_group_type = ig_moralists
-						is_interest_group_type = ig_securocrats
-						is_interest_group_type = ig_patriots
+						is_interest_group_type = ig_devout
+						is_interest_group_type = ig_armed_forces
+						is_interest_group_type = ig_armed_forces
 					}
 					NOT = {
 						leader = {
@@ -99,9 +99,9 @@ prostitution.1 = {
 					}
 					AND = {
 						OR = {
-							is_interest_group_type = ig_moralists
-							is_interest_group_type = ig_securocrats
-							is_interest_group_type = ig_patriots
+							is_interest_group_type = ig_devout
+							is_interest_group_type = ig_armed_forces
+							is_interest_group_type = ig_armed_forces
 						}
 						NOT = {
 							leader = {
@@ -248,9 +248,9 @@ prostitution.2 = {
 						}
 						AND = {
 							OR = {
-								is_interest_group_type = ig_moralists
-								is_interest_group_type = ig_securocrats
-								is_interest_group_type = ig_patriots
+								is_interest_group_type = ig_devout
+								is_interest_group_type = ig_armed_forces
+								is_interest_group_type = ig_armed_forces
 							}
 							NOT = {
 								leader = {
@@ -269,9 +269,9 @@ prostitution.2 = {
 						}
 						AND = {
 							OR = {
-								is_interest_group_type = ig_moralists
-								is_interest_group_type = ig_securocrats
-								is_interest_group_type = ig_patriots
+								is_interest_group_type = ig_devout
+								is_interest_group_type = ig_armed_forces
+								is_interest_group_type = ig_armed_forces
 							}
 							NOT = {
 								leader = {
@@ -331,19 +331,19 @@ prostitution.3 = {
 			}
 		}
 		institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			value = 3
 		}
 		NOT = {
-			has_law = law_type:law_outlawed_dissent
+			#has_law = law_type:law_outlawed_dissent
 		}
 		any_interest_group = {
 			is_in_government = yes
 			OR = {
-				is_interest_group_type = ig_moralists
-				is_interest_group_type = ig_capitalists
-				is_interest_group_type = ig_elites
-				is_interest_group_type = ig_entrepreneurs
+				is_interest_group_type = ig_devout
+				is_interest_group_type = ig_market_liberals
+				is_interest_group_type = ig_conservatives
+				is_interest_group_type = ig_petty_bourgeoisie
 			}
 			leader = {
 				NOT = {
@@ -369,10 +369,10 @@ prostitution.3 = {
 			limit = {
 				is_in_government = yes
 				OR = {
-					is_interest_group_type = ig_moralists
-					is_interest_group_type = ig_capitalists
-					is_interest_group_type = ig_elites
-					is_interest_group_type = ig_entrepreneurs
+					is_interest_group_type = ig_devout
+					is_interest_group_type = ig_market_liberals
+					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_petty_bourgeoisie
 				}
 				leader = {
 					NOT = {
@@ -413,7 +413,7 @@ prostitution.3 = {
 				modifier = {
 					if = {
 						limit = {
-							has_law = law_type:law_protected_speech
+							#has_law = law_type:law_protected_speech
 						}
 					}
 					add = 25
@@ -421,7 +421,7 @@ prostitution.3 = {
 				if = {
 					limit = {
 						NOT = {
-							has_law = law_type:law_censorship
+							#has_law = law_type:law_censorship
 						}
 					}
 					add_modifier = {
@@ -440,7 +440,7 @@ prostitution.3 = {
 				modifier = {
 					if = {
 						limit = {
-							has_law = law_type:law_censorship
+							#has_law = law_type:law_censorship
 						}
 					}
 					add = 25
@@ -481,10 +481,10 @@ prostitution.4 = {
 		}
 		OR = {
 			institution_investment_level = {
-				institution = institution_criminal_justice_system
+				institution = institution_police
 				value >= 3
 			}
-			has_law = law_type:law_militarized_police
+			#has_law = law_type:law_militarized_police
 		}
 		any_scope_state = {
 			is_incorporated = yes
@@ -516,7 +516,7 @@ prostitution.4 = {
 		# defund the police
 		name = prostitution.4.a
 		change_institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			investment = -1
 		}
 		every_interest_group = {

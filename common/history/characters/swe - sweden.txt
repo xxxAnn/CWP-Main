@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:SWE = {
+	c:SWE ?= {
 		create_character = {
 			first_name = "Per"
 			last_name = "Albin_Hansson"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1885.10.28
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ideology = ideology_moderate
 			traits = {
 			}

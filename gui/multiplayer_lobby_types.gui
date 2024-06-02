@@ -166,7 +166,7 @@ template multiplayer_lobby_selected_country_info {
 
 							country_gdp_info = {
 								blockoverride "tooltip" {
-									tooltip = "CWP_GDP_TOOLTIP"
+									tooltip = "CWP_GDP_TOOLTIP"  # Can we use the normal tooltip for this?  If so, file should be able to be deleted
 								}
 							}
 							country_population_info = {

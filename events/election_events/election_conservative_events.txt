@@ -15,7 +15,7 @@ election_conservative_events.1 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -86,7 +86,7 @@ election_conservative_events.1 = {
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = godless_politician_praised				# interest_group_approval_add
 				months = normal_modifier_time
@@ -111,7 +111,7 @@ election_conservative_events.2 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -183,7 +183,7 @@ election_conservative_events.3 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -196,7 +196,7 @@ election_conservative_events.3 = {
 			turmoil > 0.2
 		}
 		institution_investment_level = {
-			institution = institution_criminal_justice_system
+			institution = institution_police
 			value < 5
 		}
 		any_interest_group = {
@@ -280,7 +280,7 @@ election_conservative_events.4 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -334,7 +334,7 @@ election_conservative_events.4 = {
 	option = {
 		name = election_conservative_events.4.b
 		default_option = yes
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_modifier = {
 				name = weak_and_trusting				# interest_group_approval_add
 				months = normal_modifier_time

@@ -33,25 +33,25 @@ bureaucracy.1 = {
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_politicized_bureaucrats
+				#has_law = law_type:law_politicized_bureaucrats
 			}
-			ig:ig_elites = {
+			ig:ig_conservatives = {
 				save_scope_as = bureaucrat_class
 			}
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_politicized_bureaucrats
+				#has_law = law_type:law_politicized_bureaucrats
 			}
-			ig:ig_urbanists = {
+			ig:ig_intelligentsia = {
 				save_scope_as = bureaucrat_class
 			}
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_elected_bureaucrats
+				#has_law = law_type:law_elected_bureaucrats
 			}
-			ig:ig_entrepreneurs = {
+			ig:ig_petty_bourgeoisie = {
 				save_scope_as = bureaucrat_class
 			}
 		}
@@ -82,7 +82,7 @@ bureaucracy.1 = {
 		name = bureaucracy.1.b
 		trigger = {
 			NOT = {
-				has_law = law_type:law_secret_police
+				#has_law = law_type:law_secret_police
 			}
 		}
 		# lose 15% success chance and bureaucracy mult
@@ -94,7 +94,7 @@ bureaucracy.1 = {
 		# secret police will keep them in line
 		name = bureaucracy.1.c
 		trigger = {
-			has_law = law_type:law_secret_police
+			#has_law = law_type:law_secret_police
 		}
 		# lose 10% success chance
 		add_enactment_modifier = {
@@ -102,7 +102,7 @@ bureaucracy.1 = {
 		}
 	}
 	option = {
-		# hire new bureaucrats
+		# hire new administrators
 		name = bureaucracy.1.e
 		trigger = {
 			enactment_setback_count < 2
@@ -132,7 +132,7 @@ bureaucracy.2 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		has_law = law_type:law_politicized_bureaucrats
+		#has_law = law_type:law_politicized_bureaucrats
 		OR = {
 			is_enacting_law = law_type:law_politicized_bureaucrats
 			is_enacting_law = law_type:law_appointed_bureaucrats
@@ -150,7 +150,7 @@ bureaucracy.2 = {
 			limit = {
 				is_enacting_law = law_type:law_politicized_bureaucrats
 			}
-			ig:ig_urbanists = {
+			ig:ig_intelligentsia = {
 				save_scope_as = meritocracy_ig
 			}
 		}
@@ -158,11 +158,11 @@ bureaucracy.2 = {
 			limit = {
 				is_enacting_law = law_type:law_elected_bureaucrats
 			}
-			ig:ig_entrepreneurs = {
+			ig:ig_petty_bourgeoisie = {
 				save_scope_as = meritocracy_ig
 			}
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = bureaucrat_class
 		}
 	}

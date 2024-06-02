@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:GBR = {
+	c:GBR ?= {
 		#UN /  Corruption
 		add_journal_entry = {
 			type = indian_partition
@@ -20,7 +20,6 @@
 			value = 0
 		}
 		effect_currency_gbp = yes
-		effect_corruption_low = yes
 		# Politics
 		set_next_election_date = 1946.2.1
 		# Tech and Tax
@@ -28,36 +27,30 @@
 		effect_starting_technology_wartime_major_participant_tech = yes
 		set_tax_level = very_high		#Postwar tax rate
 		# Laws
-		##For Lizzie
 		effect_create_law_package = {
-			headOfGovernment = hereditary
-			distributionOfPower = representative_democracy
-			criminalJustice = penal_correction
-			centralization = devolved
-			discrimination = segregationist
-			churchAndState = religious_policies
-			bureaucraticSystems = independent_bureaucrats
-			policing = professional_police
-			nationalDefense = professional_military
-			economicSystem = interventionism
-			tradePolicy = protectionism
-			taxation = income_taxation
-			educationSystem = mixed_funded_schools
-			healthSystem = subsidized_health_insurance
-			environmentalRegulations = no_environment_regulations
-			corporateAffairs = anti_trust_regulation
-			nationalization = public_utility_companies
-			monetaryPolicy = gold_standard
-			wmds = deterrence
-			freeSpeech = right_of_assembly
-			laborRights = standard_workweeks
-			childrensRights = compulsory_education
-			rightsOfWomen = political_participation
-			familyPlanning = no_family_planning
-			welfare = income_supplementation
-			migration = selective_immigration
-			biotech = unrestricted_human_testing
-			recreationalDrugs = alcohol_allowed
+			#Placeholder Vanilla Laws
+			governanceprinciples = law_monarchy
+			distributionOfPower = law_proportional_voting
+			citizenship = law_racial_segregation
+			activate_law = law_type:law_$churchandstate$
+			activate_law = law_type:law_$bureaucracy$
+			activate_law = law_type:law_$armymodel$
+			activate_law = law_type:law_$internalsecurity$
+			activate_law = law_type:law_$economicsystem$
+			activate_law = law_type:law_$tradepolicy$
+			activate_law = law_type:law_$lawgrouptaxation$
+			activate_law = law_type:law_$landreform$
+			activate_law = law_type:law_$educationsystem$
+			activate_law = law_type:law_$healthsystem$
+			activate_law = law_type:law_$freespeech$
+			activate_law = law_type:law_$childrensrights$
+			activate_law = law_type:law_$rightsofwomen$
+			activate_law = law_type:law_$welfare$
+			activate_law = law_type:law_$migration$
+			#CWP Special
+			activate_law = law_type:law_$environmentalregulations$
+			activate_law = law_type:law_$wmds$
+			activate_law = law_type:law_$monetaryPolicy$
 		}
 		# IMF
 		set_imf_member = yes
@@ -70,26 +63,25 @@
 			loanType = 1
 		}
 		#IG in government to match ruler
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_ruling_interest_group = yes
 		}
 		# Institutions
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 3
+			level = 1
 		}
 		set_institution_investment_level = {
-			institution = institution_criminal_justice_system
-			level = 2
+			institution = institution_police
+			level = 1
 		}
 		set_institution_investment_level = {
 			institution = institution_health_system
-			level = 2
+			level = 1
 		}
 		effect_bretton_woods_signatory = yes
 		add_journal_entry = {
 			type = je_anglo_american_loan
 		}
-
 	}
 }

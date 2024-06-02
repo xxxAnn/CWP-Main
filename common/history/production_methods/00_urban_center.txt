@@ -1,5 +1,5 @@
 ﻿PRODUCTION_METHODS = {
-	c:USA = {
+	c:USA ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -25,7 +25,7 @@
 			production_method = pm_public_bus_system
 		}
 	}
-	c:FRA = {
+	c:FRA ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -47,13 +47,13 @@
 			production_method = pm_public_bus_system
 		}
 	}
-	c:CUB = {
+	c:CUB ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_limited_zoning
 		}
 	}
-	c:GBR = {
+	c:GBR ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -71,7 +71,7 @@
 			production_method = pm_some_professional_services
 		}
 	}
-	c:NET = {
+	c:NET ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -89,7 +89,7 @@
 			production_method = pm_some_professional_services
 		}
 	}
-	c:SWE = {
+	c:SWE ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -107,7 +107,7 @@
 			production_method = pm_some_professional_services
 		}
 	}
-	c:JAP = {
+	c:JAP ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_secular_urban_clergy
@@ -125,7 +125,7 @@
 			production_method = pm_some_professional_services
 		}
 	}
-	c:RUS = {
+	c:RUS ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -143,7 +143,7 @@
 			production_method = pm_banned_religious_services
 		}
 	}
-	c:ARG = {
+	c:ARG ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -157,7 +157,7 @@
 			production_method = pm_some_professional_services
 		}
 	}
-	c:CZH = {
+	c:CZH ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -171,7 +171,7 @@
 			production_method = pm_some_professional_services
 		}
 	}
-	c:POL = {
+	c:POL ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -185,25 +185,7 @@
 			production_method = pm_some_professional_services
 		}
 	}
-	c:SWI = {
-		activate_production_method = {
-			building_type = building_urban_center
-			production_method = pm_industrial_cities
-		}
-		activate_production_method = {
-			building_type = building_urban_center
-			production_method = pm_limited_zoning
-		}
-		activate_production_method = {
-			building_type = building_urban_center
-			production_method = pm_some_professional_services
-		}
-		activate_production_method = {
-			building_type = building_urban_center
-			production_method = pm_secular_urban_clergy
-		}
-	}
-	c:BEL = {
+	c:SWI ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_industrial_cities
@@ -220,15 +202,19 @@
 			building_type = building_urban_center
 			production_method = pm_secular_urban_clergy
 		}
+	}
+	c:BEL ?= {
 		activate_production_method = {
 			building_type = building_urban_center
-			production_method = pm_public_bus_system
+			production_method = pm_industrial_cities
 		}
-	}
-	c:LUX = {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_limited_zoning
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_some_professional_services
 		}
 		activate_production_method = {
 			building_type = building_urban_center
@@ -239,7 +225,21 @@
 			production_method = pm_public_bus_system
 		}
 	}
-	c:ELS = {
+	c:LUX ?= {
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_limited_zoning
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_secular_urban_clergy
+		}
+		activate_production_method = {
+			building_type = building_urban_center
+			production_method = pm_public_bus_system
+		}
+	}
+	c:ELS ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_limited_zoning
@@ -253,7 +253,7 @@
 			production_method = pm_state_urban_clergy
 		}
 	}
-	c:MEX = {
+	c:MEX ?= {
 		activate_production_method = {
 			building_type = building_urban_center
 			production_method = pm_limited_zoning

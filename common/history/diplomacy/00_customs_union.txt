@@ -1,15 +1,5 @@
 ﻿DIPLOMACY = {
-	c:AOZ = {
-		create_diplomatic_pact = {
-			country = c:FOZ
-			type = customs_union
-		}
-		create_diplomatic_pact = {
-			country = c:BOZ
-			type = customs_union
-		}
-	}
-	c:GBR = {
+	c:GBR ?= {
 		create_diplomatic_pact = {
 			country = c:SRI
 			type = customs_union
@@ -140,15 +130,15 @@
 			type = customs_union
 		}
 	}
-	c:DEN = {
+	c:DEN ?= {
 		create_diplomatic_pact = {
 			country = c:GRN
 			type = customs_union
 		}
 	}
-	c:NOR = {
+	c:NOR ?= {
 	}
-	c:FRA = {
+	c:FRA ?= {
 		create_diplomatic_pact = {
 			country = c:TUN
 			type = customs_union
@@ -187,7 +177,7 @@
 			type = customs_union
 		}
 	}
-	c:NET = {
+	c:NET ?= {
 		create_diplomatic_pact = {
 			country = c:WPP
 			type = customs_union
@@ -201,13 +191,13 @@
 			type = customs_union
 		}
 	}
-	c:USA = {
+	c:USA ?= {
 		create_diplomatic_pact = {
 			country = c:PHI
 			type = customs_union
 		}
 	}
-	c:RUS = {
+	c:RUS ?= {
 		create_diplomatic_pact = {
 			country = c:MGL
 			type = customs_union
@@ -221,7 +211,7 @@
 			type = customs_union
 		}
 	}
-	c:BEL = {
+	c:BEL ?= {
 		create_diplomatic_pact = {
 			country = c:CNG
 			type = customs_union
@@ -231,7 +221,7 @@
 			type = customs_union
 		}
 	}
-	c:POR = {
+	c:POR ?= {
 		create_diplomatic_pact = {
 			country = c:MAO
 			type = customs_union
@@ -249,22 +239,22 @@
 			type = customs_union
 		}
 	}
-	c:HND = {
+	c:HND ?= {
 	}
-	c:AST = {
+	c:AST ?= {
 		create_diplomatic_pact = {
 			country = c:PPN
 			type = customs_union
 		}
 	}
-	c:ROC = {
+	c:ROC ?= {
 		create_diplomatic_pact = {
 			country = c:TIB
 			type = customs_union
 		}
 	}
 	#South Africa and Namibia
-	c:SAF = {
+	c:SAF ?= {
 		create_diplomatic_pact = {
 			country = c:NAM
 			type = customs_union

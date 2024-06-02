@@ -1,0 +1,104 @@
+﻿bpm_council_custom_loc = {
+	type = country
+	random_valid = no
+
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = anglo_saxon_culture_group }
+		}
+		localization_key = bpm_council_english
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = balkoslavic_culture_group }
+		}
+		localization_key = bpm_council_east_slavic
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = western_slavic_culture_group }
+		}
+		localization_key = bpm_council_west_slavic
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = french_culture_group }
+		}
+		localization_key = bpm_council_french
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = low_franconian }
+		}
+		localization_key = bpm_council_dutch
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = germanic_culture_group }
+		}
+		localization_key = bpm_council_german
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = italian_culture_group }
+		}
+		localization_key = bpm_council_italian
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = iberian_culture_group }
+		}
+		localization_key = bpm_council_portuguese
+	}
+	text = {
+		trigger = {
+			OR = {
+				any_primary_culture = { has_discrimination_trait = indigenous_south_american_culture_group }
+				any_primary_culture = { has_discrimination_trait = latin_american_culture_group }
+			}
+		}
+		localization_key = bpm_council_chilean
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = iberian_culture_group }
+		}
+		localization_key = bpm_council_spanish
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = japanese_culture_group }
+		}
+		localization_key = bpm_council_japanese
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = sinitic_culture_group }
+		}
+		localization_key = bpm_council_chinese
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = korean_culture_group }
+		}
+		localization_key = bpm_council_korean
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = iranian_culture_group }
+		}
+		localization_key = bpm_council_persian
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = arabic_culture_group }
+		}
+		localization_key = bpm_council_arabic
+	}
+	text = {
+		trigger = {
+			any_primary_culture = { has_discrimination_trait = semitic_culture_group }
+		}
+		localization_key = bpm_council_israeli
+	}
+}

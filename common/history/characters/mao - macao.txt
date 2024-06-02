@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MAO = {
+	c:MAO ?= {
 		create_character = {
 			first_name = "Gabriel"
 			last_name = "Mauricio_Teixeira"			# Maurício Teixeira
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1897.9.22
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 			}

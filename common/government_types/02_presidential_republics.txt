@@ -7,7 +7,7 @@ gov_military_governorate = {
 		OR = {
 			is_subject_type = subject_type_military_occupation
 			AND = {
-				has_law = law_type:law_administrative
+				#has_law = law_type:law_administrative
 				is_subject = yes
 				country_is_in_europe = yes
 			}
@@ -26,7 +26,7 @@ gov_banana_republic = {
 	male_ruler = "RULER_TITLE_PRESIDENT"
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	possible = {
-		has_law = law_type:law_executive
+		has_law = law_type:law_presidential_republic
 		has_voting_rights = no
 		any_state = {
 			has_building = building_banana_plantation
@@ -52,8 +52,8 @@ gov_bhutanese_dual_system_temporal = {
 	possible = {
 		exists = c:BHU
 		c:BHU = ROOT
-		has_law = law_type:law_executive
-		has_law = law_type:law_religious_institutions
+		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_state_religion
 		has_voting_rights = no
 	}
 	on_government_type_change = {
@@ -69,7 +69,7 @@ gov_warlord_state = {
 	male_ruler = "RULER_TITLE_GENERAL"
 	female_ruler = "RULER_TITLE_GENERAL"
 	possible = {
-		has_law = law_type:law_executive
+		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_autocracy
 		OR = {
 			#Maybe theres a better trigger?
@@ -91,8 +91,8 @@ gov_fascist_state = {
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	possible = {
 		OR = {
-			has_law = law_type:law_executive
-			has_law = law_type:law_parliamentary
+			has_law = law_type:law_presidential_republic
+			has_law = law_type:law_parliamentary_republic
 		}
 		has_law = law_type:law_autocracy
 		coa_fascist_trigger = yes
@@ -111,11 +111,11 @@ gov_crown_colony = {
 	male_ruler = "RULER_TITLE_GOVERNOR"
 	female_ruler = "RULER_TITLE_GOVERNOR"
 	possible = {
-		has_law = law_type:law_administrative
+		#has_law = law_type:law_administrative
 		exists = c:GBR
 		is_subject_of = c:GBR
 		c:GBR = {
-			has_law = law_type:law_hereditary
+			has_law = law_type:law_monarchy
 		}
 		is_subject_type = subject_type_puppet
 		country_is_in_europe = no
@@ -134,7 +134,7 @@ gov_colonial_administration = {
 	male_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
 	female_ruler = "RULER_TITLE_GOVERNOR_GENERAL"
 	possible = {
-		has_law = law_type:law_administrative
+		#has_law = law_type:law_administrative
 		# TODO: Morocco and Tunisia technically had a resident-general and not a governor-general, someone can change it if they want to
 		# TODO: French somaliland had a governor, not a governor-general
 		# TODO: Belgian Rwanda had a governor and not a governor-general
@@ -155,21 +155,11 @@ gov_military_dictatorship = {
 	male_ruler = "RULER_TITLE_GENERAL"
 	female_ruler = "RULER_TITLE_GENERAL"
 	possible = {
-		has_law = law_type:law_executive
+		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_autocracy
 		OR = {
-			has_law = law_type:law_professional_military
-			has_law = law_type:law_volunteer_only_military
-		}
-		NOT = {
-			AND = {
-				has_law = law_type:law_privatized_police
-				has_law = law_type:law_criminal_restitution
-				has_law = law_type:law_private_military
-				has_law = law_type:law_private_health_insurance
-				has_law = law_type:law_private_schools
-				has_law = law_type:law_private_schools
-			}
+			#has_law = law_type:law_professional_military
+			#has_law = law_type:law_volunteer_only_military
 		}
 	}
 	on_government_type_change = {
@@ -185,19 +175,9 @@ gov_presidential_dictatorship = {
 	male_ruler = "RULER_TITLE_PRESIDENT"
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	possible = {
-		has_law = law_type:law_executive
+		has_law = law_type:law_presidential_republic
 		has_law = law_type:law_autocracy
-		has_law = law_type:law_reserve_military
-		NOT = {
-			AND = {
-				has_law = law_type:law_privatized_police
-				has_law = law_type:law_criminal_restitution
-				has_law = law_type:law_private_military
-				has_law = law_type:law_private_health_insurance
-				has_law = law_type:law_private_schools
-				has_law = law_type:law_private_schools
-			}
-		}
+		#has_law = law_type:law_reserve_military
 	}
 	on_government_type_change = {
 		change_to_dictatorial = yes
@@ -212,21 +192,11 @@ gov_junta = {
 	male_ruler = "RULER_TITLE_GENERAL"
 	female_ruler = "RULER_TITLE_GENERAL"
 	possible = {
-		has_law = law_type:law_executive
+		has_law = law_type:law_presidential_republic
 		has_voting_rights = no
 		OR = {
-			has_law = law_type:law_professional_military
-			has_law = law_type:law_volunteer_only_military
-		}
-		NOT = {
-			AND = {
-				has_law = law_type:law_privatized_police
-				has_law = law_type:law_criminal_restitution
-				has_law = law_type:law_private_military
-				has_law = law_type:law_private_health_insurance
-				has_law = law_type:law_private_schools
-				has_law = law_type:law_private_schools
-			}
+			#has_law = law_type:law_professional_military
+			#has_law = law_type:law_volunteer_only_military
 		}
 	}
 	on_government_type_change = {
@@ -242,18 +212,8 @@ gov_presidential_oligarchy = {
 	male_ruler = "RULER_TITLE_PRESIDENT"
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	possible = {
-		has_law = law_type:law_executive
+		has_law = law_type:law_presidential_republic
 		has_voting_rights = no
-		NOT = {
-			AND = {
-				has_law = law_type:law_privatized_police
-				has_law = law_type:law_criminal_restitution
-				has_law = law_type:law_private_military
-				has_law = law_type:law_private_health_insurance
-				has_law = law_type:law_private_schools
-				has_law = law_type:law_private_schools
-			}
-		}
 	}
 	on_government_type_change = {
 		change_to_dictatorial = yes
@@ -269,17 +229,8 @@ gov_presidential_democracy = {
 	male_ruler = "RULER_TITLE_PRESIDENT"
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	possible = {
-		has_law = law_type:law_executive
+		has_law = law_type:law_presidential_republic
 		has_voting_rights = yes
-		NOT = {
-			AND = {
-				has_law = law_type:law_privatized_police
-				has_law = law_type:law_criminal_restitution
-				has_law = law_type:law_private_military
-				has_law = law_type:law_private_health_insurance
-				has_law = law_type:law_private_schools
-			}
-		}
 	}
 	on_government_type_change = {
 		change_to_presidential_elective = yes
@@ -294,8 +245,8 @@ gov_presidential_single_party_state = {
 	male_ruler = "RULER_TITLE_PRESIDENT"
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	possible = {
-		has_law = law_type:law_executive
-		has_law = law_type:law_anocracy
+		has_law = law_type:law_presidential_republic
+		#has_law = law_type:law_anocracy
 	}
 	on_government_type_change = {
 		change_to_presidential_elective = yes
@@ -305,61 +256,15 @@ gov_presidential_single_party_state = {
 	}
 }
 
-gov_corpo_state = {
-	transfer_of_power = dictatorial
-	new_leader_on_reform_government = yes
-	male_ruler = "RULER_TITLE_EXECUTIVE"
-	female_ruler = "RULER_TITLE_EXECUTIVE"
-	possible = {
-		is_liberal = yes
-		has_voting_rights = no
-		has_law = law_type:law_privatized_police
-		has_law = law_type:law_criminal_restitution
-		has_law = law_type:law_private_military
-		has_law = law_type:law_private_health_insurance
-		has_law = law_type:law_private_schools
-		has_law = law_type:law_private_schools
-	}
-	on_government_type_change = {
-		change_to_dictatorial = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_dictatorial = yes
-	}
-}
-
-gov_corpo_state_democratic = {
-	transfer_of_power = parliamentary_elective
-	new_leader_on_reform_government = yes
-	male_ruler = "RULER_TITLE_EXECUTIVE"
-	female_ruler = "RULER_TITLE_EXECUTIVE"
-	possible = {
-		has_voting_rights = yes
-		is_liberal = yes
-		has_law = law_type:law_privatized_police
-		has_law = law_type:law_criminal_restitution
-		has_law = law_type:law_private_military
-		has_law = law_type:law_private_health_insurance
-		has_law = law_type:law_private_schools
-		has_law = law_type:law_private_schools
-	}
-	on_government_type_change = {
-		change_to_parliamentary_elective = yes
-	}
-	on_post_government_type_change = {
-		post_change_to_parliamentary_elective = yes
-	}
-}
-
 gov_provisional_government = {
 	transfer_of_power = dictatorial
 	male_ruler = "RULER_TITLE_PRESIDENT"
 	female_ruler = "RULER_TITLE_PRESIDENT"
 	possible = {
 		OR = {
-			has_law = law_type:law_administrative
+			#has_law = law_type:law_administrative
 			AND = {
-				has_law = law_type:law_executive
+				has_law = law_type:law_presidential_republic
 				has_variable = revolutionary_prov_gov_var
 			}
 		}

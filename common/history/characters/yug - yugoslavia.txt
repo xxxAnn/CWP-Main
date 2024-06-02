@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:YUG = {
+	c:YUG ?= {
 		create_character = {
 			first_name = "Josip"
 			last_name = "Broz_Tito"
@@ -7,7 +7,7 @@
 			ruler = yes
 			#ig_leader = yes #Ruler can't be IG leader under dictatorship or monarchy.
 			birth_date = 1892.5.7
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ideology = ideology_moderate
 			traits = {
 			}

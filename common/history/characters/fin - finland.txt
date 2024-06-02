@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:FIN = {
+	c:FIN ?= {
 		create_character = {
 			first_name = "Carl"
 			last_name = "Mannerheim"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1867.06.04
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 			}
@@ -18,7 +18,7 @@
 			culture = cu:finnish
 			ig_leader = yes
 			birth_date = 1870.11.27
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

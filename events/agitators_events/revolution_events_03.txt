@@ -21,8 +21,8 @@ revolution_pulse2_events.1 = {
 			is_insurrectionary = yes
 			is_marginal = no
 			OR = {
-				is_interest_group_type = ig_securocrats
-				is_interest_group_type = ig_patriots
+				is_interest_group_type = ig_armed_forces
+				is_interest_group_type = ig_armed_forces
 				leader = {
 					has_role = general
 				}
@@ -55,8 +55,8 @@ revolution_pulse2_events.1 = {
 				is_insurrectionary = yes
 				is_marginal = no
 				OR = {
-					is_interest_group_type = ig_securocrats
-					is_interest_group_type = ig_patriots
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_armed_forces
 					leader = {
 						has_role = general
 					}
@@ -113,7 +113,7 @@ revolution_pulse2_events.1 = {
 			}
 		}
 		scope:army_lad_leader_scope = {
-			set_character_busy = yes
+			set_character_busy_and_immortal = yes
 		}
 	}
 	option = {
@@ -190,7 +190,7 @@ revolution_pulse2_events.2 = {
 		name = revolution_pulse2_events.2.a
 		default_option = yes
 		scope:army_lad_leader_scope = {
-			set_character_busy = no
+			set_character_busy_and_immortal = no
 		}
 		add_modifier = {
 			name = results_of_the_fact_finding_mission
@@ -349,7 +349,7 @@ revolution_pulse2_events.3 = {
 			AND = {
 				liberal_revolution_ongoing = yes
 				NOT = {
-					has_law = law_type:law_council_elective
+					has_law = law_type:law_socialist_republic
 				}
 			}
 		}
@@ -364,13 +364,13 @@ revolution_pulse2_events.3 = {
 			country_rank >= rank_value:major_power
 			OR = {
 				has_law = law_type:law_autocracy
-				has_law = law_type:law_hereditary
+				has_law = law_type:law_monarchy
 				NOT = {
 					any_interest_group = {
 						is_in_government = yes
 						OR = {
-							is_interest_group_type = ig_laborists
-							is_interest_group_type = ig_urbanists
+							is_interest_group_type = ig_socialists
+							is_interest_group_type = ig_intelligentsia
 						}
 					}
 				}
@@ -404,13 +404,13 @@ revolution_pulse2_events.3 = {
 				country_rank >= rank_value:major_power
 				OR = {
 					has_law = law_type:law_autocracy
-					has_law = law_type:law_hereditary
+					has_law = law_type:law_monarchy
 					NOT = {
 						any_interest_group = {
 							is_in_government = yes
 							OR = {
-								is_interest_group_type = ig_laborists
-								is_interest_group_type = ig_urbanists
+								is_interest_group_type = ig_socialists
+								is_interest_group_type = ig_intelligentsia
 							}
 						}
 					}
@@ -543,7 +543,7 @@ revolution_pulse2_events.4 = {
 			AND = {
 				liberal_revolution_ongoing = yes
 				NOT = {
-					has_law = law_type:law_council_elective
+					has_law = law_type:law_socialist_republic
 				}
 			}
 		}
@@ -561,7 +561,7 @@ revolution_pulse2_events.4 = {
 				occupancy >= 0.5
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_marginal = no
 		}
 	}
@@ -610,7 +610,7 @@ revolution_pulse2_events.4 = {
 				value = medium_radicals
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = sided_with_capitalists_over_scrips
 				months = normal_modifier_time
@@ -642,7 +642,7 @@ revolution_pulse2_events.4 = {
 			pop_type = investors
 			value = small_radicals
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = sided_with_workers_over_scrips
 				months = normal_modifier_time
@@ -797,15 +797,15 @@ revolution_pulse2_events.7 = {
 			AND = {
 				liberal_revolution_ongoing = yes
 				NOT = {
-					has_law = law_type:law_council_elective
+					has_law = law_type:law_socialist_republic
 				}
 			}
 		}
 		revolution_progress_low = yes
 		any_interest_group = {
 			OR = {
-				is_interest_group_type = ig_ruralists
-				is_interest_group_type = ig_laborists
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_socialists
 			}
 			is_insurrectionary = yes
 		}
@@ -848,8 +848,8 @@ revolution_pulse2_events.7 = {
 			limit = {
 				is_insurrectionary = yes
 				OR = {
-					is_interest_group_type = ig_ruralists
-					is_interest_group_type = ig_laborists
+					is_interest_group_type = ig_rural_folk
+					is_interest_group_type = ig_socialists
 				}
 			}
 			save_scope_as = hatmakerfeud_ig

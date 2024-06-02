@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MGS = {
+	c:MGS ?= {
 		create_character = {
 			first_name = "Pierre"
 			last_name = "de_Saint-Mart"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1894.11.17
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 			}

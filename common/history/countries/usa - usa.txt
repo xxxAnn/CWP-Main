@@ -1,7 +1,11 @@
-COUNTRIES = {
-	c:USA = {
-		add_journal_entry = { type = west_german_unification }
-		add_journal_entry = { type = je_bretton_woods_agreement }
+﻿COUNTRIES = {
+	c:USA ?= {
+		add_journal_entry = {
+			type = west_german_unification
+		}
+		add_journal_entry = {
+			type = je_bretton_woods_agreement
+		}
 		effect_western_bloc_leader = yes
 		# UN / Corruption
 		effect_unsc_member = yes
@@ -9,20 +13,20 @@ COUNTRIES = {
 		effect_nuclear_capable_nation = {
 			stockpile = 2
 		}
-		effect_corruption_low = yes
 		effect_currency_usd = yes
 		# Politics
+		effect_liberal_republic_law_package = yes
 		#todo IGs and Ideologies
-		# ig:ig_entrepreneurs = {
+		# ig:ig_petty_bourgeoisie = {
 		# 	add_ruling_interest_group = yes
 		# }
-		# ig:ig_urbanists = {
+		# ig:ig_intelligentsia = {
 		# 	add_ruling_interest_group = yes
 		# }
-		# ig:ig_capitalists = {
+		# ig:ig_market_liberals = {
 		# 	add_ruling_interest_group = yes
 		# }
-		# ig:ig_laborists = {
+		# ig:ig_socialists = {
 		# 	add_ruling_interest_group = yes
 		# }
 		every_active_party = {
@@ -37,36 +41,6 @@ COUNTRIES = {
 		add_era_researched = era_1
 		add_era_researched = era_2
 		# Laws
-		effect_create_law_package = {
-			headOfGovernment = executive
-			distributionOfPower = representative_democracy
-			criminalJustice = penal_correction
-			centralization = federalized
-			discrimination = segregationist
-			churchAndState = church_disestablishment
-			bureaucraticSystems = appointed_bureaucrats
-			policing = professional_police
-			nationalDefense = professional_military
-			economicSystem = interventionism
-			tradePolicy = export_orientation
-			taxation = income_taxation
-			educationSystem = mixed_funded_schools
-			healthSystem = private_health_insurance
-			environmentalRegulations = no_environment_regulations
-			corporateAffairs = anti_trust_regulation
-			nationalization = public_utility_companies
-			monetaryPolicy = gold_standard
-			wmds = first_strike
-			freeSpeech = right_of_assembly
-			laborRights = wrongful_dismissal_protections
-			childrensRights = compulsory_education
-			rightsOfWomen = political_participation
-			familyPlanning = no_family_planning
-			welfare = income_security
-			migration = selective_immigration
-			biotech = unrestricted_human_testing
-			recreationalDrugs = alcohol_allowed
-		}
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {
@@ -80,18 +54,14 @@ COUNTRIES = {
 		# Institutions
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 4
+			level = 1
 		}
 		set_institution_investment_level = {
-			institution = institution_criminal_justice_system
-			level = 4
+			institution = institution_police
+			level = 1
 		}
 		set_institution_investment_level = {
-			institution = institution_welfare
-			level = 3
-		}
-		set_institution_investment_level = {
-			institution = institution_corporate_affairs
+			institution = institution_social_security
 			level = 2
 		}
 		set_institution_investment_level = {
@@ -99,7 +69,6 @@ COUNTRIES = {
 			level = 2
 		}
 		set_next_election_date = 1948.11.2
-
 		add_company = company_type:company_international_business_machines
 		company:company_international_business_machines = {
 			set_company_establishment_date = 1911.6.12
@@ -116,6 +85,5 @@ COUNTRIES = {
 		company:company_boeing = {
 			set_company_establishment_date = 1916.7.15
 		}
-
 	}
 }

@@ -153,9 +153,15 @@ Return type: CivilWar
 
 -----------------------
 
-Scope.AccessCommanderOrder
+Scope.AccessCombatUnit
 Definition type: Promote
-Return type: CommanderOrder
+Return type: CombatUnit
+
+-----------------------
+
+Scope.AccessCombatUnitType
+Definition type: Promote
+Return type: CombatUnitType
 
 -----------------------
 
@@ -198,6 +204,12 @@ Return type: CountryDefinition
 Scope.AccessCountryFormation
 Definition type: Promote
 Return type: CountryFormation
+
+-----------------------
+
+Scope.AccessCulturalCommunity
+Definition type: Promote
+Return type: CulturalCommunity
 
 -----------------------
 
@@ -330,6 +342,18 @@ Return type: MarketGoods
 Scope.AccessMilitaryFormation
 Definition type: Promote
 Return type: MilitaryFormation
+
+-----------------------
+
+Scope.AccessMobilizationOption
+Definition type: Promote
+Return type: MobilizationOption
+
+-----------------------
+
+Scope.AccessNavalInvasion
+Definition type: Promote
+Return type: NavalInvasion
 
 -----------------------
 
@@ -477,9 +501,15 @@ Return type: CivilWar
 
 -----------------------
 
-Scope.GetCommanderOrder
+Scope.GetCombatUnit
 Definition type: Promote
-Return type: CommanderOrder
+Return type: CombatUnit
+
+-----------------------
+
+Scope.GetCombatUnitType
+Definition type: Promote
+Return type: CombatUnitType
 
 -----------------------
 
@@ -522,6 +552,12 @@ Return type: CountryDefinition
 Scope.GetCountryFormation
 Definition type: Promote
 Return type: CountryFormation
+
+-----------------------
+
+Scope.GetCulturalCommunity
+Definition type: Promote
+Return type: CulturalCommunity
 
 -----------------------
 
@@ -654,6 +690,18 @@ Return type: MarketGoods
 Scope.GetMilitaryFormation
 Definition type: Promote
 Return type: MilitaryFormation
+
+-----------------------
+
+Scope.GetMobilizationOption
+Definition type: Promote
+Return type: MobilizationOption
+
+-----------------------
+
+Scope.GetNavalInvasion
+Definition type: Promote
+Return type: NavalInvasion
 
 -----------------------
 
@@ -1147,6 +1195,12 @@ Return type: InterestGroupTrait
 
 -----------------------
 
+TopScope.sIdeology( Arg0 )
+Definition type: Promote
+Return type: Ideology
+
+-----------------------
+
 TopScope.sInstitution( Arg0 )
 Definition type: Promote
 Return type: Institution
@@ -1192,6 +1246,12 @@ Return type: Law
 TopScope.sLawType( Arg0 )
 Definition type: Promote
 Return type: LawType
+
+-----------------------
+
+TopScope.sMilitaryFormation( Arg0 )
+Definition type: Promote
+Return type: MilitaryFormation
 
 -----------------------
 
@@ -1591,6 +1651,12 @@ Return type: [unregistered]
 
 -----------------------
 
+TopScope.sIdeology( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
 TopScope.sInstitution( Arg0 )
 Definition type: Function
 Return type: [unregistered]
@@ -1634,6 +1700,12 @@ Return type: [unregistered]
 -----------------------
 
 TopScope.sLawType( Arg0 )
+Definition type: Function
+Return type: [unregistered]
+
+-----------------------
+
+TopScope.sMilitaryFormation( Arg0 )
 Definition type: Function
 Return type: [unregistered]
 

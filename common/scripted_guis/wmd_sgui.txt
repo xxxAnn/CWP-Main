@@ -6,7 +6,7 @@
 		}
 		add_to_variable_list = {
 			name = wmd_target_list
-			target = scope:state_to_add 
+			target = scope:state_to_add
 		}
 		effect_order_target_list_by_population = yes
 		effect_reset_relevant_coverage = yes
@@ -170,6 +170,19 @@ targetlist_add_visible = {
 				name = wmd_target_list
 				target = scope:target_selected_state
 			}
+		}
+	}
+}
+
+targetlist_remove_visible = {
+	is_shown = {
+		or = {
+			has_modifier = atomic_capable
+			has_modifier = thermonuclear_capable
+		}
+		is_target_in_variable_list = {
+			name = wmd_target_list
+			target = scope:target_selected_state
 		}
 	}
 }

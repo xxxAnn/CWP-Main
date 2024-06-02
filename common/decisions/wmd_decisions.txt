@@ -78,6 +78,7 @@ cancel_nuclear_project = {
 		base = -100
 	}
 }
+
 develop_civilian_nuclear_capability = {
 	is_shown = {
 		nor = {

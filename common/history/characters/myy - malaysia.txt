@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MYY = {
+	c:MYY ?= {
 		create_character = {
 			first_name = "Louis"
 			last_name = "Mountbatten"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1900.6.25
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

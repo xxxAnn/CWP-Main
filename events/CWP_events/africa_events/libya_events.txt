@@ -1,5 +1,6 @@
 ﻿namespace = libya
-libya.1 = { #Spawns Gaddafi
+libya.1 = {
+	#Spawns Gaddafi
 	type = country_event
 	placement = root
 	title = libya.1.t
@@ -15,27 +16,35 @@ libya.1 = { #Spawns Gaddafi
 		exists = c:LBY
 		this = c:LBY
 		is_subject = no
-		year > 1961 #Gaddafi needs to be adult 
-		year < 1980 #Gaddafi becomes an Agitator in 1980
+		year > 1961		#Gaddafi needs to be adult 
+		year < 1980		#Gaddafi becomes an Agitator in 1980
 		OR = {
-            government_legitimacy < 30
-		    radical_fraction = { value > 0.15 }
+			government_legitimacy < 30
+			radical_fraction = {
+				value > 0.15
+			}
 			AND = {
-				year >= 1969 #Historical Date of the Coup d'état
+				year >= 1969				#Historical Date of the Coup d'état
 				OR = {
-           			government_legitimacy < 50
-		    		radical_fraction = { value > 0.05 }
+					government_legitimacy < 50
+					radical_fraction = {
+						value > 0.05
+					}
 				}
 			}
 		}
-		NOT = {has_variable = gaddafi_spawned}
+		NOT = {
+			has_variable = gaddafi_spawned
+		}
 	}
 	option = {
 		name = libya.1.a
 		ai_chance = {
 			base = 75
 		}
-		create_character = { template = lby_muammar_gaddafi_template }
+		create_character = {
+			template = lby_muammar_gaddafi_template
+		}
 		activate_law = law_type:law_executive
 		activate_law = law_type:law_autocracy
 		set_variable = gaddafi_spawned
@@ -45,10 +54,12 @@ libya.1 = { #Spawns Gaddafi
 		ai_chance = {
 			base = 15
 		}
-		create_character = { template = lby_muammar_gaddafi_template }
-		activate_law = law_type:law_council_elective
+		create_character = {
+			template = lby_muammar_gaddafi_template
+		}
+		#activate_law = law_type:law_council_elective
 		activate_law = law_type:law_autocracy
-		activate_law = law_type:law_socialization
+		#activate_law = law_type:law_socialization
 		set_variable = gaddafi_spawned
 	}
 	option = {
@@ -57,30 +68,38 @@ libya.1 = { #Spawns Gaddafi
 			base = 10
 		}
 		default_option = yes
-		create_character = { template = lby_muammar_gaddafi_agitator_template }
-        add_radicals = {
-            value = large_radicals
-        }
+		create_character = {
+			template = lby_muammar_gaddafi_agitator_template
+		}
+		add_radicals = {
+			value = large_radicals
+		}
 		set_variable = gaddafi_spawned
 	}
 }
 
-libya.2 = { #Alternative event if Gaddafi never spawned; Spawns him as an Agitator
+libya.2 = {
+	#Alternative event if Gaddafi never spawned; Spawns him as an Agitator
 	type = country_event
 	hidden = yes
 	trigger = {
 		exists = c:LBY
 		this = c:LBY
 		year >= 1975
-		NOT = {has_variable = gaddafi_spawned}
+		NOT = {
+			has_variable = gaddafi_spawned
+		}
 	}
 	immediate = {
-		create_character = { template = lby_muammar_gaddafi_agitator_template }
+		create_character = {
+			template = lby_muammar_gaddafi_agitator_template
+		}
 		set_variable = gaddafi_spawned
 	}
 }
 
-libya.3 = { #Annexes Subjects
+libya.3 = {
+	#Annexes Subjects
 	type = country_event
 	placement = root
 	title = libya.3.t
@@ -98,13 +117,16 @@ libya.3 = { #Annexes Subjects
 		ai_chance = {
 			base = 60
 		}
-		c:JMH = { annex = PREV }
+		c:JMH = {
+			annex = PREV
+		}
 	}
 	option = {
 		name = libya.3.b
 		ai_chance = {
 			base = 40
-			modifier = { #I hate Libya
+			modifier = {
+				#I hate Libya
 				trigger = {
 					c:JMH = {
 						THIS.relations:root <= relations_threshold:hostile
@@ -112,13 +134,15 @@ libya.3 = { #Annexes Subjects
 				}
 				add = 200
 			}
-			modifier = { #I'm strong alone
+			modifier = {
+				#I'm strong alone
 				trigger = {
 					country_rank >= rank_value:great_power
 				}
 				add = 15
 			}
-			modifier = { #Our ranking is lower (meaning better) than Libya's
+			modifier = {
+				#Our ranking is lower (meaning better) than Libya's
 				trigger = {
 					country_rank >= rank_value:great_power
 				}
@@ -126,16 +150,17 @@ libya.3 = { #Annexes Subjects
 			}
 		}
 		make_independent = yes
-		c:JMH = { 	
+		c:JMH = {
 			create_diplomatic_play = {
 				target_country = ROOT
 				type = dp_annex_war
 			}
-		} 
+		}
 	}
 }
 
-libya.4 = { #Target becomes a Libyan subject; Target is informed
+libya.4 = {
+	#Target becomes a Libyan subject; Target is informed
 	type = country_event
 	placement = root
 	title = libya.4.t
@@ -154,7 +179,8 @@ libya.4 = { #Target becomes a Libyan subject; Target is informed
 	}
 }
 
-libya.5 = { #Libya wants to form a union with us
+libya.5 = {
+	#Libya wants to form a union with us
 	type = country_event
 	placement = root
 	title = libya.5.t
@@ -173,7 +199,8 @@ libya.5 = { #Libya wants to form a union with us
 	}
 }
 
-libya.6 = { #Target becomes Libyan Subject
+libya.6 = {
+	#Target becomes Libyan Subject
 	type = country_event
 	placement = root
 	title = libya.6.t
@@ -191,7 +218,8 @@ libya.6 = { #Target becomes Libyan Subject
 	}
 }
 
-libya.7 = { #Target does not become Libyan subject
+libya.7 = {
+	#Target does not become Libyan subject
 	type = country_event
 	placement = root
 	title = libya.7.t
@@ -207,13 +235,14 @@ libya.7 = { #Target does not become Libyan subject
 		name = libya.7.a
 		default_option = yes
 		change_relations = {
-   			country  = SCOPE:gaddafi_unification_target_scope
-   			value = -10
-   		}
+			country = SCOPE:gaddafi_unification_target_scope
+			value = -10
+		}
 	}
 }
 
-libya.8 = { #Target does not want to become a subject, but we have some influence
+libya.8 = {
+	#Target does not want to become a subject, but we have some influence
 	type = country_event
 	placement = root
 	title = libya.8.t
@@ -245,7 +274,8 @@ libya.8 = { #Target does not want to become a subject, but we have some influenc
 	}
 }
 
-libya.9 = { #Coup d'état against target country
+libya.9 = {
+	#Coup d'état against target country
 	type = country_event
 	placement = root
 	title = libya.9.t
@@ -267,16 +297,18 @@ libya.9 = { #Coup d'état against target country
 			}
 		}
 		change_relations = {
-   			country  = c:LBY
-   			value = -20
-   		}
-		c:LBY = { trigger_event = libya.6 }
+			country = c:LBY
+			value = -20
+		}
+		c:LBY = {
+			trigger_event = libya.6
+		}
 	}
 }
 
 #Events for Libya during the unification process
-
-libya.100 = { #Apply diplomatic pressure
+libya.100 = {
+	#Apply diplomatic pressure
 	type = country_event
 	placement = root
 	title = libya.100.t
@@ -336,7 +368,8 @@ libya.100 = { #Apply diplomatic pressure
 	}
 }
 
-libya.101 = { #Support pro Libyan rebels
+libya.101 = {
+	#Support pro Libyan rebels
 	type = country_event
 	placement = root
 	title = libya.101.t
@@ -382,7 +415,8 @@ libya.101 = { #Support pro Libyan rebels
 	}
 }
 
-libya.102 = { #Bribe politicians
+libya.102 = {
+	#Bribe politicians
 	type = country_event
 	placement = root
 	title = libya.102.t
@@ -416,7 +450,8 @@ libya.102 = { #Bribe politicians
 	}
 }
 
-libya.200 = { #Our population supports the unification process
+libya.200 = {
+	#Our population supports the unification process
 	type = country_event
 	placement = root
 	title = libya.200.t
@@ -441,8 +476,10 @@ libya.200 = { #Our population supports the unification process
 			}
 		}
 		custom_tooltip = libya.unification_points_plus_10
-		every_interest_group = { 
-			limit = { is_in_government = yes } 
+		every_interest_group = {
+			limit = {
+				is_in_government = yes
+			}
 			add_modifier = {
 				name = approves_gaddafis_unification_efforts
 				months = normal_modifier_time
@@ -475,7 +512,8 @@ libya.200 = { #Our population supports the unification process
 	}
 }
 
-libya.201 = { #A well-known politician speaks out in favor of unification
+libya.201 = {
+	#A well-known politician speaks out in favor of unification
 	type = country_event
 	placement = root
 	title = libya.201.t
@@ -517,7 +555,8 @@ libya.201 = { #A well-known politician speaks out in favor of unification
 			}
 		}
 	}
-	option = { #Let him disappear
+	option = {
+		#Let him disappear
 		name = libya.201.b
 		default_option = yes
 		ai_chance = {
@@ -525,7 +564,7 @@ libya.201 = { #A well-known politician speaks out in favor of unification
 		}
 		trigger = {
 			NOT = {
-				has_law = law_type:law_protected_speech
+				#has_law = law_type:law_protected_speech
 			}
 		}
 		c:LBY = {
@@ -542,12 +581,13 @@ libya.201 = { #A well-known politician speaks out in favor of unification
 }
 
 #Triggers events for Libya
-
 libya.300 = {
 	type = country_event
 	hidden = yes
 	immediate = {
-		c:LBY = { trigger_event = libya.100 }
+		c:LBY = {
+			trigger_event = libya.100
+		}
 	}
 }
 
@@ -555,7 +595,9 @@ libya.301 = {
 	type = country_event
 	hidden = yes
 	immediate = {
-		c:LBY = { trigger_event = libya.101 }
+		c:LBY = {
+			trigger_event = libya.101
+		}
 	}
 }
 
@@ -563,6 +605,8 @@ libya.302 = {
 	type = country_event
 	hidden = yes
 	immediate = {
-		c:LBY = { trigger_event = libya.102 }
+		c:LBY = {
+			trigger_event = libya.102
+		}
 	}
 }

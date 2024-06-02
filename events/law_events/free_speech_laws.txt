@@ -1,5 +1,4 @@
 ﻿namespace = free_speech_laws
-
 # Pamphlet Distributed
 free_speech_laws.1 = {
 	type = country_event
@@ -7,21 +6,16 @@ free_speech_laws.1 = {
 	title = free_speech_laws.1.t
 	desc = free_speech_laws.1.d
 	flavor = free_speech_laws.1.f
-
 	category = enactment
-
 	duration = 3
-
 	event_image = {
 		video = "asia_union_leader"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		NOR = {
 			has_modifier = free_speech_pamphlet_advance
@@ -34,31 +28,31 @@ free_speech_laws.1 = {
 				is_enacting_law = law_type:law_protected_speech
 			}
 			OR = {
-				has_law = law_type:law_censorship
-				has_law = law_type:law_outlawed_dissent
+				#has_law = law_type:law_censorship
+				#has_law = law_type:law_outlawed_dissent
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
+			save_scope_as = current_law_scope
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { #Pro free speech Pamphlet
+	option = {
+		#Pro free speech Pamphlet
 		name = free_speech_laws.1.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = free_speech_pamphlet_advance
 		}
 	}
-	
-	option = { #Use these Pamphlets to push a stronger message
+	option = {
+		#Use these Pamphlets to push a stronger message
 		name = free_speech_laws.1.b
 		random_list = {
 			1 = {
@@ -82,21 +76,16 @@ free_speech_laws.2 = {
 	title = free_speech_laws.2.t
 	desc = free_speech_laws.2.d
 	flavor = free_speech_laws.2.f
-
 	category = enactment
-
 	duration = 3
-
 	event_image = {
 		video = "africa_public_protest"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		NOR = {
 			has_modifier = free_speech_book_burning_advance
@@ -109,8 +98,8 @@ free_speech_laws.2 = {
 				is_enacting_law = law_type:law_outlawed_dissent
 			}
 			OR = {
-				has_law = law_type:law_right_of_assembly
-				has_law = law_type:law_protected_speech
+				#has_law = law_type:law_right_of_assembly
+				#has_law = law_type:law_protected_speech
 			}
 		}
 		any_interest_group = {
@@ -121,12 +110,11 @@ free_speech_laws.2 = {
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
-    	random_interest_group = {
+			save_scope_as = current_law_scope
+		}
+		random_interest_group = {
 			limit = {
 				is_marginal = no
 				law_stance = {
@@ -135,22 +123,21 @@ free_speech_laws.2 = {
 				}
 			}
 			save_scope_as = book_burning_ig
-    	}
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { 
+	option = {
 		name = free_speech_laws.2.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = free_speech_book_burning_advance
 		}
 	}
-	
-	option = { 
+	option = {
 		name = free_speech_laws.2.b
 		random_list = {
 			1 = {
@@ -174,21 +161,16 @@ free_speech_laws.3 = {
 	title = free_speech_laws.3.t
 	desc = free_speech_laws.3.d
 	flavor = free_speech_laws.3.f
-
 	category = enactment
-
 	duration = 3
-
 	event_image = {
 		video = "middleeast_police_breaking_door"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		NOR = {
 			has_modifier = free_speech_censorship_stall
@@ -201,8 +183,8 @@ free_speech_laws.3 = {
 				is_enacting_law = law_type:law_protected_speech
 			}
 			OR = {
-				has_law = law_type:law_censorship 
-				has_law = law_type:law_outlawed_dissent
+				#has_law = law_type:law_censorship 
+				#has_law = law_type:law_outlawed_dissent
 			}
 		}
 		any_interest_group = {
@@ -213,12 +195,11 @@ free_speech_laws.3 = {
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
-    	random_interest_group = {
+			save_scope_as = current_law_scope
+		}
+		random_interest_group = {
 			limit = {
 				is_marginal = no
 				law_stance = {
@@ -227,13 +208,13 @@ free_speech_laws.3 = {
 				}
 			}
 			save_scope_as = book_burning_ig
-    	}
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
 	option = {
 		name = free_speech_laws.3.a
 		default_option = yes
@@ -241,8 +222,7 @@ free_speech_laws.3 = {
 			name = free_speech_censorship_stall
 		}
 	}
-	
-	option = { 
+	option = {
 		name = free_speech_laws.3.b
 		random_list = {
 			1 = {
@@ -266,21 +246,16 @@ free_speech_laws.4 = {
 	title = free_speech_laws.4.t
 	desc = free_speech_laws.4.d
 	flavor = free_speech_laws.4.f
-
 	category = enactment
-
 	duration = 3
-
 	event_image = {
 		video = "middleeast_police_breaking_door"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		NOR = {
 			has_modifier = free_speech_no_censorship_stall
@@ -293,8 +268,8 @@ free_speech_laws.4 = {
 				is_enacting_law = law_type:law_outlawed_dissent
 			}
 			OR = {
-				has_law = law_type:law_right_of_assembly
-				has_law = law_type:law_protected_speech
+				#has_law = law_type:law_right_of_assembly
+				#has_law = law_type:law_protected_speech
 			}
 		}
 		any_interest_group = {
@@ -305,12 +280,11 @@ free_speech_laws.4 = {
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
-    	random_interest_group = {
+			save_scope_as = current_law_scope
+		}
+		random_interest_group = {
 			limit = {
 				is_marginal = no
 				law_stance = {
@@ -319,22 +293,22 @@ free_speech_laws.4 = {
 				}
 			}
 			save_scope_as = free_speech_ig
-    	}
+		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { #Pro free speech literature
+	option = {
+		#Pro free speech literature
 		name = free_speech_laws.4.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = free_speech_no_censorship_stall
 		}
 	}
-	
-	option = { 
+	option = {
 		name = free_speech_laws.4.b
 		random_list = {
 			1 = {
@@ -358,22 +332,16 @@ free_speech_laws.5 = {
 	title = free_speech_laws.5.t
 	desc = free_speech_laws.5.d
 	flavor = free_speech_laws.5.f
-
 	category = enactment
-
 	duration = 3
-
 	gui_window = event_window_1char_tabloid
-
 	left_icon = scope:ruler_scope
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
-
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		NOR = {
 			has_modifier = free_speech_lewd_book_success
@@ -385,8 +353,8 @@ free_speech_laws.5 = {
 				is_enacting_law = law_type:law_protected_speech
 			}
 			OR = {
-				has_law = law_type:law_censorship 
-				has_law = law_type:law_outlawed_dissent
+				#has_law = law_type:law_censorship 
+				#has_law = law_type:law_outlawed_dissent
 			}
 		}
 		any_interest_group = {
@@ -400,66 +368,66 @@ free_speech_laws.5 = {
 			age >= 18
 		}
 		any_neighbouring_state = {
-			NOT = { owner = ROOT }
+			NOT = {
+				owner = ROOT
+			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
-    	ruler = {
+			save_scope_as = current_law_scope
+		}
+		ruler = {
 			save_scope_as = ruler_scope
 		}
 		random_neighbouring_state = {
-			limit = { NOT = { owner = ROOT } } 
+			limit = {
+				NOT = {
+					owner = ROOT
+				}
+			}
 			owner = {
 				save_scope_as = neighbour_country
 			}
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { 
+	option = {
 		name = free_speech_laws.5.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = free_speech_lewd_book_success
 		}
 	}
-		
-	option = { 
+	option = {
 		name = free_speech_laws.5.b
 		add_enactment_modifier = {
 			name = free_speech_lewd_book_fail
-		}	
+		}
 	}
 }
 
-free_speech_laws.6 = { #Insulting drawing
+free_speech_laws.6 = {
+	#Insulting drawing
 	type = country_event
 	placement = root
 	title = free_speech_laws.6.t
 	desc = free_speech_laws.6.d
 	flavor = free_speech_laws.6.f
-
 	category = enactment
-
 	duration = 3
-
 	event_image = {
 		video = "middleeast_police_breaking_door"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		NOR = {
 			has_modifier = free_speech_lewd_drawing_condemned
@@ -471,8 +439,8 @@ free_speech_laws.6 = { #Insulting drawing
 				is_enacting_law = law_type:law_outlawed_dissent
 			}
 			OR = {
-				has_law = law_type:law_right_of_assembly
-				has_law = law_type:law_protected_speech
+				#has_law = law_type:law_right_of_assembly
+				#has_law = law_type:law_protected_speech
 			}
 		}
 		any_interest_group = {
@@ -490,12 +458,11 @@ free_speech_laws.6 = { #Insulting drawing
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
-    		save_scope_as = current_law_scope
-    	}
-    	random_interest_group = {
+			save_scope_as = current_law_scope
+		}
+		random_interest_group = {
 			limit = {
 				is_marginal = no
 				law_stance = {
@@ -504,30 +471,29 @@ free_speech_laws.6 = { #Insulting drawing
 				}
 			}
 			save_scope_as = free_speech_ig
-    	}
-    	scope:free_speech_ig = {
-    		leader = {
-    			save_scope_as = ig_leader_scope
-    		}
-    	}
-    	ruler = {
+		}
+		scope:free_speech_ig = {
+			leader = {
+				save_scope_as = ig_leader_scope
+			}
+		}
+		ruler = {
 			save_scope_as = ruler_scope
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { 
+	option = {
 		name = free_speech_laws.6.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = free_speech_lewd_drawing_condemned
 		}
 	}
-		
-	option = { 
+	option = {
 		name = free_speech_laws.6.b
 		add_enactment_modifier = {
 			name = free_speech_lewd_drawing_supported
@@ -537,6 +503,6 @@ free_speech_laws.6 = { #Insulting drawing
 				name = free_speech_lewd_drawing_supported_ig
 				months = normal_modifier_time
 			}
-		}	
+		}
 	}
 }

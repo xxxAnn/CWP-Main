@@ -191,10 +191,10 @@ ai_strategy_territorial_expansion = {
 		if = {
 			limit = {
 				or = {
-					ig:ig_patriots = {
+					ig:ig_armed_forces = {
 						is_powerful = yes
 					}
-					ig:ig_securocrats = {
+					ig:ig_armed_forces = {
 						is_powerful = yes
 					}
 				}
@@ -457,13 +457,13 @@ ai_strategy_armed_isolationism = {
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_reserve_military
+				#has_law = law_type:law_reserve_military
 			}
 			add = 50
 		}
 		if = {
 			limit = {
-				has_law = law_type:law_isolationism
+				#has_law = law_type:law_isolationism
 			}
 			add = 100
 		}
@@ -537,7 +537,7 @@ ai_strategy_economic_imperialism = {
 			limit = {
 				has_technology_researched = united_nations
 				scope:target_country = {
-					has_law = law_type:law_isolationism
+					#has_law = law_type:law_isolationism
 					capital.region = sr:region_east_asia
 				}
 			}
@@ -610,7 +610,7 @@ ai_strategy_economic_imperialism = {
 				limit = {
 					has_strategic_adjacency = scope:target_country
 					scope:target_country = {
-						has_law = law_type:law_isolationism
+						#has_law = law_type:law_isolationism
 						capital.region = sr:region_east_asia
 					}
 				}
@@ -620,7 +620,7 @@ ai_strategy_economic_imperialism = {
 				limit = {
 					has_strategic_adjacency = scope:target_country
 					scope:target_country = {
-						has_law = law_type:law_isolationism
+						#has_law = law_type:law_isolationism
 						NOT = {
 							capital.region = sr:region_east_asia
 						}
@@ -634,8 +634,8 @@ ai_strategy_economic_imperialism = {
 					root.country_rank > scope:target_country.country_rank
 					scope:target_country = {
 						NOR = {
-							has_law = law_type:law_free_trade
-							has_law = law_type:law_isolationism
+							#has_law = law_type:law_free_trade
+							#has_law = law_type:law_isolationism
 						}
 					}
 				}
@@ -677,7 +677,7 @@ ai_strategy_economic_imperialism = {
 				limit = {
 					can_reach_target_country = yes
 					scope:target_country = {
-						has_law = law_type:law_isolationism
+						#has_law = law_type:law_isolationism
 					}
 				}
 				add = 100
@@ -688,7 +688,7 @@ ai_strategy_economic_imperialism = {
 		navy_size >= 25
 		is_country_type = recognized
 		NOT = {
-			has_law = law_type:law_isolationism
+			#has_law = law_type:law_isolationism
 		}
 		OR = {
 			country_rank = rank_value:major_power
@@ -761,10 +761,10 @@ ai_strategy_global_liberalism = {
 		if = {
 			limit = {
 				AND = {
-					has_law = law_type:law_council_elective
+					has_law = law_type:law_socialist_republic
 					NOT = {
 						scope:target_country = {
-							has_law = law_type:law_council_elective
+							has_law = law_type:law_socialist_republic
 						}
 					}
 				}
@@ -811,7 +811,7 @@ ai_strategy_global_liberalism = {
 				limit = {
 					has_strategic_adjacency = scope:target_country
 					scope:target_country = {
-						has_law = law_type:law_isolationism
+						#has_law = law_type:law_isolationism
 					}
 				}
 				add = 100
@@ -822,8 +822,8 @@ ai_strategy_global_liberalism = {
 					root.country_rank > scope:target_country.country_rank
 					scope:target_country = {
 						NOR = {
-							has_law = law_type:law_free_trade
-							has_law = law_type:law_isolationism
+							#has_law = law_type:law_free_trade
+							#has_law = law_type:law_isolationism
 						}
 					}
 				}
@@ -854,10 +854,10 @@ ai_strategy_global_liberalism = {
 				limit = {
 					AND = {
 						NOT = {
-							has_law = law_type:law_council_elective
+							has_law = law_type:law_socialist_republic
 						}
 						scope:target_country = {
-							has_law = law_type:law_council_elective
+							has_law = law_type:law_socialist_republic
 						}
 					}
 				}
@@ -917,7 +917,7 @@ ai_strategy_global_liberalism = {
 		value = 10000
 		if = {
 			limit = {
-				has_law = law_type:law_council_elective
+				has_law = law_type:law_socialist_republic
 			}
 			multiply = 0
 		}
@@ -1036,7 +1036,7 @@ ai_strategy_international_socialism = {
 				limit = {
 					can_reach_target_country = yes
 					scope:target_country = {
-						has_law = law_type:law_isolationism
+						#has_law = law_type:law_isolationism
 					}
 				}
 				add = 100
@@ -1051,7 +1051,7 @@ ai_strategy_international_socialism = {
 		if = {
 			limit = {
 				NOT = {
-					has_law = law_type:law_council_elective
+					has_law = law_type:law_socialist_republic
 				}
 			}
 			multiply = 0

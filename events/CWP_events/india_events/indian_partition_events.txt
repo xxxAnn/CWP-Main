@@ -1148,16 +1148,16 @@ indian_partition.50 = {
 		remove_primary_culture = cu:english
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_capitalists
+			interest_group = ig:ig_market_liberals
 		}
 		create_character = {
 			ig_leader = yes
 			ruler = yes
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_entrepreneurs
+			interest_group = ig:ig_petty_bourgeoisie
 		}
 		create_character = {
 			ig_leader = yes
@@ -1165,19 +1165,19 @@ indian_partition.50 = {
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_ruralists
+			interest_group = ig:ig_rural_folk
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_moralists
+			interest_group = ig:ig_devout
 		}
 	}
 	option = {
@@ -2117,7 +2117,7 @@ indian_partition.201 = {
 }
 
 indian_partition.202 = {
-	# Issues recruiting local bureaucrats
+	# Issues recruiting local administrators
 	type = country_event
 	title = indian_partition.202.t
 	desc = indian_partition.202.d

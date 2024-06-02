@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:AZR = {
+	c:AZR ?= {
 		create_character = {
 			first_name = "Jafar"			# Ja'far
 			last_name = "Pishevari"
@@ -7,7 +7,7 @@
 			ruler = yes
 			#ig_leader = yes #Ruler can't be IG leader under dictatorship or monarchy.
 			birth_date = 1892.8.26
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ideology = ideology_moderate
 			traits = {
 			}

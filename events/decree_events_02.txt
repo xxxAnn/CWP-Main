@@ -64,7 +64,7 @@ decree_events.100 = {
 		name = decree_events.100.b
 		trigger = {
 			institution_investment_level = {
-				institution = institution_welfare
+				institution = institution_social_security
 				value >= 1
 			}
 		}
@@ -127,7 +127,7 @@ decree_events.101 = {
 				save_scope_as = manufacturing_building_production_politics
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig_focus
 		}
 	}
@@ -223,7 +223,7 @@ decree_events.102 = {
 		name = decree_events.102.b
 		trigger = {
 			institution_investment_level = {
-				institution = institution_welfare
+				institution = institution_social_security
 				value >= 1
 			}
 		}
@@ -286,7 +286,7 @@ decree_events.103 = {
 				save_scope_as = agricultural_building_production_politics
 			}
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = landowners_ig_focus
 		}
 	}
@@ -392,7 +392,7 @@ decree_events.104 = {
 		name = decree_events.104.b
 		trigger = {
 			institution_investment_level = {
-				institution = institution_welfare
+				institution = institution_social_security
 				value >= 1
 			}
 		}
@@ -465,10 +465,10 @@ decree_events.105 = {
 				save_scope_as = resource_building_production_politics
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig_focus
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = landowners_ig_focus
 		}
 	}
@@ -564,7 +564,7 @@ decree_events.106 = {
 			}
 			save_scope_as = decree_enlistment
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig_focus
 		}
 	}

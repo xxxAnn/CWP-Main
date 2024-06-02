@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:HND = {
+	c:HND ?= {
 		create_character = {
 			first_name = "Archibald"
 			last_name = "Wavell"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1883.5.5
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 				#TODO moralists

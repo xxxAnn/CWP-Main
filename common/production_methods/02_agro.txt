@@ -325,16 +325,98 @@ pm_seeds_rice_farm = {
 	}
 }
 
+# Secondary Building PMG
+pm_no_secondary = {
+	texture = "gfx/interface/icons/production_method_icons/agriculture/no_orchards.dds"
+}
+
+pm_apple_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/agriculture/orchards.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -20
+			goods_output_fruit_add = 15
+		}
+	}
+}
+
+pm_citrus_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/agriculture/orchards.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -20
+			goods_output_fruit_add = 15
+		}
+	}
+}
+
+pm_fig_orchards = {
+	texture = "gfx/interface/icons/production_method_icons/agriculture/orchards.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -15
+			goods_output_fruit_add = 15
+		}
+	}
+}
+
+# Honey Production PMG
+pm_no_honey_production = {
+	texture = "gfx/interface/icons/production_method_icons/unused/no_artificial_fertilizers.dds"
+}
+
+pm_honey_production = {
+	texture = "gfx/interface/icons/production_method_icons/unused/artificial_fertilizers.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_sugar_add = 5
+		}
+		level_scaled = {
+			building_employment_laborers_add = 1000
+		}
+	}
+}
+
+# Corn Syrup Production PMG
+pm_no_corn_syrup = {
+	texture = "gfx/interface/icons/production_method_icons/unused/no_artificial_fertilizers.dds"
+}
+
+pm_corn_syrup = {
+	texture = "gfx/interface/icons/production_method_icons/unused/artificial_fertilizers.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -10
+			goods_output_sugar_add = 10
+		}
+	}
+}
+
+# Sugar Beet Production PMG
+pm_no_sugar_beets = {
+	texture = "gfx/interface/icons/production_method_icons/unused/no_artificial_fertilizers.dds"
+}
+
+pm_sugar_beets = {
+	texture = "gfx/interface/icons/production_method_icons/unused/artificial_fertilizers.dds"
+	building_modifiers = {
+		workforce_scaled = {
+			goods_output_grain_add = -10
+			goods_output_sugar_add = 10
+		}
+	}
+}
+
 ## Ownership PMG
 pm_privately_owned_farm = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/privately_owned.dds"
 	disallowing_laws = {
-		law_total_nationalization
+		#law_total_nationalization
 	}
 	unlocking_laws = {
-		law_free_market
-		law_decentralization
-		law_anti_industrialization
+		law_laissez_faire
+		law_traditionalism
+		#law_anti_industrialization
 		law_interventionism
 	}
 	building_modifiers = {
@@ -355,10 +437,10 @@ pm_publicly_traded_farm = {
 		central_bank_independence
 	}
 	disallowing_laws = {
-		law_total_nationalization
+		#law_total_nationalization
 	}
 	unlocking_laws = {
-		law_free_market
+		law_laissez_faire
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -379,14 +461,14 @@ pm_publicly_traded_farm = {
 pm_government_run_farm = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/government_run.dds"
 	disallowing_laws = {
-		law_no_nationalization
-		law_public_utility_companies
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
+		#law_no_nationalization
+		#law_public_utility_companies
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 		law_interventionism
 	}
 	building_modifiers = {
@@ -402,14 +484,15 @@ pm_government_run_farm = {
 pm_worker_cooperatives_farm = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/worker_cooperative.dds"
 	disallowing_laws = {
-		law_total_nationalization
+		#law_total_nationalization
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		level_scaled = {
-			building_employment_service_workers_add = 300
+			building_employment_laborers_add = 200
+			building_employment_farmers_add = 100
 		}
 		unscaled = {
 			building_workforce_shares_add = 1

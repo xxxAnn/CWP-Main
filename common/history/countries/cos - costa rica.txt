@@ -1,5 +1,5 @@
 ﻿COUNTRIES = {
-	c:COS = {
+	c:COS ?= {
 		effect_un_member = yes
 		# Politics
 		#todo IGs and Ideologies
@@ -7,36 +7,6 @@
 		set_tax_level = high
 		effect_starting_technology_tier_3_tech = yes
 		# Laws
-		effect_create_law_package = {
-			headOfGovernment = executive
-			distributionOfPower = representative_democracy
-			criminalJustice = penal_correction
-			centralization = confederated
-			discrimination = segregationist
-			churchAndState = religious_policies
-			bureaucraticSystems = appointed_bureaucrats
-			policing = professional_police
-			nationalDefense = reserve_military
-			economicSystem = decentralization
-			tradePolicy = protectionism
-			taxation = capital_gains
-			educationSystem = mixed_funded_schools
-			healthSystem = universal_healthcare
-			environmentalRegulations = no_environment_regulations
-			corporateAffairs = no_legal_corporations
-			nationalization = public_utility_companies
-			monetaryPolicy = gold_standard
-			wmds = no_wmds
-			freeSpeech = protected_speech
-			laborRights = standard_workweeks
-			childrensRights = restricted_child_labor
-			rightsOfWomen = women_own_property
-			familyPlanning = no_family_planning
-			welfare = welfare_state
-			migration = open_borders
-			biotech = unrestricted_human_testing
-			recreationalDrugs = alcohol_allowed
-		}
 		# IMF
 		set_imf_member = yes
 		set_imf_starting_values = {

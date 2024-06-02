@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MYM = {
+	c:MYM ?= {
 		create_character = {
 			first_name = "Reginald"
 			last_name = "Dorman-Smith"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1899.3.10
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

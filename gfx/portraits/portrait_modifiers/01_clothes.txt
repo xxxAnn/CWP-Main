@@ -1573,7 +1573,7 @@
 						christian_clothes_trigger = yes
 						ruler_clothes_trigger = yes
 						owner = {
-							has_law = law_type:law_theocratic
+							has_law = law_type:law_theocracy
 						}
 					}
 				}
@@ -1604,7 +1604,7 @@
 					christian_clothes_trigger = yes
 					owner = c:PAP
 					owner = {
-						has_law = law_type:law_theocratic
+						has_law = law_type:law_theocracy
 					}
 					is_female = no
 				}
@@ -1862,9 +1862,9 @@
 						scope:character = {
 							interest_group = {
 								OR = {
-									is_interest_group_type = ig_entrepreneurs
-									is_interest_group_type = ig_ruralists
-									is_interest_group_type = ig_laborists
+									is_interest_group_type = ig_petty_bourgeoisie
+									is_interest_group_type = ig_rural_folk
+									is_interest_group_type = ig_socialists
 								}
 							}
 						}
@@ -3156,7 +3156,7 @@
 								religion = rel:shinto
 							}
 							owner = {
-								has_law = law_type:law_theocratic
+								has_law = law_type:law_theocracy
 							}
 						}
 					}

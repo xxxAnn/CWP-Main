@@ -17,10 +17,10 @@ labor_rights.1 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		has_law = law_type:law_no_workers_protections
+		#has_law = law_type:law_no_workers_protections
 		OR = {
-			is_enacting_law = law_type:law_wrongful_dismissal_protections
-			is_enacting_law = law_type:law_mandatory_parental_leave
+			is_enacting_law = law_type:law_regulatory_bodies
+			is_enacting_law = law_type:law_worker_protections
 		}
 		any_scope_state = {
 			any_scope_pop = {
@@ -40,7 +40,7 @@ labor_rights.1 = {
 			}
 			save_scope_as = serf_state
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = serf_mistreaters
 		}
 		currently_enacting_law = {
@@ -97,12 +97,12 @@ labor_rights.4 = {
 	trigger = {
 		OR = {
 			AND = {
-				is_enacting_law = law_type:law_wrongful_dismissal_protections
-				has_law = law_type:law_no_workers_protections
+				is_enacting_law = law_type:law_regulatory_bodies
+				#has_law = law_type:law_no_workers_protections
 			}
-			is_enacting_law = law_type:law_mandatory_parental_leave
+			is_enacting_law = law_type:law_worker_protections
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			is_marginal = no
 		}
 		NOT = {
@@ -116,7 +116,7 @@ labor_rights.4 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = unions_scope
 		}
 	}
@@ -162,15 +162,15 @@ labor_rights.5 = {
 	trigger = {
 		OR = {
 			AND = {
-				is_enacting_law = law_type:law_wrongful_dismissal_protections
-				has_law = law_type:law_no_workers_protections
+				is_enacting_law = law_type:law_regulatory_bodies
+				#has_law = law_type:law_no_workers_protections
 			}
-			is_enacting_law = law_type:law_mandatory_parental_leave
+			is_enacting_law = law_type:law_worker_protections
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			is_marginal = no
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_marginal = no
 		}
 		NOT = {
@@ -181,10 +181,10 @@ labor_rights.5 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = unions_scope
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = capitalists_scope
 		}
 	}
@@ -241,15 +241,15 @@ labor_rights.6 = {
 	trigger = {
 		OR = {
 			AND = {
-				is_enacting_law = law_type:law_wrongful_dismissal_protections
-				has_law = law_type:law_no_workers_protections
+				is_enacting_law = law_type:law_regulatory_bodies
+				#has_law = law_type:law_no_workers_protections
 			}
-			is_enacting_law = law_type:law_mandatory_parental_leave
+			is_enacting_law = law_type:law_worker_protections
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			is_marginal = no
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_marginal = no
 		}
 		NOT = {
@@ -260,10 +260,10 @@ labor_rights.6 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = unions_scope
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = capitalists_scope
 		}
 	}

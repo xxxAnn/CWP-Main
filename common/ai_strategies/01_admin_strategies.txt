@@ -81,8 +81,8 @@
 		}
 		if = {
 			limit = {
-				exists = ig:ig_elites
-				ig:ig_elites = {
+				exists = ig:ig_conservatives
+				ig:ig_conservatives = {
 					is_powerful = yes
 				}
 			}
@@ -96,7 +96,7 @@
 						AND = {
 							is_ai = no
 							NOT = {
-								has_law = law_type:law_anti_industrialization
+								##has_law = law_type:law_anti_industrialization
 							}
 						}
 						has_strategy = ai_strategy_resource_expansion
@@ -176,8 +176,8 @@ ai_strategy_plantation_economy = {
 		}
 		if = {
 			limit = {
-				exists = ig:ig_elites
-				ig:ig_elites = {
+				exists = ig:ig_conservatives
+				ig:ig_conservatives = {
 					is_powerful = yes
 				}
 			}
@@ -267,8 +267,8 @@ ai_strategy_resource_expansion = {
 		}
 		if = {
 			limit = {
-				exists = ig:ig_capitalists
-				ig:ig_capitalists = {
+				exists = ig:ig_market_liberals
+				ig:ig_market_liberals = {
 					is_powerful = yes
 				}
 			}
@@ -282,7 +282,7 @@ ai_strategy_resource_expansion = {
 						AND = {
 							is_ai = no
 							NOT = {
-								has_law = law_type:law_anti_industrialization
+								##has_law = law_type:law_anti_industrialization
 							}
 						}
 						has_strategy = ai_strategy_resource_expansion
@@ -381,8 +381,8 @@ ai_strategy_industrial_expansion = {
 		}
 		if = {
 			limit = {
-				exists = ig:ig_capitalists
-				ig:ig_capitalists = {
+				exists = ig:ig_market_liberals
+				ig:ig_market_liberals = {
 					is_powerful = yes
 				}
 			}
@@ -465,7 +465,7 @@ ai_strategy_placate_population = {
 		}
 	}
 	possible = {
-		has_law = law_type:law_anti_industrialization
+		##has_law = law_type:law_anti_industrialization
 	}
 	weight = {
 		value = 10
@@ -489,8 +489,8 @@ ai_strategy_placate_population = {
 		}
 		if = {
 			limit = {
-				exists = ig:ig_ruralists
-				ig:ig_ruralists = {
+				exists = ig:ig_rural_folk
+				ig:ig_rural_folk = {
 					is_powerful = yes
 				}
 			}
@@ -504,7 +504,7 @@ ai_strategy_placate_population = {
 						AND = {
 							is_ai = no
 							NOT = {
-								has_law = law_type:law_anti_industrialization
+								##has_law = law_type:law_anti_industrialization
 							}
 						}
 						has_strategy = ai_strategy_resource_expansion

@@ -1,5 +1,5 @@
 ﻿GOVERNMENT = {
-	c:USA = {
+	c:USA ?= {
 		if = {
 			limit = {
 				exists = py:liberal_party

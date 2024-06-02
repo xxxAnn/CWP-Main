@@ -2543,15 +2543,15 @@ pm_traditional_tools = {
 pm_privately_owned_mine = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/privately_owned.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
 	}
 	unlocking_laws = {
-		law_free_market
-		law_decentralization
-		law_anti_industrialization
+		law_laissez_faire
+		law_traditionalism
+		#law_anti_industrialization
 		law_interventionism
 	}
 	building_modifiers = {
@@ -2570,13 +2570,13 @@ pm_publicly_traded_mine = {
 		central_bank_independence
 	}
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
 	}
 	unlocking_laws = {
-		law_free_market
+		law_laissez_faire
 	}
 	unlocking_technologies = {
 		central_bank_independence
@@ -2598,11 +2598,11 @@ pm_publicly_traded_mine = {
 pm_government_run_mine = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/government_run.dds"
 	disallowing_laws = {
-		law_no_nationalization
-		law_public_utility_companies
+		#law_no_nationalization
+		#law_public_utility_companies
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 		law_interventionism
 	}
 	building_modifiers = {
@@ -2618,13 +2618,13 @@ pm_government_run_mine = {
 pm_worker_cooperatives_mine = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/worker_cooperative.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		level_scaled = {

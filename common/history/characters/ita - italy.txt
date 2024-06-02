@@ -1,12 +1,12 @@
 ﻿CHARACTERS = {
-	c:ITA = {
+	c:ITA ?= {
 		create_character = {
 			first_name = "Alcide"
 			last_name = "De_Gasperi"			# De Nicola
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1877.11.9
-			interest_group = ig_capitalists
+			interest_group = ig_market_liberals
 			ideology = ideology_moderate
 			traits = {
 			}

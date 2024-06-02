@@ -37,7 +37,7 @@ effect_nuclear_capable_nation = {
 }
 
 effect_biochem_researching_nation = {
-	activate_law = law_type:law_unrestricted_human_testing
+	#activate_law = law_type:law_unrestricted_human_testing
 }
 
 effect_biochem_allowing_nation = {

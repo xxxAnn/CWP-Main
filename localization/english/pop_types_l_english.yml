@@ -59,7 +59,7 @@
   professionals_only_icon: "@professionals!"
   professionals: "@professionals! $professionals_no_icon$"
 
-  service_workers_desc: "Shopkeepers, clerks, waiters and other service workers, providing services to the public. Politically, they tend to be part of the Petite Bourgeoisie and Trade Unions."
+  service_workers_desc: "Shopkeepers, service_workers, waiters and other service workers, providing services to the public. Politically, they tend to be part of the Petite Bourgeoisie and Trade Unions."
   service_workers_no_icon: "Service Workers"
   service_workers_only_icon: "@service_workers!"
   service_workers: "@service_workers! $service_workers_no_icon$"

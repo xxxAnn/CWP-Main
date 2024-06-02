@@ -1,12 +1,12 @@
 ﻿# No info???
 CHARACTERS = {
-	c:EWE = {
+	c:EWE ?= {
 		create_character = {
 			first_name = "Temporary"
 			last_name = "Governor"
 			culture = cu:english
 			birth_date = 1898.3.18
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ig_leader = yes
 			ruler = yes
 			ideology = ideology_moderate

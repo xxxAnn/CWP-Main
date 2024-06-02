@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:SML = {
+	c:SML ?= {
 		create_character = {
 			first_name = "Denis"
 			last_name = "Wickham"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1889.2.21
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

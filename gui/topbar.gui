@@ -52,8 +52,8 @@ types topbar_components
 				using = GDP_tooltip_with_graph
 				using = tooltip_below
 
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_gdp')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_gdp')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
 				textbox = {
@@ -70,8 +70,8 @@ types topbar_components
 				spacing = 2
 				using = literacy_tooltip_with_graph
 				using = tooltip_below
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_literacy')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_literacy')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
 				icon = {
@@ -92,8 +92,8 @@ types topbar_components
 				spacing = 2
 				using = average_standard_of_living_tooltip_with_graph
 				using = tooltip_below
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_standard_of_living')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_standard_of_living')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
 				textbox = {
@@ -118,8 +118,8 @@ types topbar_components
 				spacing = 2
 				using = population_tooltip_with_graph
 				using = tooltip_below
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_population')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_population')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alwaystransparent = no
 
 				icon = {
@@ -140,8 +140,8 @@ types topbar_components
 				spacing = 2
 				using = radicals_tooltip_with_graph
 				using = tooltip_below
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_radicals')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_radicals')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alpha = "[TransparentIfZero_int64(Country.GetNumRadicals)]"
 				alwaystransparent = no
 
@@ -163,8 +163,8 @@ types topbar_components
 				spacing = 2
 				using = loyalists_tooltip_with_graph
 				using = tooltip_below
-				onmousehierarchyenter = "[SelectMapModeByKey('mm_loyalists')]"
-				onmousehierarchyleave = "[UnforceMapMode]"
+				onmousehierarchyenter = "[SetTempMapModeByKey('mm_loyalists')]"
+				onmousehierarchyleave = "[UnlockMapMode]"
 				alpha = "[TransparentIfZero_int64(Country.GetNumLoyalists)]"
 				alwaystransparent = no
 
@@ -241,106 +241,106 @@ types topbar_components
 				}
 			}
 
-			button = {
-				name = "tutorial_highlight_currency"
-				minimumsize = { 90 20 }
-				maximumsize = { 90 20 }
-				tooltipwidget = {
-					bank_credibility_tooltip = {}
-				}
-				onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
-				onclick = "[GetVariableSystem.Clear('international_open')]" 
-				onclick = "[GetVariableSystem.Clear('un_panel')]" 
-				onclick = "[GetVariableSystem.Clear('banks_panel')]" 
-				onclick = "[GetVariableSystem.Clear('nato_panel')]" 
-				onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
-				enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
-				using = tooltip_below
-
-				alwaystransparent = no
-
-				textbox = {
-					parentanchor = vcenter
-					raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName][GetPlayer.MakeScope.ScriptValue('currency_average_difference_to_global')|+d%]#!"
-					autoresize = yes
-					fontsize = 15
-					align = left|nobaseline
-				}
-			}
-			button = {
-				minimumsize = { 90 20 }
-				maximumsize = { 90 20 }
-				tooltipwidget = {
-					inflation_tooltip = {}
-				}
-				using = tooltip_below
-				alwaystransparent = no
-				onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
-				onclick = "[GetVariableSystem.Clear('international_open')]" 
-				onclick = "[GetVariableSystem.Clear('un_panel')]" 
-				onclick = "[GetVariableSystem.Clear('banks_panel')]" 
-				onclick = "[GetVariableSystem.Clear('nato_panel')]" 
-				onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
-				enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
-
-				widget = {
-					size = { 28 28 }
-					parentanchor = vcenter
-					position = { 0 0 }
-
-					icon = {
-						parentanchor = center
-						size = { @tertiary_icon_size @tertiary_icon_size }
-						texture = "gfx/interface/icons/generic_icons/inflation.dds"
-					}
-
-				}
-				textbox = {
-					position = { 30 0 }
-					text = "[GetPlayer.MakeScope.ScriptValue('inflation_value')|nd%]"
-					fontsize = 15
-					align = left|nobaseline
-					autoresize = yes
-					parentanchor = vcenter
-				}
-			}
-			button = {
-				minimumsize = { 90 20 }
-				maximumsize = { 90 20 }
-				using = tooltip_below
-				tooltipwidget = {
-					money_supply_tooltip = {}
-				}
-				alwaystransparent = no
-				onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
-				onclick = "[GetVariableSystem.Clear('international_open')]" 
-				onclick = "[GetVariableSystem.Clear('un_panel')]" 
-				onclick = "[GetVariableSystem.Clear('banks_panel')]" 
-				onclick = "[GetVariableSystem.Clear('nato_panel')]" 
-				onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
-				enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
-
-				widget = {
-					size = { 28 28 }
-					parentanchor = vcenter
-					position = { 0 0 }
-
-					icon = {
-						parentanchor = center
-						size = { @tertiary_icon_size @tertiary_icon_size }
-						texture = "gfx/interface/icons/generic_icons/inflation.dds" #TODO, make icon
-					}
-
-				}
-				textbox = {
-					position = { 30 0 }
-					raw_text = "#gold #bold [GetPlayer.MakeScope.ScriptValue('money_supply_percentage')|0]%#!#!"
-					fontsize = 15
-					align = left|nobaseline
-					autoresize = yes
-					parentanchor = vcenter
-				}
-			}
+			#button = {
+			#	name = "tutorial_highlight_currency"
+			#	minimumsize = { 90 20 }
+			#	maximumsize = { 90 20 }
+			#	tooltipwidget = {
+			#		bank_credibility_tooltip = {}
+			#	}
+			#	onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
+			#	onclick = "[GetVariableSystem.Clear('international_open')]" 
+			#	onclick = "[GetVariableSystem.Clear('un_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+			#	enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+			#	using = tooltip_below
+#
+			#	alwaystransparent = no
+#
+			#	textbox = {
+			#		parentanchor = vcenter
+			#		raw_text = "#variable [GetPlayer.MakeScope.Var('cwp_currency').GetFlagName][GetPlayer.MakeScope.ScriptValue('currency_average_difference_to_global')|+d%]#!"
+			#		autoresize = yes
+			#		fontsize = 15
+			#		align = left|nobaseline
+			#	}
+			#}
+			#button = {
+			#	minimumsize = { 90 20 }
+			#	maximumsize = { 90 20 }
+			#	tooltipwidget = {
+			#		inflation_tooltip = {}
+			#	}
+			#	using = tooltip_below
+			#	alwaystransparent = no
+			#	onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
+			#	onclick = "[GetVariableSystem.Clear('international_open')]" 
+			#	onclick = "[GetVariableSystem.Clear('un_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+			#	enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+#
+			#	widget = {
+			#		size = { 28 28 }
+			#		parentanchor = vcenter
+			#		position = { 0 0 }
+#
+			#		icon = {
+			#			parentanchor = center
+			#			size = { @tertiary_icon_size @tertiary_icon_size }
+			#			texture = "gfx/interface/icons/generic_icons/inflation.dds"
+			#		}
+#
+			#	}
+			#	textbox = {
+			#		position = { 30 0 }
+			#		text = "[GetPlayer.MakeScope.ScriptValue('inflation_value')|nd%]"
+			#		fontsize = 15
+			#		align = left|nobaseline
+			#		autoresize = yes
+			#		parentanchor = vcenter
+			#	}
+			#}
+			#button = {
+			#	minimumsize = { 90 20 }
+			#	maximumsize = { 90 20 }
+			#	using = tooltip_below
+			#	tooltipwidget = {
+			#		money_supply_tooltip = {}
+			#	}
+			#	alwaystransparent = no
+			#	onclick = "[InformationPanelBar.OpenPanelTab('budget', 'fiscal')]"
+			#	onclick = "[GetVariableSystem.Clear('international_open')]" 
+			#	onclick = "[GetVariableSystem.Clear('un_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('banks_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('nato_panel')]" 
+			#	onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
+			#	enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
+#
+			#	widget = {
+			#		size = { 28 28 }
+			#		parentanchor = vcenter
+			#		position = { 0 0 }
+#
+			#		icon = {
+			#			parentanchor = center
+			#			size = { @tertiary_icon_size @tertiary_icon_size }
+			#			texture = "gfx/interface/icons/generic_icons/inflation.dds" #TODO, make icon
+			#		}
+#
+			#	}
+			#	textbox = {
+			#		position = { 30 0 }
+			#		raw_text = "#gold #bold [GetPlayer.MakeScope.ScriptValue('money_supply_percentage')|0]%#!#!"
+			#		fontsize = 15
+			#		align = left|nobaseline
+			#		autoresize = yes
+			#		parentanchor = vcenter
+			#	}
+			#}
 
 		}
 	}
@@ -727,56 +727,6 @@ types topbar_components
 									}
 								}
 							}
-							container = {
-								### CORRUPTION
-								button = {
-									name = "tutorial_highlight_corruption"
-									using = glow_button
-									size = { 150 40 }
-									tooltipwidget = {
-										corruption_tooltip = {}
-									}
-									using = tooltip_below
-									onclick = "[InformationPanelBar.OpenPanelTab('politics', 'default')]"
-									onclick = "[GetVariableSystem.Clear('international_open')]" 
-									onclick = "[GetVariableSystem.Clear('un_panel')]" 
-									onclick = "[GetVariableSystem.Clear('banks_panel')]" 
-									onclick = "[GetVariableSystem.Clear('nato_panel')]" 
-									onclick = "[GetVariableSystem.Clear('warsaw_pact_panel')]" 
-									enabled = "[GetMetaPlayer.GetPlayedOrObservedCountry.IsValid]"
-									visible = "[Country.IsValid]"
-
-									icon = {
-										size = { 40 40 }
-										name = authority_icon
-										texture = "gfx/interface/icons/topbar/corruption_icon.dds"
-										parentanchor = vcenter
-									}
-
-									textbox = {
-										position = { 45 -2 }
-										name = capital_value
-										raw_text = "#n [GetPlayer.MakeScope.ScriptValue('corruption_value')|d1]% #!"
-										align = left|nobaseline
-										using = fontsize_large
-										autoresize = yes
-										parentanchor = vcenter
-									}
-
-									bad_progressbar_horizontal = {
-										parentanchor = vcenter
-										name = "corruption_progressbar"
-										size = { 60 6 }
-										position = { 40 15 }
-										blockoverride "values" {
-											value = "[GetPlayer.MakeScope.ScriptValue('corruption_value')]"
-											min = 0
-											max = 100
-										}
-									}
-								}
-							}
-
 						}
 
 						#shows only on hover
@@ -884,7 +834,7 @@ types topbar_components
 		position = { -4 78 }
 
 		onclick = "[MapListPanelManager.ToggleCurrentPanel]"
-		onclick = "[SelectMapModeByKey('mm_default')]"
+		onclick = "[SetTempMapModeByKey('mm_default')]"
 
 		### RANK
 		rank_badge = {

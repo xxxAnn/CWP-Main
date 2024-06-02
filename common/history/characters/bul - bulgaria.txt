@@ -1,12 +1,12 @@
 ﻿CHARACTERS = {
-	c:BUL = {
+	c:BUL ?= {
 		create_character = {
 			first_name = "Simeon"
 			last_name = "of_Saxe_Coburg_Gotha"
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1937.6.16
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

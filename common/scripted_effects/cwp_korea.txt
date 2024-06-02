@@ -126,7 +126,7 @@
 	}
 	if = {
 		limit = {
-			has_law = law_type:law_administrative
+			#has_law = law_type:law_administrative
 		}
 		activate_law = law_type:law_executive
 	}

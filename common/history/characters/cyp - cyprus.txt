@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:CYP = {
+	c:CYP ?= {
 		create_character = {
 			first_name = "Charles"
 			last_name = "Woolley"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1893.5.5
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 			}

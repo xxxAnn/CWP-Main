@@ -117,7 +117,7 @@ je_gaddafi_unification_target = {
 			}
 			if = { #Libya has a stronger millitary
 				limit = {
-					army_reserves < c:LBY.army_reserves
+					army_size < c:LBY.army_size
 				}
 				c:LBY = {
 					change_variable = {

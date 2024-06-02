@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:GNB = {
+	c:GNB ?= {
 		create_character = {
 			first_name = "Sarmento"
 			last_name = "Rodrigues"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1890.4.25
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 			}

@@ -75,8 +75,8 @@ law_government_controlled = {
 	# Don't change back to mercantilism once we have protectionism or free trade
 	ai_will_do = {
 		NOR = {
-			has_law = law_type:law_protectionism
-			has_law = law_type:law_free_trade
+			#has_law = law_type:law_protectionism
+			#has_law = law_type:law_free_trade
 		}
 	}
 	ai_enact_weight_modifier = {
@@ -126,8 +126,8 @@ law_government_interference = {
 	# Don't change back to mercantilism once we have protectionism or free trade
 	ai_will_do = {
 		NOR = {
-			has_law = law_type:law_protectionism
-			has_law = law_type:law_free_trade
+			#has_law = law_type:law_protectionism
+			#has_law = law_type:law_free_trade
 		}
 	}
 	ai_enact_weight_modifier = {
@@ -179,9 +179,9 @@ law_independent_monetary_policy = {
 				limit = {
 					owner = {
 						OR = {
-							has_law = law_type:law_anti_industrialization
-							has_law = law_type:law_decentralization
-							has_law = law_type:law_socialization
+							##has_law = law_type:law_anti_industrialization
+							#has_law = law_type:law_decentralization
+							has_law = law_type:law_command_economy
 						}
 					}
 					is_pop_type = investors
@@ -231,9 +231,9 @@ law_pegged_currency = {
 				limit = {
 					owner = {
 						OR = {
-							has_law = law_type:law_anti_industrialization
-							has_law = law_type:law_decentralization
-							has_law = law_type:law_socialization
+							##has_law = law_type:law_anti_industrialization
+							#has_law = law_type:law_decentralization
+							has_law = law_type:law_command_economy
 						}
 					}
 					is_pop_type = investors

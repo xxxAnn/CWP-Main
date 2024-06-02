@@ -1,11 +1,11 @@
 ﻿CHARACTERS = {
-	c:BRZ = {
+	c:BRZ ?= {
 		create_character = {
 			first_name = "Jose"			# José
 			last_name = "Linhares"
 			ig_leader = yes
 			birth_date = 1886.1.28
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}
@@ -17,10 +17,9 @@
 			religion = rel:catholic
 			ig_leader = yes
 			birth_date = 1882.04.19
-			interest_group = ig:ig_capitalists
+			interest_group = ig:ig_market_liberals
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -31,10 +30,9 @@
 			religion = rel:catholic
 			ig_leader = yes
 			birth_date = 1883.05.18
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -43,10 +41,9 @@
 			culture = cu:brazilian
 			religion = rel:catholic
 			ig_leader = yes
-			interest_group = ig:ig_moralists
+			interest_group = ig:ig_devout
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -58,7 +55,6 @@
 			interest_group = ig:ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -67,10 +63,9 @@
 			culture = cu:brazilian
 			religion = rel:catholic
 			ig_leader = yes
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -79,10 +74,9 @@
 			culture = cu:brazilian
 			religion = rel:catholic
 			ig_leader = yes
-			interest_group = ig:ig_ruralists
+			interest_group = ig:ig_rural_folk
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -91,10 +85,9 @@
 			culture = cu:brazilian
 			religion = rel:catholic
 			ig_leader = yes
-			interest_group = ig:ig_entrepreneurs
+			interest_group = ig:ig_petty_bourgeoisie
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -103,10 +96,9 @@
 			culture = cu:brazilian
 			religion = rel:atheist
 			ig_leader = yes
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:ALB = {
+	c:ALB ?= {
 		create_character = {
 			first_name = "Enver"
 			last_name = "Hoxha"
@@ -7,10 +7,9 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1921.10.25
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ideology = ideology_moderate
 			traits = {
-			
 			}
 		}
 	}

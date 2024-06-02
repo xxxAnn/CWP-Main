@@ -14,32 +14,33 @@ ddr_flavor.1 = {
 	trigger = {
 		exists = c:DDR
 		this = c:DDR
-		has_law = law_type:law_anocracy
+		#has_law = law_type:law_anocracy
 		year < 1960
-		NOT = { has_variable = ulbricht_triggered }
+		NOT = {
+			has_variable = ulbricht_triggered
+		}
 	}
-
 	option = {
 		name = ddr_flavor.1.a
 		default_option = yes
 		create_character = {
 			first_name = "Walter"
 			last_name = "Ulbricht"
-  		 	culture = cu:north_german
+			culture = cu:north_german
 			#ruler = yes
 			ig_leader = yes
-   			religion = atheist
-  		 	ruler = yes
-  		 	historical = yes
-			ideology = ideology_hardliner #Became a Stalinist over time
-			interest_group = ig:ig_laborists 
+			religion = atheist
+			ruler = yes
+			historical = yes
+			ideology = ideology_hardliner			#Became a Stalinist over time
+			interest_group = ig:ig_socialists
 			birth_date = 1893.6.30
 			traits = {
-				career_revolutionary 
-				demagogue #Had his own cult of personality
+				career_revolutionary
+				demagogue				#Had his own cult of personality
 			}
- 		}
+		}
 		set_variable = ulbricht_triggered
-		activate_law = law_type:law_council_elective
+		#activate_law = law_type:law_council_elective
 	}
 }

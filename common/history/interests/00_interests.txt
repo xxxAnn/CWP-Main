@@ -1,5 +1,5 @@
 ﻿INTERESTS = {
-	c:USA = {
+	c:USA ?= {
 		add_declared_interest = region_andes
 		add_declared_interest = region_amazon
 		add_declared_interest = region_middle_east
@@ -7,7 +7,7 @@
 		add_declared_interest = region_eastern_europe
 		add_declared_interest = region_russia
 	}
-	c:MEX = {
+	c:MEX ?= {
 		add_declared_interest = region_andes
 	}
 }

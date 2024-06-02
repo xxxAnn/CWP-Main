@@ -1,27 +1,20 @@
 ﻿namespace = healthcare_laws
-
-healthcare_laws.1 = { #famers want healthcare due to accidents
+healthcare_laws.1 = {
+	#famers want healthcare due to accidents
 	type = country_event
 	placement = scope:farming_accidents_state
-	
 	title = healthcare_laws.1.t
 	desc = healthcare_laws.1.d
 	flavor = healthcare_laws.1.f
-
 	category = enactment
-	
 	event_image = {
 		video = "europenorthamerica_russian_serfs"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
 	duration = 3
-	
 	trigger = {
-		has_law = law_type:law_charity_health_system
+		#has_law = law_type:law_charity_health_system
 		or = {
 			is_enacting_law = law_type:law_church_run_hospitals
 			is_enacting_law = law_type:law_private_health_insurance
@@ -43,7 +36,6 @@ healthcare_laws.1 = { #famers want healthcare due to accidents
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = healthcare_system
@@ -59,20 +51,20 @@ healthcare_laws.1 = { #famers want healthcare due to accidents
 						is_building_type = building_millet_farm
 					}
 				}
-			}	
+			}
 			save_scope_as = farming_accidents_state
 		}
 	}
-
-	option = { # no mortality increase, lower chance success
+	option = {
+		# no mortality increase, lower chance success
 		name = healthcare_laws.1.a
 		default_option = yes
 		add_enactment_modifier = {
 			name = farming_accident_chance
 		}
 	}
-
-	option = { #mortality increase, higher chance success
+	option = {
+		#mortality increase, higher chance success
 		name = healthcare_laws.1.b
 		scope:farming_accidents_state = {
 			add_modifier = {
@@ -85,8 +77,8 @@ healthcare_laws.1 = { #famers want healthcare due to accidents
 			multiplier = 4
 		}
 	}
-
-	option = { #highest mortality, higher chance success
+	option = {
+		#highest mortality, higher chance success
 		name = healthcare_laws.1.c
 		trigger = {
 			is_enacting_law = law_type:law_private_health_insurance
@@ -105,28 +97,22 @@ healthcare_laws.1 = { #famers want healthcare due to accidents
 	}
 }
 
-healthcare_laws.2 = { #who should be paying for this?
+healthcare_laws.2 = {
+	#who should be paying for this?
 	type = country_event
 	placement = ROOT
-	
 	title = healthcare_laws.2.t
 	desc = healthcare_laws.2.d
 	flavor = healthcare_laws.2.f
-
 	category = enactment
-	
 	event_image = {
 		video = "africa_leader_arguing"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
 	duration = 3
-	
 	trigger = {
-		has_law = law_type:law_charity_health_system
+		#has_law = law_type:law_charity_health_system
 		or = {
 			is_enacting_law = law_type:law_church_run_hospitals
 			is_enacting_law = law_type:law_private_health_insurance
@@ -137,13 +123,11 @@ healthcare_laws.2 = { #who should be paying for this?
 			has_modifier = taxing_health
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = healthcare_system
 		}
 	}
-
 	option = {
 		name = healthcare_laws.2.a
 		default_option = yes
@@ -159,7 +143,6 @@ healthcare_laws.2 = { #who should be paying for this?
 			multiplier = 2
 		}
 	}
-
 	option = {
 		name = healthcare_laws.2.b
 		add_enactment_modifier = {
@@ -171,8 +154,7 @@ healthcare_laws.2 = { #who should be paying for this?
 			multiplier = 3
 		}
 	}
-
-	option = { 
+	option = {
 		name = healthcare_laws.2.c
 		add_enactment_modifier = {
 			name = taxing_health
@@ -180,28 +162,22 @@ healthcare_laws.2 = { #who should be paying for this?
 	}
 }
 
-healthcare_laws.3 = { #sickness in the government
+healthcare_laws.3 = {
+	#sickness in the government
 	type = country_event
 	placement = ROOT
-	
 	title = healthcare_laws.3.t
 	desc = healthcare_laws.3.d
 	flavor = healthcare_laws.3.f
-
 	category = enactment
-	
 	event_image = {
 		video = "unspecific_sick_in_hospital"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
 	duration = 3
-	
 	trigger = {
-		has_law = law_type:law_charity_health_system
+		#has_law = law_type:law_charity_health_system
 		or = {
 			is_enacting_law = law_type:law_church_run_hospitals
 			is_enacting_law = law_type:law_private_health_insurance
@@ -212,18 +188,17 @@ healthcare_laws.3 = { #sickness in the government
 			has_modifier = government_in_bed
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = healthcare_system
 		}
 	}
-
-	option = { #leave it be
+	option = {
+		#leave it be
 		name = healthcare_laws.3.a
 		default_option = yes
 		random_list = {
-			2= {
+			2 = {
 				add_enactment_modifier = {
 					name = government_in_bed
 					multiplier = 3
@@ -237,8 +212,8 @@ healthcare_laws.3 = { #sickness in the government
 			}
 		}
 	}
-
-	option = { #try to push it anyways
+	option = {
+		#try to push it anyways
 		name = healthcare_laws.3.b
 		add_enactment_modifier = {
 			name = government_in_bed
@@ -249,45 +224,37 @@ healthcare_laws.3 = { #sickness in the government
 	}
 }
 
-healthcare_laws.4 = { #not enough health care
+healthcare_laws.4 = {
+	#not enough health care
 	type = country_event
 	placement = ROOT
-	
 	title = healthcare_laws.4.t
 	desc = healthcare_laws.4.d
 	flavor = healthcare_laws.4.f
-
 	category = enactment
-	
 	event_image = {
 		video = "southamerica_election"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
 	duration = 3
-	
 	trigger = {
 		or = {
-			has_law = law_type:law_church_run_hospitals
-			has_law = law_type:law_private_health_insurance		
+			#has_law = law_type:law_church_run_hospitals
+			#has_law = law_type:law_private_health_insurance		
 		}
 		is_enacting_law = law_type:law_subsidized_health_insurance
 		NOT = {
 			has_modifier = more_healthcare
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = healthcare_system
 		}
 	}
-
-
-	option = { #Try and free up some bureaucracy
+	option = {
+		#Try and free up some bureaucracy
 		name = healthcare_laws.4.a
 		default_option = yes
 		add_enactment_modifier = {
@@ -297,8 +264,8 @@ healthcare_laws.4 = { #not enough health care
 			name = health_bureaucracy
 		}
 	}
-
-	option = { #focus on the law
+	option = {
+		#focus on the law
 		name = healthcare_laws.4.b
 		add_enactment_modifier = {
 			name = more_healthcare
@@ -307,30 +274,23 @@ healthcare_laws.4 = { #not enough health care
 	}
 }
 
-healthcare_laws.5 = { 
+healthcare_laws.5 = {
 	type = country_event
 	placement = ROOT
-	
 	title = healthcare_laws.5.t
 	desc = healthcare_laws.5.d
 	flavor = healthcare_laws.5.f
-
 	category = enactment
-	
 	event_image = {
 		video = "africa_leader_arguing"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
 	duration = 3
-	
 	trigger = {
 		or = {
-			has_law = law_type:law_church_run_hospitals
-			has_law = law_type:law_private_health_insurance
+			#has_law = law_type:law_church_run_hospitals
+			#has_law = law_type:law_private_health_insurance
 		}
 		is_enacting_law = law_type:law_subsidized_health_insurance
 		NOT = {
@@ -344,7 +304,6 @@ healthcare_laws.5 = {
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = opening_up_healthcare
@@ -363,8 +322,7 @@ healthcare_laws.5 = {
 			}
 		}
 	}
-
-	option = { 
+	option = {
 		name = healthcare_laws.5.a
 		default_option = yes
 		ai_chance = {
@@ -399,8 +357,7 @@ healthcare_laws.5 = {
 			}
 		}
 	}
-
-	option = { 
+	option = {
 		name = healthcare_laws.5.b
 		ai_chance = {
 			base = 50
@@ -418,45 +375,37 @@ healthcare_laws.5 = {
 	}
 }
 
-healthcare_laws.6 = { #Healthcare too expensive
+healthcare_laws.6 = {
+	#Healthcare too expensive
 	type = country_event
 	placement = ROOT
-	
 	title = healthcare_laws.6.t
 	desc = healthcare_laws.6.d
 	flavor = healthcare_laws.6.f
-
 	category = enactment
-	
 	event_image = {
 		video = "southamerica_aristocrats"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
 	duration = 3
-	
 	trigger = {
 		or = {
-			has_law = law_type:law_church_run_hospitals
-			has_law = law_type:law_private_health_insurance
+			#has_law = law_type:law_church_run_hospitals
+			#has_law = law_type:law_private_health_insurance
 		}
 		is_enacting_law = law_type:law_subsidized_health_insurance
 		NOT = {
 			has_modifier = right_to_care
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = healthcare_system
 		}
 	}
-
-
-	option = { #take the time needed
+	option = {
+		#take the time needed
 		name = healthcare_laws.6.a
 		default_option = yes
 		random_list = {
@@ -474,8 +423,8 @@ healthcare_laws.6 = { #Healthcare too expensive
 			}
 		}
 	}
-
-	option = { #spend to reduce
+	option = {
+		#spend to reduce
 		name = healthcare_laws.6.b
 		add_enactment_modifier = {
 			name = healthcare_rights

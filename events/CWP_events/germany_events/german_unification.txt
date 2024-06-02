@@ -660,7 +660,7 @@ west_german_unification.3 = {
 		make_independent = yes
 		activate_law = law_type:law_parliamentary
 		activate_law = law_type:law_representative_democracy
-		activate_law = law_type:law_reserve_military
+		#activate_law = law_type:law_reserve_military
 		s:STATE_THURINGIA = {
 			add_claim = c:GER
 		}
@@ -756,7 +756,7 @@ west_german_unification.3 = {
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1876.1.5
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_christian_democrat
 			historical = yes
 			traits = {
@@ -772,7 +772,7 @@ west_german_unification.3 = {
 			religion = protestant
 			ig_leader = yes
 			birth_date = 1897.2.4
-			interest_group = ig:ig_capitalists
+			interest_group = ig:ig_market_liberals
 			ideology = ideology_christian_democrat
 			historical = yes
 			traits = {
@@ -787,7 +787,7 @@ west_german_unification.3 = {
 			religion = atheist			#probably
 			ig_leader = yes
 			birth_date = 1895.10.13
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_moderate
 			historical = yes
 			traits = {
@@ -815,31 +815,31 @@ west_german_unification.3 = {
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_patriots
+			interest_group = ig:ig_armed_forces
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_entrepreneurs
+			interest_group = ig:ig_petty_bourgeoisie
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_urbanists
+			interest_group = ig:ig_intelligentsia
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_ruralists
+			interest_group = ig:ig_rural_folk
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_moralists
+			interest_group = ig:ig_devout
 		}
 		create_character = {
 			ig_leader = yes
-			interest_group = ig:ig_urbanists
+			interest_group = ig:ig_intelligentsia
 		}
 		create_character = {
 			ig_leader = yes

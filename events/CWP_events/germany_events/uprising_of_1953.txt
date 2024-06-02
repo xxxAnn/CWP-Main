@@ -1,5 +1,6 @@
 ﻿namespace = uprising_of_1953
-uprising_of_1953.1 = { #Triggers when je "The Socialist State" fails
+uprising_of_1953.1 = {
+	#Triggers when je "The Socialist State" fails
 	type = country_event
 	title = uprising_of_1953.1.t
 	desc = uprising_of_1953.1.d
@@ -13,7 +14,6 @@ uprising_of_1953.1 = { #Triggers when je "The Socialist State" fails
 	duration = 3
 	trigger = {
 	}
-
 	option = {
 		name = uprising_of_1953.1.a
 		default_option = yes
@@ -26,11 +26,16 @@ uprising_of_1953.1 = { #Triggers when je "The Socialist State" fails
 			value = medium_radicals
 		}
 		c:RUS = {
-			trigger_event = { id = uprising_of_1953.2 days = 7 }
+			trigger_event = {
+				id = uprising_of_1953.2
+				days = 7
+			}
 		}
 	}
 }
-uprising_of_1953.2 = { #Soviet Union is notified
+
+uprising_of_1953.2 = {
+	#Soviet Union is notified
 	type = country_event
 	title = uprising_of_1953.2.t
 	desc = uprising_of_1953.2.d
@@ -44,7 +49,6 @@ uprising_of_1953.2 = { #Soviet Union is notified
 	duration = 3
 	trigger = {
 	}
-
 	option = {
 		name = uprising_of_1953.2.a
 		default_option = yes
@@ -74,7 +78,7 @@ uprising_of_1953.2 = { #Soviet Union is notified
 				type = dominion
 			}
 			c:DDR = {
-				activate_law = law_type:law_representative_democracy 
+				activate_law = law_type:law_representative_democracy
 			}
 		}
 		c:DDR = {
@@ -83,7 +87,8 @@ uprising_of_1953.2 = { #Soviet Union is notified
 	}
 }
 
-uprising_of_1953.3 = { #Notification that DDR is now a dominiion
+uprising_of_1953.3 = {
+	#Notification that DDR is now a dominiion
 	type = country_event
 	title = uprising_of_1953.3.t
 	desc = uprising_of_1953.3.d
@@ -97,7 +102,6 @@ uprising_of_1953.3 = { #Notification that DDR is now a dominiion
 	duration = 3
 	trigger = {
 	}
-
 	option = {
 		name = uprising_of_1953.3.a
 		default_option = yes
@@ -107,11 +111,12 @@ uprising_of_1953.3 = { #Notification that DDR is now a dominiion
 				type = dominion
 			}
 		}
-		activate_law = law_type:law_representative_democracy 
+		activate_law = law_type:law_representative_democracy
 	}
 }
 
-uprising_of_1953.4 = { #DDR decides on further course of action
+uprising_of_1953.4 = {
+	#DDR decides on further course of action
 	type = country_event
 	title = uprising_of_1953.4.t
 	desc = uprising_of_1953.4.d
@@ -125,20 +130,19 @@ uprising_of_1953.4 = { #DDR decides on further course of action
 	duration = 3
 	trigger = {
 	}
-
 	option = {
-		name = uprising_of_1953.4.a		
+		name = uprising_of_1953.4.a
 		ai_chance = {
 			base = 70
 		}
 		default_option = yes
-		activate_law = law_type:law_council_elective
+		#activate_law = law_type:law_council_elective
 		activate_law = law_type:law_anocracy
 		activate_law = law_type:law_state_atheism
-		activate_law = law_type:law_socialization
-		activate_law = law_type:law_professional_military 
-		activate_law = law_type:law_secret_police #Bonus
-		activate_law = law_type:law_outlawed_dissent #Bonus
+		#activate_law = law_type:law_socialization
+		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_secret_police		#Bonus
+		activate_law = law_type:law_outlawed_dissent		#Bonus
 		c:RUS = {
 			create_diplomatic_pact = {
 				country = c:DDR
@@ -154,11 +158,11 @@ uprising_of_1953.4 = { #DDR decides on further course of action
 		make_independent = yes
 		remove_variable = eastern_bloc_member
 		activate_law = law_type:law_parliamentary
-		activate_law = law_type:law_representative_democracy 
+		activate_law = law_type:law_representative_democracy
 		c:RUS = {
 			create_diplomatic_play = {
 				target_country = c:DDR
-				type = dp_make_puppet
+				type = dp_reassert_dominion
 				add_war_goal = { 
 					holder = c:RUS 
 					type = regime_change

@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:ROC = {
+	c:ROC ?= {
 		#pending following more ideologies rework
 		create_character = {
 			# Chiang Kai-Shek
@@ -12,10 +12,9 @@
 			#ig_leader = yes #Ruler can't be IG leader under dictatorship or monarchy.
 			birth_date = 1887.10.31
 			#dna = 
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -27,10 +26,9 @@
 			culture = cu:han
 			birth_date = 1890.8.13
 			#dna = 
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -42,10 +40,9 @@
 			culture = cu:han
 			birth_date = 1900.12.8
 			#dna = 
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -58,10 +55,9 @@
 			ig_leader = yes
 			birth_date = 1881.9.11
 			#dna = 
-			interest_group = ig:ig_capitalists
+			interest_group = ig:ig_market_liberals
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -73,10 +69,9 @@
 			ig_leader = yes
 			birth_date = 1900.8.21
 			#dna = 
-			interest_group = ig:ig_bureaucrats
+			interest_group = ig:ig_petty_bourgeoisie
 			ideology = ideology_authoritarian
 			traits = {
-				
 			}
 		}
 		create_character = {

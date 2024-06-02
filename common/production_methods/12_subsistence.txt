@@ -20,7 +20,7 @@
 pm_home_workshops_no_building_subsistence_farms = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/no_home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -34,7 +34,7 @@ pm_home_workshops_no_building_subsistence_farms = {
 pm_home_industries_building_subsistence_farms = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -50,7 +50,7 @@ pm_home_industries_building_subsistence_farms = {
 pm_home_workshops_building_subsistence_farms = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	disallowing_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -84,7 +84,7 @@ pm_base_building_subsistence_orchards = {
 pm_home_workshops_no_building_subsistence_orchards = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/no_home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -99,7 +99,7 @@ pm_home_workshops_no_building_subsistence_orchards = {
 pm_home_industries_building_subsistence_orchards = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -115,7 +115,7 @@ pm_home_industries_building_subsistence_orchards = {
 pm_home_workshops_building_subsistence_orchards = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	disallowing_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -149,7 +149,7 @@ pm_base_building_subsistence_pastures = {
 pm_home_workshops_no_building_subsistence_pastures = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/no_home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -164,7 +164,7 @@ pm_home_workshops_no_building_subsistence_pastures = {
 pm_home_industries_building_subsistence_pastures = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -180,7 +180,7 @@ pm_home_industries_building_subsistence_pastures = {
 pm_home_workshops_building_subsistence_pastures = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	disallowing_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -214,7 +214,7 @@ pm_base_building_subsistence_fishing_villages = {
 pm_home_workshops_no_building_subsistence_fishing_villages = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/no_home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -229,7 +229,7 @@ pm_home_workshops_no_building_subsistence_fishing_villages = {
 pm_home_industries_building_subsistence_fishing_villages = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -245,7 +245,7 @@ pm_home_industries_building_subsistence_fishing_villages = {
 pm_home_workshops_building_subsistence_fishing_villages = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	disallowing_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -278,7 +278,7 @@ pm_base_building_subsistence_rice_paddies = {
 pm_home_workshops_no_building_subsistence_rice_paddies = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/no_home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -292,7 +292,7 @@ pm_home_workshops_no_building_subsistence_rice_paddies = {
 pm_home_industries_building_subsistence_rice_paddies = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -308,7 +308,7 @@ pm_home_industries_building_subsistence_rice_paddies = {
 pm_home_workshops_building_subsistence_rice_paddies = {
 	texture = "gfx/interface/icons/production_method_icons/agriculture/home_workshops.dds"
 	disallowing_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		workforce_scaled = {
@@ -322,14 +322,14 @@ pm_home_workshops_building_subsistence_rice_paddies = {
 pm_privately_owned_building_subsistence = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/privately_owned.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
 	}
 	unlocking_laws = {
-		law_decentralization
-		law_anti_industrialization
+		law_traditionalism
+		#law_anti_industrialization
 	}
 	building_modifiers = {
 		level_scaled = {
@@ -346,13 +346,13 @@ pm_privately_owned_building_subsistence = {
 pm_smallholder_owner_building_subsistence = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/publicly_traded.dds"
 	disallowing_laws = {
-		law_total_nationalization
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
+		#law_total_nationalization
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
 	}
 	unlocking_laws = {
-		law_free_market
+		law_laissez_faire
 		law_interventionism
 	}
 	building_modifiers = {
@@ -369,14 +369,14 @@ pm_smallholder_owner_building_subsistence = {
 pm_government_run_building_subsistence = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/government_run.dds"
 	disallowing_laws = {
-		law_no_nationalization
-		law_public_utility_companies
-		law_heavy_industry_nationalization
-		law_military_industry_nationalization
-		law_resource_extraction_nationalization
+		#law_no_nationalization
+		#law_public_utility_companies
+		#law_heavy_industry_nationalization
+		#law_military_industry_nationalization
+		#law_resource_extraction_nationalization
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		level_scaled = {
@@ -391,10 +391,10 @@ pm_government_run_building_subsistence = {
 pm_worker_cooperatives_building_subsistence = {
 	texture = "gfx/interface/icons/production_method_icons/ownership/worker_cooperative.dds"
 	disallowing_laws = {
-		law_total_nationalization
+		#law_total_nationalization
 	}
 	unlocking_laws = {
-		law_socialization
+		law_command_economy
 	}
 	building_modifiers = {
 		level_scaled = {

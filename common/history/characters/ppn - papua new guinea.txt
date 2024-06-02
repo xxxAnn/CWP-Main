@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:PPN = {
+	c:PPN ?= {
 		create_character = {
 			first_name = "Jack_Keith"
 			last_name = "Murray"
@@ -7,7 +7,7 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1889.2.8
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
 			}

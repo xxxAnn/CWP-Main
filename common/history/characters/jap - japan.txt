@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:JAP = {
+	c:JAP ?= {
 		#More ideologies pending further rework
 		create_character = {
 			first_name = "Shidehara"
@@ -10,10 +10,9 @@
 			ig_leader = yes
 			birth_date = 1872.9.13
 			#dna
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ideology = ideology_pacifist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -28,7 +27,6 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -40,10 +38,9 @@
 			ig_leader = yes
 			birth_date = 1887.7.28
 			#dna
-			interest_group = ig_urbanists
+			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

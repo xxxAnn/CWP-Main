@@ -5,31 +5,26 @@
 		international_relations
 	}
 	potential = {
-		NOR = {
+		NOT = {
 			is_country_type = decentralized
-			has_law = law_type:law_isolationism
 		}
 		scope:target_country = {
-			NOR = {
+			NOT = {
 				is_country_type = decentralized
-				has_law = law_type:law_isolationism
 			}
+		}
+		is_revolutionary = no
+		scope:target_country = {
+			is_revolutionary = no
 		}
 	}
 	possible = {
-		is_junior_in_customs_union = no
-		scope:target_country = {
-			is_junior_in_customs_union = no
-		}
+		# Might have these despite low relations due to a forced pact
 		NOT = {
-			scope:target_country = {
-				has_treaty_port_in_country = root
+			has_diplomatic_pact = {
+				who = scope:target_country
+				type = trade_agreement
 			}
-		}
-		has_diplomatic_relevance = scope:target_country
-		custom_tooltip = {
-			text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS
-			scope:target_country.relations:root <= relations_threshold:poor
 		}
 	}
 	accept_effect = {
@@ -39,37 +34,108 @@
 		is_embargo = yes
 		is_two_sided_pact = no
 		relations_progress_per_day = -1		# At -100, -1 relations
-		should_auto_break = {
-			custom_tooltip = {
-				text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
-				scope:target_country.relations:root > relations_threshold:poor
+		requirement_to_maintain = {
+			trigger = {
+				has_diplomatic_relevance = scope:target_country
 			}
 		}
-		should_invalidate = {
-			OR = {
-				is_country_type = decentralized
+		requirement_to_maintain = {
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_NOT_DECENTRALIZED"
+					NOT = {
+						is_country_type = decentralized
+					}
+					scope:target_country = {
+						NOT = {
+							is_country_type = decentralized
+						}
+					}
+				}
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_DIPLOMATIC_AUTONOMY"
+					aggressive_diplomatic_plays_permitted = yes
+					scope:target_country = {
+						aggressive_diplomatic_plays_permitted = yes
+					}
+				}
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_NO_SUBJECT_RELATION"
+					NAND = {
+						is_non_customs_union_subject = yes
+						is_subject_of = scope:target_country
+					}
+					NAND = {
+						scope:target_country = {
+							is_non_customs_union_subject = yes
+						}
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
+				}
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				custom_tooltip = {
+					text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
+					scope:target_country.relations:root <= relations_threshold:poor
+				}
+			}
+			show_about_to_break_warning = {
+				scope:target_country.relations:root >= -23				# this is: poor - 3
+				scope:target_country.relations_change_rate:root > 0
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
 				NOT = {
-					has_diplomatic_relevance = scope:target_country
-				}
-				scope:target_country = {
-					is_country_type = decentralized
-				}
-				is_junior_in_customs_union = yes
-				scope:target_country = {
-					is_junior_in_customs_union = yes
-				}
-				scope:target_country = {
-					has_treaty_port_in_country = root
-				}
-				scope:target_country = {
-					has_law = law_type:law_isolationism
-				}
-				root = {
-					has_law = law_type:law_isolationism
+					#has_law = law_type:law_isolationism
 				}
 			}
 		}
-		break_effect = {
+		requirement_to_maintain = {
+			trigger = {
+				NOT = {
+					scope:target_country = {
+						#has_law = law_type:law_isolationism
+					}
+				}
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				is_junior_in_customs_union = no
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				scope:target_country = {
+					is_junior_in_customs_union = no
+				}
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				NOT = {
+					scope:target_country = {
+						has_treaty_port_in_country = root
+					}
+				}
+			}
+		}
+		manual_break_effect = {
+		}
+		auto_break_effect = {
 		}
 	}
 	ai = {
@@ -80,7 +146,7 @@
 			if = {
 				limit = {
 					AND = {
-						has_radical_leftist_government = no			
+						has_radical_leftist_government = no
 						scope:target_country = {
 							has_radical_leftist_government = yes
 						}
@@ -91,15 +157,14 @@
 			if = {
 				limit = {
 					AND = {
-						has_radical_leftist_economy = no			
+						has_radical_leftist_economy = no
 						scope:target_country = {
 							has_radical_leftist_economy = yes
 						}
 					}
-					
 				}
 				multiply = 2
-			}	
+			}
 		}
 		will_propose = {
 			scope:target_country.num_mutual_trade_route_levels_with_country:root > 0

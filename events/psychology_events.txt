@@ -127,7 +127,7 @@ psychology_events.2 = {
 	option = {
 		#hypnsosis is the way!
 		name = psychology_events.2.a
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = hypnosis_modifier
 				months = normal_modifier_time
@@ -313,7 +313,7 @@ psychology_events.4 = {
 	trigger = {
 		any_interest_group = {
 			law_stance = {
-				law = law_type:law_charity_health_system
+				law = law_type:law_charitable_health_system
 				value < neutral
 			}
 			NOT = {
@@ -326,7 +326,7 @@ psychology_events.4 = {
 		random_interest_group = {
 			limit = {
 				law_stance = {
-					law = law_type:law_charity_health_system
+					law = law_type:law_charitable_health_system
 					value < neutral
 				}
 				NOT = {

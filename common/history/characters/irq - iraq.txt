@@ -1,21 +1,21 @@
 ﻿CHARACTERS = {
-	c:IRQ = {
+	c:IRQ ?= {
 		create_character = {
 			first_name = "Faisal"
 			last_name = "al_Hashimi"
 			ruler = yes
 			ig_leader = yes
-			birth_date = 1935.5.2			
-			interest_group = ig_elites
+			birth_date = 1935.5.2
+			interest_group = ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}
 		}
 		create_character = {
 			first_name = "Nuri"
-			last_name = "al_Said" # al-Said			
+			last_name = "al_Said"			# al-Said			
 			birth_date = 1888.12.15
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

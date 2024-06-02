@@ -1,52 +1,46 @@
 ﻿namespace = conscription_laws
-
-conscription_laws.1 = { #Rural folk worried about lack of workers
+conscription_laws.1 = {
+	#Rural folk worried about lack of workers
 	type = country_event
 	placement = ROOT
-	
 	title = conscription_laws.1.t
 	desc = conscription_laws.1.d
 	flavor = conscription_laws.1.f
-
 	category = enactment
-	
 	event_image = {
 		video = "europenorthamerica_before_the_battle"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
 	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-	
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
-		has_law = law_type:law_professional_military
+		#has_law = law_type:law_professional_army
 		OR = {
 			is_enacting_law = law_type:law_irregular_military
-			is_enacting_law = law_type:law_professional_military
-		}	
+			is_enacting_law = law_type:law_professional_army
+		}
 		NOT = {
 			has_modifier = conscription_starting
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			save_scope_as = rural_folk_conscription
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { # high chance, upset rural folk
+	option = {
+		# high chance, upset rural folk
 		name = conscription_laws.1.a
 		default_option = yes
 		add_modifier = {
@@ -58,8 +52,8 @@ conscription_laws.1 = { #Rural folk worried about lack of workers
 			multiplier = 2
 		}
 	}
-
-	option = { #lower success chance, keep it safe
+	option = {
+		#lower success chance, keep it safe
 		name = conscription_laws.1.b
 		add_enactment_modifier = {
 			name = conscription_starting
@@ -67,53 +61,48 @@ conscription_laws.1 = { #Rural folk worried about lack of workers
 	}
 }
 
-conscription_laws.2 = { #regular vs irregular troops
+conscription_laws.2 = {
+	#regular vs irregular troops
 	type = country_event
 	placement = ROOT
-	
 	title = conscription_laws.2.t
 	desc = conscription_laws.2.d
 	flavor = conscription_laws.2.f
-
 	category = enactment
-	
 	event_image = {
 		video = "europenorthamerica_before_the_battle"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
 	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-	
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
-		has_law = law_type:law_professional_military
+		#has_law = law_type:law_professional_army
 		OR = {
 			is_enacting_law = law_type:law_irregular_military
-			is_enacting_law = law_type:law_professional_military
-		}	
+			is_enacting_law = law_type:law_professional_army
+		}
 		NOT = {
 			has_modifier = conscription_debate
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_conscription
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { #upset soldiers but faster enactment
+	option = {
+		#upset servicemembers but faster enactment
 		name = conscription_laws.2.a
 		default_option = yes
 		scope:armed_forces_conscription = {
@@ -137,8 +126,8 @@ conscription_laws.2 = { #regular vs irregular troops
 			}
 		}
 	}
-
-	option = { #upset armed forces but get loyalist soldiers
+	option = {
+		#upset armed forces but get loyalist servicemembers
 		name = conscription_laws.2.b
 		add_modifier = {
 			name = listen_to_the_troops
@@ -169,36 +158,35 @@ conscription_laws.2 = { #regular vs irregular troops
 	}
 }
 
-conscription_laws.3 = { #Government is unprepared for conscription
+conscription_laws.3 = {
+	#Government is unprepared for conscription
 	type = country_event
 	placement = ROOT
-	
 	title = conscription_laws.3.t
 	desc = conscription_laws.3.d
 	flavor = conscription_laws.3.f
-
 	category = enactment
-	
 	event_image = {
 		video = "europenorthamerica_before_the_battle"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
-	
 	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-	
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
-		has_law = law_type:law_professional_military
+		#has_law = law_type:law_professional_army
 		OR = {
 			is_enacting_law = law_type:law_irregular_military
-			is_enacting_law = law_type:law_professional_military
-		}	
-		NOT = { has_modifier = no_slowing_down }
-		NOT = { has_modifier = conscription_stalled }
+			is_enacting_law = law_type:law_professional_army
+		}
+		NOT = {
+			has_modifier = no_slowing_down
+		}
+		NOT = {
+			has_modifier = conscription_stalled
+		}
 		any_interest_group = {
 			is_marginal = no
 			OR = {
@@ -207,13 +195,12 @@ conscription_laws.3 = { #Government is unprepared for conscription
 					value < neutral
 				}
 				law_stance = {
-					law = law_type:law_professional_military
+					law = law_type:law_professional_army
 					value < neutral
 				}
 			}
 		}
 	}
-
 	immediate = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
@@ -227,7 +214,7 @@ conscription_laws.3 = { #Government is unprepared for conscription
 						value < neutral
 					}
 					law_stance = {
-						law = law_type:law_professional_military
+						law = law_type:law_professional_army
 						value < neutral
 					}
 				}
@@ -238,12 +225,13 @@ conscription_laws.3 = { #Government is unprepared for conscription
 			}
 		}
 	}
-
 	cancellation_trigger = {
-		NOT = { currently_enacting_law = scope:current_law_scope }
+		NOT = {
+			currently_enacting_law = scope:current_law_scope
+		}
 	}
-
-	option = { #invest to get low of no chance of failure
+	option = {
+		#invest to get low of no chance of failure
 		name = conscription_laws.3.a
 		default_option = yes
 		add_enactment_modifier = {
@@ -256,12 +244,12 @@ conscription_laws.3 = { #Government is unprepared for conscription
 					multiplier = 1
 				}
 			}
-			4 = {	
+			4 = {
 			}
 		}
 	}
-
-	option = { #do nothing
+	option = {
+		#do nothing
 		name = conscription_laws.3.b
 		random_list = {
 			3 = {
@@ -270,7 +258,7 @@ conscription_laws.3 = { #Government is unprepared for conscription
 					multiplier = 2
 				}
 			}
-			1 = {	
+			1 = {
 				add_enactment_modifier = {
 					name = conscription_stalled
 					multiplier = 3

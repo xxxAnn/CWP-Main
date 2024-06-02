@@ -15,7 +15,7 @@ internal_security_events.1 = {
 	duration = 3
 	trigger = {
 		is_enacting_law = law_type:law_secret_police
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			is_marginal = no
 		}
 		NOT = {
@@ -35,7 +35,7 @@ internal_security_events.1 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = internal_security_ig
 		}
 		random_interest_group = {
@@ -99,7 +99,7 @@ internal_security_events.2 = {
 	duration = 3
 	trigger = {
 		is_enacting_law = law_type:law_secret_police
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			is_marginal = no
 		}
 		any_country = {
@@ -120,7 +120,7 @@ internal_security_events.2 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = internal_security_ig
 		}
 		random_country = {
@@ -188,7 +188,7 @@ internal_security_events.3 = {
 	duration = 3
 	trigger = {
 		is_enacting_law = law_type:law_secret_police
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			is_marginal = no
 		}
 		NOT = {
@@ -205,7 +205,7 @@ internal_security_events.3 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = internal_security_ig
 		}
 		random_interest_group = {
@@ -318,12 +318,12 @@ internal_security_events.4 = {
 		is_enacting_law = law_type:law_decentralized_police
 		OR = {
 			institution_investment_level = {
-				institution = institution_criminal_justice_system
+				institution = institution_police
 				value >= 1
 			}
-			has_law = law_type:law_secret_police
-			has_law = law_type:law_professional_police
-			has_law = law_type:law_militarized_police
+			#has_law = law_type:law_secret_police
+			#has_law = law_type:law_professional_police
+			#has_law = law_type:law_militarized_police
 		}
 		any_political_movement = {
 			political_movement_support > 10
@@ -370,7 +370,7 @@ internal_security_events.4 = {
 				pop_type = servicemembers
 			}
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_modifier = {
 				name = blamed_police_modifier
 				months = normal_modifier_time
@@ -436,12 +436,12 @@ internal_security_events.6 = {
 		is_enacting_law = law_type:law_decentralized_police
 		OR = {
 			institution_investment_level = {
-				institution = institution_criminal_justice_system
+				institution = institution_police
 				value >= 1
 			}
-			has_law = law_type:law_secret_police
-			has_law = law_type:law_professional_police
-			has_law = law_type:law_militarized_police
+			#has_law = law_type:law_secret_police
+			#has_law = law_type:law_professional_police
+			#has_law = law_type:law_militarized_police
 		}
 	}
 	immediate = {

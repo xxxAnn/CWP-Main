@@ -1,12 +1,12 @@
 ﻿CHARACTERS = {
-	c:BHN = {
+	c:BHN ?= {
 		create_character = {
 			first_name = "Salman"
 			last_name = "bin_Hamad_Al_Khalifa"
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1894.10.10
-			interest_group = ig:ig_elites
+			interest_group = ig:ig_conservatives
 			ideology = ideology_moderate
 			traits = {
 			}

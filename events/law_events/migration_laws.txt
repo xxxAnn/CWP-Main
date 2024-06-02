@@ -20,11 +20,11 @@ migration_laws.1 = {
 		OR = {
 			is_enacting_law = law_type:law_open_borders
 			AND = {
-				has_law = law_type:law_closed_borders
+				#has_law = law_type:law_closed_borders
 				is_enacting_law = law_type:law_selective_immigration
 			}
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			NOT = {
 				law_stance = {
 					law = root.currently_enacting_law.type
@@ -43,7 +43,7 @@ migration_laws.1 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			leader = {
 				save_scope_as = no_borders_visionary
 			}
@@ -59,7 +59,7 @@ migration_laws.1 = {
 		add_enactment_modifier = {
 			name = future_without_borders
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			leader = {
 				add_modifier = {
 					name = utopian_visionary
@@ -67,7 +67,7 @@ migration_laws.1 = {
 				}
 			}
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			add_modifier = {
 				name = anti_border_rhetoric
 				months = normal_modifier_time
@@ -104,11 +104,11 @@ migration_laws.2 = {
 		OR = {
 			is_enacting_law = law_type:law_open_borders
 			AND = {
-				has_law = law_type:law_closed_borders
+				#has_law = law_type:law_closed_borders
 				is_enacting_law = law_type:law_selective_immigration
 			}
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			NOT = {
 				law_stance = {
 					law = root.currently_enacting_law.type
@@ -127,7 +127,7 @@ migration_laws.2 = {
 		currently_enacting_law = {
 			save_scope_as = current_law_scope
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 	}
@@ -141,7 +141,7 @@ migration_laws.2 = {
 		add_enactment_modifier = {
 			name = secular_immigration_policy
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = faithless_hordes
 				months = normal_modifier_time
@@ -178,7 +178,7 @@ migration_laws.3 = {
 		OR = {
 			is_enacting_law = law_type:law_open_borders
 			AND = {
-				has_law = law_type:law_closed_borders
+				#has_law = law_type:law_closed_borders
 				is_enacting_law = law_type:law_selective_immigration
 			}
 		}
@@ -226,7 +226,7 @@ migration_laws.3 = {
 	option = {
 		name = migration_laws.3.b
 		trigger = {
-			has_law = law_type:law_income_security
+			#has_law = law_type:law_income_security
 		}
 		add_enactment_modifier = {
 			name = welfare_for_all
@@ -274,7 +274,7 @@ migration_laws.4 = {
 		OR = {
 			is_enacting_law = law_type:law_closed_borders
 			AND = {
-				has_law = law_type:law_open_borders
+				#has_law = law_type:law_open_borders
 				is_enacting_law = law_type:law_selective_immigration
 			}
 		}
@@ -345,12 +345,12 @@ migration_laws.5 = {
 		OR = {
 			is_enacting_law = law_type:law_closed_borders
 			AND = {
-				has_law = law_type:law_open_borders
+				#has_law = law_type:law_open_borders
 				is_enacting_law = law_type:law_selective_immigration
 			}
 		}
 		NOT = {
-			has_law = law_type:law_isolationism
+			#has_law = law_type:law_isolationism
 		}
 		NOT = {
 			has_modifier = trade_restrictions_considered
@@ -417,7 +417,7 @@ migration_laws.6 = {
 		OR = {
 			is_enacting_law = law_type:law_closed_borders
 			AND = {
-				has_law = law_type:law_open_borders
+				#has_law = law_type:law_open_borders
 				is_enacting_law = law_type:law_selective_immigration
 			}
 		}

@@ -1,5 +1,4 @@
 ﻿namespace = autocracy
-
 # secret societies
 autocracy.2 = {
 	type = country_event
@@ -18,15 +17,15 @@ autocracy.2 = {
 			has_variable = secret_societies_timer
 		}
 		OR = {
-			has_law = law_type:law_hereditary
-			has_law = law_type:law_theocratic
+			has_law = law_type:law_monarchy
+			has_law = law_type:law_theocracy
 		}
-		has_law = law_type:law_religious_institutions
+		has_law = law_type:law_state_religion
 		has_law = law_type:law_autocracy
 		OR = {
-			has_law = law_type:law_censorship
-			has_law = law_type:law_outlawed_dissent
-			ig:ig_elites = {
+			#has_law = law_type:law_censorship
+			#has_law = law_type:law_outlawed_dissent
+			ig:ig_conservatives = {
 				is_being_suppressed = yes
 			}
 		}
@@ -42,7 +41,7 @@ autocracy.2 = {
 			name = secret_societies_timer
 			months = normal_modifier_time
 		}
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			save_scope_as = secret_society_ig
 		}
 		random_scope_state = {
@@ -117,11 +116,11 @@ autocracy.3 = {
 		NOT = {
 			has_variable = religious_serfs_timer
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			is_powerful = yes
 			is_in_government = yes
 		}
-		haS_law = law_type:law_religious_institutions
+		has_law = law_type:law_state_religion
 		any_scope_state = {
 			is_incorporated = yes
 			any_scope_pop = {
@@ -167,7 +166,7 @@ autocracy.3 = {
 				save_scope_as = religious_serf_pop
 			}
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = church_scope
 		}
 	}

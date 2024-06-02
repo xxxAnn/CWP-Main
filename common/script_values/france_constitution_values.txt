@@ -130,27 +130,26 @@ france_constitution_ig_stance_law_compulsory_higher_education_value_weighted = {
 
 france_constitution_communist_clout = {
 	value = 0
-	add = ig:ig_bureaucrats.ig_clout
-	add = ig:ig_laborists.ig_clout
+	add = ig:ig_anarchists.ig_clout
+	add = ig:ig_socialists.ig_clout
 }
 
 france_constitution_socialist_clout = {
 	value = 0
-	add = ig:ig_urbanists.ig_clout
 	add = ig:ig_intelligentsia.ig_clout
 }
 
 france_constitution_moralist_clout = {
 	value = 0
-	add = ig:ig_moralists.ig_clout
-	add = ig:ig_elites.ig_clout
-	add = ig:ig_ruralists.ig_clout
+	add = ig:ig_devout.ig_clout
+	add = ig:ig_conservatives.ig_clout
+	add = ig:ig_rural_folk.ig_clout
 }
 
 france_constitution_gaullist_clout = {
 	value = 0
-	add = ig:ig_patriots.ig_clout
-	add = ig:ig_capitalists.ig_clout
-	add = ig:ig_entrepreneurs.ig_clout
-	add = ig:ig_securocrats.ig_clout
+	add = ig:ig_armed_forces.ig_clout
+	add = ig:ig_market_liberals.ig_clout
+	add = ig:ig_petty_bourgeoisie.ig_clout
+	add = ig:ig_armed_forces.ig_clout
 }

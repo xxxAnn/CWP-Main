@@ -699,11 +699,11 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_securocrats
-					is_interest_group_type = ig_patriots
+					is_interest_group_type = ig_armed_forces
+					is_interest_group_type = ig_armed_forces
 				}
 			}
-			ig:ig_securocrats = {
+			ig:ig_armed_forces = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time
@@ -713,10 +713,10 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_moralists
+					is_interest_group_type = ig_devout
 				}
 			}
-			ig:ig_moralists = {
+			ig:ig_devout = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time
@@ -726,10 +726,10 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_capitalists
+					is_interest_group_type = ig_market_liberals
 				}
 			}
-			ig:ig_capitalists = {
+			ig:ig_market_liberals = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time
@@ -739,10 +739,10 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_urbanists
+					is_interest_group_type = ig_intelligentsia
 				}
 			}
-			ig:ig_urbanists = {
+			ig:ig_intelligentsia = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time
@@ -752,10 +752,10 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_elites
+					is_interest_group_type = ig_conservatives
 				}
 			}
-			ig:ig_elites = {
+			ig:ig_conservatives = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time
@@ -765,10 +765,10 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_entrepreneurs
+					is_interest_group_type = ig_petty_bourgeoisie
 				}
 			}
-			ig:ig_entrepreneurs = {
+			ig:ig_petty_bourgeoisie = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time
@@ -778,10 +778,10 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_ruralists
+					is_interest_group_type = ig_rural_folk
 				}
 			}
-			ig:ig_ruralists = {
+			ig:ig_rural_folk = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time
@@ -791,10 +791,10 @@ exiles_more_events.4 = {
 		else_if = {
 			limit = {
 				scope:post_unification_agitator = {
-					is_interest_group_type = ig_laborists
+					is_interest_group_type = ig_socialists
 				}
 			}
-			ig:ig_laborists = {
+			ig:ig_socialists = {
 				add_modifier = {
 					name = national_hero_rejected
 					months = normal_modifier_time
@@ -1221,10 +1221,10 @@ exiles_more_events.8 = {
 		highlighted_option = yes
 		trigger = {
 			NOT = {
-				has_law = law_type:law_decentralized_police
+				#has_law = law_type:law_decentralized_police
 			}
 			institution_investment_level = {
-				institution = institution_criminal_justice_system
+				institution = institution_police
 				value >= 2
 			}
 		}
@@ -1264,12 +1264,14 @@ exiles_more_events.9 = {
 	trigger = {
 		empty_agitator_slots >= 1
 		any_character_in_exile_pool = {
-			NOT = { home_country = ROOT }
-			culture = { 
-				NOR = { 
+			NOT = {
+				home_country = ROOT
+			}
+			culture = {
+				NOR = {
 					is_primary_culture_of = ROOT
 					culture_is_discriminated_in = ROOT
-				} 
+				}
 			}
 			interest_group_type = {
 				save_temporary_scope_as = exile_ig_type
@@ -1281,14 +1283,16 @@ exiles_more_events.9 = {
 		}
 	}
 	immediate = {
-		random_character_in_exile_pool  = {	
+		random_character_in_exile_pool = {
 			limit = {
-				NOT = { home_country = ROOT }
-				culture = { 
-					NOR = { 
+				NOT = {
+					home_country = ROOT
+				}
+				culture = {
+					NOR = {
 						is_primary_culture_of = ROOT
 						culture_is_discriminated_in = ROOT
-					} 
+					}
 				}
 			}
 			interest_group_type = {
@@ -1341,8 +1345,8 @@ exiles_more_events.9 = {
 				is_in_government = no
 			}
 			OR = {
-				has_law = law_type:law_outlawed_dissent
-				has_law = law_type:law_censorship
+				#has_law = law_type:law_outlawed_dissent
+				#has_law = law_type:law_censorship
 			}
 		}
 		scope:fertile_ground_ig = {

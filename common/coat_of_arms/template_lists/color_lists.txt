@@ -47,7 +47,7 @@ color_lists = {
 				exists = scope:target
 				scope:target = {
 					OR = {
-						ig:ig_laborists = {
+						ig:ig_socialists = {
 							is_in_government = yes
 						}
 						any_interest_group = {
@@ -64,13 +64,13 @@ color_lists = {
 				exists = scope:target
 				scope:target = {
 					OR = {
-						ig:ig_patriots = {
+						ig:ig_armed_forces = {
 							is_in_government = yes
 						}
-						ig:ig_securocrats = {
+						ig:ig_armed_forces = {
 							is_in_government = yes
 						}
-						ig:ig_elites = {
+						ig:ig_conservatives = {
 							is_in_government = yes
 						}
 						any_interest_group = {

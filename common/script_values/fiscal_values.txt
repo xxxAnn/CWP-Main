@@ -6,15 +6,19 @@
 tax_level_val = {
 	value = tax_level
 }
+
 scaled_debt_val = {
 	value = scaled_debt
 }
+
 bank_credibility_10 = {
 	value = 2.4
-} 
+}
+
 income_value = {
 	value = weekly_net_fixed_income
 }
+
 bank_cred_to_investor = {
 	value = bank_credibility_current
 	divide = {
@@ -22,10 +26,12 @@ bank_cred_to_investor = {
 		multiply = 1.33
 	}
 }
+
 income_to_investor = {
 	value = income_value
 	divide = 100000
 }
+
 investor_confidence = {
 	if = {
 		limit = {
@@ -33,42 +39,46 @@ investor_confidence = {
 		}
 		value = {
 			value = bank_cred_to_investor
-			
 		}
 	}
 	if = {
-		limit = { bank_credibility_current <= 4 }
+		limit = {
+			bank_credibility_current <= 4
+		}
 		value = {
 			value = bank_cred_to_investor
 			multiply = -1
-			
 		}
 	}
 	if = {
-		limit = { bank_credibility_current = 3 }
+		limit = {
+			bank_credibility_current = 3
+		}
 		value = {
 			value = bank_cred_to_investor
 			multiply = -2.7
-			
 		}
 	}
 	if = {
-		limit = { bank_credibility_current = 2 }
+		limit = {
+			bank_credibility_current = 2
+		}
 		value = {
 			value = bank_cred_to_investor
 			multiply = -8
-			
 		}
 	}
 	if = {
-		limit = { bank_credibility_current = 1 }
+		limit = {
+			bank_credibility_current = 1
+		}
 		value = {
 			value = bank_cred_to_investor
 			multiply = -24
-			
 		}
 	}
 }
+
 investor_confidence_mod_mult = {
 	value = investor_confidence
 	multiply = 33
@@ -76,13 +86,16 @@ investor_confidence_mod_mult = {
 	min = -25
 	round = yes
 }
+
 gold_reserve_ratio = {
 	value = gold_reserve_value
 	divide = gold_reserve_limit
 }
+
 bank_credibility_current = {
 	value = var:bank_credibility
 }
+
 bank_credibility_val = {
 	value = 0
 	# From Altering Currency
@@ -143,10 +156,9 @@ bank_credibility_val = {
 			format = "BNK_TOOLTIP_FORMAT"
 		}
 	}
-	
 	# From keeping stable inflation
 	if = {
-		limit = { 
+		limit = {
 			inflation_growth < -0.2
 		}
 		add = {
@@ -157,7 +169,7 @@ bank_credibility_val = {
 		}
 	}
 	else_if = {
-		limit = { 
+		limit = {
 			inflation_growth > 0.2
 		}
 		subtract = {
@@ -177,9 +189,9 @@ bank_credibility_val = {
 	}
 	# From keeping low inflation
 	if = {
-		limit = { 
-			inflation_value <= 5 
-			inflation_value >= 0 
+		limit = {
+			inflation_value <= 5
+			inflation_value >= 0
 		}
 		add = {
 			value = bank_credibility_10
@@ -190,7 +202,7 @@ bank_credibility_val = {
 	}
 	# From Inflation
 	if = {
-		limit = { 
+		limit = {
 			inflation_value > 5
 		}
 		subtract = {
@@ -203,7 +215,9 @@ bank_credibility_val = {
 	}
 	# From Deflation
 	if = {
-		limit = { inflation_value < 0 }
+		limit = {
+			inflation_value < 0
+		}
 		add = {
 			value = inflation_value
 			multiply = 10
@@ -214,7 +228,9 @@ bank_credibility_val = {
 	}
 	# From Bank Independence
 	if = {
-		limit = { has_law = law_type:law_government_controlled }
+		limit = {
+			has_law = law_type:law_government_controlled
+		}
 		subtract = {
 			value = bank_credibility_10
 			multiply = 2
@@ -223,7 +239,9 @@ bank_credibility_val = {
 		}
 	}
 	if = {
-		limit = { has_law = law_type:law_government_interference }
+		limit = {
+			has_law = law_type:law_government_interference
+		}
 		subtract = {
 			value = bank_credibility_10
 			multiply = 1
@@ -232,7 +250,9 @@ bank_credibility_val = {
 		}
 	}
 	if = {
-		limit = { has_law = law_type:law_independent_monetary_policy}
+		limit = {
+			has_law = law_type:law_independent_monetary_policy
+		}
 		add = {
 			value = bank_credibility_10
 			multiply = 1
@@ -311,8 +331,8 @@ bank_credibility_val = {
 			income <= 1
 		}
 		value = 1
-			desc = BNK_IN_DEFAULT
-			format = "BNK_TOOLTIP_FORMAT"
+		desc = BNK_IN_DEFAULT
+		format = "BNK_TOOLTIP_FORMAT"
 	}
 	round = yes
 	max = 24
@@ -364,12 +384,13 @@ country_payment_ability = {
 			gold_reserve_value >= 1
 		}
 		add = credit
-	}	
+	}
 }
 
 gold_reserve_limit = {
 	value = gold_reserves_limit
 }
+
 foreign_reserves_needed_for_peg = {
 	value = {
 		value = money_supply_max
@@ -378,30 +399,35 @@ foreign_reserves_needed_for_peg = {
 	multiply = currency_average_difference_to_global
 	min = 0.1
 }
+
 foreign_reserves_conversion = {
 	value = foreign_reserves_value
 	multiply = global_average_difference_to_currency
 	min = 0
 }
+
 foreign_reserves_sell = {
 	value = 500000
 	divide = global_average_difference_to_currency
 	min = 0.1
 }
+
 foreign_reserves_ratio = {
 	value = foreign_reserves_value
 	divide = foreign_reserves_max
 	multiply = 100
-
 }
+
 foreign_reserves_capacity_left = {
 	value = foreign_reserves_max
 	subtract = foreign_reserves_value
 }
+
 foreign_reserves_max = {
 	value = gold_reserves_limit
 	add = credit
 }
+
 buying_foreign_currency_rate = {
 	value = money_supply_5
 	max = player.foreign_reserves_capacity_left
@@ -510,7 +536,7 @@ money_supply_from_gold_reserves = {
 }
 
 money_supply_growth_from_gold = {
-	value = 0 
+	value = 0
 	if = {
 		limit = {
 			gold_reserves > 1
@@ -527,7 +553,7 @@ money_supply_growth_from_gold = {
 		add = {
 			value = credit
 			multiply = scaled_debt
-			divide = 10			
+			divide = 10
 		}
 	}
 	divide = 5

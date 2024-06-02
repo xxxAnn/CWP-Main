@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:NET = {
+	c:NET ?= {
 		create_character = {
 			first_name = "Wim"
 			last_name = "Schermerhorn"
@@ -7,10 +7,9 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1894.11.17
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -20,10 +19,9 @@
 			ruler = no
 			ig_leader = yes
 			birth_date = 1902.4.12
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -33,10 +31,9 @@
 			ruler = no
 			ig_leader = yes
 			birth_date = 1897.11.17
-			interest_group = ig_capitalists
+			interest_group = ig_market_liberals
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -46,10 +43,9 @@
 			ruler = no
 			ig_leader = yes
 			birth_date = 1883.8.12
-			interest_group = ig_moralists
+			interest_group = ig_devout
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -59,10 +55,9 @@
 			ruler = no
 			ig_leader = yes
 			birth_date = 1902.8.1
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

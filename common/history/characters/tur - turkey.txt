@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:TUR = {
+	c:TUR ?= {
 		create_character = {
 			first_name = "Ismet"
 			last_name = "Inonu"
@@ -10,7 +10,6 @@
 			interest_group = ig_intelligentsia
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

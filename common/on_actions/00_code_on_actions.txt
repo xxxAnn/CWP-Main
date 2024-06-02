@@ -3,7 +3,6 @@
 on_yearly_pulse_country = {
 	effect = {
 		onaction_ig_petition = yes
-		onaction_update_party_morale = yes
 	}
 	random_events = {
 		150 = 0
@@ -142,7 +141,6 @@ on_monthly_pulse_country = {
 	effect = {
 		onaction_kill_unpopular_character = yes
 		onaction_investment_pool_softcap = yes
-		onaction_corruption_calculation = yes
 		onaction_imf_calculation = yes
 		onaction_un_calculation = yes
 		onaction_un_application = yes
@@ -248,7 +246,7 @@ on_monthly_pulse_country = {
 		un_resolution_events.102
 		un_resolution_events.103
 		# AROAI MONTHLY EVENT
-		aroai_framework_events.1
+		# To be added back in at some point in the future
 		# Flavor Events
 		decolonization.501
 		decolonization.502
@@ -302,7 +300,6 @@ on_half_yearly_pulse_country = {
 		economic_events.1		# Farming Subsidies
 	}
 	effect = {
-		onaction_calc_party_cohesion = yes
 	}
 	events = {
 		cwp_bank_reevaluation.1
@@ -723,12 +720,7 @@ on_diplomatic_pact_third_party_auto_break = {
 on_country_released_as_independent = {
 	effect = {
 		onaction_palestine = yes
-		onaction_corruption_calculation_2 = yes
 		onaction_currency_calculation_annex = yes
-		scope:target = {
-			setup_parties = yes
-			setup_starting_ideologies = yes
-		}
 	}
 }
 
@@ -737,12 +729,7 @@ on_country_released_as_independent = {
 on_country_released_as_own_subject = {
 	effect = {
 		onaction_palestine = yes
-		onaction_corruption_calculation_2 = yes
 		onaction_currency_calculation_annex = yes
-		scope:target = {
-			setup_parties = yes
-			setup_starting_ideologies = yes
-		}
 	}
 }
 
@@ -751,12 +738,7 @@ on_country_released_as_own_subject = {
 on_country_released_as_overlord_subject = {
 	effect = {
 		onaction_palestine = yes
-		onaction_corruption_calculation_2 = yes
 		onaction_currency_calculation_annex = yes
-		scope:target = {
-			setup_parties = yes
-			setup_starting_ideologies = yes
-		}
 	}
 }
 
@@ -1335,560 +1317,7 @@ on_law_checkpoint_stall = {
 # is still considered being enacted, therefore the `currently_enacting_law` link
 # will work as expected, even though the enactment is _just_ about to end
 on_law_enactment_pass = {
-	first_valid = {
-	}
 	effect = {
-		onaction_racial_tension_modifier = yes
-		onaction_monarchy_abolished_modifier = yes
-		### DYNAMIC IDEOLOGIES ###
-		### NOTE: pregame setup is done in each respective nations history file ie. history/countries/rus - russia.txt
-		### Laborists ###
-		#enable social
-		if = {
-			limit = {
-				root = {
-					and = {
-						# if the nation is currently enacting a prereq for the social ideology, and the laborists don't already have the social ideology, and the laborists aren't a part of an active political movement, then trigger the event to enable the social ideology
-						or = {
-							currently_enacting_law.type = law_type:law_free_market
-							currently_enacting_law.type = law_type:law_interventionism
-							currently_enacting_law.type = law_type:law_decentralization
-							currently_enacting_law.type = law_type:law_anti_industrialization
-						}
-						ig:ig_laborists = {
-							nor = {
-								has_ideology = ideology:ideology_social
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.1
-			}
-		}
-		#enable vanguardist
-		if = {
-			limit = {
-				root = {
-					and = {
-						and = {
-							# if the nation is enacting one of the following
-							or = {
-								currently_enacting_law.type = law_type:law_anocracy
-								currently_enacting_law.type = law_type:law_oligarchy
-								currently_enacting_law.type = law_type:law_autocracy
-							}
-							# and they already have one of the following
-							or = {
-								has_law = law_type:law_socialization
-								has_law = law_type:law_total_nationalization
-								has_law = law_type:law_heavy_industry_nationalization
-							}
-						}
-						and = {
-							# or if they are enacting one of the following
-							or = {
-								currently_enacting_law.type = law_type:law_socialization
-								currently_enacting_law.type = law_type:law_total_nationalization
-								currently_enacting_law.type = law_type:law_heavy_industry_nationalization
-							}
-							# and they already have one of the following
-							or = {
-								has_law = law_type:law_anocracy
-								has_law = law_type:law_oligarchy
-								has_law = law_type:law_autocracy
-							}
-						}
-						# and the laborists don't have the vanguardist ideology, or ar in a political movement
-						ig:ig_laborists = {
-							nor = {
-								has_ideology = ideology:ideology_vanguardist
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			# then trigger the event to enable the vanguardist ideology
-			trigger_event = {
-				id = dynamic_ideologies.3
-			}
-		}
-		#enable socialist
-		if = {
-			limit = {
-				root = {
-					and = {
-						# if we already have the socialization law
-						has_law = law_type:law_socialization
-						# and we're passing one of the following
-						or = {
-							currently_enacting_law.type = law_type:law_public_utility_companies
-							currently_enacting_law.type = law_type:law_no_nationalization
-							currently_enacting_law.type = law_type:law_resource_extraction_nationalization
-							currently_enacting_law.type = law_type:law_military_industry_nationalization
-						}
-						# and the laborists aren't already vanguardist or in a political movement
-						ig:ig_laborists = {
-							nor = {
-								has_ideology = ideology:ideology_vanguardist
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			# trigger the event to enable vanguardist
-			trigger_event = {
-				id = dynamic_ideologies.4
-			}
-		}
-		### Urbanists ###
-		#enable socialist
-		if = {
-			limit = {
-				root = {
-					and = {
-						or = {
-							currently_enacting_law.type = law_type:law_socialization
-							currently_enacting_law.type = law_type:law_total_nationalization
-						}
-						ig:ig_urbanists = {
-							nor = {
-								has_ideology = ideology:ideology_socialist
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.7
-			}
-		}
-		#enable social
-		else_if = {
-			limit = {
-				root = {
-					ig:ig_urbanists = {
-						nor = {
-							has_ideology = ideology:ideology_social
-							interest_group_supports_political_movement = yes
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.5
-			}
-		}
-		### Moralists ###
-		#enable secular ideology for atheists
-		if = {
-			limit = {
-				root = {
-					and = {
-						currently_enacting_law.type = law_type:law_state_atheism
-						ig:ig_moralists = {
-							nor = {
-								has_ideology = ideology:ideology_secular
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.8
-			}
-		}
-		#remove secular and revert moralists to their respective ideologies
-		if = {
-			limit = {
-				root = {
-					and = {
-						# if they have the state atheism law
-						has_law = law_type:law_state_atheism
-						# if they are enacting one of the following
-						or = {
-							currently_enacting_law.type = law_type:law_church_disestablishment
-							currently_enacting_law.type = law_type:law_religious_policies
-							currently_enacting_law.type = law_type:law_religious_institutions
-							currently_enacting_law.type = law_type:law_religious_nationalism
-						}
-						ig:ig_moralists = {
-							# if they don't have an ideology other than secular or are in a political movement
-							nor = {
-								not = {
-									has_ideology = ideology:ideology_secular
-								}
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.9
-			}
-		}
-		### BUREAUCRATS ###
-		#enable apparatus
-		if = {
-			limit = {
-				root = {
-					and = {
-						currently_enacting_law.type = law_type:law_socialization
-						ig:ig_bureaucrats = {
-							nor = {
-								has_ideology = ideology:ideology_apparatus
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.10
-			}
-		}
-		else_if = {
-			limit = {
-				root = {
-					ig:ig_bureaucrats = {
-						nor = {
-							not = {
-								has_ideology = ideology:ideology_apparatus
-							}
-							interest_group_supports_political_movement = yes
-						}
-					}
-				}
-			}
-			#remove apparatus
-			trigger_event = {
-				id = dynamic_ideologies.99
-			}
-		}
-		#enable politicized
-		if = {
-			limit = {
-				root = {
-					and = {
-						currently_enacting_law.type = law_type:law_politicized_bureaucrats
-						ig:ig_bureaucrats = {
-							nor = {
-								has_ideology = ideology:ideology_politicized
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.11
-			}
-		}
-		#enable appointed
-		if = {
-			limit = {
-				root = {
-					and = {
-						currently_enacting_law.type = law_type:law_appointed_bureaucrats
-						ig:ig_bureaucrats = {
-							nor = {
-								has_ideology = ideology:ideology_appointed
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.12
-			}
-		}
-		#enable independent
-		if = {
-			limit = {
-				root = {
-					and = {
-						currently_enacting_law.type = law_type:law_independent_bureaucrats
-						ig:ig_bureaucrats = {
-							nor = {
-								has_ideology = ideology:ideology_independent
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.13
-			}
-		}
-		#enable elected
-		if = {
-			limit = {
-				root = {
-					and = {
-						currently_enacting_law.type = law_type:law_elected_bureaucrats
-						ig:ig_bureaucrats = {
-							nor = {
-								has_ideology = ideology:ideology_elected
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.14
-			}
-		}
-		#enable technocratic
-		if = {
-			limit = {
-				root = {
-					and = {
-						currently_enacting_law.type = law_type:law_technocrats
-						ig:ig_bureaucrats = {
-							nor = {
-								has_ideology = ideology:ideology_technocratic
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.15
-			}
-		}
-		### ELITES ###
-		#enable royalist
-		if = {
-			limit = {
-				root = {
-					and = {
-						or = {
-							currently_enacting_law.type = law_type:law_hereditary
-							currently_enacting_law.type = law_type:law_theocratic
-							currently_enacting_law.type = law_type:law_administrative
-						}
-						ig:ig_elites = {
-							nor = {
-								has_ideology = ideology:ideology_royalist
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.16
-			}
-		}
-		#enable republican
-		if = {
-			limit = {
-				root = {
-					and = {
-						or = {
-							currently_enacting_law.type = law_type:law_executive
-							currently_enacting_law.type = law_type:law_parliamentary
-							currently_enacting_law.type = law_type:law_council_elective
-						}
-						ig:ig_elites = {
-							nor = {
-								has_ideology = ideology:ideology_republican
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.17
-			}
-		}
-		#enable traditionalist
-		if = {
-			limit = {
-				root = {
-					and = {
-						or = {
-							currently_enacting_law.type = law_type:law_decentralization
-							currently_enacting_law.type = law_type:law_anti_industrialization
-						}
-						ig:ig_elites = {
-							nor = {
-								has_ideology = ideology:ideology_traditionalist
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.18
-			}
-		}
-		#enable materialistic
-		if = {
-			limit = {
-				root = {
-					and = {
-						or = {
-							currently_enacting_law.type = law_type:law_free_market
-							currently_enacting_law.type = law_type:law_interventionism
-							currently_enacting_law.type = law_type:law_socialization
-						}
-						ig:ig_elites = {
-							nor = {
-								has_ideology = ideology:ideology_materialistic
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.19
-			}
-		}
-		### ENTREPRENEURS ###
-		#enable bigoted
-		if = {
-			limit = {
-				root = {
-					and = {
-						or = {
-							currently_enacting_law.type = law_type:law_segregationist
-							currently_enacting_law.type = law_type:law_supremacist
-							currently_enacting_law.type = law_type:law_ethnonationalist
-						}
-						ig:ig_entrepreneurs = {
-							nor = {
-								has_ideology = ideology:ideology_bigoted
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.20
-			}
-		}
-		#enable assimilative
-		if = {
-			limit = {
-				root = {
-					and = {
-						or = {
-							currently_enacting_law.type = law_type:law_syncretist
-							currently_enacting_law.type = law_type:law_multiculturalist
-							currently_enacting_law.type = law_type:law_integrationist
-						}
-						ig:ig_entrepreneurs = {
-							nor = {
-								has_ideology = ideology:ideology_assimilative
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.21
-			}
-		}
-		### PATRIOTS ###
-		# enable chauvinistic
-		if = {
-			limit = {
-				root = {
-					and = {
-						or = {
-							currently_enacting_law.type = law_type:law_military_industry_nationalization
-							currently_enacting_law.type = law_type:law_resource_extraction_nationalization
-							currently_enacting_law.type = law_type:law_public_utility_companies
-							currently_enacting_law.type = law_type:law_no_nationalization
-						}
-						ig:ig_patriots = {
-							nor = {
-								has_ideology = ideology:ideology_chauvinistic
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.22
-			}
-		}
-		# enable corporatist
-		if = {
-			limit = {
-				root = {
-					and = {
-						currently_enacting_law.type = law_type:law_total_nationalization
-						ig:ig_patriots = {
-							nor = {
-								has_ideology = ideology:ideology_corporatist
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.23
-			}
-		}
-		### SECUROCRATS ###
-		if = {
-			limit = {
-				root = {
-					and = {
-						or = {
-							currently_enacting_law.type = law_type:law_socialization
-							currently_enacting_law.type = law_type:law_total_nationalization
-						}
-						ig:ig_securocrats = {
-							nor = {
-								has_ideology = ideology:ideology_vanguardist
-								interest_group_supports_political_movement = yes
-							}
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.24
-			}
-		}
-		if = {
-			limit = {
-				root = {
-					ig:ig_securocrats = {
-						nor = {
-							not = {
-								has_ideology = ideology:ideology_vanguardist
-							}
-							interest_group_supports_political_movement = yes
-						}
-					}
-				}
-			}
-			trigger_event = {
-				id = dynamic_ideologies.25
-			}
-		}
 	}
 }
 
@@ -1950,7 +1379,7 @@ on_revolution_start = {
 		scope:target = {
 			if = {
 				limit = {
-					has_law = law_type:law_disarmed_nation
+					#has_law = law_type:law_disarmed_nation
 				}
 				deactivate_law = law_type:law_disarmed_nation
 			}
@@ -1976,7 +1405,7 @@ on_secession_start = {
 	effect = {
 		if = {
 			limit = {
-				has_law = law_type:law_disarmed_nation
+				#has_law = law_type:law_disarmed_nation
 			}
 			deactivate_law = law_type:law_disarmed_nation
 		}
@@ -2003,7 +1432,7 @@ on_civil_war_won = {
 	effect = {
 		if = {
 			limit = {
-				has_law = law_type:law_presidential_republic
+				#has_law = law_type:law_presidential_republic
 				has_variable = revolutionary_prov_gov_var
 			}
 			trigger_event = {
@@ -2410,7 +1839,6 @@ on_party_disbanded = {
 on_election_campaign_start = {
 	effect = {
 		# debug_log = "Election Campaign Started"
-		onaction_calc_party_cohesion = yes
 	}
 }
 
@@ -2426,7 +1854,6 @@ on_government_reformed = {
 	effect = {
 		# Government Petition
 		set_variable = gov_petition_coin_toss
-		onaction_update_party_morale = yes
 	}
 }
 
@@ -2593,9 +2020,6 @@ on_monthly_pulse_state = {
 	effect = {
 		onaction_skyscraper_modifier = yes
 		onaction_slums_modifier = yes
-		# Habitability Calculations 
-		onaction_calc_monthly_habitability = yes
-		onaction_set_habitability_effects = yes
 	}
 }
 
@@ -2634,7 +2058,7 @@ on_travel_station_in_hq_cancelled = {
 # Root = Military Formation
 # scope:province = Sea Node we were going to
 # scope:target = current target travel location - HQ or Province (Sea Node)
-on_travel_deploy_to_sea_node_cancelled  = {
+on_travel_deploy_to_sea_node_cancelled = {
 	effect = {
 		post_notification = formation_travel_deploy_to_sea_node_cancelled
 	}

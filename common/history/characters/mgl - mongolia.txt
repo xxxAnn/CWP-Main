@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:MGL = {
+	c:MGL ?= {
 		create_character = {
 			# Gonchigiin Bumtsend
 			is_general = yes
@@ -10,10 +10,9 @@
 			#ig_leader = yes #Ruler can't be IG leader under dictatorship or monarchy.
 			birth_date = 1881.9.11
 			#dna = 
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

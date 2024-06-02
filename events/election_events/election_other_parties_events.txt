@@ -1,6 +1,6 @@
 ﻿namespace = election_other_parties_events
 # Man Over Machine
-# The Agrarian Party complains about factories and blames the capitalists/industrialists for making them lose momentum
+# The Agrarian Party complains about factories and blames the investors/industrialists for making them lose momentum
 election_other_parties_events.1 = {
 	type = country_event
 	placement = ROOT
@@ -15,7 +15,7 @@ election_other_parties_events.1 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -36,7 +36,7 @@ election_other_parties_events.1 = {
 				}
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			is_marginal = no
 		}
 	}
@@ -63,7 +63,7 @@ election_other_parties_events.1 = {
 			}
 			save_scope_as = industrial_state
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = ig_industrialists
 		}
 	}
@@ -76,7 +76,7 @@ election_other_parties_events.1 = {
 		py:agrarian_party = {
 			add_momentum = momentum_medium
 		}
-		ig:ig_ruralists = {
+		ig:ig_rural_folk = {
 			#rural folk agrees
 			add_modifier = {
 				name = anti_industrial_party_modifier				# interest_group_approval_add
@@ -184,13 +184,13 @@ election_other_parties_events.2 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
 			has_variable = election_event_cooldown
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			has_party = yes
 		}
 	}
@@ -199,13 +199,13 @@ election_other_parties_events.2 = {
 			name = election_event_cooldown
 			months = election_event_cooldown_months
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			party = {
 				save_scope_as = religious_party
 			}
 		}
-		ig:ig_moralists = {
-			save_scope_as = ig_moralists
+		ig:ig_devout = {
+			save_scope_as = ig_devout
 			leader = {
 				save_scope_as = religious_leader
 			}
@@ -234,7 +234,7 @@ election_other_parties_events.2 = {
 	option = {
 		#and who are we to go against God's will
 		name = election_other_parties_events.2.a
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			#wahooo
 			add_modifier = {
 				name = gods_will_modifier				# interest_group_pol
@@ -266,7 +266,6 @@ election_other_parties_events.2 = {
 	}
 }
 
-
 # Lagom
 # Social Democrats say "hey, at least we're not THAT guy" (communists/radicals/anarchists)
 election_other_parties_events.4 = {
@@ -283,7 +282,7 @@ election_other_parties_events.4 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -391,7 +390,7 @@ election_other_parties_events.5 = {
 	icon = "gfx/interface/icons/event_icons/event_election.dds"
 	trigger = {
 		NOT = {
-			has_law = law_type:law_anocracy
+			#has_law = law_type:law_anocracy
 		}
 		in_election_campaign = yes
 		NOT = {
@@ -469,10 +468,10 @@ election_other_parties_events.5 = {
 		trigger = {
 			OR = {
 				institution_investment_level = {
-					institution = institution_criminal_justice_system
+					institution = institution_police
 					value >= 5
 				}
-				has_law = law_type:law_outlawed_dissent
+				#has_law = law_type:law_outlawed_dissent
 			}
 		}
 		py:democratic_socialist_party = {

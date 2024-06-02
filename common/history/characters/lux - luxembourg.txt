@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:LUX = {
+	c:LUX ?= {
 		create_character = {
 			first_name = "Pierre"
 			last_name = "Dupong"
@@ -7,10 +7,9 @@
 			ruler = yes
 			ig_leader = yes
 			birth_date = 1885.11.1
-			interest_group = ig_elites
+			interest_group = ig_conservatives
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -20,10 +19,9 @@
 			ruler = no
 			ig_leader = yes
 			birth_date = 1899.9.19
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -33,10 +31,9 @@
 			ruler = no
 			ig_leader = yes
 			birth_date = 1903.3.29
-			interest_group = ig_laborists
+			interest_group = ig_socialists
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -46,10 +43,9 @@
 			ruler = no
 			ig_leader = yes
 			birth_date = 1903.3.29
-			interest_group = ig_capitalists
+			interest_group = ig_market_liberals
 			ideology = ideology_moderate
 			traits = {
-				
 			}
 		}
 	}

@@ -1,35 +1,27 @@
 ﻿namespace = urbanization_events
-
 # De-peasantify reward
 urbanization_events.1 = {
 	type = country_event
 	placement = ROOT
-
 	title = urbanization_events.1.t
 	desc = urbanization_events.1.d
 	flavor = urbanization_events.1.f
-
 	duration = 3
-
 	event_image = {
 		video = "southamerica_factory_opening"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
 	trigger = {
 		#triggered by JE
 	}
-
 	immediate = {
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialist_ig
 		}
 	}
-
-	option = { #focus on the people
+	option = {
+		#focus on the people
 		name = urbanization_events.1.a
 		default_option = yes
 		add_modifier = {
@@ -37,8 +29,8 @@ urbanization_events.1 = {
 			months = normal_modifier_time
 		}
 	}
-
-	option = { #focus on the party 
+	option = {
+		#focus on the party 
 		name = urbanization_events.1.b
 		scope:industrialist_ig = {
 			add_modifier = {
@@ -49,40 +41,34 @@ urbanization_events.1 = {
 	}
 }
 
-
 # people use the urban centers to go full on Social Hour(tm)
 urbanization_events.2 = {
 	type = country_event
 	placement = scope:urbanization_state
-
 	title = urbanization_events.2.t
 	desc = urbanization_events.2.d
 	flavor = urbanization_events.2.f
-
 	duration = 3
-
 	event_image = {
 		video = "europenorthamerica_london_center"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-	
 	trigger = {
-		NOT = { has_variable = city_of_plenty_var }
+		NOT = {
+			has_variable = city_of_plenty_var
+		}
 		any_scope_state = {
 			any_scope_building = {
 				is_building_type = building_urban_center
-				level >= 15 #London will get it at game start, but for everyone else this is quite hard
+				level >= 15				#London will get it at game start, but for everyone else this is quite hard
 			}
 			is_incorporated = yes
 			any_scope_pop = {
-				standard_of_living >= 32 
+				standard_of_living >= 32
 			}
 		}
 	}
-	
 	immediate = {
 		set_variable = {
 			name = city_of_plenty_var
@@ -96,24 +82,23 @@ urbanization_events.2 = {
 				}
 				is_incorporated = yes
 				any_scope_pop = {
-					standard_of_living >= 32 
+					standard_of_living >= 32
 				}
 			}
 			save_scope_as = urbanization_state
 		}
 	}
-	
 	cancellation_trigger = {
 		scope:urbanization_state = {
-			NOT = { 
+			NOT = {
 				any_scope_pop = {
 					standard_of_living > 32
 				}
 			}
 		}
 	}
-
-	option = { #let them celebrate!
+	option = {
+		#let them celebrate!
 		name = urbanization_events.2.a
 		default_option = yes
 		scope:urbanization_state = {
@@ -127,11 +112,12 @@ urbanization_events.2 = {
 			}
 		}
 	}
-
-	option = { # party forever
+	option = {
+		# party forever
 		name = urbanization_events.2.b
 		scope:urbanization_state = {
-			add_modifier = { # rich people expect more parties
+			add_modifier = {
+				# rich people expect more parties
 				name = luxurious_parties
 				months = long_modifier_time
 			}
@@ -151,24 +137,20 @@ urbanization_events.2 = {
 urbanization_events.4 = {
 	type = country_event
 	placement = ROOT
-
 	title = urbanization_events.4.t
 	desc = urbanization_events.4.d
 	flavor = urbanization_events.4.f
-
 	duration = 3
-
 	event_image = {
 		video = "southamerica_factory_opening"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
 	trigger = {
-		NOT = { has_variable = capitalists_favouring_var }
-		ig:ig_capitalists = {
+		NOT = {
+			has_variable = capitalists_favouring_var
+		}
+		ig:ig_market_liberals = {
 			is_marginal = no
 			OR = {
 				is_in_government = yes
@@ -176,25 +158,26 @@ urbanization_events.4 = {
 			}
 		}
 	}
-
 	immediate = {
 		set_variable = {
 			name = capitalists_favouring_var
 			months = normal_modifier_time
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialist_ig
 		}
-		random_interest_group = {	
+		random_interest_group = {
 			limit = {
 				is_marginal = no
-				NOT = { is_interest_group_type = ig_capitalists }
+				NOT = {
+					is_interest_group_type = ig_market_liberals
+				}
 			}
 			save_scope_as = opposing_ig
 		}
 	}
-
-	option = { #appease them
+	option = {
+		#appease them
 		name = urbanization_events.4.a
 		scope:opposing_ig = {
 			add_modifier = {
@@ -202,15 +185,15 @@ urbanization_events.4 = {
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = modifier_ig_happy_urbanization_bad
 				months = normal_modifier_time
 			}
 		}
 	}
-
-	option = { #ignore them
+	option = {
+		#ignore them
 		name = urbanization_events.4.b
 		default_option = yes
 		scope:opposing_ig = {
@@ -226,25 +209,18 @@ urbanization_events.4 = {
 urbanization_events.5 = {
 	type = country_event
 	placement = scope:urbanization_state
-
 	title = urbanization_events.5.t
 	desc = urbanization_events.5.d
 	flavor = urbanization_events.5.f
-
 	duration = 3
-
 	event_image = {
 		video = "southamerica_factory_opening"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
 	trigger = {
 		#triggered by JE
 	}
-
 	immediate = {
 		random_scope_state = {
 			limit = {
@@ -257,8 +233,8 @@ urbanization_events.5 = {
 			save_scope_as = urbanization_state
 		}
 	}
-
-	option = { #Focus on the state
+	option = {
+		#Focus on the state
 		name = urbanization_events.5.a
 		default_option = yes
 		scope:urbanization_state = {
@@ -268,8 +244,8 @@ urbanization_events.5 = {
 			}
 		}
 	}
-
-	option = { #Focus on the Urban Centers
+	option = {
+		#Focus on the Urban Centers
 		name = urbanization_events.5.b
 		scope:urbanization_state = {
 			add_modifier = {
@@ -284,35 +260,30 @@ urbanization_events.5 = {
 urbanization_events.6 = {
 	type = country_event
 	placement = scope:subsistence_state
-
 	title = urbanization_events.6.t
 	desc = urbanization_events.6.d
 	flavor = urbanization_events.6.f
-
 	duration = 3
-
 	event_image = {
 		video = "votp_realist_household"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
-
 	trigger = {
-		NOT = { has_variable = subsistence_farms_var }
+		NOT = {
+			has_variable = subsistence_farms_var
+		}
 		any_scope_state = {
 			is_incorporated = yes
 			has_subsistence_building = yes
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			OR = {
 				is_powerful = yes
 				is_in_government = yes
 			}
 		}
 	}
-
 	immediate = {
 		set_variable = {
 			name = subsistence_farms_var
@@ -324,11 +295,10 @@ urbanization_events.6 = {
 			}
 			save_scope_as = subsistence_state
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialist_ig
 		}
 	}
-
 	option = {
 		name = urbanization_events.6.a
 		default_option = yes
@@ -343,10 +313,9 @@ urbanization_events.6 = {
 			}
 		}
 	}
-
 	option = {
 		name = urbanization_events.6.b
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = subsistence_farms_ignored
 				months = normal_modifier_time

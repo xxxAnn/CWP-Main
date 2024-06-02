@@ -225,7 +225,7 @@ arabic_fez_trigger = {
 			exists = c:EGY
 			c:EGY = this
 			c:EGY = {
-				has_law = law_type:law_hereditary
+				#has_law = law_type:law_hereditary
 			}
 		}
 	}
@@ -240,28 +240,28 @@ arabic_military_fez_pop_trigger = {
 					exists = c:EGY
 					c:EGY = this
 					c:EGY = {
-						has_law = law_type:law_hereditary
+						#has_law = law_type:law_hereditary
 					}
 				}
 				home_country = {
 					exists = c:TUR
 					c:TUR = this
 					c:TUR = {
-						has_law = law_type:law_hereditary
+						#has_law = law_type:law_hereditary
 					}
 				}
 				home_country = {
 					exists = c:TUN
 					c:TUN = this
 					c:TUN = {
-						has_law = law_type:law_hereditary
+						#has_law = law_type:law_hereditary
 					}
 				}
 				home_country = {
 					exists = c:MOR
 					c:MOR = this
 					c:MOR = {
-						has_law = law_type:law_hereditary
+						#has_law = law_type:law_hereditary
 					}
 				}
 			}
@@ -280,14 +280,14 @@ arabic_military_fez_pop_trigger = {
 							exists = c:TUR
 							c:TUR = this
 							c:TUR = {
-								has_law = law_type:law_hereditary
+								#has_law = law_type:law_hereditary
 							}
 						}
 						home_country = {
 							exists = c:EGY
 							c:EGY = this
 							c:EGY = {
-								has_law = law_type:law_hereditary
+								#has_law = law_type:law_hereditary
 							}
 						}
 					}
@@ -319,14 +319,14 @@ arabic_clothes_trigger = {
 						exists = c:TUR
 						c:TUR = this
 						c:TUR = {
-							has_law = law_type:law_hereditary
+							#has_law = law_type:law_hereditary
 						}
 					}
 					home_country = {
 						exists = c:EGY
 						c:EGY = this
 						c:EGY = {
-							has_law = law_type:law_hereditary
+							#has_law = law_type:law_hereditary
 						}
 					}
 				}
@@ -345,7 +345,7 @@ ethiopian_clothes_trigger = {
 			exists = c:ETH
 			c:ETH = this
 			c:ETH = {
-				has_law = law_type:law_hereditary
+				#has_law = law_type:law_hereditary
 			}
 		}
 	}
@@ -500,7 +500,7 @@ christian_clothes_trigger = {
 moralists_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
-		is_interest_group_type = ig_moralists
+		is_interest_group_type = ig_devout
 	}
 }
 
@@ -508,8 +508,8 @@ securocrats_clothes_trigger = {
 	exists = scope:character
 	scope:character = {
 		or = {
-			is_interest_group_type = ig_securocrats
-			is_interest_group_type = ig_patriots
+			is_interest_group_type = ig_armed_forces
+			is_interest_group_type = ig_armed_forces
 		}
 	}
 }
@@ -540,7 +540,7 @@ monarchy_clothes_trigger = {
 			is_heir = yes
 		}
 		home_country = {
-			has_law = law_type:law_hereditary
+			#has_law = law_type:law_hereditary
 		}
 	}
 }
@@ -552,7 +552,7 @@ republic_clothes_trigger = {
 		is_ruler = yes
 		home_country = {
 			NOT = {
-				has_law = law_type:law_hereditary
+				#has_law = law_type:law_hereditary
 			}
 		}
 	}
@@ -820,7 +820,7 @@ upper_clothes_pop_trigger = {
 	scope:pop = {
 		OR = {
 			is_pop_type = investors
-			is_pop_type = landlords			
+			is_pop_type = landlords
 		}
 	}
 }

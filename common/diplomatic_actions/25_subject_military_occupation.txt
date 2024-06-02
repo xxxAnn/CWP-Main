@@ -15,19 +15,19 @@
 		relations_improvement_max = 50
 		target_requires_approval_to_break = yes
 		subject_type = subject_type_military_occupation
-		break_effect = {
+		manual_break_effect = {
 			create_truce = {
 				country = scope:target_country
 				months = 12
 			}
+		}
+		auto_break_effect = {
 		}
 		actor_can_break = {
 			is_diplomatic_play_committed_participant = no
 		}
 		target_can_break = {
 			is_diplomatic_play_committed_participant = no
-		}
-		should_invalidate = {
 		}
 	}
 	ai = {

@@ -19,14 +19,14 @@ children_rights_events.1 = {
 	trigger = {
 		OR = {
 			AND = {
-				has_law = law_type:law_child_labor_allowed
+				#has_law = law_type:law_child_labor_allowed
 				OR = {
 					is_enacting_law = law_type:law_restricted_child_labor
 					is_enacting_law = law_type:law_compulsory_education
 				}
 			}
 			AND = {
-				has_law = law_type:law_restricted_child_labor
+				#has_law = law_type:law_restricted_child_labor
 				is_enacting_law = law_type:law_compulsory_education
 			}
 		}
@@ -110,14 +110,14 @@ children_rights_events.2 = {
 	trigger = {
 		OR = {
 			AND = {
-				has_law = law_type:law_child_labor_allowed
+				#has_law = law_type:law_child_labor_allowed
 				OR = {
 					is_enacting_law = law_type:law_restricted_child_labor
 					is_enacting_law = law_type:law_compulsory_education
 				}
 			}
 			AND = {
-				has_law = law_type:law_restricted_child_labor
+				#has_law = law_type:law_restricted_child_labor
 				is_enacting_law = law_type:law_compulsory_education
 			}
 		}
@@ -251,19 +251,19 @@ children_rights_events.3 = {
 	}
 	trigger = {
 		NOR = {
-			has_law = law_type:law_mandatory_parental_leave
-			has_law = law_type:law_wrongful_dismissal_protections
+			#has_law = law_type:law_mandatory_parental_leave
+			#has_law = law_type:law_wrongful_dismissal_protections
 		}
 		OR = {
 			AND = {
-				has_law = law_type:law_child_labor_allowed
+				#has_law = law_type:law_child_labor_allowed
 				OR = {
 					is_enacting_law = law_type:law_restricted_child_labor
 					is_enacting_law = law_type:law_compulsory_education
 				}
 			}
 			AND = {
-				has_law = law_type:law_restricted_child_labor
+				#has_law = law_type:law_restricted_child_labor
 				is_enacting_law = law_type:law_compulsory_education
 			}
 		}
@@ -284,7 +284,7 @@ children_rights_events.3 = {
 			}
 			save_scope_as = child_labor_state
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = trade_unions_scope
 		}
 	}
@@ -340,8 +340,8 @@ children_rights_events.4 = {
 	trigger = {
 		is_enacting_law = law_type:law_compulsory_education
 		OR = {
-			has_law = law_type:law_child_labor_allowed
-			has_law = law_type:law_restricted_child_labor
+			#has_law = law_type:law_child_labor_allowed
+			#has_law = law_type:law_restricted_child_labor
 		}
 		NOT = {
 			has_modifier = ragged_schools_devout
@@ -349,10 +349,10 @@ children_rights_events.4 = {
 		NOT = {
 			has_modifier = ragged_schools_no_devout
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			is_marginal = no
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			is_marginal = no
 		}
 	}
@@ -366,10 +366,10 @@ children_rights_events.4 = {
 			}
 			save_scope_as = child_labor_state
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_scope
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = intelligentsia_scope
 		}
 	}
@@ -385,7 +385,7 @@ children_rights_events.4 = {
 		add_enactment_modifier = {
 			name = ragged_schools_modifier
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = ragged_schools_devout
 				months = normal_modifier_time
@@ -398,13 +398,13 @@ children_rights_events.4 = {
 		add_enactment_modifier = {
 			name = ragged_schools_modifier
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = ragged_schools_no_devout
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = ragged_schools_no_devout
 				months = normal_modifier_time
@@ -421,13 +421,13 @@ children_rights_events.4 = {
 	option = {
 		#dont build them
 		name = children_rights_events.4.c
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = ragged_schools_no_devout
 				months = normal_modifier_time
 			}
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = ragged_schools_no_devout
 				months = normal_modifier_time
@@ -456,13 +456,13 @@ children_rights_events.5 = {
 	trigger = {
 		OR = {
 			is_enacting_law = law_type:law_compulsory_education
-			is_enacting_law = law_type:law_church_run_schools
+			is_enacting_law = law_type:law_religious_schools
 			is_enacting_law = law_type:law_state_funded_schools
 		}
 		OR = {
-			has_law = law_type:law_child_labor_allowed
-			has_law = law_type:law_restricted_child_labor
-			has_law = law_type:law_informal_schooling
+			#has_law = law_type:law_child_labor_allowed
+			#has_law = law_type:law_restricted_child_labor
+			#has_law = law_type:law_informal_schooling
 		}
 		NOT = {
 			has_modifier = school_supplies_modifier
@@ -525,12 +525,12 @@ children_rights_events.6 = {
 		OR = {
 			is_enacting_law = law_type:law_compulsory_education
 			is_enacting_law = law_type:law_state_funded_schools
-			is_enacting_law = law_type:law_church_run_schools
+			is_enacting_law = law_type:law_religious_schools
 		}
 		OR = {
-			has_law = law_type:law_child_labor_allowed
-			has_law = law_type:law_restricted_child_labor
-			has_law = law_type:law_informal_schooling
+			#has_law = law_type:law_child_labor_allowed
+			#has_law = law_type:law_restricted_child_labor
+			#has_law = law_type:law_informal_schooling
 		}
 		NOT = {
 			has_modifier = no_gatekeeping
@@ -542,9 +542,9 @@ children_rights_events.6 = {
 				has_ideology = ideology:ideology_reformist
 			}
 			NOR = {
-				is_interest_group_type = ig_elites
-				is_interest_group_type = ig_entrepreneurs
-				is_interest_group_type = ig_capitalists
+				is_interest_group_type = ig_conservatives
+				is_interest_group_type = ig_petty_bourgeoisie
+				is_interest_group_type = ig_market_liberals
 			}
 		}
 	}
@@ -560,36 +560,36 @@ children_rights_events.6 = {
 		}
 		if = {
 			limit = {
-				ig:ig_elites = {
+				ig:ig_conservatives = {
 					is_powerful = yes
 				}
 			}
-			ig:ig_elites = {
+			ig:ig_conservatives = {
 				save_scope_as = gatekeeper_ig
 			}
 		}
 		else_if = {
 			limit = {
-				ig:ig_entrepreneurs = {
+				ig:ig_petty_bourgeoisie = {
 					is_powerful = yes
 				}
 			}
-			ig:ig_entrepreneurs = {
+			ig:ig_petty_bourgeoisie = {
 				save_scope_as = gatekeeper_ig
 			}
 		}
 		else_if = {
 			limit = {
-				ig:ig_capitalists= {
+				ig:ig_market_liberals = {
 					is_powerful = yes
 				}
 			}
-			ig:ig_capitalists= {
+			ig:ig_market_liberals = {
 				save_scope_as = gatekeeper_ig
 			}
 		}
 		else = {
-			ig:ig_elites = {
+			ig:ig_conservatives = {
 				save_scope_as = gatekeeper_ig
 			}
 		}
@@ -601,9 +601,9 @@ children_rights_events.6 = {
 					has_ideology = ideology:ideology_reformist
 				}
 				NOR = {
-					is_interest_group_type = ig_elites
-					is_interest_group_type = ig_entrepreneurs
-					is_interest_group_type = ig_capitalists
+					is_interest_group_type = ig_conservatives
+					is_interest_group_type = ig_petty_bourgeoisie
+					is_interest_group_type = ig_market_liberals
 				}
 			}
 			save_scope_as = school_ig
@@ -640,9 +640,9 @@ children_rights_events.6 = {
 		name = children_rights_events.6.b
 		trigger = {
 			OR = {
-				has_law = law_type:law_secret_police
+				#has_law = law_type:law_secret_police
 				scope:school_ig = {
-					is_interest_group_type = ig_urbanists
+					is_interest_group_type = ig_intelligentsia
 					is_powerful = yes
 				}
 			}

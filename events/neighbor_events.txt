@@ -87,7 +87,7 @@ neighbor_events.1 = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 	duration = 3
 	trigger = {
-		has_ruling_interest_group = ig_moralists
+		has_ruling_interest_group = ig_devout
 		any_neighbouring_state = {
 			owner = {
 				religion = root.religion
@@ -101,7 +101,7 @@ neighbor_events.1 = {
 		save_neighbor_with_state = {
 			CRITERIA = "religion = root.religion"
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			save_scope_as = devout_ig
 		}
 	}
@@ -111,7 +111,7 @@ neighbor_events.1 = {
 			country = scope:neighbor_country
 			value = 30
 		}
-		ig:ig_moralists = {
+		ig:ig_devout = {
 			add_modifier = {
 				name = faith_above_nation
 				months = normal_modifier_time
@@ -151,7 +151,7 @@ neighbor_events.2 = {
 	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	duration = 6
 	trigger = {
-		has_ruling_interest_group = ig_securocrats
+		has_ruling_interest_group = ig_armed_forces
 		any_neighbouring_state = {
 			owner = {
 				relations:root <= relations_threshold:cold
@@ -162,7 +162,7 @@ neighbor_events.2 = {
 		save_neighbor_with_state = {
 			CRITERIA = "relations:root <= relations_threshold:cold"
 		}
-		ig:ig_securocrats = {
+		ig:ig_armed_forces = {
 			save_scope_as = armed_forces_ig
 		}
 	}
@@ -217,18 +217,18 @@ neighbor_events.3 = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 6
 	trigger = {
-		has_ruling_interest_group = ig_laborists
+		has_ruling_interest_group = ig_socialists
 		any_neighbouring_state = {
 			owner = {
-				has_ruling_interest_group = ig_laborists
+				has_ruling_interest_group = ig_socialists
 			}
 		}
 	}
 	immediate = {
 		save_neighbor_with_state = {
-			CRITERIA = "has_ruling_interest_group = ig_laborists"
+			CRITERIA = "has_ruling_interest_group = ig_socialists"
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			save_scope_as = trade_unions_ig
 		}
 	}
@@ -256,7 +256,7 @@ neighbor_events.3 = {
 	option = {
 		name = neighbor_events.3.b
 		default_option = yes
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_modifier = {
 				name = rejected_proletarian_internationalism
 				months = normal_modifier_time
@@ -279,12 +279,12 @@ neighbor_events.4 = {
 	icon = "gfx/interface/icons/event_icons/event_trade.dds"
 	duration = 6
 	trigger = {
-		has_ruling_interest_group = ig_capitalists
+		has_ruling_interest_group = ig_market_liberals
 		any_neighbouring_state = {
 			owner = {
 				relations:root >= relations_threshold:cordial
 				NOT = {
-					has_ruling_interest_group = ig_laborists
+					has_ruling_interest_group = ig_socialists
 				}
 			}
 		}
@@ -292,9 +292,9 @@ neighbor_events.4 = {
 	immediate = {
 		save_neighbor_with_state = {
 			CRITERIA = "relations:root >= relations_threshold:cordial
-			NOT = { has_ruling_interest_group = ig_laborists }"
+			NOT = { has_ruling_interest_group = ig_socialists }"
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			save_scope_as = industrialists_ig
 		}
 	}
@@ -320,7 +320,7 @@ neighbor_events.4 = {
 			name = enforced_domestic_investment
 			months = normal_modifier_time
 		}
-		ig:ig_capitalists = {
+		ig:ig_market_liberals = {
 			add_modifier = {
 				name = protectionistic_investments
 				months = normal_modifier_time
@@ -344,18 +344,18 @@ neighbor_events.5 = {
 	duration = 6
 	trigger = {
 		OR = {
-			has_law = law_type:law_outlawed_dissent
-			has_law = law_type:law_censorship
+			#has_law = law_type:law_outlawed_dissent
+			#has_law = law_type:law_censorship
 		}
 		any_neighbouring_state = {
 			owner = {
-				has_law = law_type:law_protected_speech
+				#has_law = law_type:law_protected_speech
 			}
 		}
 	}
 	immediate = {
 		save_neighbor_with_state = {
-			CRITERIA = "has_law = law_type:law_protected_speech"
+			CRITERIA = "#has_law = law_type:law_protected_speech"
 		}
 	}
 	option = {
@@ -413,13 +413,13 @@ neighbor_events.6 = {
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
 	duration = 6
 	trigger = {
-		has_law = law_type:law_protected_speech
+		#has_law = law_type:law_protected_speech
 		any_neighbouring_state = {
 			owner = {
 				is_at_war = no
 				OR = {
-					has_law = law_type:law_outlawed_dissent
-					has_law = law_type:law_censorship
+					#has_law = law_type:law_outlawed_dissent
+					#has_law = law_type:law_censorship
 				}
 			}
 		}
@@ -430,8 +430,8 @@ neighbor_events.6 = {
 				owner = {
 					is_at_war = no
 					OR = {
-						has_law = law_type:law_outlawed_dissent
-						has_law = law_type:law_censorship
+						#has_law = law_type:law_outlawed_dissent
+						#has_law = law_type:law_censorship
 					}
 				}
 			}
@@ -503,7 +503,7 @@ neighbor_events.7 = {
 				average_sol > root.average_sol
 			}
 		}
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			is_marginal = no
 		}
 	}
@@ -515,7 +515,7 @@ neighbor_events.7 = {
 	}
 	option = {
 		name = neighbor_events.7.a
-		ig:ig_laborists = {
+		ig:ig_socialists = {
 			add_modifier = {
 				name = criticized_economic_injustice
 				months = short_modifier_time

@@ -410,6 +410,7 @@ chemical_weapon = {
 	cost = 300
 	category = military
 	tradeable = no
+	fixed_price = yes
 	prestige_factor = 100
 }
 
@@ -418,6 +419,7 @@ biological_weapon = {
 	cost = 400
 	category = military
 	tradeable = no
+	fixed_price = yes
 	prestige_factor = 100
 }
 
@@ -426,6 +428,7 @@ nuclear_weapon = {
 	cost = 500
 	category = military
 	tradeable = no
+	fixed_price = yes
 	prestige_factor = 200
 }
 

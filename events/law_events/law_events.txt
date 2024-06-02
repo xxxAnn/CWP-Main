@@ -18,21 +18,21 @@ law_events.1 = {
 		months = normal_modifier_time
 	}
 	trigger = {
-		is_enacting_law = law_type:law_professional_military
+		is_enacting_law = law_type:law_professional_army
 		NOT = {
 			has_variable = conscientious_objection
 		}
 		any_interest_group = {
 			is_marginal = no
 			law_stance = {
-				law = law_type:law_professional_military
+				law = law_type:law_professional_army
 				value > neutral
 			}
 		}
 		any_interest_group = {
 			is_marginal = no
 			law_stance = {
-				law = law_type:law_professional_military
+				law = law_type:law_professional_army
 				value < neutral
 			}
 		}
@@ -49,7 +49,7 @@ law_events.1 = {
 			limit = {
 				is_marginal = no
 				law_stance = {
-					law = law_type:law_professional_military
+					law = law_type:law_professional_army
 					value > neutral
 				}
 			}
@@ -59,7 +59,7 @@ law_events.1 = {
 			limit = {
 				is_marginal = no
 				law_stance = {
-					law = law_type:law_professional_military
+					law = law_type:law_professional_army
 					value < neutral
 				}
 			}
@@ -131,12 +131,12 @@ law_events.5 = {
 	icon = "gfx/interface/icons/event_icons/event_industry.dds"
 	duration = 3
 	trigger = {
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			is_marginal = no
 		}
 		OR = {
-			is_enacting_law = law_type:law_wrongful_dismissal_protections
-			is_enacting_law = law_type:law_mandatory_parental_leave
+			is_enacting_law = law_type:law_regulatory_bodies
+			is_enacting_law = law_type:law_worker_protections
 		}
 		NOT = {
 			has_variable = mineowners_request
@@ -177,13 +177,13 @@ law_events.5 = {
 		}
 	}
 	cancellation_trigger = {
-		NOR = { 
-			currently_enacting_law = scope:current_law_scope 
+		NOR = {
+			currently_enacting_law = scope:current_law_scope
 		}
 	}
 	option = {
 		name = law_events.5.a
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = modifier_mine_regulations_not_enforced
 				months = normal_modifier_time
@@ -199,7 +199,7 @@ law_events.5 = {
 	option = {
 		name = law_events.5.b
 		default_option = yes
-		ig:ig_elites = {
+		ig:ig_conservatives = {
 			add_modifier = {
 				name = modifier_mine_regulations_enforced
 				months = normal_modifier_time
@@ -223,16 +223,16 @@ law_events.6 = {
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
 	duration = 3
 	trigger = {
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			is_marginal = no
 		}
 		NOT = {
 			has_variable = intelligentsia_disapprove_religious_schools
 		}
-		is_enacting_law = law_type:law_church_run_schools
+		is_enacting_law = law_type:law_religious_schools
 	}
 	immediate = {
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			save_scope_as = intelligentsia_ig
 		}
 		set_variable = {
@@ -255,7 +255,7 @@ law_events.6 = {
 			#law takes more time to pass
 			name = religious_schools_bad_modifier
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = modifier_religious_schools_abolished_intelligentsia
 				months = normal_modifier_time
@@ -270,7 +270,7 @@ law_events.6 = {
 			#you get some success thing
 			name = religious_schools_good_modifier
 		}
-		ig:ig_urbanists = {
+		ig:ig_intelligentsia = {
 			add_modifier = {
 				name = modifier_ignored_intelligentsia_request
 				months = normal_modifier_time

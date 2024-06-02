@@ -1,35 +1,27 @@
 ﻿namespace = exiles_events
-
 exiles_events.100 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.100.t
 	desc = exiles_events.100.d
 	flavor = exiles_events.100.f
-
 	gui_window = event_window_1char_tabloid
-
 	left_icon = scope:repatriated_scope
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
 	on_opened_soundeffect = "event:/SFX/Events/misc/1Character_Banner"
-
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		# triggered by return_to_home_country interaction
 	}
-	
 	immediate = {
 	}
-	
-	option = { # We kicked them out for a reason!
-		name = exiles_events.100.a 
+	option = {
+		# We kicked them out for a reason!
+		name = exiles_events.100.a
 		default_option = yes
 		scope:repatriated_scope = {
 			add_modifier = {
@@ -37,8 +29,8 @@ exiles_events.100 = {
 			}
 		}
 	}
-
-	option = { # Welcome home!
+	option = {
+		# Welcome home!
 		name = exiles_events.100.b
 		scope:repatriated_scope = {
 			add_modifier = {
@@ -52,23 +44,18 @@ exiles_events.100 = {
 exiles_events.1 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.1.t
 	desc = exiles_events.1.d
 	flavor = exiles_events.1.f
-
 	event_image = {
 		video = "votp_gunboat_diplomacy"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_scope_character = {
 			has_role = agitator
@@ -78,15 +65,13 @@ exiles_events.1 = {
 			}
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:agitator_scope
 		}
 	}
-	
 	immediate = {
-		random_scope_character = {	
+		random_scope_character = {
 			limit = {
 				has_role = agitator
 				character_supports_political_movement = no
@@ -100,9 +85,8 @@ exiles_events.1 = {
 			save_scope_as = agitator_scope
 		}
 	}
-	
 	option = {
-		name = exiles_events.1.a 
+		name = exiles_events.1.a
 		default_option = yes
 		scope:agitator_scope = {
 			exile_character = yes
@@ -113,7 +97,6 @@ exiles_events.1 = {
 			}
 		}
 	}
-
 	option = {
 		name = exiles_events.1.b
 		scope:agitator_scope = {
@@ -127,7 +110,6 @@ exiles_events.1 = {
 					add_trait = alcoholic
 				}
 				70 = {
-
 				}
 			}
 		}
@@ -137,23 +119,18 @@ exiles_events.1 = {
 exiles_events.2 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.2.t
 	desc = exiles_events.2.d
 	flavor = exiles_events.2.f
-
 	event_image = {
 		video = "middleeast_middleclass_cafe"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		empty_agitator_slots >= 1
 		any_scope_character = {
@@ -177,13 +154,11 @@ exiles_events.2 = {
 			}
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:exile_scope
 		}
 	}
-	
 	immediate = {
 		random_scope_character = {
 			limit = {
@@ -218,9 +193,8 @@ exiles_events.2 = {
 			save_scope_as = exile_scope
 		}
 	}
-	
 	option = {
-		name = exiles_events.2.a 
+		name = exiles_events.2.a
 		default_option = yes
 		scope:exile_ig_scope = {
 			add_modifier = {
@@ -235,7 +209,6 @@ exiles_events.2 = {
 			}
 		}
 	}
-
 	option = {
 		name = exiles_events.2.b
 		scope:friend_scope = {
@@ -256,24 +229,20 @@ exiles_events.2 = {
 exiles_events.3 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.3.t
 	desc = exiles_events.3.d
 	flavor = exiles_events.3.f
-
 	event_image = {
 		video = "votp_realist_household"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-	cooldown = { months = normal_modifier_time }
-
-	trigger = { #If an interest group has a character in the exile pool and supports a movement, this fires.
+	cooldown = {
+		months = normal_modifier_time
+	}
+	trigger = {
+		#If an interest group has a character in the exile pool and supports a movement, this fires.
 		empty_agitator_slots >= 1
 		any_political_movement = {
 			any_supporting_interest_group = {
@@ -295,13 +264,11 @@ exiles_events.3 = {
 			}
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:exile_scope
 		}
 	}
-	
 	immediate = {
 		random_interest_group = {
 			limit = {
@@ -338,9 +305,8 @@ exiles_events.3 = {
 			save_scope_as = exile_scope
 		}
 	}
-	
 	option = {
-		name = exiles_events.3.a 
+		name = exiles_events.3.a
 		default_option = yes
 		scope:exile_scope = {
 			transfer_character = root
@@ -355,7 +321,6 @@ exiles_events.3 = {
 			}
 		}
 	}
-
 	option = {
 		name = exiles_events.3.b
 		scope:movement_scope = {
@@ -376,23 +341,18 @@ exiles_events.3 = {
 exiles_events.4 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.4.t
 	desc = exiles_events.4.d
 	flavor = exiles_events.4.f
-
 	event_image = {
 		video = "votp_gunboat_diplomacy"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = long_modifier_time }
-
+	cooldown = {
+		months = long_modifier_time
+	}
 	trigger = {
 		any_interest_group = {
 			OR = {
@@ -401,22 +361,20 @@ exiles_events.4 = {
 				#has_variable = coup_guilty
 			}
 			any_scope_character = {
-				OR = {	
+				OR = {
 					has_role = agitator
 					has_modifier = incompetent_coup_attempt
 				}
 			}
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:failed_revolution_agitator
 		}
 	}
-	
 	immediate = {
-		random_interest_group = {	
+		random_interest_group = {
 			limit = {
 				OR = {
 					has_modifier = failed_coup
@@ -427,7 +385,7 @@ exiles_events.4 = {
 			save_scope_as = failed_revolution_ig
 			random_scope_character = {
 				limit = {
-					OR = {	
+					OR = {
 						has_role = agitator
 						has_modifier = incompetent_coup_attempt
 					}
@@ -436,15 +394,13 @@ exiles_events.4 = {
 			}
 		}
 	}
-	
 	option = {
-		name = exiles_events.4.a 
+		name = exiles_events.4.a
 		default_option = yes
 		scope:failed_revolution_agitator = {
 			exile_character_with_martyrdom = yes
 		}
 	}
-
 	option = {
 		name = exiles_events.4.b
 		scope:failed_revolution_agitator = {
@@ -467,23 +423,18 @@ exiles_events.4 = {
 exiles_events.5 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.5.t
 	desc = exiles_events.5.d
 	flavor = exiles_events.5.f
-
 	event_image = {
 		video = "unspecific_signed_contract"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_scales.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		empty_agitator_slots >= 1
 		any_interest_group = {
@@ -497,13 +448,11 @@ exiles_events.5 = {
 			interest_group_type = scope:ex_ig_type
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:exile_scope
 		}
 	}
-	
 	immediate = {
 		random_interest_group = {
 			limit = {
@@ -526,9 +475,8 @@ exiles_events.5 = {
 			save_scope_as = exile_scope
 		}
 	}
-	
 	option = {
-		name = exiles_events.5.a 
+		name = exiles_events.5.a
 		default_option = yes
 		scope:exile_scope = {
 			transfer_character = root
@@ -541,7 +489,6 @@ exiles_events.5 = {
 			months = normal_modifier_time
 		}
 	}
-
 	option = {
 		name = exiles_events.5.b
 		scope:exile_ig = {
@@ -556,30 +503,28 @@ exiles_events.5 = {
 exiles_events.6 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.6.t
 	desc = exiles_events.6.d
 	flavor = exiles_events.6.f
-
 	event_image = {
 		video = "unspecific_steam_ship"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		empty_agitator_slots >= 1
-		any_interest_group = { #Must have a political movement supported by this IG and one not supported by it, necessitating at least two.
+		any_interest_group = {
+			#Must have a political movement supported by this IG and one not supported by it, necessitating at least two.
 			interest_group_supports_political_movement = yes
 			save_temporary_scope_as = movement_ig
 		}
-		any_political_movement = { count >= 2 }
+		any_political_movement = {
+			count >= 2
+		}
 		any_character_in_exile_pool = {
 			this.culture = {
 				NOT = {
@@ -588,13 +533,11 @@ exiles_events.6 = {
 			}
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:exile_scope
 		}
 	}
-	
 	immediate = {
 		random_character_in_exile_pool = {
 			limit = {
@@ -610,9 +553,8 @@ exiles_events.6 = {
 			save_scope_as = capital_scope
 		}
 	}
-	
 	option = {
-		name = exiles_events.6.a 
+		name = exiles_events.6.a
 		default_option = yes
 		add_modifier = {
 			name = modifier_rich_politics
@@ -625,7 +567,6 @@ exiles_events.6 = {
 			}
 		}
 	}
-
 	option = {
 		name = exiles_events.6.b
 		add_modifier = {
@@ -638,28 +579,23 @@ exiles_events.6 = {
 exiles_events.7 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.7.t
 	desc = exiles_events.7.d
 	flavor = exiles_events.7.f
-
 	event_image = {
 		video = "unspecific_trains"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		empty_agitator_slots >= 1
-		OR = {	
-			has_law = law_type:law_open_borders
-			has_law = law_type:law_selective_immigration
+		OR = {
+			#has_law = law_type:law_open_borders
+			#has_law = law_type:law_selective_immigration
 		}
 		any_character_in_exile_pool = {
 			this.culture = {
@@ -669,13 +605,11 @@ exiles_events.7 = {
 			}
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:exile_scope
 		}
 	}
-	
 	immediate = {
 		random_character_in_exile_pool = {
 			limit = {
@@ -688,9 +622,8 @@ exiles_events.7 = {
 			save_scope_as = exile_scope
 		}
 	}
-	
 	option = {
-		name = exiles_events.7.a 
+		name = exiles_events.7.a
 		default_option = yes
 		scope:exile_scope = {
 			transfer_character = root
@@ -699,7 +632,6 @@ exiles_events.7 = {
 			}
 		}
 	}
-
 	option = {
 		name = exiles_events.7.b
 		random_interest_group = {
@@ -720,23 +652,18 @@ exiles_events.7 = {
 exiles_events.8 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.8.t
 	desc = exiles_events.8.d
 	flavor = exiles_events.8.f
-
 	event_image = {
 		video = "middleeast_engineer_blueprint"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		any_political_movement = {
 			this.desired_law = {
@@ -750,19 +677,17 @@ exiles_events.8 = {
 			}
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:exile_scope
 		}
 	}
-	
 	immediate = {
 		random_political_movement = {
 			limit = {
 				this.desired_law = {
 					save_temporary_scope_as = movement_law
-				}	
+				}
 				any_character_in_exile_pool = {
 					law_stance = {
 						law = scope:movement_law
@@ -777,14 +702,13 @@ exiles_events.8 = {
 				law_stance = {
 					law = scope:movement_law
 					value > neutral
-				}	
+				}
 			}
 			save_scope_as = exile_scope
 		}
 	}
-	
 	option = {
-		name = exiles_events.8.a 
+		name = exiles_events.8.a
 		default_option = yes
 		scope:movement_scope = {
 			add_modifier = {
@@ -793,7 +717,6 @@ exiles_events.8 = {
 			}
 		}
 	}
-
 	option = {
 		name = exiles_events.8.b
 		scope:movement_scope = {
@@ -814,23 +737,18 @@ exiles_events.8 = {
 exiles_events.9 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.9.t
 	desc = exiles_events.9.d
 	flavor = exiles_events.9.f
-
 	event_image = {
 		video = "unspecific_politicians_arguing"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_protest.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		empty_agitator_slots >= 1
 		any_interest_group = {
@@ -844,13 +762,11 @@ exiles_events.9 = {
 			interest_group_type = scope:ex_ig_type
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:exile_scope
 		}
 	}
-	
 	immediate = {
 		random_interest_group = {
 			limit = {
@@ -868,14 +784,13 @@ exiles_events.9 = {
 		random_character_in_exile_pool = {
 			limit = {
 				root = this.home_country
-				interest_group_type = scope:ex_ig_type	
+				interest_group_type = scope:ex_ig_type
 			}
 			save_scope_as = exile_scope
 		}
 	}
-	
 	option = {
-		name = exiles_events.9.a 
+		name = exiles_events.9.a
 		default_option = yes
 		scope:government_ig_scope = {
 			add_modifier = {
@@ -890,7 +805,6 @@ exiles_events.9 = {
 			}
 		}
 	}
-
 	option = {
 		name = exiles_events.9.b
 		scope:government_ig_scope = {
@@ -905,23 +819,18 @@ exiles_events.9 = {
 exiles_events.10 = {
 	type = country_event
 	placement = root
-
 	duration = 3
-
 	title = exiles_events.10.t
 	desc = exiles_events.10.d
 	flavor = exiles_events.10.f
-
 	event_image = {
 		video = "unspecific_sick_in_hospital"
 	}
-
 	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
 	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
-	cooldown = { months = normal_modifier_time }
-
+	cooldown = {
+		months = normal_modifier_time
+	}
 	trigger = {
 		empty_agitator_slots >= 1
 		any_character_in_exile_pool = {
@@ -933,7 +842,6 @@ exiles_events.10 = {
 			value >= 3
 		}
 	}
-	
 	immediate = {
 		random_character_in_exile_pool = {
 			limit = {
@@ -943,21 +851,18 @@ exiles_events.10 = {
 			save_scope_as = exile_scope
 		}
 	}
-
 	cancellation_trigger = {
 		NOT = {
 			exists = scope:exile_scope
 		}
 	}
-	
 	option = {
-		name = exiles_events.10.a 
+		name = exiles_events.10.a
 		default_option = yes
 		scope:exile_scope = {
 			kill_character = yes
 		}
 	}
-
 	option = {
 		name = exiles_events.10.b
 		scope:exile_scope = {
@@ -971,7 +876,6 @@ exiles_events.10 = {
 			months = normal_modifier_time
 		}
 	}
-
 	option = {
 		name = exiles_events.10.c
 		scope:exile_scope = {

@@ -10,143 +10,84 @@
   investor_confidence: "Investor Confidence"
   interest_rates: "Interest Rates"
 
-  ####################################################
-  #################### Corruption ####################
-  ####################################################
-
-  # Value
-  modifier_corruption_value_modifier: "Corruption Value Modifier"
-  modifier_corruption_value_modifier_desc: "A bonus or penalty to the corruption value"
-
-  modifier_corruption_growth: "Monthly [concept_corruption] Growth"
-  modifier_corruption_growth_desc: "How much [concept_corruption] grows or decays per month."
-
-  modifier_corruption_baseline: "[concept_corruption_baseline]"
-  modifier_corruption_baseline_desc: "Level of [concept_corruption_baseline]"
-
-  ig_corruption_modifier: "Corruption"
-  modifier_country_corruption_add: "Corruption if in Power"
-  modifier_country_corruption_add_desc: "A bonus or penalty to the IG corruption value"
-
-  modifier_interest_group_corruption_decay: "Monthly [concept_ig_corruption] Decrease"
-  modifier_interest_group_corruption_decay_desc: "How much [concept_ig_corruption] decays per month."
-
-  modifier_country_corruption_increase_add: "Corruption Increase if in Power"
-  modifier_country_corruption_increase_add_desc: "A bonus or penalty to the IG corruption increase value"
-
-  modifier_interest_group_corruption_growth: "Monthly [concept_corruption] Growth"
-  modifier_interest_group_corruption_growth_desc: "How much [concept_corruption] grows or decays per month."
-
-  # Level/Amounts
-  low_corruption: "Low Corruption"
-  low_corruption_desc: "The country is considered to have low levels of corruption"
-
-  medium_corruption: "Medium Corruption"
-  medium_corruption_desc: "The country is considered to have medium levels of corruption"
-
-  high_corruption: "High Corruption"
-  high_corruption_desc: "The country is considered to have high levels of corruption"
-
-  very_high_corruption: "Very High Corruption"
-  very_high_corruption_desc: "The country is considered to have very high levels of corruption"
-
-  immense_corruption: "Immense Corruption"
-  immense_corruption_desc: "The country is considered to have immense levels of corruption"
-
-  #########################################################
-  #################### Interest Groups ####################
-  #########################################################
-  #Note that Intelligentsia isn't here, as its vanilla IG.
-
-  # Corruption Strength
-  modifier_interest_group_corruption_strength_mult: "Interest Group Corruption Strength Multiplier"
-  modifier_interest_group_corruption_strength_mult_desc: "A bonus or penalty to the Corruption Strength of Interest Groups"
-
   # Variants
   ig_variant_bureaucrats: "[GetInterestGroupVariant('ig_bureaucrats',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_capitalists: "[GetInterestGroupVariant('ig_capitalists',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_elites: "[GetInterestGroupVariant('ig_elites',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_entrepreneurs: "[GetInterestGroupVariant('ig_entrepreneurs',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_laborists: "[GetInterestGroupVariant('ig_laborists',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_moralists: "[GetInterestGroupVariant('ig_moralists',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_patriots: "[GetInterestGroupVariant('ig_patriots',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_ruralists: "[GetInterestGroupVariant('ig_ruralists',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_securocrats: "[GetInterestGroupVariant('ig_securocrats',GetPlayer).GetNameWithCountryVariant]"
-  ig_variant_urbanists: "[GetInterestGroupVariant('ig_urbanists',GetPlayer).GetNameWithCountryVariant]"
+  ig_variant_capitalists: "[GetInterestGroupVariant('ig_market_liberals',GetPlayer).GetNameWithCountryVariant]"
+  ig_variant_elites: "[GetInterestGroupVariant('ig_conservatives',GetPlayer).GetNameWithCountryVariant]"
+  ig_variant_entrepreneurs: "[GetInterestGroupVariant('ig_petty_bourgeoisie',GetPlayer).GetNameWithCountryVariant]"
+  ig_variant_laborists: "[GetInterestGroupVariant('ig_socialists',GetPlayer).GetNameWithCountryVariant]"
+  ig_variant_moralists: "[GetInterestGroupVariant('ig_devout',GetPlayer).GetNameWithCountryVariant]"
+  ig_variant_patriots: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
+  ig_variant_ruralists: "[GetInterestGroupVariant('ig_rural_folk',GetPlayer).GetNameWithCountryVariant]"
+  ig_variant_securocrats: "[GetInterestGroupVariant('ig_armed_forces',GetPlayer).GetNameWithCountryVariant]"
 
   # Approval
   modifier_interest_group_ig_bureaucrats_approval_add: "$ig_variant_bureaucrats$ [concept_approval]"
-  modifier_interest_group_ig_capitalists_approval_add: "$ig_variant_capitalists$ [concept_approval]"
-  modifier_interest_group_ig_elites_approval_add: "$ig_variant_elites$ [concept_approval]"
-  modifier_interest_group_ig_entrepreneurs_approval_add: "$ig_variant_entrepreneurs$ [concept_approval]"
-  modifier_interest_group_ig_laborists_approval_add: "$ig_variant_laborists$ [concept_approval]"
-  modifier_interest_group_ig_moralists_approval_add: "$ig_variant_moralists$ [concept_approval]"
-  modifier_interest_group_ig_patriots_approval_add: "$ig_variant_patriots$ [concept_approval]"
-  modifier_interest_group_ig_ruralists_approval_add: "$ig_variant_ruralists$ [concept_approval]"
-  modifier_interest_group_ig_securocrats_approval_add: "$ig_variant_securocrats$ [concept_approval]"
-  modifier_interest_group_ig_urbanists_approval_add: "$ig_variant_urbanists$ [concept_approval]"
+  modifier_interest_group_ig_market_liberals_approval_add: "$ig_variant_capitalists$ [concept_approval]"
+  modifier_interest_group_ig_conservatives_approval_add: "$ig_variant_elites$ [concept_approval]"
+  modifier_interest_group_ig_petty_bourgeoisie_approval_add: "$ig_variant_entrepreneurs$ [concept_approval]"
+  modifier_interest_group_ig_socialists_approval_add: "$ig_variant_laborists$ [concept_approval]"
+  modifier_interest_group_ig_devout_approval_add: "$ig_variant_moralists$ [concept_approval]"
+  modifier_interest_group_ig_armed_forces_approval_add: "$ig_variant_patriots$ [concept_approval]"
+  modifier_interest_group_ig_rural_folk_approval_add: "$ig_variant_ruralists$ [concept_approval]"
+  modifier_interest_group_ig_armed_forces_approval_add: "$ig_variant_securocrats$ [concept_approval]"
   modifier_interest_group_ig_bureaucrats_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_bureaucrats$ [concept_interest_group]"
-  modifier_interest_group_ig_capitalists_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_capitalists$ [concept_interest_group]"
-  modifier_interest_group_ig_elites_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_elites$ [concept_interest_group]"
-  modifier_interest_group_ig_entrepreneurs_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_entrepreneurs$ [concept_interest_group]"
-  modifier_interest_group_ig_laborists_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_laborists$ [concept_interest_group]"
-  modifier_interest_group_ig_moralists_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_moralists$ [concept_interest_group]"
-  modifier_interest_group_ig_patriots_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_patriots$ [concept_interest_group]"
-  modifier_interest_group_ig_ruralists_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_ruralists$ [concept_interest_group]"
-  modifier_interest_group_ig_securocrats_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_securocrats$ [concept_interest_group]"
-  modifier_interest_group_ig_urbanists_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_urbanists$ [concept_interest_group]"
+  modifier_interest_group_ig_market_liberals_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_capitalists$ [concept_interest_group]"
+  modifier_interest_group_ig_conservatives_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_elites$ [concept_interest_group]"
+  modifier_interest_group_ig_petty_bourgeoisie_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_entrepreneurs$ [concept_interest_group]"
+  modifier_interest_group_ig_socialists_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_laborists$ [concept_interest_group]"
+  modifier_interest_group_ig_devout_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_moralists$ [concept_interest_group]"
+  modifier_interest_group_ig_armed_forces_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_patriots$ [concept_interest_group]"
+  modifier_interest_group_ig_rural_folk_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_ruralists$ [concept_interest_group]"
+  modifier_interest_group_ig_armed_forces_approval_add_desc: "A bonus or penalty to the total [concept_approval] of the $ig_variant_securocrats$ [concept_interest_group]"
 
   # Political Strength
   modifier_interest_group_ig_bureaucrats_pol_str_mult: "$ig_variant_bureaucrats$ [concept_political_strength]"
-  modifier_interest_group_ig_capitalists_pol_str_mult: "$ig_variant_capitalists$ [concept_political_strength]"
-  modifier_interest_group_ig_elites_pol_str_mult: "$ig_variant_elites$ [concept_political_strength]"
-  modifier_interest_group_ig_entrepreneurs_pol_str_mult: "$ig_variant_entrepreneurs$ [concept_political_strength]"
-  modifier_interest_group_ig_laborists_pol_str_mult: "$ig_variant_laborists$ [concept_political_strength]"
-  modifier_interest_group_ig_moralists_pol_str_mult: "$ig_variant_moralists$ [concept_political_strength]"
-  modifier_interest_group_ig_patriots_pol_str_mult: "$ig_variant_patriots$ [concept_political_strength]"
-  modifier_interest_group_ig_ruralists_pol_str_mult: "$ig_variant_ruralists$ [concept_political_strength]"
-  modifier_interest_group_ig_securocrats_pol_str_mult: "$ig_variant_securocrats$ [concept_political_strength]"
-  modifier_interest_group_ig_urbanists_pol_str_mult: "$ig_variant_urbanists$ [concept_political_strength]"
+  modifier_interest_group_ig_market_liberals_pol_str_mult: "$ig_variant_capitalists$ [concept_political_strength]"
+  modifier_interest_group_ig_conservatives_pol_str_mult: "$ig_variant_elites$ [concept_political_strength]"
+  modifier_interest_group_ig_petty_bourgeoisie_pol_str_mult: "$ig_variant_entrepreneurs$ [concept_political_strength]"
+  modifier_interest_group_ig_socialists_pol_str_mult: "$ig_variant_laborists$ [concept_political_strength]"
+  modifier_interest_group_ig_devout_pol_str_mult: "$ig_variant_moralists$ [concept_political_strength]"
+  modifier_interest_group_ig_armed_forces_pol_str_mult: "$ig_variant_patriots$ [concept_political_strength]"
+  modifier_interest_group_ig_rural_folk_pol_str_mult: "$ig_variant_ruralists$ [concept_political_strength]"
+  modifier_interest_group_ig_armed_forces_pol_str_mult: "$ig_variant_securocrats$ [concept_political_strength]"
   modifier_interest_group_ig_bureaucrats_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_bureaucrats$ [concept_interest_group]"
-  modifier_interest_group_ig_capitalists_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_capitalists$ [concept_interest_group]"
-  modifier_interest_group_ig_elites_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_elites$ [concept_interest_group]"
-  modifier_interest_group_ig_entrepreneurs_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_entrepreneurs$ [concept_interest_group]"
-  modifier_interest_group_ig_laborists_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_laborists$ [concept_interest_group]"
-  modifier_interest_group_ig_moralists_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_moralists$ [concept_interest_group]"
-  modifier_interest_group_ig_patriots_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_patriots$ [concept_interest_group]"
-  modifier_interest_group_ig_ruralists_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_ruralists$ [concept_interest_group]"
-  modifier_interest_group_ig_securocrats_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_securocrats$ [concept_interest_group]"
-  modifier_interest_group_ig_urbanists_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_urbanists$ [concept_interest_group]"
+  modifier_interest_group_ig_market_liberals_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_capitalists$ [concept_interest_group]"
+  modifier_interest_group_ig_conservatives_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_elites$ [concept_interest_group]"
+  modifier_interest_group_ig_petty_bourgeoisie_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_entrepreneurs$ [concept_interest_group]"
+  modifier_interest_group_ig_socialists_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_laborists$ [concept_interest_group]"
+  modifier_interest_group_ig_devout_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_moralists$ [concept_interest_group]"
+  modifier_interest_group_ig_armed_forces_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_patriots$ [concept_interest_group]"
+  modifier_interest_group_ig_rural_folk_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_ruralists$ [concept_interest_group]"
+  modifier_interest_group_ig_armed_forces_pol_str_mult_desc: "A bonus or penalty to the total [concept_political_strength] of the $ig_variant_securocrats$ [concept_interest_group]"
 
   # Population Attraction
   modifier_interest_group_ig_bureaucrats_pop_attraction_mult: "$ig_variant_bureaucrats$ Pop Attraction"
-  modifier_interest_group_ig_capitalists_pop_attraction_mult: "$ig_variant_capitalists$ Pop Attraction"
-  modifier_interest_group_ig_elites_pop_attraction_mult: "$ig_variant_elites$ Pop Attraction"
-  modifier_interest_group_ig_entrepreneurs_pop_attraction_mult: "$ig_variant_entrepreneurs$ Pop Attraction"
-  modifier_interest_group_ig_laborists_pop_attraction_mult: "$ig_variant_laborists$ Pop Attraction"
-  modifier_interest_group_ig_moralists_pop_attraction_mult: "$ig_variant_moralists$ Pop Attraction"
-  modifier_interest_group_ig_patriots_pop_attraction_mult: "$ig_variant_patriots$ Pop Attraction"
-  modifier_interest_group_ig_ruralists_pop_attraction_mult: "$ig_variant_ruralists$ Pop Attraction"
-  modifier_interest_group_ig_securocrats_pop_attraction_mult: "$ig_variant_securocrats$ Pop Attraction"
-  modifier_interest_group_ig_urbanists_pop_attraction_mult: "$ig_variant_urbanists$ Pop Attraction"
+  modifier_interest_group_ig_market_liberals_pop_attraction_mult: "$ig_variant_capitalists$ Pop Attraction"
+  modifier_interest_group_ig_conservatives_pop_attraction_mult: "$ig_variant_elites$ Pop Attraction"
+  modifier_interest_group_ig_petty_bourgeoisie_pop_attraction_mult: "$ig_variant_entrepreneurs$ Pop Attraction"
+  modifier_interest_group_ig_socialists_pop_attraction_mult: "$ig_variant_laborists$ Pop Attraction"
+  modifier_interest_group_ig_devout_pop_attraction_mult: "$ig_variant_moralists$ Pop Attraction"
+  modifier_interest_group_ig_armed_forces_pop_attraction_mult: "$ig_variant_patriots$ Pop Attraction"
+  modifier_interest_group_ig_rural_folk_pop_attraction_mult: "$ig_variant_ruralists$ Pop Attraction"
+  modifier_interest_group_ig_armed_forces_pop_attraction_mult: "$ig_variant_securocrats$ Pop Attraction"
   modifier_interest_group_ig_bureaucrats_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_bureaucrats$ [concept_interest_group]"
-  modifier_interest_group_ig_capitalists_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_capitalists$ [concept_interest_group]"
-  modifier_interest_group_ig_elites_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_elites$ [concept_interest_group]"
-  modifier_interest_group_ig_entrepreneurs_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_entrepreneurs$ [concept_interest_group]"
-  modifier_interest_group_ig_laborists_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_laborists$ [concept_interest_group]"
-  modifier_interest_group_ig_moralists_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_moralists$ [concept_interest_group]"
-  modifier_interest_group_ig_patriots_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_patriots$ [concept_interest_group]"
-  modifier_interest_group_ig_ruralists_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_ruralists$ [concept_interest_group]"
-  modifier_interest_group_ig_securocrats_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_securocrats$ [concept_interest_group]"
-  modifier_interest_group_ig_urbanists_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_urbanists$ [concept_interest_group]"
+  modifier_interest_group_ig_market_liberals_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_capitalists$ [concept_interest_group]"
+  modifier_interest_group_ig_conservatives_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_elites$ [concept_interest_group]"
+  modifier_interest_group_ig_petty_bourgeoisie_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_entrepreneurs$ [concept_interest_group]"
+  modifier_interest_group_ig_socialists_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_laborists$ [concept_interest_group]"
+  modifier_interest_group_ig_devout_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_moralists$ [concept_interest_group]"
+  modifier_interest_group_ig_armed_forces_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_patriots$ [concept_interest_group]"
+  modifier_interest_group_ig_rural_folk_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_ruralists$ [concept_interest_group]"
+  modifier_interest_group_ig_armed_forces_pop_attraction_mult_desc: "A bonus or penalty to the how attracted Pops are to the $ig_variant_securocrats$ [concept_interest_group]"
 
   #Institutions
-  modifier_country_institution_welfare_max_investment_add: "Max $institution_welfare$ [concept_institution] Investment"
-  modifier_country_institution_welfare_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_welfare$ [concept_institution]"
+  modifier_country_institution_social_security_max_investment_add: "Max $institution_social_security$ [concept_institution] Investment"
+  modifier_country_institution_social_security_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_social_security$ [concept_institution]"
   modifier_country_institution_corporate_affairs_max_investment_add: "Max $institution_corporate_affairs$ [concept_institution] Investment"
   modifier_country_institution_corporate_affairs_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_corporate_affairs$ [concept_institution]"
-  modifier_country_institution_criminal_justice_system_max_investment_add: "Max $institution_criminal_justice_system$ [concept_institution] Investment"
-  modifier_country_institution_criminal_justice_system_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_criminal_justice_system$ [concept_institution]"
+  modifier_country_institution_police_max_investment_add: "Max $institution_police$ [concept_institution] Investment"
+  modifier_country_institution_police_max_investment_add_desc: "A bonus or penalty to the maximum investment level of the $institution_police$ [concept_institution]"
 
   #########################################################
   #################### POPs ###############################
@@ -898,7 +839,7 @@
 
   # Missile Silo
   modifier_state_building_nuclear_weapons_silo_max_level_add: "$building_nuclear_weapons_silo$ Max Level"
-  modifier_state_building_nuclear_weapons_silo_max_level_add_desc: "A bonus or penalty to the maximum level of $building_slums$ buildings."
+  modifier_state_building_nuclear_weapons_silo_max_level_add_desc: "A bonus or penalty to the maximum level of $building_nuclear_weapons_silo$ buildings."
   # Telecommunications
 
   # Tourism Industry
@@ -959,6 +900,8 @@
   modifier_building_electronics_manufactories_throughput_add_desc: "A bonus or penalty to both input and output of $building_electronics_manufactories$"
 
   # Explosives Industry
+  modifier_goods_input_explosives_mult: "Building @explosives! Explosives input"
+  modifier_goods_input_explosives_mult_desc: "A bonus or penalty to the amount of @explosives! Explosives consumed by buildings"
 
   # Food Industries
 
@@ -1439,6 +1382,8 @@
   modifier_building_group_bg_telecommunications_throughput_add_desc: "A bonus or penalty to both input and output of $bg_telecommunications$"
 
   # Tools
+  modifier_goods_input_tools_mult: "Building @tools! Tools input"
+  modifier_goods_input_tools_mult_desc: "A bonus or penalty to the amount of @tools! Tools consumed by buildings"
 
   # Uranium
   modifier_goods_input_uranium_add: "@uranium! Uranium input per level"
@@ -1567,6 +1512,9 @@
 
   modifier_goods_output_armored_fighting_vehicle_add: "@armored_fighting_vehicle! Armored Fighting Vehicle output per level"
   modifier_goods_output_armored_fighting_vehicle_add_desc: "The amount of @armored_fighting_vehicle! Armored Fighting Vehicle produced by buildings"
+  
+  modifier_goods_input_armored_fighting_vehicle_mult: "Building @armored_fighting_vehicle! Armored Fighting Vehicle input"
+  modifier_goods_input_armored_fighting_vehicle_mult_desc: "A bonus or penalty to the amount of @armored_fighting_vehicle! Armored Fighting Vehicle consumed by buildings"
 
   # Artillery
 
@@ -1597,6 +1545,9 @@
 
   modifier_goods_output_military_aircraft_add: "@military_aircraft! Military Aircraft output per level"
   modifier_goods_output_military_aircraft_add_desc: "The amount of @military_aircraft! Military Aircraft produced by buildings"
+  
+  modifier_goods_input_military_aircraft_mult: "Building @military_aircraft! Military Aircraft input"
+  modifier_goods_input_military_aircraft_mult_desc: "A bonus or penalty to the amount of @military_aircraft! Military Aircraft consumed by buildings"
 
   # Missiles
   modifier_goods_input_missiles_add: "@missiles! Missiles input per level"
@@ -1604,6 +1555,9 @@
 
   modifier_goods_output_missiles_add: "@missiles! Missiles output per level"
   modifier_goods_output_missiles_add_desc: "The amount of @missiles! Missiles produced by buildings"
+  
+  modifier_goods_input_missiles_mult: "Building @missiles! Missiles input"
+  modifier_goods_input_missiles_mult_desc: "A bonus or penalty to the amount of @missiles! Missiles consumed by buildings"
 
   # Munitions
 
@@ -1629,6 +1583,9 @@
 
   modifier_goods_output_sensors_add: "@sensors! Sensors output per level"
   modifier_goods_output_sensors_add_desc: "The amount of @sensors! Sensors produced by buildings"
+  
+  modifier_goods_input_sensors_mult: "Building @sensors! Sensors input"
+  modifier_goods_input_sensors_mult_desc: "A bonus or penalty to the amount of @sensors! Sensors consumed by buildings"
 
   # Small Arms
 
@@ -1647,6 +1604,64 @@
   modifier_goods_output_surface_ships_add_desc: "The amount of @surface_ships! Surface Ships produced by buildings"
 
   # Tanks
+  
+  #### Military
+  modifier_unit_combat_unit_type_light_artillery_offense_mult: "$combat_unit_type_light_artillery$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_light_artillery_offense_mult_desc: "$combat_unit_type_light_artillery$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_light_artillery_defense_mult: "$combat_unit_type_light_artillery$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_light_artillery_defense_mult_desc: "$combat_unit_type_light_artillery$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_self_propelled_artillery_offense_mult: "$combat_unit_type_self_propelled_artillery$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_self_propelled_artillery_offense_mult_desc: "$combat_unit_type_self_propelled_artillery$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_self_propelled_artillery_defense_mult: "$combat_unit_type_self_propelled_artillery$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_self_propelled_artillery_defense_mult_desc: "$combat_unit_type_self_propelled_artillery$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_mlrs_artillery_offense_mult: "$combat_unit_type_mlrs_artillery$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_mlrs_artillery_offense_mult_desc: "$combat_unit_type_mlrs_artillery$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_mlrs_artillery_defense_mult: "$combat_unit_type_mlrs_artillery$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_mlrs_artillery_defense_mult_desc: "$combat_unit_type_mlrs_artillery$ $modifier_unit_defense_mult$ 
+  modifier_unit_combat_unit_type_mobile_artillery_offense_mult: "$combat_unit_type_mobile_artillery$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_mobile_artillery_offense_mult_desc: "$combat_unit_type_mobile_artillery$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_mobile_artillery_defense_mult: "$combat_unit_type_mobile_artillery$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_mobile_artillery_defense_mult_desc: "$combat_unit_type_mobile_artillery$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_wartime_submarine_offense_mult: "$combat_unit_type_wartime_submarine$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_wartime_submarine_offense_mult_desc: "$combat_unit_type_wartime_submarine$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_wartime_submarine_defense_mult: "$combat_unit_type_wartime_submarine$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_wartime_submarine_defense_mult_desc: "$combat_unit_type_wartime_submarine$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_diesel_attack_submarine_offense_mult: "$combat_unit_type_diesel_attack_submarine$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_diesel_attack_submarine_offense_mult_desc: "$combat_unit_type_diesel_attack_submarine$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_diesel_attack_submarine_defense_mult: "$combat_unit_type_diesel_attack_submarine$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_diesel_attack_submarine_defense_mult_desc: "$combat_unit_type_diesel_attack_submarine$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_nuclear_attack_submarine_offense_mult: "$combat_unit_type_nuclear_attack_submarine$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_nuclear_attack_submarine_offense_mult_desc: "$combat_unit_type_nuclear_attack_submarine$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_nuclear_attack_submarine_defense_mult: "$combat_unit_type_nuclear_attack_submarine$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_nuclear_attack_submarine_defense_mult_desc: "$combat_unit_type_nuclear_attack_submarine$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_cruise_missile_submarine_offense_mult: "$combat_unit_type_cruise_missile_submarine$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_cruise_missile_submarine_offense_mult_desc: "$combat_unit_type_cruise_missile_submarine$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_cruise_missile_submarine_defense_mult: "$combat_unit_type_cruise_missile_submarine$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_cruise_missile_submarine_defense_mult_desc: "$combat_unit_type_cruise_missile_submarine$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_battleship_offense_mult: "$combat_unit_type_battleship$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_battleship_offense_mult_desc: "$combat_unit_type_battleship$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_battleship_defense_mult: "$combat_unit_type_battleship$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_battleship_defense_mult_desc: "$combat_unit_type_battleship$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_wartime_aircraft_carrier_offense_mult: "$combat_unit_type_wartime_aircraft_carrier$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_wartime_aircraft_carrier_offense_mult_desc: "$combat_unit_type_wartime_aircraft_carrier$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_wartime_aircraft_carrier_defense_mult: "$combat_unit_type_wartime_aircraft_carrier$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_wartime_aircraft_carrier_defense_mult_desc: "$combat_unit_type_wartime_aircraft_carrier$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_modernised_aircraft_carrier_offense_mult: "$combat_unit_type_modernised_aircraft_carrier$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_modernised_aircraft_carrier_offense_mult_desc: "$combat_unit_type_modernised_aircraft_carrier$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_modernised_aircraft_carrier_defense_mult: "$combat_unit_type_modernised_aircraft_carrier$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_modernised_aircraft_carrier_defense_mult_desc: "$combat_unit_type_modernised_aircraft_carrier$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_supercarrier_offense_mult: "$combat_unit_type_supercarrier$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_supercarrier_offense_mult_desc: "$combat_unit_type_supercarrier$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_supercarrier_defense_mult: "$combat_unit_type_supercarrier$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_supercarrier_defense_mult_desc: "$combat_unit_type_supercarrier$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_helicopter_carrier_offense_mult: "$combat_unit_type_helicopter_carrier$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_helicopter_carrier_offense_mult_desc: "$combat_unit_type_helicopter_carrier$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_helicopter_carrier_defense_mult: "$combat_unit_type_helicopter_carrier$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_helicopter_carrier_defense_mult_desc: "$combat_unit_type_helicopter_carrier$ $modifier_unit_defense_mult$
+  modifier_unit_combat_unit_type_nuclear_battlecruiser_offense_mult: "$combat_unit_type_nuclear_battlecruiser$ $modifier_unit_offense_mult$"
+  modifier_unit_combat_unit_type_nuclear_battlecruiser_offense_mult_desc: "$combat_unit_type_nuclear_battlecruiser$ $modifier_unit_offense_mult$
+  modifier_unit_combat_unit_type_nuclear_battlecruiser_defense_mult: "$combat_unit_type_nuclear_battlecruiser$ $modifier_unit_defense_mult$"
+  modifier_unit_combat_unit_type_nuclear_battlecruiser_defense_mult_desc: "$combat_unit_type_nuclear_battlecruiser$ $modifier_unit_defense_mult$
 
   #### Timed modifiers
   ## One or more modifier types bundled in one, created and destroyed by onactions, triggers, events, JEs. "_desc" does nothing.
@@ -1713,7 +1728,7 @@
   modifier_corruption: "Corruptible Character"
   modifier_honest: "Honest Character"
   greenland_purchase: "Greenland Purchase"
-  # Sol  
+  # Sol
   offensive_focused_soldiers: "Soldiers trained with focus on being offensive"
   defensive_focused_soldiers: "Soldiers trained with focus on being defensive"
   mobility_focused_soldiers: "Soldiers trained with focus on being mobile"

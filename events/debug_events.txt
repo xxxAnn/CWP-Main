@@ -64,7 +64,7 @@ debug.7 = {
 	hidden = yes
 	orphan = yes
 	immediate = {
-		activate_law = law_type:law_council_elective
+		#activate_law = law_type:law_council_elective
 		activate_law = law_type:law_anocracy
 	}
 }
@@ -79,65 +79,10 @@ debug.8 = {
 	}
 }
 
-debug.9 = {
-	type = country_event
-	hidden = yes
-	orphan = yes
-	immediate = {
-		every_country = {
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_elites
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_bureaucrats
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_capitalists
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_patriots
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_securocrats
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_intelligentsia
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_moralists
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_entrepreneurs
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_ruralists
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_laborists
-			}
-			create_character = {
-				ig_leader = yes
-				interest_group = ig:ig_urbanists
-			}
-		}
-	}
-}
-
 debug.11 = {
 	hidden = yes
 	orphan = yes
 	immediate = {
-		effect_corruption_high = yes
 	}
 }
 
@@ -147,86 +92,6 @@ debug.12 = {
 	immediate = {
 		call_election = {
 			months = 1
-		}
-	}
-}
-
-debug.100 = {
-	hidden = yes
-	type = country_event
-	trigger = {
-		is_player = yes
-	}
-	immediate = {
-		every_interest_group = {
-			calc_ig_corruption = yes
-		}
-		add_modifier = {
-			name = corruption_modifier_effects
-			multiplier = corruption_modifier
-		}
-	}
-}
-
-debug.101 = {
-	hidden = yes
-	type = country_event
-	trigger = {
-		is_player = yes
-	}
-	immediate = {
-		every_interest_group = {
-			calc_ig_corruption = yes
-			set_variable = {
-				name = ig_corruption
-				value = random_corruption_low_value
-			}
-		}
-		add_modifier = {
-			name = corruption_modifier_effects
-			multiplier = corruption_modifier
-		}
-	}
-}
-
-debug.102 = {
-	hidden = yes
-	type = country_event
-	trigger = {
-		is_player = yes
-	}
-	immediate = {
-		every_interest_group = {
-			calc_ig_corruption = yes
-			set_variable = {
-				name = ig_corruption
-				value = random_corruption_medium_value
-			}
-		}
-		add_modifier = {
-			name = corruption_modifier_effects
-			multiplier = corruption_modifier
-		}
-	}
-}
-
-debug.103 = {
-	hidden = yes
-	type = country_event
-	trigger = {
-		is_player = yes
-	}
-	immediate = {
-		every_interest_group = {
-			calc_ig_corruption = yes
-			set_variable = {
-				name = ig_corruption
-				value = random_corruption_high_value
-			}
-		}
-		add_modifier = {
-			name = corruption_modifier_effects
-			multiplier = corruption_modifier
 		}
 	}
 }

@@ -1,96 +1,96 @@
 ﻿DIPLOMACY = {
 	# Western Bloc
-	c:GBR = {
+	c:GBR ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:CAN = {
+	c:CAN ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:NZL = {
+	c:NZL ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:BEL = {
+	c:BEL ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:DEN = {
+	c:DEN ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:FRA = {
+	c:FRA ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:AOZ = {
+	c:AOZ ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:BOZ = {
+	c:BOZ ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:FOZ = {
+	c:FOZ ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:ICL = {
+	c:ICL ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:ITA = {
+	c:ITA ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:LUX = {
+	c:LUX ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:NET = {
+	c:NET ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:NOR = {
+	c:NOR ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:POR = {
+	c:POR ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment
 		}
 	}
-	c:AST = {
+	c:AST ?= {
 		create_diplomatic_pact = {
 			country = c:USA
 			type = diplomatic_alignment

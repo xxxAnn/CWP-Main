@@ -1,4 +1,4 @@
 ﻿CHARACTERS = {
-	c:QAT = {
+	c:QAT ?= {
 	}
 }

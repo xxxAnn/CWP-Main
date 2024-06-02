@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:RUS = {
+	c:RUS ?= {
 		create_character = {
 			# Joseph Stalin
 			first_name = "Iosif"
@@ -11,10 +11,9 @@
 			#ig_leader = yes  #Ruler can't be IG leader under dictatorship or monarchy.
 			birth_date = 1878.12.18
 			dna = dna_joseph_stalin
-			interest_group = ig:ig_bureaucrats
+			interest_group = ig:ig_agrarian_populists
 			ideology = ideology_hardliner
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -26,10 +25,9 @@
 			culture = cu:russian
 			religion = atheist
 			birth_date = 1896.12.1
-			interest_group = ig:ig_securocrats
-			ideology = ideology_revisionist 
+			interest_group = ig:ig_armed_forces
+			ideology = ideology_revisionist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -44,7 +42,6 @@
 			interest_group = ig:ig_intelligentsia
 			ideology = ideology_technocratic_socialist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -56,10 +53,9 @@
 			religion = rel:atheist
 			ig_leader = no
 			birth_date = 1894.4.15
-			interest_group = ig:ig_laborists
+			interest_group = ig:ig_socialists
 			ideology = ideology_revisionist
 			traits = {
-				
 			}
 		}
 		create_character = {
@@ -71,10 +67,9 @@
 			religion = rel:atheist
 			ig_leader = yes
 			birth_date = 1899.3.29
-			interest_group = ig:ig_securocrats
+			interest_group = ig:ig_armed_forces
 			ideology = ideology_market_socialist
 			traits = {
-				
 			}
 		}
 	}

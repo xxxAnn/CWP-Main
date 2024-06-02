@@ -1,56 +1,29 @@
 ﻿trade_agreement = {
 	requires_approval = yes
 	can_use_obligations = yes
-	
 	unlocking_technologies = {
 		international_relations
 	}
 	potential = {
-		NOR = {
+		NOT = {
 			is_country_type = decentralized
-			has_law = law_type:law_isolationism
 		}
 		scope:target_country = {
-			NOR = {
+			NOT = {
 				is_country_type = decentralized
-				has_law = law_type:law_isolationism
 			}
 		}
-		aggressive_diplomatic_plays_permitted = yes
+		is_revolutionary = no
 		scope:target_country = {
-			aggressive_diplomatic_plays_permitted = yes
-		}
-		has_diplomatic_relevance = scope:target_country
-		NOT = {
-			scope:target_country = {
-				is_subject_of = root
-			}
-		}
-		NOT = {
-			is_subject_of = scope:target_country
+			is_revolutionary = no
 		}
 	}
 	possible = {
-		NOT = {
-			has_war_with = scope:target_country
-		}
 		NOT = {
 			has_diplomatic_pact = {
 				who = scope:target_country
 				type = customs_union
 			}
-		}
-		is_junior_in_customs_union = no
-		scope:target_country = {
-			is_junior_in_customs_union = no
-		}
-		custom_tooltip = {
-			text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
-			scope:target_country.relations:root > relations_threshold:poor
-		}
-		is_revolutionary = no
-		scope:target_country = {
-			is_revolutionary = no
 		}
 	}
 	pact = {
@@ -58,52 +31,115 @@
 		is_trade_agreement = yes
 		can_be_used_in_sway_offers = yes
 		sway_maneuvers_cost = 10
-		
-		relations_progress_per_day = 1 # At 100, +1 relations
+		relations_progress_per_day = 1		# At 100, +1 relations
 		relations_improvement_max = 80
-		is_about_to_auto_break = {
-			scope:target_country.relations:root < -20
-		}
-		should_auto_break = {
-			custom_tooltip = {
-				text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS
-				# make sure to update is_about_to_auto_break when changing this:
-				scope:target_country.relations:root <= relations_threshold:poor
+		requirement_to_maintain = {
+			trigger = {
+				has_diplomatic_relevance = scope:target_country
 			}
 		}
-		should_invalidate = {
-			OR = {
-				has_war_with = scope:target_country
-				is_country_type = decentralized
-				scope:target_country = {
-					is_country_type = decentralized
+		requirement_to_maintain = {
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_NOT_DECENTRALIZED"
+					NOT = {
+						is_country_type = decentralized
+					}
+					scope:target_country = {
+						NOT = {
+							is_country_type = decentralized
+						}
+					}
 				}
-				aggressive_diplomatic_plays_permitted = no
-				scope:target_country = {
-					aggressive_diplomatic_plays_permitted = no
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_DIPLOMATIC_AUTONOMY"
+					aggressive_diplomatic_plays_permitted = yes
+					scope:target_country = {
+						aggressive_diplomatic_plays_permitted = yes
+					}
 				}
-				is_subject_of = scope:target_country
-				scope:target_country = {
-					is_subject_of = root
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_NO_SUBJECT_RELATION"
+					NAND = {
+						is_non_customs_union_subject = yes
+						is_subject_of = scope:target_country
+					}
+					NAND = {
+						scope:target_country = {
+							is_non_customs_union_subject = yes
+						}
+						scope:target_country = {
+							is_subject_of = root
+						}
+					}
 				}
-				is_junior_in_customs_union = yes
-				scope:target_country = {
-					is_junior_in_customs_union = yes
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				custom_tooltip = {
+					text = DIPLO_ACTION_RELATIONS_POOR_OR_LESS_NOT
+					scope:target_country.relations:root > relations_threshold:poor
 				}
-				scope:target_country = {
-					has_law = law_type:law_isolationism
+			}
+			show_about_to_break_warning = {
+				scope:target_country.relations:root <= -17				# this is: poor + 3
+				scope:target_country.relations_change_rate:root < 0
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				custom_tooltip = {
+					text = "DIPLOMATIC_PACT_REQUIREMENT_AT_PEACE"
+					NOT = {
+						has_war_with = scope:target_country
+					}
 				}
-				has_law = law_type:law_isolationism
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
 				NOT = {
-					has_diplomatic_relevance = scope:target_country
+					#has_law = law_type:law_isolationism
 				}
 			}
 		}
-		break_effect = {
+		requirement_to_maintain = {
+			trigger = {
+				NOT = {
+					scope:target_country = {
+						#has_law = law_type:law_isolationism
+					}
+				}
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				is_junior_in_customs_union = no
+			}
+		}
+		requirement_to_maintain = {
+			trigger = {
+				scope:target_country = {
+					is_junior_in_customs_union = no
+				}
+			}
+		}
+		manual_break_effect = {
 			change_relations = {
 				country = scope:target_country
 				value = -10
 			}
+		}
+		auto_break_effect = {
 		}
 	}
 	ai = {
@@ -113,7 +149,7 @@
 			value = 0
 			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_BASE"
-				value = -75
+				value = -100
 			}
 			if = {
 				limit = {
@@ -135,7 +171,7 @@
 			add = {
 				desc = "DIPLOMATIC_ACCEPTANCE_GDP"
 				value = "scope:actor.ai_gdp_comparison(root)"
-				multiply = 3
+				multiply = 2
 				min = -10
 				max = 10
 			}
@@ -279,12 +315,20 @@
 					limit = {
 						OR = {
 							AND = {
-								scope:actor = { has_radical_leftist_economy = no }		
-								scope:target_country = { has_radical_leftist_economy = yes }	
+								scope:actor = {
+									has_radical_leftist_economy = no
+								}
+								scope:target_country = {
+									has_radical_leftist_economy = yes
+								}
 							}
 							AND = {
-								scope:actor = { has_radical_leftist_economy = yes }		
-								scope:target_country = { has_radical_leftist_economy = no }							
+								scope:actor = {
+									has_radical_leftist_economy = yes
+								}
+								scope:target_country = {
+									has_radical_leftist_economy = no
+								}
 							}
 						}
 					}
@@ -293,7 +337,7 @@
 			}
 		}
 		propose_score = {
-			value = 25
+			value = 10
 		}
 		propose_break_score = {
 			value = 10
