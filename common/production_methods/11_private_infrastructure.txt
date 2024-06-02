@@ -973,9 +973,9 @@ pm_iron_asteroids = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_lift_capacity_add = 80
-			goods_input_computers_add = 20
-			goods_output_iron_add = 500
+			goods_input_lift_capacity_add = 90 
+			goods_input_computers_add = 30 
+			goods_output_iron_add = 500 
 		}
 		level_scaled = {
 			building_employment_engineers_add = 1000
@@ -990,8 +990,8 @@ pm_copper_asteroids = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_lift_capacity_add = 80
-			goods_input_computers_add = 20
+			goods_input_lift_capacity_add = 90 
+			goods_input_computers_add = 30 
 			goods_output_copper_add = 500
 		}
 		level_scaled = {
@@ -1007,8 +1007,8 @@ pm_rare_earth_elements_asteroids = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_lift_capacity_add = 80
-			goods_input_computers_add = 20
+			goods_input_lift_capacity_add = 90 
+			goods_input_computers_add = 30 
 			goods_output_rare_earth_elements_add = 500
 		}
 		level_scaled = {
@@ -1024,8 +1024,8 @@ pm_bauxite_asteroids = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_lift_capacity_add = 80
-			goods_input_computers_add = 20
+			goods_input_lift_capacity_add = 90 
+			goods_input_computers_add = 30 
 			goods_output_bauxite_add = 500
 		}
 		level_scaled = {
@@ -1041,8 +1041,8 @@ pm_uranium_asteroids = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_lift_capacity_add = 80
-			goods_input_computers_add = 20
+			goods_input_lift_capacity_add = 90 
+			goods_input_computers_add = 30 
 			goods_output_uranium_add = 500
 		}
 		level_scaled = {
@@ -1058,8 +1058,8 @@ pm_lead_asteroids = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_lift_capacity_add = 80
-			goods_input_computers_add = 20
+			goods_input_lift_capacity_add = 90 
+			goods_input_computers_add = 30 
 			goods_output_lead_add = 500
 		}
 		level_scaled = {
@@ -1075,8 +1075,8 @@ pm_gold_asteroids = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			goods_input_lift_capacity_add = 80
-			goods_input_computers_add = 20
+			goods_input_lift_capacity_add = 90 
+			goods_input_computers_add = 30 
 			goods_output_gold_add = 200
 		}
 		level_scaled = {
