@@ -1,17 +1,12 @@
-﻿COUNTRIES = {
-	c:SWE ?= {
-		# Politics
-		#todo IGs and Ideologies
-		# Tech and Tax
-		set_tax_level = high
-		effect_starting_technology_tier_1_tech = yes
-		effect_currency_sek = yes
-		# Laws
-		#IG in government to match ruler
-		ig:ig_socialists = {
-			add_ruling_interest_group = yes
-		}
-		# Institutions
-		effect_bretton_woods_signatory = yes
-	}
+COUNTRIES = {
+  c:SWE = {
+    set_tax_level = high
+    effect_starting_technology_tier_1_tech = yes
+    effect_currency_sek = yes
+    ig:ig_socialists = {
+      add_ruling_interest_group = yes
+    }
+    effect_bretton_woods_signatory = yes
+    test_template = yes
+  }
 }
