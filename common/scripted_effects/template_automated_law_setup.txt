@@ -1,0 +1,3 @@
+test_template = {
+  activate_law = law:law_appointed_bureaucrats
+}

@@ -1,5 +1,5 @@
 COUNTRIES = {
-  c:SWE = {
+  c:SWE ?= {
     set_tax_level = high
     effect_starting_technology_tier_1_tech = yes
     effect_currency_sek = yes
@@ -7,6 +7,7 @@ COUNTRIES = {
       add_ruling_interest_group = yes
     }
     effect_bretton_woods_signatory = yes
+    activate_law = law:law_racial_segregation
     test_template = yes
   }
 }
